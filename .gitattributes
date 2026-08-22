@@ -1,0 +1,3 @@
+* text=auto eol=lf
+snapshot/raw/** -diff linguist-generated=true
+*.map -diff linguist-generated=true

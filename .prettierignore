@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+sources/
+snapshot/raw/
+test/fixtures/reference/
+package-lock.json

@@ -1,0 +1,10 @@
+{
+  "target": "https://xn--d1ah4a.com/",
+  "output": "snapshot",
+  "requestTimeoutMs": 30000,
+  "retries": 3,
+  "maxResources": 500,
+  "maxResourceBytes": 25000000,
+  "maxTotalBytes": 150000000,
+  "userAgent": "itd-scanner/0.1 (+https://github.com/)"
+}

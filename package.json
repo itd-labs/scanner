@@ -1,0 +1,40 @@
+{
+  "name": "itd-scanner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic scanner and semantic diff pipeline for the ITD frontend build",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc --noEmit && prettier --check .",
+    "benchmark": "tsx scripts/benchmark-directories.ts",
+    "format": "prettier --write .",
+    "materialize:reference": "tsx scripts/materialize-reference.ts",
+    "scan": "tsx src/cli.ts scan",
+    "scan:local": "tsx src/cli.ts scan --mirror sources/current",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@babel/generator": "8.0.0",
+    "@babel/parser": "8.0.4",
+    "@babel/traverse": "8.0.4",
+    "@babel/types": "8.0.4",
+    "@wakaru/cli": "1.9.0",
+    "diff": "9.0.0",
+    "es-module-lexer": "2.3.2",
+    "parse5": "8.0.1",
+    "postcss": "8.5.26",
+    "postcss-selector-parser": "7.1.5",
+    "prettier": "3.9.6"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "tsx": "4.23.12",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}

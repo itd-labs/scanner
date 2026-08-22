@@ -1,0 +1,75 @@
+name: Scan frontend build
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+      timezone: "Europe/Moscow"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: itd-frontend-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out scanner
+        uses: actions/checkout@v7
+        with:
+          path: scanner
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22.20.0"
+          cache: npm
+          cache-dependency-path: scanner/package-lock.json
+
+      - name: Install locked dependencies
+        working-directory: scanner
+        run: npm ci
+
+      - name: Build and test scanner
+        working-directory: scanner
+        run: |
+          npm run build
+          npm test
+
+      - name: Prepare snapshots worktree
+        shell: bash
+        run: |
+          if git -C scanner fetch origin snapshots:refs/remotes/origin/snapshots; then
+            git -C scanner worktree add --force -B snapshots ../snapshot-state origin/snapshots
+          else
+            git -C scanner worktree add --detach ../snapshot-state
+            git -C snapshot-state switch --orphan snapshots
+          fi
+          cp scanner/.gitattributes snapshot-state/.gitattributes
+
+      - name: Scan site
+        working-directory: scanner
+        run: >-
+          node dist/cli.js scan
+          --config itd-scanner.config.json
+          --output ../snapshot-state/snapshot
+
+      - name: Commit snapshot when changed
+        shell: bash
+        run: |
+          git -C snapshot-state add --all
+          if git -C snapshot-state diff --cached --quiet; then
+            echo "The deployed build is unchanged."
+            exit 0
+          fi
+          fingerprint="$(node -p "require('./snapshot-state/snapshot/manifest.json').buildFingerprint.slice(0, 12)")"
+          git -C snapshot-state config user.name "github-actions[bot]"
+          git -C snapshot-state config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C snapshot-state commit -m "snapshot: ${fingerprint}"
+          git -C snapshot-state push origin HEAD:snapshots

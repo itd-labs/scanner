@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.tmp/
+
+# Local mirror of downloaded site resources. It is intentionally not versioned.
+sources/
+
+# Generated locally. GitHub Actions commits this directory to the snapshots branch.
+snapshot/
+.snapshot-branch/
+
+# IDE and OS files
+.idea/
+.DS_Store
+Thumbs.db
+*.log
