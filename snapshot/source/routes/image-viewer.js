@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_e9408518({
+export function fn_ee3325fe({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2133,4 +2133,4 @@ export function fn_e9408518({
     document.body,
   );
 }
-export { fn_e9408518 as default };
+export { fn_ee3325fe as default };

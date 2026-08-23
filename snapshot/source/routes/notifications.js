@@ -227,7 +227,7 @@ const local_5adaadb3 = ({ type: arg }) => {
       }),
   });
 };
-function fn_d63a129b({
+function fn_33707005({
   notification: arg,
   isVisuallyUnread: arg_2,
   onMarkRead: arg_3,
@@ -610,7 +610,7 @@ export const local_58a6e47b = (arg) => {
               local.map((arg) => {
                 const local = arg.payload.actors[0]?.id;
                 return imported(
-                  fn_d63a129b,
+                  fn_33707005,
                   {
                     notification: arg,
                     isVisuallyUnread: local_8.has(arg.id),

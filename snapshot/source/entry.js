@@ -1460,15 +1460,15 @@ function fn_5a72670c() {
   return fn_4b52037e().enabled;
 }
 function fn_3ad7d7c6(...arg) {
-  fn_4b27fd5a("log", ...arg);
+  fn_368406f7("log", ...arg);
 }
 function fn_ef2987cf(...arg) {
-  fn_4b27fd5a("warn", ...arg);
+  fn_368406f7("warn", ...arg);
 }
 function fn_359adae9(...arg) {
-  fn_4b27fd5a("error", ...arg);
+  fn_368406f7("error", ...arg);
 }
-function fn_4b27fd5a(arg, ...arg_2) {
+function fn_368406f7(arg, ...arg_2) {
   if (local_23bb5d69 && fn_5a72670c()) {
     fn_a1a275d6(() => {
       local_f090a36f.console[arg](`${local_43ff4522}[${arg}]:`, ...arg_2);
@@ -4430,7 +4430,7 @@ function fn_9d49a2ce(arg, arg_2) {
 function fn_4749057a(arg, arg_2, arg_3) {
   return arg_2 || `${fn_1f081a75(arg)}?${fn_9d49a2ce(arg, arg_3)}`;
 }
-function fn_a7419752(arg, arg_2) {
+function fn_700c4b91(arg, arg_2) {
   const local = fn_2d12d30f(arg);
   if (!local) {
     return "";
@@ -8039,7 +8039,7 @@ function fn_92c4c017(arg = {}) {
   const local_6 = local_f090a36f_8.document.createElement("script");
   local_6.async = true;
   local_6.crossOrigin = "anonymous";
-  local_6.src = fn_a7419752(local_4, local_5);
+  local_6.src = fn_700c4b91(local_4, local_5);
   const { onLoad: local_7, onClose: local_8 } = local_5;
   if (local_7) {
     local_6.onload = local_7;
@@ -11262,8 +11262,23 @@ const local_29589dcc = (() => {
 const local_d3a9aab1 = (arg) =>
   /^\s*<svg[\s>]/i.test(arg) &&
   !/<script|<foreignObject|\son[a-z]+\s*=/i.test(arg);
-const local_09c265c5 = (arg, arg_2) => {
+const local_075b9498 = {
+  liked: "--accent-liked",
+};
+const local_de0be5f5 = /fill\s*=\s*["'](#[0-9a-fA-F]{3,8})["']/;
+const local_5878b077 = (arg, arg_2) => {
+  const local = local_075b9498[arg];
+  if (!local || typeof document === "undefined") {
+    return;
+  }
+  const local_2 = local_de0be5f5.exec(arg_2)?.[1];
+  if (local_2) {
+    document.documentElement.style.setProperty(local, local_2);
+  }
+};
+const local_39fff913 = (arg, arg_2) => {
   local_a1e12a9e_4.set(arg, arg_2);
+  local_5878b077(arg, arg_2);
   local_a1e12a9e_6.get(arg)?.forEach((arg) => arg(arg_2));
 };
 const local_9582fd2f = (arg, arg_2 = false) => {
@@ -11287,7 +11302,7 @@ const local_9582fd2f = (arg, arg_2 = false) => {
       }
       const local = await arg.text();
       if (local_d3a9aab1(local)) {
-        return (local_09c265c5(arg, local), local);
+        return (local_39fff913(arg, local), local);
       }
       return null;
     })
@@ -13515,14 +13530,14 @@ function symbol_014({
   });
 }
 const local_ee7a6f6b = "c_spinner";
-const local_f2f6cf79 = "kdaD";
+const local_2650a516 = "tiwv";
 const local_d3808147 = "c_xs";
 const local_9350219d = "c_sm";
 const local_a8a24a1e = "c_md";
 const local_afefddb7 = "c_lg";
 const local_0ab9bf6f = {
   spinner: local_ee7a6f6b,
-  spin: local_f2f6cf79,
+  spin: local_2650a516,
   xs: local_d3808147,
   sm: local_9350219d,
   md: local_a8a24a1e,
@@ -13657,7 +13672,7 @@ function symbol_008({ displayName: arg, onConfirm: arg_2, onClose: arg_3 }) {
 }
 const local_dc634aac_2 = fn_c05a86e1(null);
 let local_f06debfc_31 = 0;
-function fn_cbb9e3eb({ children: arg }) {
+function fn_16376bbf({ children: arg }) {
   const [local, local_2] = symbol_056([]);
   const local_3 = symbol_069((arg) => {
     const local = `modal-${++local_f06debfc_31}`;
@@ -16676,7 +16691,7 @@ function fn_c7a41549(arg) {
     arg.intersectionRatio > 0.95
   );
 }
-class clazz_21748117 {
+class clazz_bbe39ed9 {
   observer = null;
   elementToPostId = new WeakMap();
   posts = new Map();
@@ -16915,7 +16930,7 @@ class clazz_21748117 {
       .catch(() => {});
   }
 }
-const local_a1e12a9e_9 = new clazz_21748117();
+const local_a1e12a9e_9 = new clazz_bbe39ed9();
 function fn_2df383fe(arg, arg_2, arg_3, arg_4 = "", arg_5 = undefined) {
   symbol_077(() => {
     const local = arg_2.current;
@@ -17314,7 +17329,7 @@ const local_165b4cbe_2 = "c_iconWrapper";
 const local_3401e491_2 = "c_portalImage";
 const local_8ae6030b = "c_portalImageActive";
 const local_111bfc92_3 = "c_badge";
-const local_236f2925 = {
+const local_6a5ba56f = {
   mobileNavigationWrapper: local_05ae2d1f,
   navigation: local_abaccb0a,
   indicator: local_c8bbfbe3,
@@ -18154,7 +18169,7 @@ const local_9e87ce8c_3 = "c_button";
 const local_7dbba3b2 = "c_linkForm";
 const local_81920a20 = "c_linkInput";
 const local_c7fa00fe = "c_linkSubmit";
-const local_b37a0b40 = {
+const local_41e5f641 = {
   editor: local_7b2acc5c_2,
   empty: local_119f77f9,
   bold: local_57dba5d3,
@@ -18173,14 +18188,14 @@ const local_b37a0b40 = {
   linkSubmit: local_c7fa00fe,
 };
 const local_dbbaf3b2 = {
-  bold: local_b37a0b40.bold,
-  italic: local_b37a0b40.italic,
-  underline: local_b37a0b40.underline,
-  strike: local_b37a0b40.strike,
-  spoiler: local_b37a0b40.spoiler,
-  monospace: local_b37a0b40.monospace,
-  quote: local_b37a0b40.quote,
-  link: local_b37a0b40.link,
+  bold: local_41e5f641.bold,
+  italic: local_41e5f641.italic,
+  underline: local_41e5f641.underline,
+  strike: local_41e5f641.strike,
+  spoiler: local_41e5f641.spoiler,
+  monospace: local_41e5f641.monospace,
+  quote: local_41e5f641.quote,
+  link: local_41e5f641.link,
 };
 function fn_6e13c644(arg) {
   return arg
@@ -18199,7 +18214,7 @@ function fn_2a874703(arg) {
 function fn_9d34860e(arg) {
   return arg !== "mention" && arg !== "hashtag";
 }
-function fn_a20b5fc5(arg, arg_2) {
+function fn_5d384217(arg, arg_2) {
   if (arg_2.length === 0) {
     return arg;
   }
@@ -18490,7 +18505,7 @@ const local_7fa9686b = symbol_044(function (
     for (const local of local_2) {
       if (local.pos > local_4) {
         const local = arg.substring(local_4, local.pos);
-        local_3 += fn_a20b5fc5(fn_6e13c644(local), local_5);
+        local_3 += fn_5d384217(fn_6e13c644(local), local_5);
         local_4 = local.pos;
       }
       if (local.type === "start") {
@@ -18504,7 +18519,7 @@ const local_7fa9686b = symbol_044(function (
     }
     if (local_4 < arg.length) {
       const local = arg.substring(local_4);
-      local_3 += fn_a20b5fc5(fn_6e13c644(local), local_5);
+      local_3 += fn_5d384217(fn_6e13c644(local), local_5);
     }
     return local_3 || "<br>";
   }, [arg, arg_2]);
@@ -18787,7 +18802,7 @@ const local_7fa9686b = symbol_044(function (
     children: [
       symbol_073("div", {
         ref: local,
-        className: `${local_b37a0b40.editor} ${arg_7} ${local_27 ? local_b37a0b40.empty : ""}`,
+        className: `${local_41e5f641.editor} ${arg_7} ${local_27 ? local_41e5f641.empty : ""}`,
         contentEditable: true,
         "data-placeholder": arg_4,
         onInput: (arg) => local_19(arg),
@@ -18811,41 +18826,41 @@ const local_7fa9686b = symbol_044(function (
         symbol_001(
           symbol_073("div", {
             ref: local_10,
-            className: local_b37a0b40.menu,
+            className: local_41e5f641.menu,
             style: {
               left: local_4.x,
               top: local_4.y,
             },
             children: local_6
               ? symbol_073("form", {
-                  className: local_b37a0b40.linkForm,
+                  className: local_41e5f641.linkForm,
                   onSubmit: local_26,
                   children: [
                     symbol_073("input", {
                       ref: local_11,
                       type: "url",
-                      className: local_b37a0b40.linkInput,
+                      className: local_41e5f641.linkInput,
                       placeholder: "https://...",
                       value: local_8,
                       onInput: (arg) => local_9(arg.target.value),
                     }),
                     symbol_073("button", {
                       type: "submit",
-                      className: local_b37a0b40.linkSubmit,
+                      className: local_41e5f641.linkSubmit,
                       disabled: !local_8.trim(),
                       children: "OK",
                     }),
                   ],
                 })
               : symbol_073("div", {
-                  className: local_b37a0b40.buttons,
+                  className: local_41e5f641.buttons,
                   children: local_f05391d9.map(
                     ({ type: arg, icon: arg_2, title: arg_3 }) =>
                       symbol_073(
                         "button",
                         {
                           type: "button",
-                          className: local_b37a0b40.button,
+                          className: local_41e5f641.button,
                           onClick: () => local_25(arg),
                           title: arg_3,
                           children: symbol_073(arg_2, {
@@ -20312,7 +20327,7 @@ function fn_c467be0d(arg, arg_2, arg_3, arg_4) {
   }
   return Math.min(arg_2, arg_4) * local;
 }
-function fn_20213ab1({
+function fn_3e65b80a({
   media: arg,
   isFeed: arg_2 = false,
   postVs: arg_3,
@@ -20725,7 +20740,7 @@ const local_89524df6 = {
 const local_ca66b2a4 = "c_hint";
 const local_5b0e20a9 = "c_multiline";
 const local_06d417e6 = "c_arrow";
-const local_8825fe8b = {
+const local_84b00f5b = {
   hint: local_ca66b2a4,
   multiline: local_5b0e20a9,
   arrow: local_06d417e6,
@@ -20791,7 +20806,7 @@ function symbol_047({
       local_2 &&
         symbol_001(
           symbol_073("div", {
-            className: `${local_8825fe8b.hint} ${arg_4 ? local_8825fe8b.multiline : ""}`,
+            className: `${local_84b00f5b.hint} ${arg_4 ? local_84b00f5b.multiline : ""}`,
             style: {
               left: `${local_2.x}px`,
               top: `${local_2.y}px`,
@@ -20799,7 +20814,7 @@ function symbol_047({
             children: [
               arg,
               symbol_073("span", {
-                className: local_8825fe8b.arrow,
+                className: local_84b00f5b.arrow,
               }),
             ],
           }),
@@ -21406,7 +21421,7 @@ function fn_5ef7518c({ attachments: arg, postVs: arg_2, source: arg_3 }) {
   }
   return symbol_073("div", {
     className: local_b6f17743.originalPostMedia,
-    children: symbol_073(fn_20213ab1, {
+    children: symbol_073(fn_3e65b80a, {
       media: local,
       postVs: arg_2,
       source: arg_3,
@@ -21783,7 +21798,7 @@ const symbol_055 = symbol_052(
                     ],
                   }),
                 local_47.length > 0 &&
-                  symbol_073(fn_20213ab1, {
+                  symbol_073(fn_3e65b80a, {
                     media: local_47,
                     isFeed: local,
                     postVs: arg.vs,
@@ -21893,7 +21908,7 @@ const local_9bd7cd8f_2 = "c_reactionWrapper";
 const local_ce99aa82 = "c_commentAction";
 const local_5ab563c6_2 = "c_liked";
 const local_4da1f290 = "c_replyButton";
-const local_eebdfea4 = {
+const local_074cb7eb = {
   commentWrapper: local_3efedb04,
   threadItem: local_e82cf97b,
   avatarWrapper: local_400b701e,
@@ -21989,12 +22004,12 @@ const local_4d88b603 = symbol_052(function ({
   }, [local_3, local_4, arg_2, arg_13, arg_14, arg_12]);
   const local_7 = `/@${arg.username ?? arg.id}`;
   return symbol_073("div", {
-    className: `${local_eebdfea4.comment} ${local_5 ? local_eebdfea4.small : ""}`,
+    className: `${local_074cb7eb.comment} ${local_5 ? local_074cb7eb.small : ""}`,
     children: [
       !arg_16 &&
         symbol_073("a", {
           href: local_7,
-          className: local_eebdfea4.avatarLink,
+          className: local_074cb7eb.avatarLink,
           children: symbol_073(symbol_058, {
             src: arg.avatar,
             alt: arg.displayName,
@@ -22002,17 +22017,17 @@ const local_4d88b603 = symbol_052(function ({
           }),
         }),
       symbol_073("div", {
-        className: local_eebdfea4.commentContent,
+        className: local_074cb7eb.commentContent,
         children: [
           symbol_073("div", {
-            className: local_eebdfea4.commentHeader,
+            className: local_074cb7eb.commentHeader,
             children: [
               symbol_073("div", {
-                className: local_eebdfea4.commentHeaderLeft,
+                className: local_074cb7eb.commentHeaderLeft,
                 children: [
                   symbol_073("a", {
                     href: local_7,
-                    className: local_eebdfea4.authorLink,
+                    className: local_074cb7eb.authorLink,
                     children: symbol_073(symbol_022, {
                       name: arg.displayName,
                       verified: arg.isVerified,
@@ -22022,7 +22037,7 @@ const local_4d88b603 = symbol_052(function ({
                     }),
                   }),
                   symbol_073("span", {
-                    className: local_eebdfea4.commentTime,
+                    className: local_074cb7eb.commentTime,
                     children: local,
                   }),
                 ],
@@ -22033,20 +22048,20 @@ const local_4d88b603 = symbol_052(function ({
                 }),
                 items: local_6,
                 position: "bottom-right",
-                className: local_eebdfea4.moreButton,
+                className: local_074cb7eb.moreButton,
               }),
             ],
           }),
           (arg_15 || arg_3) &&
             symbol_073("div", {
-              className: local_eebdfea4.commentText,
+              className: local_074cb7eb.commentText,
               children: [
                 arg_15 &&
                   symbol_073(symbol_063, {
                     children: [
                       symbol_073("a", {
                         href: `/@${arg_15.username}`,
-                        className: local_eebdfea4.replyMention,
+                        className: local_074cb7eb.replyMention,
                         children: ["@", arg_15.displayName],
                       }),
                       ", ",
@@ -22061,8 +22076,8 @@ const local_4d88b603 = symbol_052(function ({
             }),
           fn_9f548ab4(arg_5).length > 0 &&
             symbol_073("div", {
-              className: local_eebdfea4.commentMedia,
-              children: symbol_073(fn_20213ab1, {
+              className: local_074cb7eb.commentMedia,
+              children: symbol_073(fn_3e65b80a, {
                 media: fn_9f548ab4(arg_5),
               }),
             }),
@@ -22082,17 +22097,17 @@ const local_4d88b603 = symbol_052(function ({
               ),
             ),
           symbol_073("div", {
-            className: local_eebdfea4.commentActions,
+            className: local_074cb7eb.commentActions,
             children: [
               symbol_073("button", {
-                className: local_eebdfea4.replyButton,
+                className: local_074cb7eb.replyButton,
                 onClick: arg_11,
                 children: "Ответить",
               }),
               symbol_073("div", {
-                className: local_eebdfea4.reactionWrapper,
+                className: local_074cb7eb.reactionWrapper,
                 children: symbol_073("button", {
-                  className: `${local_eebdfea4.commentAction} ${arg_8 ? local_eebdfea4.liked : ""}`,
+                  className: `${local_074cb7eb.commentAction} ${arg_8 ? local_074cb7eb.liked : ""}`,
                   onClick: () => arg_10(),
                   children: [
                     symbol_073(symbol_030, {
@@ -22161,7 +22176,7 @@ const local_674663e9 = symbol_052(function ({
     })),
   ];
   return symbol_073("div", {
-    className: `${local_eebdfea4.commentWrapper} ${local_4 ? "flash-highlight" : ""}`,
+    className: `${local_074cb7eb.commentWrapper} ${local_4 ? "flash-highlight" : ""}`,
     "data-comment-id": arg.id,
     children: [
       local_6.map((arg, arg_2) => {
@@ -22171,14 +22186,14 @@ const local_674663e9 = symbol_052(function ({
           "div",
           {
             "data-comment-id": arg.data.id,
-            className: `${local_eebdfea4.threadItem} ${local_2 ? "flash-highlight" : ""}`,
+            className: `${local_074cb7eb.threadItem} ${local_2 ? "flash-highlight" : ""}`,
             children: [
               symbol_073("div", {
-                className: local_eebdfea4.avatarWrapper,
+                className: local_074cb7eb.avatarWrapper,
                 children: [
                   symbol_073("a", {
                     href: `/@${arg.author.username ?? arg.author.id}`,
-                    className: local_eebdfea4.avatarLink,
+                    className: local_074cb7eb.avatarLink,
                     children: symbol_073(symbol_058, {
                       src: arg.author.avatar,
                       alt: arg.author.displayName,
@@ -22187,12 +22202,12 @@ const local_674663e9 = symbol_052(function ({
                   }),
                   local &&
                     symbol_073("div", {
-                      className: local_eebdfea4.threadLine,
+                      className: local_074cb7eb.threadLine,
                     }),
                 ],
               }),
               symbol_073("div", {
-                className: local_eebdfea4.commentBody,
+                className: local_074cb7eb.commentBody,
                 children: symbol_073(local_4d88b603, {
                   author: arg.author,
                   commentId: arg.data.id,
@@ -22237,22 +22252,22 @@ const local_674663e9 = symbol_052(function ({
       }),
       local &&
         symbol_073("div", {
-          className: local_eebdfea4.threadItem,
+          className: local_074cb7eb.threadItem,
           children: [
             symbol_073("div", {
-              className: local_eebdfea4.avatarWrapper,
+              className: local_074cb7eb.avatarWrapper,
               children: [
                 symbol_073("div", {
-                  className: local_eebdfea4.avatarPlaceholder,
+                  className: local_074cb7eb.avatarPlaceholder,
                 }),
                 local_5 &&
                   symbol_073("div", {
-                    className: local_eebdfea4.threadLine,
+                    className: local_074cb7eb.threadLine,
                   }),
               ],
             }),
             symbol_073("div", {
-              className: local_eebdfea4.commentBody,
+              className: local_074cb7eb.commentBody,
               children: symbol_073(symbol_025, {
                 placeholder: "Написать ответ...",
                 replyTo: {
@@ -22270,7 +22285,7 @@ const local_674663e9 = symbol_052(function ({
       local_5 &&
         !arg_13 &&
         symbol_073("button", {
-          className: local_eebdfea4.showMoreBtn,
+          className: local_074cb7eb.showMoreBtn,
           onClick: () => arg_9(arg.id),
           children: [
             "Показать ещё ",
@@ -22608,7 +22623,7 @@ const local_f06debfc_64 = 8;
 const local_f06debfc_65 = 100;
 const local_f06debfc_66 = 150;
 const local_f06debfc_67 = 150;
-function fn_06bf3f19({
+function fn_b143dc03({
   onEmojiSelect: arg,
   buttonClassName: arg_2,
   size: arg_3 = 20,
@@ -22885,7 +22900,7 @@ function fn_bfb01173({
               className: local_9bab1bec.mediaButtons,
               children:
                 !local_4 &&
-                symbol_073(fn_06bf3f19, {
+                symbol_073(fn_b143dc03, {
                   onEmojiSelect: local_17,
                   buttonClassName: local_9bab1bec.mediaButton,
                 }),
@@ -23537,7 +23552,7 @@ function symbol_015({
                 children: symbol_073(local_e89bf398, {}),
               }),
               !local_14 &&
-                symbol_073(fn_06bf3f19, {
+                symbol_073(fn_b143dc03, {
                   onEmojiSelect: local_47,
                   buttonClassName: local_6930e397.mediaButton,
                 }),
@@ -23735,7 +23750,7 @@ function fn_e1d37297({
               className: local_7f9fe33f.mediaButtons,
               children:
                 !local_4 &&
-                symbol_073(fn_06bf3f19, {
+                symbol_073(fn_b143dc03, {
                   onEmojiSelect: local_17,
                   buttonClassName: local_7f9fe33f.mediaButton,
                 }),
@@ -23892,7 +23907,7 @@ function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
     }),
   });
 }
-const local_1ae1f526 = () => {
+const local_1b97192d = () => {
   const local = symbol_061();
   const local_2 = symbol_007();
   const { initialize: local_3, disconnectSSE: local_4 } = local_e4a1ecd0();
@@ -24015,7 +24030,7 @@ const local_1ae1f526 = () => {
     if (!local) {
       return;
     }
-    const local_2 = local.querySelector(`.${local_236f2925.active}`);
+    const local_2 = local.querySelector(`.${local_6a5ba56f.active}`);
     if (local_2) {
       const local = local_13.current.indexOf(local_2);
       if (local !== -1) {
@@ -24030,7 +24045,7 @@ const local_1ae1f526 = () => {
       return;
     }
     const local_2 = () => {
-      const local = local.querySelector(`.${local_236f2925.active}`);
+      const local = local.querySelector(`.${local_6a5ba56f.active}`);
       if (local) {
         const local = local_13.current.indexOf(local);
         if (local !== -1) {
@@ -24053,14 +24068,14 @@ const local_1ae1f526 = () => {
     return null;
   }
   return symbol_073("div", {
-    className: local_236f2925.mobileNavigationWrapper,
+    className: local_6a5ba56f.mobileNavigationWrapper,
     children: [
       symbol_073("nav", {
         ref: local_14,
-        className: local_236f2925.navigation,
+        className: local_6a5ba56f.navigation,
         children: [
           symbol_073("div", {
-            className: `${local_236f2925.indicator} ${local_11 ? "" : local_236f2925.indicatorHidden}`,
+            className: `${local_6a5ba56f.indicator} ${local_11 ? "" : local_6a5ba56f.indicatorHidden}`,
             style: local_9,
           }),
           local_8.map((arg, arg_2) => {
@@ -24084,7 +24099,7 @@ const local_1ae1f526 = () => {
                     local_25(arg_2);
                   }
                 },
-                className: `${local_236f2925.navItem} ${local_5 ? local_236f2925.active : ""}`,
+                className: `${local_6a5ba56f.navItem} ${local_5 ? local_6a5ba56f.active : ""}`,
                 onClick: (arg) => {
                   if (local_5 && arg.id === "feed") {
                     arg.preventDefault();
@@ -24093,14 +24108,14 @@ const local_1ae1f526 = () => {
                 },
                 children: [
                   symbol_073("span", {
-                    className: local_236f2925.iconWrapper,
+                    className: local_6a5ba56f.iconWrapper,
                     children: local_2
                       ? symbol_073("img", {
                           src: local_5.active
                             ? "/assets/portal/portal-active.gif"
                             : "./assets/portal-inactive.png",
                           alt: "Ивент",
-                          className: `${local_236f2925.portalImage} ${local_5.active ? local_236f2925.portalImageActive : ""}`,
+                          className: `${local_6a5ba56f.portalImage} ${local_5.active ? local_6a5ba56f.portalImageActive : ""}`,
                         })
                       : symbol_073(symbol_063, {
                           children: [
@@ -24110,20 +24125,20 @@ const local_1ae1f526 = () => {
                             arg.id === "notifications" &&
                               local_19 > 0 &&
                               symbol_073("span", {
-                                className: local_236f2925.badge,
+                                className: local_6a5ba56f.badge,
                                 children: local_19 > 99 ? "99+" : local_19,
                               }),
                             arg.id === "shop" &&
                               local_20 > 0 &&
                               symbol_073("span", {
-                                className: local_236f2925.badge,
+                                className: local_6a5ba56f.badge,
                                 children: local_20,
                               }),
                           ],
                         }),
                   }),
                   symbol_073("span", {
-                    className: local_236f2925.label,
+                    className: local_6a5ba56f.label,
                     children: arg.label,
                   }),
                 ],
@@ -24135,7 +24150,7 @@ const local_1ae1f526 = () => {
       }),
       local_2 &&
         symbol_073("button", {
-          className: local_236f2925.createButton,
+          className: local_6a5ba56f.createButton,
           onClick: local_26,
           "aria-label": "Создать пост",
           children: symbol_073(symbol_065, {}),
@@ -24296,7 +24311,7 @@ function fn_5854f35f({ toasts: arg, onRemove: arg_2, onClearAll: arg_3 }) {
         className: `${local_4f4408db.toastList} ${local ? local_4f4408db.clearing : ""}`,
         children: local_4.map((arg, arg_2) =>
           symbol_073(
-            fn_f55c5bbe,
+            fn_d77c5a70,
             {
               toast: arg,
               onRemove: arg_2,
@@ -24369,7 +24384,7 @@ function fn_a844a33b(arg) {
   }
   return local_5 || "/notifications";
 }
-function fn_f55c5bbe({
+function fn_d77c5a70({
   toast: arg,
   onRemove: arg_2,
   clearingDelay: arg_3 = 0,
@@ -24825,7 +24840,7 @@ const local_ba097f2c = ({ children: arg }) => {
         children: [
           local_9 &&
             (local
-              ? symbol_073(local_1ae1f526, {})
+              ? symbol_073(local_1b97192d, {})
               : symbol_073(local_610f3303, {})),
           local_9 && !local && symbol_073(local_945b98e5, {}),
           symbol_073("div", {
@@ -25225,7 +25240,7 @@ const local_382fe44d = {
   pill: local_51204fb7,
   list: local_e9ccbd22_2,
 };
-function fn_af1450fa(arg) {
+function fn_2ef394dd(arg) {
   switch (arg) {
     case "short":
       return symbol_073("div", {
@@ -25293,7 +25308,7 @@ function fn_af1450fa(arg) {
       });
   }
 }
-function fn_909c5e8a({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
+function fn_65a75b4d({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
   const local = arg_2
     ? {
         "--shimmer-delay": `${arg_2}ms`,
@@ -25323,7 +25338,7 @@ function fn_909c5e8a({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
                 }),
               ],
             }),
-            fn_af1450fa(arg),
+            fn_2ef394dd(arg),
             symbol_073("div", {
               className: local_382fe44d.actions,
               children: [
@@ -25358,7 +25373,7 @@ function symbol_017({ count: arg = 4 }) {
       },
       (arg, arg_2) =>
         symbol_073(
-          fn_909c5e8a,
+          fn_65a75b4d,
           {
             variant: local_b9554821[arg_2 % local_b9554821.length],
             delayMs: arg_2 * 120,
@@ -25507,7 +25522,7 @@ function symbol_023({
           style: {
             marginTop: `${local_9}px`,
           },
-          children: symbol_073(fn_909c5e8a, {
+          children: symbol_073(fn_65a75b4d, {
             variant: "medium",
           }),
         }),
@@ -25909,7 +25924,7 @@ function fn_2fde2b5f() {
   const local_3 = symbol_029((arg) => arg.isOpen);
   fn_7d2d0183();
   return symbol_073(fn_6f3a9292, {
-    children: symbol_073(fn_cbb9e3eb, {
+    children: symbol_073(fn_16376bbf, {
       children: symbol_073(fn_fc99b4db, {
         currentPath: local,
         children: [

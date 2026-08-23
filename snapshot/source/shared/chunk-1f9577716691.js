@@ -166,7 +166,7 @@ const local_143ad0dd = {
 };
 const local_4cc8ec46 = 50 * 1024 * 1024;
 const local_865f321e = ["video/mp4", "video/webm", "video/quicktime"];
-export function fn_e49d7cc0({ onClose: arg }) {
+export function fn_4ee55bd3({ onClose: arg }) {
   const [local, local_2] = imported_2("loading");
   const [local_3, local_4] = imported_2(null);
   const [local_5, local_6] = imported_2(null);
@@ -427,4 +427,4 @@ export function fn_e49d7cc0({ onClose: arg }) {
     }),
   });
 }
-export { fn_e49d7cc0 as default };
+export { fn_4ee55bd3 as default };

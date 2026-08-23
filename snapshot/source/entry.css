@@ -9,7 +9,7 @@
   --accent-secondary: #60a5fa;
   --accent-hover: #2563eb;
   --accent-like: #f91880;
-  --accent-liked: #f91880;
+  --accent-liked: #ff7663;
   --accent-repost: #00ba7c;
   --link-color: #5b8ec9;
   --border-color: rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@
   --accent-secondary: #3b82f6;
   --accent-hover: #93c5fd;
   --accent-like: #f91880;
-  --accent-liked: #f91880;
+  --accent-liked: #ff7663;
   --accent-repost: #00ba7c;
   --link-color: #6a9fd4;
   --border-color: rgba(255, 255, 255, 0.15);
@@ -512,7 +512,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_b848901744 {
+.c_bottomSheet.c_auto_89d2c44b83 {
   animation: keyframe_9 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -2157,7 +2157,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_14e4ab5fcd {
+.c_textInput.c_entering .c_auto_4578177f14 {
   animation: keyframe_16 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -2773,7 +2773,7 @@ h6 {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_7f24b9d2e1 {
+.c_auto_3eb98e08b9 {
   display: block;
   animation: keyframe_24 0.4s ease;
 }
@@ -3196,7 +3196,7 @@ h6 {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_9ba902f290 {
+.c_auto_908a4e3c05 {
   animation: keyframe_27 0.4s ease;
 }
 .c_auto_7f6ce735eb {

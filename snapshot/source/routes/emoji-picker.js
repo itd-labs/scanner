@@ -302,7 +302,7 @@ const local_18921ecf = ({
       onInput: (arg) => arg_2(arg.target.value),
     }),
   });
-export const local_dba5fc49 = ({
+export const local_b5b0095e = ({
   onEmojiSelect: arg,
   onClose: arg_2,
   width: arg_3 = 280,
@@ -462,4 +462,4 @@ export const local_dba5fc49 = ({
     ],
   });
 };
-export { local_dba5fc49 as default };
+export { local_b5b0095e as default };

@@ -43,7 +43,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_736b4603({
+function fn_4b406778({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -196,7 +196,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_5e99e5cf,
+      fn_1e515f7c,
       {
         options: local_2,
         onUnmount: local_4,
@@ -206,7 +206,7 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_5e99e5cf({ options: arg, onUnmount: arg_2 }) {
+function fn_1e515f7c({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
@@ -705,7 +705,7 @@ function fn_5e99e5cf({ options: arg, onUnmount: arg_2 }) {
                 children: [
                   imported_3("div", {
                     className: local_2ba33e70.volumeSlider,
-                    children: imported_3(fn_736b4603, {
+                    children: imported_3(fn_4b406778, {
                       value: local_13 ? 0 : local_11,
                       onChange: local_37,
                       onDragStart: () => {

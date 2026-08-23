@@ -76,7 +76,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   loginLink: local_8ed84883,
 };
-export const local_01d34dde = (arg) => {
+export const local_cd8455ef = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -320,4 +320,4 @@ export const local_01d34dde = (arg) => {
     ],
   });
 };
-export { local_01d34dde as default };
+export { local_cd8455ef as default };

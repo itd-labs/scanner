@@ -340,7 +340,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_8957b73e({
+export function fn_2a454b47({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
