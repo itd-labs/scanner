@@ -1,0 +1,112 @@
+.c_postPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.c_pageHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  padding: 16px;
+}
+.c_pageHeader .c_pageTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.c_postSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 80px;
+}
+@media (min-width: 1174px) {
+  .c_postSection {
+    background-color: var(--block-bg);
+    border-radius: 36px 36px 0 0;
+  }
+}
+@media (max-width: 1173px) {
+  .c_postSection {
+    padding-bottom: 176px;
+  }
+}
+.c_backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+.c_backButton:hover {
+  background: var(--bg-hover);
+}
+.c_post {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+@media (max-width: 1173px) {
+  .c_post {
+    border-top: 1px solid var(--border-color);
+  }
+}
+@media (min-width: 1174px) {
+  .c_post {
+    padding: 24px;
+  }
+}
+.c_commentsSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.c_fixedInputWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: var(--content-max-width);
+  z-index: 100;
+  border-top: 1px solid var(--border-color);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+@media (max-width: 1173px) {
+  .c_fixedInputWrapper {
+    bottom: 96px;
+    border-top: none;
+  }
+}
+.c_notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 24px;
+  text-align: center;
+}
+.c_notFound h2 {
+  font-size: 20px;
+  color: var(--text-primary);
+}
+.c_notFound button {
+  padding: 12px 24px;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.c_notFound button:hover {
+  opacity: 0.9;
+}

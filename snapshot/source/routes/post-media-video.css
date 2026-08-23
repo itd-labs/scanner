@@ -1,0 +1,228 @@
+.c_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 80px;
+  cursor: pointer;
+}
+.c_track {
+  position: relative;
+  width: 4px;
+  height: 100%;
+  background: #ffffff40;
+  border-radius: 2px;
+}
+.c_fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.c_thumb {
+  position: absolute;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, 50%);
+  pointer-events: none;
+}
+.c_container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+  height: 300px;
+}
+@media (min-width: 1174px) {
+  .c_container {
+    height: 500px;
+  }
+}
+.c_container.c_hidden .c_video {
+  filter: blur(30px);
+  transform: scale(1.1);
+}
+.c_container.c_revealing .c_video {
+  filter: blur(0);
+  transform: scale(1);
+}
+.c_container.c_revealing .c_canvas {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.c_video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease;
+}
+.c_duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #000000b3;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 2;
+}
+.c_bottomOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding-top: 64px;
+  box-sizing: border-box;
+  cursor: pointer;
+  touch-action: none;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(0deg, #0003, #0000);
+  pointer-events: none;
+}
+.c_bottomOverlay > * {
+  pointer-events: auto;
+}
+.c_volumeControl {
+  position: absolute;
+  bottom: 32px;
+  right: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  background: #0000004d;
+  border-radius: 18px;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+.c_volumeControl:hover,
+.c_volumeControl.c_active {
+  height: 129px;
+}
+.c_volumeSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 88px;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+.c_muteButton {
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+.c_muteButton:hover {
+  opacity: 0.85;
+}
+.c_muteButton svg {
+  display: block;
+}
+.c_muteButtonMobile {
+  position: absolute;
+  bottom: 32px;
+  right: 56px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0000004d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.c_muteButtonMobile svg {
+  display: block;
+}
+.c_controlButton {
+  position: absolute;
+  bottom: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0000004d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.c_controlButton:hover {
+  opacity: 0.85;
+}
+.c_controlButton svg {
+  display: block;
+}
+.c_playButton {
+  left: 12px;
+}
+.c_fullscreenButton {
+  right: 12px;
+}
+.c_progressContainer {
+  flex: 1;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  touch-action: none;
+  display: flex;
+  align-items: flex-end;
+}
+.c_progressTrack {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #ffffff40;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.c_progressFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  will-change: width;
+  transition: width 0.25s linear;
+}
+.c_progressFill.c_scrubbing {
+  transition: none;
+}
+.c_canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}

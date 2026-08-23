@@ -1,0 +1,118 @@
+.c_page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 1173px) {
+  .c_page {
+    gap: 16px;
+  }
+}
+.c_header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 1173px) {
+  .c_header {
+    padding: 16px 16px 0;
+  }
+}
+.c_backButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.c_backButton:hover {
+  color: var(--text-primary);
+}
+.c_hashtagName {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin: 0;
+}
+@media (max-width: 1173px) {
+  .c_hashtagName {
+    font-size: 24px;
+  }
+}
+.c_auto_f624773c99 {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+@media (max-width: 1173px) {
+  .c_auto_f624773c99 {
+    font-size: 13px;
+  }
+}
+.c_empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 48px 24px;
+  text-align: center;
+}
+@media (max-width: 1173px) {
+  .c_empty {
+    padding: 32px 16px;
+  }
+}
+.c_auto_39e243cc76 {
+  color: var(--text-secondary);
+}
+.c_emptyText {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+@media (max-width: 1173px) {
+  .c_emptyText {
+    font-size: 14px;
+  }
+}
+.c_error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 24px;
+  text-align: center;
+}
+@media (max-width: 1173px) {
+  .c_error {
+    padding: 32px 16px;
+  }
+}
+.c_errorText {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+@media (max-width: 1173px) {
+  .c_errorText {
+    font-size: 14px;
+  }
+}
+.c_retryButton {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--accent-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.c_retryButton:hover {
+  opacity: 0.9;
+}

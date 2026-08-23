@@ -1,0 +1,324 @@
+.c_modalContent {
+  padding: 0 !important;
+  overflow: hidden;
+}
+.c_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 64px);
+  background: var(--block-bg);
+}
+.c_toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  flex-wrap: wrap;
+}
+@media (max-width: 1173px) {
+  .c_toolbar {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+}
+.c_toolGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.c_separator {
+  width: 1px;
+  height: 24px;
+  background: var(--border-color);
+  margin: 0 4px;
+}
+@media (max-width: 1173px) {
+  .c_separator {
+    display: none;
+  }
+}
+.c_spacer {
+  flex: 1;
+}
+@media (max-width: 1173px) {
+  .c_spacer {
+    display: none;
+  }
+}
+.c_toolButton {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.15s ease;
+}
+.c_toolButton:hover:not(:disabled) {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+.c_toolButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.c_toolButton.c_active {
+  background: var(--accent-color);
+  color: #fff;
+}
+@media (max-width: 1173px) {
+  .c_toolButton {
+    width: 32px;
+    height: 32px;
+  }
+}
+.c_sizeButton {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.c_sizeButton:hover {
+  border-color: var(--border-color);
+}
+.c_sizeButton.c_active {
+  border-color: var(--accent-color);
+}
+@media (max-width: 1173px) {
+  .c_sizeButton {
+    width: 28px;
+    height: 28px;
+  }
+}
+.c_sizePreview {
+  display: block;
+  background: var(--text-primary);
+  border-radius: 50%;
+  min-width: 4px;
+  min-height: 4px;
+}
+.c_colorPalette {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1173px) {
+  .c_colorPalette {
+    gap: 3px;
+  }
+}
+.c_colorButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: inset 0 0 0 1px #0000001a;
+}
+.c_colorButton:hover {
+  transform: scale(1.1);
+}
+.c_colorButton.c_active {
+  border-color: var(--accent-color);
+  transform: scale(1.15);
+}
+@media (max-width: 1173px) {
+  .c_colorButton {
+    width: 20px;
+    height: 20px;
+  }
+}
+.c_colorPicker {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+  overflow: hidden;
+}
+.c_colorPicker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.c_colorPicker::-webkit-color-swatch {
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+}
+@media (max-width: 1173px) {
+  .c_colorPicker {
+    width: 20px;
+    height: 20px;
+  }
+}
+.c_zoomLabel {
+  height: 36px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  padding: 0 4px;
+  transition: all 0.15s ease;
+}
+.c_zoomLabel:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+@media (max-width: 1173px) {
+  .c_zoomLabel {
+    height: 32px;
+    min-width: 40px;
+    font-size: 11px;
+  }
+}
+.c_canvasContainer {
+  flex: 1;
+  position: relative;
+  background: var(--bg-secondary);
+  overflow: hidden;
+  min-height: 450px;
+}
+.c_viewport {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: crosshair;
+}
+.c_actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+.c_cancelButton {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.c_cancelButton:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+.c_saveButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.c_saveButton:hover:not(:disabled) {
+  opacity: 0.9;
+}
+.c_saveButton:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.c_saveButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.c_saveButton svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.c_cancelButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c_confirmOverlay {
+  position: fixed;
+  inset: 0;
+  background: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+.c_confirmDialog {
+  background: var(--block-bg);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 360px;
+  width: 90%;
+}
+.c_confirmText {
+  font-size: 15px;
+  color: var(--text-primary);
+  margin: 0 0 20px;
+  line-height: 1.4;
+}
+.c_confirmActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.c_confirmCancel {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.c_confirmCancel:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+.c_confirmClose {
+  padding: 8px 16px;
+  background: var(--accent-like);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.c_confirmClose:hover {
+  opacity: 0.9;
+}

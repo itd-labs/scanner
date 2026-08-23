@@ -1,0 +1,253 @@
+.c_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 80px;
+  cursor: pointer;
+}
+.c_track {
+  position: relative;
+  width: 4px;
+  height: 100%;
+  background: #ffffff40;
+  border-radius: 2px;
+}
+.c_fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.c_thumb {
+  position: absolute;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, 50%);
+  pointer-events: none;
+}
+.c_overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.c_overlay .c_chrome {
+  animation: keyframe_1 0.18s ease-out 0.2s backwards;
+}
+.c_overlay.c_closing .c_backdrop,
+.c_overlay.c_closing .c_chrome {
+  opacity: 0;
+  transition: opacity 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  animation: none;
+}
+.c_overlay.c_closing .c_chrome {
+  pointer-events: none;
+}
+@keyframes keyframe_1 {
+  0% {
+    opacity: 0;
+  }
+}
+.c_overlayFade {
+  animation: keyframe_2 0.2s ease-out;
+}
+@keyframes keyframe_2 {
+  0% {
+    opacity: 0;
+  }
+}
+.c_backdrop {
+  position: absolute;
+  inset: 0;
+  background: #000000eb;
+  animation: keyframe_3 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  pointer-events: none;
+}
+@keyframes keyframe_3 {
+  0% {
+    opacity: 0;
+  }
+}
+.c_stage {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  cursor: pointer;
+  will-change: transform;
+}
+.c_video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  outline: none;
+}
+.c_poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+}
+.c_bottomOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding-top: 64px;
+  box-sizing: border-box;
+  touch-action: none;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(0deg, #00000073, #0000);
+  pointer-events: none;
+}
+.c_bottomOverlay > * {
+  pointer-events: auto;
+}
+.c_controlButton {
+  position: absolute;
+  bottom: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #00000059;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.c_controlButton:hover {
+  opacity: 0.85;
+}
+.c_controlButton svg {
+  display: block;
+}
+.c_playButton {
+  left: 12px;
+}
+.c_time {
+  position: absolute;
+  left: 58px;
+  bottom: 32px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  pointer-events: none !important;
+}
+.c_speedButton {
+  right: 100px;
+  width: 44px;
+  border-radius: 18px;
+  font-size: 12.5px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.c_volumeControl {
+  position: absolute;
+  bottom: 32px;
+  right: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  background: #00000059;
+  border-radius: 18px;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+.c_volumeControl:hover,
+.c_volumeControl.c_volumeActive {
+  height: 129px;
+}
+.c_volumeSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 88px;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+.c_muteButton {
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+.c_muteButton:hover {
+  opacity: 0.85;
+}
+.c_muteButton svg {
+  display: block;
+}
+.c_fullscreenButton {
+  right: 12px;
+}
+.c_progressContainer {
+  flex: 1;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  touch-action: none;
+  display: flex;
+  align-items: flex-end;
+}
+.c_progressTrack {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #ffffff40;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.c_progressBuffered {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #ffffff59;
+  border-radius: 999px;
+}
+.c_progressFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 999px;
+  will-change: width;
+}
+.c_progressFill.c_scrubbing {
+  transition: none;
+}

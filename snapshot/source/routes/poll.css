@@ -1,0 +1,211 @@
+.c_poll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-color: var(--block-bg);
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+}
+.c_poll.c_disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.c_header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (max-width: 1173px) {
+  .c_header {
+    gap: 8px;
+  }
+}
+.c_title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  overflow: hidden;
+}
+.c_meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+@media (max-width: 1173px) {
+  .c_meta {
+    align-items: unset;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+.c_voteCount {
+  color: var(--text-secondary);
+}
+.c_options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.c_option {
+  position: relative;
+  min-height: 44px;
+  padding: 12px 14px;
+  background-color: var(--block-bg-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background-color var(--transition-normal);
+}
+.c_option.c_disabled {
+  cursor: default;
+}
+.c_votingOption {
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.c_votingOption:hover {
+  border-color: var(--accent-color, #1d9bf0);
+  background: #1d9bf00a;
+}
+.c_votingOption.c_preselected {
+  border-color: var(--accent-color, #1d9bf0);
+  background: #1d9bf014;
+}
+.c_optionContent {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+.c_voted .c_optionContent {
+  justify-content: space-between;
+  gap: 12px;
+}
+.c_optionProgressWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+.c_optionProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--poll-selected-progress-color);
+  border-radius: 12px;
+}
+.c_optionContentInverted {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  gap: 12px;
+  box-sizing: border-box;
+}
+.c_optionContentInverted .c_optionText {
+  color: var(--poll-inverted-text);
+  flex-shrink: 0;
+}
+.c_optionContentInverted .c_optionPercent {
+  color: var(--poll-inverted-text);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.c_optionProgressSimple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--poll-progress-color);
+  border-radius: 12px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.c_optionText {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 400;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.c_voted .c_optionText {
+  font-weight: 500;
+}
+.c_optionPercent {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.c_checkmark {
+  color: var(--accent-color, #1d9bf0);
+  font-weight: 700;
+}
+.c_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+  color: transparent;
+}
+.c_checkbox.c_checkboxChecked {
+  background: var(--accent-color, #1d9bf0);
+  border-color: var(--accent-color, #1d9bf0);
+  color: #fff;
+}
+.c_submitBtn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent-color, #1d9bf0);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.c_submitBtn:hover {
+  opacity: 0.9;
+}
+.c_footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.c_revoteBtn {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent-color, #1d9bf0);
+  font-size: 13px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.c_revoteBtn:hover {
+  opacity: 0.8;
+}

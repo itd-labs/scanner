@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('theme-storage');
+          var theme = 'system';
+          if (stored) {
+            var parsed = JSON.parse(stored);
+            theme = parsed.state && parsed.state.theme ? parsed.state.theme : 'system';
+          }
+          var actualTheme = theme;
+          if (theme === 'system') {
+            actualTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', actualTheme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://mc.yandex.ru https://mc.yandex.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://cdn.jsdelivr.net https://*.xn--d1ah4a.com https://*.basemaps.cartocdn.com https://mc.yandex.ru https://mc.yandex.com; media-src 'self' blob: https://*.xn--d1ah4a.com; frame-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com https://*.xn--d1ah4a.com wss://*.xn--d1ah4a.com https://mc.yandex.ru wss://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.com;" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-itunes-app" content="app-id=6759969018" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet" />
+    <title>ИТД</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106738284', 'ym');
+      // Приватные поддеревья в вебвизор не попадают: они размечены классами
+      // ym-hide-content / ym-disable-keys (порталы меню/вьюеров, поля ввода).
+      ym(106738284, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/106738284" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="module" crossorigin src="/assets/index-DDTOXJaD.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-4bilolKF.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

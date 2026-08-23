@@ -1,0 +1,146 @@
+.c_auto_e1a7b38504 .content {
+  padding: 0;
+}
+.c_userListModal {
+  width: 100%;
+  max-width: 420px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+}
+@media (max-width: 1173px) {
+  .c_userListModal {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+}
+.c_auto_40904604db {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+.c_auto_d516197e9b {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.c_auto_cdd5667204 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.c_auto_cdd5667204:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+@media (max-width: 1173px) {
+  .c_auto_cdd5667204 {
+    display: none;
+  }
+}
+.c_content {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 200px;
+}
+.c_userList {
+  display: flex;
+  flex-direction: column;
+}
+.c_userItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  transition: background-color 0.15s ease;
+}
+.c_userItem.c_clickable {
+  cursor: pointer;
+}
+.c_userItem.c_clickable:hover {
+  background: var(--bg-secondary);
+}
+.c_userInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.c_displayName {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.c_displayName .c_auto_aa969e2ae3 {
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+.c_username {
+  font-size: 14px;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.c_followButton {
+  flex-shrink: 0;
+}
+.c_actionButtons {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.c_acceptButton,
+.c_rejectButton {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c_actionStatus {
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.c_auto_164eaadf13 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: var(--text-secondary);
+}
+.c_empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+.c_auto_d76e1fd937 {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.c_loadMoreSentinel {
+  height: 1px;
+}
