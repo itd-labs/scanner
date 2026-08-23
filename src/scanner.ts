@@ -22,7 +22,7 @@ import type {
 import { readPreviousManifest, writeMirror, writeSnapshot } from "./writer.js";
 
 const VERSION = "0.1.0";
-const NORMALIZATION_VERSION = 3;
+const NORMALIZATION_VERSION = 4;
 
 export async function scanSite(
   config: ScannerConfig,
@@ -127,9 +127,19 @@ export async function scanSite(
     }
   }
 
-  const analysis = analyzeJavaScript(decompiledByUrl.values());
+  const previousAnalysis =
+    previous?.generator.normalizationVersion === NORMALIZATION_VERSION
+      ? previous.analysis
+      : undefined;
+  const analysis = analyzeJavaScript(
+    decompiled.map(({ resource, source }) => ({
+      id: resource.logicalPath,
+      source,
+    })),
+    previousAnalysis,
+  );
   const manifest: SnapshotManifest = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generator: {
       name: "itd-scanner",
       version: VERSION,
@@ -157,10 +167,6 @@ export async function scanSite(
     })),
     analysis,
   };
-  const previousAnalysis =
-    previous?.generator.normalizationVersion === NORMALIZATION_VERSION
-      ? previous.analysis
-      : undefined;
   const summary = createSummaryMarkdown(analysis, previousAnalysis, {
     fingerprint,
     resources: resources.length,

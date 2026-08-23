@@ -54,6 +54,7 @@ export interface ManifestResource extends ResourceSignature {
 
 export interface AnalysisReport {
   routes: string[];
+  routeDefinitions: RouteDefinition[];
   endpoints: string[];
   webSockets: string[];
   storageKeys: string[];
@@ -61,8 +62,17 @@ export interface AnalysisReport {
   sentryReleases: string[];
 }
 
+export interface RouteDefinition {
+  table: string;
+  priority: number;
+  declaredPath: string;
+  effectivePath: string;
+  kind: "route" | "fallback";
+  constraints: string[];
+}
+
 export interface SnapshotManifest {
-  schemaVersion: 1;
+  schemaVersion: 2;
   generator: {
     name: "itd-scanner";
     version: string;
