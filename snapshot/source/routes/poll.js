@@ -79,7 +79,7 @@ const local_5d55bc8c = {
   footer: local_a0cefcb4,
   revoteBtn: local_8492d214,
 };
-export function fn_9f85c378({
+export function fn_20cb0213({
   title: arg,
   options: arg_2,
   totalVotes: arg_3,
@@ -445,4 +445,4 @@ export function fn_9f85c378({
     ],
   });
 }
-export { fn_9f85c378 as default };
+export { fn_20cb0213 as default };

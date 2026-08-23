@@ -445,7 +445,7 @@ const local_3cccfc6a = {
   outline: local_29e5fdcf,
   errorText: local_bcebeb33,
 };
-function fn_d13d3178({
+function fn_85a49694({
   value: arg,
   onChange: arg_2,
   label: arg_3,
@@ -590,7 +590,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Текущий пароль",
             }),
-            imported_3(fn_d13d3178, {
+            imported_3(fn_85a49694, {
               type: "password",
               value: local,
               onChange: local_2,
@@ -611,7 +611,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Новый пароль",
             }),
-            imported_3(fn_d13d3178, {
+            imported_3(fn_85a49694, {
               type: "password",
               value: local_3,
               onChange: local_4,
@@ -636,7 +636,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Подтверждение пароля",
             }),
-            imported_3(fn_d13d3178, {
+            imported_3(fn_85a49694, {
               type: "password",
               value: local_5,
               onChange: local_6,
@@ -1135,7 +1135,7 @@ const local_317424dd = imported_15(function (
               imported_3("div", {
                 className: local_b77a44cd.settingControl,
                 children: [
-                  imported_3(fn_d13d3178, {
+                  imported_3(fn_85a49694, {
                     value: local_19.name,
                     onChange: (arg) => local_29("name", arg),
                   }),
@@ -1171,7 +1171,7 @@ const local_317424dd = imported_15(function (
               imported_3("div", {
                 className: local_b77a44cd.settingControl,
                 children: [
-                  imported_3(fn_d13d3178, {
+                  imported_3(fn_85a49694, {
                     value: local_19.username,
                     onChange: (arg) => local_29("username", arg),
                   }),
@@ -1727,7 +1727,7 @@ function fn_b267a7cf(arg, arg_2) {
   }
   return local_2;
 }
-function fn_b6888d03() {
+function fn_34e82f4a() {
   const local = imported_19(null);
   const local_2 = imported_19(null);
   const local_3 = imported_19({
@@ -2030,7 +2030,7 @@ export function fn_30e987f3({ isOpen: arg, onClose: arg_2 }) {
       frameless: true,
       className: local_23034546.modal,
       children: [
-        imported_3(fn_b6888d03, {}),
+        imported_3(fn_34e82f4a, {}),
         imported_3("div", {
           className: local_23034546.sub,
           children: [
@@ -2371,7 +2371,7 @@ function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
 const local_f06debfc_5 = 5;
-function fn_0f03bcc0() {
+function fn_49f2822a() {
   const local = imported_10((arg) => arg.profile);
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -3090,7 +3090,7 @@ function fn_2d43bd11({ type: arg }) {
       });
   }
 }
-function fn_9c788d1e({ onChangePassword: arg }) {
+function fn_d727c3d6({ onChangePassword: arg }) {
   const [local, local_2] = imported_6([]);
   const [local_3, local_4] = imported_6(true);
   const [local_5, local_6] = imported_6(null);
@@ -4096,11 +4096,11 @@ export function fn_6f3fadc0({ onClose: arg }) {
           onClose: arg,
         });
       case "payment":
-        return imported_3(fn_0f03bcc0, {});
+        return imported_3(fn_49f2822a, {});
       case "appearance":
         return imported_3(fn_92ca2ba3, {});
       case "security":
-        return imported_3(fn_9c788d1e, {
+        return imported_3(fn_d727c3d6, {
           onChangePassword: () => local_7(true),
         });
       case "notifications":

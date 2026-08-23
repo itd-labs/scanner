@@ -39,7 +39,7 @@ import {
 const local_f50950e4 = new imported_3(1, 300 * 1000);
 const local_f50950e4_2 = new imported_3(1, 300 * 1000);
 const local_c07ef0a9 = "data";
-const local_90fe51e1 = {
+const local_c7b8b2c8 = {
   async getTrendingHashtags(arg = 10) {
     const local = local_f50950e4.get(local_c07ef0a9);
     if (local) {
@@ -78,22 +78,6 @@ const local_90fe51e1 = {
     local_f50950e4_2.set(local_c07ef0a9, local_3);
     return local_3;
   },
-  async searchUsers(arg, arg_2 = 20, arg_3) {
-    const local = new URLSearchParams({
-      q: arg,
-      limit: String(arg_2),
-    });
-    if (arg_3) {
-      local.append("cursor", arg_3);
-    }
-    const local_2 = await imported.get(
-      `${imported_2.users.search}?${local.toString()}`,
-    );
-    return {
-      data: local_2.data?.users || local_2.users || [],
-      nextCursor: null,
-    };
-  },
   async globalSearch(arg, arg_2 = 5, arg_3 = 5) {
     const local = new URLSearchParams({
       q: arg,
@@ -111,31 +95,6 @@ const local_90fe51e1 = {
         count: arg.count ?? arg.postsCount ?? 0,
       })),
     };
-  },
-  async searchHashtags(arg, arg_2 = 10) {
-    const local = new URLSearchParams({
-      limit: String(arg_2),
-    });
-    if (arg) {
-      local.set("q", arg);
-    }
-    const local_2 = await imported.get(
-      `${imported_2.hashtags.search}?${local.toString()}`,
-    );
-    let local_3;
-    if (local_2.data?.hashtags) {
-      local_3 = local_2.data.hashtags;
-    } else if (Array.isArray(local_2.hashtags)) {
-      local_3 = local_2.hashtags;
-    } else if (Array.isArray(local_2.data)) {
-      local_3 = local_2.data;
-    } else {
-      local_3 = [];
-    }
-    return local_3.map((arg) => ({
-      ...arg,
-      count: arg.count ?? arg.postsCount ?? 0,
-    }));
   },
 };
 const local_ef251bc6 = "c_page";
@@ -199,7 +158,7 @@ const local_18dd68e0 = (arg) => {
   }
   return arg.toString();
 };
-export const local_27022bee = (arg) => {
+export const local_b6d7f790 = (arg) => {
   const [local, local_2] = imported_4("");
   const [local_3, local_4] = imported_4([]);
   const [local_5, local_6] = imported_4([]);
@@ -213,8 +172,8 @@ export const local_27022bee = (arg) => {
     (async () => {
       try {
         const [local, local_2] = await Promise.all([
-          local_90fe51e1.getPopularAvatars(),
-          local_90fe51e1.getTrendingHashtags(),
+          local_c7b8b2c8.getPopularAvatars(),
+          local_c7b8b2c8.getTrendingHashtags(),
         ]);
         local_4(local.slice(0, 10));
         local_6(local_2.slice(0, 10));
@@ -236,7 +195,7 @@ export const local_27022bee = (arg) => {
     }
     local_16(true);
     try {
-      const local = await local_90fe51e1.globalSearch(local, 10, 5);
+      const local = await local_c7b8b2c8.globalSearch(local, 10, 5);
       local_8(local.users);
       local_10(local.hashtags);
     } catch (error) {
@@ -500,4 +459,4 @@ export const local_27022bee = (arg) => {
     ],
   });
 };
-export { local_27022bee as default };
+export { local_b6d7f790 as default };

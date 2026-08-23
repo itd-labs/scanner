@@ -447,7 +447,7 @@ const local_f06debfc_3 = 24;
 const local_f06debfc_4 = 80;
 const local_15086922 = "rgba(142, 142, 147, 0.6)";
 const local_3a5b5f52 = "#FFFFFF";
-function fn_e4ae8d9d({
+function fn_9bc11df4({
   levels: arg,
   slideOffset: arg_2,
   audioRef: arg_3,
@@ -864,7 +864,7 @@ export function fn_c0f09f71({
         children: [
           imported_5("div", {
             className: local_c9c49b86.waveformContainer,
-            children: imported_5(fn_e4ae8d9d, {
+            children: imported_5(fn_9bc11df4, {
               levels: local_6,
               slideOffset: local_7,
               audioRef: local_11,

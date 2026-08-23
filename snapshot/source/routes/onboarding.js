@@ -155,7 +155,7 @@ const local_968eaf70 = imported_9(() =>
     default: arg.EmojiPicker,
   })),
 );
-export const local_f3a22237 = (arg) => {
+export const local_435922dc = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -517,4 +517,4 @@ export const local_f3a22237 = (arg) => {
     ],
   });
 };
-export { local_f3a22237 as default };
+export { local_435922dc as default };

@@ -512,7 +512,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_a127cec1e1 {
+.c_bottomSheet.c_auto_59ce947e74 {
   animation: keyframe_9 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -2157,7 +2157,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_2b2be99b12 {
+.c_textInput.c_entering .c_auto_cf5aa32a89 {
   animation: keyframe_16 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -2773,7 +2773,7 @@ h6 {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_f35cc79b73 {
+.c_auto_722e77cb8d {
   display: block;
   animation: keyframe_24 0.4s ease;
 }
@@ -3196,7 +3196,7 @@ h6 {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_8510c50963 {
+.c_auto_680ea447bf {
   animation: keyframe_27 0.4s ease;
 }
 .c_auto_7f6ce735eb {
