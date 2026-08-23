@@ -1284,7 +1284,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_ca609069({
+function fn_8c9a3cce({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_d7a0578a({
+export function fn_e9408518({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_d7a0578a({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_ca609069, {
+          imported_6(fn_8c9a3cce, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_d7a0578a({
     document.body,
   );
 }
-export { fn_d7a0578a as default };
+export { fn_e9408518 as default };

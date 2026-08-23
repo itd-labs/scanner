@@ -44,7 +44,7 @@ const local_b3567ea0 = "c_expiredModal";
 const local_1482e028 = "c_expiredTitle";
 const local_2dca8ec3 = "c_expiredText";
 const local_6fcad58f = "c_expiredActions";
-const local_23639ded = {
+const local_8ce643f9 = {
   container: local_adb43aea,
   header: local_f1c23efb,
   title: local_9d9cf508,
@@ -57,7 +57,7 @@ const local_23639ded = {
   expiredText: local_2dca8ec3,
   expiredActions: local_6fcad58f,
 };
-export function fn_6bb306ff({ email: arg, onBack: arg_2 }) {
+function symbol_001({ email: arg, onBack: arg_2 }) {
   const { verifyOtp: local, resendOtp: local_2 } = imported();
   const [local_3, local_4] = imported_2(null);
   const [local_5, local_6] = imported_2(false);
@@ -151,17 +151,17 @@ export function fn_6bb306ff({ email: arg, onBack: arg_2 }) {
     arg_2?.();
   }, [arg_2]);
   return imported_7("div", {
-    className: local_23639ded.container,
+    className: local_8ce643f9.container,
     children: [
       imported_7("div", {
-        className: local_23639ded.header,
+        className: local_8ce643f9.header,
         children: [
           imported_7("h1", {
-            className: local_23639ded.title,
+            className: local_8ce643f9.title,
             children: "Подтверждение действия",
           }),
           imported_7("p", {
-            className: local_23639ded.subtitle,
+            className: local_8ce643f9.subtitle,
             children: [
               "Мы отправили шестизначный код на почту ",
               arg,
@@ -172,12 +172,12 @@ export function fn_6bb306ff({ email: arg, onBack: arg_2 }) {
       }),
       local_3 &&
         imported_7("div", {
-          className: local_23639ded.error,
+          className: local_8ce643f9.error,
           children: local_3,
         }),
       local_7 &&
         imported_7("div", {
-          className: local_23639ded.success,
+          className: local_8ce643f9.success,
           children: "Код отправлен повторно",
         }),
       imported_7(imported_10, {
@@ -188,7 +188,7 @@ export function fn_6bb306ff({ email: arg, onBack: arg_2 }) {
       arg_2 &&
         imported_7("button", {
           type: "button",
-          className: local_23639ded.backButton,
+          className: local_8ce643f9.backButton,
           onClick: arg_2,
           children: "Назад",
         }),
@@ -197,19 +197,19 @@ export function fn_6bb306ff({ email: arg, onBack: arg_2 }) {
           onClose: local_17,
           showHeader: false,
           children: imported_7("div", {
-            className: local_23639ded.expiredModal,
+            className: local_8ce643f9.expiredModal,
             children: [
               imported_7("h2", {
-                className: local_23639ded.expiredTitle,
+                className: local_8ce643f9.expiredTitle,
                 children: "Время истекло",
               }),
               imported_7("p", {
-                className: local_23639ded.expiredText,
+                className: local_8ce643f9.expiredText,
                 children:
                   "Прошло слишком много времени, и прошлый код больше не действителен. Отправить новый код?",
               }),
               imported_7("div", {
-                className: local_23639ded.expiredActions,
+                className: local_8ce643f9.expiredActions,
                 children: [
                   imported_7(imported_9, {
                     variant: "secondary",
@@ -230,3 +230,4 @@ export function fn_6bb306ff({ email: arg, onBack: arg_2 }) {
     ],
   });
 }
+export { symbol_001 };

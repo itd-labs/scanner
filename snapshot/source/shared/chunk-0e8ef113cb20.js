@@ -353,7 +353,7 @@ export function fn_7d27fe5a({
                   const local_4 = arg.userId === local_2;
                   const local_5 = local_11.get(arg.userId);
                   const local_6 = local_13.has(arg.userId);
-                  const local_7 = () => {
+                  const UnfollowConfirmModal = () => {
                     if (local) {
                       return "Отписаться";
                     }
@@ -511,7 +511,7 @@ export function fn_7d27fe5a({
                             disabled: local_3,
                             onClick: (arg) => local_10(arg.userId, arg),
                             className: local_e1f3b173.followButton,
-                            children: local_7(),
+                            children: UnfollowConfirmModal(),
                           }),
                       ],
                     },

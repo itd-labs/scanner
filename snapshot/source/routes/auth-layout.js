@@ -616,7 +616,7 @@ const local_15213d5c = [14, 11];
 const local_f06debfc = 2.5;
 const local_f06debfc_2 = 3000;
 const local_f06debfc_3 = 1.1;
-function fn_fb5050ef({ posts: arg, trackRef: arg_2 }) {
+function fn_2b23affe({ posts: arg, trackRef: arg_2 }) {
   return imported_3("div", {
     className: local_edc0448f.column,
     children: imported_3("div", {
@@ -725,11 +725,11 @@ export const local_21a4f168 = ({ children: arg }) => {
         "aria-hidden": "true",
         ref: local_3,
         children: [
-          imported_3(fn_fb5050ef, {
+          imported_3(fn_2b23affe, {
             posts: local,
             trackRef: local_4,
           }),
-          imported_3(fn_fb5050ef, {
+          imported_3(fn_2b23affe, {
             posts: local_2,
             trackRef: local_5,
           }),

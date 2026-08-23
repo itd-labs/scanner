@@ -40,7 +40,7 @@ const local_bcebeb33 = "c_errorText";
 const local_7149ec44 = "c_submitButton";
 const local_e76ac6e9 = "c_resendLink";
 const local_22fad9fb = "c_resendButton";
-const local_431fc652 = {
+const local_c9fa317d = {
   form: local_7ab56d01,
   inputGroup: local_4dc32079,
   label: local_fe9ec23f,
@@ -123,18 +123,18 @@ const symbol_001 = ({
   };
   const local_13 = local.every((arg) => arg !== "");
   return imported_4("form", {
-    className: local_431fc652.form,
+    className: local_c9fa317d.form,
     onSubmit: local_11,
     children: [
       imported_4("div", {
-        className: local_431fc652.inputGroup,
+        className: local_c9fa317d.inputGroup,
         children: [
           imported_4("label", {
-            className: local_431fc652.label,
+            className: local_c9fa317d.label,
             children: arg,
           }),
           imported_4("div", {
-            className: local_431fc652.codeInputs,
+            className: local_c9fa317d.codeInputs,
             children: local.map((arg, arg_2) =>
               imported_4(
                 "input",
@@ -145,7 +145,7 @@ const symbol_001 = ({
                   type: "text",
                   inputMode: "numeric",
                   pattern: "[0-9]*",
-                  className: `${local_431fc652.codeInput} ${arg_2 ? local_431fc652.error : ""}`,
+                  className: `${local_c9fa317d.codeInput} ${arg_2 ? local_c9fa317d.error : ""}`,
                   value: arg,
                   onInput: (arg) => local_8(arg_2, arg.target.value),
                   onKeyDown: (arg) => local_9(arg_2, arg),
@@ -159,7 +159,7 @@ const symbol_001 = ({
           }),
           arg_2 &&
             imported_4("p", {
-              className: local_431fc652.errorText,
+              className: local_c9fa317d.errorText,
               children: arg_2,
             }),
         ],
@@ -169,16 +169,16 @@ const symbol_001 = ({
         variant: "primary",
         size: "lg",
         fullWidth: true,
-        className: local_431fc652.submitButton,
+        className: local_c9fa317d.submitButton,
         disabled: !local_13 || arg_9,
         children: arg_3,
       }),
       imported_4("p", {
-        className: local_431fc652.resendLink,
+        className: local_c9fa317d.resendLink,
         children: local_5
           ? imported_4("button", {
               type: "button",
-              className: local_431fc652.resendButton,
+              className: local_c9fa317d.resendButton,
               onClick: local_12,
               disabled: arg_9,
               children: arg_4,

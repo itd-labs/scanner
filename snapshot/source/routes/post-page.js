@@ -60,7 +60,7 @@ const local_50ed0b16 = {
   fixedInputWrapper: local_7abbc161,
   notFound: local_79555638,
 };
-export function fn_6247f2d8({ postId: arg, comment: arg_2 }) {
+export function fn_d8341946({ postId: arg, comment: arg_2 }) {
   const local = imported(null);
   const local_2 = imported_2(
     () =>
@@ -281,4 +281,4 @@ export function fn_6247f2d8({ postId: arg, comment: arg_2 }) {
   }
   return null;
 }
-export { fn_6247f2d8 as default };
+export { fn_d8341946 as default };

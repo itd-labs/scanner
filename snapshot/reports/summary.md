@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `805648c441040fad292f373ffbdf49f21d9b889c4dadf4a9ed3bc6d5c90c2180`
+- Build fingerprint: `45c68086322bc4c35bac6e4f5c8b3766425ffad9ae102a0c03d4f2d5ef21b56f`
 - Resources: 94
-- Downloaded bytes: 982516
+- Downloaded bytes: 982411
 - Sentry releases: `1.1.2`
 
 ## Routes
@@ -11,7 +11,7 @@ No changes.
 
 ## HTTP endpoints
 
-No changes.
+- Removed: `/api/notifications/stream`
 
 ## WebSocket endpoints
 

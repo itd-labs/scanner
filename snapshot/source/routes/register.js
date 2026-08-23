@@ -10,7 +10,7 @@ import {
   symbol_063 as imported_9,
 } from "../entry.js";
 import { C as imported_10 } from "../shared/chunk-0684deeacdb3.js";
-import { V as imported_11 } from "../shared/chunk-7195651f0d46.js";
+import { symbol_001 as imported_11 } from "../shared/chunk-7195651f0d46.js";
 import {
   I as imported_12,
   a as imported_13,
@@ -76,7 +76,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   loginLink: local_8ed84883,
 };
-export const local_2ca450e5 = (arg) => {
+export const local_01d34dde = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -320,4 +320,4 @@ export const local_2ca450e5 = (arg) => {
     ],
   });
 };
-export { local_2ca450e5 as default };
+export { local_01d34dde as default };

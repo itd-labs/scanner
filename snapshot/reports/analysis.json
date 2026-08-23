@@ -29,7 +29,6 @@
   "endpoints": [
     "/api",
     "/api/",
-    "/api/notifications/stream",
     "/api/v1/auth",
     "/users/profile",
     "/v1/auth/sessions",
