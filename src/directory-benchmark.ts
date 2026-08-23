@@ -228,8 +228,7 @@ function assignEntrypoint(
         (file) =>
           !file.logicalPath &&
           file.extension === extension &&
-          (dirname(file.relativePath) === "." ||
-            dirname(file.relativePath) === "raw") &&
+          [".", "raw", "assets"].includes(dirname(file.relativePath)) &&
           file.basename.startsWith("index-"),
       )
       .sort((left, right) => right.source.length - left.source.length)[0];
