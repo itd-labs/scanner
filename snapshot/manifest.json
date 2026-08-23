@@ -1,9 +1,9 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generator": {
     "name": "itd-scanner",
     "version": "0.1.0",
-    "normalizationVersion": 3,
+    "normalizationVersion": 4,
     "wakaruLevel": "minimal"
   },
   "target": "https://xn--d1ah4a.com/",
@@ -4342,38 +4342,296 @@
   "analysis": {
     "routes": [
       "/",
-      "/:slug",
-      "/:username/post/:postId",
-      "/child-safety",
-      "/cookies",
-      "/delete-account",
-      "/event",
-      "/external",
-      "/forgot-password",
-      "/hashtag/:name",
-      "/login",
       "/notifications",
-      "/onboarding",
-      "/privacy",
-      "/recurring-terms",
+      "/login",
       "/register",
+      "/forgot-password",
       "/reset-password",
-      "/search",
-      "/shop",
-      "/shop/:rest*",
-      "/subscription-terms",
-      "/support",
+      "/verify-email",
       "/terms",
+      "/privacy",
+      "/cookies",
+      "/onboarding",
+      "/search",
+      "/shop/:rest*",
+      "/hashtag/:name",
+      "/external",
+      "/support",
+      "/delete-account",
+      "/child-safety",
+      "/event",
       "/verification",
-      "/verify-email"
+      "/subscription-terms",
+      "/recurring-terms",
+      "/:username/post/:postId",
+      "/@:slug",
+      "*"
+    ],
+    "routeDefinitions": [
+      {
+        "table": "entry.js#1",
+        "priority": 1,
+        "declaredPath": "/",
+        "effectivePath": "/",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 2,
+        "declaredPath": "/notifications",
+        "effectivePath": "/notifications",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 3,
+        "declaredPath": "/login",
+        "effectivePath": "/login",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 4,
+        "declaredPath": "/register",
+        "effectivePath": "/register",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 5,
+        "declaredPath": "/forgot-password",
+        "effectivePath": "/forgot-password",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 6,
+        "declaredPath": "/reset-password",
+        "effectivePath": "/reset-password",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 7,
+        "declaredPath": "/verify-email",
+        "effectivePath": "/verify-email",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 8,
+        "declaredPath": "/terms",
+        "effectivePath": "/terms",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 9,
+        "declaredPath": "/privacy",
+        "effectivePath": "/privacy",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 10,
+        "declaredPath": "/cookies",
+        "effectivePath": "/cookies",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 11,
+        "declaredPath": "/onboarding",
+        "effectivePath": "/onboarding",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 12,
+        "declaredPath": "/search",
+        "effectivePath": "/search",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 13,
+        "declaredPath": "/shop/:rest*",
+        "effectivePath": "/shop/:rest*",
+        "kind": "route",
+        "constraints": [
+          "rest is a zero-or-more segment splat"
+        ]
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 14,
+        "declaredPath": "/hashtag/:name",
+        "effectivePath": "/hashtag/:name",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 15,
+        "declaredPath": "/external",
+        "effectivePath": "/external",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 16,
+        "declaredPath": "/support",
+        "effectivePath": "/support",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 17,
+        "declaredPath": "/delete-account",
+        "effectivePath": "/delete-account",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 18,
+        "declaredPath": "/child-safety",
+        "effectivePath": "/child-safety",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 19,
+        "declaredPath": "/event",
+        "effectivePath": "/event",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 20,
+        "declaredPath": "/verification",
+        "effectivePath": "/verification",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 21,
+        "declaredPath": "/subscription-terms",
+        "effectivePath": "/subscription-terms",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 22,
+        "declaredPath": "/recurring-terms",
+        "effectivePath": "/recurring-terms",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 23,
+        "declaredPath": "/:username/post/:postId",
+        "effectivePath": "/:username/post/:postId",
+        "kind": "route",
+        "constraints": []
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 24,
+        "declaredPath": "/:slug",
+        "effectivePath": "/@:slug",
+        "kind": "route",
+        "constraints": [
+          "slug starts with \"@\""
+        ]
+      },
+      {
+        "table": "entry.js#1",
+        "priority": 25,
+        "declaredPath": "*",
+        "effectivePath": "*",
+        "kind": "fallback",
+        "constraints": [
+          "matches when no earlier route matched"
+        ]
+      }
     ],
     "endpoints": [
       "/api",
       "/api/",
       "/api/v1/auth",
+      "/change-password",
+      "/comments/:param",
+      "/comments/:param/like",
+      "/comments/:param/replies",
+      "/comments/:param/restore",
+      "/files/:param",
+      "/files/upload",
+      "/forgot-password",
+      "/hashtags/:param/posts",
+      "/hashtags/trending",
+      "/logout",
+      "/notifications/",
+      "/notifications/count",
+      "/notifications/read-all",
+      "/notifications/settings",
+      "/notifications/stream",
+      "/platform/announcements",
+      "/platform/changelog",
+      "/posts",
+      "/posts/:param",
+      "/posts/:param/comments",
+      "/posts/:param/like",
+      "/posts/:param/pin",
+      "/posts/:param/poll/vote",
+      "/posts/:param/repost",
+      "/posts/:param/restore",
+      "/posts/user/:param",
+      "/posts/user/:param/liked",
+      "/refresh",
+      "/reports",
+      "/resend-otp",
+      "/reset-password",
+      "/search",
+      "/sign-in",
+      "/sign-up",
+      "/users/:param",
+      "/users/:param/block",
+      "/users/:param/follow",
+      "/users/:param/followers",
+      "/users/:param/following",
+      "/users/check-username",
+      "/users/follow-status",
+      "/users/me",
+      "/users/me/blocked",
+      "/users/me/pin",
+      "/users/me/pins",
+      "/users/me/privacy",
+      "/users/me/restore",
       "/users/profile",
+      "/users/stats/top-clans",
       "/v1/auth/sessions",
       "/v1/auth/sessions/",
+      "/v1/auth/sessions/:param",
       "/v1/i",
       "/v1/portal",
       "/v1/subscription/",
@@ -4381,8 +4639,13 @@
       "/v1/subscription/bind-card",
       "/v1/subscription/methods",
       "/v1/subscription/methods/",
+      "/v1/subscription/methods/:param",
+      "/v1/subscription/methods/:param/default",
       "/v1/subscription/pay",
       "/v1/x",
+      "/verification/status",
+      "/verification/submit",
+      "/verify-otp",
       "https://693c388031bcee4cd87e917055abf6a2@sentry.xn--d1ah4a.com/2"
     ],
     "webSockets": [],
