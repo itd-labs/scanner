@@ -25,4 +25,38 @@ describe("analyzeJavaScript", () => {
     expect(report.routes).toContain("/login");
     expect(report.userVisibleStrings).toContain("Войти в аккаунт");
   });
+
+  it("extracts every path from an endpoint catalog used by an HTTP client", () => {
+    const report = analyzeJavaScript([
+      `
+        const endpoints = {
+          notifications: {
+            list: "/notifications/",
+            count: "/notifications/count",
+            markAllRead: "/notifications/read-all",
+            stream: "/notifications/stream",
+            settings: "/notifications/settings",
+          },
+          users: {
+            profile: (username) => \`/users/\${username}\`,
+          },
+        };
+        const pageRoutes = { home: "/", notifications: "/notifications" };
+        api.get(endpoints.notifications.count);
+        navigate(pageRoutes.notifications);
+      `,
+    ]);
+
+    expect(report.endpoints).toEqual(
+      expect.arrayContaining([
+        "/notifications/",
+        "/notifications/count",
+        "/notifications/read-all",
+        "/notifications/stream",
+        "/notifications/settings",
+        "/users/:param",
+      ]),
+    );
+    expect(report.endpoints).not.toContain("/notifications");
+  });
 });

@@ -1,4 +1,5 @@
 import traverse from "@babel/traverse";
+import type { NodePath } from "@babel/traverse";
 import * as t from "@babel/types";
 
 import { parseJavaScript } from "./js-normalizer.js";
@@ -14,6 +15,9 @@ export function analyzeJavaScript(sources: Iterable<string>): AnalysisReport {
 
   for (const source of sources) {
     const ast = parseJavaScript(source);
+    for (const endpoint of discoverEndpointCatalogPaths(ast)) {
+      endpoints.add(endpoint);
+    }
     traverse(ast, {
       StringLiteral(path) {
         classifyString(path.node.value);
@@ -109,6 +113,88 @@ export function analyzeJavaScript(sources: Iterable<string>): AnalysisReport {
       userVisibleStrings.add(clean);
     }
   }
+}
+
+function discoverEndpointCatalogPaths(ast: t.File): Set<string> {
+  const endpoints = new Set<string>();
+
+  traverse(ast, {
+    VariableDeclarator(path) {
+      if (
+        !t.isIdentifier(path.node.id) ||
+        !t.isObjectExpression(path.node.init)
+      )
+        return;
+      const binding = path.scope.getBinding(path.node.id.name);
+      if (
+        !binding?.referencePaths.some((reference) =>
+          isUsedByEndpointCall(reference as NodePath<t.Node>),
+        )
+      ) {
+        return;
+      }
+      collectEndpointCatalogValues(path.node.init, endpoints);
+    },
+  });
+
+  return endpoints;
+}
+
+function isUsedByEndpointCall(reference: NodePath<t.Node>): boolean {
+  let current = reference;
+  let parent = current.parentPath as NodePath<t.Node> | null;
+  while (parent) {
+    if (parent.isFunction()) return false;
+    if (parent.isCallExpression()) {
+      if (current.key !== "callee" && isEndpointCall(parent.node.callee)) {
+        return true;
+      }
+    }
+    current = parent;
+    parent = parent.parentPath as NodePath<t.Node> | null;
+  }
+  return false;
+}
+
+function collectEndpointCatalogValues(
+  object: t.ObjectExpression,
+  endpoints: Set<string>,
+): void {
+  for (const property of object.properties) {
+    if (!t.isObjectProperty(property)) continue;
+    const value = property.value;
+    if (t.isObjectExpression(value)) {
+      collectEndpointCatalogValues(value, endpoints);
+      continue;
+    }
+    const endpoint = endpointPattern(value);
+    if (endpoint?.startsWith("/")) endpoints.add(endpoint);
+  }
+}
+
+function endpointPattern(
+  value: t.Expression | t.PatternLike,
+): string | undefined {
+  if (t.isStringLiteral(value)) return value.value;
+  if (t.isTemplateLiteral(value)) return templatePattern(value);
+  if (
+    (t.isArrowFunctionExpression(value) || t.isFunctionExpression(value)) &&
+    t.isTemplateLiteral(value.body)
+  ) {
+    return templatePattern(value.body);
+  }
+  return undefined;
+}
+
+function templatePattern(template: t.TemplateLiteral): string {
+  let result =
+    template.quasis[0]?.value.cooked ?? template.quasis[0]?.value.raw ?? "";
+  for (let index = 0; index < template.expressions.length; index += 1) {
+    result += index === 0 ? ":param" : `:param${index + 1}`;
+    const quasi = template.quasis[index + 1];
+    result += quasi?.value.cooked ?? quasi?.value.raw ?? "";
+  }
+  return result;
 }
 
 function isAbsoluteEndpoint(value: string): boolean {
