@@ -2,7 +2,7 @@ name: Scan frontend build
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 */2 * * *"
       timezone: "Europe/Moscow"
   workflow_dispatch:
 
