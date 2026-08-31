@@ -1,46 +1,46 @@
 import {
-  ak as imported,
+  symbol_041 as imported,
   symbol_042 as imported_2,
-  symbol_073 as imported_3,
+  symbol_071 as imported_3,
   a6 as imported_4,
   a7 as imported_5,
-  symbol_056 as imported_6,
+  symbol_054 as imported_6,
   symbol_003 as imported_7,
   symbol_014 as imported_8,
-  symbol_039 as imported_9,
-  symbol_075 as imported_10,
-  symbol_076 as imported_11,
-  symbol_037 as imported_12,
-  symbol_043 as imported_13,
+  symbol_038 as imported_9,
+  symbol_073 as imported_10,
+  symbol_074 as imported_11,
+  ae as imported_12,
+  an as imported_13,
   symbol_040 as imported_14,
-  symbol_044 as imported_15,
-  symbol_066 as imported_16,
-  symbol_006 as imported_17,
-  symbol_045 as imported_18,
+  symbol_043 as imported_15,
+  symbol_064 as imported_16,
+  symbol_004 as imported_17,
+  symbol_044 as imported_18,
   symbol_002 as imported_19,
-  symbol_077 as imported_20,
-  symbol_067 as imported_21,
-  symbol_069 as imported_22,
-  symbol_046 as imported_23,
+  symbol_058 as imported_20,
+  symbol_065 as imported_21,
+  symbol_067 as imported_22,
+  aq as imported_23,
   a5 as imported_24,
-  symbol_063 as imported_25,
-  aq as imported_26,
-  symbol_057 as imported_27,
+  symbol_020 as imported_25,
+  symbol_045 as imported_26,
+  symbol_055 as imported_27,
   symbol_001 as imported_28,
-  symbol_061 as imported_29,
-  symbol_058 as imported_30,
+  symbol_060 as imported_29,
+  symbol_056 as imported_30,
   symbol_027 as imported_31,
-  symbol_047 as imported_32,
-  symbol_072 as imported_33,
-  symbol_065 as imported_34,
-  symbol_048 as imported_35,
-  symbol_049 as imported_36,
+  symbol_046 as imported_32,
+  symbol_070 as imported_33,
+  symbol_063 as imported_34,
+  symbol_047 as imported_35,
+  symbol_048 as imported_36,
   a2 as imported_37,
-  symbol_050 as imported_38,
-  symbol_004 as imported_39,
-  symbol_051 as imported_40,
-  symbol_071 as imported_41,
-  symbol_020 as useSettingsStore,
+  symbol_049 as imported_38,
+  symbol_075 as imported_39,
+  symbol_050 as imported_40,
+  symbol_069 as imported_41,
+  symbol_019 as useSettingsStore,
 } from "../entry.js";
 import { C as imported_42 } from "../shared/chunk-3d5994e265d4.js";
 import { I as imported_43 } from "../components/icon-info.js";
@@ -60,7 +60,7 @@ import { I as imported_46 } from "../components/icon-chevron-left.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -574,7 +574,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
       local_8(false);
     }
   };
-  const useSettingsStore =
+  const local_14 =
     local.length > 0 && local_3.length >= 10 && local_5.length > 0;
   return imported_3(imported_8, {
     onClose: arg_2,
@@ -667,7 +667,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
             }),
             imported_3(imported_7, {
               type: "submit",
-              disabled: !useSettingsStore || local_7,
+              disabled: !local_14 || local_7,
               children: local_7 ? "Сохранение..." : "Сменить пароль",
             }),
           ],
@@ -892,21 +892,21 @@ const local_317424dd = imported_15(function (
   const [local_6] = imported_18();
   const local_7 = local_6?.url || window.location.pathname;
   const [local_8, local_9] = imported_6(true);
-  const [local_10, useSettingsStore] = imported_6(false);
-  const [local_11, local_12] = imported_6(false);
-  const [local_13, local_14] = imported_6({});
-  const [local_15, local_16] = imported_6(null);
-  const [local_17, local_18] = imported_6(null);
-  const [local_19, local_20] = imported_6({
+  const [local_10, local_11] = imported_6(false);
+  const [local_12, local_13] = imported_6(false);
+  const [local_14, local_15] = imported_6({});
+  const [local_16, local_17] = imported_6(null);
+  const [local_18, local_19] = imported_6(null);
+  const [local_20, local_21] = imported_6({
     name: "",
     username: "",
     bio: "",
     avatar: "😀",
   });
-  const [local_21, local_22] = imported_6([]);
-  const [local_23, local_24] = imported_6(null);
-  const local_25 = imported_19(null);
-  const [local_26, local_27] = imported_6(true);
+  const [local_22, local_23] = imported_6([]);
+  const [local_24, local_25] = imported_6(null);
+  const local_26 = imported_19(null);
+  const [local_27, local_28] = imported_6(true);
   imported_20(() => {
     if (local) {
       const local = {
@@ -915,51 +915,51 @@ const local_317424dd = imported_15(function (
         bio: local.bio || "",
         avatar: local.avatar,
       };
-      local_20(local);
-      local_18(local);
+      local_21(local);
+      local_19(local);
       local_9(false);
       const local_2 = local.pin ?? null;
-      local_24(local_2);
-      local_25.current = local_2;
+      local_25(local_2);
+      local_26.current = local_2;
     }
   }, [local]);
   imported_20(() => {
     imported_21
       .getMyPins()
       .then((arg) => {
-        local_22(arg.pins);
-        if (arg.activePin && !local_25.current) {
+        local_23(arg.pins);
+        if (arg.activePin && !local_26.current) {
           const local = arg.pins.find((arg) => arg.slug === arg.activePin);
           if (local) {
-            local_24(local);
-            local_25.current = local;
+            local_25(local);
+            local_26.current = local;
           }
         }
       })
-      .catch(() => local_22([]))
-      .finally(() => local_27(false));
+      .catch(() => local_23([]))
+      .finally(() => local_28(false));
   }, []);
   imported_20(() => {
-    arg(local_11);
-  }, [local_11]);
+    arg(local_12);
+  }, [local_12]);
   imported_20(() => {
     arg_2(local_10);
   }, [local_10]);
-  const local_28 = imported_22(
+  const local_29 = imported_22(
     (arg, arg_2) => {
-      if (!local_17) {
+      if (!local_18) {
         return false;
       }
-      const local = Object.keys(arg).some((arg) => arg[arg] !== local_17[arg]);
+      const local = Object.keys(arg).some((arg) => arg[arg] !== local_18[arg]);
       const local_2 =
-        (arg_2?.slug ?? null) !== (local_25.current?.slug ?? null);
+        (arg_2?.slug ?? null) !== (local_26.current?.slug ?? null);
       return local || local_2;
     },
-    [local_17],
+    [local_18],
   );
-  const local_29 = (arg, arg_2) => {
-    if (local_13[arg]) {
-      local_14((arg) => {
+  const local_30 = (arg, arg_2) => {
+    if (local_14[arg]) {
+      local_15((arg) => {
         const local = {
           ...arg,
         };
@@ -967,61 +967,61 @@ const local_317424dd = imported_15(function (
         return local;
       });
     }
-    local_16(null);
-    local_20((arg) => {
+    local_17(null);
+    local_21((arg) => {
       const local = {
         ...arg,
         [arg]: arg_2,
       };
-      local_12(local_28(local, local_23));
+      local_13(local_29(local, local_24));
       return local;
     });
   };
-  const local_30 = imported_22(
+  const local_31 = imported_22(
     (arg) => {
-      const local = local_23?.slug === arg.slug ? null : arg;
-      local_24(local);
-      local_12(local_28(local_19, local));
+      const local = local_24?.slug === arg.slug ? null : arg;
+      local_25(local);
+      local_13(local_29(local_20, local));
     },
-    [local_23, local_19, local_28],
+    [local_24, local_20, local_29],
   );
-  const local_31 = async () => {
-    if (!local_11 || local_10) {
+  const local_32 = async () => {
+    if (!local_12 || local_10) {
       return;
     }
-    useSettingsStore(true);
-    local_14({});
-    local_16(null);
-    const local = local_17?.username;
-    const local_2 = local_19.username;
+    local_11(true);
+    local_15({});
+    local_17(null);
+    const local = local_18?.username;
+    const local_2 = local_20.username;
     try {
       if (
-        local_17 &&
-        Object.keys(local_19).some((arg) => local_19[arg] !== local_17[arg])
+        local_18 &&
+        Object.keys(local_20).some((arg) => local_20[arg] !== local_18[arg])
       ) {
         await imported_21.updateProfile({
-          displayName: local_19.name,
-          username: local_19.username || undefined,
-          bio: local_19.bio || null,
+          displayName: local_20.name,
+          username: local_20.username || undefined,
+          bio: local_20.bio || null,
         });
       }
-      (local_23?.slug ?? null) !== (local_25.current?.slug ?? null) &&
-        (local_23
-          ? await imported_21.setActivePin(local_23.slug)
+      (local_24?.slug ?? null) !== (local_26.current?.slug ?? null) &&
+        (local_24
+          ? await imported_21.setActivePin(local_24.slug)
           : await imported_21.removeActivePin());
-      local_18({
-        ...local_19,
+      local_19({
+        ...local_20,
       });
-      local_25.current = local_23;
-      local_12(false);
+      local_26.current = local_24;
+      local_13(false);
       const local = imported_10.getState().profile;
       if (local) {
         imported_10.getState().setProfile({
           ...local,
-          displayName: local_19.name,
-          username: local_19.username,
-          bio: local_19.bio || null,
-          pin: local_23,
+          displayName: local_20.name,
+          username: local_20.username,
+          bio: local_20.bio || null,
+          pin: local_24,
         });
       }
       if (
@@ -1039,9 +1039,9 @@ const local_317424dd = imported_15(function (
           for (const [local, local_2] of Object.entries(error.errors)) {
             local[local] = imported_13(local_2[0] || "Ошибка валидации");
           }
-          local_14(local);
+          local_15(local);
         } else {
-          local_16(
+          local_17(
             imported_14(
               error.code,
               error.message || "Не удалось сохранить изменения",
@@ -1049,24 +1049,24 @@ const local_317424dd = imported_15(function (
           );
         }
       } else {
-        local_16("Не удалось сохранить изменения");
+        local_17("Не удалось сохранить изменения");
       }
     } finally {
-      useSettingsStore(false);
+      local_11(false);
     }
   };
-  const local_32 = () => {
-    if (local_17) {
-      local_20({
-        ...local_17,
+  const local_33 = () => {
+    if (local_18) {
+      local_21({
+        ...local_18,
       });
-      local_24(local_25.current);
-      local_12(false);
+      local_25(local_26.current);
+      local_13(false);
     }
   };
   imported_23(arg_4, () => ({
-    save: local_31,
-    discard: local_32,
+    save: local_32,
+    discard: local_33,
   }));
   if (local_8) {
     return imported_3(imported_25, {
@@ -1109,7 +1109,7 @@ const local_317424dd = imported_15(function (
               }),
               imported_3("div", {
                 className: local_b77a44cd.avatarDisplay,
-                children: local_19.avatar,
+                children: local_20.avatar,
               }),
             ],
           }),
@@ -1136,13 +1136,13 @@ const local_317424dd = imported_15(function (
                 className: local_b77a44cd.settingControl,
                 children: [
                   imported_3(fn_85a49694, {
-                    value: local_19.name,
-                    onChange: (arg) => local_29("name", arg),
+                    value: local_20.name,
+                    onChange: (arg) => local_30("name", arg),
                   }),
-                  local_13.displayName &&
+                  local_14.displayName &&
                     imported_3("span", {
                       className: local_b77a44cd.fieldError,
-                      children: local_13.displayName,
+                      children: local_14.displayName,
                     }),
                 ],
               }),
@@ -1172,13 +1172,13 @@ const local_317424dd = imported_15(function (
                 className: local_b77a44cd.settingControl,
                 children: [
                   imported_3(fn_85a49694, {
-                    value: local_19.username,
-                    onChange: (arg) => local_29("username", arg),
+                    value: local_20.username,
+                    onChange: (arg) => local_30("username", arg),
                   }),
-                  local_13.username &&
+                  local_14.username &&
                     imported_3("span", {
                       className: local_b77a44cd.fieldError,
-                      children: local_13.username,
+                      children: local_14.username,
                     }),
                 ],
               }),
@@ -1205,20 +1205,20 @@ const local_317424dd = imported_15(function (
               }),
               imported_3("textarea", {
                 className: local_b77a44cd.bioTextarea,
-                value: local_19.bio,
-                onChange: (arg) => local_29("bio", arg.target.value),
+                value: local_20.bio,
+                onChange: (arg) => local_30("bio", arg.target.value),
                 placeholder: "Напиши что-нибудь о себе...",
                 rows: 3,
               }),
-              local_13.bio &&
+              local_14.bio &&
                 imported_3("span", {
                   className: local_b77a44cd.fieldError,
-                  children: local_13.bio,
+                  children: local_14.bio,
                 }),
             ],
           }),
-          !local_26 &&
-            local_21.length > 0 &&
+          !local_27 &&
+            local_22.length > 0 &&
             imported_3("div", {
               className: `${local_b77a44cd.settingItem} ${local_b77a44cd.column}`,
               children: [
@@ -1240,12 +1240,12 @@ const local_317424dd = imported_15(function (
                 }),
                 imported_3("div", {
                   className: local_b77a44cd.pinGrid,
-                  children: local_21.map((arg) =>
+                  children: local_22.map((arg) =>
                     imported_3(
                       "button",
                       {
-                        className: `${local_b77a44cd.pinItem} ${local_23?.slug === arg.slug ? local_b77a44cd.pinActive : ""}`,
-                        onClick: () => local_30(arg),
+                        className: `${local_b77a44cd.pinItem} ${local_24?.slug === arg.slug ? local_b77a44cd.pinActive : ""}`,
+                        onClick: () => local_31(arg),
                         disabled: local_10,
                         title: arg.description || arg.name,
                         type: "button",
@@ -1267,10 +1267,10 @@ const local_317424dd = imported_15(function (
                 }),
               ],
             }),
-          local_15 &&
+          local_16 &&
             imported_3("div", {
               className: local_b77a44cd.saveError,
-              children: local_15,
+              children: local_16,
             }),
         ],
       }),
@@ -1727,7 +1727,7 @@ function fn_b267a7cf(arg, arg_2) {
   }
   return local_2;
 }
-function fn_a5e3c1e3() {
+function fn_b6888d03() {
   const local = imported_19(null);
   const local_2 = imported_19(null);
   const local_3 = imported_19({
@@ -1748,21 +1748,21 @@ function fn_a5e3c1e3() {
       const local_2 = window.innerWidth;
       const local_3 = local_2.parentElement;
       let local_4;
-      let useSettingsStore;
+      let local_5;
       if (local_3) {
         const local = local_3.getBoundingClientRect();
         local_4 = local.top;
-        useSettingsStore = local.left + (local.width - 370) / 2;
+        local_5 = local.left + (local.width - 370) / 2;
       } else {
         local_4 = (local - 900) / 2;
-        useSettingsStore = (local_2 - 370) / 2;
+        local_5 = (local_2 - 370) / 2;
       }
-      const local_5 = local_2 <= 1173;
+      const local_6 = local_2 <= 1173;
       local_3.current.yOff =
-        357 * local_9308d9b8 - local_4 + (local_5 ? 60 : 0);
-      const local_6 = 260;
+        357 * local_9308d9b8 - local_4 + (local_6 ? 60 : 0);
+      const local_7 = 260;
       local_3.current.xOff =
-        local_f06debfc_3 * local_9308d9b8 - useSettingsStore - local_6;
+        local_f06debfc_3 * local_9308d9b8 - local_5 - local_7;
       local_3.current.tl = fn_b267a7cf(local, local_3.current.yOff);
     }
     const local_3 = setTimeout(fn, 260);
@@ -1780,11 +1780,11 @@ function fn_a5e3c1e3() {
         if (!local) {
           local.style.visibility = "hidden";
         } else {
-          const [local, useSettingsStore, local_2] = local;
-          const [local_3, , local_4, local_5] = local_9d01cb12[local];
-          const local_6 = (local_4 * local_9308d9b8 + 0.5) | 0;
+          const [local, local_2, local_3] = local;
+          const [local_4, , local_5, local_6] = local_9d01cb12[local];
           const local_7 = (local_5 * local_9308d9b8 + 0.5) | 0;
-          local.style.cssText = `visibility:visible;width:${local_6}px;height:${local_7}px;background-image:url(/assets/nuksta/nuksta-chechik-sprite.png);background-repeat:no-repeat;image-rendering:pixelated;will-change:transform;background-position:${-((local_3 * local_9308d9b8 + 0.5) | 0)}px 0px;background-size:${(local_f06debfc * local_9308d9b8 + 0.5) | 0}px ${(local_f06debfc_2 * local_9308d9b8 + 0.5) | 0}px;transform:translate(${(useSettingsStore * local_9308d9b8 - local.xOff + 0.5) | 0}px,${(local_2 * local_9308d9b8 - local.yOff + 0.5) | 0}px)`;
+          const local_8 = (local_6 * local_9308d9b8 + 0.5) | 0;
+          local.style.cssText = `visibility:visible;width:${local_7}px;height:${local_8}px;background-image:url(/assets/nuksta/nuksta-chechik-sprite.png);background-repeat:no-repeat;image-rendering:pixelated;will-change:transform;background-position:${-((local_4 * local_9308d9b8 + 0.5) | 0)}px 0px;background-size:${(local_f06debfc * local_9308d9b8 + 0.5) | 0}px ${(local_f06debfc_2 * local_9308d9b8 + 0.5) | 0}px;transform:translate(${(local_2 * local_9308d9b8 - local.xOff + 0.5) | 0}px,${(local_3 * local_9308d9b8 - local.yOff + 0.5) | 0}px)`;
         }
         local.f = (local.f + 1) % local_2cae01a0;
         local.ts = arg;
@@ -1965,17 +1965,17 @@ export function fn_30e987f3({ isOpen: arg, onClose: arg_2 }) {
   const local_12 = local?.subscription?.isActive ?? false;
   const local_13 = new Date();
   local_13.setMonth(local_13.getMonth() + 1);
-  const useSettingsStore = local_13.toLocaleDateString("ru-RU", {
+  const local_14 = local_13.toLocaleDateString("ru-RU", {
     day: "numeric",
     month: "long",
   });
-  const local_14 = local_4 && local_8 !== local_ae1f867d;
-  const local_15 = async () => {
+  const local_15 = local_4 && local_8 !== local_ae1f867d;
+  const local_16 = async () => {
     if (local_2) {
       return;
     }
     local_3(true);
-    if (local_14) {
+    if (local_15) {
       try {
         const local = await local_73f326c5.pay(local_8);
         if (local.error) {
@@ -2030,7 +2030,7 @@ export function fn_30e987f3({ isOpen: arg, onClose: arg_2 }) {
       frameless: true,
       className: local_23034546.modal,
       children: [
-        imported_3(fn_a5e3c1e3, {}),
+        imported_3(fn_b6888d03, {}),
         imported_3("div", {
           className: local_23034546.sub,
           children: [
@@ -2287,7 +2287,7 @@ export function fn_30e987f3({ isOpen: arg, onClose: arg_2 }) {
                           "Сегодня спишется ",
                           local_10,
                           " ₽, далее ежемесячно — следующее списание ",
-                          useSettingsStore,
+                          local_14,
                           ".",
                         ],
                       }),
@@ -2299,7 +2299,7 @@ export function fn_30e987f3({ isOpen: arg, onClose: arg_2 }) {
                       : imported_3("button", {
                           type: "button",
                           className: local_23034546.subscribeBtn,
-                          onClick: local_15,
+                          onClick: local_16,
                           disabled: local_2,
                           children: local_2
                             ? imported_3("span", {
@@ -2380,30 +2380,30 @@ function fn_0f03bcc0() {
   const [local_10, local_11] = imported_6(true);
   const [local_12, local_13] = imported_6(false);
   const [local_14, local_15] = imported_6(false);
-  const [useSettingsStore, local_16] = imported_6(null);
-  const [local_17, local_18] = imported_6(false);
+  const [local_16, local_17] = imported_6(null);
+  const [local_18, local_19] = imported_6(false);
   imported_20(() => {
     local_73f326c5
       .getStatus()
-      .then((arg) => local_18(!!arg.recurringEnabled))
-      .catch(() => local_18(false));
+      .then((arg) => local_19(!!arg.recurringEnabled))
+      .catch(() => local_19(false));
   }, []);
   imported_20(() => {
-    if (local_17) {
+    if (local_18) {
       local_73f326c5
         .getMethods()
         .then(local_9)
         .catch(() => local_9([]))
         .finally(() => local_11(false));
     }
-  }, [local_17]);
-  const local_19 = () => {
+  }, [local_18]);
+  const local_20 = () => {
     local_73f326c5
       .getMethods()
       .then(local_9)
       .catch(() => {});
   };
-  const local_20 = async (arg) => {
+  const local_21 = async (arg) => {
     try {
       await local_73f326c5.setDefaultMethod(arg);
       local_9((arg) =>
@@ -2416,7 +2416,7 @@ function fn_0f03bcc0() {
       imported_33.error("Не удалось изменить основной способ оплаты");
     }
   };
-  const local_21 = async (arg) => {
+  const local_22 = async (arg) => {
     try {
       const local = await local_73f326c5.deleteMethod(arg.id);
       local_9((arg) => arg.filter((arg) => arg.id !== arg.id));
@@ -2429,12 +2429,12 @@ function fn_0f03bcc0() {
           },
         });
       }
-      local_19();
+      local_20();
     } catch {
       imported_33.error("Не удалось отвязать карту");
     }
   };
-  const local_22 = async (arg) => {
+  const local_23 = async (arg) => {
     if (local_12) {
       return;
     }
@@ -2465,7 +2465,7 @@ function fn_0f03bcc0() {
       local_13(false);
     }
   };
-  const local_23 = [...local_8].sort((arg, arg_2) => {
+  const local_24 = [...local_8].sort((arg, arg_2) => {
     if (arg.isDefault !== arg_2.isDefault) {
       if (arg.isDefault) {
         return -1;
@@ -2564,7 +2564,7 @@ function fn_0f03bcc0() {
                   }),
                 ],
               }),
-          local_17 &&
+          local_18 &&
             imported_3("div", {
               className: `${local_b77a44cd.settingItem} ${local_b77a44cd.column}`,
               children: [
@@ -2591,7 +2591,7 @@ function fn_0f03bcc0() {
                     ? imported_3(imported_24, {})
                     : imported_3(imported_25, {
                         children: [
-                          local_23.map((arg) => {
+                          local_24.map((arg) => {
                             const local =
                               arg.type === "bank_card"
                                 ? local_0ead779e
@@ -2640,14 +2640,14 @@ function fn_0f03bcc0() {
                                           type: "button",
                                           className:
                                             local_b77a44cd.paymentMethodBtn,
-                                          onClick: () => local_20(arg.id),
+                                          onClick: () => local_21(arg.id),
                                           children: "Сделать основным",
                                         }),
                                       imported_3("button", {
                                         type: "button",
                                         className:
                                           local_b77a44cd.paymentMethodBtnDanger,
-                                        onClick: () => local_16(arg),
+                                        onClick: () => local_17(arg),
                                         children: "Отвязать",
                                       }),
                                     ],
@@ -2677,7 +2677,7 @@ function fn_0f03bcc0() {
                                       type: "button",
                                       className:
                                         local_b77a44cd.paymentMethodAdd,
-                                      onClick: () => local_22("bank_card"),
+                                      onClick: () => local_23("bank_card"),
                                       disabled: local_12,
                                       children: [
                                         imported_3("span", {
@@ -2694,7 +2694,7 @@ function fn_0f03bcc0() {
                                       type: "button",
                                       className:
                                         local_b77a44cd.paymentMethodAdd,
-                                      onClick: () => local_22("sbp"),
+                                      onClick: () => local_23("sbp"),
                                       disabled: local_12,
                                       children: [
                                         imported_3("span", {
@@ -2777,14 +2777,14 @@ function fn_0f03bcc0() {
           },
           onClose: () => local_5(false),
         }),
-      useSettingsStore &&
+      local_16 &&
         imported_3(imported_42, {
           title: "Отвязать способ оплаты?",
-          message: `${fn_102c5470(useSettingsStore)} будет отвязан. Это действие нельзя отменить.`,
+          message: `${fn_102c5470(local_16)} будет отвязан. Это действие нельзя отменить.`,
           confirmText: "Отвязать",
           danger: true,
-          onConfirm: () => local_21(useSettingsStore),
-          onClose: () => local_16(null),
+          onConfirm: () => local_22(local_16),
+          onClose: () => local_17(null),
         }),
       imported_3(fn_30e987f3, {
         isOpen: local_6,
@@ -3090,7 +3090,7 @@ function fn_2d43bd11({ type: arg }) {
       });
   }
 }
-function fn_09ea919b({ onChangePassword: arg }) {
+function fn_9c788d1e({ onChangePassword: arg }) {
   const [local, local_2] = imported_6([]);
   const [local_3, local_4] = imported_6(true);
   const [local_5, local_6] = imported_6(null);
@@ -3330,14 +3330,14 @@ const local_a5ebbbd3 = imported_15(function (
   const [local_6, local_7] = imported_6(null);
   const [local_8, local_9] = imported_6(false);
   const [local_10, local_11] = imported_6(false);
-  const [useSettingsStore, local_12] = imported_6(false);
+  const [local_12, local_13] = imported_6(false);
   imported_20(() => {
-    if (!useSettingsStore && !local) {
+    if (!local_12 && !local) {
       local_2();
     }
-  }, [useSettingsStore]);
+  }, [local_12]);
   imported_20(() => {
-    if (local && !useSettingsStore) {
+    if (local && !local_12) {
       const local = {
         webEnabled: local.webEnabled,
         soundEnabled: local.soundEnabled,
@@ -3350,16 +3350,16 @@ const local_a5ebbbd3 = imported_15(function (
       local_5(local);
       local_7(local);
       local_9(false);
-      local_12(true);
+      local_13(true);
     }
-  }, [local, useSettingsStore]);
+  }, [local, local_12]);
   imported_20(() => {
     arg(local_8);
   }, [local_8]);
   imported_20(() => {
     arg_2(local_10);
   }, [local_10]);
-  const local_13 = (arg, arg_2) => {
+  const local_14 = (arg, arg_2) => {
     const local = {
       ...local_4,
       [arg]: arg_2,
@@ -3372,7 +3372,7 @@ const local_a5ebbbd3 = imported_15(function (
       local_9(local);
     }
   };
-  const local_14 = async () => {
+  const local_15 = async () => {
     if (!(!local_8 || local_10)) {
       local_11(true);
       try {
@@ -3400,7 +3400,7 @@ const local_a5ebbbd3 = imported_15(function (
       }
     }
   };
-  const local_15 = () => {
+  const local_16 = () => {
     if (local_6) {
       local_5({
         ...local_6,
@@ -3409,8 +3409,8 @@ const local_a5ebbbd3 = imported_15(function (
     }
   };
   imported_23(arg_3, () => ({
-    save: local_14,
-    discard: local_15,
+    save: local_15,
+    discard: local_16,
   }));
   return imported_3(imported_25, {
     children: [
@@ -3427,7 +3427,7 @@ const local_a5ebbbd3 = imported_15(function (
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("webEnabled", !local_4.webEnabled),
+            onClick: () => local_14("webEnabled", !local_4.webEnabled),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3455,13 +3455,13 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.webEnabled,
-                onChange: (arg) => local_13("webEnabled", arg),
+                onChange: (arg) => local_14("webEnabled", arg),
               }),
             ],
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("soundEnabled", !local_4.soundEnabled),
+            onClick: () => local_14("soundEnabled", !local_4.soundEnabled),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3489,7 +3489,7 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.soundEnabled,
-                onChange: (arg) => local_13("soundEnabled", arg),
+                onChange: (arg) => local_14("soundEnabled", arg),
               }),
             ],
           }),
@@ -3504,7 +3504,7 @@ const local_a5ebbbd3 = imported_15(function (
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("follows", !local_4.follows),
+            onClick: () => local_14("follows", !local_4.follows),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3532,13 +3532,13 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.follows,
-                onChange: (arg) => local_13("follows", arg),
+                onChange: (arg) => local_14("follows", arg),
               }),
             ],
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("wallPosts", !local_4.wallPosts),
+            onClick: () => local_14("wallPosts", !local_4.wallPosts),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3566,7 +3566,7 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.wallPosts,
-                onChange: (arg) => local_13("wallPosts", arg),
+                onChange: (arg) => local_14("wallPosts", arg),
               }),
             ],
           }),
@@ -3581,7 +3581,7 @@ const local_a5ebbbd3 = imported_15(function (
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("reactions", !local_4.reactions),
+            onClick: () => local_14("reactions", !local_4.reactions),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3610,13 +3610,13 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.reactions,
-                onChange: (arg) => local_13("reactions", arg),
+                onChange: (arg) => local_14("reactions", arg),
               }),
             ],
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("replies", !local_4.replies),
+            onClick: () => local_14("replies", !local_4.replies),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3644,13 +3644,13 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.replies,
-                onChange: (arg) => local_13("replies", arg),
+                onChange: (arg) => local_14("replies", arg),
               }),
             ],
           }),
           imported_3("div", {
             className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-            onClick: () => local_13("mentions", !local_4.mentions),
+            onClick: () => local_14("mentions", !local_4.mentions),
             children: [
               imported_3("div", {
                 className: local_b77a44cd.settingInfo,
@@ -3678,7 +3678,7 @@ const local_a5ebbbd3 = imported_15(function (
               }),
               imported_3(fn_6854c4bf, {
                 checked: local_4.mentions,
-                onChange: (arg) => local_13("mentions", arg),
+                onChange: (arg) => local_14("mentions", arg),
               }),
             ],
           }),
@@ -3701,16 +3701,16 @@ const local_db92a3ab = imported_15(function (
   const [local_5, local_6] = imported_6(false);
   const [local_7, local_8] = imported_6(false);
   const [local_9, local_10] = imported_6(false);
-  const [local_11, useSettingsStore] = imported_6(false);
-  const [local_12, local_13] = imported_6([]);
-  const [local_14, local_15] = imported_6(null);
-  const [local_16, local_17] = imported_6(true);
-  const [local_18, local_19] = imported_6(false);
-  const [local_20, local_21] = imported_6(false);
+  const [local_11, local_12] = imported_6(false);
+  const [local_13, local_14] = imported_6([]);
+  const [local_15, local_16] = imported_6(null);
+  const [local_17, local_18] = imported_6(true);
+  const [local_19, local_20] = imported_6(false);
+  const [local_21, local_22] = imported_6(false);
   imported_20(() => {
-    local_22();
-    if (!local_20) {
-      local_23();
+    local_23();
+    if (!local_21) {
+      local_24();
     }
   }, []);
   imported_20(() => {
@@ -3719,7 +3719,7 @@ const local_db92a3ab = imported_15(function (
   imported_20(() => {
     arg_2(local_7);
   }, [local_7]);
-  const local_22 = async () => {
+  const local_23 = async () => {
     if (!local_11) {
       local_10(true);
     }
@@ -3734,48 +3734,48 @@ const local_db92a3ab = imported_15(function (
       local_2(local_2);
       local_4(local_2);
       local_6(false);
-      useSettingsStore(true);
+      local_12(true);
     } catch (error) {
       console.error("Failed to load privacy settings:", error);
     } finally {
       local_10(false);
     }
   };
-  const local_23 = async (arg) => {
-    if (!local_18) {
-      local_19(true);
+  const local_24 = async (arg) => {
+    if (!local_19) {
+      local_20(true);
       try {
         const local = await imported_39.getBlockedUsers({
           cursor: arg,
           limit: 20,
         });
-        local_13(arg ? (arg) => [...arg, ...local.users] : local.users);
-        local_15(local.nextCursor);
-        local_17(local.hasMore);
-        local_21(true);
+        local_14(arg ? (arg) => [...arg, ...local.users] : local.users);
+        local_16(local.nextCursor);
+        local_18(local.hasMore);
+        local_22(true);
       } catch (error) {
         console.error("Failed to load blocked users:", error);
       } finally {
-        local_19(false);
+        local_20(false);
       }
     }
   };
-  const local_24 = async (arg) => {
+  const local_25 = async (arg) => {
     try {
       await imported_39.unblockUser(arg);
-      local_13((arg) => arg.filter((arg) => arg.id !== arg));
+      local_14((arg) => arg.filter((arg) => arg.id !== arg));
       imported_33.success("Пользователь разблокирован");
     } catch (error) {
       console.error("Failed to unblock user:", error);
       imported_33.error("Не удалось разблокировать пользователя");
     }
   };
-  const local_25 = () => {
-    if (local_16 && local_14) {
-      local_23(local_14);
+  const local_26 = () => {
+    if (local_17 && local_15) {
+      local_24(local_15);
     }
   };
-  const local_26 = (arg, arg_2) => {
+  const local_27 = (arg, arg_2) => {
     const local = {
       ...local,
       [arg]: arg_2,
@@ -3788,7 +3788,7 @@ const local_db92a3ab = imported_15(function (
       local_6(local);
     }
   };
-  const local_27 = async () => {
+  const local_28 = async () => {
     if (!(!local_5 || local_7)) {
       local_8(true);
       try {
@@ -3810,7 +3810,7 @@ const local_db92a3ab = imported_15(function (
       }
     }
   };
-  const local_28 = () => {
+  const local_29 = () => {
     if (local_3) {
       local_2({
         ...local_3,
@@ -3819,8 +3819,8 @@ const local_db92a3ab = imported_15(function (
     }
   };
   imported_23(arg_3, () => ({
-    save: local_27,
-    discard: local_28,
+    save: local_28,
+    discard: local_29,
   }));
   return imported_3(imported_25, {
     children: [
@@ -3854,7 +3854,7 @@ const local_db92a3ab = imported_15(function (
                 imported_3(fn_71119f17, {
                   value: local.whoCanPostOnWall,
                   options: local_341987ca,
-                  onChange: (arg) => local_26("whoCanPostOnWall", arg),
+                  onChange: (arg) => local_27("whoCanPostOnWall", arg),
                 }),
               ],
             }),
@@ -3880,13 +3880,13 @@ const local_db92a3ab = imported_15(function (
                 imported_3(fn_71119f17, {
                   value: local.whoCanSeeMyPostReactions,
                   options: local_341987ca,
-                  onChange: (arg) => local_26("whoCanSeeMyPostReactions", arg),
+                  onChange: (arg) => local_27("whoCanSeeMyPostReactions", arg),
                 }),
               ],
             }),
             imported_3("div", {
               className: `${local_b77a44cd.settingItem} ${local_b77a44cd.clickable}`,
-              onClick: () => local_26("showLastSeen", !local.showLastSeen),
+              onClick: () => local_27("showLastSeen", !local.showLastSeen),
               children: [
                 imported_3("div", {
                   className: local_b77a44cd.settingInfo,
@@ -3906,7 +3906,7 @@ const local_db92a3ab = imported_15(function (
                 }),
                 imported_3(fn_6854c4bf, {
                   checked: local.showLastSeen,
-                  onChange: (arg) => local_26("showLastSeen", arg),
+                  onChange: (arg) => local_27("showLastSeen", arg),
                 }),
               ],
             }),
@@ -3919,12 +3919,12 @@ const local_db92a3ab = imported_15(function (
             className: local_b77a44cd.sectionTitle,
             children: "Чёрный список",
           }),
-          local_18 && !local_20
+          local_19 && !local_21
             ? imported_3(imported_24, {})
-            : local_20
+            : local_21
               ? imported_3(imported_25, {
                   children:
-                    local_12.length === 0
+                    local_13.length === 0
                       ? imported_3("div", {
                           className: local_b77a44cd.emptyBlocklist,
                           children: "Чёрный список пуст",
@@ -3932,7 +3932,7 @@ const local_db92a3ab = imported_15(function (
                       : imported_3("div", {
                           className: local_b77a44cd.blockedUsersList,
                           children: [
-                            local_12.map((arg) =>
+                            local_13.map((arg) =>
                               imported_3(
                                 "div",
                                 {
@@ -3962,7 +3962,7 @@ const local_db92a3ab = imported_15(function (
                                     imported_3(imported_7, {
                                       size: "sm",
                                       variant: "secondary",
-                                      onClick: () => local_24(arg.id),
+                                      onClick: () => local_25(arg.id),
                                       children: "Разблокировать",
                                     }),
                                   ],
@@ -3970,12 +3970,12 @@ const local_db92a3ab = imported_15(function (
                                 arg.id,
                               ),
                             ),
-                            local_16 &&
+                            local_17 &&
                               imported_3(imported_7, {
                                 variant: "secondary",
-                                onClick: local_25,
-                                disabled: local_18,
-                                loading: local_18,
+                                onClick: local_26,
+                                disabled: local_19,
+                                loading: local_19,
                                 children: "Загрузить ещё",
                               }),
                           ],
@@ -4035,9 +4035,9 @@ export function fn_6f3fadc0({ onClose: arg }) {
   const local_12 = imported_19(null);
   const local_13 = imported_19(null);
   const local_14 = imported_19(null);
-  const useSettingsStore = Object.values(local_8).some(Boolean);
-  const local_15 = Object.values(local_10).some(Boolean);
-  const local_16 = imported_22(
+  const local_15 = Object.values(local_8).some(Boolean);
+  const local_16 = Object.values(local_10).some(Boolean);
+  const local_17 = imported_22(
     (arg) => (arg) => {
       local_9((arg) => ({
         ...arg,
@@ -4046,7 +4046,7 @@ export function fn_6f3fadc0({ onClose: arg }) {
     },
     [],
   );
-  const local_17 = imported_22(
+  const local_18 = imported_22(
     (arg) => (arg) => {
       local_11((arg) => ({
         ...arg,
@@ -4055,7 +4055,7 @@ export function fn_6f3fadc0({ onClose: arg }) {
     },
     [],
   );
-  const local_18 = async () => {
+  const local_19 = async () => {
     const local = [];
     if (local_8.account) {
       local.push(local_12.current?.save() ?? Promise.resolve());
@@ -4068,31 +4068,31 @@ export function fn_6f3fadc0({ onClose: arg }) {
     }
     await Promise.all(local);
   };
-  const local_19 = (arg) => {
+  const local_20 = (arg) => {
     if (arg !== local_2) {
       local_9({});
       local_3(arg);
     }
   };
-  const local_20 = (arg) => {
+  const local_21 = (arg) => {
     local_9({});
     local_3(arg);
     local_5(true);
   };
-  const local_21 = () => {
+  const local_22 = () => {
     local_9({});
     local_5(false);
   };
-  const local_22 = () => {
+  const local_23 = () => {
     arg();
   };
-  const local_23 = () => {
+  const local_24 = () => {
     switch (local_2) {
       case "account":
         return imported_3(local_317424dd, {
           ref: local_12,
-          onDirtyChange: local_16("account"),
-          onSavingChange: local_17("account"),
+          onDirtyChange: local_17("account"),
+          onSavingChange: local_18("account"),
           onClose: arg,
         });
       case "payment":
@@ -4100,20 +4100,20 @@ export function fn_6f3fadc0({ onClose: arg }) {
       case "appearance":
         return imported_3(fn_92ca2ba3, {});
       case "security":
-        return imported_3(fn_09ea919b, {
+        return imported_3(fn_9c788d1e, {
           onChangePassword: () => local_7(true),
         });
       case "notifications":
         return imported_3(local_a5ebbbd3, {
           ref: local_13,
-          onDirtyChange: local_16("notifications"),
-          onSavingChange: local_17("notifications"),
+          onDirtyChange: local_17("notifications"),
+          onSavingChange: local_18("notifications"),
         });
       case "privacy":
         return imported_3(local_db92a3ab, {
           ref: local_14,
-          onDirtyChange: local_16("privacy"),
-          onSavingChange: local_17("privacy"),
+          onDirtyChange: local_17("privacy"),
+          onSavingChange: local_18("privacy"),
         });
     }
   };
@@ -4123,27 +4123,27 @@ export function fn_6f3fadc0({ onClose: arg }) {
       onBack: () => local_7(false),
     });
   }
-  const local_24 = useSettingsStore
+  const local_25 = local_15
     ? imported_3("div", {
         className: local_b77a44cd.actionBar,
         children: [
           imported_3(imported_7, {
             variant: "secondary",
-            onClick: local_22,
+            onClick: local_23,
             children: "Отмена",
           }),
           imported_3(imported_7, {
             variant: "primary",
-            onClick: local_18,
-            disabled: local_15,
-            loading: local_15,
+            onClick: local_19,
+            disabled: local_16,
+            loading: local_16,
             children: "Сохранить",
           }),
         ],
       })
     : null;
   return imported_3(imported_8, {
-    onClose: local_22,
+    onClose: local_23,
     frameless: true,
     size: "wide",
     className: local_b77a44cd.modalContainer,
@@ -4168,7 +4168,7 @@ export function fn_6f3fadc0({ onClose: arg }) {
                         {
                           type: "button",
                           className: local_b77a44cd.mobileMenuItem,
-                          onClick: () => local_20(arg.id),
+                          onClick: () => local_21(arg.id),
                           children: [
                             imported_3("span", {
                               className: local_b77a44cd.mobileMenuIcon,
@@ -4205,7 +4205,7 @@ export function fn_6f3fadc0({ onClose: arg }) {
                       imported_3("button", {
                         type: "button",
                         className: local_b77a44cd.mobileBack,
-                        onClick: local_21,
+                        onClick: local_22,
                         children: [
                           imported_3(imported_46, {
                             size: 22,
@@ -4225,9 +4225,9 @@ export function fn_6f3fadc0({ onClose: arg }) {
                   }),
                   imported_3("div", {
                     className: local_b77a44cd.content,
-                    children: local_23(),
+                    children: local_24(),
                   }),
-                  local_24,
+                  local_25,
                 ],
               }),
             ],
@@ -4248,7 +4248,7 @@ export function fn_6f3fadc0({ onClose: arg }) {
                         {
                           type: "button",
                           className: `${local_b77a44cd.navItem} ${local_2 === arg.id ? local_b77a44cd.active : ""}`,
-                          onClick: () => local_19(arg.id),
+                          onClick: () => local_20(arg.id),
                           children: [
                             imported_3(arg.icon, {
                               size: 24,
@@ -4269,9 +4269,9 @@ export function fn_6f3fadc0({ onClose: arg }) {
                 children: [
                   imported_3("div", {
                     className: local_b77a44cd.content,
-                    children: local_23(),
+                    children: local_24(),
                   }),
-                  local_24,
+                  local_25,
                 ],
               }),
             ],

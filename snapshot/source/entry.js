@@ -1,6 +1,6 @@
-const local_5b673d6a = (
-  symbol_073,
-  arg = local_5b673d6a,
+const local_80136556 = (
+  symbol_071,
+  arg = local_80136556,
   arg_2 = arg.f ||
     (arg.f = [
       "./routes/subscription-modal.js",
@@ -71,8 +71,8 @@ const local_5b673d6a = (
       "./shared/subscription-terms-module.css",
       "./routes/recurring-terms.js",
       "./routes/login.js",
-      "./shared/chunk-0684deeacdb3.js",
-      "./shared/chunk-0684deeacdb3.css",
+      "./shared/chunk-12b08122b95d.js",
+      "./shared/chunk-12b08122b95d.css",
       "./shared/chunk-7195651f0d46.js",
       "./shared/chunk-7195651f0d46.css",
       "./components/icon-eye-off.js",
@@ -86,7 +86,7 @@ const local_5b673d6a = (
       "./routes/onboarding.js",
       "./routes/onboarding.css",
     ]),
-) => symbol_073.map((symbol_073) => arg_2[symbol_073]);
+) => symbol_071.map((symbol_071) => arg_2[symbol_071]);
 (function () {
   try {
     const local =
@@ -100,7 +100,7 @@ const local_5b673d6a = (
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -170,6 +170,9 @@ let local_657db3b7_9;
 let local_657db3b7_10;
 let local_657db3b7_11;
 let local_657db3b7_12;
+let local_657db3b7_13;
+let local_657db3b7_14;
+let local_657db3b7_15;
 const local_603ced16 = {};
 const local_0f018a95 = [];
 const local_ad6d7392 =
@@ -239,7 +242,7 @@ function fn_e91fa79b() {
     current: null,
   };
 }
-function symbol_063(arg) {
+function symbol_020(arg) {
   return arg.children;
 }
 class clazz_183a9acd {
@@ -294,19 +297,49 @@ function fn_f258c0a1(arg, arg_2) {
   }
   return null;
 }
-function fn_08fc7834(arg) {
-  let local;
-  let local_2;
+function fn_ca08eaad(arg) {
+  if (arg.__P && arg.__d) {
+    const local = arg.__v;
+    const local_2 = local.__e;
+    const local_3 = [];
+    const local_4 = [];
+    const local_5 = fn_be5cf4ce({}, local);
+    local_5.__v = local.__v + 1;
+    if (local_657db3b7_2.vnode) {
+      local_657db3b7_2.vnode(local_5);
+    }
+    fn_e73fbda1(
+      arg.__P,
+      local_5,
+      local,
+      arg.__n,
+      arg.__P.namespaceURI,
+      32 & local.__u ? [local_2] : null,
+      local_3,
+      local_2 ?? fn_f258c0a1(local),
+      !!(32 & local.__u),
+      local_4,
+    );
+    local_5.__v = local.__v;
+    local_5.__.__k[local_5.__i] = local_5;
+    fn_863f0984(local_3, local_5, local_4);
+    local.__e = null;
+    local.__ = null;
+    if (local_5.__e != local_2) {
+      fn_d7134463(local_5);
+    }
+  }
+}
+function fn_d7134463(arg) {
   if ((arg = arg.__) != null && arg.__c != null) {
     arg.__e = null;
     arg.__c.base = null;
-    for (local = 0; local < arg.__k.length; local++) {
-      if ((local_2 = arg.__k[local]) != null && local_2.__e != null) {
-        arg.__e = arg.__c.base = local_2.__e;
-        break;
+    arg.__k.some(function (arg) {
+      if (arg != null && arg.__e != null) {
+        return (arg.__e = arg.__c.base = arg.__e);
       }
-    }
-    return fn_08fc7834(arg);
+    });
+    return fn_d7134463(arg);
   }
 }
 function fn_006034fa(arg) {
@@ -314,66 +347,33 @@ function fn_006034fa(arg) {
     (!arg.__d &&
       (arg.__d = true) &&
       local_657db3b7_4.push(arg) &&
-      !fn_cb9fee21.__r++) ||
+      !fn_7b6c3887.__r++) ||
     local_657db3b7_5 != local_657db3b7_2.debounceRendering
   ) {
     (
       (local_657db3b7_5 = local_657db3b7_2.debounceRendering) ||
       local_657db3b7_6
-    )(fn_cb9fee21);
+    )(fn_7b6c3887);
   }
 }
-function fn_cb9fee21() {
-  let local;
-  let local_2;
-  let local_3;
-  let local_4;
-  let local_5;
-  let local_6;
-  let local_7;
-  let local_8 = 1;
-  while (local_657db3b7_4.length) {
-    if (local_657db3b7_4.length > local_8) {
-      local_657db3b7_4.sort(local_657db3b7_7);
-    }
-    local = local_657db3b7_4.shift();
-    local_8 = local_657db3b7_4.length;
-    if (local.__d) {
-      local_3 = undefined;
-      local_4 = undefined;
-      local_5 = (local_4 = (local_2 = local).__v).__e;
-      local_6 = [];
-      local_7 = [];
-      if (local_2.__P) {
-        (local_3 = fn_be5cf4ce({}, local_4)).__v = local_4.__v + 1;
-        if (local_657db3b7_2.vnode) {
-          local_657db3b7_2.vnode(local_3);
-        }
-        fn_49f0a109(
-          local_2.__P,
-          local_3,
-          local_4,
-          local_2.__n,
-          local_2.__P.namespaceURI,
-          32 & local_4.__u ? [local_5] : null,
-          local_6,
-          local_5 ?? fn_f258c0a1(local_4),
-          !!(32 & local_4.__u),
-          local_7,
-        );
-        local_3.__v = local_4.__v;
-        local_3.__.__k[local_3.__i] = local_3;
-        fn_863f0984(local_6, local_3, local_7);
-        local_4.__e = local_4.__ = null;
-        if (local_3.__e != local_5) {
-          fn_08fc7834(local_3);
-        }
+function fn_7b6c3887() {
+  try {
+    let local;
+    let local_2 = 1;
+    while (local_657db3b7_4.length) {
+      if (local_657db3b7_4.length > local_2) {
+        local_657db3b7_4.sort(local_657db3b7_7);
       }
+      local = local_657db3b7_4.shift();
+      local_2 = local_657db3b7_4.length;
+      fn_ca08eaad(local);
     }
+  } finally {
+    local_657db3b7_4.length = 0;
+    fn_7b6c3887.__r = 0;
   }
-  fn_cb9fee21.__r = 0;
 }
-function fn_4f1570cb(
+function fn_aa0c93e7(
   arg,
   arg_2,
   arg_3,
@@ -392,18 +392,14 @@ function fn_4f1570cb(
   let local_4;
   let local_5;
   let local_6;
-  let local_7;
-  const local_8 = (arg_4 && arg_4.__k) || local_0f018a95;
-  const local_9 = arg_2.length;
-  arg_9 = fn_fc873439(arg_3, arg_2, local_8, arg_9, local_9);
-  for (local = 0; local < local_9; local++) {
+  const local_7 = (arg_4 && arg_4.__k) || local_0f018a95;
+  const local_8 = arg_2.length;
+  arg_9 = fn_fc873439(arg_3, arg_2, local_7, arg_9, local_8);
+  for (local = 0; local < local_8; local++) {
     if ((local_3 = arg_3.__k[local]) != null) {
-      local_2 =
-        local_3.__i == -1
-          ? local_603ced16
-          : local_8[local_3.__i] || local_603ced16;
+      local_2 = (local_3.__i != -1 && local_7[local_3.__i]) || local_603ced16;
       local_3.__i = local;
-      local_6 = fn_49f0a109(
+      local_6 = fn_e73fbda1(
         arg,
         local_3,
         local_2,
@@ -425,8 +421,11 @@ function fn_4f1570cb(
       if (local_5 == null && local_4 != null) {
         local_5 = local_4;
       }
-      if ((local_7 = !!(4 & local_3.__u)) || local_2.__k === local_3.__k) {
-        arg_9 = fn_1ba9d87d(local_3, arg_9, arg, local_7);
+      if (4 & local_3.__u) {
+        arg_9 = fn_5aa516a7(local_3, arg_9, arg);
+        if (local_2.__e) {
+          local_2.__e = null;
+        }
       } else if (typeof local_3.type === "function" && local_6 !== undefined) {
         arg_9 = local_6;
       } else if (local_4) {
@@ -463,7 +462,7 @@ function fn_fc873439(arg, arg_2, arg_3, arg_4, arg_5) {
         local_2 = arg.__k[local] = fn_99846410(null, local_2, null, null, null);
       } else if (local_2cae01a0(local_2)) {
         local_2 = arg.__k[local] = fn_99846410(
-          symbol_063,
+          symbol_020,
           {
             children: local_2,
           },
@@ -509,13 +508,13 @@ function fn_fc873439(arg, arg_2, arg_3, arg_4, arg_5) {
         if (local_3.__e == arg_4) {
           arg_4 = fn_f258c0a1(local_3);
         }
-        fn_72e1cf92(local_3, local_3);
+        fn_1ce07fc5(local_3, local_3);
       }
     }
   }
   return arg_4;
 }
-function fn_1ba9d87d(arg, arg_2, arg_3, arg_4) {
+function fn_5aa516a7(arg, arg_2, arg_3) {
   let local;
   let local_2;
   if (typeof arg.type === "function") {
@@ -523,19 +522,16 @@ function fn_1ba9d87d(arg, arg_2, arg_3, arg_4) {
     for (local_2 = 0; local && local_2 < local.length; local_2++) {
       if (local[local_2]) {
         local[local_2].__ = arg;
-        arg_2 = fn_1ba9d87d(local[local_2], arg_2, arg_3, arg_4);
+        arg_2 = fn_5aa516a7(local[local_2], arg_2, arg_3);
       }
     }
     return arg_2;
   }
   if (arg.__e != arg_2) {
-    if (arg_4) {
-      if (arg_2 && arg.type && !arg_2.parentNode) {
-        arg_2 = fn_f258c0a1(arg);
-      }
-      arg_3.insertBefore(arg.__e, arg_2 || null);
+    if (arg_2 && arg.type && !arg_2.parentNode) {
+      arg_2 = fn_f258c0a1(arg);
     }
-    arg_2 = arg.__e;
+    arg_2 = arg_3.insertBefore(arg.__e, arg_2 || null);
   }
   do {
     arg_2 = arg_2 && arg_2.nextSibling;
@@ -595,7 +591,7 @@ function fn_9175ac3d(arg, arg_2, arg_3) {
           : `${arg_3}px`;
   }
 }
-function fn_0074851c(arg, arg_2, arg_3, arg_4, arg_5) {
+function fn_6e5269e1(arg, arg_2, arg_3, arg_4, arg_5) {
   let local;
   let local_2;
   e: if (arg_2 == "style") {
@@ -621,7 +617,7 @@ function fn_0074851c(arg, arg_2, arg_3, arg_4, arg_5) {
       }
     }
   } else if (arg_2[0] == "o" && arg_2[1] == "n") {
-    local = arg_2 != (arg_2 = arg_2.replace(local_657db3b7_8, "$1"));
+    local = arg_2 != (arg_2 = arg_2.replace(local_657db3b7_11, "$1"));
     local_2 = arg_2.toLowerCase();
     arg_2 =
       local_2 in arg || arg_2 == "onFocusOut" || arg_2 == "onFocusIn"
@@ -633,19 +629,19 @@ function fn_0074851c(arg, arg_2, arg_3, arg_4, arg_5) {
     arg.l[arg_2 + local] = arg_3;
     if (arg_3) {
       if (arg_4) {
-        arg_3.u = arg_4.u;
+        arg_3[local_657db3b7_10] = arg_4[local_657db3b7_10];
       } else {
-        arg_3.u = local_657db3b7_9;
+        arg_3[local_657db3b7_10] = local_657db3b7_12;
         arg.addEventListener(
           arg_2,
-          local ? local_657db3b7_11 : local_657db3b7_10,
+          local ? local_657db3b7_14 : local_657db3b7_13,
           local,
         );
       }
     } else {
       arg.removeEventListener(
         arg_2,
-        local ? local_657db3b7_11 : local_657db3b7_10,
+        local ? local_657db3b7_14 : local_657db3b7_13,
         local,
       );
     }
@@ -680,20 +676,20 @@ function fn_0074851c(arg, arg_2, arg_3, arg_4, arg_5) {
           ));
   }
 }
-function fn_c6434f8e(arg) {
+function fn_f71afd3b(arg) {
   return function (arg) {
     if (this.l) {
       const local = this.l[arg.type + arg];
-      if (arg.t == null) {
-        arg.t = local_657db3b7_9++;
-      } else if (arg.t < local.u) {
+      if (arg[local_657db3b7_9] == null) {
+        arg[local_657db3b7_9] = local_657db3b7_12++;
+      } else if (arg[local_657db3b7_9] < local[local_657db3b7_10]) {
         return;
       }
       return local(local_657db3b7_2.event ? local_657db3b7_2.event(arg) : arg);
     }
   };
 }
-function fn_49f0a109(
+function fn_e73fbda1(
   arg,
   arg_2,
   arg_3,
@@ -721,8 +717,7 @@ function fn_49f0a109(
   let local_14;
   let local_15;
   let local_16;
-  let local_17;
-  const local_18 = arg_2.type;
+  const local_17 = arg_2.type;
   if (arg_2.constructor !== undefined) {
     return null;
   }
@@ -733,79 +728,80 @@ function fn_49f0a109(
   if ((local = local_657db3b7_2.__b)) {
     local(arg_2);
   }
-  e: if (typeof local_18 === "function") {
+  e: if (typeof local_17 === "function") {
+    local_2 = arg_7.length;
     try {
-      local_8 = arg_2.props;
-      local_9 = "prototype" in local_18 && local_18.prototype.render;
-      local_10 = (local = local_18.contextType) && arg_4[local.__c];
-      local_11 = local ? (local_10 ? local_10.props.value : local.__) : arg_4;
+      local_9 = arg_2.props;
+      local_10 = local_17.prototype && local_17.prototype.render;
+      local_11 = (local = local_17.contextType) && arg_4[local.__c];
+      local_12 = local ? (local_11 ? local_11.props.value : local.__) : arg_4;
       if (arg_3.__c) {
-        local_7 = (local_2 = arg_2.__c = arg_3.__c).__ = local_2.__E;
+        local_8 = (local_3 = arg_2.__c = arg_3.__c).__ = local_3.__E;
       } else {
-        if (local_9) {
-          arg_2.__c = local_2 = new local_18(local_8, local_11);
-        } else {
-          arg_2.__c = local_2 = new clazz_183a9acd(local_8, local_11);
-          local_2.constructor = local_18;
-          local_2.render = fn_194ce442;
-        }
         if (local_10) {
-          local_10.sub(local_2);
+          arg_2.__c = local_3 = new local_17(local_9, local_12);
+        } else {
+          arg_2.__c = local_3 = new clazz_183a9acd(local_9, local_12);
+          local_3.constructor = local_17;
+          local_3.render = fn_194ce442;
         }
-        if (!local_2.state) {
-          local_2.state = {};
+        if (local_11) {
+          local_11.sub(local_3);
         }
-        local_2.__n = arg_4;
-        local_3 = local_2.__d = true;
-        local_2.__h = [];
-        local_2._sb = [];
+        if (!local_3.state) {
+          local_3.state = {};
+        }
+        local_3.__n = arg_4;
+        local_4 = local_3.__d = true;
+        local_3.__h = [];
+        local_3._sb = [];
       }
-      if (local_9 && local_2.__s == null) {
-        local_2.__s = local_2.state;
+      if (local_10 && local_3.__s == null) {
+        local_3.__s = local_3.state;
       }
-      if (local_9 && local_18.getDerivedStateFromProps != null) {
-        if (local_2.__s == local_2.state) {
-          local_2.__s = fn_be5cf4ce({}, local_2.__s);
+      if (local_10 && local_17.getDerivedStateFromProps != null) {
+        if (local_3.__s == local_3.state) {
+          local_3.__s = fn_be5cf4ce({}, local_3.__s);
         }
         fn_be5cf4ce(
-          local_2.__s,
-          local_18.getDerivedStateFromProps(local_8, local_2.__s),
+          local_3.__s,
+          local_17.getDerivedStateFromProps(local_9, local_3.__s),
         );
       }
-      local_4 = local_2.props;
-      local_5 = local_2.state;
-      local_2.__v = arg_2;
-      if (local_3) {
+      local_5 = local_3.props;
+      local_6 = local_3.state;
+      local_3.__v = arg_2;
+      if (local_4) {
         if (
-          local_9 &&
-          local_18.getDerivedStateFromProps == null &&
-          local_2.componentWillMount != null
+          local_10 &&
+          local_17.getDerivedStateFromProps == null &&
+          local_3.componentWillMount != null
         ) {
-          local_2.componentWillMount();
+          local_3.componentWillMount();
         }
-        if (local_9 && local_2.componentDidMount != null) {
-          local_2.__h.push(local_2.componentDidMount);
+        if (local_10 && local_3.componentDidMount != null) {
+          local_3.__h.push(local_3.componentDidMount);
         }
       } else {
         if (
-          local_9 &&
-          local_18.getDerivedStateFromProps == null &&
-          local_8 !== local_4 &&
-          local_2.componentWillReceiveProps != null
+          local_10 &&
+          local_17.getDerivedStateFromProps == null &&
+          local_9 !== local_5 &&
+          local_3.componentWillReceiveProps != null
         ) {
-          local_2.componentWillReceiveProps(local_8, local_11);
+          local_3.componentWillReceiveProps(local_9, local_12);
         }
         if (
           arg_2.__v == arg_3.__v ||
-          (!local_2.__e &&
-            local_2.shouldComponentUpdate != null &&
-            local_2.shouldComponentUpdate(local_8, local_2.__s, local_11) ===
+          (!local_3.__e &&
+            local_3.shouldComponentUpdate != null &&
+            local_3.shouldComponentUpdate(local_9, local_3.__s, local_12) ===
               false)
         ) {
           if (arg_2.__v != arg_3.__v) {
-            local_2.props = local_8;
-            local_2.state = local_2.__s;
-            local_2.__d = false;
+            local_3.props = local_9;
+            local_3.state = local_3.__s;
+            local_3.__d = false;
           }
           arg_2.__e = arg_3.__e;
           arg_2.__k = arg_3.__k;
@@ -814,65 +810,62 @@ function fn_49f0a109(
               arg.__ = arg_2;
             }
           });
-          for (local_12 = 0; local_12 < local_2._sb.length; local_12++) {
-            local_2.__h.push(local_2._sb[local_12]);
+          local_0f018a95.push.apply(local_3.__h, local_3._sb);
+          local_3._sb = [];
+          if (local_3.__h.length) {
+            arg_7.push(local_3);
           }
-          local_2._sb = [];
-          if (local_2.__h.length) {
-            arg_7.push(local_2);
-          }
+          arg_8 = fn_f258c0a1(arg_3);
           break e;
         }
-        if (local_2.componentWillUpdate != null) {
-          local_2.componentWillUpdate(local_8, local_2.__s, local_11);
+        if (local_3.componentWillUpdate != null) {
+          local_3.componentWillUpdate(local_9, local_3.__s, local_12);
         }
-        if (local_9 && local_2.componentDidUpdate != null) {
-          local_2.__h.push(function () {
-            local_2.componentDidUpdate(local_4, local_5, local_6);
+        if (local_10 && local_3.componentDidUpdate != null) {
+          local_3.__h.push(function () {
+            local_3.componentDidUpdate(local_5, local_6, local_7);
           });
         }
       }
-      local_2.context = local_11;
-      local_2.props = local_8;
-      local_2.__P = arg;
-      local_2.__e = false;
+      local_3.context = local_12;
+      local_3.props = local_9;
+      local_3.__P = arg;
+      local_3.__e = false;
       local_13 = local_657db3b7_2.__r;
       local_14 = 0;
-      if (local_9) {
-        local_2.state = local_2.__s;
-        local_2.__d = false;
+      if (local_10) {
+        local_3.state = local_3.__s;
+        local_3.__d = false;
         if (local_13) {
           local_13(arg_2);
         }
-        local = local_2.render(local_2.props, local_2.state, local_2.context);
-        for (local_15 = 0; local_15 < local_2._sb.length; local_15++) {
-          local_2.__h.push(local_2._sb[local_15]);
-        }
-        local_2._sb = [];
+        local = local_3.render(local_3.props, local_3.state, local_3.context);
+        local_0f018a95.push.apply(local_3.__h, local_3._sb);
+        local_3._sb = [];
       } else {
         do {
-          local_2.__d = false;
+          local_3.__d = false;
           if (local_13) {
             local_13(arg_2);
           }
-          local = local_2.render(local_2.props, local_2.state, local_2.context);
-          local_2.state = local_2.__s;
-        } while (local_2.__d && ++local_14 < 25);
+          local = local_3.render(local_3.props, local_3.state, local_3.context);
+          local_3.state = local_3.__s;
+        } while (local_3.__d && ++local_14 < 25);
       }
-      local_2.state = local_2.__s;
-      if (local_2.getChildContext != null) {
-        arg_4 = fn_be5cf4ce(fn_be5cf4ce({}, arg_4), local_2.getChildContext());
+      local_3.state = local_3.__s;
+      if (local_3.getChildContext != null) {
+        arg_4 = fn_be5cf4ce(fn_be5cf4ce({}, arg_4), local_3.getChildContext());
       }
-      if (local_9 && !local_3 && local_2.getSnapshotBeforeUpdate != null) {
-        local_6 = local_2.getSnapshotBeforeUpdate(local_4, local_5);
+      if (local_10 && !local_4 && local_3.getSnapshotBeforeUpdate != null) {
+        local_7 = local_3.getSnapshotBeforeUpdate(local_5, local_6);
       }
-      local_16 = local;
-      if (local != null && local.type === symbol_063 && local.key == null) {
-        local_16 = fn_bc75b4cb(local.props.children);
-      }
-      arg_8 = fn_4f1570cb(
+      local_15 =
+        local != null && local.type === symbol_020 && local.key == null
+          ? fn_1d345566(local.props.children)
+          : local;
+      arg_8 = fn_aa0c93e7(
         arg,
-        local_2cae01a0(local_16) ? local_16 : [local_16],
+        local_2cae01a0(local_15) ? local_15 : [local_15],
         arg_2,
         arg_3,
         arg_4,
@@ -883,15 +876,16 @@ function fn_49f0a109(
         arg_9,
         arg_10,
       );
-      local_2.base = arg_2.__e;
+      local_3.base = arg_2.__e;
       arg_2.__u &= -161;
-      if (local_2.__h.length) {
-        arg_7.push(local_2);
+      if (local_3.__h.length) {
+        arg_7.push(local_3);
       }
-      if (local_7) {
-        local_2.__E = local_2.__ = null;
+      if (local_8) {
+        local_3.__E = local_3.__ = null;
       }
     } catch (error) {
+      arg_7.length = local_2;
       arg_2.__v = null;
       if (arg_9 || arg_6 != null) {
         if (error.then) {
@@ -901,20 +895,23 @@ function fn_49f0a109(
           ) {
             arg_8 = arg_8.nextSibling;
           }
-          arg_6[arg_6.indexOf(arg_8)] = null;
-          arg_2.__e = arg_8;
-        } else {
-          for (local_17 = arg_6.length; local_17--;) {
-            fn_c05b34ab(arg_6[local_17]);
+          if (arg_6 != null) {
+            arg_6[arg_6.indexOf(arg_8)] = null;
           }
-          fn_abffc197(arg_2);
+          arg_2.__e = arg_8;
+        } else if (arg_6 != null) {
+          for (local_16 = arg_6.length; local_16--;) {
+            fn_c05b34ab(arg_6[local_16]);
+          }
         }
       } else {
         arg_2.__e = arg_3.__e;
-        arg_2.__k = arg_3.__k;
-        if (!error.then) {
-          fn_abffc197(arg_2);
-        }
+      }
+      if (arg_2.__k == null) {
+        arg_2.__k = arg_3.__k || [];
+      }
+      if (!error.then) {
+        fn_5ae82f5a(arg_2);
       }
       local_657db3b7_2.__e(error, arg_2, arg_3);
     }
@@ -923,7 +920,7 @@ function fn_49f0a109(
       arg_2.__k = arg_3.__k;
       arg_2.__e = arg_3.__e;
     } else {
-      arg_8 = arg_2.__e = fn_c3d56538(
+      arg_8 = arg_2.__e = fn_a3f73b55(
         arg_3.__e,
         arg_2,
         arg_3,
@@ -944,13 +941,9 @@ function fn_49f0a109(
   }
   return arg_8;
 }
-function fn_abffc197(arg) {
-  if (arg && arg.__c) {
-    arg.__c.__e = true;
-  }
-  if (arg && arg.__k) {
-    arg.__k.forEach(fn_abffc197);
-  }
+function fn_5ae82f5a(arg) {
+  arg &&
+    (arg.__c && (arg.__c.__e = true), arg.__k && arg.__k.some(fn_5ae82f5a));
 }
 function fn_863f0984(arg, arg_2, arg_3) {
   for (let local = 0; local < arg_3.length; local++) {
@@ -971,16 +964,19 @@ function fn_863f0984(arg, arg_2, arg_3) {
     }
   });
 }
-function fn_bc75b4cb(arg) {
-  if (typeof arg !== "object" || arg == null || (arg.__b && arg.__b > 0)) {
+function fn_1d345566(arg) {
+  if (typeof arg !== "object" || arg == null || arg.__b > 0) {
     return arg;
   }
   if (local_2cae01a0(arg)) {
-    return arg.map(fn_bc75b4cb);
+    return arg.map(fn_1d345566);
+  }
+  if (arg.constructor !== undefined) {
+    return null;
   }
   return fn_be5cf4ce({}, arg);
 }
-function fn_c3d56538(
+function fn_a3f73b55(
   arg,
   arg_2,
   arg_3,
@@ -1039,7 +1035,10 @@ function fn_c3d56538(
       arg.data = local_9;
     }
   } else {
-    arg_6 = arg_6 && local_657db3b7.call(arg.childNodes);
+    arg_6 =
+      local_10 == "textarea" && local_9.defaultValue != null
+        ? null
+        : arg_6 && local_657db3b7.call(arg.childNodes);
     if (!arg_8 && arg_6 != null) {
       local_8 = {};
       for (local = 0; local < arg.attributes.length; local++) {
@@ -1048,18 +1047,15 @@ function fn_c3d56538(
     }
     for (local in local_8) {
       local_5 = local_8[local];
-      if (local != "children") {
-        if (local == "dangerouslySetInnerHTML") {
-          local_3 = local_5;
-        } else if (!(local in local_9)) {
-          if (
-            (local == "value" && "defaultValue" in local_9) ||
-            (local == "checked" && "defaultChecked" in local_9)
-          ) {
-            continue;
-          }
-          fn_0074851c(arg, local, null, local_5, arg_5);
-        }
+      if (local == "dangerouslySetInnerHTML") {
+        local_3 = local_5;
+      } else if (!(
+        local == "children" ||
+        local in local_9 ||
+        (local == "value" && "defaultValue" in local_9) ||
+        (local == "checked" && "defaultChecked" in local_9)
+      )) {
+        fn_6e5269e1(arg, local, null, local_5, arg_5);
       }
     }
     for (local in local_9) {
@@ -1076,7 +1072,7 @@ function fn_c3d56538(
         (arg_8 && typeof local_5 !== "function") ||
         local_8[local] === local_5
       )) {
-        fn_0074851c(arg, local, local_5, local_8[local], arg_5);
+        fn_6e5269e1(arg, local, local_5, local_8[local], arg_5);
       }
     }
     if (local_2) {
@@ -1092,7 +1088,7 @@ function fn_c3d56538(
       if (local_3) {
         arg.innerHTML = "";
       }
-      fn_4f1570cb(
+      fn_aa0c93e7(
         arg_2.type == "template" ? arg.content : arg,
         local_2cae01a0(local_4) ? local_4 : [local_4],
         arg_2,
@@ -1111,7 +1107,7 @@ function fn_c3d56538(
         }
       }
     }
-    if (!arg_8) {
+    if (!(arg_8 && local_10 != "textarea")) {
       local = "value";
       if (local_10 == "progress" && local_6 == null) {
         arg.removeAttribute("value");
@@ -1121,11 +1117,11 @@ function fn_c3d56538(
           (local_10 == "progress" && !local_6) ||
           (local_10 == "option" && local_6 != local_8[local]))
       ) {
-        fn_0074851c(arg, local, local_6, local_8[local], arg_5);
+        fn_6e5269e1(arg, local, local_6, local_8[local], arg_5);
       }
       local = "checked";
       if (local_7 != null && local_7 != arg[local]) {
-        fn_0074851c(arg, local, local_7, local_8[local], arg_5);
+        fn_6e5269e1(arg, local, local_7, local_8[local], arg_5);
       }
     }
   }
@@ -1148,7 +1144,7 @@ function fn_1e9bf172(arg, arg_2, arg_3) {
     local_657db3b7_2.__e(error, arg_3);
   }
 }
-function fn_72e1cf92(arg, arg_2, arg_3) {
+function fn_1ce07fc5(arg, arg_2, arg_3) {
   let local;
   let local_2;
   if (local_657db3b7_2.unmount) {
@@ -1167,11 +1163,12 @@ function fn_72e1cf92(arg, arg_2, arg_3) {
     }
     local.base = null;
     local.__P = null;
+    local.__n = null;
   }
   if ((local = arg.__k)) {
     for (local_2 = 0; local_2 < local.length; local_2++) {
       if (local[local_2]) {
-        fn_72e1cf92(
+        fn_1ce07fc5(
           local[local_2],
           arg_2,
           arg_3 || typeof arg.type !== "function",
@@ -1189,7 +1186,7 @@ function fn_72e1cf92(arg, arg_2, arg_3) {
 function fn_194ce442(arg, arg_2, arg_3) {
   return this.constructor(arg, arg_3);
 }
-function fn_5b06483a(arg, arg_2, arg_3) {
+function fn_5297d6e7(arg, arg_2, arg_3) {
   let local;
   let local_2;
   let local_3;
@@ -1205,10 +1202,10 @@ function fn_5b06483a(arg, arg_2, arg_3) {
     : (arg_3 && arg_3.__k) || arg_2.__k;
   local_3 = [];
   local_4 = [];
-  fn_49f0a109(
+  fn_e73fbda1(
     arg_2,
     (arg = ((!local && arg_3) || arg_2).__k =
-      fn_ba0330ef(symbol_063, null, [arg])),
+      fn_ba0330ef(symbol_020, null, [arg])),
     local_2 || local_603ced16,
     local_603ced16,
     arg_2.namespaceURI,
@@ -1225,9 +1222,10 @@ function fn_5b06483a(arg, arg_2, arg_3) {
     local_4,
   );
   fn_863f0984(local_3, arg, local_4);
+  arg.props.children = null;
 }
 function fn_73211618(arg, arg_2) {
-  fn_5b06483a(arg, arg_2, fn_73211618);
+  fn_5297d6e7(arg, arg_2, fn_73211618);
 }
 function fn_fa5fc2cb(arg, arg_2, arg_3) {
   let local;
@@ -1262,7 +1260,7 @@ function fn_fa5fc2cb(arg, arg_2, arg_3) {
     null,
   );
 }
-function fn_c05a86e1(arg) {
+function fn_aa547820(arg) {
   function fn(arg) {
     let local;
     let local_2;
@@ -1298,7 +1296,7 @@ function fn_c05a86e1(arg) {
     }
     return arg.children;
   }
-  fn.__c = `__cC${local_657db3b7_12++}`;
+  fn.__c = `__cC${local_657db3b7_15++}`;
   fn.__ = arg;
   fn.Provider = fn;
   fn.__l = fn;
@@ -1339,7 +1337,7 @@ local_657db3b7_2 = {
   },
 };
 local_657db3b7_3 = 0;
-clazz_183a9acd.prototype.render = symbol_063;
+clazz_183a9acd.prototype.render = symbol_020;
 local_657db3b7_4 = [];
 local_657db3b7_6 =
   typeof Promise === "function"
@@ -1348,14 +1346,17 @@ local_657db3b7_6 =
 local_657db3b7_7 = function (arg, arg_2) {
   return arg.__v.__b - arg_2.__v.__b;
 };
-fn_cb9fee21.__r = 0;
-local_657db3b7_8 = /(PointerCapture)$|Capture$/i;
-local_657db3b7_9 = 0;
-local_657db3b7_10 = fn_c6434f8e(false);
-local_657db3b7_11 = fn_c6434f8e(true);
+fn_7b6c3887.__r = 0;
+local_657db3b7_8 = Math.random().toString(8);
+local_657db3b7_9 = `__d${local_657db3b7_8}`;
+local_657db3b7_10 = `__a${local_657db3b7_8}`;
+local_657db3b7_11 = /(PointerCapture)$|Capture$/i;
 local_657db3b7_12 = 0;
+local_657db3b7_13 = fn_f71afd3b(false);
+local_657db3b7_14 = fn_f71afd3b(true);
+local_657db3b7_15 = 0;
 let local_f06debfc = 0;
-function symbol_073(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
+function symbol_071(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
   if (!arg_2) {
     arg_2 = {};
   }
@@ -1404,19 +1405,19 @@ function symbol_073(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
 const local_23bb5d69 =
   typeof __SENTRY_DEBUG__ === "undefined" || __SENTRY_DEBUG__;
 const local_f090a36f = globalThis;
-const local_32bc66f7 = "10.52.0";
+const local_326e3068 = "10.71.0";
 function fn_324f4519() {
   fn_2e1450a8(local_f090a36f);
   return local_f090a36f;
 }
 function fn_2e1450a8(arg) {
   const local = (arg.__SENTRY__ = arg.__SENTRY__ || {});
-  local.version = local.version || local_32bc66f7;
-  return (local[local_32bc66f7] = local[local_32bc66f7] || {});
+  local.version = local.version || local_326e3068;
+  return (local[local_326e3068] = local[local_326e3068] || {});
 }
 function fn_9cfc19fb(arg, arg_2, arg_3 = local_f090a36f) {
   const local = (arg_3.__SENTRY__ = arg_3.__SENTRY__ || {});
-  const local_2 = (local[local_32bc66f7] = local[local_32bc66f7] || {});
+  const local_2 = (local[local_326e3068] = local[local_326e3068] || {});
   return local_2[arg] || (local_2[arg] = arg_2());
 }
 const local_0296945c = [
@@ -1460,15 +1461,15 @@ function fn_5a72670c() {
   return fn_4b52037e().enabled;
 }
 function fn_3ad7d7c6(...arg) {
-  fn_368406f7("log", ...arg);
+  fn_f0a2e80c("log", ...arg);
 }
 function fn_ef2987cf(...arg) {
-  fn_368406f7("warn", ...arg);
+  fn_f0a2e80c("warn", ...arg);
 }
 function fn_359adae9(...arg) {
-  fn_368406f7("error", ...arg);
+  fn_f0a2e80c("error", ...arg);
 }
-function fn_368406f7(arg, ...arg_2) {
+function fn_f0a2e80c(arg, ...arg_2) {
   if (local_23bb5d69 && fn_5a72670c()) {
     fn_a1a275d6(() => {
       local_f090a36f.console[arg](`${local_43ff4522}[${arg}]:`, ...arg_2);
@@ -1586,12 +1587,6 @@ function fn_b8c28533(arg) {
     }
   }
 }
-function fn_fa18e46f(arg) {
-  if ("__v_isVNode" in arg && arg.__v_isVNode) {
-    return "[VueVNode]";
-  }
-  return "[VueViewModel]";
-}
 const local_603ced16_3 = {};
 const local_603ced16_4 = {};
 function fn_8c3b3d2d(arg, arg_2) {
@@ -1619,7 +1614,7 @@ function fn_131e115c(arg, arg_2) {
     }
   }
 }
-function fn_346ded5d(arg, arg_2) {
+function fn_44c6a9b9(arg, arg_2) {
   const local = arg && local_603ced16_3[arg];
   if (local) {
     for (const local of local) {
@@ -1648,7 +1643,7 @@ function fn_2d8ea36f(arg) {
 function fn_d86369c5() {
   local_0a9fda83 = local_f090a36f.onerror;
   local_f090a36f.onerror = function (arg, arg_2, arg_3, arg_4, arg_5) {
-    fn_346ded5d("error", {
+    fn_44c6a9b9("error", {
       column: arg_4,
       error: arg_5,
       line: arg_3,
@@ -1671,7 +1666,7 @@ function fn_6f6110ff(arg) {
 function fn_3b1c59a9() {
   local_0a9fda83_2 = local_f090a36f.onunhandledrejection;
   local_f090a36f.onunhandledrejection = function (arg) {
-    fn_346ded5d("unhandledrejection", arg);
+    fn_44c6a9b9("unhandledrejection", arg);
     if (local_0a9fda83_2) {
       return local_0a9fda83_2.apply(this, arguments);
     }
@@ -1724,25 +1719,17 @@ function fn_8a91c46c(arg) {
 function fn_5ee37d10(arg) {
   return fn_e2e38ba2(arg, "Object");
 }
+function fn_2ab3420d(arg) {
+  return typeof arg === "object" && arg !== null;
+}
 function fn_af94ae8c(arg) {
   return typeof Event !== "undefined" && fn_e4697554(arg, Event);
-}
-function fn_af94ae8c_2(arg) {
-  return typeof Element !== "undefined" && fn_e4697554(arg, Element);
 }
 function fn_2ee03663(arg) {
   return fn_e2e38ba2(arg, "RegExp");
 }
 function fn_0dbd451a(arg) {
   return !!(arg?.then && typeof arg.then === "function");
-}
-function fn_d0f27641(arg) {
-  return (
-    fn_5ee37d10(arg) &&
-    "nativeEvent" in arg &&
-    "preventDefault" in arg &&
-    "stopPropagation" in arg
-  );
 }
 function fn_e4697554(arg, arg_2) {
   try {
@@ -1751,128 +1738,8 @@ function fn_e4697554(arg, arg_2) {
     return false;
   }
 }
-function fn_2b08bc2f(arg) {
-  return !!(
-    typeof arg === "object" &&
-    arg !== null &&
-    (arg.__isVue || arg._isVue || arg.__v_isVNode)
-  );
-}
-function fn_af94ae8c_3(arg) {
+function fn_af94ae8c_2(arg) {
   return typeof Request !== "undefined" && fn_e4697554(arg, Request);
-}
-const local_f090a36f_2 = local_f090a36f;
-const local_f06debfc_3 = 80;
-function fn_9a310b32(arg, arg_2 = {}) {
-  if (!arg) {
-    return "<unknown>";
-  }
-  try {
-    let local = arg;
-    const local_2 = 5;
-    const local_3 = [];
-    let local_4 = 0;
-    let local_5 = 0;
-    const local_6 = " > ";
-    const local_7 = local_6.length;
-    let local_8;
-    const local_9 = Array.isArray(arg_2) ? arg_2 : arg_2.keyAttrs;
-    const local_10 =
-      (!Array.isArray(arg_2) && arg_2.maxStringLength) || local_f06debfc_3;
-    while (
-      local &&
-      local_4++ < local_2 &&
-      ((local_8 = fn_76eb1917(local, local_9)),
-      !(
-        local_8 === "html" ||
-        (local_4 > 1 &&
-          local_5 + local_3.length * local_7 + local_8.length >= local_10)
-      ))
-    ) {
-      local_3.push(local_8);
-      local_5 += local_8.length;
-      local = local.parentNode;
-    }
-    return local_3.reverse().join(local_6);
-  } catch {
-    return "<unknown>";
-  }
-}
-function fn_76eb1917(arg, arg_2) {
-  const local = arg;
-  const local_2 = [];
-  if (!local?.tagName) {
-    return "";
-  }
-  if (
-    local_f090a36f_2.HTMLElement &&
-    local instanceof HTMLElement &&
-    local.dataset
-  ) {
-    if (local.dataset.sentryComponent) {
-      return local.dataset.sentryComponent;
-    }
-    if (local.dataset.sentryElement) {
-      return local.dataset.sentryElement;
-    }
-  }
-  local_2.push(local.tagName.toLowerCase());
-  const local_3 = arg_2?.length
-    ? arg_2
-        .filter((arg) => local.getAttribute(arg))
-        .map((arg) => [arg, local.getAttribute(arg)])
-    : null;
-  if (local_3?.length) {
-    local_3.forEach((arg) => {
-      local_2.push(`[${arg[0]}="${arg[1]}"]`);
-    });
-  } else {
-    if (local.id) {
-      local_2.push(`#${local.id}`);
-    }
-    const local = local.className;
-    if (local && fn_bdd4075c(local)) {
-      const local = local.split(/\s+/);
-      for (const local of local) {
-        local_2.push(`.${local}`);
-      }
-    }
-  }
-  for (const local of ["aria-label", "type", "name", "title", "alt"]) {
-    const local = local.getAttribute(local);
-    if (local) {
-      local_2.push(`[${local}="${local}"]`);
-    }
-  }
-  return local_2.join("");
-}
-function fn_1d107afc() {
-  try {
-    return local_f090a36f_2.document.location.href;
-  } catch {
-    return "";
-  }
-}
-function fn_08cf125e(arg, arg_2 = 5) {
-  if (!local_f090a36f_2.HTMLElement) {
-    return null;
-  }
-  let local = arg;
-  for (let local = 0; local < arg_2; local++) {
-    if (!local) {
-      return null;
-    }
-    if (local instanceof HTMLElement) {
-      if (local.dataset.sentryComponent) {
-        return local.dataset.sentryComponent;
-      }
-      if (local.dataset.sentryElement) {
-        return local.dataset.sentryElement;
-      }
-    }
-    local = local.parentNode;
-  }
-  return null;
 }
 function fn_344b1aa6(arg, arg_2, arg_3) {
   if (!(arg_2 in arg)) {
@@ -1921,68 +1788,64 @@ function fn_2d23a036(arg, arg_2) {
 function fn_092c85be(arg) {
   return arg.__sentry_original__;
 }
-function fn_0476c2c9(arg) {
+function fn_032c168d(arg) {
   if (fn_7b60edb8(arg)) {
     return {
       message: arg.message,
       name: arg.name,
       stack: arg.stack,
-      ...fn_14b20c85(arg),
+      ...fn_64058015(arg),
     };
   }
   if (fn_af94ae8c(arg)) {
-    const local = {
-      type: arg.type,
-      target: fn_37c8bf77(arg.target),
-      currentTarget: fn_37c8bf77(arg.currentTarget),
-      ...fn_14b20c85(arg),
+    const {
+      type: local,
+      target: local_2,
+      currentTarget: local_3,
+      detail: local_4,
+    } = arg;
+    return {
+      type: local,
+      target: local_2,
+      currentTarget: local_3,
+      ...(local_4
+        ? {
+            detail: local_4,
+          }
+        : {}),
+      ...fn_64058015(arg),
     };
-    if (typeof CustomEvent !== "undefined" && fn_e4697554(arg, CustomEvent)) {
-      local.detail = arg.detail;
-    }
-    return local;
-  } else {
-    return arg;
   }
+  return arg;
 }
-function fn_37c8bf77(arg) {
-  try {
-    if (fn_af94ae8c_2(arg)) {
-      return fn_9a310b32(arg);
-    }
-    return Object.prototype.toString.call(arg);
-  } catch {
-    return "<unknown>";
-  }
-}
-function fn_14b20c85(arg) {
-  if (typeof arg === "object" && arg !== null) {
+function fn_64058015(arg) {
+  if (fn_2ab3420d(arg)) {
     return Object.fromEntries(Object.entries(arg));
   }
   return {};
 }
 function fn_4c904858(arg) {
-  const local = Object.keys(fn_0476c2c9(arg));
+  const local = Object.keys(fn_032c168d(arg));
   local.sort();
   if (local[0]) {
     return local.join(", ");
   }
   return "[object has no keys]";
 }
-let local_657db3b7_13;
+let local_657db3b7_16;
 function fn_3ba42ed1(arg) {
-  if (local_657db3b7_13 !== undefined) {
-    if (local_657db3b7_13) {
-      return local_657db3b7_13(arg);
+  if (local_657db3b7_16 !== undefined) {
+    if (local_657db3b7_16) {
+      return local_657db3b7_16(arg);
     }
     return arg();
   }
   const local = Symbol.for("__SENTRY_SAFE_RANDOM_ID_WRAPPER__");
   const local_2 = local_f090a36f;
   if (local in local_2 && typeof local_2[local] === "function") {
-    return ((local_657db3b7_13 = local_2[local]), local_657db3b7_13(arg));
+    return ((local_657db3b7_16 = local_2[local]), local_657db3b7_16(arg));
   }
-  return ((local_657db3b7_13 = null), arg());
+  return ((local_657db3b7_16 = null), arg());
 }
 function fn_ce103458() {
   return fn_3ba42ed1(() => Math.random());
@@ -1990,27 +1853,167 @@ function fn_ce103458() {
 function fn_ce103458_2() {
   return fn_3ba42ed1(() => Date.now());
 }
+const local_b7c88805 = Symbol.for("sentry.skipNormalization");
+const local_98a488cb = Symbol.for("sentry.overrideNormalizationDepth");
+function fn_61a6acad(arg) {
+  return !!arg[local_b7c88805];
+}
+function fn_b36c7183(arg) {
+  const local = arg[local_98a488cb];
+  if (typeof local === "number") {
+    return local;
+  }
+}
+let local_657db3b7_17;
+function fn_bdc7aa48(arg) {
+  local_657db3b7_17 = arg;
+}
+function fn_49b28d31(arg, arg_2 = 100, arg_3 = Infinity) {
+  try {
+    return fn_ca7d5fff("", arg, arg_2, arg_3);
+  } catch (error) {
+    return {
+      ERROR: `**non-serializable** (${error})`,
+    };
+  }
+}
+function fn_05588881(arg, arg_2 = 3, arg_3 = 100 * 1024) {
+  const local = fn_49b28d31(arg, arg_2);
+  if (fn_2dca9dbd(local) > arg_3) {
+    return fn_05588881(arg, arg_2 - 1, arg_3);
+  }
+  return local;
+}
+function fn_ca7d5fff(
+  arg,
+  arg_2,
+  arg_3 = Infinity,
+  arg_4 = Infinity,
+  arg_5 = fn_9b8f932e(),
+) {
+  const [local, local_2] = arg_5;
+  if (
+    arg_2 == null ||
+    ["boolean", "string"].includes(typeof arg_2) ||
+    (typeof arg_2 === "number" && Number.isFinite(arg_2))
+  ) {
+    return arg_2;
+  }
+  const local_3 = fn_26a39dfb(arg, arg_2);
+  if (!local_3.startsWith("[object ")) {
+    return local_3;
+  }
+  if (fn_61a6acad(arg_2)) {
+    return arg_2;
+  }
+  const local_4 = fn_b36c7183(arg_2);
+  const local_5 = local_4 !== undefined ? local_4 : arg_3;
+  if (local_5 === 0) {
+    return local_3.replace("object ", "");
+  }
+  if (local(arg_2)) {
+    return "[Circular ~]";
+  }
+  const local_6 = arg_2;
+  if (local_6 && typeof local_6.toJSON === "function") {
+    try {
+      const local = local_6.toJSON();
+      return fn_ca7d5fff("", local, local_5 - 1, arg_4, arg_5);
+    } catch {}
+  }
+  const local_7 = Array.isArray(arg_2) ? [] : {};
+  let local_8 = 0;
+  const local_9 = fn_032c168d(arg_2);
+  for (const local in local_9) {
+    if (!Object.prototype.hasOwnProperty.call(local_9, local)) {
+      continue;
+    }
+    if (local_8 >= arg_4) {
+      local_7[local] = "[MaxProperties ~]";
+      break;
+    }
+    const local = local_9[local];
+    local_7[local] = fn_ca7d5fff(local, local, local_5 - 1, arg_4, arg_5);
+    local_8++;
+  }
+  local_2(arg_2);
+  return local_7;
+}
+function fn_26a39dfb(arg, arg_2) {
+  try {
+    if (local_657db3b7_17) {
+      const local = local_657db3b7_17(arg_2);
+      if (local) {
+        return local;
+      }
+    }
+    if (typeof global !== "undefined" && arg_2 === global) {
+      return "[Global]";
+    }
+    if (typeof arg_2 === "number" && !Number.isFinite(arg_2)) {
+      return `[${arg_2}]`;
+    }
+    if (typeof arg_2 === "function") {
+      return `[Function: ${fn_38b209f1(arg_2)}]`;
+    }
+    if (typeof arg_2 === "symbol") {
+      return `[${String(arg_2)}]`;
+    }
+    if (typeof arg_2 === "bigint") {
+      return `[BigInt: ${String(arg_2)}]`;
+    }
+    return `[object ${fn_77e71660(arg_2)}]`;
+  } catch (error) {
+    return `**non-serializable** (${error})`;
+  }
+}
+function fn_77e71660(arg) {
+  const local = Object.getPrototypeOf(arg);
+  if (local?.constructor) {
+    return local.constructor.name;
+  }
+  return "null prototype";
+}
+function fn_cbc0fbc7(arg) {
+  return ~-encodeURI(arg).split(/%..|./).length;
+}
+function fn_2dca9dbd(arg) {
+  return fn_cbc0fbc7(JSON.stringify(arg));
+}
+function fn_9b8f932e() {
+  const local = new WeakSet();
+  function fn(arg) {
+    if (local.has(arg)) {
+      return true;
+    }
+    return (local.add(arg), false);
+  }
+  function fn_2(arg) {
+    local.delete(arg);
+  }
+  return [fn, fn_2];
+}
 function fn_910ea535(arg, arg_2 = 0) {
   if (typeof arg !== "string" || arg_2 === 0 || arg.length <= arg_2) {
     return arg;
   }
   return `${arg.slice(0, arg_2)}...`;
 }
-function fn_59a2fb0b(arg, arg_2) {
+function fn_b56f3902(arg, arg_2) {
   if (!Array.isArray(arg)) {
     return "";
   }
   const local = [];
   for (let local = 0; local < arg.length; local++) {
     const local = arg[local];
-    try {
-      if (fn_2b08bc2f(local)) {
-        local.push(fn_fa18e46f(local));
-      } else {
-        local.push(String(local));
-      }
-    } catch {
-      local.push("[value cannot be serialized]");
+    if (fn_8a91c46c(local)) {
+      local.push(String(local));
+    } else if (local instanceof Error) {
+      local.push(
+        local.message ? `${local.name}: ${local.message}` : local.name,
+      );
+    } else {
+      local.push(fn_26a39dfb(undefined, local));
     }
   }
   return local.join(arg_2);
@@ -2033,14 +2036,19 @@ function fn_847aa30e(arg, arg_2, arg_3 = false) {
   }
   return false;
 }
-function fn_719ef462(arg, arg_2 = [], arg_3 = false) {
-  return arg_2.some((arg) => fn_847aa30e(arg, arg, arg_3));
+function fn_39ed76d4(arg, arg_2 = [], arg_3 = false) {
+  for (const local of arg_2) {
+    if (fn_847aa30e(arg, local, arg_3)) {
+      return true;
+    }
+  }
+  return false;
 }
 function fn_701f14d0() {
   const local = local_f090a36f;
   return local.crypto || local.msCrypto;
 }
-let local_657db3b7_14;
+let local_657db3b7_18;
 function fn_0362e0cf() {
   return fn_ce103458() * 16;
 }
@@ -2050,10 +2058,10 @@ function fn_8e541891(arg = fn_701f14d0()) {
       return fn_3ba42ed1(() => arg.randomUUID()).replace(/-/g, "");
     }
   } catch {}
-  if (!local_657db3b7_14) {
-    local_657db3b7_14 = `10000000100040008000${100000000000}`;
+  if (!local_657db3b7_18) {
+    local_657db3b7_18 = `10000000100040008000${100000000000}`;
   }
-  return local_657db3b7_14.replace(/[018]/g, (arg) =>
+  return local_657db3b7_18.replace(/[018]/g, (arg) =>
     (arg ^ ((fn_0362e0cf() & 15) >> (arg / 4))).toString(16),
   );
 }
@@ -2122,9 +2130,9 @@ function fn_01800d02(arg) {
     return arg.__sentry_captured__;
   } catch {}
 }
-const local_f06debfc_4 = 1000;
+const local_f06debfc_3 = 1000;
 function fn_f900ccad() {
-  return fn_ce103458_2() / local_f06debfc_4;
+  return fn_ce103458_2() / local_f06debfc_3;
 }
 function fn_ed6a49b6() {
   const { performance: local } = local_f090a36f;
@@ -2132,11 +2140,11 @@ function fn_ed6a49b6() {
     return fn_f900ccad;
   }
   const local_2 = local.timeOrigin;
-  return () => (local_2 + fn_3ba42ed1(() => local.now())) / local_f06debfc_4;
+  return () => (local_2 + fn_3ba42ed1(() => local.now())) / local_f06debfc_3;
 }
-let local_657db3b7_15;
+let local_657db3b7_19;
 function fn_d10ac820() {
-  return (local_657db3b7_15 ??= fn_ed6a49b6())();
+  return (local_657db3b7_19 ??= fn_ed6a49b6())();
 }
 function fn_ec91e4f1(arg) {
   const local = fn_d10ac820();
@@ -2264,18 +2272,43 @@ function fn_ddb3f7b3() {
 function fn_0ee91f89() {
   return fn_8e541891().substring(16);
 }
+function fn_ee3cb9c3(arg) {
+  try {
+    const local = local_f090a36f.WeakRef;
+    if (typeof local === "function") {
+      return new local(arg);
+    }
+  } catch {}
+  return arg;
+}
+function fn_2207778a(arg) {
+  if (arg) {
+    if (
+      typeof arg === "object" &&
+      "deref" in arg &&
+      typeof arg.deref === "function"
+    ) {
+      try {
+        return arg.deref();
+      } catch {
+        return;
+      }
+    }
+    return arg;
+  }
+}
 const local_e49fd8b4 = "_sentrySpan";
-function fn_6185ec9a(arg, arg_2) {
+function fn_5e2607b2(arg, arg_2) {
   if (arg_2) {
-    fn_84ede063(arg, local_e49fd8b4, arg_2);
+    fn_84ede063(arg, local_e49fd8b4, fn_ee3cb9c3(arg_2));
   } else {
     delete arg[local_e49fd8b4];
   }
 }
-function fn_561318cf(arg) {
-  return arg[local_e49fd8b4];
+function fn_012843ab(arg) {
+  return fn_2207778a(arg[local_e49fd8b4]);
 }
-const local_f06debfc_5 = 100;
+const local_f06debfc_4 = 100;
 class clazz_b6ac9163 {
   constructor() {
     this._notifyingListeners = false;
@@ -2330,7 +2363,7 @@ class clazz_b6ac9163 {
     local._client = this._client;
     local._lastEventId = this._lastEventId;
     local._conversationId = this._conversationId;
-    fn_6185ec9a(local, fn_561318cf(this));
+    fn_5e2607b2(local, fn_012843ab(this));
     return local;
   }
   setClient(arg) {
@@ -2527,7 +2560,7 @@ class clazz_b6ac9163 {
     this._fingerprint = undefined;
     this._session = undefined;
     this._conversationId = undefined;
-    fn_6185ec9a(this, undefined);
+    fn_5e2607b2(this, undefined);
     this._attachments = [];
     this.setPropagationContext({
       traceId: fn_ddb3f7b3(),
@@ -2537,7 +2570,7 @@ class clazz_b6ac9163 {
     return this;
   }
   addBreadcrumb(arg, arg_2) {
-    const local = typeof arg_2 === "number" ? arg_2 : local_f06debfc_5;
+    const local = typeof arg_2 === "number" ? arg_2 : local_f06debfc_4;
     if (local <= 0) {
       return this;
     }
@@ -2585,7 +2618,7 @@ class clazz_b6ac9163 {
       propagationContext: this._propagationContext,
       sdkProcessingMetadata: this._sdkProcessingMetadata,
       transactionName: this._transactionName,
-      span: fn_561318cf(this),
+      span: fn_012843ab(this),
       conversationId: this._conversationId,
     };
   }
@@ -2839,6 +2872,81 @@ function fn_16dd7cb0(arg) {
   }
   return fn_9d11c0cb();
 }
+function fn_44c853fb(arg) {
+  return (
+    typeof arg === "object" &&
+    arg != null &&
+    !Array.isArray(arg) &&
+    Object.keys(arg).includes("value")
+  );
+}
+function fn_16693f20(arg, arg_2) {
+  const { value: local, unit: local_2 } = fn_44c853fb(arg)
+    ? arg
+    : {
+        value: arg,
+        unit: undefined,
+      };
+  const local_3 = fn_994d7768(local);
+  const local_4 =
+    local_2 && typeof local_2 === "string"
+      ? {
+          unit: local_2,
+        }
+      : {};
+  if (local_3) {
+    return {
+      ...local_3,
+      ...local_4,
+    };
+  }
+  if (!arg_2 || (arg_2 === "skip-undefined" && local === undefined)) {
+    return;
+  }
+  let local_5 = "";
+  try {
+    local_5 = JSON.stringify(local) ?? "";
+  } catch {}
+  return {
+    value: local_5,
+    type: "string",
+    ...local_4,
+  };
+}
+function fn_4d99cccd(arg, arg_2 = false) {
+  const local = {};
+  for (const [local, local_2] of Object.entries(arg ?? {})) {
+    const local = fn_16693f20(local_2, arg_2);
+    if (local) {
+      local[local] = local;
+    }
+  }
+  return local;
+}
+function fn_994d7768(arg) {
+  if (Array.isArray(arg)) {
+    return {
+      value: arg,
+      type: "array",
+    };
+  }
+  const local =
+    typeof arg === "string"
+      ? "string"
+      : typeof arg === "boolean"
+        ? "boolean"
+        : typeof arg === "number" && !Number.isNaN(arg)
+          ? Number.isInteger(arg)
+            ? "integer"
+            : "double"
+          : null;
+  if (local) {
+    return {
+      value: arg,
+      type: local,
+    };
+  }
+}
 function fn_bff325b9() {
   const local = fn_324f4519();
   return fn_16dd7cb0(local).getCurrentScope();
@@ -2885,28 +2993,12 @@ const local_82701b29 = "sentry.source";
 const local_8b6e71b8 = "sentry.sample_rate";
 const local_ff272b2a = "sentry.previous_trace_sample_rate";
 const local_11f53be5 = "sentry.op";
-const local_d6aaddac = "sentry.origin";
+const local_9fba733e = "sentry.origin";
 const local_9ff4c9b4 = "sentry.profile_id";
 const local_a9ec10af = "sentry.exclusive_time";
 const local_59c72df3 = "gen_ai.conversation.id";
-const local_f06debfc_6 = 0;
-const local_f06debfc_7 = 1;
-function fn_2207778a(arg) {
-  if (arg) {
-    if (
-      typeof arg === "object" &&
-      "deref" in arg &&
-      typeof arg.deref === "function"
-    ) {
-      try {
-        return arg.deref();
-      } catch {
-        return;
-      }
-    }
-    return arg;
-  }
-}
+const local_f06debfc_5 = 0;
+const local_f06debfc_6 = 1;
 const local_38581a95 = "_sentryScope";
 const local_e4ffb7d4 = "_sentryIsolationScope";
 function fn_02e90b88(arg) {
@@ -3104,7 +3196,7 @@ function fn_931b18fa(arg) {
     return local;
   }
 }
-const local_f06debfc_8 = 1;
+const local_f06debfc_7 = 1;
 let local_9b12006c = false;
 function fn_1badae7f(arg) {
   const {
@@ -3112,7 +3204,7 @@ function fn_1badae7f(arg) {
     traceId: local_2,
     isRemote: local_3,
   } = arg.spanContext();
-  const local_4 = local_3 ? local : fn_2cd890aa(arg).parent_span_id;
+  const local_4 = local_3 ? local : fn_db19b3d8(arg).parent_span_id;
   const local_5 = fn_02e90b88(arg).scope;
   const local_6 = local_3
     ? local_5?.getPropagationContext().propagationSpanId || fn_0ee91f89()
@@ -3132,7 +3224,7 @@ function fn_b6f4704e(arg) {
       }) => ({
         span_id: arg,
         trace_id: arg_2,
-        sampled: arg_3 === local_f06debfc_8,
+        sampled: arg_3 === local_f06debfc_7,
         attributes: arg_5,
         ...arg_4,
       }),
@@ -3157,8 +3249,8 @@ function fn_d44ac56f(arg) {
   }
   return arg;
 }
-function fn_2cd890aa(arg) {
-  if (fn_8f927972(arg)) {
+function fn_db19b3d8(arg) {
+  if (fn_a06a5c10(arg)) {
     return arg.getSpanJSON();
   }
   const { spanId: local, traceId: local_2 } = arg.spanContext();
@@ -3181,7 +3273,7 @@ function fn_2cd890aa(arg) {
       timestamp: fn_9c8eefeb(local_4) || undefined,
       status: fn_f54b18de(local_5),
       op: local[local_11f53be5],
-      origin: local[local_d6aaddac],
+      origin: local[local_9fba733e],
       links: fn_b6f4704e(local_6),
     };
   }
@@ -3200,6 +3292,16 @@ function fn_36f67def(arg) {
     return arg.parentSpanContext?.spanId;
   }
 }
+function fn_e9fdb724(arg) {
+  return {
+    ...arg,
+    attributes: fn_4d99cccd(arg.attributes),
+    links: arg.links?.map((arg) => ({
+      ...arg,
+      attributes: fn_4d99cccd(arg.attributes),
+    })),
+  };
+}
 function fn_418de9fb(arg) {
   const local = arg;
   return (
@@ -3210,23 +3312,23 @@ function fn_418de9fb(arg) {
     !!local.status
   );
 }
-function fn_8f927972(arg) {
+function fn_a06a5c10(arg) {
   return typeof arg.getSpanJSON === "function";
 }
 function fn_33a3efe9(arg) {
   const { traceFlags: local } = arg.spanContext();
-  return local === local_f06debfc_8;
+  return local === local_f06debfc_7;
 }
 function fn_f54b18de(arg) {
-  if (!(!arg || arg.code === local_f06debfc_6)) {
-    if (arg.code === local_f06debfc_7) {
+  if (!(!arg || arg.code === local_f06debfc_5)) {
+    if (arg.code === local_f06debfc_6) {
       return "ok";
     }
     return arg.message || "internal_error";
   }
 }
 const local_adda1723 = "_sentryRootSpan";
-const local_f090a36f_3 = fn_ca180906;
+const local_f090a36f_2 = fn_ca180906;
 function fn_ca180906(arg) {
   return arg[local_adda1723] || arg;
 }
@@ -3240,11 +3342,11 @@ function fn_f2b31c5d() {
     local_9b12006c = true;
   }
 }
-function fn_9f6962cb(arg) {
+function fn_d014853f(arg) {
   if (typeof __SENTRY_TRACING__ === "boolean" && !__SENTRY_TRACING__) {
     return false;
   }
-  const local = fn_df50106e()?.getOptions();
+  const local = arg || fn_df50106e()?.getOptions();
   return !!local && (local.tracesSampleRate != null || !!local.tracesSampler);
 }
 function fn_5956797a(arg) {
@@ -3318,6 +3420,10 @@ function fn_a6871141(arg, arg_2) {
 function fn_b5562a95(arg) {
   return typeof arg === "string" || arg instanceof RegExp;
 }
+const local_ec1ad82e = Symbol.for("sentry.nonRecordingSpan");
+function fn_f45d1755(arg) {
+  return !!arg && arg[local_ec1ad82e] === true;
+}
 const local_7597049d = "production";
 const local_d9277da7 = "_frozenDsc";
 function fn_a59a8864(arg, arg_2) {
@@ -3337,13 +3443,13 @@ function fn_671c62a8(arg, arg_2) {
   const local = arg_2.getPropagationContext();
   return local.dsc || fn_a59a8864(local.traceId, arg);
 }
-function fn_b039c4fa(arg) {
+function fn_bf6e5135(arg) {
   const local = fn_df50106e();
   if (!local) {
     return {};
   }
-  const local_2 = local_f090a36f_3(arg);
-  const local_3 = fn_2cd890aa(local_2);
+  const local_2 = local_f090a36f_2(arg);
+  const local_3 = fn_db19b3d8(local_2);
   const local_4 = local_3.data;
   const local_5 = local_2.spanContext().traceState;
   const local_6 =
@@ -3360,188 +3466,46 @@ function fn_b039c4fa(arg) {
   if (local_7) {
     return fn(local_7);
   }
-  const local_8 = local_5?.get("sentry.dsc");
-  const local_9 = local_8 && fn_5ce849be(local_8);
-  if (local_9) {
-    return fn(local_9);
+  const local_8 = fn_f45d1755(local_2);
+  const local_9 = local_8 && local_2.dropReason === "ignored";
+  if (local_8 && (!fn_d014853f(local.getOptions()) || local_9)) {
+    const local = fn_02e90b88(local_2).scope;
+    if (local) {
+      const local = {
+        ...fn_671c62a8(local, local),
+      };
+      if (local_9) {
+        local.sampled = "false";
+      }
+      return fn(local);
+    }
   }
-  const local_10 = fn_a59a8864(arg.spanContext().traceId, local);
-  const local_11 = local_4[local_82701b29] ?? local_4["sentry.span.source"];
-  const local_12 = local_3.description;
-  if (local_11 !== "url" && local_12) {
-    local_10.transaction = local_12;
+  const local_10 = local_5?.get("sentry.dsc");
+  const local_11 = local_10 && fn_5ce849be(local_10);
+  if (local_11) {
+    return fn(local_11);
   }
-  if (fn_9f6962cb()) {
-    local_10.sampled = String(fn_33a3efe9(local_2));
-    local_10.sample_rand =
+  const local_12 = fn_a59a8864(arg.spanContext().traceId, local);
+  const local_13 =
+    local_4[local_82701b29] ?? local_4["sentry.segment.name.source"];
+  const local_14 = local_3.description;
+  if (local_13 !== "url" && local_14) {
+    local_12.transaction = local_14;
+  }
+  if (fn_d014853f()) {
+    local_12.sampled = String(fn_33a3efe9(local_2));
+    local_12.sample_rand =
       local_5?.get("sentry.sample_rand") ??
       fn_02e90b88(local_2).scope?.getPropagationContext().sampleRand.toString();
   }
-  fn(local_10);
-  local.emit("createDsc", local_10, local_2);
-  return local_10;
+  fn(local_12);
+  local.emit("createDsc", local_12, local_2);
+  return local_12;
 }
 function fn_afd39aa0(arg) {
   return (
     !!arg && typeof arg === "function" && "_streamed" in arg && !!arg._streamed
   );
-}
-const local_b7c88805 = Symbol.for("sentry.skipNormalization");
-const local_98a488cb = Symbol.for("sentry.overrideNormalizationDepth");
-function fn_61a6acad(arg) {
-  return !!arg[local_b7c88805];
-}
-function fn_b36c7183(arg) {
-  const local = arg[local_98a488cb];
-  if (typeof local === "number") {
-    return local;
-  }
-}
-function fn_49b28d31(arg, arg_2 = 100, arg_3 = Infinity) {
-  try {
-    return fn_ca7d5fff("", arg, arg_2, arg_3);
-  } catch (error) {
-    return {
-      ERROR: `**non-serializable** (${error})`,
-    };
-  }
-}
-function fn_05588881(arg, arg_2 = 3, arg_3 = 100 * 1024) {
-  const local = fn_49b28d31(arg, arg_2);
-  if (fn_2dca9dbd(local) > arg_3) {
-    return fn_05588881(arg, arg_2 - 1, arg_3);
-  }
-  return local;
-}
-function fn_ca7d5fff(
-  arg,
-  arg_2,
-  arg_3 = Infinity,
-  arg_4 = Infinity,
-  arg_5 = fn_9b8f932e(),
-) {
-  const [local, local_2] = arg_5;
-  if (
-    arg_2 == null ||
-    ["boolean", "string"].includes(typeof arg_2) ||
-    (typeof arg_2 === "number" && Number.isFinite(arg_2))
-  ) {
-    return arg_2;
-  }
-  const local_3 = fn_f3088c4c(arg, arg_2);
-  if (!local_3.startsWith("[object ")) {
-    return local_3;
-  }
-  if (fn_61a6acad(arg_2)) {
-    return arg_2;
-  }
-  const local_4 = fn_b36c7183(arg_2);
-  const local_5 = local_4 !== undefined ? local_4 : arg_3;
-  if (local_5 === 0) {
-    return local_3.replace("object ", "");
-  }
-  if (local(arg_2)) {
-    return "[Circular ~]";
-  }
-  const local_6 = arg_2;
-  if (local_6 && typeof local_6.toJSON === "function") {
-    try {
-      const local = local_6.toJSON();
-      return fn_ca7d5fff("", local, local_5 - 1, arg_4, arg_5);
-    } catch {}
-  }
-  const local_7 = Array.isArray(arg_2) ? [] : {};
-  let local_8 = 0;
-  const local_9 = fn_0476c2c9(arg_2);
-  for (const local in local_9) {
-    if (!Object.prototype.hasOwnProperty.call(local_9, local)) {
-      continue;
-    }
-    if (local_8 >= arg_4) {
-      local_7[local] = "[MaxProperties ~]";
-      break;
-    }
-    const local = local_9[local];
-    local_7[local] = fn_ca7d5fff(local, local, local_5 - 1, arg_4, arg_5);
-    local_8++;
-  }
-  local_2(arg_2);
-  return local_7;
-}
-function fn_f3088c4c(arg, arg_2) {
-  try {
-    if (
-      arg === "domain" &&
-      arg_2 &&
-      typeof arg_2 === "object" &&
-      arg_2._events
-    ) {
-      return "[Domain]";
-    }
-    if (arg === "domainEmitter") {
-      return "[DomainEmitter]";
-    }
-    if (typeof global !== "undefined" && arg_2 === global) {
-      return "[Global]";
-    }
-    if (typeof window !== "undefined" && arg_2 === window) {
-      return "[Window]";
-    }
-    if (typeof document !== "undefined" && arg_2 === document) {
-      return "[Document]";
-    }
-    if (fn_2b08bc2f(arg_2)) {
-      return fn_fa18e46f(arg_2);
-    }
-    if (fn_d0f27641(arg_2)) {
-      return "[SyntheticEvent]";
-    }
-    if (typeof arg_2 === "number" && !Number.isFinite(arg_2)) {
-      return `[${arg_2}]`;
-    }
-    if (typeof arg_2 === "function") {
-      return `[Function: ${fn_38b209f1(arg_2)}]`;
-    }
-    if (typeof arg_2 === "symbol") {
-      return `[${String(arg_2)}]`;
-    }
-    if (typeof arg_2 === "bigint") {
-      return `[BigInt: ${String(arg_2)}]`;
-    }
-    const local = fn_77e71660(arg_2);
-    if (/^HTML(\w*)Element$/.test(local)) {
-      return `[HTMLElement: ${local}]`;
-    }
-    return `[object ${local}]`;
-  } catch (error) {
-    return `**non-serializable** (${error})`;
-  }
-}
-function fn_77e71660(arg) {
-  const local = Object.getPrototypeOf(arg);
-  if (local?.constructor) {
-    return local.constructor.name;
-  }
-  return "null prototype";
-}
-function fn_cbc0fbc7(arg) {
-  return ~-encodeURI(arg).split(/%..|./).length;
-}
-function fn_2dca9dbd(arg) {
-  return fn_cbc0fbc7(JSON.stringify(arg));
-}
-function fn_9b8f932e() {
-  const local = new WeakSet();
-  function fn(arg) {
-    if (local.has(arg)) {
-      return true;
-    }
-    return (local.add(arg), false);
-  }
-  function fn_2(arg) {
-    local.delete(arg);
-  }
-  return [fn, fn_2];
 }
 function fn_d71bf2e7(arg, arg_2 = []) {
   return [arg, arg_2];
@@ -3658,11 +3622,11 @@ function fn_300e801b(arg) {
     version: local_2,
   };
 }
-function fn_097f3630(arg, arg_2, arg_3, arg_4) {
+function fn_73db0f5b(arg, arg_2, arg_3, arg_4) {
   const local = arg.sdkProcessingMetadata?.dynamicSamplingContext;
   return {
     event_id: arg.event_id,
-    sent_at: new Date().toISOString(),
+    sent_at: new Date(fn_ce103458_2()).toISOString(),
     ...(arg_2 && {
       sdk: arg_2,
     }),
@@ -3699,10 +3663,10 @@ function fn_8e6d5464(arg, arg_2) {
   };
   return arg;
 }
-function fn_4e9eb070(arg, arg_2, arg_3, arg_4) {
+function fn_926fdebc(arg, arg_2, arg_3, arg_4) {
   const local = fn_300e801b(arg_3);
   const local_2 = {
-    sent_at: new Date().toISOString(),
+    sent_at: new Date(fn_ce103458_2()).toISOString(),
     ...(local && {
       sdk: local,
     }),
@@ -3731,7 +3695,7 @@ function fn_4f0242e8(arg, arg_2, arg_3, arg_4) {
   const local = fn_300e801b(arg_3);
   const local_2 = arg.type && arg.type !== "replay_event" ? arg.type : "event";
   fn_8e6d5464(arg, arg_3?.sdk);
-  const local_3 = fn_097f3630(arg, local, arg_4, arg_2);
+  const local_3 = fn_73db0f5b(arg, local, arg_4, arg_2);
   delete arg.sdkProcessingMetadata;
   return fn_d71bf2e7(local_3, [
     [
@@ -3741,6 +3705,9 @@ function fn_4f0242e8(arg, arg_2, arg_3, arg_4) {
       arg,
     ],
   ]);
+}
+function fn_2dac6c93(arg) {
+  return arg.getOptions().traceLifecycle === "stream";
 }
 function fn_e3f121e3(arg, arg_2) {
   const {
@@ -3879,11 +3846,11 @@ function fn_124e8768(arg, arg_2) {
     ...arg.contexts,
   };
   arg.sdkProcessingMetadata = {
-    dynamicSamplingContext: fn_b039c4fa(arg_2),
+    dynamicSamplingContext: fn_bf6e5135(arg_2),
     ...arg.sdkProcessingMetadata,
   };
-  const local = local_f090a36f_3(arg_2);
-  const local_2 = fn_2cd890aa(local).description;
+  const local = local_f090a36f_2(arg_2);
+  const local_2 = fn_db19b3d8(local).description;
   if (local_2 && !arg.transaction && arg.type === "transaction") {
     arg.transaction = local_2;
   }
@@ -3899,43 +3866,7 @@ function fn_110f4deb(arg, arg_2) {
   }
   arg.fingerprint.length || delete arg.fingerprint;
 }
-function fn_95df3475(arg) {
-  if (!arg) {
-    return {};
-  }
-  const local = arg.match(
-    /^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/,
-  );
-  if (!local) {
-    return {};
-  }
-  const local_2 = local[6] || "";
-  const local_3 = local[8] || "";
-  return {
-    host: local[4],
-    path: local[5],
-    protocol: local[2],
-    search: local_2,
-    hash: local_3,
-    relative: local[5] + local_2 + local_3,
-  };
-}
-function fn_52a7926e(arg, arg_2 = true) {
-  if (arg.startsWith("data:")) {
-    const local = arg.match(/^data:([^;,]+)/);
-    const local_2 = local ? local[1] : "text/plain";
-    const local_3 = arg.includes(";base64,");
-    const local_4 = arg.indexOf(",");
-    let local_5 = "";
-    if (arg_2 && local_4 !== -1) {
-      const local = arg.slice(local_4 + 1);
-      local_5 =
-        local.length > 10 ? `${local.slice(0, 10)}... [truncated]` : local;
-    }
-    return `data:${local_2}${local_3 ? ",base64" : ""}${local_5 ? `,${local_5}` : ""}`;
-  }
-  return arg;
-}
+const local_198cee04 = "url.full";
 function fn_5144a7de(arg, arg_2) {
   const local = arg.attributes ?? (arg.attributes = {});
   Object.entries(arg_2).forEach(([arg, arg_2]) => {
@@ -3944,9 +3875,9 @@ function fn_5144a7de(arg, arg_2) {
     }
   });
 }
-const local_f06debfc_9 = 0;
-const local_f06debfc_10 = 1;
-const local_f06debfc_11 = 2;
+const local_f06debfc_8 = 0;
+const local_f06debfc_9 = 1;
+const local_f06debfc_10 = 2;
 function fn_ec2ed68c(arg) {
   return new clazz_bb0a3dcc((arg) => {
     arg(arg);
@@ -3959,7 +3890,7 @@ function fn_1fd7697a(arg) {
 }
 class clazz_bb0a3dcc {
   constructor(arg) {
-    this._state = local_f06debfc_9;
+    this._state = local_f06debfc_8;
     this._handlers = [];
     this._runExecutor(arg);
   }
@@ -4025,17 +3956,17 @@ class clazz_bb0a3dcc {
     });
   }
   _executeHandlers() {
-    if (this._state === local_f06debfc_9) {
+    if (this._state === local_f06debfc_8) {
       return;
     }
     const local = this._handlers.slice();
     this._handlers = [];
     local.forEach((arg) => {
       if (!arg[0]) {
-        if (this._state === local_f06debfc_10) {
+        if (this._state === local_f06debfc_9) {
           arg[1](this._value);
         }
-        if (this._state === local_f06debfc_11) {
+        if (this._state === local_f06debfc_10) {
           arg[2](this._value);
         }
         arg[0] = true;
@@ -4044,7 +3975,7 @@ class clazz_bb0a3dcc {
   }
   _runExecutor(arg) {
     const local = (arg, arg_2) => {
-      if (this._state === local_f06debfc_9) {
+      if (this._state === local_f06debfc_8) {
         if (fn_0dbd451a(arg_2)) {
           arg_2.then(local_2, local_3);
           return;
@@ -4055,10 +3986,10 @@ class clazz_bb0a3dcc {
       }
     };
     const local_2 = (arg) => {
-      local(local_f06debfc_10, arg);
+      local(local_f06debfc_9, arg);
     };
     const local_3 = (arg) => {
-      local(local_f06debfc_11, arg);
+      local(local_f06debfc_10, arg);
     };
     try {
       arg(local_2, local_3);
@@ -4097,10 +4028,10 @@ function fn_e632fffc(arg, arg_2, arg_3, arg_4) {
   }
   return fn_e632fffc(local_2, arg_2, arg_3, arg_4 + 1);
 }
-let local_657db3b7_16;
-let local_657db3b7_17;
-let local_657db3b7_18;
-let local_657db3b7_19;
+let local_657db3b7_20;
+let local_657db3b7_21;
+let local_657db3b7_22;
+let local_657db3b7_23;
 function fn_79c28e66(arg) {
   const local = local_f090a36f._sentryDebugIds;
   const local_2 = local_f090a36f._debugIds;
@@ -4110,34 +4041,34 @@ function fn_79c28e66(arg) {
   const local_3 = local ? Object.keys(local) : [];
   const local_4 = local_2 ? Object.keys(local_2) : [];
   if (
-    local_657db3b7_19 &&
-    local_3.length === local_657db3b7_17 &&
-    local_4.length === local_657db3b7_18
+    local_657db3b7_23 &&
+    local_3.length === local_657db3b7_21 &&
+    local_4.length === local_657db3b7_22
   ) {
-    return local_657db3b7_19;
+    return local_657db3b7_23;
   }
-  local_657db3b7_17 = local_3.length;
-  local_657db3b7_18 = local_4.length;
-  local_657db3b7_19 = {};
-  if (!local_657db3b7_16) {
-    local_657db3b7_16 = {};
+  local_657db3b7_21 = local_3.length;
+  local_657db3b7_22 = local_4.length;
+  local_657db3b7_23 = {};
+  if (!local_657db3b7_20) {
+    local_657db3b7_20 = {};
   }
   const local_5 = (arg, arg_2) => {
     for (const local of arg) {
       const local = arg_2[local];
-      const local_2 = local_657db3b7_16?.[local];
-      if (local_2 && local_657db3b7_19 && local) {
-        local_657db3b7_19[local_2[0]] = local;
-        if (local_657db3b7_16) {
-          local_657db3b7_16[local] = [local_2[0], local];
+      const local_2 = local_657db3b7_20?.[local];
+      if (local_2 && local_657db3b7_23 && local) {
+        local_657db3b7_23[local_2[0]] = local;
+        if (local_657db3b7_20) {
+          local_657db3b7_20[local] = [local_2[0], local];
         }
       } else if (local) {
         const local = arg(local);
         for (let local = local.length - 1; local >= 0; local--) {
           const local = local[local]?.filename;
-          if (local && local_657db3b7_19 && local_657db3b7_16) {
-            local_657db3b7_19[local] = local;
-            local_657db3b7_16[local] = [local, local];
+          if (local && local_657db3b7_23 && local_657db3b7_20) {
+            local_657db3b7_23[local] = local;
+            local_657db3b7_20[local] = [local, local];
             break;
           }
         }
@@ -4150,7 +4081,7 @@ function fn_79c28e66(arg) {
   if (local_2) {
     local_5(local_4, local_2);
   }
-  return local_657db3b7_19;
+  return local_657db3b7_23;
 }
 function fn_e31cb7ef(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
   const { normalizeDepth: local = 3, normalizeMaxBreadth: local_2 = 1000 } =
@@ -4406,13 +4337,19 @@ function fn_d346974a(arg = false) {
   }
   fn_c062c4ce();
 }
+function fn_fadde79a(arg) {
+  if (typeof arg === "object" && typeof arg.unref === "function") {
+    arg.unref();
+  }
+  return arg;
+}
 const local_aff16741 = "7";
 function fn_aa58755e(arg) {
   const local = arg.protocol ? `${arg.protocol}:` : "";
   const local_2 = arg.port ? `:${arg.port}` : "";
   return `${local}//${arg.host}${local_2}${arg.path ? `/${arg.path}` : ""}/api/`;
 }
-function fn_1f081a75(arg) {
+function fn_2d424b4d(arg) {
   return `${fn_aa58755e(arg)}${arg.projectId}/envelope/`;
 }
 function fn_9d49a2ce(arg, arg_2) {
@@ -4427,10 +4364,10 @@ function fn_9d49a2ce(arg, arg_2) {
   }
   return new URLSearchParams(local).toString();
 }
-function fn_4749057a(arg, arg_2, arg_3) {
-  return arg_2 || `${fn_1f081a75(arg)}?${fn_9d49a2ce(arg, arg_3)}`;
+function fn_2ad8957e(arg, arg_2, arg_3) {
+  return arg_2 || `${fn_2d424b4d(arg)}?${fn_9d49a2ce(arg, arg_3)}`;
 }
-function fn_700c4b91(arg, arg_2) {
+function fn_275d102c(arg, arg_2) {
   const local = fn_2d12d30f(arg);
   if (!local) {
     return "";
@@ -4604,7 +4541,7 @@ function fn_aa848eaa(arg, arg_2, arg_3, arg_4, arg_5) {
   }
   return fn_d71bf2e7(local, [fn_1ea8508a(arg, arg_5)]);
 }
-function fn_8a39f6db(arg, arg_2) {
+function fn_aac11cad(arg, arg_2) {
   const local = arg_2 ?? fn_77d7b663_2(arg) ?? [];
   if (local.length === 0) {
     return;
@@ -4615,7 +4552,7 @@ function fn_8a39f6db(arg, arg_2) {
     local_2._metadata,
     local_2.tunnel,
     arg.getDsn(),
-    local_2.sendDefaultPii,
+    arg.getDataCollectionOptions().userInfo,
   );
   fn_bcf7d701().set(arg, []);
   arg.emit("flushLogs");
@@ -4660,7 +4597,7 @@ function fn_aa848eaa_2(arg, arg_2, arg_3, arg_4, arg_5) {
   }
   return fn_d71bf2e7(local, [fn_306d92ce(arg, arg_5)]);
 }
-function fn_935d65bb(arg, arg_2) {
+function fn_e663b2c6(arg, arg_2) {
   const local = arg_2 ?? fn_77d7b663_3(arg) ?? [];
   if (local.length === 0) {
     return;
@@ -4671,7 +4608,7 @@ function fn_935d65bb(arg, arg_2) {
     local_2._metadata,
     local_2.tunnel,
     arg.getDsn(),
-    local_2.sendDefaultPii,
+    arg.getDataCollectionOptions().userInfo,
   );
   fn_1a15942c().set(arg, []);
   arg.emit("flushMetrics");
@@ -4683,11 +4620,67 @@ function fn_77d7b663_3(arg) {
 function fn_1a15942c() {
   return fn_9cfc19fb("clientToMetricBufferMap", () => new WeakMap());
 }
-function fn_fadde79a(arg) {
-  if (typeof arg === "object" && typeof arg.unref === "function") {
-    arg.unref();
+function fn_ffa22e34(arg) {
+  const local = {
+    trace_id: arg.trace_id,
+    span_id: arg.span_id,
+    parent_span_id: arg.parent_span_id,
+    name: arg.description || "",
+    start_timestamp: arg.start_timestamp,
+    end_timestamp: arg.timestamp || arg.start_timestamp,
+    status:
+      !arg.status || arg.status === "ok" || arg.status === "cancelled"
+        ? "ok"
+        : "error",
+    is_segment: false,
+    attributes: {
+      ...arg.data,
+    },
+    links: arg.links,
+  };
+  return fn_e9fdb724(local);
+}
+function fn_f908b42f(arg, arg_2) {
+  if (
+    arg.type !== "transaction" ||
+    !arg.spans?.length ||
+    !arg.sdkProcessingMetadata?.hasGenAiSpans ||
+    arg_2.getOptions().streamGenAiSpans === false ||
+    fn_2dac6c93(arg_2)
+  ) {
+    return;
   }
-  return arg;
+  const local = [];
+  const local_2 = [];
+  for (const local of arg.spans) {
+    if (local.op?.startsWith("gen_ai.")) {
+      local.push(fn_ffa22e34(local));
+    } else {
+      local_2.push(local);
+    }
+  }
+  if (local.length === 0) {
+    return;
+  }
+  arg.spans = local_2;
+  const local_3 = arg_2.getDataCollectionOptions().userInfo ? "auto" : "never";
+  return [
+    {
+      type: "span",
+      item_count: local.length,
+      content_type: "application/vnd.sentry.items.span.v2+json",
+    },
+    {
+      version: 2,
+      ...(fn_30c44482() && {
+        ingest_settings: {
+          infer_ip: local_3,
+          infer_user_agent: local_3,
+        },
+      }),
+      items: local,
+    },
+  ];
 }
 const local_d1fb3cf7 = Symbol.for("SentryBufferFullError");
 function fn_440daecb(arg = 100) {
@@ -4788,11 +4781,11 @@ function fn_4d7456cc(
   }
   return local;
 }
-const local_f06debfc_12 = 64;
-function fn_7424b233(
+const local_f06debfc_11 = 64;
+function fn_0851b7d8(
   arg,
   arg_2,
-  arg_3 = fn_440daecb(arg.bufferSize || local_f06debfc_12),
+  arg_3 = fn_440daecb(arg.bufferSize || local_f06debfc_11),
 ) {
   let local = {};
   const local_2 = (arg) => arg_3.drain(arg);
@@ -4971,13 +4964,129 @@ function fn_cf13ed60(arg) {
     measurements: arg.measurements,
   };
 }
+const local_bb19f7b6 = ["forwarded", "-ip", "remote-", "via", "-user"];
+function fn_b2328bc1(arg) {
+  if (arg === true) {
+    return {
+      userInfo: true,
+      cookies: true,
+      httpHeaders: {
+        request: true,
+        response: true,
+      },
+      httpBodies: [
+        "incomingRequest",
+        "outgoingRequest",
+        "incomingResponse",
+        "outgoingResponse",
+      ],
+      urlQueryParams: true,
+      graphQL: {
+        document: true,
+        variables: true,
+      },
+      genAI: {
+        inputs: true,
+        outputs: true,
+      },
+      databaseQueryData: true,
+      stackFrameVariables: true,
+      frameContextLines: 7,
+    };
+  }
+  return {
+    userInfo: false,
+    cookies: {
+      deny: local_bb19f7b6,
+    },
+    httpHeaders: {
+      request: {
+        deny: local_bb19f7b6,
+      },
+      response: {
+        deny: local_bb19f7b6,
+      },
+    },
+    httpBodies: [],
+    urlQueryParams: {
+      deny: local_bb19f7b6,
+    },
+    graphQL: {
+      document: true,
+      variables: true,
+    },
+    genAI: {
+      inputs: false,
+      outputs: false,
+    },
+    databaseQueryData: false,
+    stackFrameVariables: true,
+    frameContextLines: 7,
+  };
+}
+const local_9ab0723f = {
+  userInfo: true,
+  cookies: true,
+  httpHeaders: {
+    request: true,
+    response: true,
+  },
+  httpBodies: [
+    "incomingRequest",
+    "outgoingRequest",
+    "incomingResponse",
+    "outgoingResponse",
+  ],
+  urlQueryParams: true,
+  graphQL: {
+    document: true,
+    variables: true,
+  },
+  genAI: {
+    inputs: true,
+    outputs: true,
+  },
+  databaseQueryData: true,
+  stackFrameVariables: true,
+  frameContextLines: 5,
+};
+function fn_6a92e10a(arg) {
+  const local =
+    arg.dataCollection != null
+      ? local_9ab0723f
+      : fn_b2328bc1(arg.sendDefaultPii);
+  const local_2 = arg.dataCollection ?? {};
+  return {
+    userInfo: local_2.userInfo ?? local.userInfo,
+    cookies: local_2.cookies ?? local.cookies,
+    httpHeaders: {
+      request: local_2.httpHeaders?.request ?? local.httpHeaders.request,
+      response: local_2.httpHeaders?.response ?? local.httpHeaders.response,
+    },
+    httpBodies: local_2.httpBodies ?? local.httpBodies,
+    urlQueryParams:
+      local_2.urlQueryParams ?? local_2.queryParams ?? local.urlQueryParams,
+    graphQL: {
+      document: local_2.graphQL?.document ?? local.graphQL.document,
+      variables: local_2.graphQL?.variables ?? local.graphQL.variables,
+    },
+    genAI: {
+      inputs: local_2.genAI?.inputs ?? local.genAI.inputs,
+      outputs: local_2.genAI?.outputs ?? local.genAI.outputs,
+    },
+    databaseQueryData: local_2.databaseQueryData ?? local.databaseQueryData,
+    stackFrameVariables:
+      local_2.stackFrameVariables ?? local.stackFrameVariables,
+    frameContextLines: local_2.frameContextLines ?? local.frameContextLines,
+  };
+}
 const local_6e7b2a55 =
   "Not capturing exception because it's already been captured.";
 const local_fc9b5ca8 =
   "Discarded session because of missing or non-string release";
 const local_d8826da0 = Symbol.for("SentryInternalError");
 const local_16cacc41 = Symbol.for("SentryDoNotSendEventError");
-const local_f06debfc_13 = 5000;
+const local_f06debfc_12 = 5000;
 function fn_c832dd52(arg) {
   return {
     message: arg,
@@ -4990,13 +5099,13 @@ function fn_c832dd52_2(arg) {
     [local_16cacc41]: true,
   };
 }
-function fn_54d16b6a(arg) {
-  return !!arg && typeof arg === "object" && local_d8826da0 in arg;
+function fn_38f58de9(arg) {
+  return fn_2ab3420d(arg) && local_d8826da0 in arg;
 }
-function fn_54d16b6a_2(arg) {
-  return !!arg && typeof arg === "object" && local_16cacc41 in arg;
+function fn_38f58de9_2(arg) {
+  return fn_2ab3420d(arg) && local_16cacc41 in arg;
 }
-function fn_4e7b43e7(arg, arg_2, arg_3, arg_4, arg_5) {
+function fn_3e339946(arg, arg_2, arg_3, arg_4, arg_5) {
   let local = 0;
   let local_2;
   let local_3 = false;
@@ -5010,19 +5119,22 @@ function fn_4e7b43e7(arg, arg_2, arg_3, arg_4, arg_5) {
     if (local >= 800000) {
       arg_5(arg);
     } else if (!local_3) {
-      local_3 = true;
-      local_2 = fn_fadde79a(
-        setTimeout(() => {
-          arg_5(arg);
-        }, local_f06debfc_13),
-      );
+      const local = arg.getOptions()._flushInterval ?? local_f06debfc_12;
+      if (local > 0) {
+        local_3 = true;
+        local_2 = fn_fadde79a(
+          setTimeout(() => {
+            arg_5(arg);
+          }, local),
+        );
+      }
     }
   });
   arg.on("flush", () => {
     arg_5(arg);
   });
 }
-class clazz_8953f139 {
+class clazz_b6139582 {
   constructor(arg) {
     this._options = arg;
     this._integrations = {};
@@ -5031,15 +5143,16 @@ class clazz_8953f139 {
     this._hooks = {};
     this._eventProcessors = [];
     this._promiseBuffer = fn_440daecb(
-      arg.transportOptions?.bufferSize ?? local_f06debfc_12,
+      arg.transportOptions?.bufferSize ?? local_f06debfc_11,
     );
+    this._dataCollection = fn_6a92e10a(arg);
     if (arg.dsn) {
       this._dsn = fn_2d12d30f(arg.dsn);
     } else if (local_23bb5d69) {
       local_5a6ba1bf.warn("No DSN provided, client will not send events.");
     }
     if (this._dsn) {
-      const local = fn_4749057a(
+      const local = fn_2ad8957e(
         this._dsn,
         arg.tunnel,
         arg._metadata ? arg._metadata.sdk : undefined,
@@ -5052,14 +5165,16 @@ class clazz_8953f139 {
       });
     }
     this._options.enableLogs =
-      this._options.enableLogs ?? this._options._experiments?.enableLogs;
+      this._options.enableLogs ??
+      this._options._experiments?.enableLogs ??
+      true;
     if (this._options.enableLogs) {
-      fn_4e7b43e7(
+      fn_3e339946(
         this,
         "afterCaptureLog",
         "flushLogs",
         fn_41db159b,
-        fn_8a39f6db,
+        fn_aac11cad,
       );
     }
     if (
@@ -5067,12 +5182,12 @@ class clazz_8953f139 {
       this._options._experiments?.enableMetrics ??
       true
     ) {
-      fn_4e7b43e7(
+      fn_3e339946(
         this,
         "afterCaptureMetric",
         "flushMetrics",
         fn_eef7c3ae,
-        fn_935d65bb,
+        fn_e663b2c6,
       );
     }
   }
@@ -5147,6 +5262,9 @@ class clazz_8953f139 {
   getOptions() {
     return this._options;
   }
+  getDataCollectionOptions() {
+    return this._dataCollection;
+  }
   getSdkMetadata() {
     return this._options._metadata;
   }
@@ -5164,7 +5282,6 @@ class clazz_8953f139 {
     return local_2 && local_3;
   }
   async close(arg) {
-    fn_8a39f6db(this);
     const local = await this.flush(arg);
     this.getOptions().enabled = false;
     this.emit("close");
@@ -5189,6 +5306,9 @@ class clazz_8953f139 {
   getIntegrationByName(arg) {
     return this._integrations[arg];
   }
+  getIntegrationNames() {
+    return Object.keys(this._integrations);
+  }
   addIntegration(arg) {
     const local = this._integrations[arg.name];
     if (!local && arg.beforeSetup) {
@@ -5201,16 +5321,20 @@ class clazz_8953f139 {
   }
   sendEvent(arg, arg_2 = {}) {
     this.emit("beforeSendEvent", arg, arg_2);
-    let local = fn_4f0242e8(
+    const local = fn_f908b42f(arg, this);
+    let local_2 = fn_4f0242e8(
       arg,
       this._dsn,
       this._options._metadata,
       this._options.tunnel,
     );
     for (const local of arg_2.attachments || []) {
-      local = fn_f144f74a(local, fn_5823ef71(local));
+      local_2 = fn_f144f74a(local_2, fn_5823ef71(local));
     }
-    this.sendEnvelope(local).then((arg) =>
+    if (local) {
+      local_2 = fn_f144f74a(local_2, local);
+    }
+    this.sendEnvelope(local_2).then((arg) =>
       this.emit("afterSendEvent", arg, arg),
     );
   }
@@ -5239,7 +5363,7 @@ class clazz_8953f139 {
       arg.environment = arg.environment || local_2;
     }
     this.emit("beforeSendSession", arg);
-    const local_3 = fn_4e9eb070(
+    const local_3 = fn_926fdebc(
       arg,
       this._dsn,
       this._options._metadata,
@@ -5337,8 +5461,8 @@ class clazz_8953f139 {
   }
   _prepareEvent(arg, arg_2, arg_3, arg_4) {
     const local = this.getOptions();
-    const local_2 = Object.keys(this._integrations);
-    if (!arg_2.integrations && local_2?.length) {
+    const local_2 = this.getIntegrationNames();
+    if (!arg_2.integrations && local_2.length) {
       arg_2.integrations = local_2;
     }
     this.emit("preprocessEvent", arg, arg_2);
@@ -5380,9 +5504,9 @@ class clazz_8953f139 {
       (arg) => arg.event_id,
       (arg) => {
         local_23bb5d69 &&
-          (fn_54d16b6a_2(arg)
+          (fn_38f58de9_2(arg)
             ? local_5a6ba1bf.log(arg.message)
-            : fn_54d16b6a(arg)
+            : fn_38f58de9(arg)
               ? local_5a6ba1bf.warn(arg.message)
               : local_5a6ba1bf.warn(arg));
       },
@@ -5396,14 +5520,6 @@ class clazz_8953f139 {
     const local_5 = `before send for type \`${arg.type || "error"}\``;
     const local_6 =
       typeof local_2 === "undefined" ? undefined : fn_931b18fa(local_2);
-    if (local_4 && typeof local_6 === "number" && fn_ce103458() > local_6) {
-      this.recordDroppedEvent("sample_rate", "error");
-      return fn_1fd7697a(
-        fn_c832dd52_2(
-          `Discarding event because it's not included in the random sample (sampling rate = ${local_2})`,
-        ),
-      );
-    }
     const local_7 = fn_3f17fbc3(arg.type);
     return this._prepareEvent(arg, arg_2, arg_3, arg_4)
       .then((arg) => {
@@ -5434,6 +5550,12 @@ class clazz_8953f139 {
         if (local_4 && local) {
           this._updateSessionFromEvent(local, arg);
         }
+        if (local_4 && typeof local_6 === "number" && fn_ce103458() > local_6) {
+          this.recordDroppedEvent("sample_rate", "error");
+          throw fn_c832dd52_2(
+            `Discarding event because it's not included in the random sample (sampling rate = ${local_2})`,
+          );
+        }
         if (local_3) {
           const local =
             arg.sdkProcessingMetadata?.spanCountBeforeProcessing || 0;
@@ -5455,7 +5577,7 @@ class clazz_8953f139 {
         return arg;
       })
       .catch((arg) => {
-        throw fn_54d16b6a_2(arg) || fn_54d16b6a(arg)
+        throw fn_38f58de9_2(arg) || fn_38f58de9(arg)
           ? arg
           : (this.captureException(arg, {
               mechanism: {
@@ -5686,19 +5808,6 @@ function fn_7f90f37c(arg) {
   }
   return 0;
 }
-function fn_f78a30f6(arg) {
-  return (
-    fn_7b60edb8(arg) &&
-    "__sentry_fetch_url_host__" in arg &&
-    typeof arg.__sentry_fetch_url_host__ === "string"
-  );
-}
-function fn_dfc9998e(arg) {
-  if (fn_f78a30f6(arg)) {
-    return `${arg.message} (${arg.__sentry_fetch_url_host__})`;
-  }
-  return arg.message;
-}
 function fn_b973be8f(arg, arg_2) {
   arg_2.debug === true &&
     (local_23bb5d69
@@ -5717,6 +5826,43 @@ function fn_b973be8f(arg, arg_2) {
 function fn_92f56a1f_2(arg) {
   fn_bff325b9().setClient(arg);
 }
+function fn_95df3475(arg) {
+  if (!arg) {
+    return {};
+  }
+  const local = arg.match(
+    /^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/,
+  );
+  if (!local) {
+    return {};
+  }
+  const local_2 = local[6] || "";
+  const local_3 = local[8] || "";
+  return {
+    host: local[4],
+    path: local[5],
+    protocol: local[2],
+    search: local_2,
+    hash: local_3,
+    relative: local[5] + local_2 + local_3,
+  };
+}
+function fn_52a7926e(arg, arg_2 = true) {
+  if (arg.startsWith("data:")) {
+    const local = arg.match(/^data:([^;,]+)/);
+    const local_2 = local ? local[1] : "text/plain";
+    const local_3 = arg.includes(";base64,");
+    const local_4 = arg.indexOf(",");
+    let local_5 = "";
+    if (arg_2 && local_4 !== -1) {
+      const local = arg.slice(local_4 + 1);
+      local_5 =
+        local.length > 10 ? `${local.slice(0, 10)}... [truncated]` : local;
+    }
+    return `data:${local_2}${local_3 ? ",base64" : ""}${local_5 ? `,${local_5}` : ""}`;
+  }
+  return arg;
+}
 function fn_67dfb170(arg) {
   "aggregates" in arg
     ? arg.attrs?.ip_address === undefined &&
@@ -5733,12 +5879,12 @@ function fn_bb415fac(arg, arg_2, arg_3 = [arg_2], arg_4 = "npm") {
     local.name = `sentry.javascript.${arg_2}`;
     local.packages = arg_3.map((arg) => ({
       name: `${arg_4}:@sentry/${arg}`,
-      version: local_32bc66f7,
+      version: local_326e3068,
     }));
-    local.version = local_32bc66f7;
+    local.version = local_326e3068;
   }
 }
-const local_f06debfc_14 = 100;
+const local_f06debfc_13 = 100;
 function fn_e0908e45(arg, arg_2) {
   const local = fn_df50106e();
   const local_2 = fn_bff325b9_2();
@@ -5747,7 +5893,7 @@ function fn_e0908e45(arg, arg_2) {
   }
   const {
     beforeBreadcrumb: local_3 = null,
-    maxBreadcrumbs: local_4 = local_f06debfc_14,
+    maxBreadcrumbs: local_4 = local_f06debfc_13,
   } = local.getOptions();
   if (local_4 <= 0) {
     return;
@@ -5766,21 +5912,22 @@ function fn_e0908e45(arg, arg_2) {
     local_2.addBreadcrumb(local_6, local_4);
   }
 }
-let local_657db3b7_20;
 const local_d041c6c3 = "FunctionToString";
 const local_a1e12a9e = new WeakMap();
-const local_92b9b6bc = () => ({
+const local_f9078b5b = () => ({
   name: local_d041c6c3,
   setupOnce() {
-    local_657db3b7_20 = Function.prototype.toString;
+    const local = Function.prototype.toString;
     try {
       Function.prototype.toString = function (...arg) {
         const local = fn_092c85be(this);
-        const local_2 =
-          local_a1e12a9e.has(fn_df50106e()) && local !== undefined
-            ? local
-            : this;
-        return local_657db3b7_20.apply(local_2, arg);
+        let local_2;
+        try {
+          if (local_a1e12a9e.has(fn_df50106e()) && local !== undefined) {
+            local_2 = local;
+          }
+        } catch {}
+        return local.apply(local_2 ?? this, arg);
       };
     } catch {}
   },
@@ -5788,7 +5935,7 @@ const local_92b9b6bc = () => ({
     local_a1e12a9e.set(arg, true);
   },
 });
-const local_f090a36f_4 = local_92b9b6bc;
+const local_f090a36f_3 = local_f9078b5b;
 const local_51c9269f = [
   /^Script error\.?$/,
   /^Javascript error: Script error\.? on line 0$/,
@@ -5816,7 +5963,7 @@ const local_60e83861 = (arg = {}) => {
         const local = arg_3.getOptions();
         local = fn_d101b114(arg, local);
       }
-      if (fn_8cff7b02(arg, local)) {
+      if (fn_f5f799fc(arg, local)) {
         return null;
       }
       return arg;
@@ -5842,7 +5989,7 @@ function fn_d101b114(arg = {}, arg_2 = {}) {
     ],
   };
 }
-function fn_8cff7b02(arg, arg_2) {
+function fn_f5f799fc(arg, arg_2) {
   if (arg.type) {
     if (
       arg.type === "transaction" &&
@@ -5873,7 +6020,7 @@ Event: ${fn_e3ddf09f(arg)}`);
       if (local_23bb5d69) {
         local_5a6ba1bf.warn(`Event dropped due to being matched by \`denyUrls\` option.
 Event: ${fn_e3ddf09f(arg)}.
-Url: ${fn_8e7f031e(arg)}`);
+Url: ${fn_fa854f82(arg)}`);
       }
       return true;
     }
@@ -5881,7 +6028,7 @@ Url: ${fn_8e7f031e(arg)}`);
       if (local_23bb5d69) {
         local_5a6ba1bf.warn(`Event dropped due to not being matched by \`allowUrls\` option.
 Event: ${fn_e3ddf09f(arg)}.
-Url: ${fn_8e7f031e(arg)}`);
+Url: ${fn_fa854f82(arg)}`);
       }
       return true;
     }
@@ -5890,7 +6037,7 @@ Url: ${fn_8e7f031e(arg)}`);
 }
 function fn_c8535518(arg, arg_2) {
   if (arg_2?.length) {
-    return fn_b3d5859a(arg).some((arg) => fn_719ef462(arg, arg_2));
+    return fn_b3d5859a(arg).some((arg) => fn_39ed76d4(arg, arg_2));
   }
   return false;
 }
@@ -5900,7 +6047,7 @@ function fn_8fe8ead1(arg, arg_2) {
   }
   const local = arg.transaction;
   if (local) {
-    return fn_719ef462(local, arg_2);
+    return fn_39ed76d4(local, arg_2);
   }
   return false;
 }
@@ -5908,9 +6055,9 @@ function fn_a97c4528(arg, arg_2) {
   if (!arg_2?.length) {
     return false;
   }
-  const local = fn_8e7f031e(arg);
+  const local = fn_fa854f82(arg);
   if (local) {
-    return fn_719ef462(local, arg_2);
+    return fn_39ed76d4(local, arg_2);
   }
   return false;
 }
@@ -5918,9 +6065,9 @@ function fn_eac09cc1(arg, arg_2) {
   if (!arg_2?.length) {
     return true;
   }
-  const local = fn_8e7f031e(arg);
+  const local = fn_fa854f82(arg);
   if (local) {
-    return fn_719ef462(local, arg_2);
+    return fn_39ed76d4(local, arg_2);
   }
   return true;
 }
@@ -5937,7 +6084,7 @@ function fn_1f71d398(arg = []) {
   }
   return null;
 }
-function fn_8e7f031e(arg) {
+function fn_fa854f82(arg) {
   try {
     const local = [...(arg.exception?.values ?? [])]
       .reverse()
@@ -5969,11 +6116,11 @@ function fn_327bae55(arg) {
   }
   return false;
 }
-function fn_93cfddb0(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
+function fn_3521ce3f(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
   if (
     !arg_5.exception?.values ||
     !arg_6 ||
-    !fn_e4697554(arg_6.originalException, Error)
+    !fn_7b60edb8(arg_6.originalException)
   ) {
     return;
   }
@@ -5982,7 +6129,7 @@ function fn_93cfddb0(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
       ? arg_5.exception.values[arg_5.exception.values.length - 1]
       : undefined;
   if (local) {
-    arg_5.exception.values = fn_c19bc9b0(
+    arg_5.exception.values = fn_a91df4ec(
       arg,
       arg_2,
       arg_4,
@@ -5994,17 +6141,17 @@ function fn_93cfddb0(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
     );
   }
 }
-function fn_c19bc9b0(arg, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, arg_8) {
+function fn_a91df4ec(arg, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, arg_8) {
   if (arg_6.length >= arg_3 + 1) {
     return arg_6;
   }
   let local = [...arg_6];
-  if (fn_e4697554(arg_4[arg_5], Error)) {
+  if (fn_7b60edb8(arg_4[arg_5])) {
     fn_a8b56104(arg_7, arg_8, arg_4);
     const local = arg(arg_2, arg_4[arg_5]);
     const local_2 = local.length;
     fn_4ed7c7bf(local, arg_5, local_2, arg_8);
-    local = fn_c19bc9b0(
+    local = fn_a91df4ec(
       arg,
       arg_2,
       arg_3,
@@ -6017,12 +6164,12 @@ function fn_c19bc9b0(arg, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, arg_8) {
   }
   if (fn_a5545a59(arg_4)) {
     arg_4.errors.forEach((arg, arg_2) => {
-      if (fn_e4697554(arg, Error)) {
+      if (fn_7b60edb8(arg)) {
         fn_a8b56104(arg_7, arg_8, arg_4);
         const local = arg(arg_2, arg);
         const local_2 = local.length;
         fn_4ed7c7bf(local, `errors[${arg_2}]`, local_2, arg_8);
-        local = fn_c19bc9b0(
+        local = fn_a91df4ec(
           arg,
           arg_2,
           arg_3,
@@ -6061,24 +6208,49 @@ function fn_4ed7c7bf(arg, arg_2, arg_3, arg_4) {
     parent_id: arg_4,
   };
 }
+function fn_f78a30f6(arg) {
+  return (
+    fn_7b60edb8(arg) &&
+    "__sentry_fetch_url_host__" in arg &&
+    typeof arg.__sentry_fetch_url_host__ === "string"
+  );
+}
+function fn_dfc9998e(arg) {
+  if (fn_f78a30f6(arg)) {
+    return `${arg.message} (${arg.__sentry_fetch_url_host__})`;
+  }
+  return arg.message;
+}
+const local_82ae0903 = new Set([]);
 function fn_cd7d391d(arg) {
   const local = "console";
   const local_2 = fn_8c3b3d2d(local, arg);
-  fn_131e115c(local, fn_469b7a08);
+  fn_131e115c(local, fn_84d107ae);
   return local_2;
 }
-function fn_469b7a08() {
+const local_a1e12a9e_2 = new Set();
+function fn_84d107ae() {
   if ("console" in local_f090a36f) {
     local_0296945c.forEach(function (arg) {
-      if (arg in local_f090a36f.console) {
+      if (!(local_a1e12a9e_2.has(arg) || !(arg in local_f090a36f.console))) {
+        local_a1e12a9e_2.add(arg);
         fn_344b1aa6(local_f090a36f.console, arg, function (arg) {
           local_603ced16_2[arg] = arg;
           return function (...arg) {
-            fn_346ded5d("console", {
-              args: arg,
-              level: arg,
-            });
-            local_603ced16_2[arg]?.apply(local_f090a36f.console, arg);
+            const local = arg[0];
+            const local_2 = local_603ced16_2[arg];
+            const local_3 =
+              local_82ae0903.size &&
+              typeof local === "string" &&
+              fn_39ed76d4(local, local_82ae0903);
+            if (!local_3) {
+              fn_44c6a9b9("console", {
+                args: arg,
+                level: arg,
+              });
+            }
+            (!local_3 || (local_23bb5d69 && local_5a6ba1bf.isEnabled())) &&
+              local_2?.apply(local_f090a36f.console, arg);
           };
         });
       }
@@ -6117,7 +6289,7 @@ const local_d48be5c7 = () => {
     },
   };
 };
-const local_f090a36f_5 = local_d48be5c7;
+const local_f090a36f_4 = local_d48be5c7;
 function fn_3e556ebf(arg, arg_2) {
   if (arg_2) {
     return !!(fn_c1a1c2d8(arg, arg_2) || fn_1d7a3246(arg, arg_2));
@@ -6208,7 +6380,7 @@ const local_0200eba9 = () => ({
           op: local,
           data: local_2,
           description: local_3,
-        } = fn_2cd890aa(arg);
+        } = fn_db19b3d8(arg);
         if (
           !local?.startsWith("gen_ai.") &&
           !local_2["ai.operationId"] &&
@@ -6221,7 +6393,7 @@ const local_0200eba9 = () => ({
     });
   },
 });
-const local_f090a36f_6 = local_0200eba9;
+const local_f090a36f_5 = local_0200eba9;
 function fn_772a0bd5(arg) {
   if (arg !== undefined) {
     if (arg >= 400 && arg < 500) {
@@ -6233,12 +6405,12 @@ function fn_772a0bd5(arg) {
     return undefined;
   }
 }
-const local_f090a36f_7 = local_f090a36f;
+const local_f090a36f_6 = local_f090a36f;
 function fn_53346ed1() {
-  return "history" in local_f090a36f_7 && !!local_f090a36f_7.history;
+  return "history" in local_f090a36f_6 && !!local_f090a36f_6.history;
 }
 function fn_72ea682b() {
-  if (!("fetch" in local_f090a36f_7)) {
+  if (!("fetch" in local_f090a36f_6)) {
     return false;
   }
   try {
@@ -6263,11 +6435,11 @@ function fn_f8d64f5a() {
   if (!fn_72ea682b()) {
     return false;
   }
-  if (fn_445f8733(local_f090a36f_7.fetch)) {
+  if (fn_445f8733(local_f090a36f_6.fetch)) {
     return true;
   }
   let local = false;
-  const local_2 = local_f090a36f_7.document;
+  const local_2 = local_f090a36f_6.document;
   if (local_2 && typeof local_2.createElement === "function") {
     try {
       const local = local_2.createElement("iframe");
@@ -6291,10 +6463,10 @@ function fn_f8d64f5a() {
 function fn_9fa9e26e(arg, arg_2) {
   const local = "fetch";
   const local_2 = fn_8c3b3d2d(local, arg);
-  fn_131e115c(local, () => fn_dc01c4f2(undefined, arg_2));
+  fn_131e115c(local, () => fn_b283243c(undefined, arg_2));
   return local_2;
 }
-function fn_dc01c4f2(arg, arg_2 = false) {
+function fn_b283243c(arg, arg_2 = false) {
   if (!(arg_2 && !fn_f8d64f5a())) {
     fn_344b1aa6(local_f090a36f, "fetch", function (arg) {
       return function (...arg) {
@@ -6310,12 +6482,12 @@ function fn_dc01c4f2(arg, arg_2 = false) {
           virtualError: local,
           headers: fn_374832b3(arg),
         };
-        fn_346ded5d("fetch", {
+        fn_44c6a9b9("fetch", {
           ...local_4,
         });
         return arg.apply(local_f090a36f, arg).then(
           async (arg) => {
-            fn_346ded5d("fetch", {
+            fn_44c6a9b9("fetch", {
               ...local_4,
               endTimestamp: fn_d10ac820() * 1000,
               response: arg,
@@ -6323,7 +6495,7 @@ function fn_dc01c4f2(arg, arg_2 = false) {
             return arg;
           },
           (arg) => {
-            fn_346ded5d("fetch", {
+            fn_44c6a9b9("fetch", {
               ...local_4,
               endTimestamp: fn_d10ac820() * 1000,
               error: arg,
@@ -6336,7 +6508,8 @@ function fn_dc01c4f2(arg, arg_2 = false) {
               fn_df50106e()?.getOptions().enhanceFetchErrorMessages ?? "always";
             if (
               local !== false &&
-              arg instanceof TypeError &&
+              fn_7b60edb8(arg) &&
+              arg.name === "TypeError" &&
               (arg.message === "Failed to fetch" ||
                 arg.message === "Load failed" ||
                 arg.message ===
@@ -6358,15 +6531,15 @@ function fn_dc01c4f2(arg, arg_2 = false) {
     });
   }
 }
-function fn_35d753dc(arg, arg_2) {
-  return !!arg && typeof arg === "object" && !!arg[arg_2];
+function fn_e1b5b262(arg, arg_2) {
+  return fn_2ab3420d(arg) && !!arg[arg_2];
 }
 function fn_d52f1540(arg) {
   if (typeof arg === "string") {
     return arg;
   }
   if (arg) {
-    if (fn_35d753dc(arg, "url")) {
+    if (fn_e1b5b262(arg, "url")) {
       return arg.url;
     }
     if (arg.toString) {
@@ -6387,9 +6560,9 @@ function fn_665115d7(arg) {
     const [local, local_2] = arg;
     return {
       url: fn_d52f1540(local),
-      method: fn_35d753dc(local_2, "method")
+      method: fn_e1b5b262(local_2, "method")
         ? String(local_2.method).toUpperCase()
-        : fn_af94ae8c_3(local) && fn_35d753dc(local, "method")
+        : fn_af94ae8c_2(local) && fn_e1b5b262(local, "method")
           ? String(local.method).toUpperCase()
           : "GET",
     };
@@ -6397,7 +6570,7 @@ function fn_665115d7(arg) {
   const local = arg[0];
   return {
     url: fn_d52f1540(local),
-    method: fn_35d753dc(local, "method")
+    method: fn_e1b5b262(local, "method")
       ? String(local.method).toUpperCase()
       : "GET",
   };
@@ -6413,23 +6586,52 @@ function fn_374832b3(arg) {
     ) {
       return new Headers(local_2.headers);
     }
-    if (fn_af94ae8c_3(local)) {
+    if (fn_af94ae8c_2(local)) {
       return new Headers(local.headers);
     }
   } catch {}
 }
+const local_f090a36f_7 = local_f090a36f;
+function fn_1d107afc() {
+  try {
+    return local_f090a36f_7.document.location.href;
+  } catch {
+    return "";
+  }
+}
+function fn_08cf125e(arg, arg_2 = 5) {
+  if (!local_f090a36f_7.HTMLElement) {
+    return null;
+  }
+  let local = arg;
+  for (let local = 0; local < arg_2; local++) {
+    if (!local) {
+      return null;
+    }
+    if (local instanceof HTMLElement) {
+      if (local.dataset.sentryComponent) {
+        return local.dataset.sentryComponent;
+      }
+      if (local.dataset.sentryElement) {
+        return local.dataset.sentryElement;
+      }
+    }
+    local = local.parentNode;
+  }
+  return null;
+}
 const local_f090a36f_8 = local_f090a36f;
-let local_f06debfc_15 = 0;
+let local_f06debfc_14 = 0;
 function fn_0bc06bb1() {
-  return local_f06debfc_15 > 0;
+  return local_f06debfc_14 > 0;
 }
 function fn_a047a318() {
-  local_f06debfc_15++;
+  local_f06debfc_14++;
   setTimeout(() => {
-    local_f06debfc_15--;
+    local_f06debfc_14--;
   });
 }
-function fn_2a655c7d(arg, arg_2 = {}) {
+function fn_fa6522c8(arg, arg_2 = {}) {
   function fn(arg) {
     return typeof arg === "function";
   }
@@ -6437,8 +6639,8 @@ function fn_2a655c7d(arg, arg_2 = {}) {
     return arg;
   }
   try {
-    const local = arg.__sentry_wrapped__;
-    if (local) {
+    if (Object.prototype.hasOwnProperty.call(arg, "__sentry_wrapped__")) {
+      const local = arg.__sentry_wrapped__;
       if (typeof local === "function") {
         return local;
       }
@@ -6451,8 +6653,10 @@ function fn_2a655c7d(arg, arg_2 = {}) {
     return arg;
   }
   const local = function (...arg) {
+    local_f090a36f._sentryWrappedDepth =
+      (local_f090a36f._sentryWrappedDepth || 0) + 1;
     try {
-      const local = arg.map((arg) => fn_2a655c7d(arg, arg_2));
+      const local = arg.map((arg) => fn_fa6522c8(arg, arg_2));
       return arg.apply(this, local);
     } catch (error) {
       fn_a047a318();
@@ -6471,6 +6675,9 @@ function fn_2a655c7d(arg, arg_2 = {}) {
         fn_0e42a633(error);
       });
       throw error;
+    } finally {
+      local_f090a36f._sentryWrappedDepth =
+        (local_f090a36f._sentryWrappedDepth || 0) - 1;
     }
   };
   try {
@@ -6528,7 +6735,7 @@ function fn_e94fbdc7(arg, arg_2) {
 }
 function fn_7bba19e5(arg, arg_2, arg_3, arg_4) {
   const local = fn_df50106e()?.getOptions().normalizeDepth;
-  const local_2 = fn_bf6be14b(arg_2);
+  const local_2 = fn_a1983e0b(arg_2);
   const local_3 = {
     __serialized__: fn_05588881(arg_2, local),
   };
@@ -6549,7 +6756,7 @@ function fn_7bba19e5(arg, arg_2, arg_3, arg_4) {
             : arg_4
               ? "UnhandledRejection"
               : "Error",
-          value: fn_7b5a5a89(arg_2, {
+          value: fn_e9655355(arg_2, {
             isUnhandledRejection: arg_4,
           }),
         },
@@ -6633,7 +6840,7 @@ function fn_f8268d59(arg) {
 }
 function fn_f81dc4f8(arg, arg_2, arg_3, arg_4) {
   const local = arg_3?.syntheticException || undefined;
-  const local_2 = fn_e27f863c(arg, arg_2, local, arg_4);
+  const local_2 = fn_66fc7b2e(arg, arg_2, local, arg_4);
   fn_9efed769(local_2);
   local_2.level = "error";
   if (arg_3?.event_id) {
@@ -6650,7 +6857,7 @@ function fn_4934cb57(arg, arg_2, arg_3 = "info", arg_4, arg_5) {
   }
   return fn_ec2ed68c(local_2);
 }
-function fn_e27f863c(arg, arg_2, arg_3, arg_4, arg_5) {
+function fn_66fc7b2e(arg, arg_2, arg_3, arg_4, arg_5) {
   let local;
   if (fn_c1a7a7ab(arg_2) && arg_2.error) {
     return fn_a40c2590(arg, arg_2.error);
@@ -6659,6 +6866,18 @@ function fn_e27f863c(arg, arg_2, arg_3, arg_4, arg_5) {
     const local = arg_2;
     if ("stack" in arg_2) {
       local = fn_a40c2590(arg, arg_2);
+      const local = local.exception?.values?.[0];
+      if (arg_4 && arg_3 && local && !local.stacktrace) {
+        const local = fn_9488c03b(arg, arg_3);
+        if (local.length) {
+          local.stacktrace = {
+            frames: local,
+          };
+          fn_9efed769(local, {
+            synthetic: true,
+          });
+        }
+      }
     } else {
       const local =
         local.name || (fn_bb01f144(local) ? "DOMError" : "DOMException");
@@ -6729,7 +6948,7 @@ function fn_18e92425(arg, arg_2, arg_3, arg_4) {
   local.message = arg_2;
   return local;
 }
-function fn_7b5a5a89(arg, { isUnhandledRejection: arg_2 }) {
+function fn_e9655355(arg, { isUnhandledRejection: arg_2 }) {
   const local = fn_4c904858(arg);
   const local_2 = arg_2 ? "promise rejection" : "exception";
   if (fn_c1a7a7ab(arg)) {
@@ -6749,35 +6968,33 @@ function fn_9b832241(arg) {
     return undefined;
   } catch {}
 }
-function fn_bf6be14b(arg) {
-  return Object.values(arg).find((arg) => arg instanceof Error);
+function fn_a1983e0b(arg) {
+  return Object.values(arg).find(fn_7b60edb8);
 }
-class clazz_d7549466 extends clazz_8953f139 {
+class clazz_8265a9a2 extends clazz_b6139582 {
   constructor(arg) {
     const local = fn_9965b2cb(arg);
     const local_2 = local_f090a36f_8.SENTRY_SDK_SOURCE || fn_b502e70d();
     fn_bb415fac(local, "browser", ["browser"], local_2);
+    super(local);
+    const { userInfo: local_3 } = this.getDataCollectionOptions();
     if (local._metadata?.sdk) {
       local._metadata.sdk.settings = {
-        infer_ip: local.sendDefaultPii ? "auto" : "never",
+        infer_ip: local_3 ? "auto" : "never",
         ...local._metadata.sdk.settings,
       };
     }
-    super(local);
-    const {
-      sendDefaultPii: local_3,
-      sendClientReports: local_4,
-      enableLogs: local_5,
-      _experiments: local_6,
-      enableMetrics: local_7,
-    } = this._options;
-    const local_8 = local_7 ?? local_6?.enableMetrics ?? true;
-    if (local_f090a36f_8.document && (local_4 || local_5 || local_8)) {
+    const { sendClientReports: local_4 } = this._options;
+    if (local_f090a36f_8.document) {
       local_f090a36f_8.document.addEventListener("visibilitychange", () => {
-        local_f090a36f_8.document.visibilityState === "hidden" &&
-          (local_4 && this._flushOutcomes(),
-          local_5 && fn_8a39f6db(this),
-          local_8 && fn_935d65bb(this));
+        if (local_f090a36f_8.document.visibilityState === "hidden") {
+          if (local_4) {
+            this._flushOutcomes();
+          }
+          queueMicrotask(() => {
+            this.flush();
+          });
+        }
       });
     }
     if (local_3) {
@@ -6820,10 +7037,182 @@ function fn_9965b2cb(arg) {
 const local_23bb5d69_2 =
   typeof __SENTRY_DEBUG__ === "undefined" || __SENTRY_DEBUG__;
 const local_f090a36f_9 = local_f090a36f;
+function fn_c1808dde(arg, arg_2, arg_3) {
+  if (local_f090a36f_9.document) {
+    local_f090a36f_9.addEventListener(arg, arg_2, arg_3);
+  }
+}
+function fn_c1808dde_2(arg, arg_2, arg_3) {
+  if (local_f090a36f_9.document) {
+    local_f090a36f_9.removeEventListener(arg, arg_2, arg_3);
+  }
+}
+const local_ff51a774 = (arg) => {
+  let local = false;
+  return () => {
+    if (!local) {
+      arg();
+      local = true;
+    }
+  };
+};
+const local_9dd0b76f = (arg) => {
+  const local =
+    local_f090a36f_9.requestIdleCallback || local_f090a36f_9.setTimeout;
+  if (local_f090a36f_9.document?.visibilityState === "hidden") {
+    arg();
+  } else {
+    arg = local_ff51a774(arg);
+    fn_c1808dde("visibilitychange", arg, {
+      once: true,
+      capture: true,
+    });
+    fn_c1808dde("pagehide", arg, {
+      once: true,
+      capture: true,
+    });
+    local(() => {
+      arg();
+      fn_c1808dde_2("visibilitychange", arg, {
+        capture: true,
+      });
+      fn_c1808dde_2("pagehide", arg, {
+        capture: true,
+      });
+    });
+  }
+};
+const local_f06debfc_15 = 80;
+const local_603ced16_5 = {};
+try {
+  if (typeof Node !== "undefined") {
+    local_603ced16_5.parentNode = Object.getOwnPropertyDescriptor(
+      Node.prototype,
+      "parentNode",
+    ).get;
+  }
+  if (typeof Element !== "undefined") {
+    local_603ced16_5.tagName = Object.getOwnPropertyDescriptor(
+      Element.prototype,
+      "tagName",
+    ).get;
+    local_603ced16_5.id = Object.getOwnPropertyDescriptor(
+      Element.prototype,
+      "id",
+    ).get;
+    local_603ced16_5.className = Object.getOwnPropertyDescriptor(
+      Element.prototype,
+      "className",
+    ).get;
+    local_603ced16_5.getAttribute = Element.prototype.getAttribute;
+  }
+  if (typeof HTMLElement !== "undefined") {
+    local_603ced16_5.dataset = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      "dataset",
+    ).get;
+  }
+} catch {}
+function fn_14ca3bc6(arg, arg_2, arg_3) {
+  const local = local_603ced16_5[arg_2];
+  if (local) {
+    try {
+      return local.call(arg, arg_3);
+    } catch {}
+  }
+  const local_2 = arg[arg_2];
+  if (typeof local_2 === "function") {
+    return local_2.call(arg, arg_3);
+  }
+  return local_2;
+}
+function fn_e61d61c3(arg, arg_2 = {}) {
+  if (!arg) {
+    return "<unknown>";
+  }
+  try {
+    let local = arg;
+    const local_2 = 5;
+    const local_3 = [];
+    let local_4 = 0;
+    let local_5 = 0;
+    const local_6 = " > ";
+    const local_7 = local_6.length;
+    let local_8;
+    const local_9 = Array.isArray(arg_2) ? arg_2 : arg_2.keyAttrs;
+    const local_10 =
+      (!Array.isArray(arg_2) && arg_2.maxStringLength) || local_f06debfc_15;
+    while (
+      local &&
+      local_4++ < local_2 &&
+      ((local_8 = fn_25a86043(local, local_9)),
+      !(
+        local_8 === "html" ||
+        (local_4 > 1 &&
+          local_5 + local_3.length * local_7 + local_8.length >= local_10)
+      ))
+    ) {
+      local_3.push(local_8);
+      local_5 += local_8.length;
+      local = fn_14ca3bc6(local, "parentNode");
+    }
+    return local_3.reverse().join(local_6);
+  } catch {
+    return "<unknown>";
+  }
+}
+function fn_25a86043(arg, arg_2) {
+  const local = [];
+  const local_2 = fn_14ca3bc6(arg, "tagName");
+  if (!local_2) {
+    return "";
+  }
+  if (typeof HTMLElement !== "undefined" && arg instanceof HTMLElement) {
+    const local = fn_14ca3bc6(arg, "dataset");
+    if (local) {
+      if (local.sentryComponent) {
+        return local.sentryComponent;
+      }
+      if (local.sentryElement) {
+        return local.sentryElement;
+      }
+    }
+  }
+  local.push(local_2.toLowerCase());
+  const local_3 = arg_2?.length
+    ? arg_2
+        .filter((arg) => fn_14ca3bc6(arg, "getAttribute", arg))
+        .map((arg) => [arg, fn_14ca3bc6(arg, "getAttribute", arg)])
+    : null;
+  if (local_3?.length) {
+    local_3.forEach((arg) => {
+      local.push(`[${arg[0]}="${arg[1]}"]`);
+    });
+  } else {
+    const local = fn_14ca3bc6(arg, "id");
+    if (local) {
+      local.push(`#${local}`);
+    }
+    const local_2 = fn_14ca3bc6(arg, "className");
+    if (local_2 && fn_bdd4075c(local_2)) {
+      const local = local_2.split(/\s+/);
+      for (const local of local) {
+        local.push(`.${local}`);
+      }
+    }
+  }
+  for (const local of ["aria-label", "type", "name", "title", "alt"]) {
+    const local = fn_14ca3bc6(arg, "getAttribute", local);
+    if (local) {
+      local.push(`[${local}="${local}"]`);
+    }
+  }
+  return local.join("");
+}
 const local_f06debfc_16 = 1000;
-let local_657db3b7_21;
-let local_657db3b7_22;
-let local_657db3b7_23;
+let local_657db3b7_24;
+let local_657db3b7_25;
+let local_657db3b7_26;
 function fn_8d79bda4(arg) {
   fn_8c3b3d2d("dom", arg);
   fn_131e115c("dom", fn_01fd347a);
@@ -6832,7 +7221,7 @@ function fn_01fd347a() {
   if (!local_f090a36f_9.document) {
     return;
   }
-  const local = fn_346ded5d.bind(null, "dom");
+  const local = fn_44c6a9b9.bind(null, "dom");
   const local_2 = fn_c07356fa(local, true);
   local_f090a36f_9.document.addEventListener("click", local_2, false);
   local_f090a36f_9.document.addEventListener("keypress", local_2, false);
@@ -6882,11 +7271,11 @@ function fn_01fd347a() {
   });
 }
 function fn_ef74b8b8(arg) {
-  if (arg.type !== local_657db3b7_22) {
+  if (arg.type !== local_657db3b7_25) {
     return false;
   }
   try {
-    if (!arg.target || arg.target._sentryId !== local_657db3b7_23) {
+    if (!arg.target || arg.target._sentryId !== local_657db3b7_26) {
       return false;
     }
   } catch {}
@@ -6925,13 +7314,13 @@ function fn_c07356fa(arg, arg_2 = false) {
         name: local_2,
         global: arg_2,
       });
-      local_657db3b7_22 = arg.type;
-      local_657db3b7_23 = local ? local._sentryId : undefined;
+      local_657db3b7_25 = arg.type;
+      local_657db3b7_26 = local ? local._sentryId : undefined;
     }
-    clearTimeout(local_657db3b7_21);
-    local_657db3b7_21 = local_f090a36f_9.setTimeout(() => {
-      local_657db3b7_23 = undefined;
-      local_657db3b7_22 = undefined;
+    clearTimeout(local_657db3b7_24);
+    local_657db3b7_24 = local_f090a36f_9.setTimeout(() => {
+      local_657db3b7_26 = undefined;
+      local_657db3b7_25 = undefined;
     }, local_f06debfc_16);
   };
 }
@@ -6942,7 +7331,7 @@ function fn_114ef939(arg) {
     return null;
   }
 }
-let local_657db3b7_24;
+let local_657db3b7_27;
 function fn_f8426bd2(arg) {
   const local = "history";
   fn_8c3b3d2d(local, arg);
@@ -6951,12 +7340,12 @@ function fn_f8426bd2(arg) {
 function fn_abed4dcd() {
   local_f090a36f_9.addEventListener("popstate", () => {
     const local = local_f090a36f_9.location.href;
-    const local_2 = local_657db3b7_24;
-    local_657db3b7_24 = local;
+    const local_2 = local_657db3b7_27;
+    local_657db3b7_27 = local;
     if (local_2 === local) {
       return;
     }
-    fn_346ded5d("history", {
+    fn_44c6a9b9("history", {
       from: local_2,
       to: local,
     });
@@ -6968,13 +7357,13 @@ function fn_abed4dcd() {
     return function (...arg) {
       const local = arg.length > 2 ? arg[2] : undefined;
       if (local) {
-        const local = local_657db3b7_24;
+        const local = local_657db3b7_27;
         const local_2 = fn_38ceaa05(String(local));
-        local_657db3b7_24 = local_2;
+        local_657db3b7_27 = local_2;
         if (local === local_2) {
           return arg.apply(this, arg);
         }
-        fn_346ded5d("history", {
+        fn_44c6a9b9("history", {
           from: local,
           to: local_2,
         });
@@ -6992,15 +7381,15 @@ function fn_38ceaa05(arg) {
     return arg;
   }
 }
-const local_603ced16_5 = {};
+const local_603ced16_6 = {};
 function fn_71fad101(arg) {
-  const local = local_603ced16_5[arg];
+  const local = local_603ced16_6[arg];
   if (local) {
     return local;
   }
   let local_2 = local_f090a36f_9[arg];
   if (fn_445f8733(local_2)) {
-    return (local_603ced16_5[arg] = local_2.bind(local_f090a36f_9));
+    return (local_603ced16_6[arg] = local_2.bind(local_f090a36f_9));
   }
   const local_3 = local_f090a36f_9.document;
   if (local_3 && typeof local_3.createElement === "function") {
@@ -7022,17 +7411,17 @@ function fn_71fad101(arg) {
       }
     }
   }
-  return local_2 && (local_603ced16_5[arg] = local_2.bind(local_f090a36f_9));
+  return local_2 && (local_603ced16_6[arg] = local_2.bind(local_f090a36f_9));
 }
 function fn_0e7e93c1(arg) {
-  local_603ced16_5[arg] = undefined;
+  local_603ced16_6[arg] = undefined;
 }
 const local_b48f120e = "__sentry_xhr_v3__";
 function fn_33a7addb(arg) {
   fn_8c3b3d2d("xhr", arg);
-  fn_131e115c("xhr", fn_5de713d7);
+  fn_131e115c("xhr", fn_e4ba250a);
 }
-function fn_5de713d7() {
+function fn_e4ba250a() {
   if (!local_f090a36f_9.XMLHttpRequest) {
     return;
   }
@@ -7068,7 +7457,8 @@ function fn_5de713d7() {
             xhr: arg_2,
             virtualError: local,
           };
-          fn_346ded5d("xhr", local);
+          fn_44c6a9b9("xhr", local);
+          arg_2.removeEventListener("readystatechange", local_5);
         }
       };
       if (
@@ -7110,7 +7500,7 @@ function fn_5de713d7() {
         startTimestamp: fn_d10ac820() * 1000,
         xhr: arg_2,
       };
-      fn_346ded5d("xhr", local_2);
+      fn_44c6a9b9("xhr", local_2);
       return arg.apply(arg_2, arg_3);
     },
   });
@@ -7122,6 +7512,16 @@ function fn_e4d74267(arg) {
   try {
     return arg.toString();
   } catch {}
+}
+function fn_2191bd48(arg) {
+  if (typeof Element === "undefined") {
+    return false;
+  }
+  try {
+    return arg instanceof Element;
+  } catch {
+    return false;
+  }
 }
 const local_f06debfc_17 = 40;
 function fn_98fd8283(arg, arg_2 = fn_71fad101("fetch")) {
@@ -7156,7 +7556,7 @@ function fn_98fd8283(arg, arg_2 = fn_71fad101("fetch")) {
       local_2--;
     }
   }
-  return fn_7424b233(arg, fn, fn_440daecb(arg.bufferSize || local_f06debfc_17));
+  return fn_0851b7d8(arg, fn, fn_440daecb(arg.bufferSize || local_f06debfc_17));
 }
 const local_23bb5d69_3 =
   typeof __SENTRY_DEBUG__ === "undefined" || __SENTRY_DEBUG__;
@@ -7273,10 +7673,10 @@ const local_facdb130 = (arg = {}) => {
     name: local_8da0abd6,
     setup(arg) {
       if (local.console) {
-        fn_cd7d391d(fn_7c78097e(arg));
+        fn_cd7d391d(fn_4704af82(arg));
       }
       if (local.dom) {
-        fn_8d79bda4(fn_d516452d(arg, local.dom));
+        fn_8d79bda4(fn_8796127b(arg, local.dom));
       }
       if (local.xhr) {
         fn_33a7addb(fn_687021b8(arg));
@@ -7311,7 +7711,7 @@ function fn_3e1f45eb(arg) {
     }
   };
 }
-function fn_d516452d(arg, arg_2) {
+function fn_8796127b(arg, arg_2) {
   return function (arg) {
     if (fn_df50106e() !== arg) {
       return;
@@ -7338,7 +7738,7 @@ function fn_d516452d(arg, arg_2) {
     try {
       const local = arg.event;
       const local_2 = fn_63db3352(local) ? local.target : local;
-      local = fn_9a310b32(local_2, {
+      local = fn_e61d61c3(local_2, {
         keyAttrs: local_3,
         maxStringLength: local_4,
       });
@@ -7365,7 +7765,7 @@ function fn_d516452d(arg, arg_2) {
     });
   };
 }
-function fn_7c78097e(arg) {
+function fn_4704af82(arg) {
   return function (arg) {
     if (fn_df50106e() !== arg) {
       return;
@@ -7377,11 +7777,11 @@ function fn_7c78097e(arg) {
         logger: "console",
       },
       level: fn_60d07a08(arg.level),
-      message: fn_59a2fb0b(arg.args, "./entry.js"),
+      message: fn_b56f3902(arg.args, "./entry.js"),
     };
     if (arg.level === "assert") {
       if (arg.args[0] === false) {
-        local.message = `Assertion failed: ${fn_59a2fb0b(arg.args.slice(1), "./entry.js") || "console.assert"}`;
+        local.message = `Assertion failed: ${fn_b56f3902(arg.args.slice(1), "./entry.js") || "console.assert"}`;
         local.data.arguments = arg.args.slice(1);
       } else {
         return;
@@ -7537,10 +7937,10 @@ const local_028efd13 = (arg = {}) => {
     name: local_4748e695,
     setupOnce() {
       if (local.setTimeout) {
-        fn_344b1aa6(local_f090a36f_8, "setTimeout", fn_682c3d18);
+        fn_344b1aa6(local_f090a36f_8, "setTimeout", fn_38b1c0f5);
       }
       if (local.setInterval) {
-        fn_344b1aa6(local_f090a36f_8, "setInterval", fn_682c3d18);
+        fn_344b1aa6(local_f090a36f_8, "setInterval", fn_38b1c0f5);
       }
       if (local.requestAnimationFrame) {
         fn_344b1aa6(local_f090a36f_8, "requestAnimationFrame", fn_32fd6b13);
@@ -7551,17 +7951,17 @@ const local_028efd13 = (arg = {}) => {
       const local = local.eventTarget;
       if (local) {
         (Array.isArray(local) ? local : local_3def398a).forEach((arg) =>
-          fn_b70cdf1c(arg, local),
+          fn_cab79d97(arg, local),
         );
       }
     },
   };
 };
 const local_f090a36f_11 = local_028efd13;
-function fn_682c3d18(arg) {
+function fn_38b1c0f5(arg) {
   return function (...arg) {
     const local = arg[0];
-    arg[0] = fn_2a655c7d(local, {
+    arg[0] = fn_fa6522c8(local, {
       mechanism: {
         handled: false,
         type: `auto.browser.browserapierrors.${fn_38b209f1(arg)}`,
@@ -7573,7 +7973,7 @@ function fn_682c3d18(arg) {
 function fn_32fd6b13(arg) {
   return function (arg) {
     return arg.apply(this, [
-      fn_2a655c7d(arg, {
+      fn_fa6522c8(arg, {
         mechanism: {
           data: {
             handler: fn_38b209f1(arg),
@@ -7604,21 +8004,21 @@ function fn_90bedd56(arg) {
           if (local_2) {
             local.mechanism.data.handler = fn_38b209f1(local_2);
           }
-          return fn_2a655c7d(arg, local);
+          return fn_fa6522c8(arg, local);
         });
       }
     });
     return arg.apply(this, arg);
   };
 }
-function fn_b70cdf1c(arg, arg_2) {
+function fn_cab79d97(arg, arg_2) {
   const local = local_f090a36f_8[arg]?.prototype;
   if (local?.hasOwnProperty?.("addEventListener")) {
     fn_344b1aa6(local, "addEventListener", function (arg) {
       return function (arg, arg_2, arg_3) {
         try {
-          if (fn_a06a5c10(arg_2)) {
-            arg_2.handleEvent = fn_2a655c7d(arg_2.handleEvent, {
+          if (fn_a06a5c10_2(arg_2)) {
+            arg_2.handleEvent = fn_fa6522c8(arg_2.handleEvent, {
               mechanism: {
                 data: {
                   handler: fn_38b209f1(arg_2),
@@ -7635,7 +8035,7 @@ function fn_b70cdf1c(arg, arg_2) {
         }
         return arg.apply(this, [
           arg,
-          fn_2a655c7d(arg_2, {
+          fn_fa6522c8(arg_2, {
             mechanism: {
               data: {
                 handler: fn_38b209f1(arg_2),
@@ -7652,9 +8052,13 @@ function fn_b70cdf1c(arg, arg_2) {
     fn_344b1aa6(local, "removeEventListener", function (arg) {
       return function (arg, arg_2, arg_3) {
         try {
-          const local = arg_2.__sentry_wrapped__;
-          if (local) {
-            arg.call(this, arg, local, arg_3);
+          if (
+            Object.prototype.hasOwnProperty.call(arg_2, "__sentry_wrapped__")
+          ) {
+            const local = arg_2.__sentry_wrapped__;
+            if (local) {
+              arg.call(this, arg, local, arg_3);
+            }
           }
         } catch {}
         return arg.call(this, arg, arg_2, arg_3);
@@ -7662,7 +8066,7 @@ function fn_b70cdf1c(arg, arg_2) {
     });
   }
 }
-function fn_a06a5c10(arg) {
+function fn_a06a5c10_2(arg) {
   return typeof arg.handleEvent === "function";
 }
 function fn_dff1bd7b(arg, arg_2, arg_3) {
@@ -7675,7 +8079,7 @@ function fn_dff1bd7b(arg, arg_2, arg_3) {
     arg.removeEventListener(arg_2, arg_3);
   }
 }
-const local_3a99c10a = (arg = {}) => {
+const local_b5603344 = (arg = {}) => {
   const local = arg.lifecycle ?? "route";
   return {
     name: "BrowserSession",
@@ -7691,26 +8095,35 @@ const local_3a99c10a = (arg = {}) => {
       fn_03a10270({
         ignoreDuration: true,
       });
-      fn_d346974a();
-      const local = fn_bff325b9_2();
-      let local_2 = local.getUser();
-      local.addScopeListener((arg) => {
+      let local = false;
+      local_9dd0b76f(() => {
+        if (!local) {
+          fn_d346974a();
+          local = true;
+        }
+      });
+      const local_2 = fn_bff325b9_2();
+      let local_3 = local_2.getUser();
+      local_2.addScopeListener((arg) => {
         const local = arg.getUser();
         if (
-          local_2?.id !== local?.id ||
-          local_2?.ip_address !== local?.ip_address
+          local_3?.id !== local?.id ||
+          local_3?.ip_address !== local?.ip_address
         ) {
-          fn_d346974a();
-          local_2 = local;
+          local_3 = local;
+          if (local) {
+            fn_d346974a();
+          }
         }
       });
       if (local === "route") {
-        fn_f8426bd2(({ from: arg, to: symbol_052 }) => {
-          if (arg !== symbol_052) {
+        fn_f8426bd2(({ from: arg, to: arg_2 }) => {
+          if (arg !== arg_2) {
             fn_03a10270({
               ignoreDuration: true,
             });
             fn_d346974a();
+            local = true;
           }
         });
       }
@@ -7799,7 +8212,7 @@ function fn_a1bb7feb(arg) {
       error: local_7,
     } = arg;
     const local_8 = fn_44847b8a(
-      fn_e27f863c(local, local_7 || local_3, undefined, local_2, false),
+      fn_66fc7b2e(local, local_7 || local_3, undefined, local_2, false),
       local_4,
       local_5,
       local_6,
@@ -7823,7 +8236,7 @@ function fn_069c510e(arg) {
     const local_3 = fn_1e4f8466(arg);
     const local_4 = fn_8a91c46c(local_3)
       ? fn_76e8bcf0(local_3)
-      : fn_e27f863c(local, local_3, undefined, local_2, true);
+      : fn_66fc7b2e(local, local_3, undefined, local_2, true);
     local_4.level = "error";
     fn_2f9eb5a7(local_4, {
       originalException: local_3,
@@ -7870,7 +8283,7 @@ function fn_44847b8a(arg, arg_2, arg_3, arg_4) {
     local_5.push({
       colno: arg_4,
       lineno: arg_3,
-      filename: fn_853edaf5(arg_2) ?? fn_1d107afc(),
+      filename: fn_7f0b3322(arg_2) ?? fn_1d107afc(),
       function: local_e1081c14,
       in_app: true,
     });
@@ -7890,7 +8303,7 @@ function fn_6f485e72() {
     }
   );
 }
-function fn_853edaf5(arg) {
+function fn_7f0b3322(arg) {
   if (!(!fn_bdd4075c(arg) || arg.length === 0)) {
     if (arg.startsWith("data:")) {
       return `<${fn_52a7926e(arg, false)}>`;
@@ -7898,7 +8311,7 @@ function fn_853edaf5(arg) {
     return arg;
   }
 }
-const local_51d2251b = () => ({
+const local_4fea0243 = () => ({
   name: "HttpContext",
   preprocessEvent(arg) {
     if (
@@ -7920,6 +8333,7 @@ const local_51d2251b = () => ({
     };
   },
   processSegmentSpan(arg) {
+    const local = arg.attributes?.[local_11f53be5];
     if (
       !local_f090a36f_8.navigator &&
       !local_f090a36f_8.location &&
@@ -7927,11 +8341,11 @@ const local_51d2251b = () => ({
     ) {
       return;
     }
-    const local = fn_b2bf5d9b();
+    const local_2 = fn_b2bf5d9b();
     fn_5144a7de(arg, {
-      "url.full": local.url || undefined,
-      "http.request.header.user_agent": local.headers["User-Agent"],
-      "http.request.header.referer": local.headers.Referer,
+      [local_198cee04]: local !== "http.client" ? local_2.url : undefined,
+      "http.request.header.user_agent": local_2.headers["User-Agent"],
+      "http.request.header.referer": local_2.headers.Referer,
     });
   },
 });
@@ -7945,11 +8359,33 @@ const local_2fd4a810 = (arg = {}) => {
     name: local_0f5c4aef,
     preprocessEvent(arg, arg_2, arg_3) {
       const local = arg_3.getOptions();
-      fn_93cfddb0(fn_e94fbdc7, local.stackParser, local_2, local, arg, arg_2);
+      fn_3521ce3f(fn_e94fbdc7, local.stackParser, local_2, local, arg, arg_2);
     },
   };
 };
 const local_f090a36f_14 = local_2fd4a810;
+const local_cbb6889d = /^HTML(\w*)Element$/;
+function fn_f08b5de1(arg) {
+  if (typeof window !== "undefined" && arg === window) {
+    return "[Window]";
+  }
+  if (typeof document !== "undefined" && arg === document) {
+    return "[Document]";
+  }
+  if (fn_2191bd48(arg)) {
+    const local = fn_77e71660_2(arg);
+    if (local_cbb6889d.test(local)) {
+      return `[HTMLElement: ${fn_e61d61c3(arg)}]`;
+    }
+  }
+}
+function fn_77e71660_2(arg) {
+  const local = Object.getPrototypeOf(arg);
+  if (local?.constructor) {
+    return local.constructor.name;
+  }
+  return "null prototype";
+}
 function fn_22b7182f() {
   if (fn_88d7ccbb()) {
     return (
@@ -7983,19 +8419,19 @@ function fn_88d7ccbb() {
 function fn_4dbf8045(arg) {
   return [
     local_b8a86faf(),
-    local_f090a36f_4(),
-    local_f090a36f_6(),
+    local_f090a36f_3(),
+    local_f090a36f_5(),
     local_f090a36f_11(),
     local_f090a36f_10(),
     local_f090a36f_13(),
     local_f090a36f_14(),
-    local_f090a36f_5(),
-    local_51d2251b(),
+    local_f090a36f_4(),
+    local_4fea0243(),
     local_f090a36f_12(),
-    local_3a99c10a(),
+    local_b5603344(),
   ];
 }
-function fn_fb5a2df9(arg = {}) {
+function fn_65dbd558(arg = {}) {
   const local = !arg.skipBrowserExtensionCheck && fn_22b7182f();
   let local_2 =
     arg.defaultIntegrations == null ? fn_4dbf8045() : arg.defaultIntegrations;
@@ -8009,7 +8445,8 @@ function fn_fb5a2df9(arg = {}) {
     }),
     transport: arg.transport || fn_98fd8283,
   };
-  return fn_b973be8f(clazz_d7549466, local_3);
+  fn_bdc7aa48(fn_f08b5de1);
+  return fn_b973be8f(clazz_8265a9a2, local_3);
 }
 function fn_92c4c017(arg = {}) {
   const local = local_f090a36f_8.document;
@@ -8039,7 +8476,7 @@ function fn_92c4c017(arg = {}) {
   const local_6 = local_f090a36f_8.document.createElement("script");
   local_6.async = true;
   local_6.crossOrigin = "anonymous";
-  local_6.src = fn_700c4b91(local_4, local_5);
+  local_6.src = fn_275d102c(local_4, local_5);
   const { onLoad: local_7, onClose: local_8 } = local_5;
   if (local_7) {
     local_6.onload = local_7;
@@ -8058,10 +8495,10 @@ function fn_92c4c017(arg = {}) {
   }
   local_2.appendChild(local_6);
 }
-let local_657db3b7_25;
-let local_657db3b7_26;
-let local_657db3b7_27;
 let local_657db3b7_28;
+let local_657db3b7_29;
+let local_657db3b7_30;
+let local_657db3b7_31;
 let local_f06debfc_22 = 0;
 const local_0f018a95_3 = [];
 const local_f090a36f_15 = local_657db3b7_2;
@@ -8073,12 +8510,12 @@ const local_2cae01a0_6 = local_f090a36f_15.unmount;
 const local_2cae01a0_7 = local_f090a36f_15.__;
 function fn_8de7da45(arg, arg_2) {
   if (local_f090a36f_15.__h) {
-    local_f090a36f_15.__h(local_657db3b7_26, arg, local_f06debfc_22 || arg_2);
+    local_f090a36f_15.__h(local_657db3b7_29, arg, local_f06debfc_22 || arg_2);
   }
   local_f06debfc_22 = 0;
   const local =
-    local_657db3b7_26.__H ||
-    (local_657db3b7_26.__H = {
+    local_657db3b7_29.__H ||
+    (local_657db3b7_29.__H = {
       __: [],
       __h: [],
     });
@@ -8087,12 +8524,12 @@ function fn_8de7da45(arg, arg_2) {
   }
   return local.__[arg];
 }
-function symbol_056(arg) {
+function symbol_054(arg) {
   local_f06debfc_22 = 1;
-  return fn_73273d2f(fn_bd290b6f, arg);
+  return fn_ebeeebce(fn_bd290b6f, arg);
 }
-function fn_73273d2f(arg, arg_2, arg_3) {
-  const local = fn_8de7da45(local_657db3b7_25++, 2);
+function fn_ebeeebce(arg, arg_2, arg_3) {
+  const local = fn_8de7da45(local_657db3b7_28++, 2);
   local.t = arg;
   if (
     !local.__c &&
@@ -8107,26 +8544,18 @@ function fn_73273d2f(arg, arg_2, arg_3) {
         }
       },
     ]),
-    (local.__c = local_657db3b7_26),
-    !local_657db3b7_26.__f)
+    (local.__c = local_657db3b7_29),
+    !local_657db3b7_29.__f)
   ) {
     const local = function (arg, arg_2, arg_3) {
       if (!local.__c.__H) {
         return true;
       }
-      const local = local.__c.__H.__.filter(function (arg) {
-        return !!arg.__c;
-      });
-      if (
-        local.every(function (arg) {
-          return !arg.__N;
-        })
-      ) {
-        return !local_2 || local_2.call(this, arg, arg_2, arg_3);
-      }
+      let local = false;
       let local_2 = local.__c.props !== arg;
-      local.forEach(function (arg) {
+      local.__c.__H.__.some(function (arg) {
         if (arg.__N) {
+          local = true;
           const local = arg.__[0];
           arg.__ = arg.__N;
           arg.__N = undefined;
@@ -8135,12 +8564,19 @@ function fn_73273d2f(arg, arg_2, arg_3) {
           }
         }
       });
-      return (local_2 && local_2.call(this, arg, arg_2, arg_3)) || local_2;
+      if (local_2) {
+        const local = local_2.call(this, arg, arg_2, arg_3);
+        if (local) {
+          return local || local_2;
+        }
+        return local;
+      }
+      return !local || local_2;
     };
-    local_657db3b7_26.__f = true;
-    var local_2 = local_657db3b7_26.shouldComponentUpdate;
-    const local_2 = local_657db3b7_26.componentWillUpdate;
-    local_657db3b7_26.componentWillUpdate = function (arg, arg_2, arg_3) {
+    local_657db3b7_29.__f = true;
+    var local_2 = local_657db3b7_29.shouldComponentUpdate;
+    const local_2 = local_657db3b7_29.componentWillUpdate;
+    local_657db3b7_29.componentWillUpdate = function (arg, arg_2, arg_3) {
       if (this.__e) {
         const local = local_2;
         local_2 = undefined;
@@ -8151,24 +8587,24 @@ function fn_73273d2f(arg, arg_2, arg_3) {
         local_2.call(this, arg, arg_2, arg_3);
       }
     };
-    local_657db3b7_26.shouldComponentUpdate = local;
+    local_657db3b7_29.shouldComponentUpdate = local;
   }
   return local.__N || local.__;
 }
-function symbol_077(arg, arg_2) {
-  const local = fn_8de7da45(local_657db3b7_25++, 3);
+function symbol_058(arg, arg_2) {
+  const local = fn_8de7da45(local_657db3b7_28++, 3);
   if (!local_f090a36f_15.__s && fn_3a986a6c(local.__H, arg_2)) {
     local.__ = arg;
     local.u = arg_2;
-    local_657db3b7_26.__H.__h.push(local);
+    local_657db3b7_29.__H.__h.push(local);
   }
 }
 function symbol_028(arg, arg_2) {
-  const local = fn_8de7da45(local_657db3b7_25++, 4);
+  const local = fn_8de7da45(local_657db3b7_28++, 4);
   if (!local_f090a36f_15.__s && fn_3a986a6c(local.__H, arg_2)) {
     local.__ = arg;
     local.u = arg_2;
-    local_657db3b7_26.__h.push(local);
+    local_657db3b7_29.__h.push(local);
   }
 }
 function symbol_002(arg) {
@@ -8179,7 +8615,7 @@ function symbol_002(arg) {
     };
   }, []);
 }
-function symbol_046(arg, arg_2, arg_3) {
+export function fn_18654e96(arg, arg_2, arg_3) {
   local_f06debfc_22 = 6;
   symbol_028(
     function () {
@@ -8203,7 +8639,7 @@ function symbol_046(arg, arg_2, arg_3) {
   );
 }
 function symbol_021(arg, arg_2) {
-  const local = fn_8de7da45(local_657db3b7_25++, 7);
+  const local = fn_8de7da45(local_657db3b7_28++, 7);
   if (fn_3a986a6c(local.__H, arg_2)) {
     local.__ = arg();
     local.__H = arg_2;
@@ -8211,19 +8647,19 @@ function symbol_021(arg, arg_2) {
   }
   return local.__;
 }
-function symbol_069(arg, arg_2) {
+function symbol_067(arg, arg_2) {
   local_f06debfc_22 = 8;
   return symbol_021(function () {
     return arg;
   }, arg_2);
 }
 function fn_4eb8acde(arg) {
-  const local = local_657db3b7_26.context[arg.__c];
-  const local_2 = fn_8de7da45(local_657db3b7_25++, 9);
+  const local = local_657db3b7_29.context[arg.__c];
+  const local_2 = fn_8de7da45(local_657db3b7_28++, 9);
   local_2.c = arg;
   if (local) {
     return (
-      local_2.__ == null && ((local_2.__ = true), local.sub(local_657db3b7_26)),
+      local_2.__ == null && ((local_2.__ = true), local.sub(local_657db3b7_29)),
       local.props.value
     );
   }
@@ -8235,10 +8671,10 @@ function fn_b0431071(arg, arg_2) {
   }
 }
 function fn_9c941575() {
-  const local = fn_8de7da45(local_657db3b7_25++, 11);
+  const local = fn_8de7da45(local_657db3b7_28++, 11);
   if (!local.__) {
     for (
-      var local_2 = local_657db3b7_26.__v;
+      var local_2 = local_657db3b7_29.__v;
       local_2 !== null && !local_2.__m && local_2.__ !== null;
     ) {
       local_2 = local_2.__;
@@ -8248,23 +8684,24 @@ function fn_9c941575() {
   }
   return local.__;
 }
-function fn_b3de4e17() {
+function fn_fe4607d4() {
   let local;
   while ((local = local_0f018a95_3.shift())) {
-    if (local.__P && local.__H) {
+    const local = local.__H;
+    if (local.__P && local) {
       try {
-        local.__H.__h.forEach(fn_ec371939);
-        local.__H.__h.forEach(fn_f8b704f8);
-        local.__H.__h = [];
+        local.__h.some(fn_ec371939);
+        local.__h.some(fn_f8b704f8);
+        local.__h = [];
       } catch (error) {
-        local.__H.__h = [];
+        local.__h = [];
         local_f090a36f_15.__e(error, local.__v);
       }
     }
   }
 }
 local_f090a36f_15.__b = function (arg) {
-  local_657db3b7_26 = null;
+  local_657db3b7_29 = null;
   if (local_2cae01a0_2) {
     local_2cae01a0_2(arg);
   }
@@ -8281,24 +8718,24 @@ local_f090a36f_15.__r = function (arg) {
   if (local_2cae01a0_3) {
     local_2cae01a0_3(arg);
   }
-  local_657db3b7_25 = 0;
-  const local = (local_657db3b7_26 = arg.__c).__H;
+  local_657db3b7_28 = 0;
+  const local = (local_657db3b7_29 = arg.__c).__H;
   local &&
-    (local_657db3b7_27 === local_657db3b7_26
+    (local_657db3b7_30 === local_657db3b7_29
       ? ((local.__h = []),
-        (local_657db3b7_26.__h = []),
-        local.__.forEach(function (arg) {
+        (local_657db3b7_29.__h = []),
+        local.__.some(function (arg) {
           if (arg.__N) {
             arg.__ = arg.__N;
           }
           arg.u = undefined;
           arg.__N = undefined;
         }))
-      : (local.__h.forEach(fn_ec371939),
-        local.__h.forEach(fn_f8b704f8),
+      : (local.__h.some(fn_ec371939),
+        local.__h.some(fn_f8b704f8),
         (local.__h = []),
-        (local_657db3b7_25 = 0)));
-  local_657db3b7_27 = local_657db3b7_26;
+        (local_657db3b7_28 = 0)));
+  local_657db3b7_30 = local_657db3b7_29;
 };
 local_f090a36f_15.diffed = function (arg) {
   if (local_2cae01a0_4) {
@@ -8308,25 +8745,25 @@ local_f090a36f_15.diffed = function (arg) {
   if (local && local.__H) {
     local.__H.__h.length &&
       ((local_0f018a95_3.push(local) !== 1 &&
-        local_657db3b7_28 === local_f090a36f_15.requestAnimationFrame) ||
+        local_657db3b7_31 === local_f090a36f_15.requestAnimationFrame) ||
         (
-          (local_657db3b7_28 = local_f090a36f_15.requestAnimationFrame) ||
+          (local_657db3b7_31 = local_f090a36f_15.requestAnimationFrame) ||
           fn_c3d22614
-        )(fn_b3de4e17));
-    local.__H.__.forEach(function (arg) {
+        )(fn_fe4607d4));
+    local.__H.__.some(function (arg) {
       if (arg.u) {
         arg.__H = arg.u;
+        arg.u = undefined;
       }
-      arg.u = undefined;
     });
   }
-  local_657db3b7_27 = null;
-  local_657db3b7_26 = null;
+  local_657db3b7_30 = null;
+  local_657db3b7_29 = null;
 };
 local_f090a36f_15.__c = function (arg, arg_2) {
   arg_2.some(function (arg) {
     try {
-      arg.__h.forEach(fn_ec371939);
+      arg.__h.some(fn_ec371939);
       arg.__h = arg.__h.filter(function (arg) {
         return !arg.__ || fn_f8b704f8(arg);
       });
@@ -8351,7 +8788,7 @@ local_f090a36f_15.unmount = function (arg) {
   let local;
   const local_2 = arg.__c;
   if (local_2 && local_2.__H) {
-    local_2.__H.__.forEach(function (arg) {
+    local_2.__H.__.some(function (arg) {
       try {
         fn_ec371939(arg);
       } catch (error) {
@@ -8380,18 +8817,18 @@ function fn_c3d22614(arg) {
   }
 }
 function fn_ec371939(arg) {
-  const local = local_657db3b7_26;
+  const local = local_657db3b7_29;
   const local_2 = arg.__c;
   if (typeof local_2 === "function") {
     arg.__c = undefined;
     local_2();
   }
-  local_657db3b7_26 = local;
+  local_657db3b7_29 = local;
 }
 function fn_f8b704f8(arg) {
-  const local = local_657db3b7_26;
+  const local = local_657db3b7_29;
   arg.__c = arg.__();
-  local_657db3b7_26 = local;
+  local_657db3b7_29 = local;
 }
 function fn_3a986a6c(arg, arg_2) {
   return (
@@ -8429,7 +8866,7 @@ function fn_6364a171(arg, arg_2) {
 }
 function fn_fa7edb97(arg, arg_2) {
   const local = arg_2();
-  const local_2 = symbol_056({
+  const local_2 = symbol_054({
     t: {
       __: local,
       u: arg_2,
@@ -8441,7 +8878,7 @@ function fn_fa7edb97(arg, arg_2) {
     function () {
       local_3.__ = local;
       local_3.u = arg_2;
-      if (fn_6802f567(local_3)) {
+      if (fn_785d9263(local_3)) {
         local_4({
           t: local_3,
         });
@@ -8449,15 +8886,15 @@ function fn_fa7edb97(arg, arg_2) {
     },
     [arg, local, arg_2],
   );
-  symbol_077(
+  symbol_058(
     function () {
-      if (fn_6802f567(local_3)) {
+      if (fn_785d9263(local_3)) {
         local_4({
           t: local_3,
         });
       }
       return arg(function () {
-        if (fn_6802f567(local_3)) {
+        if (fn_785d9263(local_3)) {
           local_4({
             t: local_3,
           });
@@ -8468,21 +8905,18 @@ function fn_fa7edb97(arg, arg_2) {
   );
   return local;
 }
-function fn_6802f567(arg) {
-  let local;
-  let local_2;
-  const local_3 = arg.u;
-  const local_4 = arg.__;
+function fn_785d9263(arg) {
   try {
-    const local = local_3();
     return !(
-      ((local = local_4) === (local_2 = local) &&
+      ((local = arg.__) === (local_2 = arg.u()) &&
         (local !== 0 || 1 / local == 1 / local_2)) ||
       (local != local && local_2 != local_2)
     );
   } catch {
     return true;
   }
+  var local;
+  var local_2;
 }
 function fn_bd7bb893(arg) {
   arg();
@@ -8498,13 +8932,14 @@ function fn_183ac9a7(arg, arg_2) {
   this.props = arg;
   this.context = arg_2;
 }
-function symbol_052(arg, arg_2) {
+export function fn_e330de8b(arg, arg_2) {
   function fn(arg) {
     const local = this.props.ref;
-    const local_2 = local == arg.ref;
-    !local_2 && local && (local.call ? local(null) : (local.current = null));
+    local != arg.ref &&
+      local &&
+      (typeof local === "function" ? local(null) : (local.current = null));
     if (arg_2) {
-      return !arg_2(this.props, arg) || !local_2;
+      return !arg_2(this.props, arg) || local != arg.ref;
     }
     return fn_6364a171(this.props, arg);
   }
@@ -8513,8 +8948,8 @@ function symbol_052(arg, arg_2) {
     return fn_ba0330ef(arg, arg);
   }
   fn_2.displayName = `Memo(${arg.displayName || arg.name})`;
-  fn_2.prototype.isReactComponent = true;
   fn_2.__f = true;
+  fn_2.prototype.isReactComponent = true;
   fn_2.type = arg;
   return fn_2;
 }
@@ -8537,7 +8972,7 @@ const local_090e3b51 =
     Symbol.for &&
     Symbol.for("react.forward_ref")) ||
   3911;
-function symbol_044(arg) {
+function symbol_043(arg) {
   function fn(arg) {
     const local = fn_be5cf4ce_2({}, arg);
     delete local.ref;
@@ -8582,7 +9017,7 @@ local_657db3b7_2.__e = function (arg, arg_2, arg_3, arg_4) {
       if ((local = local.__c) && local.__c) {
         if (arg_2.__e == null) {
           arg_2.__e = arg_3.__e;
-          arg_2.__k = arg_3.__k;
+          arg_2.__k = arg_3.__k || [];
         }
         return local.__c(arg, arg_2);
       }
@@ -8634,16 +9069,16 @@ function fn_66173163(arg, arg_2, arg_3) {
   }
   return arg;
 }
-function symbol_062() {
+function symbol_061() {
   this.__u = 0;
   this.o = null;
   this.__b = null;
 }
-function fn_bae18ea2(arg) {
-  const local = arg.__.__c;
+function fn_8da64650(arg) {
+  const local = arg.__ && arg.__.__c;
   return local && local.__a && local.__a(arg);
 }
-function symbol_078(arg) {
+function symbol_076(arg) {
   let local;
   let local_2;
   let local_3;
@@ -8684,6 +9119,9 @@ function fn_d3fcfea0() {
 }
 local_657db3b7_2.unmount = function (arg) {
   const local = arg.__c;
+  if (local) {
+    local.__z = true;
+  }
   if (local && local.__R) {
     local.__R();
   }
@@ -8694,28 +9132,30 @@ local_657db3b7_2.unmount = function (arg) {
     local_2cae01a0_10(arg);
   }
 };
-(symbol_062.prototype = new clazz_183a9acd()).__c = function (arg, arg_2) {
+(symbol_061.prototype = new clazz_183a9acd()).__c = function (arg, arg_2) {
   const local = arg_2.__c;
   const local_2 = this;
   if (local_2.o == null) {
     local_2.o = [];
   }
   local_2.o.push(local);
-  const local_3 = fn_bae18ea2(local_2.__v);
+  const local_3 = fn_8da64650(local_2.__v);
   let local_4 = false;
   const local_5 = function () {
-    if (!local_4) {
+    if (!(local_4 || local_2.__z)) {
       local_4 = true;
       local.__R = null;
       if (local_3) {
-        local_3(local_6);
+        local_3(local_7);
       } else {
-        local_6();
+        local_7();
       }
     }
   };
   local.__R = local_5;
-  var local_6 = function () {
+  const local_6 = local.__P;
+  local.__P = null;
+  var local_7 = function () {
     if (!--local_2.__u) {
       if (local_2.state.__a) {
         const local = local_2.state.__a;
@@ -8728,6 +9168,7 @@ local_657db3b7_2.unmount = function (arg) {
         });
         (local = local_2.o.pop());
       ) {
+        local.__P = local_6;
         local.forceUpdate();
       }
     }
@@ -8739,10 +9180,10 @@ local_657db3b7_2.unmount = function (arg) {
   }
   arg.then(local_5, local_5);
 };
-symbol_062.prototype.componentWillUnmount = function () {
+symbol_061.prototype.componentWillUnmount = function () {
   this.o = [];
 };
-symbol_062.prototype.render = function (arg, arg_2) {
+symbol_061.prototype.render = function (arg, arg_2) {
   if (this.__b) {
     if (this.__v.__k) {
       const local = document.createElement("div");
@@ -8755,12 +9196,12 @@ symbol_062.prototype.render = function (arg, arg_2) {
     }
     this.__b = null;
   }
-  const local = arg_2.__a && fn_ba0330ef(symbol_063, null, arg.fallback);
+  const local = arg_2.__a && fn_ba0330ef(symbol_020, null, arg.fallback);
   if (local) {
     local.__u &= -33;
   }
   return [
-    fn_ba0330ef(symbol_063, null, arg_2.__a ? null : arg.children),
+    fn_ba0330ef(symbol_020, null, arg_2.__a ? null : arg.children),
     local,
   ];
 };
@@ -8789,11 +9230,11 @@ function fn_9401c323(arg) {
   };
   return arg.children;
 }
-function fn_a57d1531(arg) {
+function fn_36a62d06(arg) {
   const local = this;
   const local_2 = arg.h;
   local.componentWillUnmount = function () {
-    fn_5b06483a(null, local.v);
+    fn_5297d6e7(null, local.v);
     local.v = null;
     local.h = null;
   };
@@ -8818,6 +9259,7 @@ function fn_a57d1531(arg) {
       contains() {
         return true;
       },
+      namespaceURI: local_2.namespaceURI,
       insertBefore(arg, arg_2) {
         this.childNodes.push(arg);
         local.h.insertBefore(arg, arg_2);
@@ -8828,7 +9270,7 @@ function fn_a57d1531(arg) {
       },
     };
   }
-  fn_5b06483a(
+  fn_5297d6e7(
     fn_ba0330ef(
       fn_9401c323,
       {
@@ -8840,7 +9282,7 @@ function fn_a57d1531(arg) {
   );
 }
 function symbol_001(arg, arg_2) {
-  const local = fn_ba0330ef(fn_a57d1531, {
+  const local = fn_ba0330ef(fn_36a62d06, {
     __v: arg,
     h: arg_2,
   });
@@ -8849,7 +9291,7 @@ function symbol_001(arg, arg_2) {
 }
 (fn_d3fcfea0.prototype = new clazz_183a9acd()).__a = function (arg) {
   const local = this;
-  const local_2 = fn_bae18ea2(local.__v);
+  const local_2 = fn_8da64650(local.__v);
   const local_3 = local.l.get(arg);
   local_3[0]++;
   return function (arg) {
@@ -8908,7 +9350,7 @@ function fn_826376a5(arg, arg_2, arg_3) {
   if (arg_2.__k == null) {
     arg_2.textContent = "";
   }
-  fn_5b06483a(arg, arg_2);
+  fn_5297d6e7(arg, arg_2);
   if (typeof arg_3 === "function") {
     arg_3();
   }
@@ -8927,7 +9369,7 @@ function fn_618cc22a(arg, arg_2, arg_3) {
   }
   return null;
 }
-clazz_183a9acd.prototype.isReactComponent = {};
+clazz_183a9acd.prototype.isReactComponent = true;
 [
   "componentWillMount",
   "componentWillReceiveProps",
@@ -8948,25 +9390,21 @@ clazz_183a9acd.prototype.isReactComponent = {};
   });
 });
 const local_2cae01a0_11 = local_657db3b7_2.event;
-function fn_40cd9af9() {}
-function fn_758ba590() {
-  return this.cancelBubble;
-}
-function fn_758ba590_2() {
-  return this.defaultPrevented;
-}
 local_657db3b7_2.event = function (arg) {
   if (local_2cae01a0_11) {
     arg = local_2cae01a0_11(arg);
   }
-  arg.persist = fn_40cd9af9;
-  arg.isPropagationStopped = fn_758ba590;
-  arg.isDefaultPrevented = fn_758ba590_2;
+  arg.persist = function () {};
+  arg.isPropagationStopped = function () {
+    return this.cancelBubble;
+  };
+  arg.isDefaultPrevented = function () {
+    return this.defaultPrevented;
+  };
   return (arg.nativeEvent = arg);
 };
-let local_657db3b7_29;
-const local_9f478cd9 = {
-  enumerable: false,
+let local_657db3b7_32;
+const local_ab7ab68b = {
   configurable: true,
   get() {
     return this.class;
@@ -8979,7 +9417,7 @@ local_657db3b7_2.vnode = function (arg) {
       const local = arg.props;
       const local_2 = arg.type;
       const local_3 = {};
-      const local_4 = local_2.indexOf("-") === -1;
+      const local_4 = local_2.indexOf("-") == -1;
       for (let local in local) {
         let local = local[local];
         if (!(
@@ -9028,29 +9466,22 @@ local_657db3b7_2.vnode = function (arg) {
           local_3[local] = local;
         }
       }
-      if (
-        local_2 == "select" &&
-        local_3.multiple &&
-        Array.isArray(local_3.value)
-      ) {
-        local_3.value = fn_c7d3eb90(local.children).forEach(function (arg) {
-          arg.props.selected = local_3.value.indexOf(arg.props.value) != -1;
-        });
-      }
-      if (local_2 == "select" && local_3.defaultValue != null) {
-        local_3.value = fn_c7d3eb90(local.children).forEach(function (arg) {
-          arg.props.selected = local_3.multiple
-            ? local_3.defaultValue.indexOf(arg.props.value) != -1
-            : local_3.defaultValue == arg.props.value;
-        });
-      }
+      local_2 == "select" &&
+        (local_3.multiple &&
+          Array.isArray(local_3.value) &&
+          (local_3.value = fn_c7d3eb90(local.children).forEach(function (arg) {
+            arg.props.selected = local_3.value.indexOf(arg.props.value) != -1;
+          })),
+        local_3.defaultValue != null &&
+          (local_3.value = fn_c7d3eb90(local.children).forEach(function (arg) {
+            arg.props.selected = local_3.multiple
+              ? local_3.defaultValue.indexOf(arg.props.value) != -1
+              : local_3.defaultValue == arg.props.value;
+          })));
       if (local.class && !local.className) {
         local_3.class = local.class;
-        Object.defineProperty(local_3, "className", local_9f478cd9);
-      } else if (
-        (local.className && !local.class) ||
-        (local.class && local.className)
-      ) {
+        Object.defineProperty(local_3, "className", local_ab7ab68b);
+      } else if (local.className) {
         local_3.class = local_3.className = local.className;
       }
       arg.props = local_3;
@@ -9066,7 +9497,7 @@ local_657db3b7_2.__r = function (arg) {
   if (local_2cae01a0_13) {
     local_2cae01a0_13(arg);
   }
-  local_657db3b7_29 = arg.__c;
+  local_657db3b7_32 = arg.__c;
 };
 const local_2cae01a0_14 = local_657db3b7_2.diffed;
 local_657db3b7_2.diffed = function (arg) {
@@ -9083,27 +9514,27 @@ local_657db3b7_2.diffed = function (arg) {
   ) {
     local_2.value = local.value == null ? "" : local.value;
   }
-  local_657db3b7_29 = null;
+  local_657db3b7_32 = null;
 };
 const local_51c02428 = {
   ReactCurrentDispatcher: {
     current: {
       readContext(arg) {
-        return local_657db3b7_29.__n[arg.__c].props.value;
+        return local_657db3b7_32.__n[arg.__c].props.value;
       },
-      useCallback: symbol_069,
+      useCallback: symbol_067,
       useContext: fn_4eb8acde,
       useDebugValue: fn_b0431071,
       useDeferredValue: fn_f354ee7e,
-      useEffect: symbol_077,
+      useEffect: symbol_058,
       useId: fn_9c941575,
-      useImperativeHandle: symbol_046,
+      useImperativeHandle: fn_18654e96,
       useInsertionEffect: local_f090a36f_16,
       useLayoutEffect: symbol_028,
       useMemo: symbol_021,
-      useReducer: fn_73273d2f,
+      useReducer: fn_ebeeebce,
       useRef: symbol_002,
-      useState: symbol_056,
+      useState: symbol_054,
       useSyncExternalStore: fn_fa7edb97,
       useTransition: fn_aba1f681,
     },
@@ -9117,15 +9548,13 @@ function fn_86fd8a5a(arg) {
   return !!arg && arg.$$typeof === local_04d34787;
 }
 function fn_49de1e8b(arg) {
-  return fn_86fd8a5a(arg) && arg.type === symbol_063;
+  return fn_86fd8a5a(arg) && arg.type === symbol_020;
 }
-function fn_de2e34c7(arg) {
+function fn_04b27806(arg) {
   return (
     !!arg &&
-    !!arg.displayName &&
-    (typeof arg.displayName === "string" ||
-      arg.displayName instanceof String) &&
-    arg.displayName.startsWith("Memo(")
+    typeof arg.displayName === "string" &&
+    arg.displayName.indexOf("Memo(") == 0
   );
 }
 function fn_4c6054db(arg) {
@@ -9135,7 +9564,7 @@ function fn_4c6054db(arg) {
   return arg;
 }
 function fn_150723fa(arg) {
-  return !!arg.__k && (fn_5b06483a(null, arg), true);
+  return !!arg.__k && (fn_5297d6e7(null, arg), true);
 }
 function fn_33a67bf0(arg) {
   return (arg && (arg.base || (arg.nodeType === 1 && arg))) || null;
@@ -9143,16 +9572,28 @@ function fn_33a67bf0(arg) {
 const local_0d71927e = function (arg, arg_2) {
   return arg(arg_2);
 };
-const local_0d71927e_2 = function (arg, arg_2) {
-  return arg(arg_2);
+const local_d2bfadb8 = function (arg, arg_2) {
+  let local;
+  const local_2 = local_657db3b7_2.debounceRendering;
+  local_657db3b7_2.debounceRendering = function (arg) {
+    local = arg;
+  };
+  try {
+    const local = arg(arg_2);
+    if (local) {
+      local();
+    }
+    return local;
+  } finally {
+    local_657db3b7_2.debounceRendering = local_2;
+  }
 };
-const local_f090a36f_17 = symbol_063;
-const local_f090a36f_18 = fn_86fd8a5a;
+const local_f090a36f_17 = fn_86fd8a5a;
 const local_eff139f9 = {
-  useState: symbol_056,
+  useState: symbol_054,
   useId: fn_9c941575,
-  useReducer: fn_73273d2f,
-  useEffect: symbol_077,
+  useReducer: fn_ebeeebce,
+  useEffect: symbol_058,
   useLayoutEffect: symbol_028,
   useInsertionEffect: local_f090a36f_16,
   useTransition: fn_aba1f681,
@@ -9160,9 +9601,9 @@ const local_eff139f9 = {
   useSyncExternalStore: fn_fa7edb97,
   startTransition: fn_bd7bb893,
   useRef: symbol_002,
-  useImperativeHandle: symbol_046,
+  useImperativeHandle: fn_18654e96,
   useMemo: symbol_021,
-  useCallback: symbol_069,
+  useCallback: symbol_067,
   useContext: fn_4eb8acde,
   useDebugValue: fn_b0431071,
   version: "18.3.1",
@@ -9172,29 +9613,37 @@ const local_eff139f9 = {
   unmountComponentAtNode: fn_150723fa,
   createPortal: symbol_001,
   createElement: fn_ba0330ef,
-  createContext: fn_c05a86e1,
+  createContext: fn_aa547820,
   createFactory: fn_d0081f84,
   cloneElement: fn_4c6054db,
   createRef: fn_e91fa79b,
-  Fragment: symbol_063,
+  Fragment: symbol_020,
   isValidElement: fn_86fd8a5a,
-  isElement: local_f090a36f_18,
+  isElement: local_f090a36f_17,
   isFragment: fn_49de1e8b,
-  isMemo: fn_de2e34c7,
+  isMemo: fn_04b27806,
   findDOMNode: fn_33a67bf0,
   Component: clazz_183a9acd,
   PureComponent: fn_183ac9a7,
-  memo: symbol_052,
-  forwardRef: symbol_044,
-  flushSync: local_0d71927e_2,
+  memo: fn_e330de8b,
+  forwardRef: symbol_043,
+  flushSync: local_d2bfadb8,
   unstable_batchedUpdates: local_0d71927e,
-  StrictMode: local_f090a36f_17,
-  Suspense: symbol_062,
+  StrictMode: symbol_020,
+  Suspense: symbol_061,
   SuspenseList: fn_d3fcfea0,
-  lazy: symbol_078,
+  lazy: symbol_076,
   __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: local_51c02428,
 };
-function fn_55d335c1(arg) {
+function fn_d0f27641(arg) {
+  return (
+    fn_5ee37d10(arg) &&
+    "nativeEvent" in arg &&
+    "preventDefault" in arg &&
+    "stopPropagation" in arg
+  );
+}
+function fn_314011cd(arg) {
   const local = {
     ...arg,
   };
@@ -9202,7 +9651,15 @@ function fn_55d335c1(arg) {
   fn_2e3776e9("react", {
     version: local_8f06da6d,
   });
-  return fn_fb5a2df9(local);
+  const local_2 = fn_65dbd558(local);
+  fn_bdc7aa48(fn_7932a484);
+  return local_2;
+}
+function fn_7932a484(arg) {
+  if (fn_d0f27641(arg)) {
+    return "[SyntheticEvent]";
+  }
+  return fn_f08b5de1(arg);
 }
 function fn_e8c3ea08(arg) {
   const local = arg.match(/^([^.]+)/);
@@ -9221,19 +9678,14 @@ function fn_30d8cc23(arg, arg_2) {
   }
   fn(arg, arg_2);
 }
-function fn_90d8e424(arg, { componentStack: arg_2 }, arg_3) {
+function fn_95c9c188(arg, { componentStack: arg_2 }, arg_3) {
   if (fn_e8c3ea08(local_8f06da6d) && fn_7b60edb8(arg) && arg_2) {
     const local = new Error(arg.message);
     local.name = `React ErrorBoundary ${arg.name}`;
     local.stack = arg_2;
     fn_30d8cc23(arg, local);
   }
-  return fn_ded9c9e3((arg) => {
-    arg.setContext("react", {
-      componentStack: arg_2,
-    });
-    return fn_0e42a633(arg, arg_3);
-  });
+  return fn_0e42a633(arg, arg_3);
 }
 const local_23bb5d69_4 =
   typeof __SENTRY_DEBUG__ === "undefined" || __SENTRY_DEBUG__;
@@ -9278,7 +9730,7 @@ class clazz_b30b8e71 extends clazz_183a9acd {
       }
       const local =
         this.props.handled != null ? this.props.handled : !!this.props.fallback;
-      const local_2 = fn_90d8e424(arg, arg_2, {
+      const local_2 = fn_95c9c188(arg, arg_2, {
         mechanism: {
           handled: local,
           type: "auto.function.react.error_boundary",
@@ -9366,13 +9818,13 @@ class clazz_b30b8e71 extends clazz_183a9acd {
     );
   }
 }
-fn_55d335c1({
+fn_314011cd({
   dsn: "https://693c388031bcee4cd87e917055abf6a2@sentry.xn--d1ah4a.com/2",
   environment: "production",
   enabled: true,
   sendDefaultPii: true,
   tracesSampleRate: 0.1,
-  release: "1.1.2",
+  release: "1.1.4",
 });
 function fn_909ba931(arg) {
   return {
@@ -9388,8 +9840,8 @@ const local_e454ea41 = "modulepreload";
 const local_62d44f1c = function (arg) {
   return `/${arg}`;
 };
-const local_603ced16_6 = {};
-const symbol_064 = function (arg, arg_2, arg_3) {
+const local_603ced16_7 = {};
+const symbol_062 = function (arg, arg_2, arg_3) {
   let local = Promise.resolve();
   if (arg_2 && arg_2.length > 0) {
     let local = function (arg) {
@@ -9414,10 +9866,10 @@ const symbol_064 = function (arg, arg_2, arg_3) {
     local = local(
       arg_2.map((arg) => {
         arg = local_62d44f1c(arg);
-        if (arg in local_603ced16_6) {
+        if (arg in local_603ced16_7) {
           return;
         }
-        local_603ced16_6[arg] = true;
+        local_603ced16_7[arg] = true;
         const local = arg.endsWith(".css");
         const local_2 = local ? '[rel="stylesheet"]' : "";
         if (document.querySelector(`link[href="${arg}"]${local_2}`)) {
@@ -9464,7 +9916,7 @@ const symbol_064 = function (arg, arg_2, arg_3) {
     return arg().catch(fn);
   });
 };
-const local_603ced16_7 = {};
+const local_603ced16_8 = {};
 function fn_be5cf4ce_3(arg, arg_2) {
   for (const local in arg_2) {
     arg[local] = arg_2[local];
@@ -9498,7 +9950,7 @@ function fn_df383351(arg, arg_2, arg_3) {
     if (arg_2[local_2] && arg_2[local_2].charAt(0) === ":") {
       const local = arg_2[local_2].replace(/(^:|[+*?]+$)/g, "");
       const local_2 =
-        (arg_2[local_2].match(/[+*?]+$/) || local_603ced16_7)[0] || "";
+        (arg_2[local_2].match(/[+*?]+$/) || local_603ced16_8)[0] || "";
       const local_3 = ~local_2.indexOf("+");
       const local_4 = ~local_2.indexOf("*");
       const local_5 = arg[local_2] || "";
@@ -9549,26 +10001,26 @@ function fn_6da43139(arg) {
   }
   return 5;
 }
-const local_603ced16_8 = {};
+const local_603ced16_9 = {};
 const local_0f018a95_4 = [];
 const local_0f018a95_5 = [];
 let local_0a9fda83_3 = null;
 const local_2b32041e = {
   url: fn_744ccf64(),
 };
-const local_d95e5548 = fn_c05a86e1(local_2b32041e);
-function symbol_045() {
+const local_d95e5548 = fn_aa547820(local_2b32041e);
+function symbol_044() {
   const local = fn_4eb8acde(local_d95e5548);
   if (local === local_2b32041e) {
-    const local = symbol_056()[1];
-    symbol_077(function () {
+    const local = symbol_054()[1];
+    symbol_058(function () {
       local_0f018a95_5.push(local);
       return function () {
         return local_0f018a95_5.splice(local_0f018a95_5.indexOf(local), 1);
       };
     }, []);
   }
-  return [local, symbol_057];
+  return [local, symbol_055];
 }
 function fn_744ccf64() {
   let local;
@@ -9581,11 +10033,11 @@ function fn_744ccf64() {
           ? local_0a9fda83_3.getCurrentLocation()
           : typeof location !== "undefined"
             ? location
-            : local_603ced16_8).pathname || "") +
+            : local_603ced16_9).pathname || "") +
     (local.search || "")
   );
 }
-function symbol_057(arg, arg_2 = false) {
+function symbol_055(arg, arg_2 = false) {
   if (typeof arg !== "string" && arg.url) {
     arg_2 = arg.replace;
     arg = arg.url;
@@ -9628,7 +10080,7 @@ function fn_96a6df44(arg) {
       local.match(/^\//g) &&
       (!local_2 || local_2.match(/^_?self$/i))
     ) {
-      return symbol_057(local);
+      return symbol_055(local);
     }
   }
 }
@@ -9849,7 +10301,7 @@ const local_f5cbdd13 = (arg) => {
   Object.assign(local_2, local);
   return local_2;
 };
-export const local_7d651640_2 = (arg) => {
+const symbol_041 = (arg) => {
   if (arg) {
     return local_f5cbdd13(arg);
   }
@@ -9907,9 +10359,9 @@ const local_9dbd4d0a = (arg) => (arg) => {
     };
   }
 };
-const local_7f0135d4 = (arg, arg_2) => (arg, arg_2, arg_3) => {
+const local_f69b4752 = (arg, arg_2) => (arg, arg_2, arg_3) => {
   let local = {
-    storage: fn_fe2ed958(() => localStorage),
+    storage: fn_fe2ed958(() => window.localStorage),
     partialize: (arg) => arg,
     version: 0,
     merge: (arg, arg_2) => ({
@@ -9919,10 +10371,11 @@ const local_7f0135d4 = (arg, arg_2) => (arg, arg_2, arg_3) => {
     ...arg_2,
   };
   let local_2 = false;
-  const local_3 = new Set();
+  let local_3 = 0;
   const local_4 = new Set();
-  let local_5 = local.storage;
-  if (!local_5) {
+  const local_5 = new Set();
+  let local_6 = local.storage;
+  if (!local_6) {
     return arg(
       (...arg) => {
         console.warn(
@@ -9934,47 +10387,48 @@ const local_7f0135d4 = (arg, arg_2) => (arg, arg_2, arg_3) => {
       arg_3,
     );
   }
-  const local_6 = () => {
+  const local_7 = () => {
     const local = local.partialize({
       ...arg_2(),
     });
-    return local_5.setItem(local.name, {
+    return local_6.setItem(local.name, {
       state: local,
       version: local.version,
     });
   };
-  const local_7 = arg_3.setState;
+  const local_8 = arg_3.setState;
   arg_3.setState = (arg, arg_2) => {
-    local_7(arg, arg_2);
-    return local_6();
+    local_8(arg, arg_2);
+    return local_7();
   };
-  const local_8 = arg(
+  const local_9 = arg(
     (...arg) => {
       arg(...arg);
-      return local_6();
+      return local_7();
     },
     arg_2,
     arg_3,
   );
-  arg_3.getInitialState = () => local_8;
-  let local_9;
-  const local_10 = () => {
+  arg_3.getInitialState = () => local_9;
+  let local_10;
+  const local_11 = () => {
     var local;
     var local_2;
-    if (!local_5) {
+    if (!local_6) {
       return;
     }
+    const local_3 = ++local_3;
     local_2 = false;
-    local_3.forEach((arg) => {
+    local_4.forEach((arg) => {
       var local;
-      return arg((local = arg_2()) != null ? local : local_8);
+      return arg((local = arg_2()) != null ? local : local_9);
     });
-    const local_3 =
+    const local_4 =
       ((local_2 = local.onRehydrateStorage) == null
         ? undefined
-        : local_2.call(local, (local = arg_2()) != null ? local : local_8)) ||
+        : local_2.call(local, (local = arg_2()) != null ? local : local_9)) ||
       undefined;
-    return local_9dbd4d0a(local_5.getItem.bind(local_5))(local.name)
+    return local_9dbd4d0a(local_6.getItem.bind(local_6))(local.name)
       .then((arg) => {
         if (arg) {
           if (
@@ -9999,24 +10453,29 @@ const local_7f0135d4 = (arg, arg_2) => (arg, arg_2, arg_3) => {
       })
       .then((arg) => {
         var local;
+        if (local_3 !== local_3) {
+          return;
+        }
         const [local_2, local_3] = arg;
-        local_9 = local.merge(
+        local_10 = local.merge(
           local_3,
-          (local = arg_2()) != null ? local : local_8,
+          (local = arg_2()) != null ? local : local_9,
         );
-        arg(local_9, true);
+        arg(local_10, true);
         if (local_2) {
-          return local_6();
+          return local_7();
         }
       })
       .then(() => {
-        local_3?.(local_9, undefined);
-        local_9 = arg_2();
-        local_2 = true;
-        local_4.forEach((arg) => arg(local_9));
+        if (local_3 === local_3) {
+          local_4?.(arg_2(), undefined);
+          local_10 = arg_2();
+          local_2 = true;
+          local_5.forEach((arg) => arg(local_10));
+        }
       })
       .catch((arg) => {
-        local_3?.(undefined, arg);
+        local_3 === local_3 && local_4?.(undefined, arg);
       });
   };
   arg_3.persist = {
@@ -10026,35 +10485,36 @@ const local_7f0135d4 = (arg, arg_2) => (arg, arg_2, arg_3) => {
         ...arg,
       };
       if (arg.storage) {
-        local_5 = arg.storage;
+        local_6 = arg.storage;
       }
     },
     clearStorage: () => {
-      local_5?.removeItem(local.name);
+      ++local_3;
+      local_6?.removeItem(local.name);
     },
     getOptions: () => local,
-    rehydrate: () => local_10(),
+    rehydrate: () => local_11(),
     hasHydrated: () => local_2,
     onHydrate: (arg) => {
-      local_3.add(arg);
-      return () => {
-        local_3.delete(arg);
-      };
-    },
-    onFinishHydration: (arg) => {
       local_4.add(arg);
       return () => {
         local_4.delete(arg);
       };
     },
+    onFinishHydration: (arg) => {
+      local_5.add(arg);
+      return () => {
+        local_5.delete(arg);
+      };
+    },
   };
   if (!local.skipHydration) {
-    local_10();
+    local_11();
   }
-  return local_9 || local_8;
+  return local_10 || local_9;
 };
-const symbol_042 = local_7f0135d4;
-const local_aac74809 = local_7d651640_2((arg, arg_2) => ({
+const symbol_042 = local_f69b4752;
+const local_aac74809 = symbol_041((arg, arg_2) => ({
   isOpen: false,
   images: [],
   initialIndex: 0,
@@ -10088,7 +10548,7 @@ const local_aac74809 = local_7d651640_2((arg, arg_2) => ({
     }
   },
 }));
-const symbol_029 = local_7d651640_2((arg, arg_2) => ({
+const symbol_029 = symbol_041((arg, arg_2) => ({
   isOpen: false,
   options: null,
   session: 0,
@@ -10104,7 +10564,7 @@ const symbol_029 = local_7d651640_2((arg, arg_2) => ({
       options: null,
     }),
 }));
-const symbol_019 = local_7d651640_2((arg, arg_2) => ({
+const symbol_018 = symbol_041((arg, arg_2) => ({
   navigatedInApp: false,
   markNavigated: () => {
     if (!arg_2().navigatedInApp) {
@@ -10127,7 +10587,7 @@ const symbol_009 = {
   TOO_MANY_REQUESTS: 429,
   INTERNAL_SERVER_ERROR: 500,
 };
-function symbol_076(arg) {
+function symbol_074(arg) {
   return (
     arg instanceof Error &&
     "status" in arg &&
@@ -10135,7 +10595,7 @@ function symbol_076(arg) {
     arg.name === "ApiError"
   );
 }
-const symbol_037 = {
+export const local_b9926dd3 = {
   BAD_REQUEST: "BAD_REQUEST",
   UNAUTHORIZED: "UNAUTHORIZED",
   ACCESS_DENIED: "ACCESS_DENIED",
@@ -10169,7 +10629,7 @@ const symbol_037 = {
   VIDEO_REQUIRES_VERIFICATION: "VIDEO_REQUIRES_VERIFICATION",
 };
 const local_f06debfc_23 = 4000;
-const local_d62c94db = local_7d651640_2((arg, arg_2) => ({
+const local_d62c94db = symbol_041((arg, arg_2) => ({
   toasts: [],
   addToast: (arg) => {
     const local = `toast-${Date.now()}-${Math.random().toString(36).slice(2)}`;
@@ -10197,7 +10657,7 @@ const local_d62c94db = local_7d651640_2((arg, arg_2) => ({
     }));
   },
 }));
-const symbol_072 = {
+const symbol_070 = {
   success: (arg, arg_2) =>
     local_d62c94db.getState().addToast({
       type: "success",
@@ -10212,33 +10672,36 @@ const symbol_072 = {
     }),
 };
 const local_f49e61ca = {
-  [symbol_037.CONTENT_MODERATION_FAILED]:
+  [local_b9926dd3.CONTENT_MODERATION_FAILED]:
     "Изображение содержит запрещённый контент",
-  [symbol_037.FILE_TOO_LARGE]: "Файл слишком большой",
-  [symbol_037.UNSUPPORTED_FILE_TYPE]: "Неподдерживаемый формат файла",
-  [symbol_037.UPLOAD_FAILED]: "Не удалось загрузить файл",
-  [symbol_037.VIDEO_REQUIRES_VERIFICATION]:
+  [local_b9926dd3.FILE_TOO_LARGE]: "Файл слишком большой",
+  [local_b9926dd3.UNSUPPORTED_FILE_TYPE]: "Неподдерживаемый формат файла",
+  [local_b9926dd3.UPLOAD_FAILED]: "Не удалось загрузить файл",
+  [local_b9926dd3.VIDEO_REQUIRES_VERIFICATION]:
     "Видео — только для верифицированных пользователей",
-  [symbol_037.RATE_LIMIT_EXCEEDED]: "Слишком много запросов. Попробуйте позже",
-  [symbol_037.UNAUTHORIZED]: "Требуется авторизация",
-  [symbol_037.ACCESS_DENIED]: "Доступ запрещён",
-  [symbol_037.NETWORK_ERROR]: "Ошибка сети. Проверьте подключение",
-  [symbol_037.TIMEOUT]: "Превышено время ожидания",
-  [symbol_037.VALIDATION_ERROR]: "Проверьте правильность введённых данных",
-  [symbol_037.ENTITY_NOT_FOUND]: "Запрошенные данные не найдены",
-  [symbol_037.ENTITY_ALREADY_EXISTS]: "Такая запись уже существует",
-  [symbol_037.CAPTCHA_FAILED]: "Проверка captcha не пройдена. Попробуйте снова",
-  [symbol_037.OTP_INVALID]: "Неверный код. Попробуйте снова",
-  [symbol_037.ACCOUNT_DEACTIVATED]: "Аккаунт деактивирован",
-  [symbol_037.ACCOUNT_EMAIL_DOMAIN_NOT_ALLOWED]:
+  [local_b9926dd3.RATE_LIMIT_EXCEEDED]:
+    "Слишком много запросов. Попробуйте позже",
+  [local_b9926dd3.UNAUTHORIZED]: "Требуется авторизация",
+  [local_b9926dd3.ACCESS_DENIED]: "Доступ запрещён",
+  [local_b9926dd3.NETWORK_ERROR]: "Ошибка сети. Проверьте подключение",
+  [local_b9926dd3.TIMEOUT]: "Превышено время ожидания",
+  [local_b9926dd3.VALIDATION_ERROR]: "Проверьте правильность введённых данных",
+  [local_b9926dd3.ENTITY_NOT_FOUND]: "Запрошенные данные не найдены",
+  [local_b9926dd3.ENTITY_ALREADY_EXISTS]: "Такая запись уже существует",
+  [local_b9926dd3.CAPTCHA_FAILED]:
+    "Проверка captcha не пройдена. Попробуйте снова",
+  [local_b9926dd3.OTP_INVALID]: "Неверный код. Попробуйте снова",
+  [local_b9926dd3.ACCOUNT_DEACTIVATED]: "Аккаунт деактивирован",
+  [local_b9926dd3.ACCOUNT_EMAIL_DOMAIN_NOT_ALLOWED]:
     "Почта этого домена не поддерживается",
-  [symbol_037.ACCOUNT_INVALID_CREDENTIALS]: "Неверный email или пароль",
-  [symbol_037.ACCOUNT_TEMPORARILY_LOCKED]:
+  [local_b9926dd3.ACCOUNT_INVALID_CREDENTIALS]: "Неверный email или пароль",
+  [local_b9926dd3.ACCOUNT_TEMPORARILY_LOCKED]:
     "Аккаунт временно заблокирован. Попробуйте позже",
-  [symbol_037.ACCOUNT_CURRENT_PASSWORD_INCORRECT]: "Неверный текущий пароль",
-  [symbol_037.MISSING_FLOW_TOKEN]: "Сессия истекла. Начните заново",
-  [symbol_037.PROFILE_USERNAME_TAKEN]: "Этот username уже занят",
-  [symbol_037.PROFILE_USERNAME_RESERVED]:
+  [local_b9926dd3.ACCOUNT_CURRENT_PASSWORD_INCORRECT]:
+    "Неверный текущий пароль",
+  [local_b9926dd3.MISSING_FLOW_TOKEN]: "Сессия истекла. Начните заново",
+  [local_b9926dd3.PROFILE_USERNAME_TAKEN]: "Этот username уже занят",
+  [local_b9926dd3.PROFILE_USERNAME_RESERVED]:
     "Этот username зарезервирован системой",
 };
 const local_04b8aa3a = {
@@ -10336,36 +10799,37 @@ const local_a003bf7e = [
     translate: (arg) => `Имя: от ${arg[1]} до ${arg[2]} символов`,
   },
 ];
-const local_e973c722 = {
-  INVALID_EMAIL: symbol_037.VALIDATION_ERROR,
-  INVALID_PASSWORD: symbol_037.VALIDATION_ERROR,
-  EMAIL_DOMAIN_NOT_ALLOWED: symbol_037.ACCOUNT_EMAIL_DOMAIN_NOT_ALLOWED,
-  CONFLICT: symbol_037.ENTITY_ALREADY_EXISTS,
-  INVALID_CREDENTIALS: symbol_037.ACCOUNT_INVALID_CREDENTIALS,
-  USER_INACTIVE: symbol_037.ACCOUNT_DEACTIVATED,
-  TURNSTILE_TOKEN_MISSING: symbol_037.CAPTCHA_FAILED,
-  TURNSTILE_API_ERROR: symbol_037.CAPTCHA_FAILED,
-  TURNSTILE_ERROR: symbol_037.CAPTCHA_FAILED,
-  TURNSTILE_VERIFICATION_FAILED: symbol_037.CAPTCHA_FAILED,
-  INVALID_FLOW_TOKEN: symbol_037.MISSING_FLOW_TOKEN,
-  NO_PENDING_OTP: symbol_037.MISSING_FLOW_TOKEN,
-  INVALID_OTP_FORMAT: symbol_037.OTP_INVALID,
-  ACCOUNT_NOT_FOUND: symbol_037.ENTITY_NOT_FOUND,
-  CURRENT_PASSWORD_INCORRECT: symbol_037.ACCOUNT_CURRENT_PASSWORD_INCORRECT,
-  INVALID_OLD_PASSWORD: symbol_037.ACCOUNT_CURRENT_PASSWORD_INCORRECT,
-  USERNAME_TAKEN: symbol_037.PROFILE_USERNAME_TAKEN,
-  USERNAME_RESERVED: symbol_037.PROFILE_USERNAME_RESERVED,
-  PROFILE_NOT_FOUND: symbol_037.ENTITY_NOT_FOUND,
-  USER_NOT_FOUND: symbol_037.ENTITY_NOT_FOUND,
-  FILE_NOT_FOUND: symbol_037.ENTITY_NOT_FOUND,
-  NOT_FOUND: symbol_037.ENTITY_NOT_FOUND,
-  FORBIDDEN: symbol_037.ACCESS_DENIED,
-  TOO_MANY_REQUESTS: symbol_037.RATE_LIMIT_EXCEEDED,
+const local_808e80ac = {
+  INVALID_EMAIL: local_b9926dd3.VALIDATION_ERROR,
+  INVALID_PASSWORD: local_b9926dd3.VALIDATION_ERROR,
+  EMAIL_DOMAIN_NOT_ALLOWED: local_b9926dd3.ACCOUNT_EMAIL_DOMAIN_NOT_ALLOWED,
+  CONFLICT: local_b9926dd3.ENTITY_ALREADY_EXISTS,
+  INVALID_CREDENTIALS: local_b9926dd3.ACCOUNT_INVALID_CREDENTIALS,
+  USER_INACTIVE: local_b9926dd3.ACCOUNT_DEACTIVATED,
+  INTEGRITY_CHECK_FAILED: local_b9926dd3.CAPTCHA_FAILED,
+  TURNSTILE_TOKEN_MISSING: local_b9926dd3.CAPTCHA_FAILED,
+  TURNSTILE_API_ERROR: local_b9926dd3.CAPTCHA_FAILED,
+  TURNSTILE_ERROR: local_b9926dd3.CAPTCHA_FAILED,
+  TURNSTILE_VERIFICATION_FAILED: local_b9926dd3.CAPTCHA_FAILED,
+  INVALID_FLOW_TOKEN: local_b9926dd3.MISSING_FLOW_TOKEN,
+  NO_PENDING_OTP: local_b9926dd3.MISSING_FLOW_TOKEN,
+  INVALID_OTP_FORMAT: local_b9926dd3.OTP_INVALID,
+  ACCOUNT_NOT_FOUND: local_b9926dd3.ENTITY_NOT_FOUND,
+  CURRENT_PASSWORD_INCORRECT: local_b9926dd3.ACCOUNT_CURRENT_PASSWORD_INCORRECT,
+  INVALID_OLD_PASSWORD: local_b9926dd3.ACCOUNT_CURRENT_PASSWORD_INCORRECT,
+  USERNAME_TAKEN: local_b9926dd3.PROFILE_USERNAME_TAKEN,
+  USERNAME_RESERVED: local_b9926dd3.PROFILE_USERNAME_RESERVED,
+  PROFILE_NOT_FOUND: local_b9926dd3.ENTITY_NOT_FOUND,
+  USER_NOT_FOUND: local_b9926dd3.ENTITY_NOT_FOUND,
+  FILE_NOT_FOUND: local_b9926dd3.ENTITY_NOT_FOUND,
+  NOT_FOUND: local_b9926dd3.ENTITY_NOT_FOUND,
+  FORBIDDEN: local_b9926dd3.ACCESS_DENIED,
+  TOO_MANY_REQUESTS: local_b9926dd3.RATE_LIMIT_EXCEEDED,
 };
 function fn_bedfa411(arg) {
-  return local_e973c722[arg] ?? arg;
+  return local_808e80ac[arg] ?? arg;
 }
-function symbol_043(arg) {
+export function fn_237a5c98(arg) {
   const local = local_04b8aa3a[arg];
   if (local) {
     return local;
@@ -10379,14 +10843,14 @@ function symbol_043(arg) {
   return arg;
 }
 function symbol_040(arg, arg_2 = "Произошла ошибка") {
-  const local = symbol_043(arg_2);
+  const local = fn_237a5c98(arg_2);
   if (local !== arg_2 || /[А-Яа-яЁё]/.test(local) || !arg) {
     return local;
   }
   return local_f49e61ca[fn_bedfa411(arg)] ?? local;
 }
 const local_f4d9947e = "/api";
-export const local_68a3dca0 = {
+export const local_eec5e7eb = {
   auth: {
     signUp: "/sign-up",
     signIn: "/sign-in",
@@ -10397,6 +10861,10 @@ export const local_68a3dca0 = {
     changePassword: "/change-password",
     forgotPassword: "/forgot-password",
     resetPassword: "/reset-password",
+    captchaProvider: "/captcha/provider",
+    qrStart: "/qr/start",
+    qrStream: "/qr/stream",
+    qrClaim: "/qr/claim",
   },
   users: {
     me: "/users/me",
@@ -10485,25 +10953,25 @@ export const local_68a3dca0 = {
   },
 };
 let local_0a9fda83_4 = null;
-const local_a1e12a9e_2 = new Set();
+const local_a1e12a9e_3 = new Set();
 function symbol_034() {
   return local_0a9fda83_4;
 }
 function fn_e7e0f229(arg) {
   if (local_0a9fda83_4 !== arg) {
     local_0a9fda83_4 = arg;
-    for (const local of local_a1e12a9e_2) {
+    for (const local of local_a1e12a9e_3) {
       local(arg);
     }
   }
 }
 function symbol_033(arg) {
-  local_a1e12a9e_2.add(arg);
+  local_a1e12a9e_3.add(arg);
   return () => {
-    local_a1e12a9e_2.delete(arg);
+    local_a1e12a9e_3.delete(arg);
   };
 }
-function fn_48ac40f1() {
+function fn_cda4acbb() {
   if (local_0a9fda83_4) {
     return {
       Authorization: `Bearer ${local_0a9fda83_4}`,
@@ -10513,7 +10981,7 @@ function fn_48ac40f1() {
 }
 let local_0a9fda83_5 = null;
 let local_0a9fda83_6 = null;
-function fn_bdc7aa48(arg) {
+function fn_bdc7aa48_2(arg) {
   local_0a9fda83_5 = arg;
 }
 async function fn_cdf0c470(arg) {
@@ -10594,12 +11062,12 @@ class clazz_66a5e06b {
         return;
       }
       if (arg.code === "WRITE_ACCESS_RESTRICTED") {
-        symbol_072.error(
+        symbol_070.error(
           "Вы не можете сделать это сегодня. Попробуйте завтра.",
         );
         return;
       }
-      symbol_072.error(symbol_040(arg.code, arg.message || "Произошла ошибка"));
+      symbol_070.error(symbol_040(arg.code, arg.message || "Произошла ошибка"));
     }
   }
   buildUrl(arg) {
@@ -10611,7 +11079,7 @@ class clazz_66a5e06b {
     const local = new Headers({
       ...this.defaultHeaders,
       ...arg,
-      ...fn_48ac40f1(),
+      ...fn_cda4acbb(),
     });
     local.set("X-Device-Id", local_ce9f9c1f);
     return local;
@@ -10659,21 +11127,21 @@ class clazz_66a5e06b {
   mapStatusToErrorCode(arg) {
     switch (arg) {
       case symbol_009.BAD_REQUEST:
-        return symbol_037.BAD_REQUEST;
+        return local_b9926dd3.BAD_REQUEST;
       case symbol_009.UNAUTHORIZED:
-        return symbol_037.UNAUTHORIZED;
+        return local_b9926dd3.UNAUTHORIZED;
       case symbol_009.FORBIDDEN:
-        return symbol_037.ACCESS_DENIED;
+        return local_b9926dd3.ACCESS_DENIED;
       case symbol_009.NOT_FOUND:
-        return symbol_037.ENTITY_NOT_FOUND;
+        return local_b9926dd3.ENTITY_NOT_FOUND;
       case symbol_009.CONFLICT:
-        return symbol_037.ENTITY_ALREADY_EXISTS;
+        return local_b9926dd3.ENTITY_ALREADY_EXISTS;
       case symbol_009.UNPROCESSABLE_ENTITY:
-        return symbol_037.VALIDATION_ERROR;
+        return local_b9926dd3.VALIDATION_ERROR;
       case symbol_009.TOO_MANY_REQUESTS:
-        return symbol_037.RATE_LIMIT_EXCEEDED;
+        return local_b9926dd3.RATE_LIMIT_EXCEEDED;
       default:
-        return symbol_037.UNKNOWN_ERROR;
+        return local_b9926dd3.UNKNOWN_ERROR;
     }
   }
   createApiError(arg, arg_2, arg_3, arg_4) {
@@ -10735,7 +11203,7 @@ class clazz_66a5e06b {
         throw this.createApiError(
           symbol_009.UNAUTHORIZED,
           "Session expired",
-          symbol_037.UNAUTHORIZED,
+          local_b9926dd3.UNAUTHORIZED,
         );
       }
       return await this.handleResponse(local_5);
@@ -10748,7 +11216,7 @@ class clazz_66a5e06b {
           const local = this.createApiError(
             0,
             "Request timeout",
-            symbol_037.TIMEOUT,
+            local_b9926dd3.TIMEOUT,
           );
           if (local(local)) {
             this.notifyError(local);
@@ -10765,7 +11233,7 @@ class clazz_66a5e06b {
         const local_2 = this.createApiError(
           0,
           error.message || "Network error",
-          symbol_037.NETWORK_ERROR,
+          local_b9926dd3.NETWORK_ERROR,
         );
         if (local(local_2)) {
           this.notifyError(local_2);
@@ -10795,7 +11263,7 @@ class clazz_66a5e06b {
     const local_2 = {
       "X-Requested-With": "XMLHttpRequest",
       "X-Device-Id": local_ce9f9c1f,
-      ...fn_48ac40f1(),
+      ...fn_cda4acbb(),
     };
     const local_3 = new AbortController();
     const local_4 = arg_3?.timeout ?? this.defaultTimeout;
@@ -10817,7 +11285,7 @@ class clazz_66a5e06b {
         throw this.createApiError(
           symbol_009.UNAUTHORIZED,
           "Session expired",
-          symbol_037.UNAUTHORIZED,
+          local_b9926dd3.UNAUTHORIZED,
         );
       }
       return await this.handleResponse(local);
@@ -10828,7 +11296,7 @@ class clazz_66a5e06b {
           const local = this.createApiError(
             0,
             "Request timeout",
-            symbol_037.TIMEOUT,
+            local_b9926dd3.TIMEOUT,
           );
           if (!arg_4) {
             this.notifyError(local);
@@ -10844,7 +11312,7 @@ class clazz_66a5e06b {
         const local = this.createApiError(
           0,
           error.message || "Network error",
-          symbol_037.NETWORK_ERROR,
+          local_b9926dd3.NETWORK_ERROR,
         );
         if (!arg_4) {
           this.notifyError(local);
@@ -10859,11 +11327,11 @@ export const local_74bb3ffb = new clazz_66a5e06b({
   baseURL: local_f4d9947e,
   timeout: 30000,
 });
-const local_8b3b0704 = new clazz_66a5e06b({
+const symbol_039 = new clazz_66a5e06b({
   baseURL: "/api/v1/auth",
   timeout: 30000,
 });
-const symbol_036 = local_7d651640_2((arg, arg_2) => ({
+const symbol_036 = symbol_041((arg, arg_2) => ({
   portal: {
     active: false,
   },
@@ -10885,13 +11353,13 @@ const symbol_036 = local_7d651640_2((arg, arg_2) => ({
   },
 }));
 const symbol_035 = () => symbol_036((arg) => arg.portal);
-const local_a1e12a9e_3 = new Set();
+const local_a1e12a9e_4 = new Set();
 let local_0a9fda83_7 = null;
 const local_f06debfc_24 = 30000;
 function fn_b21bc410() {
   if (local_0a9fda83_7 === null) {
     local_0a9fda83_7 = window.setInterval(() => {
-      local_a1e12a9e_3.forEach((arg) => arg());
+      local_a1e12a9e_4.forEach((arg) => arg());
     }, local_f06debfc_24);
   }
 }
@@ -10902,14 +11370,14 @@ function fn_c8c9465e() {
   }
 }
 function fn_5ff99dd6(arg) {
-  local_a1e12a9e_3.add(arg);
-  if (local_a1e12a9e_3.size === 1) {
+  local_a1e12a9e_4.add(arg);
+  if (local_a1e12a9e_4.size === 1) {
     fn_b21bc410();
   }
 }
 function fn_f48ad526(arg) {
-  local_a1e12a9e_3.delete(arg);
-  if (local_a1e12a9e_3.size === 0) {
+  local_a1e12a9e_4.delete(arg);
+  if (local_a1e12a9e_4.size === 0) {
     fn_c8c9465e();
   }
 }
@@ -10940,13 +11408,13 @@ function fn_b5e97943(arg) {
   const local = new Date(arg).getTime();
   const local_2 = !isNaN(local);
   const local_3 = local_2 ? local : 0;
-  const [local_4, local_5] = symbol_056(() => {
+  const [local_4, local_5] = symbol_054(() => {
     if (local_2) {
       return fn_5cd4a629(new Date(local_3));
     }
     return "";
   });
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local_2) {
       local_5("");
       return;
@@ -10962,14 +11430,14 @@ function fn_b5e97943(arg) {
   return local_4;
 }
 const local_f06debfc_25 = 1174;
-function symbol_006() {
-  const [local, local_2] = symbol_056(() => {
+function symbol_004() {
+  const [local, local_2] = symbol_054(() => {
     if (typeof window === "undefined") {
       return false;
     }
     return window.innerWidth < local_f06debfc_25;
   });
-  symbol_077(() => {
+  symbol_058(() => {
     const local = window.matchMedia(`(max-width: ${local_f06debfc_25 - 1}px)`);
     const local_2 = (arg) => {
       local_2(arg.matches);
@@ -10982,13 +11450,13 @@ function symbol_006() {
   }, []);
   return local;
 }
-const local_3825d11b = fn_c05a86e1({
+const local_3825d11b = fn_aa547820({
   isHidden: false,
 });
 const local_c15c3c53 = () => {
-  const [local, local_2] = symbol_056(false);
+  const [local, local_2] = symbol_054(false);
   const local_3 = symbol_002(0);
-  symbol_077(() => {
+  symbol_058(() => {
     const local = () => {
       const local = window.scrollY;
       const local_2 = local - local_3.current;
@@ -11007,17 +11475,17 @@ const local_c15c3c53 = () => {
   return local;
 };
 function fn_9d6d3161(arg = "", arg_2 = []) {
-  const [local, local_2] = symbol_056(arg);
-  const [local_3, local_4] = symbol_056(arg_2);
+  const [local, local_2] = symbol_054(arg);
+  const [local_3, local_4] = symbol_054(arg_2);
   const local_5 = symbol_002(null);
-  const local_6 = symbol_069((arg, arg_2) => {
+  const local_6 = symbol_067((arg, arg_2) => {
     local_2(arg);
     local_4(arg_2);
   }, []);
-  const local_7 = symbol_069((arg) => {
+  const local_7 = symbol_067((arg) => {
     local_5.current?.insertText(arg);
   }, []);
-  const local_8 = symbol_069(() => {
+  const local_8 = symbol_067(() => {
     local_2("");
     local_4([]);
   }, []);
@@ -11039,7 +11507,7 @@ export function fn_c6e473a2({
   onLoadMore: arg_4,
   rootMargin: arg_5 = "100px",
 }) {
-  symbol_077(() => {
+  symbol_058(() => {
     if (!arg_2 || arg_3) {
       return;
     }
@@ -11071,7 +11539,7 @@ function fn_f204a1a3({
   scrollElement: arg_7,
   initialScrollTop: arg_8,
 }) {
-  const [, local] = symbol_056(0);
+  const [, local] = symbol_054(0);
   const local_2 = () => {
     if (arg_7) {
       return Math.max(0, arg_7.scrollTop);
@@ -11190,7 +11658,7 @@ function fn_f204a1a3({
       }
     });
   }
-  const local_14 = symbol_069((arg, arg_2) => {
+  const local_14 = symbol_067((arg, arg_2) => {
     if (!arg) {
       return;
     }
@@ -11226,14 +11694,14 @@ function fn_f204a1a3({
       }
     };
   }, [arg_7]);
-  symbol_077(
+  symbol_058(
     () => () => {
       local_6.current?.disconnect();
       local_7.current.clear();
     },
     [],
   );
-  const local_15 = symbol_069(() => new Map(local_4.current), []);
+  const local_15 = symbol_067(() => new Map(local_4.current), []);
   return {
     virtualItems: local_13(),
     totalSize: local_11(),
@@ -11244,10 +11712,10 @@ function fn_f204a1a3({
 const local_5003aee4 = "https://cdn.xn--d1ah4a.com/public/assets/icons";
 const local_33611d03 = "itd:icons:checkedAt";
 const local_aad0de78_2 = 1800 * 1000;
-const local_a1e12a9e_4 = new Map();
 const local_a1e12a9e_5 = new Map();
 const local_a1e12a9e_6 = new Map();
-const local_36ed96c7 = (arg) => `${local_5003aee4}/${arg}.svg`;
+const local_a1e12a9e_7 = new Map();
+const local_6004d431 = (arg) => `${local_5003aee4}/${arg}.svg`;
 const local_29589dcc = (() => {
   try {
     const local = Number(localStorage.getItem(local_33611d03) ?? 0);
@@ -11277,23 +11745,23 @@ const local_5878b077 = (arg, arg_2) => {
   }
 };
 const local_39fff913 = (arg, arg_2) => {
-  local_a1e12a9e_4.set(arg, arg_2);
+  local_a1e12a9e_5.set(arg, arg_2);
   local_5878b077(arg, arg_2);
-  local_a1e12a9e_6.get(arg)?.forEach((arg) => arg(arg_2));
+  local_a1e12a9e_7.get(arg)?.forEach((arg) => arg(arg_2));
 };
 const local_9582fd2f = (arg, arg_2 = false) => {
   if (!arg_2) {
-    const local = local_a1e12a9e_4.get(arg);
+    const local = local_a1e12a9e_5.get(arg);
     if (local) {
       return Promise.resolve(local);
     }
-    const local_2 = local_a1e12a9e_5.get(arg);
+    const local_2 = local_a1e12a9e_6.get(arg);
     if (local_2) {
       return local_2;
     }
   }
   const local = arg_2 ? "reload" : local_29589dcc ? "no-cache" : "force-cache";
-  const local_2 = fetch(local_36ed96c7(arg), {
+  const local_2 = fetch(local_6004d431(arg), {
     cache: local,
   })
     .then(async (arg) => {
@@ -11307,8 +11775,8 @@ const local_9582fd2f = (arg, arg_2 = false) => {
       return null;
     })
     .catch(() => null)
-    .finally(() => local_a1e12a9e_5.delete(arg));
-  local_a1e12a9e_5.set(arg, local_2);
+    .finally(() => local_a1e12a9e_6.delete(arg));
+  local_a1e12a9e_6.set(arg, local_2);
   return local_2;
 };
 const local_4d132258 = (arg, arg_2) =>
@@ -11322,22 +11790,22 @@ const local_4d132258 = (arg, arg_2) =>
     return `<svg${local_3} width="${arg_2}" height="${arg_2}">`;
   });
 const local_39aeca81 = ({ name: arg, size: arg_2 = 20, className: arg_3 }) => {
-  const [local, local_2] = symbol_056(() => local_a1e12a9e_4.get(arg) ?? null);
-  symbol_077(() => {
-    local_2(local_a1e12a9e_4.get(arg) ?? null);
-    const local = local_a1e12a9e_6.get(arg) ?? new Set();
+  const [local, local_2] = symbol_054(() => local_a1e12a9e_5.get(arg) ?? null);
+  symbol_058(() => {
+    local_2(local_a1e12a9e_5.get(arg) ?? null);
+    const local = local_a1e12a9e_7.get(arg) ?? new Set();
     local.add(local_2);
-    local_a1e12a9e_6.set(arg, local);
+    local_a1e12a9e_7.set(arg, local);
     local_9582fd2f(arg);
     return () => {
       local.delete(local_2);
       if (local.size === 0) {
-        local_a1e12a9e_6.delete(arg);
+        local_a1e12a9e_7.delete(arg);
       }
     };
   }, [arg]);
   const local_3 = typeof arg_2 === "number" ? `${arg_2}px` : arg_2;
-  return symbol_073("span", {
+  return symbol_071("span", {
     "data-icon": arg,
     "aria-hidden": "true",
     className: arg_3,
@@ -11355,7 +11823,7 @@ const local_39aeca81 = ({ name: arg, size: arg_2 = 20, className: arg_3 }) => {
   });
 };
 const local_2266b1ba = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11366,16 +11834,16 @@ const local_2266b1ba = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z",
       }),
     ],
   });
 const local_f79a8e51 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11386,16 +11854,16 @@ const local_f79a8e51 = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("polyline", {
+      symbol_071("polyline", {
         points: "16 18 22 12 16 6",
       }),
-      symbol_073("polyline", {
+      symbol_071("polyline", {
         points: "8 6 2 12 8 18",
       }),
     ],
   });
 const local_595b56df = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11406,19 +11874,19 @@ const local_595b56df = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "19",
         y1: "4",
         x2: "10",
         y2: "4",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "14",
         y1: "20",
         x2: "5",
         y2: "20",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "15",
         y1: "4",
         x2: "9",
@@ -11427,7 +11895,7 @@ const local_595b56df = ({ size: arg = 18 }) =>
     ],
   });
 const local_3ea3ac5c = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11438,27 +11906,27 @@ const local_3ea3ac5c = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71",
       }),
     ],
   });
 const local_bb67df5f = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "currentColor",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       d: "M10 8c-2.2 0-4 1.8-4 4v6h6v-6H8c0-1.1.9-2 2-2V8zm8 0c-2.2 0-4 1.8-4 4v6h6v-6h-4c0-1.1.9-2 2-2V8z",
     }),
   });
 const local_29080f6a = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11469,25 +11937,25 @@ const local_29080f6a = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "1",
         y1: "1",
         x2: "23",
         y2: "23",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M14.12 14.12a3 3 0 1 1-4.24-4.24",
       }),
     ],
   });
 const local_2c195875 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11498,13 +11966,13 @@ const local_2c195875 = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M16 4H9a3 3 0 0 0-3 3c0 1.66 1.34 3 3 3h6",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M8 20h7a3 3 0 0 0 3-3c0-1.66-1.34-3-3-3H4",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "4",
         y1: "12",
         x2: "20",
@@ -11513,7 +11981,7 @@ const local_2c195875 = ({ size: arg = 18 }) =>
     ],
   });
 const local_4bedf0ab = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11524,10 +11992,10 @@ const local_4bedf0ab = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "4",
         y1: "21",
         x2: "20",
@@ -11536,53 +12004,53 @@ const local_4bedf0ab = ({ size: arg = 18 }) =>
     ],
   });
 const local_c518db66 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 18 18",
-    children: symbol_073("g", {
+    children: symbol_071("g", {
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeLinejoin: "round",
       strokeWidth: "2",
       children: [
-        symbol_073("path", {
+        symbol_071("path", {
           d: "M9 2c-.53 0-1.04.219-1.414.608C7.21 2.998 7 3.526 7 4.077v4.846c0 .55.21 1.08.586 1.469.375.39.884.608 1.414.608.53 0 1.04-.219 1.414-.608.375-.39.586-.918.586-1.469V4.077c0-.55-.21-1.08-.586-1.469A1.963 1.963 0 0 0 9 2Z",
         }),
-        symbol_073("path", {
+        symbol_071("path", {
           d: "M14 8v1.333c0 1.238-.527 2.425-1.464 3.3C11.598 13.508 10.326 14 9 14s-2.598-.492-3.536-1.367C4.527 11.758 4 10.571 4 9.333V8M9 14v2",
         }),
       ],
     }),
   });
 const local_59d4f3fb = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "currentColor",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       d: "M8 5v14l11-7z",
     }),
   });
 export const local_fa759dff = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M5 12L12 5L19 12",
         stroke: "currentColor",
         strokeWidth: "2",
         strokeLinecap: "round",
         strokeLinejoin: "round",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M12 19V5",
         stroke: "currentColor",
         strokeWidth: "2",
@@ -11592,13 +12060,13 @@ export const local_fa759dff = ({ size: arg = 24 }) =>
     ],
   });
 const local_e89bf398 = ({ size: arg = 20 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 20 20",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -11607,27 +12075,27 @@ const local_e89bf398 = ({ size: arg = 20 }) =>
     }),
   });
 const local_e2a3198b = ({ size: arg = 8 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 8 8",
     children: [
-      symbol_073("g", {
+      symbol_071("g", {
         stroke: "currentColor",
         strokeLinecap: "round",
         strokeLinejoin: "round",
         strokeWidth: "2",
         clipPath: "url(#af)",
-        children: symbol_073("path", {
+        children: symbol_071("path", {
           d: "M1 4h6M4 1v6",
         }),
       }),
-      symbol_073("defs", {
-        children: symbol_073("clipPath", {
+      symbol_071("defs", {
+        children: symbol_071("clipPath", {
           id: "af",
-          children: symbol_073("path", {
+          children: symbol_071("path", {
             fill: "#fff",
             d: "M0 0h8v8H0z",
           }),
@@ -11636,13 +12104,13 @@ const local_e2a3198b = ({ size: arg = 8 }) =>
     ],
   });
 const local_327b00ca = ({ size: arg = 8 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 8 8",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -11650,22 +12118,22 @@ const local_327b00ca = ({ size: arg = 8 }) =>
       d: "M1 4h6",
     }),
   });
-const symbol_038 = () =>
-  symbol_073("svg", {
+const symbol_037 = () =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "36",
     height: "18",
     fill: "none",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         fill: "currentColor",
         d: "M12 3V0h12v3h-4v11h-4V3h-4Z",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         fill: "currentColor",
         d: "M12 3V0h12v3h-4v11h-4V3h-4ZM9 0 3 9V0H0v14h3l6-9v9h3V0H9Z",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         fill: "currentColor",
         "fill-rule": "evenodd",
         d: "M34 11h2v7h-3v-4h-9v4h-3v-7c3 0 3-4 3-11h10v11Zm-7-8v8h4V3h-4Z",
@@ -11673,22 +12141,22 @@ const symbol_038 = () =>
       }),
     ],
   });
-const symbol_049 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_048 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M18 6L6 18",
         stroke: "currentColor",
         strokeWidth: "2",
         strokeLinecap: "round",
         strokeLinejoin: "round",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M6 6L18 18",
         stroke: "currentColor",
         strokeWidth: "2",
@@ -11698,12 +12166,12 @@ const symbol_049 = ({ size: arg = 24 }) =>
     ],
   });
 const symbol_027 = ({ size: arg = 20 }) =>
-  symbol_073(local_39aeca81, {
+  symbol_071(local_39aeca81, {
     name: "comment",
     size: arg,
   });
 const symbol_026 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11714,30 +12182,30 @@ const symbol_026 = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z",
       }),
     ],
   });
 const local_b2622f5b = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [
-      symbol_073("circle", {
+      symbol_071("circle", {
         cx: "12",
         cy: "12",
         r: "10",
         stroke: "currentColor",
         strokeWidth: "2",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         stroke: "currentColor",
         strokeLinecap: "round",
         strokeWidth: "2",
@@ -11746,26 +12214,26 @@ const local_b2622f5b = ({ size: arg = 24 }) =>
     ],
   });
 const local_fa5c2464 = () =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "24",
     height: "24",
     fill: "none",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fill: "currentColor",
       "fill-rule": "evenodd",
       d: "M20.689 10.968a2.806 2.806 0 0 0-2.244-1.108H5.555c-.887 0-1.705.404-2.244 1.107a2.808 2.808 0 0 0-.485 2.455l1.65 6.112a2.83 2.83 0 0 0 2.729 2.09h9.589a2.832 2.832 0 0 0 2.729-2.09l1.65-6.111a2.804 2.804 0 0 0-.484-2.455ZM8.436 3.875h7.125a.75.75 0 0 0 0-1.5H8.436a.75.75 0 0 0 0 1.5ZM5.682 7.253h12.634a.75.75 0 0 0 0-1.5H5.682a.75.75 0 0 0 0 1.5Z",
       "clip-rule": "evenodd",
     }),
   });
-const symbol_060 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+const symbol_059 = ({ size: arg = 18 }) =>
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M17.0463 8.361L19.6973 3.35C19.8203 3.118 19.8133 2.839 19.6773 2.613C19.5413 2.387 19.2973 2.25 19.0343 2.25H4.96533C4.55133 2.25 4.21533 2.586 4.21533 3V21C4.21533 21.414 4.55133 21.75 4.96533 21.75C5.37933 21.75 5.71533 21.414 5.71533 21V14.544L19.0443 14.365C19.3073 14.361 19.5483 14.221 19.6813 13.995C19.8143 13.768 19.8183 13.489 19.6943 13.258L17.0463 8.361Z",
@@ -11773,7 +12241,7 @@ const symbol_060 = ({ size: arg = 18 }) =>
     }),
   });
 const local_fe55573b = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
@@ -11783,7 +12251,7 @@ const local_fe55573b = ({ size: arg = 24 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("rect", {
+      symbol_071("rect", {
         x: "3",
         y: "3",
         width: "18",
@@ -11791,12 +12259,12 @@ const local_fe55573b = ({ size: arg = 24 }) =>
         rx: "2",
         ry: "2",
       }),
-      symbol_073("circle", {
+      symbol_071("circle", {
         cx: "8.5",
         cy: "8.5",
         r: "1.5",
       }),
-      symbol_073("polyline", {
+      symbol_071("polyline", {
         points: "21 15 16 10 5 21",
       }),
     ],
@@ -11806,13 +12274,13 @@ const symbol_030 = ({
   size: arg_2 = 20,
   className: arg_3,
 }) =>
-  symbol_073(local_39aeca81, {
+  symbol_071(local_39aeca81, {
     name: arg ? "liked" : "like",
     size: arg_2,
     className: arg_3,
   });
-const symbol_048 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_047 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -11825,33 +12293,33 @@ const symbol_048 = ({ size: arg = 24 }) =>
     style: {
       animation: "spin 1s linear infinite",
     },
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       d: "M19 12a7 7 0 1 1-4.83-6.66",
     }),
   });
-export const local_b6621a61 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_045 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9",
         stroke: "currentColor",
         strokeWidth: "2",
         strokeLinecap: "round",
         strokeLinejoin: "round",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M16 17L21 12L16 7",
         stroke: "currentColor",
         strokeWidth: "2",
         strokeLinecap: "round",
         strokeLinejoin: "round",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M21 12H9",
         stroke: "currentColor",
         strokeWidth: "2",
@@ -11861,13 +12329,13 @@ export const local_b6621a61 = ({ size: arg = 24 }) =>
     ],
   });
 const symbol_010 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 18 18",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fill: "currentColor",
       stroke: "currentColor",
       strokeLinecap: "round",
@@ -11876,40 +12344,40 @@ const symbol_010 = ({ size: arg = 18 }) =>
       d: "M9 9.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM14.25 9.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM3.75 9.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z",
     }),
   });
-const symbol_050 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_049 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fill: "currentColor",
       fillRule: "evenodd",
       d: "M19.742 13.807c-.86-1.832-.837-2.52-.798-3.773.01-.296.02-.617.02-.986C18.964 6.122 16.804 2 12 2 7.197 2 5.036 6.122 5.036 9.048c0 .368.01.69.02.986.04 1.252.062 1.941-.807 3.797-.372.928-.327 1.73.135 2.382C5.492 17.783 8.7 18 12 18s6.508-.216 7.616-1.787c.463-.653.508-1.454.125-2.406Zm-4.686 5.198c-1.848.193-3.852.192-6.13-.002a.873.873 0 0 0-.835.437.763.763 0 0 0 .125.893C9.236 21.407 10.578 22 11.994 22h.002c1.42 0 2.765-.592 3.788-1.667a.765.765 0 0 0 .122-.9c-.162-.294-.495-.458-.85-.428Z",
       clipRule: "evenodd",
     }),
   });
-const symbol_071 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_069 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fill: "currentColor",
       d: "M12 3c5 0 9 3.6 9 8a5 5 0 0 1-5 5h-1.8a1.5 1.5 0 0 0-1.5 1.5q0 .6.4 1 .3.4.4 1-.2 1.3-1.5 1.5c-5 0-9-4-9-9s4-9 9-9m-4.7 8a1.3 1.3 0 1 0 0 2.5 1.3 1.3 0 0 0 0-2.5m9-2a1.3 1.3 0 1 0 0 2.5 1.3 1.3 0 0 0 0-2.5m-7-2a1.2 1.2 0 1 0 0 2.5 1.2 1.2 0 0 0 0-2.5m4-1a1.3 1.3 0 1 0 0 2.5 1.3 1.3 0 0 0 0-2.5",
     }),
   });
-const symbol_051 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_050 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fill: "currentColor",
       fillRule: "evenodd",
       d: "M11.998 11a3.996 3.996 0 0 0 4-4c.084-2.213-1.702-4-4-4A3.995 3.995 0 0 0 8 7c0 2.213 1.787 4 3.998 4Zm6.94 6.878c-.3-1.04-.9-1.986-2.097-2.743C15.843 14.473 14.246 14 12.05 14c-4.292 0-6.39 1.892-6.987 3.878-.2.568.1 1.136.598 1.42C7.458 20.431 9.654 21 12.05 21c2.296 0 4.492-.662 6.288-1.703.5-.284.8-.851.6-1.419Z",
@@ -11917,27 +12385,27 @@ const symbol_051 = ({ size: arg = 24 }) =>
     }),
   });
 const local_c88205fb = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fillRule: "evenodd",
       clipRule: "evenodd",
       d: "M20.0397 9.25349L14.7397 3.95349C13.9837 3.19649 12.6657 3.19649 11.9097 3.95349L11.3187 4.54549C10.7487 5.11449 10.5767 5.96749 10.8957 6.75249C11.0497 7.12649 10.9647 7.55249 10.6797 7.83949L9.34373 9.17449C9.22773 9.28849 9.08673 9.37449 8.93473 9.42249L5.77073 10.4125C5.46773 10.5085 5.18573 10.6795 4.95673 10.9065C4.57773 11.2855 4.36973 11.7875 4.36973 12.3225C4.36973 12.8575 4.57873 13.3585 4.95673 13.7355L7.07573 15.8545L3.59573 19.3345C3.30273 19.6275 3.30273 20.1025 3.59573 20.3955C3.74173 20.5415 3.93373 20.6145 4.12573 20.6145C4.31773 20.6145 4.50973 20.5415 4.65573 20.3955L8.13573 16.9145L10.2577 19.0365C10.6467 19.4255 11.1587 19.6195 11.6707 19.6195C12.1837 19.6195 12.6957 19.4245 13.0867 19.0355C13.3147 18.8055 13.4847 18.5235 13.5797 18.2205L14.5687 15.0605C14.6187 14.9045 14.7037 14.7635 14.8167 14.6505L16.1537 13.3125C16.4387 13.0265 16.8627 12.9415 17.2737 13.1085C18.0197 13.4155 18.8747 13.2465 19.4477 12.6745L20.0397 12.0815C20.8187 11.3015 20.8187 10.0325 20.0397 9.25349Z",
       fill: "currentColor",
     }),
   });
-const symbol_065 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+const symbol_063 = ({ size: arg = 24 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -11946,13 +12414,13 @@ const symbol_065 = ({ size: arg = 24 }) =>
     }),
   });
 const local_4837987e = ({ size: arg = 20 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       stroke: "currentColor",
       "stroke-linecap": "round",
       "stroke-linejoin": "round",
@@ -11961,18 +12429,18 @@ const local_4837987e = ({ size: arg = 20 }) =>
     }),
   });
 const symbol_031 = ({ size: arg = 20 }) =>
-  symbol_073(local_39aeca81, {
+  symbol_071(local_39aeca81, {
     name: "share",
     size: arg,
   });
 export const local_e33d719c = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     viewBox: "0 0 24 24",
     fill: "none",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       stroke: "currentColor",
       strokeLinecap: "round",
       strokeLinejoin: "round",
@@ -11981,13 +12449,13 @@ export const local_e33d719c = ({ size: arg = 24 }) =>
     }),
   });
 const local_1b669a11 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
-    children: symbol_073("path", {
+    children: symbol_071("path", {
       fill: "currentColor",
       fillRule: "evenodd",
       d: "M12 14.8a4 4 0 0 1-3.9-3.5.7.7 0 0 1 1.5-.1q0 .8.7 1.4.7.7 1.7.7c1.2 0 2.2-1 2.4-2.1q.1-.7.8-.7.6 0 .7.9c-.3 2-2 3.4-3.9 3.4m0-11c1.5 0 2.8 1.2 3 2.7H9a3 3 0 0 1 3-2.6m4.6 2.7A4.6 4.6 0 0 0 12 2.4a4.6 4.6 0 0 0-4.6 4.1C4.7 6.8 3 8.8 3 11.8v4.5c0 3.2 2 5.3 5 5.3H16c3 0 5-2.1 5-5.3v-4.5q-.2-4.7-4.4-5.3",
@@ -11995,21 +12463,21 @@ const local_1b669a11 = ({ size: arg = 24 }) =>
     }),
   });
 const local_40eb419c = ({ size: arg = 20, color: arg_2 = "currentColor" }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 20 20",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M10 17.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z",
         stroke: arg_2,
         strokeWidth: "2",
         strokeLinecap: "round",
         strokeLinejoin: "round",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M7.6 11.908c.585.76 1.445 1.234 2.4 1.234.956 0 1.816-.474 2.4-1.234M7.308 7.504v-.043m-.038-.127a.188.188 0 1 0 .002.374.188.188 0 0 0-.002-.374ZM12.692 7.504v-.043m-.005-.127a.188.188 0 1 0 .002.374.188.188 0 0 0-.002-.374Z",
         stroke: arg_2,
         strokeWidth: "2",
@@ -12019,21 +12487,21 @@ const local_40eb419c = ({ size: arg = 20, color: arg_2 = "currentColor" }) =>
     ],
   });
 const local_132b8ed2 = ({ size: arg = 24 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [
-      symbol_073("circle", {
+      symbol_071("circle", {
         cx: "12",
         cy: "12",
         r: "10",
         stroke: "currentColor",
         strokeWidth: "2",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         stroke: "currentColor",
         strokeLinecap: "round",
         strokeLinejoin: "round",
@@ -12043,35 +12511,35 @@ const local_132b8ed2 = ({ size: arg = 24 }) =>
     ],
   });
 const local_00b66f33 = ({ size: arg = 48 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     width: arg,
     height: arg,
     viewBox: "0 0 48 48",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      symbol_073("circle", {
+      symbol_071("circle", {
         cx: "24",
         cy: "24",
         r: "24",
         fill: "#2AABEE",
         fillOpacity: "0.12",
       }),
-      symbol_073("svg", {
+      symbol_071("svg", {
         x: "8",
         y: "8",
         width: "32",
         height: "32",
         viewBox: "0 0 1000 1000",
-        children: symbol_073("path", {
+        children: symbol_071("path", {
           d: "M226.328419,494.722069 C372.088573,431.216685 469.284839,389.350049 517.917216,369.122161 C656.772535,311.36743 685.625481,301.334815 704.431427,301.003532 C708.567621,300.93067 717.815839,301.955743 723.806446,306.816707 C728.864797,310.92121 730.256552,316.46581 730.922551,320.357329 C731.588551,324.248848 732.417879,333.113828 731.758626,340.040666 C724.234007,419.102486 691.675104,610.964674 675.110982,699.515267 C668.10208,736.984342 654.301336,749.547532 640.940618,750.777006 C611.904684,753.448938 589.856115,731.588035 561.733393,713.153237 C517.726886,684.306416 492.866009,666.349181 450.150074,638.200013 C400.78442,605.66878 432.786119,587.789048 460.919462,558.568563 C468.282091,550.921423 596.21508,434.556479 598.691227,424.000355 C599.00091,422.680135 599.288312,417.758981 596.36474,415.160431 C593.441168,412.561881 589.126229,413.450484 586.012448,414.157198 C581.598758,415.158943 511.297793,461.625274 375.109553,553.556189 C355.154858,567.258623 337.080515,573.934908 320.886524,573.585046 C303.033948,573.199351 268.692754,563.490928 243.163606,555.192408 C211.851067,545.013936 186.964484,539.632504 189.131547,522.346309 C190.260287,513.342589 202.659244,504.134509 226.328419,494.722069 Z",
           fill: "#2AABEE",
         }),
       }),
     ],
   });
-const symbol_074 = ({ size: arg = 18 }) =>
-  symbol_073("svg", {
+const symbol_072 = ({ size: arg = 18 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
@@ -12082,19 +12550,19 @@ const symbol_074 = ({ size: arg = 18 }) =>
     strokeLinecap: "round",
     strokeLinejoin: "round",
     children: [
-      symbol_073("polyline", {
+      symbol_071("polyline", {
         points: "3 6 5 6 21 6",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "10",
         y1: "11",
         x2: "10",
         y2: "17",
       }),
-      symbol_073("line", {
+      symbol_071("line", {
         x1: "14",
         y1: "11",
         x2: "14",
@@ -12102,19 +12570,19 @@ const symbol_074 = ({ size: arg = 18 }) =>
       }),
     ],
   });
-const symbol_059 = ({ size: arg = 16 }) =>
-  symbol_073("svg", {
+const symbol_057 = ({ size: arg = 16 }) =>
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 16 16",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         fill: "#0080FF",
         d: "M6.724.821a1.63 1.63 0 0 1 2.858.051l.556 1.042a1.634 1.634 0 0 0 1.672.856l1.155-.166c1.263-.181 2.238 1.108 1.742 2.303L14.253 6a1.69 1.69 0 0 0 .385 1.863l.847.815c.927.891.544 2.47-.685 2.821l-1.122.32a1.663 1.663 0 0 0-1.192 1.468l-.098 1.181c-.108 1.294-1.56 1.974-2.596 1.216l-.946-.693a1.62 1.62 0 0 0-1.872-.033l-.969.658c-1.06.721-2.49-.01-2.552-1.306l-.058-1.184a1.666 1.666 0 0 0-1.141-1.51l-1.11-.36C-.073 10.864-.402 9.272.556 8.413l.874-.783a1.69 1.69 0 0 0 .448-1.849l-.416-1.108c-.454-1.212.565-2.466 1.821-2.24l1.148.207a1.632 1.632 0 0 0 1.7-.796L6.724.82Z",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         stroke: "#fff",
         strokeLinecap: "round",
         strokeLinejoin: "round",
@@ -12124,19 +12592,19 @@ const symbol_059 = ({ size: arg = 16 }) =>
     ],
   });
 const local_98bb194d = ({ size: arg = 20 }) =>
-  symbol_073("svg", {
+  symbol_071("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
     height: arg,
     fill: "none",
     viewBox: "0 0 20 20",
     children: [
-      symbol_073("path", {
+      symbol_071("path", {
         stroke: "currentColor",
         strokeWidth: "1.5",
         d: "M2 10s2.91-6 8-6 8 6 8 6-2.91 6-8 6-8-6-8-6Z",
       }),
-      symbol_073("path", {
+      symbol_071("path", {
         stroke: "currentColor",
         strokeWidth: "1.5",
         d: "M10 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z",
@@ -12144,7 +12612,7 @@ const local_98bb194d = ({ size: arg = 20 }) =>
     ],
   });
 function fn_1061c07b(arg) {
-  const local = symbol_045()[0];
+  const local = symbol_044()[0];
   return arg.children({
     url: local.url,
     path: local.path,
@@ -12257,7 +12725,7 @@ const local_a1ffb7a0 = {
       local.set("offset", local_3.toString());
     }
     const local_4 = local.toString();
-    const local_5 = `${local_68a3dca0.notifications.list}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${local_eec5e7eb.notifications.list}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await local_74bb3ffb.get(local_5);
     const local_7 = local_6.notifications ?? [];
     const local_8 = local_6.hasMore ? String(local_3 + local_7.length) : null;
@@ -12267,14 +12735,14 @@ const local_a1ffb7a0 = {
     };
   },
   async getUnreadCount() {
-    return (await local_74bb3ffb.get(local_68a3dca0.notifications.count)).count;
+    return (await local_74bb3ffb.get(local_eec5e7eb.notifications.count)).count;
   },
   async markAllAsRead() {
-    await local_74bb3ffb.post(local_68a3dca0.notifications.markAllRead);
+    await local_74bb3ffb.post(local_eec5e7eb.notifications.markAllRead);
   },
   async getSettings() {
     const local = await local_74bb3ffb.get(
-      local_68a3dca0.notifications.settings,
+      local_eec5e7eb.notifications.settings,
     );
     return {
       webEnabled: local.enabled ?? true,
@@ -12312,7 +12780,7 @@ const local_a1ffb7a0 = {
     if (local_2?.wallPosts !== undefined) {
       local.wallPosts = local_2.wallPosts;
     }
-    await local_74bb3ffb.put(local_68a3dca0.notifications.settings, local);
+    await local_74bb3ffb.put(local_eec5e7eb.notifications.settings, local);
   },
 };
 const local_eeb70029 = [1000, 2000, 4000, 8000, 16000, 30000];
@@ -12454,8 +12922,8 @@ const local_6d574dcf = {
   isInitialized: false,
   lastSseToast: null,
 };
-const local_93f51c66 = fn_5b3d8f14({
-  url: `${local_f4d9947e}${local_68a3dca0.notifications.stream}`,
+const local_611b8deb = fn_5b3d8f14({
+  url: `${local_f4d9947e}${local_eec5e7eb.notifications.stream}`,
   onMessage: (arg, arg_2) => {
     if (arg === "notification") {
       const local = fn_47e7e1a5(arg_2);
@@ -12492,14 +12960,14 @@ const local_93f51c66 = fn_5b3d8f14({
     });
   },
 });
-export const local_e4a1ecd0 = local_7d651640_2()((arg, arg_2) => ({
+export const local_e4a1ecd0 = symbol_041()((arg, arg_2) => ({
   ...local_6d574dcf,
   initialize: () => {
     if (!arg_2().isInitialized) {
       arg({
         isInitialized: true,
       });
-      local_93f51c66.connect();
+      local_611b8deb.connect();
       arg_2().fetchUnreadCount();
     }
   },
@@ -12562,8 +13030,8 @@ export const local_e4a1ecd0 = local_7d651640_2()((arg, arg_2) => ({
       await local_a1ffb7a0.markAllAsRead();
     } catch {}
   },
-  connectSSE: () => local_93f51c66.connect(),
-  disconnectSSE: () => local_93f51c66.disconnect(),
+  connectSSE: () => local_611b8deb.connect(),
+  disconnectSSE: () => local_611b8deb.disconnect(),
   fetchSettings: async () => {
     arg({
       settingsLoading: true,
@@ -12604,7 +13072,7 @@ export const local_e4a1ecd0 = local_7d651640_2()((arg, arg_2) => ({
     }
   },
   reset: () => {
-    local_93f51c66.disconnect();
+    local_611b8deb.disconnect();
     arg(local_6d574dcf);
   },
 }));
@@ -12669,12 +13137,12 @@ const local_4e0e1df1 = [
 const local_865f321e = ["video/mp4", "video/webm", "video/quicktime"];
 const local_2ace5464 = ".jpg,.jpeg,.png,.gif,.webp,.avif,.heic,.heif";
 const local_e23ce327 = ".mp4,.webm,.mov";
-const symbol_070 = {
+const symbol_068 = {
   async uploadMedia(arg) {
     const local = new FormData();
     local.append("file", arg);
     return await local_74bb3ffb.uploadFormData(
-      local_68a3dca0.files.upload,
+      local_eec5e7eb.files.upload,
       local,
       {
         timeout: 300 * 1000,
@@ -12682,7 +13150,7 @@ const symbol_070 = {
     );
   },
   async deleteFile(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.files.delete(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.files.delete(arg));
   },
   isValidImageType(arg) {
     return local_4e0e1df1.includes(arg.type);
@@ -12696,7 +13164,7 @@ const symbol_070 = {
 };
 export const local_91547acf = {
   async getChangelog() {
-    const local = await local_74bb3ffb.get(local_68a3dca0.platform.changelog);
+    const local = await local_74bb3ffb.get(local_eec5e7eb.platform.changelog);
     if (Array.isArray(local)) {
       return local;
     }
@@ -12704,7 +13172,7 @@ export const local_91547acf = {
   },
   async getAnnouncements() {
     const local = await local_74bb3ffb.get(
-      local_68a3dca0.platform.announcements,
+      local_eec5e7eb.platform.announcements,
     );
     if (Array.isArray(local)) {
       return local;
@@ -12843,7 +13311,7 @@ function fn_2da865ce(arg) {
 const local_f50950e4 = new clazz_fb2ffcc0(100, 300 * 1000);
 const local_aad0de78_3 = 60 * 1000;
 setInterval(() => local_f50950e4.cleanup(), 120 * 1000);
-const symbol_067 = {
+const symbol_065 = {
   async checkUsername(arg) {
     return (
       await local_74bb3ffb.get(
@@ -12855,11 +13323,11 @@ const symbol_067 = {
     return await local_74bb3ffb.post("/users/profile", arg);
   },
   async getMyProfile() {
-    const local = await local_74bb3ffb.get(local_68a3dca0.users.me);
+    const local = await local_74bb3ffb.get(local_eec5e7eb.users.me);
     return fn_2da865ce(local);
   },
   async updateProfile(arg) {
-    return await local_74bb3ffb.put(local_68a3dca0.users.updateProfile, arg);
+    return await local_74bb3ffb.put(local_eec5e7eb.users.updateProfile, arg);
   },
   async getProfileByUsername(arg) {
     const local = arg.toLowerCase();
@@ -12876,7 +13344,7 @@ const symbol_067 = {
     return local_f50950e4.get(arg.toLowerCase()) ?? null;
   },
   async _fetchAndCacheProfile(arg, arg_2) {
-    const local = await local_74bb3ffb.get(local_68a3dca0.users.profile(arg), {
+    const local = await local_74bb3ffb.get(local_eec5e7eb.users.profile(arg), {
       skipErrorToast: [symbol_009.NOT_FOUND],
     });
     const local_2 = fn_2da865ce(local);
@@ -12897,19 +13365,19 @@ const symbol_067 = {
     }
   },
   async followUser(arg) {
-    await local_74bb3ffb.post(local_68a3dca0.users.follow(arg), {});
+    await local_74bb3ffb.post(local_eec5e7eb.users.follow(arg), {});
   },
   async unfollowUser(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.users.follow(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.users.follow(arg));
   },
   async pinPost(arg) {
-    await local_74bb3ffb.post(local_68a3dca0.posts.pin(arg));
+    await local_74bb3ffb.post(local_eec5e7eb.posts.pin(arg));
   },
   async unpinPost(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.posts.pin(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.posts.pin(arg));
   },
   async getPrivacySettings() {
-    const local = await local_74bb3ffb.get(local_68a3dca0.users.privacy);
+    const local = await local_74bb3ffb.get(local_eec5e7eb.users.privacy);
     return {
       isPrivate: local.isPrivate ?? false,
       showLastSeen: local.showLastSeen ?? true,
@@ -12935,11 +13403,11 @@ const symbol_067 = {
     if (arg.showLastSeen !== undefined) {
       local.showLastSeen = arg.showLastSeen;
     }
-    await local_74bb3ffb.put(local_68a3dca0.users.privacy, local);
+    await local_74bb3ffb.put(local_eec5e7eb.users.privacy, local);
   },
   async getVerificationStatus() {
     try {
-      return await local_74bb3ffb.get(local_68a3dca0.verification.status);
+      return await local_74bb3ffb.get(local_eec5e7eb.verification.status);
     } catch (error) {
       if (
         error &&
@@ -12953,12 +13421,12 @@ const symbol_067 = {
     }
   },
   async submitVerificationRequest(arg) {
-    return await local_74bb3ffb.post(local_68a3dca0.verification.submit, {
+    return await local_74bb3ffb.post(local_eec5e7eb.verification.submit, {
       videoUrl: arg,
     });
   },
   async getMyPins() {
-    const local = await local_74bb3ffb.get(local_68a3dca0.users.pins);
+    const local = await local_74bb3ffb.get(local_eec5e7eb.users.pins);
     const local_2 = local.data ?? local;
     return {
       pins: local_2.pins ?? [],
@@ -12966,18 +13434,18 @@ const symbol_067 = {
     };
   },
   async setActivePin(arg) {
-    await local_74bb3ffb.put(local_68a3dca0.users.setPin, {
+    await local_74bb3ffb.put(local_eec5e7eb.users.setPin, {
       slug: arg,
     });
   },
   async removeActivePin() {
-    await local_74bb3ffb.delete(local_68a3dca0.users.setPin);
+    await local_74bb3ffb.delete(local_eec5e7eb.users.setPin);
   },
   async deleteAccount() {
-    await local_74bb3ffb.delete(local_68a3dca0.users.deleteAccount);
+    await local_74bb3ffb.delete(local_eec5e7eb.users.deleteAccount);
   },
   async restoreAccount() {
-    await local_74bb3ffb.post(local_68a3dca0.users.restoreAccount);
+    await local_74bb3ffb.post(local_eec5e7eb.users.restoreAccount);
   },
 };
 function fn_9d3c588a(arg) {
@@ -13001,7 +13469,7 @@ function fn_9d3c588a(arg) {
     },
   };
 }
-export const local_7ef1de1e = local_7d651640_2((arg) => ({
+const symbol_032 = symbol_041((arg) => ({
   statuses: {},
   setStatuses: (arg) =>
     arg((arg) => ({
@@ -13022,20 +13490,20 @@ export const local_7ef1de1e = local_7d651640_2((arg) => ({
       statuses: {},
     }),
 }));
-let local_a1e12a9e_7 = new Set();
+let local_a1e12a9e_8 = new Set();
 let local_0a9fda83_11 = null;
 function fn_c5a9d635() {
   if (!local_0a9fda83_11) {
     local_0a9fda83_11 = setTimeout(async () => {
       local_0a9fda83_11 = null;
-      const local = Array.from(local_a1e12a9e_7);
-      local_a1e12a9e_7.clear();
+      const local = Array.from(local_a1e12a9e_8);
+      local_a1e12a9e_8.clear();
       if (local.length !== 0) {
         for (let local = 0; local < local.length; local += 20) {
           const local = local.slice(local, local + 20);
           try {
-            const local = await symbol_004.batchFollowStatus(local);
-            local_7ef1de1e.getState().setStatuses(local);
+            const local = await symbol_075.batchFollowStatus(local);
+            symbol_032.getState().setStatuses(local);
           } catch {}
         }
       }
@@ -13043,10 +13511,10 @@ function fn_c5a9d635() {
   }
 }
 export function fn_585b8996(arg) {
-  const local = symbol_075((arg) => arg.profile?.id);
-  const local_2 = local_7ef1de1e((arg) => arg.statuses);
+  const local = symbol_073((arg) => arg.profile?.id);
+  const local_2 = symbol_032((arg) => arg.statuses);
   const local_3 = symbol_002("");
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local) {
       return;
     }
@@ -13057,13 +13525,13 @@ export function fn_585b8996(arg) {
     if (!(local_2 === local_3.current || local_2 === "")) {
       local_3.current = local_2;
       for (const local of local) {
-        local_a1e12a9e_7.add(local);
+        local_a1e12a9e_8.add(local);
       }
       fn_c5a9d635();
     }
   }, [arg, local]);
   return {
-    getStatus: symbol_069(
+    getStatus: symbol_067(
       (arg) => {
         if (arg !== local) {
           return local_2[arg];
@@ -13076,23 +13544,23 @@ export function fn_585b8996(arg) {
 }
 const local_f50950e4_2 = new clazz_fb2ffcc0(500, 120 * 1000);
 setInterval(() => local_f50950e4_2.cleanup(), 60 * 1000);
-const symbol_004 = {
+const symbol_075 = {
   async followUser(arg) {
     const local = await local_74bb3ffb.post(
-      local_68a3dca0.users.follow(arg),
+      local_eec5e7eb.users.follow(arg),
       {},
     );
     local_f50950e4_2.delete(arg);
-    local_7ef1de1e.getState().setStatus(arg, true);
+    symbol_032.getState().setStatus(arg, true);
     if (local.following) {
       return "following";
     }
     return local.status ?? "following";
   },
   async unfollowUser(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.users.follow(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.users.follow(arg));
     local_f50950e4_2.delete(arg);
-    local_7ef1de1e.getState().setStatus(arg, false);
+    symbol_032.getState().setStatus(arg, false);
   },
   async getFollowers(arg, arg_2 = {}) {
     const local = new URLSearchParams();
@@ -13101,7 +13569,7 @@ const symbol_004 = {
     const local_3 = arg_2.cursor ? parseInt(arg_2.cursor) : (arg_2.page ?? 1);
     local.set("page", local_3.toString());
     const local_4 = local.toString();
-    const local_5 = `${local_68a3dca0.users.followers(arg)}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${local_eec5e7eb.users.followers(arg)}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await local_74bb3ffb.get(local_5);
     const local_7 = local_6.data ?? local_6;
     const local_8 = local_7.users ?? local_7.followers ?? [];
@@ -13119,7 +13587,7 @@ const symbol_004 = {
     const local_3 = arg_2.cursor ? parseInt(arg_2.cursor) : (arg_2.page ?? 1);
     local.set("page", local_3.toString());
     const local_4 = local.toString();
-    const local_5 = `${local_68a3dca0.users.following(arg)}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${local_eec5e7eb.users.following(arg)}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await local_74bb3ffb.get(local_5);
     const local_7 = local_6.data ?? local_6;
     const local_8 = local_7.users ?? local_7.following ?? [];
@@ -13131,11 +13599,11 @@ const symbol_004 = {
     };
   },
   async blockUser(arg) {
-    await local_74bb3ffb.post(local_68a3dca0.users.block(arg), {});
+    await local_74bb3ffb.post(local_eec5e7eb.users.block(arg), {});
     local_f50950e4_2.delete(arg);
   },
   async unblockUser(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.users.block(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.users.block(arg));
     local_f50950e4_2.delete(arg);
   },
   async getBlockedUsers(arg = {}) {
@@ -13145,7 +13613,7 @@ const symbol_004 = {
     const local_3 = arg.cursor ? parseInt(arg.cursor) : (arg.page ?? 1);
     local.set("page", local_3.toString());
     const local_4 = local.toString();
-    const local_5 = `${local_68a3dca0.users.blocked}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${local_eec5e7eb.users.blocked}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await local_74bb3ffb.get(local_5);
     const local_7 = local_6.data ?? local_6;
     let local_8 = [];
@@ -13180,7 +13648,7 @@ const symbol_004 = {
     }
     return (
       (
-        await local_74bb3ffb.post(local_68a3dca0.users.followStatus, {
+        await local_74bb3ffb.post(local_eec5e7eb.users.followStatus, {
           userIds: arg,
         })
       ).data ?? {}
@@ -13193,22 +13661,22 @@ const symbol_004 = {
     local_f50950e4_2.clear();
   },
 };
-function symbol_032(arg) {
-  const local = local_7ef1de1e((arg) => arg.statuses[arg]);
-  const local_2 = symbol_069(async () => {
-    local_7ef1de1e.getState().setStatus(arg, true);
+export function fn_c8ddca88(arg) {
+  const local = symbol_032((arg) => arg.statuses[arg]);
+  const local_2 = symbol_067(async () => {
+    symbol_032.getState().setStatus(arg, true);
     try {
-      await symbol_004.followUser(arg);
+      await symbol_075.followUser(arg);
     } catch {
-      local_7ef1de1e.getState().setStatus(arg, false);
+      symbol_032.getState().setStatus(arg, false);
     }
   }, [arg]);
-  const local_3 = symbol_069(async () => {
-    local_7ef1de1e.getState().setStatus(arg, false);
+  const local_3 = symbol_067(async () => {
+    symbol_032.getState().setStatus(arg, false);
     try {
-      await symbol_004.unfollowUser(arg);
+      await symbol_075.unfollowUser(arg);
     } catch {
-      local_7ef1de1e.getState().setStatus(arg, true);
+      symbol_032.getState().setStatus(arg, true);
     }
   }, [arg]);
   return {
@@ -13231,7 +13699,7 @@ const local_cc8fa504 = "c_closing";
 const local_124577c6 = "c_bottomSheet";
 const local_59fd0a7f = "c_dragHandle";
 const local_adf9efa2 = "c_dragIndicator";
-const local_f87edbe4 = {
+const local_0983b7a7 = {
   overlay: local_672a1b2c,
   modalWrapper: local_46cbcfdf,
   wide: local_a4983375,
@@ -13247,7 +13715,7 @@ const local_f87edbe4 = {
   dragHandle: local_59fd0a7f,
   dragIndicator: local_adf9efa2,
 };
-const local_dc634aac = fn_c05a86e1(null);
+const local_dc634aac = fn_aa547820(null);
 const local_f06debfc_29 = 100;
 const local_f06debfc_30 = 0.5;
 function symbol_014({
@@ -13265,14 +13733,14 @@ function symbol_014({
   const local = symbol_002(null);
   const local_2 = symbol_002(null);
   const local_3 = symbol_002(null);
-  const local_4 = symbol_006();
+  const local_4 = symbol_004();
   const local_5 = symbol_002(0);
   const local_6 = symbol_002(false);
-  const [local_7, local_8] = symbol_056(false);
+  const [local_7, local_8] = symbol_054(false);
   const local_9 = symbol_002(0);
   const local_10 = symbol_002(0);
   const local_11 = symbol_002(0);
-  symbol_077(() => {
+  symbol_058(() => {
     const local = (arg) => {
       if (arg.key === "Escape") {
         if (arg_10 && !arg_10()) {
@@ -13305,7 +13773,7 @@ function symbol_014({
     }
     local_3.current = null;
   };
-  const local_14 = symbol_069(() => {
+  const local_14 = symbol_067(() => {
     if (arg_10 && !arg_10()) {
       local_18(0, "transform 0.2s ease-out");
       local_19(0);
@@ -13354,7 +13822,7 @@ function symbol_014({
     local_10.current = Date.now();
     local_11.current = arg.touches[0].clientY;
     const local = arg.target;
-    if (local.closest(`.${local_f87edbe4.dragHandle}`)) {
+    if (local.closest(`.${local_0983b7a7.dragHandle}`)) {
       local_15.current = true;
       local_16.current = true;
       local_6.current = true;
@@ -13459,16 +13927,16 @@ function symbol_014({
     isClosing: local_7,
     handleClose: local_14,
   };
-  return symbol_073(local_dc634aac.Provider, {
+  return symbol_071(local_dc634aac.Provider, {
     value: local_24,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       ref: local,
-      className: `${local_f87edbe4.overlay} ${local_4 ? local_f87edbe4.mobileOverlay : ""} ${local_7 ? local_f87edbe4.closing : ""}`,
+      className: `${local_0983b7a7.overlay} ${local_4 ? local_0983b7a7.mobileOverlay : ""} ${local_7 ? local_0983b7a7.closing : ""}`,
       onMouseDown: local_12,
       onMouseUp: local_13,
-      children: symbol_073("div", {
+      children: symbol_071("div", {
         ref: local_2,
-        className: `${local_f87edbe4.modalWrapper} ${arg_9 === "wide" ? local_f87edbe4.wide : ""} ${local_4 ? local_f87edbe4.bottomSheet : ""}`,
+        className: `${local_0983b7a7.modalWrapper} ${arg_9 === "wide" ? local_0983b7a7.wide : ""} ${local_4 ? local_0983b7a7.bottomSheet : ""}`,
         style: local_23,
         onTouchStart: local_20,
         onTouchMove: local_21,
@@ -13476,46 +13944,46 @@ function symbol_014({
         children: [
           arg_6 &&
             !local_4 &&
-            symbol_073("button", {
+            symbol_071("button", {
               type: "button",
-              className: local_f87edbe4.externalCloseButton,
+              className: local_0983b7a7.externalCloseButton,
               onClick: (arg) => {
                 arg.stopPropagation();
                 arg_2();
               },
-              children: symbol_073(symbol_049, {
+              children: symbol_071(symbol_048, {
                 size: 24,
               }),
             }),
           local_4 &&
-            symbol_073("div", {
-              className: local_f87edbe4.dragHandle,
-              children: symbol_073("div", {
-                className: local_f87edbe4.dragIndicator,
+            symbol_071("div", {
+              className: local_0983b7a7.dragHandle,
+              children: symbol_071("div", {
+                className: local_0983b7a7.dragIndicator,
               }),
             }),
-          symbol_073("div", {
-            className: `${local_f87edbe4.modal} ${arg_6 ? local_f87edbe4.frameless : ""} ${arg_7 || ""} ${arg_8 || ""}`,
+          symbol_071("div", {
+            className: `${local_0983b7a7.modal} ${arg_6 ? local_0983b7a7.frameless : ""} ${arg_7 || ""} ${arg_8 || ""}`,
             children: [
               !arg_6 &&
                 arg_4 &&
                 !local_4 &&
-                symbol_073("div", {
-                  className: local_f87edbe4.header,
+                symbol_071("div", {
+                  className: local_0983b7a7.header,
                   children: [
-                    symbol_073("span", {
-                      className: local_f87edbe4.title,
+                    symbol_071("span", {
+                      className: local_0983b7a7.title,
                       children: arg_3,
                     }),
                     arg_5 &&
-                      symbol_073("button", {
+                      symbol_071("button", {
                         type: "button",
-                        className: local_f87edbe4.closeButton,
+                        className: local_0983b7a7.closeButton,
                         onClick: (arg) => {
                           arg.stopPropagation();
                           arg_2();
                         },
-                        children: symbol_073(symbol_049, {
+                        children: symbol_071(symbol_048, {
                           size: 16,
                         }),
                       }),
@@ -13530,14 +13998,14 @@ function symbol_014({
   });
 }
 const local_ee7a6f6b = "c_spinner";
-const local_2650a516 = "tiwv";
+const local_955a410d = "nwPB";
 const local_d3808147 = "c_xs";
 const local_9350219d = "c_sm";
 const local_a8a24a1e = "c_md";
 const local_afefddb7 = "c_lg";
 const local_0ab9bf6f = {
   spinner: local_ee7a6f6b,
-  spin: local_2650a516,
+  spin: local_955a410d,
   xs: local_d3808147,
   sm: local_9350219d,
   md: local_a8a24a1e,
@@ -13547,9 +14015,9 @@ export function fn_42234aa5({ size: arg = "md", className: arg_2 }) {
   const local = [local_0ab9bf6f.spinner, local_0ab9bf6f[arg], arg_2]
     .filter(Boolean)
     .join("./entry.js");
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local,
-    children: symbol_073(symbol_048, {}),
+    children: symbol_071(symbol_047, {}),
   });
 }
 const local_9e87ce8c = "c_button";
@@ -13601,13 +14069,13 @@ function symbol_003({
   ]
     .filter(Boolean)
     .join("./entry.js");
-  return symbol_073("button", {
+  return symbol_071("button", {
     type: arg_8,
     className: local,
     disabled: arg_9 || arg_6,
     ...arg_10,
     children: arg_6
-      ? symbol_073(fn_42234aa5, {
+      ? symbol_071(fn_42234aa5, {
           size: "sm",
         })
       : arg,
@@ -13623,31 +14091,31 @@ const local_825c4075 = {
   subtitle: local_8c84ac4c,
   actions: local_8c4f8b4b,
 };
-function symbol_008({ displayName: arg, onConfirm: arg_2, onClose: arg_3 }) {
-  return symbol_073(symbol_014, {
+function symbol_007({ displayName: arg, onConfirm: arg_2, onClose: arg_3 }) {
+  return symbol_071(symbol_014, {
     onClose: arg_3,
     showHeader: false,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_825c4075.content,
       children: [
-        symbol_073("h2", {
+        symbol_071("h2", {
           className: local_825c4075.title,
           children: "Отписаться?",
         }),
-        symbol_073("p", {
+        symbol_071("p", {
           className: local_825c4075.subtitle,
           children: [
             "Вы действительно хотите отписаться от ",
-            symbol_073("strong", {
+            symbol_071("strong", {
               children: arg,
             }),
             "?",
           ],
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_825c4075.actions,
           children: [
-            symbol_073(symbol_003, {
+            symbol_071(symbol_003, {
               variant: "secondary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -13655,7 +14123,7 @@ function symbol_008({ displayName: arg, onConfirm: arg_2, onClose: arg_3 }) {
               },
               children: "Отмена",
             }),
-            symbol_073(symbol_003, {
+            symbol_071(symbol_003, {
               variant: "danger",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -13670,11 +14138,11 @@ function symbol_008({ displayName: arg, onConfirm: arg_2, onClose: arg_3 }) {
     }),
   });
 }
-const local_dc634aac_2 = fn_c05a86e1(null);
+const local_dc634aac_2 = fn_aa547820(null);
 let local_f06debfc_31 = 0;
-function fn_16376bbf({ children: arg }) {
-  const [local, local_2] = symbol_056([]);
-  const local_3 = symbol_069((arg) => {
+function fn_84bc68ae({ children: arg }) {
+  const [local, local_2] = symbol_054([]);
+  const local_3 = symbol_067((arg) => {
     const local = `modal-${++local_f06debfc_31}`;
     local_2((arg) => [
       ...arg,
@@ -13685,7 +14153,7 @@ function fn_16376bbf({ children: arg }) {
     ]);
     return local;
   }, []);
-  const local_4 = symbol_069((arg) => {
+  const local_4 = symbol_067((arg) => {
     local_2((arg) => {
       if (arg) {
         return arg.filter((arg) => arg.id !== arg);
@@ -13693,10 +14161,10 @@ function fn_16376bbf({ children: arg }) {
       return arg.slice(0, -1);
     });
   }, []);
-  const local_5 = symbol_069(() => {
+  const local_5 = symbol_067(() => {
     local_2([]);
   }, []);
-  symbol_077(() => {
+  symbol_058(() => {
     let local = window.location.pathname + window.location.search;
     const local_2 = () => {
       const local = window.location.pathname + window.location.search;
@@ -13722,7 +14190,7 @@ function fn_16376bbf({ children: arg }) {
       history.replaceState = local_4;
     };
   }, []);
-  return symbol_073(local_dc634aac_2.Provider, {
+  return symbol_071(local_dc634aac_2.Provider, {
     value: {
       openModal: local_3,
       closeModal: local_4,
@@ -13731,7 +14199,7 @@ function fn_16376bbf({ children: arg }) {
     children: [
       arg,
       local.length > 0 &&
-        symbol_073(fn_1348a3fa, {
+        symbol_071(fn_1348a3fa, {
           modals: local,
         }),
     ],
@@ -13739,10 +14207,10 @@ function fn_16376bbf({ children: arg }) {
 }
 function fn_1348a3fa({ modals: arg }) {
   return symbol_001(
-    symbol_073(symbol_063, {
+    symbol_071(symbol_020, {
       children: arg.map(({ id: arg, component: arg_2 }) =>
-        symbol_073(
-          symbol_062,
+        symbol_071(
+          symbol_061,
           {
             fallback: null,
             children: arg_2,
@@ -13754,7 +14222,7 @@ function fn_1348a3fa({ modals: arg }) {
     document.body,
   );
 }
-function symbol_066() {
+function symbol_064() {
   const local = fn_4eb8acde(local_dc634aac_2);
   if (!local) {
     throw new Error("useModal must be used within a ModalProvider");
@@ -13794,7 +14262,7 @@ function fn_d2f1ecf2(arg) {
     arg.startsWith("./site/index.html")
   );
 }
-function symbol_058({
+function symbol_056({
   src: arg,
   alt: arg_2,
   size: arg_3 = "md",
@@ -13805,25 +14273,25 @@ function symbol_058({
   className: arg_8,
 }) {
   const local = arg ? fn_d2f1ecf2(arg) : false;
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_0ce30cdf.avatar} ${local_0ce30cdf[arg_3]} ${arg_8 || ""}`,
     children: [
       local && arg
-        ? symbol_073("img", {
+        ? symbol_071("img", {
             src: arg,
             alt: arg_2 || "",
           })
-        : symbol_073("span", {
+        : symbol_071("span", {
             className: local_0ce30cdf.emoji,
             children: arg || "👤",
           }),
       arg_4 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_0ce30cdf.badge,
           children: arg_4,
         }),
       arg_6 !== undefined
-        ? symbol_073("button", {
+        ? symbol_071("button", {
             type: "button",
             className: `${local_0ce30cdf.followBadge} ${arg_6 ? local_0ce30cdf.following : local_0ce30cdf.notFollowing}`,
             onClick: (arg) => {
@@ -13832,15 +14300,15 @@ function symbol_058({
               arg_7?.(arg);
             },
             children: arg_6
-              ? symbol_073(local_327b00ca, {
+              ? symbol_071(local_327b00ca, {
                   size: 8,
                 })
-              : symbol_073(local_e2a3198b, {
+              : symbol_071(local_e2a3198b, {
                   size: 8,
                 }),
           })
         : arg_5 &&
-          symbol_073("span", {
+          symbol_071("span", {
             className: local_0ce30cdf.onlineDot,
           }),
     ],
@@ -13878,10 +14346,10 @@ const local_e3745767 = {
   pinTooltipLabel: local_07f5c886,
   pinTooltipArrow: local_7c8859d6,
 };
-const local_f2c3a8a6 = symbol_078(() =>
-  symbol_064(
+const local_f2c3a8a6 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/subscription-modal.js"),
-    local_5b673d6a([0, 1, 2, 3, 4, 5, 6, 7]),
+    local_80136556([0, 1, 2, 3, 4, 5, 6, 7]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -13903,10 +14371,10 @@ function symbol_022({
 }) {
   const local = local_d968b24d[arg_5];
   const local_2 = symbol_002(null);
-  const [local_3, local_4] = symbol_056(null);
-  const [local_5, local_6] = symbol_056(false);
+  const [local_3, local_4] = symbol_054(null);
+  const [local_5, local_6] = symbol_054(false);
   const local_7 = arg_4?.slug === local_e22f9db9;
-  const local_8 = symbol_069(() => {
+  const local_8 = symbol_067(() => {
     if (!local_2.current) {
       return;
     }
@@ -13916,27 +14384,27 @@ function symbol_022({
       y: local.top,
     });
   }, []);
-  const local_9 = symbol_069(() => {
+  const local_9 = symbol_067(() => {
     local_4(null);
   }, []);
-  return symbol_073("span", {
+  return symbol_071("span", {
     className: `${local_e3745767.userName} ${local_e3745767[arg_5]} ${arg_6 || ""}`,
     children: [
       arg_3
-        ? symbol_073("span", {
+        ? symbol_071("span", {
             className: local_e3745767.nukstaGlow,
-            children: symbol_073("span", {
+            children: symbol_071("span", {
               className: local_e3745767.text,
               children: arg,
             }),
           })
-        : symbol_073("span", {
+        : symbol_071("span", {
             className: local_e3745767.text,
             children: arg,
           }),
-      arg_2 && symbol_073(symbol_059, {}),
+      arg_2 && symbol_071(symbol_057, {}),
       arg_4 &&
-        symbol_073("span", {
+        symbol_071("span", {
           ref: local_2,
           className: `${local_e3745767.pinWrapper} ${local_7 ? local_e3745767.pinClickable : ""}`,
           onMouseEnter: local_8,
@@ -13949,7 +14417,7 @@ function symbol_022({
               }
             : undefined,
           children: [
-            symbol_073("img", {
+            symbol_071("img", {
               src: arg_4.url,
               alt: arg_4.name,
               className: local_e3745767.pinBadge,
@@ -13958,17 +14426,17 @@ function symbol_022({
             }),
             local_3 &&
               symbol_001(
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_e3745767.pinTooltip,
                   style: {
                     left: `${local_3.x}px`,
                     top: `${local_3.y}px`,
                   },
                   children: [
-                    symbol_073("span", {
+                    symbol_071("span", {
                       className: local_e3745767.pinTooltipRow,
                       children: [
-                        symbol_073("span", {
+                        symbol_071("span", {
                           className: local_e3745767.pinTooltipLabel,
                           children: "Пин:",
                         }),
@@ -13977,10 +14445,10 @@ function symbol_022({
                       ],
                     }),
                     arg_4.description &&
-                      symbol_073("span", {
+                      symbol_071("span", {
                         className: local_e3745767.pinTooltipRow,
                         children: [
-                          symbol_073("span", {
+                          symbol_071("span", {
                             className: local_e3745767.pinTooltipLabel,
                             children: "Ивент:",
                           }),
@@ -13988,7 +14456,7 @@ function symbol_022({
                           arg_4.description,
                         ],
                       }),
-                    symbol_073("span", {
+                    symbol_071("span", {
                       className: local_e3745767.pinTooltipArrow,
                     }),
                   ],
@@ -13998,9 +14466,9 @@ function symbol_022({
           ],
         }),
       local_5 &&
-        symbol_073(symbol_062, {
+        symbol_071(symbol_061, {
           fallback: null,
-          children: symbol_073(local_f2c3a8a6, {
+          children: symbol_071(local_f2c3a8a6, {
             isOpen: true,
             onClose: () => local_6(false),
           }),
@@ -14017,61 +14485,57 @@ function fn_53c06807_2(arg) {
 const local_1014925d = {
   skipErrorToast: true,
 };
-const symbol_039 = {
+const symbol_038 = {
   async register(arg) {
-    return await local_8b3b0704.post(
-      local_68a3dca0.auth.signUp,
+    return await symbol_039.post(
+      local_eec5e7eb.auth.signUp,
       arg,
       local_1014925d,
     );
   },
   async login(arg) {
-    return await local_8b3b0704.post(
-      local_68a3dca0.auth.signIn,
+    return await symbol_039.post(
+      local_eec5e7eb.auth.signIn,
       arg,
       local_1014925d,
     );
   },
   async verifyOtp(arg) {
-    return await local_8b3b0704.post(
-      local_68a3dca0.auth.verifyOtp,
+    return await symbol_039.post(
+      local_eec5e7eb.auth.verifyOtp,
       arg,
       local_1014925d,
     );
   },
   async resendOtp(arg) {
-    await local_8b3b0704.post(
-      local_68a3dca0.auth.resendOtp,
-      arg,
-      local_1014925d,
-    );
+    await symbol_039.post(local_eec5e7eb.auth.resendOtp, arg, local_1014925d);
   },
   async refreshSession() {
-    return await local_8b3b0704.post(local_68a3dca0.auth.refresh);
+    return await symbol_039.post(local_eec5e7eb.auth.refresh);
   },
   async logout() {
-    await local_8b3b0704.post(local_68a3dca0.auth.logout);
+    await symbol_039.post(local_eec5e7eb.auth.logout);
   },
   async logoutAll() {
-    await local_8b3b0704.post(`${local_68a3dca0.auth.logout}-all`);
+    await symbol_039.post(`${local_eec5e7eb.auth.logout}-all`);
   },
   async forgotPassword(arg) {
-    return await local_8b3b0704.post(
-      local_68a3dca0.auth.forgotPassword,
+    return await symbol_039.post(
+      local_eec5e7eb.auth.forgotPassword,
       arg,
       local_1014925d,
     );
   },
   async resetPassword(arg) {
-    await local_8b3b0704.post(
-      local_68a3dca0.auth.resetPassword,
+    await symbol_039.post(
+      local_eec5e7eb.auth.resetPassword,
       arg,
       local_1014925d,
     );
   },
   async changePassword(arg) {
-    await local_8b3b0704.post(
-      local_68a3dca0.auth.changePassword,
+    await symbol_039.post(
+      local_eec5e7eb.auth.changePassword,
       arg,
       local_1014925d,
     );
@@ -14100,17 +14564,17 @@ const local_7ede37c7 = {
   canRestore: null,
   restoreDeadline: null,
 };
-const symbol_075 = local_7d651640_2()(
+const symbol_073 = symbol_041()(
   symbol_042(
     (arg, arg_2) => {
       const local = fn_e7e0f229;
-      fn_bdc7aa48(async () => {
+      fn_bdc7aa48_2(async () => {
         try {
-          const local = await symbol_039.refreshSession();
+          const local = await symbol_038.refreshSession();
           local(local.accessToken);
           return local.accessToken;
         } catch (error) {
-          if (symbol_076(error) && error.status >= 500) {
+          if (symbol_074(error) && error.status >= 500) {
             return (
               arg({
                 status: "service_error",
@@ -14135,7 +14599,7 @@ const symbol_075 = local_7d651640_2()(
             errorCode: null,
           });
           try {
-            const local = await symbol_039.register(arg);
+            const local = await symbol_038.register(arg);
             arg({
               status: "needs_verification",
               pendingEmail: arg.email,
@@ -14144,16 +14608,50 @@ const symbol_075 = local_7d651640_2()(
             });
             return local.nextStep;
           } catch (error) {
-            const local = symbol_076(error)
+            const local = symbol_074(error)
               ? error.message
               : "Registration failed";
-            const local_2 = symbol_076(error) ? error.code : null;
+            const local_2 = symbol_074(error) ? error.code : null;
             arg({
               status: "unauthenticated",
               error: local,
               errorCode: local_2,
             });
             throw error;
+          }
+        },
+        adoptSession: async (arg) => {
+          arg({
+            status: "loading",
+            error: null,
+            errorCode: null,
+          });
+          local(arg);
+          try {
+            await arg_2().fetchProfile();
+            if (arg_2().status !== "account_deleted") {
+              arg({
+                status: "authenticated",
+                pendingEmail: null,
+              });
+              fn_eb364989(arg_2().profile, arg_2().email);
+            }
+          } catch (error) {
+            if (
+              symbol_074(error) &&
+              (error.code === local_b9926dd3.ENTITY_NOT_FOUND ||
+                error.status === 404)
+            ) {
+              arg({
+                status: "needs_profile",
+                pendingEmail: null,
+              });
+            } else {
+              arg({
+                status: "unauthenticated",
+              });
+              throw error;
+            }
           }
         },
         login: async (arg) => {
@@ -14163,7 +14661,7 @@ const symbol_075 = local_7d651640_2()(
             errorCode: null,
           });
           try {
-            const local = await symbol_039.login(arg);
+            const local = await symbol_038.login(arg);
             if (fn_53c06807_2(local)) {
               local(local.accessToken);
               try {
@@ -14178,8 +14676,8 @@ const symbol_075 = local_7d651640_2()(
                 }
               } catch (error) {
                 if (
-                  symbol_076(error) &&
-                  (error.code === symbol_037.ENTITY_NOT_FOUND ||
+                  symbol_074(error) &&
+                  (error.code === local_b9926dd3.ENTITY_NOT_FOUND ||
                     error.status === 404)
                 ) {
                   arg({
@@ -14202,8 +14700,8 @@ const symbol_075 = local_7d651640_2()(
             });
             return local.nextStep;
           } catch (error) {
-            const local = symbol_076(error) ? error.message : "Login failed";
-            const local_2 = symbol_076(error) ? error.code : null;
+            const local = symbol_074(error) ? error.message : "Login failed";
+            const local_2 = symbol_074(error) ? error.code : null;
             arg({
               status: "unauthenticated",
               error: local,
@@ -14224,7 +14722,7 @@ const symbol_075 = local_7d651640_2()(
             flowToken: local_3,
           } = arg_2();
           try {
-            const local = await symbol_039.verifyOtp({
+            const local = await symbol_038.verifyOtp({
               email: local || "",
               password: local_2 || "",
               otp: arg,
@@ -14250,8 +14748,8 @@ const symbol_075 = local_7d651640_2()(
                 }
               } catch (error) {
                 if (
-                  symbol_076(error) &&
-                  (error.code === symbol_037.ENTITY_NOT_FOUND ||
+                  symbol_074(error) &&
+                  (error.code === local_b9926dd3.ENTITY_NOT_FOUND ||
                     error.status === 404)
                 ) {
                   arg({
@@ -14272,10 +14770,10 @@ const symbol_075 = local_7d651640_2()(
             });
             return "password_reset";
           } catch (error) {
-            const local = symbol_076(error)
+            const local = symbol_074(error)
               ? error.message
               : "Verification failed";
-            const local_2 = symbol_076(error) ? error.code : null;
+            const local_2 = symbol_074(error) ? error.code : null;
             arg({
               status: "needs_verification",
               error: local,
@@ -14291,15 +14789,15 @@ const symbol_075 = local_7d651640_2()(
           });
           const { pendingEmail: local, flowToken: local_2 } = arg_2();
           try {
-            await symbol_039.resendOtp({
+            await symbol_038.resendOtp({
               email: local || "",
               flowToken: local_2 || "",
             });
           } catch (error) {
-            const local = symbol_076(error)
+            const local = symbol_074(error)
               ? error.message
               : "Failed to resend code";
-            const local_2 = symbol_076(error) ? error.code : null;
+            const local_2 = symbol_074(error) ? error.code : null;
             arg({
               error: local,
               errorCode: local_2,
@@ -14313,17 +14811,17 @@ const symbol_075 = local_7d651640_2()(
             errorCode: null,
           });
           try {
-            await symbol_067.createProfile(arg);
+            await symbol_065.createProfile(arg);
             await arg_2().fetchProfile();
             arg({
               status: "authenticated",
             });
             fn_eb364989(arg_2().profile, arg_2().email);
           } catch (error) {
-            const local = symbol_076(error)
+            const local = symbol_074(error)
               ? error.message
               : "Failed to create profile";
-            const local_2 = symbol_076(error) ? error.code : null;
+            const local_2 = symbol_074(error) ? error.code : null;
             arg({
               error: local,
               errorCode: local_2,
@@ -14333,7 +14831,7 @@ const symbol_075 = local_7d651640_2()(
         },
         logout: async () => {
           try {
-            await symbol_039.logout();
+            await symbol_038.logout();
           } catch {
           } finally {
             local(null);
@@ -14346,7 +14844,7 @@ const symbol_075 = local_7d651640_2()(
         },
         logoutAll: async () => {
           try {
-            await symbol_039.logoutAll();
+            await symbol_038.logoutAll();
           } catch {
           } finally {
             local(null);
@@ -14359,11 +14857,11 @@ const symbol_075 = local_7d651640_2()(
         },
         refreshSession: async () => {
           try {
-            const local = await symbol_039.refreshSession();
+            const local = await symbol_038.refreshSession();
             local(local.accessToken);
             return local.accessToken;
           } catch (error) {
-            if (symbol_076(error) && error.status >= 500) {
+            if (symbol_074(error) && error.status >= 500) {
               return (
                 arg({
                   status: "service_error",
@@ -14375,7 +14873,7 @@ const symbol_075 = local_7d651640_2()(
           }
         },
         fetchProfile: async () => {
-          const local = await symbol_067.getMyProfile();
+          const local = await symbol_065.getMyProfile();
           if (local.isDeleted) {
             arg({
               status: "account_deleted",
@@ -14423,8 +14921,8 @@ const symbol_075 = local_7d651640_2()(
               }
             } catch (error) {
               if (
-                symbol_076(error) &&
-                (error.code === symbol_037.ENTITY_NOT_FOUND ||
+                symbol_074(error) &&
+                (error.code === local_b9926dd3.ENTITY_NOT_FOUND ||
                   error.status === 404)
               ) {
                 arg({
@@ -14435,7 +14933,7 @@ const symbol_075 = local_7d651640_2()(
               }
             }
           } catch (error) {
-            if (symbol_076(error) && error.status >= 500) {
+            if (symbol_074(error) && error.status >= 500) {
               arg({
                 status: "service_error",
               });
@@ -14447,11 +14945,11 @@ const symbol_075 = local_7d651640_2()(
           }
         },
         deleteAccount: async () => {
-          await symbol_067.deleteAccount();
+          await symbol_065.deleteAccount();
           await arg_2().logout();
         },
         restoreAccount: async () => {
-          await symbol_067.restoreAccount();
+          await symbol_065.restoreAccount();
           await arg_2().fetchProfile();
           const { status: local } = arg_2();
           if (local === "account_deleted") {
@@ -14493,9 +14991,9 @@ const symbol_075 = local_7d651640_2()(
     },
   ),
 );
-const local_9812c6ee_3 = () => symbol_075((arg) => arg.status);
-const symbol_061 = () => symbol_075((arg) => arg.profile);
-const symbol_007 = () => symbol_075((arg) => arg.status === "authenticated");
+const local_9812c6ee_3 = () => symbol_073((arg) => arg.status);
+const symbol_060 = () => symbol_073((arg) => arg.profile);
+const symbol_006 = () => symbol_073((arg) => arg.status === "authenticated");
 const local_bc478864 = "c_screen";
 const local_8236b951 = "c_fullscreen";
 const local_1d2f8d3d = "c_image";
@@ -14514,17 +15012,17 @@ const local_58c59e98 = {
   notFound: "https://cdn.xn--d1ah4a.com/public/assets/frontend-errors/404.png",
   server: "https://cdn.xn--d1ah4a.com/public/assets/frontend-errors/500.png",
 };
-const symbol_012 = ({
+const symbol_011 = ({
   kind: arg,
   title: arg_2,
   description: arg_3,
   action: arg_4,
   fullscreen: arg_5 = false,
 }) =>
-  symbol_073("div", {
+  symbol_071("div", {
     className: `${local_00b90fb4.screen} ${arg_5 ? local_00b90fb4.fullscreen : ""}`,
     children: [
-      symbol_073("img", {
+      symbol_071("img", {
         className: local_00b90fb4.image,
         src: local_58c59e98[arg],
         alt: "",
@@ -14532,17 +15030,17 @@ const symbol_012 = ({
         height: 256,
         "aria-hidden": "true",
       }),
-      symbol_073("h1", {
+      symbol_071("h1", {
         className: local_00b90fb4.title,
         children: arg_2,
       }),
       arg_3 &&
-        symbol_073("p", {
+        symbol_071("p", {
           className: local_00b90fb4.description,
           children: arg_3,
         }),
       arg_4 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_00b90fb4.action,
           children: arg_4,
         }),
@@ -14550,38 +15048,38 @@ const symbol_012 = ({
   });
 function fn_fc99b4db({ children: arg, currentPath: arg_2 }) {
   const local = local_9812c6ee_3();
-  const local_2 = symbol_075((arg) => arg.initialize);
-  symbol_077(() => {
+  const local_2 = symbol_073((arg) => arg.initialize);
+  symbol_058(() => {
     if (local === "idle") {
       local_2();
     }
   }, [local, local_2]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local === "loading" || local === "idle") {
       return;
     }
     const local = local_e11d105a.some((arg) => arg_2.startsWith(arg));
     local === "unauthenticated" && !local
-      ? symbol_057(local_b294611d.LOGIN) ||
+      ? symbol_055(local_b294611d.LOGIN) ||
         window.location.replace(local_b294611d.LOGIN)
       : local === "needs_profile" && arg_2 !== local_b294611d.ONBOARDING
-        ? symbol_057(local_b294611d.ONBOARDING) ||
+        ? symbol_055(local_b294611d.ONBOARDING) ||
           window.location.replace(local_b294611d.ONBOARDING)
         : local === "authenticated" &&
           (arg_2 === local_b294611d.LOGIN ||
             arg_2 === local_b294611d.REGISTER ||
             arg_2 === local_b294611d.ONBOARDING) &&
-          symbol_057(local_b294611d.HOME);
+          symbol_055(local_b294611d.HOME);
   }, [local, arg_2]);
   const local_3 = local_e11d105a.some((arg) => arg_2.startsWith(arg));
   if (local === "idle" || (local === "loading" && !local_3)) {
     return null;
   }
   if (local === "service_error") {
-    return symbol_073(fn_8217e7d0, {});
+    return symbol_071(fn_8217e7d0, {});
   }
   if (local === "account_deleted") {
-    return symbol_073(fn_17127ac5, {});
+    return symbol_071(fn_17127ac5, {});
   }
   if (
     (local === "unauthenticated" && !local_3) ||
@@ -14589,20 +15087,20 @@ function fn_fc99b4db({ children: arg, currentPath: arg_2 }) {
   ) {
     return null;
   }
-  return symbol_073(symbol_063, {
+  return symbol_071(symbol_020, {
     children: arg,
   });
 }
 function fn_8217e7d0() {
-  const local = symbol_075((arg) => arg.initialize);
-  const [local_2, local_3] = symbol_056(false);
-  return symbol_073(symbol_012, {
+  const local = symbol_073((arg) => arg.initialize);
+  const [local_2, local_3] = symbol_054(false);
+  return symbol_071(symbol_011, {
     kind: "server",
     fullscreen: true,
     title: "Сервис недоступен",
     description:
       "Не удалось подключиться к серверу. Попробуйте обновить страницу или повторите попытку позже.",
-    action: symbol_073(symbol_003, {
+    action: symbol_071(symbol_003, {
       onClick: async () => {
         local_3(true);
         try {
@@ -14617,11 +15115,11 @@ function fn_8217e7d0() {
   });
 }
 function fn_17127ac5() {
-  const local = symbol_075((arg) => arg.canRestore);
-  const local_2 = symbol_075((arg) => arg.restoreDeadline);
-  const local_3 = symbol_075((arg) => arg.restoreAccount);
-  const local_4 = symbol_075((arg) => arg.logout);
-  const [local_5, local_6] = symbol_056(false);
+  const local = symbol_073((arg) => arg.canRestore);
+  const local_2 = symbol_073((arg) => arg.restoreDeadline);
+  const local_3 = symbol_073((arg) => arg.restoreAccount);
+  const local_4 = symbol_073((arg) => arg.logout);
+  const [local_5, local_6] = symbol_054(false);
   const local_7 = local_2
     ? new Date(local_2).toLocaleDateString("ru-RU", {
         day: "numeric",
@@ -14637,7 +15135,7 @@ function fn_17127ac5() {
       local_6(false);
     }
   };
-  return symbol_073("div", {
+  return symbol_071("div", {
     style: {
       display: "flex",
       alignItems: "center",
@@ -14645,7 +15143,7 @@ function fn_17127ac5() {
       minHeight: "100vh",
       padding: "24px",
     },
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       style: {
         display: "flex",
         flexDirection: "column",
@@ -14656,7 +15154,7 @@ function fn_17127ac5() {
         textAlign: "center",
       },
       children: [
-        symbol_073("h1", {
+        symbol_071("h1", {
           style: {
             fontSize: "24px",
             fontWeight: 600,
@@ -14666,7 +15164,7 @@ function fn_17127ac5() {
           children: "Аккаунт удалён",
         }),
         local_5
-          ? symbol_073("p", {
+          ? symbol_071("p", {
               style: {
                 fontSize: "15px",
                 color: "var(--text-secondary)",
@@ -14675,9 +15173,9 @@ function fn_17127ac5() {
               children: "Восстановление аккаунта...",
             })
           : local
-            ? symbol_073(symbol_063, {
+            ? symbol_071(symbol_020, {
                 children: [
-                  symbol_073("p", {
+                  symbol_071("p", {
                     style: {
                       fontSize: "15px",
                       color: "var(--text-secondary)",
@@ -14690,7 +15188,7 @@ function fn_17127ac5() {
                       ".",
                     ],
                   }),
-                  symbol_073("div", {
+                  symbol_071("div", {
                     style: {
                       display: "flex",
                       flexDirection: "column",
@@ -14700,11 +15198,11 @@ function fn_17127ac5() {
                       width: "100%",
                     },
                     children: [
-                      symbol_073(symbol_003, {
+                      symbol_071(symbol_003, {
                         onClick: local_8,
                         children: "Восстановить аккаунт",
                       }),
-                      symbol_073("button", {
+                      symbol_071("button", {
                         type: "button",
                         onClick: () => local_4(),
                         style: {
@@ -14721,9 +15219,9 @@ function fn_17127ac5() {
                   }),
                 ],
               })
-            : symbol_073(symbol_063, {
+            : symbol_071(symbol_020, {
                 children: [
-                  symbol_073("p", {
+                  symbol_071("p", {
                     style: {
                       fontSize: "15px",
                       color: "var(--text-secondary)",
@@ -14731,11 +15229,11 @@ function fn_17127ac5() {
                     },
                     children: "Срок восстановления аккаунта истёк.",
                   }),
-                  symbol_073("div", {
+                  symbol_071("div", {
                     style: {
                       marginTop: "8px",
                     },
-                    children: symbol_073(symbol_003, {
+                    children: symbol_071(symbol_003, {
                       onClick: () => local_4(),
                       children: "Выйти",
                     }),
@@ -14756,37 +15254,37 @@ const local_e5cc91d8 = {
   text: local_95ed4c70_2,
   button: local_9e87ce8c_2,
 };
-const symbol_041 = "phone-verification-required";
+export const local_7db963b6 = "phone-verification-required";
 function fn_f2614556() {
-  const [local, local_2] = symbol_056(false);
-  const local_3 = symbol_075((arg) => arg.profile?.id ?? "");
-  symbol_077(() => {
+  const [local, local_2] = symbol_054(false);
+  const local_3 = symbol_073((arg) => arg.profile?.id ?? "");
+  symbol_058(() => {
     const local = () => local_2(true);
-    window.addEventListener(symbol_041, local);
-    return () => window.removeEventListener(symbol_041, local);
+    window.addEventListener(local_7db963b6, local);
+    return () => window.removeEventListener(local_7db963b6, local);
   }, []);
   if (!local) {
     return null;
   }
   const local_4 = `https://t.me/itd_verification_bot?start=${local_3}`;
-  return symbol_073(symbol_014, {
+  return symbol_071(symbol_014, {
     onClose: () => local_2(false),
     title: "Подтверждение телефона",
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_e5cc91d8.content,
       children: [
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_e5cc91d8.icon,
-          children: symbol_073(local_00b66f33, {
+          children: symbol_071(local_00b66f33, {
             size: 48,
           }),
         }),
-        symbol_073("p", {
+        symbol_071("p", {
           className: local_e5cc91d8.text,
           children:
             "Для публикации постов и комментариев необходимо подтвердить номер телефона через Telegram-бота.",
         }),
-        symbol_073("a", {
+        symbol_071("a", {
           href: local_4,
           target: "_blank",
           rel: "noopener noreferrer",
@@ -14888,7 +15386,7 @@ function fn_bc022a61(arg) {
     vs: typeof arg.vs === "string" ? arg.vs : undefined,
   };
 }
-const symbol_068 = {
+const symbol_066 = {
   async getFeed(arg, arg_2 = {}) {
     const local = new URLSearchParams();
     local.set("limit", String(arg_2.limit || 20));
@@ -14900,7 +15398,7 @@ const symbol_068 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.posts.list}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.posts.list}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     return {
       data: local_4.data.posts.map(fn_bc022a61),
@@ -14908,7 +15406,7 @@ const symbol_068 = {
     };
   },
   async getPost(arg) {
-    const local = await local_74bb3ffb.get(local_68a3dca0.posts.single(arg));
+    const local = await local_74bb3ffb.get(local_eec5e7eb.posts.single(arg));
     return fn_bc022a61(local.data);
   },
   async getUserWall(arg, arg_2 = {}) {
@@ -14975,7 +15473,7 @@ const symbol_068 = {
       local.set("pinnedPostId", arg_2.pinnedPostId);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     return {
       data: local_4.data.posts.map(fn_bc022a61),
@@ -15014,13 +15512,13 @@ const symbol_068 = {
     }
   },
   async likePost(arg) {
-    return await local_74bb3ffb.post(local_68a3dca0.posts.like(arg));
+    return await local_74bb3ffb.post(local_eec5e7eb.posts.like(arg));
   },
   async unlikePost(arg) {
-    return await local_74bb3ffb.delete(local_68a3dca0.posts.like(arg));
+    return await local_74bb3ffb.delete(local_eec5e7eb.posts.like(arg));
   },
   async createPost(arg) {
-    return await local_74bb3ffb.post(local_68a3dca0.posts.create, {
+    return await local_74bb3ffb.post(local_eec5e7eb.posts.create, {
       content: arg.text,
       spans: arg.spans,
       wallRecipientId: arg.wallOwnerId,
@@ -15029,7 +15527,7 @@ const symbol_068 = {
     });
   },
   async createRepost(arg, arg_2) {
-    const local = await local_74bb3ffb.post(local_68a3dca0.posts.repost(arg), {
+    const local = await local_74bb3ffb.post(local_eec5e7eb.posts.repost(arg), {
       content: arg_2,
     });
     return fn_bc022a61(local);
@@ -15040,7 +15538,7 @@ const symbol_068 = {
     }
     return (
       (
-        await local_74bb3ffb.post(`${local_68a3dca0.posts.list}/stats`, {
+        await local_74bb3ffb.post(`${local_eec5e7eb.posts.list}/stats`, {
           ids: arg,
         })
       ).posts ?? []
@@ -15048,16 +15546,16 @@ const symbol_068 = {
   },
   async editPost(arg, arg_2) {
     const local = arg_2.content ?? arg_2.text;
-    await local_74bb3ffb.put(local_68a3dca0.posts.update(arg), {
+    await local_74bb3ffb.put(local_eec5e7eb.posts.update(arg), {
       content: local,
       spans: arg_2.spans,
     });
   },
   async deletePost(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.posts.delete(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.posts.delete(arg));
   },
   async restorePost(arg) {
-    await local_74bb3ffb.post(local_68a3dca0.posts.restore(arg));
+    await local_74bb3ffb.post(local_eec5e7eb.posts.restore(arg));
   },
   async getUserPosts(arg, arg_2 = {}) {
     const local = new URLSearchParams();
@@ -15074,7 +15572,7 @@ const symbol_068 = {
       local.set("pinnedPostId", arg_2.pinnedPostId);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     return {
       data: local_4.data.posts.map(fn_bc022a61),
@@ -15090,7 +15588,7 @@ const symbol_068 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.posts.likedByUser(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.posts.likedByUser(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     return {
       data: local_4.data.posts.map(fn_bc022a61),
@@ -15098,14 +15596,14 @@ const symbol_068 = {
     };
   },
   async pinPost(arg) {
-    await local_74bb3ffb.post(local_68a3dca0.posts.pin(arg));
+    await local_74bb3ffb.post(local_eec5e7eb.posts.pin(arg));
   },
   async unpinPost(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.posts.pin(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.posts.pin(arg));
   },
   async votePoll(arg, arg_2) {
     const local = await local_74bb3ffb.post(
-      local_68a3dca0.posts.pollVote(arg),
+      local_eec5e7eb.posts.pollVote(arg),
       {
         optionIds: arg_2,
       },
@@ -15113,7 +15611,7 @@ const symbol_068 = {
     return local.data ?? local;
   },
   async unrepost(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.posts.repost(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.posts.repost(arg));
   },
   async getPostsByHashtag(arg, arg_2 = {}) {
     const local = new URLSearchParams();
@@ -15124,7 +15622,7 @@ const symbol_068 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.hashtags.posts(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.hashtags.posts(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     return {
       data: local_4.data.posts.map(fn_bc022a61),
@@ -15191,7 +15689,7 @@ const local_8321e242 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.posts.comments(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.posts.comments(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     let local_5 = [];
     let local_6 = null;
@@ -15218,7 +15716,7 @@ const local_8321e242 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${local_68a3dca0.comments.replies(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${local_eec5e7eb.comments.replies(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await local_74bb3ffb.get(local_3);
     let local_5 = [];
     let local_6 = null;
@@ -15237,34 +15735,34 @@ const local_8321e242 = {
     };
   },
   async createComment(arg, arg_2, arg_3, arg_4, arg_5) {
-    return await local_74bb3ffb.post(local_68a3dca0.posts.comments(arg), {
+    return await local_74bb3ffb.post(local_eec5e7eb.posts.comments(arg), {
       content: arg_2,
       attachmentIds: arg_5?.map((arg) => arg.mediaId),
     });
   },
   async createReply(arg, arg_2, arg_3, arg_4, arg_5) {
-    return await local_74bb3ffb.post(local_68a3dca0.comments.replies(arg), {
+    return await local_74bb3ffb.post(local_eec5e7eb.comments.replies(arg), {
       content: arg_2,
       replyToUserId: arg_4,
       attachmentIds: arg_5?.map((arg) => arg.mediaId),
     });
   },
   async editComment(arg, arg_2, arg_3) {
-    await local_74bb3ffb.patch(local_68a3dca0.comments.edit(arg), {
+    await local_74bb3ffb.patch(local_eec5e7eb.comments.edit(arg), {
       content: arg_2,
     });
   },
   async deleteComment(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.comments.delete(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.comments.delete(arg));
   },
   async likeComment(arg) {
-    await local_74bb3ffb.post(local_68a3dca0.comments.like(arg));
+    await local_74bb3ffb.post(local_eec5e7eb.comments.like(arg));
   },
   async unlikeComment(arg) {
-    await local_74bb3ffb.delete(local_68a3dca0.comments.like(arg));
+    await local_74bb3ffb.delete(local_eec5e7eb.comments.like(arg));
   },
 };
-const symbol_054 = local_7d651640_2((arg, arg_2) => ({
+const symbol_052 = symbol_041((arg, arg_2) => ({
   posts: [],
   activeFeed: "global",
   isLoading: false,
@@ -15349,7 +15847,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
         error: null,
       });
       try {
-        const local = await symbol_068.getFeed(local, {
+        const local = await symbol_066.getFeed(local, {
           limit: 20,
         });
         arg({
@@ -15363,7 +15861,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
         arg({
           isLoading: false,
           isRefreshing: false,
-          error: symbol_076(error)
+          error: symbol_074(error)
             ? symbol_040(error.code, error.message)
             : "Не удалось загрузить ленту",
         });
@@ -15382,7 +15880,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
         isLoadingMore: true,
       });
       try {
-        const local = await symbol_068.getFeed(local, {
+        const local = await symbol_066.getFeed(local, {
           limit: 20,
           cursor: local_4 ?? undefined,
         });
@@ -15406,13 +15904,13 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
     attachments: arg_4 = [],
     poll: arg_5,
   }) => {
-    const local = symbol_075.getState().profile;
+    const local = symbol_073.getState().profile;
     if (!local) {
       throw new Error("Not authenticated");
     }
     try {
       const local = arg_4.map(({ mediaId: arg }) => arg);
-      const { id: local_2 } = await symbol_068.createPost({
+      const { id: local_2 } = await symbol_066.createPost({
         wallOwnerId: arg !== local.id ? arg : undefined,
         text: arg_2,
         spans: arg_3.length > 0 ? arg_3 : undefined,
@@ -15476,9 +15974,9 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
         posts: [local_4, ...arg.posts],
         highlightedPostId: local_2,
       }));
-      symbol_068.invalidateWallCache(arg);
+      symbol_066.invalidateWallCache(arg);
       try {
-        const local = await symbol_068.getPost(local_2);
+        const local = await symbol_066.getPost(local_2);
         arg((arg) => ({
           posts: arg.posts.map((arg) => {
             if (arg.id === local_2) {
@@ -15515,7 +16013,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
         currentPostError: false,
       });
       try {
-        const local = await symbol_068.getPost(arg);
+        const local = await symbol_066.getPost(arg);
         arg({
           currentPost: local,
           currentPostLoading: false,
@@ -15538,7 +16036,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
     });
   },
   editPost: async (arg, arg_2, arg_3) => {
-    await symbol_068.editPost(arg, {
+    await symbol_066.editPost(arg, {
       text: arg_2,
       spans: arg_3,
     });
@@ -15574,7 +16072,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
       },
     });
     if (local_4?.wallOwnerId) {
-      symbol_068.updatePostInWallCache(local_4.wallOwnerId, arg, {
+      symbol_066.updatePostInWallCache(local_4.wallOwnerId, arg, {
         text: arg_2,
         spans: arg_3 ?? local_4.spans,
         editedAt: local_3,
@@ -15590,7 +16088,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
       currentPost: local_2?.id === arg ? null : local_2,
     });
     try {
-      await symbol_068.deletePost(arg);
+      await symbol_066.deletePost(arg);
     } catch (error) {
       console.error("Failed to delete post:", error);
       if (local_4) {
@@ -16000,7 +16498,7 @@ const symbol_054 = local_7d651640_2((arg, arg_2) => ({
   },
   reset: () => {
     arg_2().feedMeasuredHeights.clear();
-    symbol_064(async () => {
+    symbol_062(async () => {
       const { useCommentsStore: local } = await Promise.resolve().then(
         () => local_ab34ad2e_2,
       );
@@ -16041,7 +16539,7 @@ const local_ab34ad2e = Object.freeze(
   Object.defineProperty(
     {
       __proto__: null,
-      usePostsStore: symbol_054,
+      usePostsStore: symbol_052,
     },
     Symbol.toStringTag,
     {
@@ -16049,7 +16547,7 @@ const local_ab34ad2e = Object.freeze(
     },
   ),
 );
-const symbol_020 = local_7d651640_2()(
+const symbol_019 = symbol_041()(
   symbol_042(
     (arg) => ({
       commentsSort: "popular",
@@ -16065,28 +16563,28 @@ const symbol_020 = local_7d651640_2()(
     },
   ),
 );
-const local_a1e12a9e_8 = new Map();
+const local_a1e12a9e_9 = new Map();
 const local_aad0de78_5 = 60 * 1000;
 const local_aad0de78_6 = 300 * 1000;
 const local_f06debfc_32 = 20;
 const local_f06debfc_33 = 500;
 function fn_e336e58a() {
   const local = Date.now();
-  for (const [local, local_2] of local_a1e12a9e_8.entries()) {
+  for (const [local, local_2] of local_a1e12a9e_9.entries()) {
     if (local - local_2.timestamp > local_aad0de78_6) {
-      local_a1e12a9e_8.delete(local);
+      local_a1e12a9e_9.delete(local);
     }
   }
-  if (local_a1e12a9e_8.size > local_f06debfc_32) {
-    const local = Array.from(local_a1e12a9e_8.entries()).sort(
+  if (local_a1e12a9e_9.size > local_f06debfc_32) {
+    const local = Array.from(local_a1e12a9e_9.entries()).sort(
       (arg, arg_2) => arg[1].timestamp - arg_2[1].timestamp,
     );
     local
       .slice(0, local.length - local_f06debfc_32)
-      .forEach(([arg]) => local_a1e12a9e_8.delete(arg));
+      .forEach(([arg]) => local_a1e12a9e_9.delete(arg));
   }
 }
-const symbol_018 = local_7d651640_2((arg, arg_2) => ({
+const symbol_016 = symbol_041((arg, arg_2) => ({
   comments: [],
   commentsLoading: false,
   commentsLoadingMore: false,
@@ -16102,7 +16600,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
     });
   },
   fetchComments: async (arg) => {
-    const { usePostsStore: local } = await symbol_064(async () => {
+    const { usePostsStore: local } = await symbol_062(async () => {
       const { usePostsStore: local } = await Promise.resolve().then(
         () => local_ab34ad2e,
       );
@@ -16121,9 +16619,9 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
       return;
     }
     fn_e336e58a();
-    const local_3 = symbol_020.getState().commentsSort;
+    const local_3 = symbol_019.getState().commentsSort;
     const local_4 = arg;
-    const local_5 = local_a1e12a9e_8.get(local_4);
+    const local_5 = local_a1e12a9e_9.get(local_4);
     const local_6 = Date.now();
     if (local_5 && local_5.sort === local_3) {
       if (local_6 - local_5.timestamp < local_aad0de78_5) {
@@ -16140,7 +16638,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
           })
           .then((arg) => {
             const local = arg.data;
-            local_a1e12a9e_8.set(local_4, {
+            local_a1e12a9e_9.set(local_4, {
               comments: local,
               hasMore: arg.nextCursor !== null,
               nextCursor: arg.nextCursor,
@@ -16182,7 +16680,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
         sort: local_3,
       });
       const local_2 = local.data;
-      local_a1e12a9e_8.set(local_4, {
+      local_a1e12a9e_9.set(local_4, {
         comments: local_2,
         hasMore: local.nextCursor !== null,
         nextCursor: local.nextCursor,
@@ -16210,7 +16708,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
     if (local || !local_2) {
       return;
     }
-    const local_4 = symbol_020.getState().commentsSort;
+    const local_4 = symbol_019.getState().commentsSort;
     arg({
       commentsLoadingMore: true,
     });
@@ -16364,7 +16862,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
             undefined,
             arg_5,
           );
-      const local_2 = symbol_075.getState().profile;
+      const local_2 = symbol_073.getState().profile;
       if (local_2) {
         const local = (local.attachments || [])
           .filter((arg) => typeof arg === "object" && arg !== null)
@@ -16434,7 +16932,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
               }),
         );
       }
-      const { usePostsStore: local_3 } = await symbol_064(async () => {
+      const { usePostsStore: local_3 } = await symbol_062(async () => {
         const { usePostsStore: local } = await Promise.resolve().then(
           () => local_ab34ad2e,
         );
@@ -16454,16 +16952,16 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
           },
         });
       }
-      const local_5 = symbol_020.getState().commentsSort;
-      const local_6 = local_a1e12a9e_8.get(arg);
+      const local_5 = symbol_019.getState().commentsSort;
+      const local_6 = local_a1e12a9e_9.get(arg);
       if (local_6) {
-        local_a1e12a9e_8.set(arg, {
+        local_a1e12a9e_9.set(arg, {
           ...local_6,
           comments: arg_2().comments,
           timestamp: Date.now(),
         });
       } else {
-        local_a1e12a9e_8.set(arg, {
+        local_a1e12a9e_9.set(arg, {
           comments: arg_2().comments,
           hasMore: arg_2().commentsHasMore,
           nextCursor: arg_2().commentsNextCursor,
@@ -16573,7 +17071,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
         }),
       });
     }
-    const { usePostsStore: local_5 } = await symbol_064(async () => {
+    const { usePostsStore: local_5 } = await symbol_062(async () => {
       const { usePostsStore: local } = await Promise.resolve().then(
         () => local_ab34ad2e,
       );
@@ -16614,7 +17112,7 @@ const symbol_018 = local_7d651640_2((arg, arg_2) => ({
     });
   },
   reset: () => {
-    local_a1e12a9e_8.clear();
+    local_a1e12a9e_9.clear();
     arg({
       comments: [],
       commentsLoading: false,
@@ -16629,7 +17127,7 @@ const local_ab34ad2e_2 = Object.freeze(
   Object.defineProperty(
     {
       __proto__: null,
-      useCommentsStore: symbol_018,
+      useCommentsStore: symbol_016,
     },
     Symbol.toStringTag,
     {
@@ -16691,7 +17189,7 @@ function fn_c7a41549(arg) {
     arg.intersectionRatio > 0.95
   );
 }
-class clazz_bbe39ed9 {
+class clazz_21748117 {
   observer = null;
   elementToPostId = new WeakMap();
   posts = new Map();
@@ -16905,7 +17403,7 @@ class clazz_bbe39ed9 {
     const { body: local_3, headers: local_4 } =
       await this.maybeCompress(local_2);
     local_74bb3ffb
-      .post(local_68a3dca0.posts.dwellLog, local_3, {
+      .post(local_eec5e7eb.posts.dwellLog, local_3, {
         headers: local_4,
       })
       .catch(() => {});
@@ -16918,7 +17416,7 @@ class clazz_bbe39ed9 {
     this.buffer = [];
     local_74bb3ffb
       .post(
-        local_68a3dca0.posts.dwellLog,
+        local_eec5e7eb.posts.dwellLog,
         {
           sid: this.sessionId,
           e: local,
@@ -16930,20 +17428,20 @@ class clazz_bbe39ed9 {
       .catch(() => {});
   }
 }
-const local_a1e12a9e_9 = new clazz_bbe39ed9();
+const local_a1e12a9e_10 = new clazz_21748117();
 function fn_2df383fe(arg, arg_2, arg_3, arg_4 = "", arg_5 = undefined) {
-  symbol_077(() => {
+  symbol_058(() => {
     const local = arg_2.current;
     if (!(!local || !arg_5)) {
-      local_a1e12a9e_9.observe(local, arg, arg_3, arg_4, arg_5);
+      local_a1e12a9e_10.observe(local, arg, arg_3, arg_4, arg_5);
       return () => {
-        local_a1e12a9e_9.unobserve(local);
+        local_a1e12a9e_10.unobserve(local);
       };
     }
   }, [arg, arg_2, arg_3, arg_4, arg_5]);
 }
 function fn_61d7292b(arg) {
-  const local = symbol_054((arg) => arg.postStatsCache[arg.id]);
+  const local = symbol_052((arg) => arg.postStatsCache[arg.id]);
   return (
     local || {
       likesTotal: arg.reactions.total,
@@ -16973,8 +17471,8 @@ function fn_19ce2071() {
   }
 }
 function fn_3215cb92() {
-  const [local, local_2] = symbol_056(fn_19ce2071);
-  symbol_077(() => {
+  const [local, local_2] = symbol_054(fn_19ce2071);
+  symbol_058(() => {
     const local = (arg) => {
       if (!(arg.key !== null && arg.key !== local_d4f3f2a4)) {
         local_2(fn_19ce2071());
@@ -16985,23 +17483,23 @@ function fn_3215cb92() {
   }, []);
   return local;
 }
-const local_f88ff501 = symbol_078(() =>
-  symbol_064(
+const local_f88ff501 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/changelog-modal.js"),
-    local_5b673d6a([8, 9]),
+    local_80136556([8, 9]),
   ).then((arg) => ({
     default: arg.ChangelogModal,
   })),
 );
-const local_f2c3a8a6_2 = symbol_078(() =>
-  symbol_064(
+const local_f2c3a8a6_2 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/subscription-modal.js"),
-    local_5b673d6a([0, 1, 2, 3, 4, 5, 6, 7]),
+    local_80136556([0, 1, 2, 3, 4, 5, 6, 7]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
 );
-const local_10cf883a = ({
+const local_b489a05a = ({
   href: arg,
   icon: arg_2,
   children: arg_3,
@@ -17009,10 +17507,10 @@ const local_10cf883a = ({
   onActiveClick: arg_5,
   isActive: arg_6 = false,
 }) => {
-  const [local] = symbol_045();
+  const [local] = symbol_044();
   const local_2 = local.url || "./site/index.html";
   const local_3 = local_2 === arg || local_2.startsWith(`${arg}/`) || arg_6;
-  return symbol_073("a", {
+  return symbol_071("a", {
     href: arg,
     className: `${local_bd6a6a7b.navItem} ${local_3 ? local_bd6a6a7b.active : ""}`,
     onClick: (arg) => {
@@ -17022,44 +17520,44 @@ const local_10cf883a = ({
       }
     },
     children: [
-      symbol_073("span", {
+      symbol_071("span", {
         className: local_bd6a6a7b.iconWrapper,
         children: [
           arg_2,
           arg_4 !== undefined &&
             arg_4 > 0 &&
-            symbol_073("span", {
+            symbol_071("span", {
               className: local_bd6a6a7b.badge,
               children: arg_4 > 99 ? "99+" : arg_4,
             }),
         ],
       }),
-      symbol_073("span", {
+      symbol_071("span", {
         children: arg_3,
       }),
     ],
   });
 };
 const local_6ba9fd1a = (arg) =>
-  symbol_073(local_10cf883a, {
+  symbol_071(local_b489a05a, {
     ...arg,
   });
-const local_610f3303 = () => {
-  const [local] = symbol_045();
-  const local_2 = symbol_054((arg) => arg.fetchFeed);
-  const local_3 = symbol_054((arg) => arg.isRefreshing);
-  const local_4 = symbol_075((arg) => arg.logout);
-  const local_5 = symbol_007();
-  const local_6 = symbol_061();
+const local_54710c20 = () => {
+  const [local] = symbol_044();
+  const local_2 = symbol_052((arg) => arg.fetchFeed);
+  const local_3 = symbol_052((arg) => arg.isRefreshing);
+  const local_4 = symbol_073((arg) => arg.logout);
+  const local_5 = symbol_006();
+  const local_6 = symbol_060();
   const local_7 = local_9812c6ee();
   const local_8 = fn_3215cb92();
   const { initialize: local_9, disconnectSSE: local_10 } = local_e4a1ecd0();
-  const [local_11, local_12] = symbol_056(false);
-  const [local_13, local_14] = symbol_056(false);
+  const [local_11, local_12] = symbol_054(false);
+  const [local_13, local_14] = symbol_054(false);
   const local_15 = symbol_035();
   const local_16 = symbol_036((arg) => arg.fetchPortal);
   const local_17 = local_6?.username ? `/@${local_6.username}` : "/profile";
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_5) {
       local_9();
     }
@@ -17067,10 +17565,10 @@ const local_610f3303 = () => {
       local_10();
     };
   }, [local_5, local_9, local_10]);
-  symbol_077(() => {
+  symbol_058(() => {
     local_16();
   }, [local_16]);
-  const local_18 = symbol_069(() => {
+  const local_18 = symbol_067(() => {
     if (window.scrollY > 1) {
       window.scrollTo({
         top: 0,
@@ -17080,7 +17578,7 @@ const local_610f3303 = () => {
       local_2(true);
     }
   }, [local_2]);
-  const local_19 = symbol_069(() => {
+  const local_19 = symbol_067(() => {
     local_4();
   }, [local_4]);
   const local_20 = symbol_021(() => {
@@ -17100,50 +17598,50 @@ const local_610f3303 = () => {
   if (local_20) {
     return null;
   }
-  return symbol_073("aside", {
+  return symbol_071("aside", {
     className: local_bd6a6a7b.aside,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_bd6a6a7b.asideTop,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_bd6a6a7b.asideBrand,
             children: [
-              symbol_073(symbol_038, {}),
-              symbol_073("button", {
+              symbol_071(symbol_037, {}),
+              symbol_071("button", {
                 className: local_bd6a6a7b.asideBrandVersion,
                 onClick: () => local_12(true),
                 title: "Что нового",
-                children: ["v", "1.1.2"],
+                children: ["v", "1.1.4"],
               }),
             ],
           }),
-          symbol_073("nav", {
+          symbol_071("nav", {
             className: local_bd6a6a7b.nav,
             children: [
-              symbol_073(local_6ba9fd1a, {
+              symbol_071(local_6ba9fd1a, {
                 href: "./site/index.html",
                 icon: local_3
-                  ? symbol_073(symbol_048, {})
-                  : symbol_073(local_fa5c2464, {}),
+                  ? symbol_071(symbol_047, {})
+                  : symbol_071(local_fa5c2464, {}),
                 onActiveClick: local_18,
                 children: "Лента",
               }),
-              symbol_073(local_6ba9fd1a, {
+              symbol_071(local_6ba9fd1a, {
                 href: "/search",
-                icon: symbol_073(local_e33d719c, {}),
+                icon: symbol_071(local_e33d719c, {}),
                 children: "Поиск",
               }),
-              symbol_073(local_6ba9fd1a, {
+              symbol_071(local_6ba9fd1a, {
                 href: "/shop",
-                icon: symbol_073(local_1b669a11, {}),
+                icon: symbol_071(local_1b669a11, {}),
                 badge: local_8,
                 children: "Магаз",
               }),
-              symbol_073(fn_1061c07b, {
+              symbol_071(fn_1061c07b, {
                 path: "/event",
                 children: ({ matches: arg }) =>
-                  symbol_073("a", {
+                  symbol_071("a", {
                     href:
                       local_15.active && local_15.url ? local_15.url : "/event",
                     target:
@@ -17155,28 +17653,28 @@ const local_610f3303 = () => {
                     className: `${local_bd6a6a7b.portalButton} ${local_15.active ? local_bd6a6a7b.portalActive : ""} ${arg ? local_bd6a6a7b.active : ""}`,
                     title: "Ивент",
                     children: [
-                      symbol_073("img", {
+                      symbol_071("img", {
                         src: local_15.active
                           ? "/assets/portal/portal-active.gif"
                           : "./assets/portal-inactive.png",
                         alt: "Ивент",
                         className: local_bd6a6a7b.portalImage,
                       }),
-                      symbol_073("span", {
+                      symbol_071("span", {
                         children: "Ивент",
                       }),
                     ],
                   }),
               }),
-              symbol_073(local_6ba9fd1a, {
+              symbol_071(local_6ba9fd1a, {
                 href: "/notifications",
-                icon: symbol_073(symbol_050, {}),
+                icon: symbol_071(symbol_049, {}),
                 badge: local_7,
                 children: "Уведомления",
               }),
-              symbol_073(local_10cf883a, {
+              symbol_071(local_b489a05a, {
                 href: local_17,
-                icon: symbol_073(symbol_051, {}),
+                icon: symbol_071(symbol_050, {}),
                 isActive: local_21,
                 children: "Профиль",
               }),
@@ -17184,63 +17682,63 @@ const local_610f3303 = () => {
           }),
         ],
       }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_bd6a6a7b.asideBottom,
         children: local_5
-          ? symbol_073(symbol_063, {
+          ? symbol_071(symbol_020, {
               children: [
                 !local_6?.subscription?.isActive &&
-                  symbol_073("button", {
+                  symbol_071("button", {
                     className: local_bd6a6a7b.logoutButton,
                     onClick: () => local_14(true),
                     children: [
-                      symbol_073("span", {
+                      symbol_071("span", {
                         children: "⭐",
                       }),
-                      symbol_073("span", {
+                      symbol_071("span", {
                         children: "ИТД НУКСТА",
                       }),
                     ],
                   }),
-                symbol_073("button", {
+                symbol_071("button", {
                   className: local_bd6a6a7b.logoutButton,
                   onClick: local_19,
                   children: [
-                    symbol_073(local_b6621a61, {
+                    symbol_071(symbol_045, {
                       size: 20,
                     }),
-                    symbol_073("span", {
+                    symbol_071("span", {
                       children: "Выйти",
                     }),
                   ],
                 }),
               ],
             })
-          : symbol_073("a", {
+          : symbol_071("a", {
               className: local_bd6a6a7b.logoutButton,
               href: local_b294611d.LOGIN,
               children: [
-                symbol_073(symbol_051, {
+                symbol_071(symbol_050, {
                   size: 20,
                 }),
-                symbol_073("span", {
+                symbol_071("span", {
                   children: "Войти",
                 }),
               ],
             }),
       }),
       local_11 &&
-        symbol_073(symbol_062, {
+        symbol_071(symbol_061, {
           fallback: null,
-          children: symbol_073(local_f88ff501, {
+          children: symbol_071(local_f88ff501, {
             isOpen: local_11,
             onClose: () => local_12(false),
           }),
         }),
       local_13 &&
-        symbol_073(symbol_062, {
+        symbol_071(symbol_061, {
           fallback: null,
-          children: symbol_073(local_f2c3a8a6_2, {
+          children: symbol_071(local_f2c3a8a6_2, {
             isOpen: local_13,
             onClose: () => local_14(false),
           }),
@@ -17259,7 +17757,7 @@ const local_960709d8 = {
   legalLinks: local_e4028826,
 };
 const local_945b98e5 = () => {
-  const [local] = symbol_045();
+  const [local] = symbol_044();
   if (
     symbol_021(() => {
       const local = local.url || "./site/index.html";
@@ -17268,47 +17766,47 @@ const local_945b98e5 = () => {
   ) {
     return null;
   }
-  return symbol_073("aside", {
+  return symbol_071("aside", {
     className: local_960709d8.sidebar,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_960709d8.sidebarContent,
       }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_960709d8.sidebarBottom,
         children: [
-          symbol_073("ul", {
+          symbol_071("ul", {
             className: local_960709d8.legalLinks,
             children: [
-              symbol_073("li", {
-                children: symbol_073("a", {
+              symbol_071("li", {
+                children: symbol_071("a", {
                   href: "https://статус.итд.com",
                   target: "_blank",
                   rel: "noopener noreferrer",
                   children: "Статус серверов",
                 }),
               }),
-              symbol_073("li", {
-                children: symbol_073("a", {
+              symbol_071("li", {
+                children: symbol_071("a", {
                   href: "/terms",
                   children: "Условия использования",
                 }),
               }),
-              symbol_073("li", {
-                children: symbol_073("a", {
+              symbol_071("li", {
+                children: symbol_071("a", {
                   href: "/privacy",
                   children: "Конфиденциальность",
                 }),
               }),
-              symbol_073("li", {
-                children: symbol_073("a", {
+              symbol_071("li", {
+                children: symbol_071("a", {
                   href: "/cookies",
                   children: "Политика Cookies",
                 }),
               }),
             ],
           }),
-          symbol_073("span", {
+          symbol_071("span", {
             className: local_960709d8.copyright,
             children: "© 2026 ООО «ИТД»",
           }),
@@ -17329,7 +17827,7 @@ const local_165b4cbe_2 = "c_iconWrapper";
 const local_3401e491_2 = "c_portalImage";
 const local_8ae6030b = "c_portalImageActive";
 const local_111bfc92_3 = "c_badge";
-const local_6a5ba56f = {
+const local_236f2925 = {
   mobileNavigationWrapper: local_05ae2d1f,
   navigation: local_abaccb0a,
   indicator: local_c8bbfbe3,
@@ -17400,7 +17898,7 @@ function fn_7135e770(arg, arg_2) {
     },
   );
 }
-function symbol_016(arg) {
+function symbol_015(arg) {
   const local = local_eff139f9.useRef(undefined);
   return (arg) => {
     const local = arg(arg);
@@ -17458,96 +17956,96 @@ const local_51fa1d31 = {
   likeCount: local_0a85d740,
   list: local_e9ccbd22,
 };
-function fn_1844e7b7(arg) {
+function fn_ec23fd9a(arg) {
   switch (arg) {
     case "short":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_51fa1d31.body,
-        children: symbol_073("div", {
+        children: symbol_071("div", {
           className: `${local_51fa1d31.shimmer} ${local_51fa1d31.line} ${local_51fa1d31.w50}`,
         }),
       });
     case "medium":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_51fa1d31.body,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_51fa1d31.shimmer} ${local_51fa1d31.line} ${local_51fa1d31.w100}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_51fa1d31.shimmer} ${local_51fa1d31.line} ${local_51fa1d31.w65}`,
           }),
         ],
       });
     case "long":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_51fa1d31.body,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_51fa1d31.shimmer} ${local_51fa1d31.line} ${local_51fa1d31.w100}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_51fa1d31.shimmer} ${local_51fa1d31.line} ${local_51fa1d31.w85}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_51fa1d31.shimmer} ${local_51fa1d31.line} ${local_51fa1d31.w40}`,
           }),
         ],
       });
   }
 }
-function fn_10dc4524({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
+function fn_65100612({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
   const local = arg_2
     ? {
         "--shimmer-delay": `${arg_2}ms`,
       }
     : undefined;
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_51fa1d31.skeleton,
     "aria-hidden": "true",
     style: local,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_51fa1d31.comment,
       children: [
-        symbol_073("div", {
+        symbol_071("div", {
           className: `${local_51fa1d31.shimmer} ${local_51fa1d31.avatar}`,
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_51fa1d31.content,
           children: [
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_51fa1d31.header,
               children: [
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_51fa1d31.headerLeft,
                   children: [
-                    symbol_073("div", {
+                    symbol_071("div", {
                       className: `${local_51fa1d31.shimmer} ${local_51fa1d31.name}`,
                     }),
-                    symbol_073("div", {
+                    symbol_071("div", {
                       className: `${local_51fa1d31.shimmer} ${local_51fa1d31.time}`,
                     }),
                   ],
                 }),
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_51fa1d31.shimmer} ${local_51fa1d31.more}`,
                 }),
               ],
             }),
-            fn_1844e7b7(arg),
-            symbol_073("div", {
+            fn_ec23fd9a(arg),
+            symbol_071("div", {
               className: local_51fa1d31.actions,
               children: [
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_51fa1d31.shimmer} ${local_51fa1d31.replyLabel}`,
                 }),
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_51fa1d31.likeBtn,
                   children: [
-                    symbol_073("div", {
+                    symbol_071("div", {
                       className: `${local_51fa1d31.shimmer} ${local_51fa1d31.likeIcon}`,
                     }),
-                    symbol_073("div", {
+                    symbol_071("div", {
                       className: `${local_51fa1d31.shimmer} ${local_51fa1d31.likeCount}`,
                     }),
                   ],
@@ -17562,7 +18060,7 @@ function fn_10dc4524({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
 }
 const local_82346740 = ["medium", "short", "long", "medium", "short"];
 function fn_4392d77d({ count: arg = 4 }) {
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_51fa1d31.list,
     role: "status",
     "aria-busy": "true",
@@ -17573,8 +18071,8 @@ function fn_4392d77d({ count: arg = 4 }) {
         length: arg,
       },
       (arg, arg_2) =>
-        symbol_073(
-          fn_10dc4524,
+        symbol_071(
+          fn_65100612,
           {
             variant: local_82346740[arg_2 % local_82346740.length],
             delayMs: arg_2 * 120,
@@ -17607,9 +18105,9 @@ const local_54b59c52 = {
   multipleChoice: false,
 };
 function fn_79fd0324() {
-  const [local, local_2] = symbol_056(false);
-  const [local_3, local_4] = symbol_056(local_54b59c52);
-  const local_5 = symbol_069((arg) => {
+  const [local, local_2] = symbol_054(false);
+  const [local_3, local_4] = symbol_054(local_54b59c52);
+  const local_5 = symbol_067((arg) => {
     if (arg.length <= local_58bcf8ef.MAX_POLL_QUESTION_LENGTH) {
       local_4((arg) => ({
         ...arg,
@@ -17617,7 +18115,7 @@ function fn_79fd0324() {
       }));
     }
   }, []);
-  const local_6 = symbol_069((arg, arg_2) => {
+  const local_6 = symbol_067((arg, arg_2) => {
     if (arg_2.length <= local_58bcf8ef.MAX_POLL_OPTION_LENGTH) {
       local_4((arg) => ({
         ...arg,
@@ -17633,7 +18131,7 @@ function fn_79fd0324() {
       }));
     }
   }, []);
-  const local_7 = symbol_069(() => {
+  const local_7 = symbol_067(() => {
     if (local_3.options.length < local_58bcf8ef.MAX_POLL_OPTIONS) {
       local_4((arg) => ({
         ...arg,
@@ -17647,7 +18145,7 @@ function fn_79fd0324() {
       }));
     }
   }, [local_3.options.length]);
-  const local_8 = symbol_069(
+  const local_8 = symbol_067(
     (arg) => {
       if (local_3.options.length > local_58bcf8ef.MIN_POLL_OPTIONS) {
         local_4((arg) => ({
@@ -17658,20 +18156,20 @@ function fn_79fd0324() {
     },
     [local_3.options.length],
   );
-  const local_9 = symbol_069(() => {
+  const local_9 = symbol_067(() => {
     local_4((arg) => ({
       ...arg,
       multipleChoice: !arg.multipleChoice,
     }));
   }, []);
-  const local_10 = symbol_069(() => {
+  const local_10 = symbol_067(() => {
     local_2(false);
     local_4(local_54b59c52);
   }, []);
-  const local_11 = symbol_069(() => {
+  const local_11 = symbol_067(() => {
     local_2((arg) => !arg);
   }, []);
-  const local_12 = symbol_069(() => {
+  const local_12 = symbol_067(() => {
     if (!local) {
       return true;
     }
@@ -17679,7 +18177,7 @@ function fn_79fd0324() {
     const local_2 = local_3.options.filter((arg) => arg.text.trim().length > 0);
     return local && local_2.length >= local_58bcf8ef.MIN_POLL_OPTIONS;
   }, [local, local_3]);
-  const local_13 = symbol_069(() => {
+  const local_13 = symbol_067(() => {
     if (!(!local || !local_12())) {
       return {
         question: local_3.question.trim(),
@@ -17692,7 +18190,7 @@ function fn_79fd0324() {
       };
     }
   }, [local, local_12, local_3]);
-  const local_14 = symbol_069(() => {
+  const local_14 = symbol_067(() => {
     local_2(false);
     local_4(local_54b59c52);
   }, []);
@@ -17712,14 +18210,14 @@ function fn_79fd0324() {
   };
 }
 function fn_94884e4d(arg = 10, arg_2 = false) {
-  const [local, local_2] = symbol_056([]);
-  const [local_3, local_4] = symbol_056([]);
+  const [local, local_2] = symbol_054([]);
+  const [local_3, local_4] = symbol_054([]);
   const local_5 = symbol_002(null);
   const local_6 = symbol_002(local);
   const local_7 = symbol_002(local_3);
   local_6.current = local;
   local_7.current = local_3;
-  symbol_077(
+  symbol_058(
     () => () => {
       local_6.current.forEach((arg) => URL.revokeObjectURL(arg.previewUrl));
       local_7.current.forEach((arg) => URL.revokeObjectURL(arg.previewUrl));
@@ -17733,21 +18231,21 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
   const local_10 =
     local.some((arg) => arg.type === "image") ||
     local_3.some((arg) => arg.type === "image");
-  const local_11 = symbol_069(() => {
+  const local_11 = symbol_067(() => {
     local_5.current?.click();
   }, []);
-  const local_12 = symbol_069(
+  const local_12 = symbol_067(
     async (arg) => {
-      const local = symbol_070.isValidVideoType(arg);
-      const local_2 = symbol_070.isValidImageType(arg);
+      const local = symbol_068.isValidVideoType(arg);
+      const local_2 = symbol_068.isValidImageType(arg);
       if (local && !arg_2) {
-        symbol_072.error(
+        symbol_070.error(
           "Загрузка видео доступна только верифицированным пользователям",
         );
         return;
       }
       if (!local_2 && !local) {
-        symbol_072.error("Неподдерживаемый формат файла");
+        symbol_070.error("Неподдерживаемый формат файла");
         return;
       }
       const local_3 = local_6.current;
@@ -17759,15 +18257,15 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
         local_3.some((arg) => arg.type === "image") ||
         local_4.some((arg) => arg.type === "image");
       if (local && local_6) {
-        symbol_072.error("Нельзя добавить видео вместе с изображениями");
+        symbol_070.error("Нельзя добавить видео вместе с изображениями");
         return;
       }
       if (local_2 && local_5) {
-        symbol_072.error("Нельзя добавить изображения вместе с видео");
+        symbol_070.error("Нельзя добавить изображения вместе с видео");
         return;
       }
       if (local && local_5) {
-        symbol_072.error("Можно загрузить только 1 видео");
+        symbol_070.error("Можно загрузить только 1 видео");
         return;
       }
       const local_7 = `upload-${Date.now()}-${Math.random().toString(36).slice(2)}`;
@@ -17784,7 +18282,7 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
         },
       ]);
       try {
-        const local = await symbol_070.uploadMedia(arg);
+        const local = await symbol_068.uploadMedia(arg);
         local_4((arg) => arg.filter((arg) => arg.id !== local_7));
         local_2((arg) => [
           ...arg,
@@ -17798,19 +18296,19 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
         ]);
       } catch (error) {
         let local = "Ошибка загрузки";
-        if (symbol_076(error)) {
+        if (symbol_074(error)) {
           local = symbol_040(error.code, error.message);
         } else if (error instanceof Error) {
           local = error.message;
         }
-        symbol_072.error(local);
+        symbol_070.error(local);
         local_4((arg) => arg.filter((arg) => arg.id !== local_7));
         URL.revokeObjectURL(local_8);
       }
     },
     [arg_2],
   );
-  const local_13 = symbol_069(
+  const local_13 = symbol_067(
     (arg) => {
       const local = arg.target;
       const local_2 = local.files;
@@ -17827,7 +18325,7 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
     },
     [local.length, local_3.length, arg, local_12],
   );
-  const local_14 = symbol_069((arg) => {
+  const local_14 = symbol_067((arg) => {
     local_2((arg) => {
       const local = arg.find((arg) => arg.id === arg);
       if (local) {
@@ -17843,13 +18341,13 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
       return arg.filter((arg) => arg.id !== arg);
     });
   }, []);
-  const local_15 = symbol_069(
+  const local_15 = symbol_067(
     (arg) => {
       const local = arg.filter((arg) => {
         if (arg_2) {
-          return symbol_070.isValidMediaType(arg);
+          return symbol_068.isValidMediaType(arg);
         }
-        return symbol_070.isValidImageType(arg);
+        return symbol_068.isValidImageType(arg);
       });
       if (local.length === 0) {
         return;
@@ -17862,7 +18360,7 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
     },
     [arg, local_12, arg_2],
   );
-  const local_16 = symbol_069(
+  const local_16 = symbol_067(
     async (arg) => {
       const [local, local_2] = arg.split(",");
       const local_3 = local.match(/:(.*?);/)?.[1] || "image/png";
@@ -17881,7 +18379,7 @@ function fn_94884e4d(arg = 10, arg_2 = false) {
     },
     [local_12],
   );
-  const local_17 = symbol_069(() => {
+  const local_17 = symbol_067(() => {
     local.forEach((arg) => URL.revokeObjectURL(arg.previewUrl));
     local_3.forEach((arg) => URL.revokeObjectURL(arg.previewUrl));
     local_2([]);
@@ -17937,7 +18435,7 @@ const local_c2e35764 = "c_addOption";
 const local_f076a584 = "c_pollFooter";
 const local_7da401cc = "c_pollToggle";
 const local_6ab69625_3 = "c_active";
-const local_6930e397 = {
+const local_27c2efda = {
   form: local_7ab56d01,
   dragActive: local_8c3908b1,
   whatsNew: local_e78cb809,
@@ -17976,46 +18474,46 @@ const local_6930e397 = {
 };
 function fn_12ea3240({ src: arg, type: arg_2 }) {
   if (arg_2 === "video") {
-    return symbol_073("div", {
-      className: local_6930e397.videoPreviewWrapper,
+    return symbol_071("div", {
+      className: local_27c2efda.videoPreviewWrapper,
       children: [
-        symbol_073("video", {
+        symbol_071("video", {
           src: arg,
           preload: "metadata",
         }),
-        symbol_073("div", {
-          className: local_6930e397.videoPlayIcon,
-          children: symbol_073(local_59d4f3fb, {
+        symbol_071("div", {
+          className: local_27c2efda.videoPlayIcon,
+          children: symbol_071(local_59d4f3fb, {
             size: 24,
           }),
         }),
       ],
     });
   }
-  return symbol_073("img", {
+  return symbol_071("img", {
     src: arg,
     alt: "",
   });
 }
-function fn_5b2965e1({ images: arg, uploadingImages: arg_2, onRemove: arg_3 }) {
+function fn_5853330e({ images: arg, uploadingImages: arg_2, onRemove: arg_3 }) {
   if (arg.length > 0 || arg_2.length > 0) {
-    return symbol_073("div", {
-      className: local_6930e397.attachments,
+    return symbol_071("div", {
+      className: local_27c2efda.attachments,
       children: [
         arg.map((arg) =>
-          symbol_073(
+          symbol_071(
             "div",
             {
-              className: local_6930e397.attachmentPreview,
+              className: local_27c2efda.attachmentPreview,
               children: [
-                symbol_073(fn_12ea3240, {
+                symbol_071(fn_12ea3240, {
                   src: arg.previewUrl,
                   type: arg.type,
                 }),
-                symbol_073("button", {
-                  className: local_6930e397.removeAttachment,
+                symbol_071("button", {
+                  className: local_27c2efda.removeAttachment,
                   onClick: () => arg_3(arg.id),
-                  children: symbol_073(symbol_049, {}),
+                  children: symbol_071(symbol_048, {}),
                 }),
               ],
             },
@@ -18023,34 +18521,34 @@ function fn_5b2965e1({ images: arg, uploadingImages: arg_2, onRemove: arg_3 }) {
           ),
         ),
         arg_2.map((arg) =>
-          symbol_073(
+          symbol_071(
             "div",
             {
-              className: `${local_6930e397.attachmentPreview} ${arg.error ? local_6930e397.uploadError : local_6930e397.uploading}`,
+              className: `${local_27c2efda.attachmentPreview} ${arg.error ? local_27c2efda.uploadError : local_27c2efda.uploading}`,
               children: [
-                symbol_073(fn_12ea3240, {
+                symbol_071(fn_12ea3240, {
                   src: arg.previewUrl,
                   type: arg.type,
                 }),
                 !arg.error &&
-                  symbol_073("div", {
-                    className: local_6930e397.uploadOverlay,
-                    children: symbol_073("div", {
-                      className: local_6930e397.spinner,
+                  symbol_071("div", {
+                    className: local_27c2efda.uploadOverlay,
+                    children: symbol_071("div", {
+                      className: local_27c2efda.spinner,
                     }),
                   }),
                 arg.error &&
-                  symbol_073("div", {
-                    className: local_6930e397.errorOverlay,
-                    children: symbol_073("span", {
-                      className: local_6930e397.errorText,
+                  symbol_071("div", {
+                    className: local_27c2efda.errorOverlay,
+                    children: symbol_071("span", {
+                      className: local_27c2efda.errorText,
                       children: arg.error,
                     }),
                   }),
-                symbol_073("button", {
-                  className: local_6930e397.removeAttachment,
+                symbol_071("button", {
+                  className: local_27c2efda.removeAttachment,
                   onClick: () => arg_3(arg.id),
-                  children: symbol_073(symbol_049, {}),
+                  children: symbol_071(symbol_048, {}),
                 }),
               ],
             },
@@ -18071,51 +18569,51 @@ function fn_9716bb9e({
   onMultipleChoiceToggle: arg_6,
   onClose: arg_7,
 }) {
-  return symbol_073("div", {
-    className: local_6930e397.pollContainer,
+  return symbol_071("div", {
+    className: local_27c2efda.pollContainer,
     children: [
-      symbol_073("div", {
-        className: local_6930e397.pollHeader,
+      symbol_071("div", {
+        className: local_27c2efda.pollHeader,
         children: [
-          symbol_073("span", {
-            className: local_6930e397.pollTitle,
+          symbol_071("span", {
+            className: local_27c2efda.pollTitle,
             children: "Опрос",
           }),
-          symbol_073("button", {
-            className: local_6930e397.pollClose,
+          symbol_071("button", {
+            className: local_27c2efda.pollClose,
             onClick: arg_7,
-            children: symbol_073(symbol_049, {}),
+            children: symbol_071(symbol_048, {}),
           }),
         ],
       }),
-      symbol_073("input", {
+      symbol_071("input", {
         type: "text",
-        className: local_6930e397.pollQuestion,
+        className: local_27c2efda.pollQuestion,
         placeholder: "Вопрос опроса",
         value: arg.question,
         onInput: (arg) => arg_2(arg.target.value),
       }),
-      symbol_073("div", {
-        className: local_6930e397.pollOptions,
+      symbol_071("div", {
+        className: local_27c2efda.pollOptions,
         children: arg.options.map((arg, arg_2) =>
-          symbol_073(
+          symbol_071(
             "div",
             {
-              className: local_6930e397.pollOptionRow,
+              className: local_27c2efda.pollOptionRow,
               children: [
-                symbol_073("input", {
+                symbol_071("input", {
                   type: "text",
-                  className: local_6930e397.pollOption,
+                  className: local_27c2efda.pollOption,
                   placeholder: `Вариант ${arg_2 + 1}`,
                   value: arg.text,
                   maxLength: 50,
                   onInput: (arg) => arg_3(arg.id, arg.target.value),
                 }),
                 arg.options.length > local_58bcf8ef.MIN_POLL_OPTIONS &&
-                  symbol_073("button", {
-                    className: local_6930e397.removeOption,
+                  symbol_071("button", {
+                    className: local_27c2efda.removeOption,
                     onClick: () => arg_5(arg.id),
-                    children: symbol_073(symbol_049, {}),
+                    children: symbol_071(symbol_048, {}),
                   }),
               ],
             },
@@ -18124,27 +18622,27 @@ function fn_9716bb9e({
         ),
       }),
       arg.options.length < local_58bcf8ef.MAX_POLL_OPTIONS &&
-        symbol_073("button", {
-          className: local_6930e397.addOption,
+        symbol_071("button", {
+          className: local_27c2efda.addOption,
           onClick: arg_4,
           children: [
-            symbol_073(symbol_065, {}),
-            symbol_073("span", {
+            symbol_071(symbol_063, {}),
+            symbol_071("span", {
               children: "Добавить вариант",
             }),
           ],
         }),
-      symbol_073("div", {
-        className: local_6930e397.pollFooter,
-        children: symbol_073("label", {
-          className: local_6930e397.pollToggle,
+      symbol_071("div", {
+        className: local_27c2efda.pollFooter,
+        children: symbol_071("label", {
+          className: local_27c2efda.pollToggle,
           children: [
-            symbol_073("input", {
+            symbol_071("input", {
               type: "checkbox",
               checked: arg.multipleChoice,
               onChange: arg_6,
             }),
-            symbol_073("span", {
+            symbol_071("span", {
               children: "Несколько вариантов ответа",
             }),
           ],
@@ -18214,7 +18712,7 @@ function fn_2a874703(arg) {
 function fn_9d34860e(arg) {
   return arg !== "mention" && arg !== "hashtag";
 }
-function fn_5d384217(arg, arg_2) {
+function fn_4f178471(arg, arg_2) {
   if (arg_2.length === 0) {
     return arg;
   }
@@ -18370,7 +18868,7 @@ const local_f05391d9 = [
     title: "Ссылка",
   },
 ];
-const local_7fa9686b = symbol_044(function (
+const local_15986a00 = symbol_043(function (
   {
     value: arg,
     spans: arg_2,
@@ -18388,13 +18886,13 @@ const local_7fa9686b = symbol_044(function (
   arg_13,
 ) {
   const local = symbol_002(null);
-  const [local_2, local_3] = symbol_056(false);
-  const [local_4, local_5] = symbol_056({
+  const [local_2, local_3] = symbol_054(false);
+  const [local_4, local_5] = symbol_054({
     x: 0,
     y: 0,
   });
-  const [local_6, local_7] = symbol_056(false);
-  const [local_8, local_9] = symbol_056("");
+  const [local_6, local_7] = symbol_054(false);
+  const [local_8, local_9] = symbol_054("");
   const local_10 = symbol_002(null);
   const local_11 = symbol_002(null);
   const local_12 = symbol_002(null);
@@ -18403,12 +18901,12 @@ const local_7fa9686b = symbol_044(function (
   const local_15 = symbol_002(arg);
   const local_16 = symbol_002(arg_2);
   const local_17 = symbol_002(arg_3);
-  symbol_077(() => {
+  symbol_058(() => {
     local_15.current = arg;
     local_16.current = arg_2;
     local_17.current = arg_3;
   }, [arg, arg_2, arg_3]);
-  symbol_046(
+  fn_18654e96(
     arg_13,
     () => ({
       insertText: (arg) => {
@@ -18466,7 +18964,7 @@ const local_7fa9686b = symbol_044(function (
     }),
     [],
   );
-  const local_18 = symbol_069(() => {
+  const local_18 = symbol_067(() => {
     if (!arg) {
       return "";
     }
@@ -18505,7 +19003,7 @@ const local_7fa9686b = symbol_044(function (
     for (const local of local_2) {
       if (local.pos > local_4) {
         const local = arg.substring(local_4, local.pos);
-        local_3 += fn_5d384217(fn_6e13c644(local), local_5);
+        local_3 += fn_4f178471(fn_6e13c644(local), local_5);
         local_4 = local.pos;
       }
       if (local.type === "start") {
@@ -18519,11 +19017,11 @@ const local_7fa9686b = symbol_044(function (
     }
     if (local_4 < arg.length) {
       const local = arg.substring(local_4);
-      local_3 += fn_5d384217(fn_6e13c644(local), local_5);
+      local_3 += fn_4f178471(fn_6e13c644(local), local_5);
     }
     return local_3 || "<br>";
   }, [arg, arg_2]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_14.current) {
       local_14.current = false;
       return;
@@ -18537,7 +19035,7 @@ const local_7fa9686b = symbol_044(function (
       local.innerHTML = local_2;
     }
   }, [local_18, arg]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (arg_6 && local.current) {
       const local = local.current;
       local.focus();
@@ -18553,12 +19051,12 @@ const local_7fa9686b = symbol_044(function (
       }
     }
   }, [arg_6]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_6 && local_11.current) {
       local_11.current.focus();
     }
   }, [local_6]);
-  const local_19 = symbol_069(
+  const local_19 = symbol_067(
     (arg) => {
       if (local_13.current) {
         return;
@@ -18611,7 +19109,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [arg_5, arg_3, arg_2],
   );
-  const local_20 = symbol_069(
+  const local_20 = symbol_067(
     (arg) => {
       if (arg_11) {
         return;
@@ -18635,7 +19133,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [arg_11],
   );
-  const local_21 = symbol_069(
+  const local_21 = symbol_067(
     (arg) => {
       arg.preventDefault();
       if (arg_12 && arg.clipboardData?.files?.length) {
@@ -18667,7 +19165,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [local_19, arg_12],
   );
-  const local_22 = symbol_069(() => {
+  const local_22 = symbol_067(() => {
     const local = local.current;
     if (local && !local_15.current) {
       const local = window.getSelection();
@@ -18680,7 +19178,7 @@ const local_7fa9686b = symbol_044(function (
       }
     }
   }, []);
-  const local_23 = symbol_069(
+  const local_23 = symbol_067(
     (arg) => {
       if (arg.key === "Enter" && !arg.shiftKey && arg_10) {
         arg.preventDefault();
@@ -18708,7 +19206,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [arg_10, arg_11],
   );
-  const local_24 = symbol_069(
+  const local_24 = symbol_067(
     (arg, arg_2) => {
       const local = local.current;
       if (!local) {
@@ -18753,7 +19251,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [local_19],
   );
-  const local_25 = symbol_069(
+  const local_25 = symbol_067(
     (arg) => {
       if (arg === "link") {
         local_7(true);
@@ -18763,7 +19261,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [local_24],
   );
-  const local_26 = symbol_069(
+  const local_26 = symbol_067(
     (arg) => {
       arg.preventDefault();
       if (local_8.trim()) {
@@ -18772,7 +19270,7 @@ const local_7fa9686b = symbol_044(function (
     },
     [local_24, local_8],
   );
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local_2) {
       return;
     }
@@ -18798,9 +19296,9 @@ const local_7fa9686b = symbol_044(function (
     };
   }, [local_2]);
   const local_27 = !arg;
-  return symbol_073(symbol_063, {
+  return symbol_071(symbol_020, {
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         ref: local,
         className: `${local_41e5f641.editor} ${arg_7} ${local_27 ? local_41e5f641.empty : ""}`,
         contentEditable: true,
@@ -18824,7 +19322,7 @@ const local_7fa9686b = symbol_044(function (
       }),
       local_2 &&
         symbol_001(
-          symbol_073("div", {
+          symbol_071("div", {
             ref: local_10,
             className: local_41e5f641.menu,
             style: {
@@ -18832,11 +19330,11 @@ const local_7fa9686b = symbol_044(function (
               top: local_4.y,
             },
             children: local_6
-              ? symbol_073("form", {
+              ? symbol_071("form", {
                   className: local_41e5f641.linkForm,
                   onSubmit: local_26,
                   children: [
-                    symbol_073("input", {
+                    symbol_071("input", {
                       ref: local_11,
                       type: "url",
                       className: local_41e5f641.linkInput,
@@ -18844,7 +19342,7 @@ const local_7fa9686b = symbol_044(function (
                       value: local_8,
                       onInput: (arg) => local_9(arg.target.value),
                     }),
-                    symbol_073("button", {
+                    symbol_071("button", {
                       type: "submit",
                       className: local_41e5f641.linkSubmit,
                       disabled: !local_8.trim(),
@@ -18852,18 +19350,18 @@ const local_7fa9686b = symbol_044(function (
                     }),
                   ],
                 })
-              : symbol_073("div", {
+              : symbol_071("div", {
                   className: local_41e5f641.buttons,
                   children: local_f05391d9.map(
                     ({ type: arg, icon: arg_2, title: arg_3 }) =>
-                      symbol_073(
+                      symbol_071(
                         "button",
                         {
                           type: "button",
                           className: local_41e5f641.button,
                           onClick: () => local_25(arg),
                           title: arg_3,
-                          children: symbol_073(arg_2, {
+                          children: symbol_071(arg_2, {
                             size: 16,
                           }),
                         },
@@ -18930,7 +19428,7 @@ const local_1019f609 = {
   sendButton: local_a430f3b3_2,
 };
 const local_f06debfc_45 = 1000;
-function fn_790c5628({
+function fn_47a86e8d({
   text: arg,
   spans: arg_2,
   onChange: arg_3,
@@ -18950,13 +19448,13 @@ function fn_790c5628({
   ]
     .filter(Boolean)
     .join("./entry.js");
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_3,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_00c0e56d.inputWrapper,
         children: [
-          symbol_073(local_7fa9686b, {
+          symbol_071(local_15986a00, {
             value: arg,
             spans: arg_2,
             onChange: arg_3,
@@ -18970,31 +19468,31 @@ function fn_790c5628({
             onImagePaste: arg_10,
           }),
           local_2 &&
-            symbol_073("span", {
+            symbol_071("span", {
               className: `${local_00c0e56d.commentCharCount} ${local_00c0e56d.error}`,
               children: local,
             }),
         ],
       }),
-      symbol_073("button", {
+      symbol_071("button", {
         className: `${local_00c0e56d.circleButton} ${local_00c0e56d.sendButton} ${local_1019f609.sendButton} ${arg_8 ? local_00c0e56d.submitting : ""}`,
         onClick: arg_5,
         disabled: arg_8 || arg_9 || local_2,
         children: arg_8
-          ? symbol_073(fn_42234aa5, {
+          ? symbol_071(fn_42234aa5, {
               size: "xs",
             })
-          : symbol_073(local_fa759dff, {
+          : symbol_071(local_fa759dff, {
               size: 20,
             }),
       }),
     ],
   });
 }
-const local_c0a30487 = symbol_078(() =>
-  symbol_064(
+const local_c0a30487 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/voice-input.js"),
-    local_5b673d6a([10, 11, 12]),
+    local_80136556([10, 11, 12]),
   ).then((arg) => ({
     default: arg.VoiceInput,
   })),
@@ -19013,11 +19511,11 @@ function symbol_025({
     handleChange: local_3,
     reset: local_4,
   } = fn_9d6d3161();
-  const [local_5, local_6] = symbol_056("text");
-  const [local_7, local_8] = symbol_056(false);
-  const [local_9, local_10] = symbol_056(false);
-  const [local_11, local_12] = symbol_056(false);
-  const [local_13, local_14] = symbol_056(false);
+  const [local_5, local_6] = symbol_054("text");
+  const [local_7, local_8] = symbol_054(false);
+  const [local_9, local_10] = symbol_054(false);
+  const [local_11, local_12] = symbol_054(false);
+  const [local_13, local_14] = symbol_054(false);
   const local_15 = symbol_002(false);
   const local_16 = symbol_002(null);
   const local_17 = symbol_002(0);
@@ -19032,7 +19530,7 @@ function symbol_025({
     fileInputRef: local_25,
     handleFileChange: local_26,
   } = fn_94884e4d(4);
-  symbol_077(
+  symbol_058(
     () => () => {
       if (local_16.current) {
         clearTimeout(local_16.current);
@@ -19091,7 +19589,7 @@ function symbol_025({
       local_10(false);
     }, 300);
   };
-  const local_35 = symbol_069((arg) => {
+  const local_35 = symbol_067((arg) => {
     arg.preventDefault();
     arg.stopPropagation();
     local_17.current++;
@@ -19099,11 +19597,11 @@ function symbol_025({
       local_14(true);
     }
   }, []);
-  const local_36 = symbol_069((arg) => {
+  const local_36 = symbol_067((arg) => {
     arg.preventDefault();
     arg.stopPropagation();
   }, []);
-  const local_37 = symbol_069((arg) => {
+  const local_37 = symbol_067((arg) => {
     arg.preventDefault();
     arg.stopPropagation();
     local_17.current--;
@@ -19111,7 +19609,7 @@ function symbol_025({
       local_14(false);
     }
   }, []);
-  const local_38 = symbol_069(
+  const local_38 = symbol_067(
     (arg) => {
       arg.preventDefault();
       arg.stopPropagation();
@@ -19133,7 +19631,7 @@ function symbol_025({
   ]
     .filter(Boolean)
     .join("./entry.js");
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_39,
     onDragEnter: local_35,
     onDragOver: local_36,
@@ -19141,35 +19639,35 @@ function symbol_025({
     onDrop: local_38,
     children: [
       local_13 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_00c0e56d.dragOverlay,
           children: [
-            symbol_073(local_fe55573b, {
+            symbol_071(local_fe55573b, {
               size: 24,
             }),
-            symbol_073("span", {
+            symbol_071("span", {
               children: "Перетащите изображение",
             }),
           ],
         }),
       arg_4 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_00c0e56d.replyHeader,
           children: [
-            symbol_073("span", {
+            symbol_071("span", {
               className: local_00c0e56d.replyText,
               children: [
                 "Ответ для ",
-                symbol_073("span", {
+                symbol_071("span", {
                   className: local_00c0e56d.replyName,
                   children: arg_4.authorName,
                 }),
               ],
             }),
-            symbol_073("button", {
+            symbol_071("button", {
               className: local_00c0e56d.replyClose,
               onClick: arg_5,
-              children: symbol_073(symbol_049, {
+              children: symbol_071(symbol_048, {
                 size: 16,
               }),
             }),
@@ -19178,42 +19676,42 @@ function symbol_025({
       !local_29 &&
         !local_7 &&
         local_27 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_00c0e56d.attachmentStrip,
-          children: symbol_073(fn_5b2965e1, {
+          children: symbol_071(fn_5853330e, {
             images: local_18,
             uploadingImages: local_19,
             onRemove: local_22,
           }),
         }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_00c0e56d.inputRow,
         children: [
-          symbol_073("button", {
+          symbol_071("button", {
             className: local_00c0e56d.circleButton,
             onClick: local_29 ? local_33 : local_21,
             children: local_29
-              ? symbol_073(symbol_049, {
+              ? symbol_071(symbol_048, {
                   size: 20,
                 })
-              : symbol_073(local_e89bf398, {
+              : symbol_071(local_e89bf398, {
                   size: 20,
                 }),
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_00c0e56d.textareaContainer,
             children:
               local_29 || local_7
-                ? symbol_073(symbol_062, {
+                ? symbol_071(symbol_061, {
                     fallback: null,
-                    children: symbol_073(local_c0a30487, {
+                    children: symbol_071(local_c0a30487, {
                       onCancel: local_33,
                       onSend: arg_2,
                       isExiting: local_7,
                       onExitComplete: local_34,
                     }),
                   })
-                : symbol_073(fn_790c5628, {
+                : symbol_071(fn_47a86e8d, {
                     text: local,
                     spans: local_2,
                     onChange: local_3,
@@ -19228,16 +19726,16 @@ function symbol_025({
           }),
           !local_29 &&
             !local_7 &&
-            symbol_073("button", {
+            symbol_071("button", {
               className: `${local_00c0e56d.circleButton} ${local_00c0e56d.micButton}`,
               onClick: local_32,
-              children: symbol_073(local_c518db66, {
+              children: symbol_071(local_c518db66, {
                 size: 20,
               }),
             }),
         ],
       }),
-      symbol_073("input", {
+      symbol_071("input", {
         ref: local_25,
         type: "file",
         accept: local_2ace5464,
@@ -19283,12 +19781,12 @@ function fn_e22ca1f5(arg) {
   }
   return arg.toString();
 }
-function fn_2d0b32d3({ value: arg }) {
+function fn_6f365300({ value: arg }) {
   const local = fn_e22ca1f5(arg);
   const local_2 = symbol_002(arg);
   const local_3 = symbol_002(local.length);
   const local_4 = symbol_002(Date.now());
-  const [local_5, local_6] = symbol_056(() =>
+  const [local_5, local_6] = symbol_054(() =>
     local.split("").map((arg, arg_2) => ({
       char: arg,
       prevChar: arg,
@@ -19296,8 +19794,8 @@ function fn_2d0b32d3({ value: arg }) {
       key: arg_2,
     })),
   );
-  const [local_7, local_8] = symbol_056(null);
-  symbol_077(() => {
+  const [local_7, local_8] = symbol_054(null);
+  symbol_058(() => {
     if (Date.now() - local_4.current < 100) {
       local_2.current = arg;
       return;
@@ -19351,7 +19849,7 @@ function fn_2d0b32d3({ value: arg }) {
     return () => clearTimeout(local_7);
   }, [arg]);
   if (!local_5.some((arg) => arg.isAnimating)) {
-    return symbol_073("span", {
+    return symbol_071("span", {
       children: local,
     });
   }
@@ -19361,20 +19859,20 @@ function fn_2d0b32d3({ value: arg }) {
       : local_7 === "down"
         ? local_724a2377.down
         : "";
-  return symbol_073("span", {
+  return symbol_071("span", {
     className: local_724a2377.counter,
     children: local_5.map((arg) => {
       if (arg.isAnimating) {
-        return symbol_073(
+        return symbol_071(
           "span",
           {
             className: `${local_724a2377.digit} ${local_724a2377.animating} ${local_9}`,
             children: [
-              symbol_073("span", {
+              symbol_071("span", {
                 className: local_724a2377.prev,
                 children: arg.prevChar,
               }),
-              symbol_073("span", {
+              symbol_071("span", {
                 className: local_724a2377.current,
                 children: arg.char,
               }),
@@ -19383,7 +19881,7 @@ function fn_2d0b32d3({ value: arg }) {
           arg.key,
         );
       }
-      return symbol_073(
+      return symbol_071(
         "span",
         {
           children: arg.char,
@@ -19402,7 +19900,7 @@ const local_cd953748_2 = "c_danger";
 const local_91b7e964 = "c_itemIcon";
 const local_b6081d82 = "c_itemLabel";
 const local_2345161f = "c_divider";
-const local_34166590 = {
+const local_6f023e53 = {
   dropdownWrapper: local_79a99ee5,
   trigger: local_ff1bceb0,
   menu: local_19c27dce_2,
@@ -19420,15 +19918,15 @@ function symbol_005({
   dividerAfter: arg_4 = [],
   className: arg_5,
 }) {
-  const [local, local_2] = symbol_056(false);
-  const [local_3, local_4] = symbol_056(false);
-  const [local_5, local_6] = symbol_056({
+  const [local, local_2] = symbol_054(false);
+  const [local_3, local_4] = symbol_054(false);
+  const [local_5, local_6] = symbol_054({
     top: 0,
     left: 0,
   });
   const local_7 = symbol_002(null);
   const local_8 = symbol_002(null);
-  const local_9 = symbol_069(() => {
+  const local_9 = symbol_067(() => {
     if (!local_7.current) {
       return;
     }
@@ -19467,7 +19965,7 @@ function symbol_005({
     });
     local_4(true);
   }, [arg_3]);
-  const local_10 = symbol_069((arg) => {
+  const local_10 = symbol_067((arg) => {
     const local = arg.target;
     if (
       local_7.current &&
@@ -19479,7 +19977,7 @@ function symbol_005({
       local_4(false);
     }
   }, []);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local) {
       local_9();
       document.addEventListener("mousedown", local_10);
@@ -19507,49 +20005,49 @@ function symbol_005({
     local_2(false);
     local_4(false);
   };
-  return symbol_073("div", {
-    className: `${local_34166590.dropdownWrapper} ${arg_5 || ""}`,
+  return symbol_071("div", {
+    className: `${local_6f023e53.dropdownWrapper} ${arg_5 || ""}`,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         ref: local_7,
-        className: local_34166590.trigger,
+        className: local_6f023e53.trigger,
         onClick: local_11,
         children: arg,
       }),
       local &&
         symbol_001(
-          symbol_073("div", {
+          symbol_071("div", {
             ref: local_8,
-            className: `${local_34166590.menu} ${local_3 ? "" : local_34166590.hidden}`,
+            className: `${local_6f023e53.menu} ${local_3 ? "" : local_6f023e53.hidden}`,
             style: {
               top: local_5.top,
               left: local_5.left,
             },
             children: arg_2.map((arg, arg_2) =>
-              symbol_073(
+              symbol_071(
                 "div",
                 {
                   children: [
-                    symbol_073("button", {
+                    symbol_071("button", {
                       type: "button",
-                      className: `${local_34166590.menuItem} ${arg.danger ? local_34166590.danger : ""}`,
+                      className: `${local_6f023e53.menuItem} ${arg.danger ? local_6f023e53.danger : ""}`,
                       onClick: (arg) => local_12(arg, arg),
                       children: [
                         arg.icon &&
-                          symbol_073("span", {
-                            className: local_34166590.itemIcon,
+                          symbol_071("span", {
+                            className: local_6f023e53.itemIcon,
                             children: arg.icon,
                           }),
-                        symbol_073("span", {
-                          className: local_34166590.itemLabel,
+                        symbol_071("span", {
+                          className: local_6f023e53.itemLabel,
                           children: arg.label,
                         }),
                       ],
                     }),
                     arg_4.includes(arg.id) &&
                       arg_2 < arg_2.length - 1 &&
-                      symbol_073("div", {
-                        className: local_34166590.divider,
+                      symbol_071("div", {
+                        className: local_6f023e53.divider,
                       }),
                   ],
                 },
@@ -19597,8 +20095,8 @@ function fn_6ed72f1f(arg) {
   const local_3 = btoa(local_2);
   return `/external?url=${encodeURIComponent(local_3)}`;
 }
-function fn_a782b940({ text: arg, spans: arg_2 = [], className: arg_3 = "" }) {
-  const [local, local_2] = symbol_056(new Set());
+function fn_86399a31({ text: arg, spans: arg_2 = [], className: arg_3 = "" }) {
+  const [local, local_2] = symbol_054(new Set());
   const local_3 = symbol_021(() => {
     if (arg_2.length === 0) {
       return [
@@ -19695,41 +20193,41 @@ function fn_a782b940({ text: arg, spans: arg_2 = [], className: arg_3 = "" }) {
   const local_5 = (arg, arg_2) => {
     let local = arg.text;
     if (arg.styles.has("bold")) {
-      local = symbol_073("strong", {
+      local = symbol_071("strong", {
         children: local,
       });
     }
     if (arg.styles.has("italic")) {
-      local = symbol_073("em", {
+      local = symbol_071("em", {
         children: local,
       });
     }
     if (arg.styles.has("underline")) {
-      local = symbol_073("span", {
+      local = symbol_071("span", {
         className: local_bd78acf1.underline,
         children: local,
       });
     }
     if (arg.styles.has("strike")) {
-      local = symbol_073("s", {
+      local = symbol_071("s", {
         children: local,
       });
     }
     if (arg.styles.has("monospace")) {
-      local = symbol_073("code", {
+      local = symbol_071("code", {
         className: local_bd78acf1.monospace,
         children: local,
       });
     }
     if (arg.styles.has("quote")) {
-      local = symbol_073("span", {
+      local = symbol_071("span", {
         className: local_bd78acf1.quote,
         children: local,
       });
     }
     if (arg.styles.has("spoiler")) {
       const local = local.has(arg_2);
-      local = symbol_073("span", {
+      local = symbol_071("span", {
         className: `${local_bd78acf1.spoiler} ${local ? local_bd78acf1.revealed : ""}`,
         onClick: (arg) => local_4(arg, arg_2),
         children: local,
@@ -19737,7 +20235,7 @@ function fn_a782b940({ text: arg, spans: arg_2 = [], className: arg_3 = "" }) {
     }
     if (arg.styles.has("link") && arg.url) {
       const local = fn_6ed72f1f(arg.url);
-      local = symbol_073("a", {
+      local = symbol_071("a", {
         href: local,
         target: "_blank",
         rel: "noopener noreferrer",
@@ -19748,31 +20246,31 @@ function fn_a782b940({ text: arg, spans: arg_2 = [], className: arg_3 = "" }) {
     }
     if (arg.styles.has("mention") && arg.mentionId) {
       const local = `/@${arg.mentionId}`;
-      local = symbol_073("a", {
+      local = symbol_071("a", {
         href: local,
         className: local_bd78acf1.mention,
         onClick: (arg) => {
           arg.preventDefault();
           arg.stopPropagation();
-          symbol_057(local);
+          symbol_055(local);
         },
         children: local,
       });
     }
     if (arg.styles.has("hashtag") && arg.hashtag) {
       const local = `/hashtag/${encodeURIComponent(arg.hashtag)}`;
-      local = symbol_073("a", {
+      local = symbol_071("a", {
         href: local,
         className: local_bd78acf1.hashtag,
         onClick: (arg) => {
           arg.preventDefault();
           arg.stopPropagation();
-          symbol_057(local);
+          symbol_055(local);
         },
         children: local,
       });
     }
-    return symbol_073(
+    return symbol_071(
       "span",
       {
         children: local,
@@ -19780,12 +20278,12 @@ function fn_a782b940({ text: arg, spans: arg_2 = [], className: arg_3 = "" }) {
       arg_2,
     );
   };
-  return symbol_073("span", {
+  return symbol_071("span", {
     className: arg_3,
     children: local_3.map((arg, arg_2) => local_5(arg, arg_2)),
   });
 }
-function symbol_053(arg, arg_2, arg_3) {
+export function fn_faa6fe89(arg, arg_2, arg_3) {
   const {
     isVisible: local,
     isRevealing: local_2,
@@ -19799,7 +20297,7 @@ function symbol_053(arg, arg_2, arg_3) {
     height: 0,
   });
   const local_8 = symbol_002(1);
-  const local_9 = symbol_069((arg, arg_2) => {
+  const local_9 = symbol_067((arg, arg_2) => {
     const local = Math.random() * 80 + 60;
     return {
       x: Math.random() * arg,
@@ -19812,7 +20310,7 @@ function symbol_053(arg, arg_2, arg_3) {
       maxLife: local,
     };
   }, []);
-  const local_10 = symbol_069(
+  const local_10 = symbol_067(
     (arg, arg_2) => {
       const local = Math.floor((arg * arg_2) / 600);
       const local_2 = [];
@@ -19823,7 +20321,7 @@ function symbol_053(arg, arg_2, arg_3) {
     },
     [local_9],
   );
-  const local_11 = symbol_069(() => {
+  const local_11 = symbol_067(() => {
     const local = arg.current;
     const local_2 = arg_2.current;
     if (!local || !local_2) {
@@ -19854,10 +20352,10 @@ function symbol_053(arg, arg_2, arg_3) {
       local_10(local_3.width, local_3.height);
     }
   }, [arg, arg_2, local_10]);
-  const local_12 = symbol_069(() => {
+  const local_12 = symbol_067(() => {
     local_8.current = 1;
   }, []);
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local) {
       if (local_5.current) {
         cancelAnimationFrame(local_5.current);
@@ -19934,7 +20432,7 @@ const local_91772deb = {
   canvas: local_529ee1fe,
 };
 const local_f06debfc_46 = 5;
-function fn_cfe6dd12({
+function fn_b7dbf383({
   src: arg,
   alt: arg_2 = "",
   spoiler: arg_3 = false,
@@ -19943,19 +20441,19 @@ function fn_cfe6dd12({
   className: arg_6 = "",
   onClick: arg_7,
 }) {
-  const [local, local_2] = symbol_056(!arg_3);
-  const [local_3, local_4] = symbol_056(false);
-  const [local_5, local_6] = symbol_056(false);
+  const [local, local_2] = symbol_054(!arg_3);
+  const [local_3, local_4] = symbol_054(false);
+  const [local_5, local_6] = symbol_054(false);
   const local_7 = symbol_002(null);
   const local_8 = symbol_002(null);
   const local_9 = symbol_002(null);
   const local_10 = symbol_002(false);
-  const { resetOpacity: local_11 } = symbol_053(local_7, local_8, {
+  const { resetOpacity: local_11 } = fn_faa6fe89(local_7, local_8, {
     isVisible: local_5 && !local && arg_3,
     isRevealing: local_3,
     onRevealComplete: () => local_2(true),
   });
-  symbol_077(() => {
+  symbol_058(() => {
     const local = local_8.current;
     if (!local) {
       return;
@@ -20015,7 +20513,7 @@ function fn_cfe6dd12({
         }
       : undefined;
   if (arg_3) {
-    return symbol_073("div", {
+    return symbol_071("div", {
       ref: local_8,
       className: `${local_91772deb.container} ${arg_6} ${local_15 ? local_91772deb.hidden : ""} ${local_3 ? local_91772deb.revealing : ""}`,
       style: local_16,
@@ -20023,7 +20521,7 @@ function fn_cfe6dd12({
       onPointerMove: local_13,
       onClick: local_14,
       children: [
-        symbol_073("img", {
+        symbol_071("img", {
           src: arg,
           alt: arg_2,
           className: local_91772deb.image,
@@ -20034,14 +20532,14 @@ function fn_cfe6dd12({
           "data-post-media-image": true,
         }),
         local_15 &&
-          symbol_073("canvas", {
+          symbol_071("canvas", {
             ref: local_7,
             className: local_91772deb.canvas,
           }),
       ],
     });
   }
-  return symbol_073("img", {
+  return symbol_071("img", {
     src: arg,
     alt: arg_2,
     className: arg_6,
@@ -20247,7 +20745,7 @@ class clazz_af2db558 {
     const { body: local_3, headers: local_4 } =
       await this.maybeCompress(local_2);
     local_74bb3ffb
-      .post(local_68a3dca0.posts.interactionLog, local_3, {
+      .post(local_eec5e7eb.posts.interactionLog, local_3, {
         headers: local_4,
       })
       .catch(() => {});
@@ -20260,7 +20758,7 @@ class clazz_af2db558 {
     this.buffer = [];
     local_74bb3ffb
       .post(
-        local_68a3dca0.posts.interactionLog,
+        local_eec5e7eb.posts.interactionLog,
         {
           sid: this.sessionId,
           e: local,
@@ -20272,20 +20770,15 @@ class clazz_af2db558 {
       .catch(() => {});
   }
 }
-export const local_a1e12a9e_10 = new clazz_af2db558();
+const symbol_051 = new clazz_af2db558();
 function fn_e578e8b1(arg, arg_2) {
-  return symbol_069(
+  return symbol_067(
     (arg, arg_2) => {
       if (!arg || !arg) {
         return;
       }
       const local = arg_2 === "post_page" || arg_2 === "link";
-      local_a1e12a9e_10.trackPhotoOpen(
-        arg,
-        arg,
-        arg_2,
-        local ? arg_2 : undefined,
-      );
+      symbol_051.trackPhotoOpen(arg, arg, arg_2, local ? arg_2 : undefined);
     },
     [arg, arg_2],
   );
@@ -20306,10 +20799,10 @@ const local_89a6df8b = {
   media: local_65cb46b6,
   dragging: local_46549dc5,
 };
-const local_b492dcb2 = symbol_078(() =>
-  symbol_064(
+const local_b492dcb2 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/post-media-video.js"),
-    local_5b673d6a([13, 14, 15]),
+    local_80136556([13, 14, 15]),
   ).then((arg) => ({
     default: arg.PostMediaVideo,
   })),
@@ -20327,7 +20820,7 @@ function fn_c467be0d(arg, arg_2, arg_3, arg_4) {
   }
   return Math.min(arg_2, arg_4) * local;
 }
-function fn_3e65b80a({
+function fn_e47a9d66({
   media: arg,
   isFeed: arg_2 = false,
   postVs: arg_3,
@@ -20337,7 +20830,7 @@ function fn_3e65b80a({
   const local_2 = arg?.filter((arg) => arg.type === "video") ?? [];
   const local_3 = symbol_002(null);
   const local_4 = local_aac74809((arg) => arg.open);
-  const local_5 = symbol_006() ? local_f06debfc_54 : local_f06debfc_53;
+  const local_5 = symbol_004() ? local_f06debfc_54 : local_f06debfc_53;
   const local_6 = fn_e578e8b1(arg_3, arg_4);
   const local_7 = symbol_002(false);
   const local_8 = symbol_002(0);
@@ -20418,7 +20911,7 @@ function fn_3e65b80a({
       local_3.current?.classList.remove(local_89a6df8b.dragging);
     }
   };
-  symbol_077(
+  symbol_058(
     () => () => {
       local_15();
       local_3.current?.classList.remove(local_89a6df8b.dragging);
@@ -20488,18 +20981,18 @@ function fn_3e65b80a({
               aspectRatio: `${local.width} / ${local.height}`,
             }
           : undefined;
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: `${local_89a6df8b.mediaWrapper} ${arg_2 ? local_89a6df8b.isFeed : ""}`,
         "data-count": 1,
-        children: symbol_073("div", {
+        children: symbol_071("div", {
           className: local_89a6df8b.single,
           style: local_2,
           onClick: (arg) => {
             arg.stopPropagation();
             local_21(0, arg);
           },
-          children: symbol_073(
-            fn_cfe6dd12,
+          children: symbol_071(
+            fn_b7dbf383,
             {
               src: local.url,
               spoiler: local.spoiler,
@@ -20518,15 +21011,15 @@ function fn_3e65b80a({
     }
     if (local_2.length === 1) {
       const local = local_2[0];
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: `${local_89a6df8b.mediaWrapper} ${arg_2 ? local_89a6df8b.isFeed : ""}`,
         "data-count": 1,
         onClick: (arg) => arg.stopPropagation(),
-        children: symbol_073("div", {
+        children: symbol_071("div", {
           className: local_89a6df8b.singleVideo,
-          children: symbol_073(symbol_062, {
+          children: symbol_071(symbol_061, {
             fallback: null,
-            children: symbol_073(
+            children: symbol_071(
               local_b492dcb2,
               {
                 src: local.url,
@@ -20545,10 +21038,10 @@ function fn_3e65b80a({
       });
     }
   }
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_89a6df8b.mediaWrapper} ${arg_2 ? local_89a6df8b.isFeed : ""}`,
     "data-count": local_23,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       ref: local_3,
       className: `${local_89a6df8b.media} ${arg_2 ? local_89a6df8b.isFeed : ""}`,
       "data-count": local_23,
@@ -20559,11 +21052,11 @@ function fn_3e65b80a({
       onMouseLeave: local_20,
       children: [
         local_2.map((arg) =>
-          symbol_073(
-            symbol_062,
+          symbol_071(
+            symbol_061,
             {
               fallback: null,
-              children: symbol_073(local_b492dcb2, {
+              children: symbol_071(local_b492dcb2, {
                 src: arg.url,
                 spoiler: arg.spoiler,
                 width: arg.width,
@@ -20579,8 +21072,8 @@ function fn_3e65b80a({
           ),
         ),
         local.map((arg, arg_2) =>
-          symbol_073(
-            fn_cfe6dd12,
+          symbol_071(
+            fn_b7dbf383,
             {
               src: arg.url,
               spoiler: arg.spoiler,
@@ -20745,15 +21238,15 @@ const local_84b00f5b = {
   multiline: local_5b0e20a9,
   arrow: local_06d417e6,
 };
-function symbol_047({
+function symbol_046({
   text: arg,
   children: arg_2,
   className: arg_3,
   multiline: arg_4,
 }) {
   const local = symbol_002(null);
-  const [local_2, local_3] = symbol_056(null);
-  const local_4 = symbol_069(() => {
+  const [local_2, local_3] = symbol_054(null);
+  const local_4 = symbol_067(() => {
     if (!local.current) {
       return;
     }
@@ -20763,10 +21256,10 @@ function symbol_047({
       y: local.top,
     });
   }, []);
-  const local_5 = symbol_069(() => {
+  const local_5 = symbol_067(() => {
     local_3(null);
   }, []);
-  const local_6 = symbol_069(
+  const local_6 = symbol_067(
     (arg) => {
       arg.stopPropagation();
       if (local_2) {
@@ -20777,7 +21270,7 @@ function symbol_047({
     },
     [local_2, local_4, local_5],
   );
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local_2) {
       return;
     }
@@ -20795,7 +21288,7 @@ function symbol_047({
       window.removeEventListener("scroll", local_5, true);
     };
   }, [local_2, local_5]);
-  return symbol_073("span", {
+  return symbol_071("span", {
     ref: local,
     className: arg_3,
     onMouseEnter: local_4,
@@ -20805,7 +21298,7 @@ function symbol_047({
       arg_2,
       local_2 &&
         symbol_001(
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_84b00f5b.hint} ${arg_4 ? local_84b00f5b.multiline : ""}`,
             style: {
               left: `${local_2.x}px`,
@@ -20813,7 +21306,7 @@ function symbol_047({
             },
             children: [
               arg,
-              symbol_073("span", {
+              symbol_071("span", {
                 className: local_84b00f5b.arrow,
               }),
             ],
@@ -20856,7 +21349,7 @@ function fn_9f9edcc8({
   onCopyLink: arg_12,
 }) {
   const local = fn_b5e97943(arg_2);
-  const local_2 = symbol_075((arg) => arg.profile?.id);
+  const local_2 = symbol_073((arg) => arg.profile?.id);
   const local_3 = arg.id === local_2;
   const local_4 = 2880 * 60 * 1000;
   const local_5 = local_3 && Date.now() - new Date(arg_2).getTime() < local_4;
@@ -20865,7 +21358,7 @@ function fn_9f9edcc8({
     local.push({
       id: "copy-link",
       label: "Скопировать ссылку",
-      icon: symbol_073(local_3ea3ac5c, {
+      icon: symbol_071(local_3ea3ac5c, {
         size: 16,
       }),
       onClick: () => arg_12?.(arg_4),
@@ -20874,7 +21367,7 @@ function fn_9f9edcc8({
       local.push({
         id: "edit",
         label: "Редактировать",
-        icon: symbol_073(symbol_026, {
+        icon: symbol_071(symbol_026, {
           size: 16,
         }),
         onClick: () => arg_9?.(arg_4),
@@ -20884,7 +21377,7 @@ function fn_9f9edcc8({
       local.push({
         id: "pin",
         label: arg_7 ? "Открепить" : "Закрепить",
-        icon: symbol_073(local_c88205fb, {
+        icon: symbol_071(local_c88205fb, {
           size: 16,
         }),
         onClick: () => arg_11?.(arg_4),
@@ -20894,7 +21387,7 @@ function fn_9f9edcc8({
       local.push({
         id: "delete",
         label: "Удалить",
-        icon: symbol_073(symbol_074, {
+        icon: symbol_071(symbol_072, {
           size: 16,
         }),
         danger: true,
@@ -20905,7 +21398,7 @@ function fn_9f9edcc8({
       local.push({
         id: "report",
         label: "Пожаловаться",
-        icon: symbol_073(symbol_060, {
+        icon: symbol_071(symbol_059, {
           size: 16,
         }),
         danger: true,
@@ -20925,41 +21418,41 @@ function fn_9f9edcc8({
     arg_8,
     arg_12,
   ]);
-  return symbol_073("header", {
+  return symbol_071("header", {
     className: local_f697b03b.header,
     children: [
       arg_7 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_f697b03b.pinnedBadge,
           children: [
-            symbol_073(local_c88205fb, {
+            symbol_071(local_c88205fb, {
               size: 14,
             }),
-            symbol_073("span", {
+            symbol_071("span", {
               children: "Закреплённый пост",
             }),
           ],
         }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_f697b03b.headerMain,
         children: [
           arg_5 &&
-            symbol_073("a", {
+            symbol_071("a", {
               href: `/@${arg.username}`,
-              children: symbol_073(symbol_058, {
+              children: symbol_071(symbol_056, {
                 src: arg.avatar,
                 alt: arg.displayName,
                 size: "sm",
                 online: arg.online,
               }),
             }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_f697b03b.authorInfo,
             children: [
-              symbol_073("a", {
+              symbol_071("a", {
                 href: `/@${arg.username}`,
                 className: local_f697b03b.authorLink,
-                children: symbol_073(symbol_022, {
+                children: symbol_071(symbol_022, {
                   name: arg.displayName,
                   verified: arg.isVerified,
                   hasNuksta: arg.hasNuksta,
@@ -20967,15 +21460,15 @@ function fn_9f9edcc8({
                   size: "sm",
                 }),
               }),
-              symbol_073("time", {
+              symbol_071("time", {
                 dateTime: arg_2,
                 className: local_f697b03b.time,
                 children: [
                   local,
                   arg_3 &&
-                    symbol_073(symbol_047, {
+                    symbol_071(symbol_046, {
                       text: new Date(arg_3).toLocaleString("ru-RU"),
-                      children: symbol_073("span", {
+                      children: symbol_071("span", {
                         className: local_f697b03b.edited,
                         children: " (ред.)",
                       }),
@@ -20984,8 +21477,8 @@ function fn_9f9edcc8({
               }),
             ],
           }),
-          symbol_073(symbol_005, {
-            trigger: symbol_073(symbol_010, {
+          symbol_071(symbol_005, {
+            trigger: symbol_071(symbol_010, {
               size: 18,
             }),
             items: local_6,
@@ -21015,7 +21508,7 @@ const local_79018b94 = "c_capturedEmoji";
 const local_00e02cfa = "c_capturedText";
 const local_56ca4669 = "c_capturedMobile";
 const local_dece2290 = "c_capturedSolo";
-const local_d04ad379 = {
+const local_13016790 = {
   actions: local_8c4f8b4b_4,
   compact: local_dc607243,
   action: local_406cc78f_2,
@@ -21035,7 +21528,7 @@ const local_d04ad379 = {
   capturedMobile: local_56ca4669,
   capturedSolo: local_dece2290,
 };
-function fn_6403e5bb({
+function fn_570ff832({
   liked: arg,
   reposted: arg_2,
   likesCount: arg_3,
@@ -21054,17 +21547,17 @@ function fn_6403e5bb({
 }) {
   const local = symbol_002(false);
   const local_2 = arg_12 ? 17 : 20;
-  return symbol_073("footer", {
-    className: `${local_d04ad379.actions} ${arg_12 ? local_d04ad379.compact : ""} ${arg_14 ? local_d04ad379.flush : ""}`,
+  return symbol_071("footer", {
+    className: `${local_13016790.actions} ${arg_12 ? local_13016790.compact : ""} ${arg_14 ? local_13016790.flush : ""}`,
     children: [
-      symbol_073("div", {
-        className: local_d04ad379.actionsLeft,
+      symbol_071("div", {
+        className: local_13016790.actionsLeft,
         children: [
-          symbol_073("div", {
-            className: local_d04ad379.reactionWrapper,
+          symbol_071("div", {
+            className: local_13016790.reactionWrapper,
             onClick: (arg) => arg.stopPropagation(),
-            children: symbol_073("button", {
-              className: `${local_d04ad379.action} ${arg ? local_d04ad379.liked : ""} ${local.current && !arg ? local_d04ad379.unliked : ""} ${!local.current && arg ? local_d04ad379.noAnimation : ""}`,
+            children: symbol_071("button", {
+              className: `${local_13016790.action} ${arg ? local_13016790.liked : ""} ${local.current && !arg ? local_13016790.unliked : ""} ${!local.current && arg ? local_13016790.noAnimation : ""}`,
               onClick: (arg) => {
                 arg.stopPropagation();
                 local.current = true;
@@ -21072,7 +21565,7 @@ function fn_6403e5bb({
               },
               "aria-label": "Нравится",
               children: [
-                symbol_073(
+                symbol_071(
                   symbol_030,
                   {
                     filled: arg,
@@ -21080,30 +21573,30 @@ function fn_6403e5bb({
                   },
                   arg_15 ? `liked-${arg_3}` : arg ? "liked" : "not-liked",
                 ),
-                symbol_073(fn_2d0b32d3, {
+                symbol_071(fn_6f365300, {
                   value: arg_3,
                 }),
               ],
             }),
           }),
-          symbol_073("button", {
-            className: local_d04ad379.action,
+          symbol_071("button", {
+            className: local_13016790.action,
             onClick: (arg) => {
               arg.stopPropagation();
               arg_10();
             },
             "aria-label": "Комментировать",
             children: [
-              symbol_073(symbol_027, {
+              symbol_071(symbol_027, {
                 size: local_2,
               }),
-              symbol_073(fn_2d0b32d3, {
+              symbol_071(fn_6f365300, {
                 value: arg_5,
               }),
             ],
           }),
-          symbol_073("button", {
-            className: `${local_d04ad379.action} ${arg_2 ? local_d04ad379.reposted : ""} ${arg_11 ? local_d04ad379.disabled : ""}`,
+          symbol_071("button", {
+            className: `${local_13016790.action} ${arg_2 ? local_13016790.reposted : ""} ${arg_11 ? local_13016790.disabled : ""}`,
             onClick: (arg) => {
               arg.stopPropagation();
               if (!arg_11) {
@@ -21113,61 +21606,61 @@ function fn_6403e5bb({
             disabled: arg_11,
             "aria-label": "Репост",
             children: [
-              symbol_073(symbol_031, {
+              symbol_071(symbol_031, {
                 size: local_2,
               }),
-              symbol_073(fn_2d0b32d3, {
+              symbol_071(fn_6f365300, {
                 value: arg_4,
               }),
             ],
           }),
         ],
       }),
-      symbol_073("div", {
-        className: local_d04ad379.actionsRight,
+      symbol_071("div", {
+        className: local_13016790.actionsRight,
         children: [
           arg_7 &&
             (arg_13
-              ? symbol_073(symbol_047, {
+              ? symbol_071(symbol_046, {
                   text: "Эмоджи, которое чаще всего лайкало этот пост",
-                  className: local_d04ad379.capturedSolo,
-                  children: symbol_073("span", {
-                    className: local_d04ad379.capturedEmoji,
+                  className: local_13016790.capturedSolo,
+                  children: symbol_071("span", {
+                    className: local_13016790.capturedEmoji,
                     children: arg_7,
                   }),
                 })
-              : symbol_073(symbol_063, {
+              : symbol_071(symbol_020, {
                   children: [
-                    symbol_073(symbol_047, {
+                    symbol_071(symbol_046, {
                       text: "Эмоджи, которое чаще всего лайкало этот пост",
-                      className: local_d04ad379.captured,
+                      className: local_13016790.captured,
                       children: [
-                        symbol_073("span", {
-                          className: local_d04ad379.capturedEmoji,
+                        symbol_071("span", {
+                          className: local_13016790.capturedEmoji,
                           children: arg_7,
                         }),
-                        symbol_073("span", {
-                          className: local_d04ad379.capturedText,
+                        symbol_071("span", {
+                          className: local_13016790.capturedText,
                           children: "Пост захвачен",
                         }),
                       ],
                     }),
-                    symbol_073(symbol_047, {
+                    symbol_071(symbol_046, {
                       text: "Эмоджи, которое чаще всего лайкало этот пост",
-                      className: local_d04ad379.capturedMobile,
-                      children: symbol_073("span", {
+                      className: local_13016790.capturedMobile,
+                      children: symbol_071("span", {
                         children: arg_7,
                       }),
                     }),
                   ],
                 })),
-          symbol_073("span", {
-            className: local_d04ad379.views,
+          symbol_071("span", {
+            className: local_13016790.views,
             children: [
-              symbol_073(local_98bb194d, {
+              symbol_071(local_98bb194d, {
                 size: local_2,
               }),
-              symbol_073(fn_2d0b32d3, {
+              symbol_071(fn_6f365300, {
                 value: arg_6,
               }),
             ],
@@ -21177,23 +21670,23 @@ function fn_6403e5bb({
     ],
   });
 }
-const local_b84ad31b = symbol_078(() =>
-  symbol_064(
+const local_b84ad31b = symbol_076(() =>
+  symbol_062(
     () => import("./routes/report-modal.js"),
-    local_5b673d6a([16, 17, 18]),
+    local_80136556([16, 17, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
 );
 function fn_f770ea94(arg, arg_2) {
   const { openModal: local, closeModal: local_2, onDelete: local_3 } = arg_2;
-  const local_4 = symbol_006();
-  const local_5 = symbol_054((arg) => arg.deletePost);
-  const local_6 = symbol_054((arg) => arg.updatePostLike);
-  const local_7 = symbol_054((arg) => arg.beginLikeMutation);
-  const local_8 = symbol_054((arg) => arg.endLikeMutation);
-  const local_9 = symbol_054((arg) => arg.updatePollVote);
-  const local_10 = symbol_054((arg) => arg.updatePollData);
+  const local_4 = symbol_004();
+  const local_5 = symbol_052((arg) => arg.deletePost);
+  const local_6 = symbol_052((arg) => arg.updatePostLike);
+  const local_7 = symbol_052((arg) => arg.beginLikeMutation);
+  const local_8 = symbol_052((arg) => arg.endLikeMutation);
+  const local_9 = symbol_052((arg) => arg.updatePollVote);
+  const local_10 = symbol_052((arg) => arg.updatePollData);
   const local_11 = fn_61d7292b(arg);
   const local_12 = local_11.myReaction !== null;
   const local_13 = local_11.likesTotal;
@@ -21201,15 +21694,15 @@ function fn_f770ea94(arg, arg_2) {
     () => fn_65dff5a1(arg.attachments),
     [arg.attachments],
   );
-  const local_15 = symbol_069(async () => {
+  const local_15 = symbol_067(async () => {
     const local = local_12;
     const local_2 = local ? -1 : 1;
     local_6(arg.id, local ? null : "love", local_2);
     local_7(arg.id);
     try {
       const local = local
-        ? await symbol_068.unlikePost(arg.id)
-        : await symbol_068.likePost(arg.id);
+        ? await symbol_066.unlikePost(arg.id)
+        : await symbol_066.likePost(arg.id);
       local_8(arg.id, local?.likesCount);
     } catch (error) {
       local_6(arg.id, local ? "love" : null, -local_2);
@@ -21217,24 +21710,24 @@ function fn_f770ea94(arg, arg_2) {
       console.error("Failed to toggle like:", error);
     }
   }, [arg.id, local_12, local_6, local_7, local_8]);
-  const local_16 = symbol_069(() => {
+  const local_16 = symbol_067(() => {
     if (!local_12) {
       local_15();
     }
   }, [local_12, local_15]);
-  const local_17 = symbol_069(
+  const local_17 = symbol_067(
     (arg) => {
       const local = arg.author.username ?? arg.author.id;
       const local_2 = `${window.location.origin}/@${local}/post/${arg}`;
       navigator.clipboard.writeText(local_2);
-      symbol_072.success("Ссылка скопирована");
+      symbol_070.success("Ссылка скопирована");
     },
     [arg.author.username, arg.author.id],
   );
-  const local_18 = symbol_069(
+  const local_18 = symbol_067(
     (arg) => {
       local(
-        symbol_073(local_b84ad31b, {
+        symbol_071(local_b84ad31b, {
           targetType: "post",
           targetId: arg,
           onClose: local_2,
@@ -21243,10 +21736,10 @@ function fn_f770ea94(arg, arg_2) {
     },
     [local, local_2],
   );
-  const local_19 = symbol_069(
+  const local_19 = symbol_067(
     (arg) => {
       local(
-        symbol_073(fn_e1d37297, {
+        symbol_071(fn_e1d37297, {
           postId: arg.id,
           initialText: arg.text ?? "",
           initialSpans: arg.spans ?? [],
@@ -21255,7 +21748,7 @@ function fn_f770ea94(arg, arg_2) {
     },
     [local, arg.id, arg.text, arg.spans],
   );
-  const local_20 = symbol_069(
+  const local_20 = symbol_067(
     async (arg) => {
       if (confirm("Вы уверены, что хотите удалить этот пост?")) {
         try {
@@ -21268,33 +21761,33 @@ function fn_f770ea94(arg, arg_2) {
     },
     [local_5, local_3],
   );
-  const local_21 = symbol_069(() => {
+  const local_21 = symbol_067(() => {
     if (local_4) {
       local(
-        symbol_073(fn_4e3ee8c9, {
+        symbol_071(fn_4e3ee8c9, {
           postId: arg.id,
           onClose: local_2,
         }),
       );
     } else {
       const local = arg.author.username ?? arg.author.id;
-      symbol_057(`/@${local}/post/${arg.id}`);
+      symbol_055(`/@${local}/post/${arg.id}`);
     }
   }, [arg.author.username, arg.author.id, arg.id, local_4, local, local_2]);
-  const local_22 = symbol_069(() => {
+  const local_22 = symbol_067(() => {
     local(
-      symbol_073(fn_14b687be, {
+      symbol_071(fn_14b687be, {
         post: arg,
         onClose: local_2,
       }),
     );
   }, [local, local_2, arg]);
-  const local_23 = symbol_069(
+  const local_23 = symbol_067(
     async (arg) => {
       const local = local_14?.myVote ?? null;
       local_9(arg.id, arg, local);
       try {
-        const local = await symbol_068.votePoll(arg.id, [arg]);
+        const local = await symbol_066.votePoll(arg.id, [arg]);
         if (local) {
           local_10(arg.id, local);
           return local;
@@ -21309,10 +21802,10 @@ function fn_f770ea94(arg, arg_2) {
     },
     [arg.id, local_14?.myVote, local_9, local_10],
   );
-  const local_24 = symbol_069(
+  const local_24 = symbol_067(
     async (arg) => {
       try {
-        const local = await symbol_068.votePoll(arg.id, arg);
+        const local = await symbol_066.votePoll(arg.id, arg);
         if (local) {
           local_10(arg.id, local);
           return local;
@@ -21340,12 +21833,12 @@ function fn_f770ea94(arg, arg_2) {
   };
 }
 function fn_6ad6c437(arg) {
-  const local = symbol_069(() => {
-    symbol_054.getState().updatePostLike(arg, "love", 1);
+  const local = symbol_067(() => {
+    symbol_052.getState().updatePostLike(arg, "love", 1);
   }, [arg]);
-  const local_2 = symbol_069(() => {
+  const local_2 = symbol_067(() => {
     const { postStatsCache: local, applyStatsUpdates: local_2 } =
-      symbol_054.getState();
+      symbol_052.getState();
     const local_3 = local[arg];
     if (local_3) {
       local_2([
@@ -21360,8 +21853,8 @@ function fn_6ad6c437(arg) {
       ]);
     }
   }, [arg]);
-  const local_3 = symbol_069(() => {
-    symbol_054.getState().updatePostReposted(arg, true, 1);
+  const local_3 = symbol_067(() => {
+    symbol_052.getState().updatePostReposted(arg, true, 1);
   }, [arg]);
   return {
     handleLike: local,
@@ -21419,22 +21912,22 @@ function fn_5ef7518c({ attachments: arg, postVs: arg_2, source: arg_3 }) {
   if (local.length === 0) {
     return null;
   }
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_b6f17743.originalPostMedia,
-    children: symbol_073(fn_3e65b80a, {
+    children: symbol_071(fn_e47a9d66, {
       media: local,
       postVs: arg_2,
       source: arg_3,
     }),
   });
 }
-function fn_6d5d7444({
+function fn_15090264({
   originalPost: arg,
   source: arg_2,
   showcase: arg_3 = false,
 }) {
   const local = fn_8998240c(arg.createdAt);
-  const { openModal: local_2, closeModal: local_3 } = symbol_066();
+  const { openModal: local_2, closeModal: local_3 } = symbol_064();
   const {
     liked: local_4,
     totalLikes: local_5,
@@ -21451,58 +21944,58 @@ function fn_6d5d7444({
     handleRepost: local_11,
   } = fn_6ad6c437(arg.id);
   const local_12 = fn_61d7292b(arg);
-  const local_13 = symbol_069(
+  const local_13 = symbol_067(
     (arg) => {
       arg.stopPropagation();
       if (arg_3) {
         return;
       }
       const local = arg.author.username ?? arg.author.id;
-      symbol_057(`/@${local}/post/${arg.id}`);
+      symbol_055(`/@${local}/post/${arg.id}`);
     },
     [arg.author.username, arg.author.id, arg.id, arg_3],
   );
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_b6f17743.originalPost,
     onClick: local_13,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_b6f17743.originalPostHeader,
         children: [
-          symbol_073(symbol_031, {
+          symbol_071(symbol_031, {
             size: 14,
           }),
-          symbol_073(symbol_058, {
+          symbol_071(symbol_056, {
             src: arg.author.avatar ?? "",
             alt: arg.author.displayName,
             size: "xs",
           }),
-          symbol_073(symbol_022, {
+          symbol_071(symbol_022, {
             name: arg.author.displayName,
             verified: arg.author.isVerified,
             hasNuksta: arg.author.hasNuksta,
             pin: arg.author.pin,
             size: "xs",
           }),
-          symbol_073("span", {
+          symbol_071("span", {
             className: local_b6f17743.originalPostTime,
             children: local,
           }),
         ],
       }),
       arg.text &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_b6f17743.originalPostText,
           children: arg.text,
         }),
       arg.attachments &&
         arg.attachments.length > 0 &&
-        symbol_073(fn_5ef7518c, {
+        symbol_071(fn_5ef7518c, {
           attachments: arg.attachments,
           postVs: arg.vs,
           source: arg_2,
         }),
-      symbol_073(fn_6403e5bb, {
+      symbol_071(fn_570ff832, {
         liked: local_4,
         reposted: local_12.reposted,
         likesCount: local_5,
@@ -21520,8 +22013,8 @@ function fn_6d5d7444({
     ],
   });
 }
-const local_0da67384 = symbol_078(() =>
-  symbol_064(() => import("./routes/poll.js"), local_5b673d6a([19, 20])).then(
+const local_0da67384 = symbol_076(() =>
+  symbol_062(() => import("./routes/poll.js"), local_80136556([19, 20])).then(
     (arg) => ({
       default: arg.Poll,
     }),
@@ -21558,7 +22051,7 @@ function fn_65dff5a1(arg) {
 }
 const local_f06debfc_59 = 300;
 const local_f06debfc_60 = 500;
-const symbol_055 = symbol_052(
+const symbol_053 = fn_e330de8b(
   function ({
     post: arg,
     variant: arg_2 = "feed",
@@ -21574,15 +22067,15 @@ const symbol_055 = symbol_052(
     onDelete: arg_12,
   }) {
     const local = arg_2 === "feed";
-    const local_2 = symbol_006();
-    const { openModal: local_3, closeModal: local_4 } = symbol_066();
-    const local_5 = symbol_054((arg) => arg.setCurrentPost);
-    const local_6 = symbol_054((arg) => arg.seedPostStats);
-    const local_7 = symbol_054((arg) =>
+    const local_2 = symbol_004();
+    const { openModal: local_3, closeModal: local_4 } = symbol_064();
+    const local_5 = symbol_052((arg) => arg.setCurrentPost);
+    const local_6 = symbol_052((arg) => arg.seedPostStats);
+    const local_7 = symbol_052((arg) =>
       arg.posts.find((arg) => arg.id === arg.id),
     );
-    const local_8 = symbol_075((arg) => arg.profile);
-    symbol_077(() => {
+    const local_8 = symbol_073((arg) => arg.profile);
+    symbol_058(() => {
       local_6(arg);
     }, [arg, local_6]);
     const local_9 = fn_61d7292b(arg);
@@ -21590,7 +22083,7 @@ const symbol_055 = symbol_052(
       isFollowing: local_10,
       follow: local_11,
       unfollow: local_12,
-    } = symbol_032(arg.author.id);
+    } = fn_c8ddca88(arg.author.id);
     const local_13 =
       local && local_8?.id !== arg.author.id ? local_10 : undefined;
     const {
@@ -21616,11 +22109,11 @@ const symbol_055 = symbol_052(
       handleComment: local_27,
       handleRepost: local_28,
     } = fn_6ad6c437(arg.id);
-    const local_29 = symbol_069(() => {
+    const local_29 = symbol_067(() => {
       local_13 !== undefined &&
         (local_13
           ? local_3(
-              symbol_073(symbol_008, {
+              symbol_071(symbol_007, {
                 displayName: arg.author.displayName,
                 onConfirm: local_12,
                 onClose: local_4,
@@ -21638,10 +22131,10 @@ const symbol_055 = symbol_052(
     const local_30 = symbol_002(null);
     const local_31 = symbol_002(null);
     const local_32 = symbol_002(null);
-    const [local_33, local_34] = symbol_056(local_f06debfc_59);
-    const [local_35, local_36] = symbol_056(0);
+    const [local_33, local_34] = symbol_054(local_f06debfc_59);
+    const [local_35, local_36] = symbol_054(0);
     const local_37 = local_35 > local_33;
-    symbol_077(
+    symbol_058(
       () => () => {
         if (local_32.current) {
           cancelAnimationFrame(local_32.current);
@@ -21650,7 +22143,7 @@ const symbol_055 = symbol_052(
       },
       [],
     );
-    const local_38 = symbol_069(
+    const local_38 = symbol_067(
       (arg) => {
         if (arg && local) {
           if (local_32.current) {
@@ -21667,13 +22160,13 @@ const symbol_055 = symbol_052(
       },
       [local],
     );
-    const local_39 = symbol_069((arg) => {
+    const local_39 = symbol_067((arg) => {
       arg.stopPropagation();
       local_34((arg) => arg + local_f06debfc_60);
     }, []);
     fn_2df383fe(arg.id, local_30, arg_7, arg_8, arg.vs);
     const local_40 = arg.originalPost?.id;
-    symbol_077(() => {
+    symbol_058(() => {
       const local = local_30.current;
       if (!local) {
         return;
@@ -21684,15 +22177,15 @@ const symbol_055 = symbol_052(
     }, [arg.id, local_40]);
     const local_41 = symbol_002(null);
     const local_42 = symbol_002(0);
-    const local_43 = symbol_069((arg) => {
+    const local_43 = symbol_067((arg) => {
       local_41.current = arg.target;
     }, []);
-    const local_44 = symbol_069(() => {
+    const local_44 = symbol_067(() => {
       local_5(local_7 ?? arg);
       const local = arg.author.username ?? arg.author.id;
-      symbol_057(`/@${local}/post/${arg.id}`);
+      symbol_055(`/@${local}/post/${arg.id}`);
     }, [arg, local_7, local_5]);
-    const local_45 = symbol_069(
+    const local_45 = symbol_067(
       (arg) => {
         const local = arg.target;
         if (
@@ -21734,14 +22227,14 @@ const symbol_055 = symbol_052(
       () => fn_65dff5a1(arg.attachments),
       [arg.attachments],
     );
-    const local_49 = symbol_073("div", {
+    const local_49 = symbol_071("div", {
       className: `${local_b6f17743.postInner} ${local ? local_b6f17743.isFeed : ""} ${arg_3 || ""}`,
       children: [
         local &&
-          symbol_073("a", {
+          symbol_071("a", {
             href: `/@${arg.author.username ?? arg.author.id}`,
             className: local_b6f17743.avatarLink,
-            children: symbol_073(symbol_058, {
+            children: symbol_071(symbol_056, {
               src: arg.author.avatar ?? "",
               alt: arg.author.displayName,
               size: "sm",
@@ -21749,10 +22242,10 @@ const symbol_055 = symbol_052(
               onFollowBadgeClick: local_29,
             }),
           }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_b6f17743.postContent,
           children: [
-            symbol_073(fn_9f9edcc8, {
+            symbol_071(fn_9f9edcc8, {
               author: local_46,
               createdAt: arg.createdAt,
               editedAt: arg.editedAt,
@@ -21766,14 +22259,14 @@ const symbol_055 = symbol_052(
               onPin: arg_11,
               onCopyLink: local_23,
             }),
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_b6f17743.postBody,
               children: [
                 arg.text &&
-                  symbol_073("div", {
+                  symbol_071("div", {
                     className: local_b6f17743.textWrapper,
                     children: [
-                      symbol_073("div", {
+                      symbol_071("div", {
                         ref: local_38,
                         className: `${local_b6f17743.text} ${local_37 ? local_b6f17743.collapsed : ""}`,
                         style:
@@ -21782,14 +22275,14 @@ const symbol_055 = symbol_052(
                                 maxHeight: `${local_33}px`,
                               }
                             : undefined,
-                        children: symbol_073(fn_a782b940, {
+                        children: symbol_071(fn_86399a31, {
                           text: arg.text,
                           spans: arg.spans ?? [],
                         }),
                       }),
                       local &&
                         local_37 &&
-                        symbol_073("button", {
+                        symbol_071("button", {
                           type: "button",
                           className: local_b6f17743.expandButton,
                           onClick: local_39,
@@ -21798,16 +22291,16 @@ const symbol_055 = symbol_052(
                     ],
                   }),
                 local_47.length > 0 &&
-                  symbol_073(fn_3e65b80a, {
+                  symbol_071(fn_e47a9d66, {
                     media: local_47,
                     isFeed: local,
                     postVs: arg.vs,
                     source: arg_7,
                   }),
                 local_48 &&
-                  symbol_073(symbol_062, {
+                  symbol_071(symbol_061, {
                     fallback: null,
-                    children: symbol_073(local_0da67384, {
+                    children: symbol_071(local_0da67384, {
                       title: local_48.question,
                       options: local_48.options.map((arg) => ({
                         id: arg.id,
@@ -21828,12 +22321,12 @@ const symbol_055 = symbol_052(
                     }),
                   }),
                 arg.originalPost &&
-                  symbol_073(fn_6d5d7444, {
+                  symbol_071(fn_15090264, {
                     originalPost: arg.originalPost,
                     source: arg_7,
                     showcase: arg_9,
                   }),
-                symbol_073(fn_6403e5bb, {
+                symbol_071(fn_570ff832, {
                   compact: arg_9,
                   emojiOnly: arg_9,
                   flush: arg_9,
@@ -21856,7 +22349,7 @@ const symbol_055 = symbol_052(
       ],
     });
     if (local) {
-      return symbol_073("article", {
+      return symbol_071("article", {
         ref: local_30,
         className: `${local_b6f17743.post} ${arg_6 ? "flash-highlight" : ""}`,
         onMouseDown: local_43,
@@ -21864,7 +22357,7 @@ const symbol_055 = symbol_052(
         children: local_49,
       });
     }
-    return symbol_073("div", {
+    return symbol_071("div", {
       ref: local_30,
       children: local_49,
     });
@@ -21934,15 +22427,15 @@ const local_074cb7eb = {
   liked: local_5ab563c6_2,
   replyButton: local_4da1f290,
 };
-const local_22c6c85e = symbol_078(() =>
-  symbol_064(
+const local_22c6c85e = symbol_076(() =>
+  symbol_062(
     () => import("./routes/voice-message.js"),
-    local_5b673d6a([21, 11, 22]),
+    local_80136556([21, 11, 22]),
   ).then((arg) => ({
     default: arg.VoiceMessage,
   })),
 );
-const local_4d88b603 = symbol_052(function ({
+const local_b4e2aa85 = fn_e330de8b(function ({
   author: arg,
   commentId: arg_2,
   text: arg_3,
@@ -21962,7 +22455,7 @@ const local_4d88b603 = symbol_052(function ({
   isWallOwner: arg_17 = false,
 }) {
   const local = fn_b5e97943(arg_6);
-  const local_2 = symbol_075((arg) => arg.profile?.id);
+  const local_2 = symbol_073((arg) => arg.profile?.id);
   const local_3 = arg.id === local_2;
   const local_4 = local_3 || arg_17;
   const local_5 = arg_9 === "xs";
@@ -21972,7 +22465,7 @@ const local_4d88b603 = symbol_052(function ({
       local.push({
         id: "edit",
         label: "Редактировать",
-        icon: symbol_073(symbol_026, {
+        icon: symbol_071(symbol_026, {
           size: 16,
         }),
         onClick: () => arg_13(arg_2),
@@ -21982,7 +22475,7 @@ const local_4d88b603 = symbol_052(function ({
       local.push({
         id: "delete",
         label: "Удалить",
-        icon: symbol_073(symbol_074, {
+        icon: symbol_071(symbol_072, {
           size: 16,
         }),
         danger: true,
@@ -21993,7 +22486,7 @@ const local_4d88b603 = symbol_052(function ({
       local.push({
         id: "report",
         label: "Пожаловаться",
-        icon: symbol_073(symbol_060, {
+        icon: symbol_071(symbol_059, {
           size: 16,
         }),
         danger: true,
@@ -22003,32 +22496,32 @@ const local_4d88b603 = symbol_052(function ({
     return local;
   }, [local_3, local_4, arg_2, arg_13, arg_14, arg_12]);
   const local_7 = `/@${arg.username ?? arg.id}`;
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_074cb7eb.comment} ${local_5 ? local_074cb7eb.small : ""}`,
     children: [
       !arg_16 &&
-        symbol_073("a", {
+        symbol_071("a", {
           href: local_7,
           className: local_074cb7eb.avatarLink,
-          children: symbol_073(symbol_058, {
+          children: symbol_071(symbol_056, {
             src: arg.avatar,
             alt: arg.displayName,
             size: arg_9,
           }),
         }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_074cb7eb.commentContent,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_074cb7eb.commentHeader,
             children: [
-              symbol_073("div", {
+              symbol_071("div", {
                 className: local_074cb7eb.commentHeaderLeft,
                 children: [
-                  symbol_073("a", {
+                  symbol_071("a", {
                     href: local_7,
                     className: local_074cb7eb.authorLink,
-                    children: symbol_073(symbol_022, {
+                    children: symbol_071(symbol_022, {
                       name: arg.displayName,
                       verified: arg.isVerified,
                       hasNuksta: arg.hasNuksta,
@@ -22036,14 +22529,14 @@ const local_4d88b603 = symbol_052(function ({
                       size: arg_9,
                     }),
                   }),
-                  symbol_073("span", {
+                  symbol_071("span", {
                     className: local_074cb7eb.commentTime,
                     children: local,
                   }),
                 ],
               }),
-              symbol_073(symbol_005, {
-                trigger: symbol_073(symbol_010, {
+              symbol_071(symbol_005, {
+                trigger: symbol_071(symbol_010, {
                   size: local_5 ? 14 : 16,
                 }),
                 items: local_6,
@@ -22053,13 +22546,13 @@ const local_4d88b603 = symbol_052(function ({
             ],
           }),
           (arg_15 || arg_3) &&
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_074cb7eb.commentText,
               children: [
                 arg_15 &&
-                  symbol_073(symbol_063, {
+                  symbol_071(symbol_020, {
                     children: [
-                      symbol_073("a", {
+                      symbol_071("a", {
                         href: `/@${arg_15.username}`,
                         className: local_074cb7eb.replyMention,
                         children: ["@", arg_15.displayName],
@@ -22068,27 +22561,27 @@ const local_4d88b603 = symbol_052(function ({
                     ],
                   }),
                 arg_3 &&
-                  symbol_073(fn_a782b940, {
+                  symbol_071(fn_86399a31, {
                     text: arg_3,
                     spans: arg_4,
                   }),
               ],
             }),
           fn_9f548ab4(arg_5).length > 0 &&
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_074cb7eb.commentMedia,
-              children: symbol_073(fn_3e65b80a, {
+              children: symbol_071(fn_e47a9d66, {
                 media: fn_9f548ab4(arg_5),
               }),
             }),
           arg_5
             .filter((arg) => arg.type === "audio")
             .map((arg) =>
-              symbol_073(
-                symbol_062,
+              symbol_071(
+                symbol_061,
                 {
                   fallback: null,
-                  children: symbol_073(local_22c6c85e, {
+                  children: symbol_071(local_22c6c85e, {
                     src: arg.url,
                     duration: arg.duration,
                   }),
@@ -22096,25 +22589,25 @@ const local_4d88b603 = symbol_052(function ({
                 arg.id,
               ),
             ),
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_074cb7eb.commentActions,
             children: [
-              symbol_073("button", {
+              symbol_071("button", {
                 className: local_074cb7eb.replyButton,
                 onClick: arg_11,
                 children: "Ответить",
               }),
-              symbol_073("div", {
+              symbol_071("div", {
                 className: local_074cb7eb.reactionWrapper,
-                children: symbol_073("button", {
+                children: symbol_071("button", {
                   className: `${local_074cb7eb.commentAction} ${arg_8 ? local_074cb7eb.liked : ""}`,
                   onClick: () => arg_10(),
                   children: [
-                    symbol_073(symbol_030, {
+                    symbol_071(symbol_030, {
                       size: 14,
                       filled: arg_8,
                     }),
-                    symbol_073(fn_2d0b32d3, {
+                    symbol_071(fn_6f365300, {
                       value: arg_7,
                     }),
                   ],
@@ -22127,7 +22620,7 @@ const local_4d88b603 = symbol_052(function ({
     ],
   });
 });
-const local_674663e9 = symbol_052(function ({
+const local_a3439d39 = fn_e330de8b(function ({
   comment: arg,
   onLike: arg_2,
   onLikeReply: arg_3,
@@ -22175,40 +22668,40 @@ const local_674663e9 = symbol_052(function ({
       },
     })),
   ];
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_074cb7eb.commentWrapper} ${local_4 ? "flash-highlight" : ""}`,
     "data-comment-id": arg.id,
     children: [
       local_6.map((arg, arg_2) => {
         const local = !(arg_2 === local_6.length - 1 && !local && !local_5);
         const local_2 = arg_14 === arg.data.id;
-        return symbol_073(
+        return symbol_071(
           "div",
           {
             "data-comment-id": arg.data.id,
             className: `${local_074cb7eb.threadItem} ${local_2 ? "flash-highlight" : ""}`,
             children: [
-              symbol_073("div", {
+              symbol_071("div", {
                 className: local_074cb7eb.avatarWrapper,
                 children: [
-                  symbol_073("a", {
+                  symbol_071("a", {
                     href: `/@${arg.author.username ?? arg.author.id}`,
                     className: local_074cb7eb.avatarLink,
-                    children: symbol_073(symbol_058, {
+                    children: symbol_071(symbol_056, {
                       src: arg.author.avatar,
                       alt: arg.author.displayName,
                       size: "sm",
                     }),
                   }),
                   local &&
-                    symbol_073("div", {
+                    symbol_071("div", {
                       className: local_074cb7eb.threadLine,
                     }),
                 ],
               }),
-              symbol_073("div", {
+              symbol_071("div", {
                 className: local_074cb7eb.commentBody,
-                children: symbol_073(local_4d88b603, {
+                children: symbol_071(local_b4e2aa85, {
                   author: arg.author,
                   commentId: arg.data.id,
                   text: arg.data.text,
@@ -22251,24 +22744,24 @@ const local_674663e9 = symbol_052(function ({
         );
       }),
       local &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_074cb7eb.threadItem,
           children: [
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_074cb7eb.avatarWrapper,
               children: [
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_074cb7eb.avatarPlaceholder,
                 }),
                 local_5 &&
-                  symbol_073("div", {
+                  symbol_071("div", {
                     className: local_074cb7eb.threadLine,
                   }),
               ],
             }),
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_074cb7eb.commentBody,
-              children: symbol_073(symbol_025, {
+              children: symbol_071(symbol_025, {
                 placeholder: "Написать ответ...",
                 replyTo: {
                   id: arg_4.commentId,
@@ -22284,7 +22777,7 @@ const local_674663e9 = symbol_052(function ({
         }),
       local_5 &&
         !arg_13 &&
-        symbol_073("button", {
+        symbol_071("button", {
           className: local_074cb7eb.showMoreBtn,
           onClick: () => arg_9(arg.id),
           children: [
@@ -22303,8 +22796,8 @@ function fn_eb3fb58d({
   getItemKey: arg_4 = (arg) => arg,
 }) {
   const local = symbol_002(null);
-  const [local_2, local_3] = symbol_056(0);
-  const [local_4, local_5] = symbol_056(0);
+  const [local_2, local_3] = symbol_054(0);
+  const [local_4, local_5] = symbol_054(0);
   const local_6 = symbol_002(new Map());
   const local_7 = symbol_002(new Map());
   const local_8 = symbol_002(0);
@@ -22312,14 +22805,14 @@ function fn_eb3fb58d({
     local_8.current = arg;
     local_7.current.clear();
   }
-  const local_9 = symbol_069(
+  const local_9 = symbol_067(
     (arg) => {
       const local = arg_4(arg);
       return local_6.current.get(local) ?? arg_2;
     },
     [arg_4, arg_2],
   );
-  const local_10 = symbol_069(
+  const local_10 = symbol_067(
     (arg) => {
       if (arg === 0) {
         return 0;
@@ -22399,7 +22892,7 @@ function fn_eb3fb58d({
     }
     return local;
   }, [local_12, local_13, arg_4, local_10, local_9, arg]);
-  const local_15 = symbol_069(
+  const local_15 = symbol_067(
     (arg, arg_2) => {
       if (!arg) {
         return;
@@ -22417,12 +22910,12 @@ function fn_eb3fb58d({
     },
     [arg_4],
   );
-  const local_16 = symbol_069(() => {
+  const local_16 = symbol_067(() => {
     if (local.current) {
       local_3(local.current.scrollTop);
     }
   }, []);
-  const local_17 = symbol_069(
+  const local_17 = symbol_067(
     (arg) => {
       if (local.current) {
         local.current.removeEventListener("scroll", local_16);
@@ -22438,7 +22931,7 @@ function fn_eb3fb58d({
     },
     [local_16],
   );
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local.current) {
       return;
     }
@@ -22450,7 +22943,7 @@ function fn_eb3fb58d({
     local.observe(local.current);
     return () => local.disconnect();
   }, []);
-  symbol_077(
+  symbol_058(
     () => () => {
       if (local.current) {
         local.current.removeEventListener("scroll", local_16);
@@ -22490,7 +22983,7 @@ const local_dc4fb1de = {
   inputWrapper: local_f53702d6_2,
 };
 const local_f06debfc_61 = 120;
-function fn_46dde2df({
+function fn_2efae0d7({
   comments: arg,
   hasMore: arg_2,
   isLoadingMore: arg_3,
@@ -22522,7 +23015,7 @@ function fn_46dde2df({
     overscan: 3,
     getItemKey: (arg) => arg[arg]?.id ?? arg,
   });
-  symbol_077(() => {
+  symbol_058(() => {
     if (!arg_2 || arg_3 || local_3.length === 0) {
       local.current = false;
       return;
@@ -22534,23 +23027,23 @@ function fn_46dde2df({
       arg_4();
     }
   }, [local_3, arg.length, arg_2, arg_3, arg_4]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (!arg_3) {
       local.current = false;
     }
   }, [arg_3]);
-  const local_6 = symbol_069(
+  const local_6 = symbol_067(
     (arg, arg_2) => {
       local_5(arg, arg_2);
     },
     [local_5],
   );
-  return symbol_073("div", {
+  return symbol_071("div", {
     ref: local_2,
     className: local_dc4fb1de.virtualContainer,
     "data-comments-scroll": true,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_dc4fb1de.virtualContent,
         style: {
           height: `${local_4}px`,
@@ -22558,7 +23051,7 @@ function fn_46dde2df({
         children: local_3.map((arg) => {
           const local = arg[arg.index];
           if (local) {
-            return symbol_073(
+            return symbol_071(
               "div",
               {
                 ref: (arg) => local_6(arg, arg.index),
@@ -22570,7 +23063,7 @@ function fn_46dde2df({
                   width: "100%",
                   transform: `translateY(${arg.start}px)`,
                 },
-                children: symbol_073(local_674663e9, {
+                children: symbol_071(local_a3439d39, {
                   comment: local,
                   onLike: () => arg_9(local.id),
                   onLikeReply: arg_10,
@@ -22595,7 +23088,7 @@ function fn_46dde2df({
         }),
       }),
       arg_3 &&
-        symbol_073(fn_10dc4524, {
+        symbol_071(fn_65100612, {
           variant: "medium",
         }),
     ],
@@ -22609,10 +23102,10 @@ const local_a98795d7 = {
   popup: local_6f1a1319,
   closing: local_cc8fa504_2,
 };
-const local_76950eb5 = symbol_078(() =>
-  symbol_064(
+const local_76950eb5 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/emoji-picker.js"),
-    local_5b673d6a([23, 24]),
+    local_80136556([23, 24]),
   ).then((arg) => ({
     default: arg.EmojiPicker,
   })),
@@ -22623,21 +23116,21 @@ const local_f06debfc_64 = 8;
 const local_f06debfc_65 = 100;
 const local_f06debfc_66 = 150;
 const local_f06debfc_67 = 150;
-function fn_b143dc03({
+function fn_88689a78({
   onEmojiSelect: arg,
   buttonClassName: arg_2,
   size: arg_3 = 20,
 }) {
-  const [local, local_2] = symbol_056(false);
-  const [local_3, local_4] = symbol_056(false);
-  const [local_5, local_6] = symbol_056(null);
+  const [local, local_2] = symbol_054(false);
+  const [local_3, local_4] = symbol_054(false);
+  const [local_5, local_6] = symbol_054(null);
   const local_7 = symbol_002(null);
   const local_8 = symbol_002(null);
   const local_9 = symbol_002(null);
   const local_10 = symbol_002(null);
   const local_11 = symbol_002(null);
   const local_12 = symbol_002(null);
-  const local_13 = symbol_069(() => {
+  const local_13 = symbol_067(() => {
     const local = local_7.current;
     if (!local) {
       return;
@@ -22670,13 +23163,13 @@ function fn_b143dc03({
       transformOrigin: `${local_8 === "top" ? "bottom" : "top"} ${local_9 === "left" ? "left" : "right"}`,
     });
   }, []);
-  const local_14 = symbol_069(() => {
+  const local_14 = symbol_067(() => {
     if (!(local || local_3)) {
       local_13();
       local_2(true);
     }
   }, [local, local_3, local_13]);
-  const local_15 = symbol_069(() => {
+  const local_15 = symbol_067(() => {
     if (!(!local || local_3)) {
       local_4(true);
       local_12.current = window.setTimeout(() => {
@@ -22712,7 +23205,7 @@ function fn_b143dc03({
       local_15();
     }, local_f06debfc_66);
   };
-  symbol_077(
+  symbol_058(
     () => () => {
       if (local_10.current) {
         clearTimeout(local_10.current);
@@ -22747,25 +23240,25 @@ function fn_b143dc03({
   const local_20 = (arg) => {
     arg.preventDefault();
   };
-  return symbol_073("div", {
+  return symbol_071("div", {
     ref: local_8,
     className: local_a98795d7.wrapper,
     onMouseEnter: local_16,
     onMouseLeave: local_17,
     onMouseDown: local_20,
     children: [
-      symbol_073("button", {
+      symbol_071("button", {
         ref: local_7,
         className: arg_2,
         title: "Добавить эмоджи",
-        children: symbol_073(local_40eb419c, {
+        children: symbol_071(local_40eb419c, {
           size: arg_3,
         }),
       }),
       local &&
         local_5 &&
         symbol_001(
-          symbol_073("div", {
+          symbol_071("div", {
             ref: local_9,
             className: `${local_a98795d7.popup} ${local_3 ? local_a98795d7.closing : ""}`,
             style: {
@@ -22777,9 +23270,9 @@ function fn_b143dc03({
             onMouseEnter: local_18,
             onMouseLeave: local_19,
             onMouseDown: local_20,
-            children: symbol_073(symbol_062, {
+            children: symbol_071(symbol_061, {
               fallback: null,
-              children: symbol_073(local_76950eb5, {
+              children: symbol_071(local_76950eb5, {
                 onEmojiSelect: arg,
               }),
             }),
@@ -22821,10 +23314,10 @@ function fn_bfb01173({
   initialText: arg_2,
   initialSpans: arg_3 = [],
 }) {
-  const { closeModal: local } = symbol_066();
-  const local_2 = symbol_018((arg) => arg.editComment);
-  const local_3 = symbol_075((arg) => arg.profile);
-  const local_4 = symbol_006();
+  const { closeModal: local } = symbol_064();
+  const local_2 = symbol_016((arg) => arg.editComment);
+  const local_3 = symbol_073((arg) => arg.profile);
+  const local_4 = symbol_004();
   const {
     text: local_5,
     spans: local_6,
@@ -22832,19 +23325,19 @@ function fn_bfb01173({
     handleChange: local_8,
     insertText: local_9,
   } = fn_9d6d3161(arg_2, arg_3);
-  const [local_10, local_11] = symbol_056(false);
+  const [local_10, local_11] = symbol_054(false);
   const local_12 = local_f06debfc_68 - local_5.length;
   const local_13 = local_12 < 0;
   const local_14 = local_5 !== arg_2;
   const local_15 = JSON.stringify(local_6) !== JSON.stringify(arg_3);
   const local_16 = local_14 || local_15;
-  const local_17 = symbol_069(
+  const local_17 = symbol_067(
     (arg) => {
       local_9(arg.emoji);
     },
     [local_9],
   );
-  const local_18 = symbol_069(async () => {
+  const local_18 = symbol_067(async () => {
     if (!(!local_5.trim() || local_13 || !local_16 || local_10)) {
       local_11(true);
       try {
@@ -22857,28 +23350,28 @@ function fn_bfb01173({
       }
     }
   }, [local_5, local_6, local_13, local_16, local_10, local_2, arg, local]);
-  return symbol_073(symbol_014, {
+  return symbol_071(symbol_014, {
     frameless: true,
     onClose: local,
     className: local_9bab1bec.editCommentModal,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_9bab1bec.form,
       children: [
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_9bab1bec.header,
-          children: symbol_073("span", {
+          children: symbol_071("span", {
             className: local_9bab1bec.title,
             children: "Редактирование комментария",
           }),
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_9bab1bec.content,
           children: [
-            symbol_073(symbol_058, {
+            symbol_071(symbol_056, {
               src: local_3?.avatar ?? "",
               size: "sm",
             }),
-            symbol_073(local_7fa9686b, {
+            symbol_071(local_15986a00, {
               ref: local_7,
               value: local_5,
               spans: local_6,
@@ -22893,33 +23386,33 @@ function fn_bfb01173({
             }),
           ],
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_9bab1bec.actions,
           children: [
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_9bab1bec.mediaButtons,
               children:
                 !local_4 &&
-                symbol_073(fn_b143dc03, {
+                symbol_071(fn_88689a78, {
                   onEmojiSelect: local_17,
                   buttonClassName: local_9bab1bec.mediaButton,
                 }),
             }),
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_9bab1bec.submitGroup,
               children: [
                 local_13 &&
-                  symbol_073("span", {
+                  symbol_071("span", {
                     className: `${local_9bab1bec.charCount} ${local_9bab1bec.error}`,
                     children: local_12,
                   }),
-                symbol_073(symbol_003, {
+                symbol_071(symbol_003, {
                   size: "md",
                   variant: "ghost",
                   onClick: () => local(),
                   children: "Отмена",
                 }),
-                symbol_073(symbol_003, {
+                symbol_071(symbol_003, {
                   size: "md",
                   disabled:
                     !local_5.trim() || local_13 || !local_16 || local_10,
@@ -22934,10 +23427,10 @@ function fn_bfb01173({
     }),
   });
 }
-const local_b84ad31b_2 = symbol_078(() =>
-  symbol_064(
+const local_b84ad31b_2 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/report-modal.js"),
-    local_5b673d6a([16, 17, 18]),
+    local_80136556([16, 17, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -22957,18 +23450,18 @@ function symbol_024({
   variant: arg_12 = "modal",
   hideInput: arg_13 = false,
 }) {
-  const local = symbol_006() && arg_12 === "modal";
-  const [local_2, local_3] = symbol_056(null);
-  const [local_4, local_5] = symbol_056(null);
-  const [local_6, local_7] = symbol_056(null);
-  const [local_8, local_9] = symbol_056(null);
+  const local = symbol_004() && arg_12 === "modal";
+  const [local_2, local_3] = symbol_054(null);
+  const [local_4, local_5] = symbol_054(null);
+  const [local_6, local_7] = symbol_054(null);
+  const [local_8, local_9] = symbol_054(null);
   const local_10 = symbol_002(null);
-  const { openModal: local_11 } = symbol_066();
-  const local_12 = symbol_018((arg) => arg.highlightedCommentId);
-  const local_13 = symbol_018((arg) => arg.clearHighlightedComment);
-  const local_14 = symbol_018((arg) => arg.loadReplies);
-  const local_15 = symbol_018((arg) => arg.deleteComment);
-  const local_16 = symbol_018((arg) => arg.toggleCommentLike);
+  const { openModal: local_11 } = symbol_064();
+  const local_12 = symbol_016((arg) => arg.highlightedCommentId);
+  const local_13 = symbol_016((arg) => arg.clearHighlightedComment);
+  const local_14 = symbol_016((arg) => arg.loadReplies);
+  const local_15 = symbol_016((arg) => arg.deleteComment);
+  const local_16 = symbol_016((arg) => arg.toggleCommentLike);
   fn_c6e473a2({
     sentinelRef: local_10,
     hasMore: arg_4,
@@ -22976,13 +23469,13 @@ function symbol_024({
     onLoadMore: arg_10,
     rootMargin: "200px",
   });
-  symbol_077(
+  symbol_058(
     () => () => {
       local_13();
     },
     [local_13],
   );
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local_12) {
       return;
     }
@@ -23044,13 +23537,13 @@ function symbol_024({
   const local_19 = () => {
     local_3(null);
   };
-  const local_20 = symbol_069(
+  const local_20 = symbol_067(
     (arg) => {
       local_16(arg);
     },
     [local_16],
   );
-  const local_21 = symbol_069(
+  const local_21 = symbol_067(
     async (arg) => {
       local_7(arg);
       try {
@@ -23061,10 +23554,10 @@ function symbol_024({
     },
     [local_14],
   );
-  const local_22 = symbol_069((arg) => {
+  const local_22 = symbol_067((arg) => {
     local_9(arg);
   }, []);
-  const local_23 = symbol_069(
+  const local_23 = symbol_067(
     (arg) => {
       let local = "";
       let local_2 = [];
@@ -23082,7 +23575,7 @@ function symbol_024({
         }
       }
       local_11(
-        symbol_073(fn_bfb01173, {
+        symbol_071(fn_bfb01173, {
           commentId: arg,
           initialText: local,
           initialSpans: local_2,
@@ -23091,7 +23584,7 @@ function symbol_024({
     },
     [arg, local_11],
   );
-  const local_24 = symbol_069(
+  const local_24 = symbol_067(
     (arg) => {
       if (confirm("Вы уверены, что хотите удалить этот комментарий?")) {
         local_15(arg);
@@ -23099,25 +23592,25 @@ function symbol_024({
     },
     [local_15],
   );
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_dc4fb1de.comments,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_dc4fb1de.sortWrapper,
-        children: symbol_073("select", {
+        children: symbol_071("select", {
           value: arg_5,
           onChange: (arg) => arg_6(arg.target.value),
           className: local_dc4fb1de.sortSelect,
           children: [
-            symbol_073("option", {
+            symbol_071("option", {
               value: "new",
               children: "Новые",
             }),
-            symbol_073("option", {
+            symbol_071("option", {
               value: "old",
               children: "Старые",
             }),
-            symbol_073("option", {
+            symbol_071("option", {
               value: "popular",
               children: "Популярные",
             }),
@@ -23125,16 +23618,16 @@ function symbol_024({
         }),
       }),
       arg_2
-        ? symbol_073(fn_4392d77d, {
+        ? symbol_071(fn_4392d77d, {
             count: 5,
           })
         : arg.length === 0
-          ? symbol_073("div", {
+          ? symbol_071("div", {
               className: local_dc4fb1de.empty,
               children: "Нет комментариев",
             })
           : local
-            ? symbol_073(fn_46dde2df, {
+            ? symbol_071(fn_2efae0d7, {
                 comments: arg,
                 hasMore: arg_4,
                 isLoadingMore: arg_3,
@@ -23154,15 +23647,15 @@ function symbol_024({
                 onEdit: local_23,
                 onDelete: local_24,
               })
-            : symbol_073("div", {
+            : symbol_071("div", {
                 className: local_dc4fb1de.commentsList,
                 children: [
                   arg.map((arg) =>
-                    symbol_073(
+                    symbol_071(
                       "div",
                       {
                         className: local_dc4fb1de.commentItem,
-                        children: symbol_073(local_674663e9, {
+                        children: symbol_071(local_a3439d39, {
                           comment: arg,
                           onLike: () => arg_7(arg.id),
                           onLikeReply: local_20,
@@ -23185,21 +23678,21 @@ function symbol_024({
                     ),
                   ),
                   arg_4 &&
-                    symbol_073("div", {
+                    symbol_071("div", {
                       ref: local_10,
                       className: local_dc4fb1de.loadMoreSentinel,
                       children:
                         arg_3 &&
-                        symbol_073(fn_10dc4524, {
+                        symbol_071(fn_65100612, {
                           variant: "medium",
                         }),
                     }),
                 ],
               }),
       !arg_13 &&
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_dc4fb1de.inputWrapper,
-          children: symbol_073(symbol_025, {
+          children: symbol_071(symbol_025, {
             onSubmit: (arg, arg_2, arg_3) =>
               arg_8({
                 text: arg,
@@ -23210,9 +23703,9 @@ function symbol_024({
           }),
         }),
       local_8 &&
-        symbol_073(symbol_062, {
+        symbol_071(symbol_061, {
           fallback: null,
-          children: symbol_073(local_b84ad31b_2, {
+          children: symbol_071(local_b84ad31b_2, {
             targetType: "comment",
             targetId: local_8,
             onClose: () => local_9(null),
@@ -23243,8 +23736,8 @@ function fn_4e3ee8c9({ postId: arg, onClose: arg_2 }) {
     loadMoreComments: local_8,
     toggleCommentLike: local_9,
     addComment: local_10,
-  } = symbol_018(
-    symbol_016((arg) => ({
+  } = symbol_016(
+    symbol_015((arg) => ({
       comments: arg.comments,
       commentsLoading: arg.commentsLoading,
       commentsLoadingMore: arg.commentsLoadingMore,
@@ -23256,8 +23749,8 @@ function fn_4e3ee8c9({ postId: arg, onClose: arg_2 }) {
       addComment: arg.addComment,
     })),
   );
-  const { commentsSort: local_11, setCommentsSort: local_12 } = symbol_020(
-    symbol_016((arg) => ({
+  const { commentsSort: local_11, setCommentsSort: local_12 } = symbol_019(
+    symbol_015((arg) => ({
       commentsSort: arg.commentsSort,
       setCommentsSort: arg.setCommentsSort,
     })),
@@ -23266,40 +23759,40 @@ function fn_4e3ee8c9({ postId: arg, onClose: arg_2 }) {
     local.current = arg;
     local_6();
   }
-  symbol_077(() => {
+  symbol_058(() => {
     local_7(arg);
   }, [arg, local_7]);
-  const local_13 = symbol_069(
+  const local_13 = symbol_067(
     (arg) => {
       local_12(arg);
       local_7(arg);
     },
     [local_12, local_7, arg],
   );
-  const local_14 = symbol_069(() => {
+  const local_14 = symbol_067(() => {
     if (local_5 && !local_4) {
       local_8(arg);
     }
   }, [local_5, local_4, local_8, arg]);
-  const local_15 = symbol_069(
+  const local_15 = symbol_067(
     (arg) => {
       local_9(arg);
     },
     [local_9],
   );
-  const local_16 = symbol_069(
+  const local_16 = symbol_067(
     async (arg) => {
       await local_10(arg, arg);
     },
     [local_10, arg],
   );
-  const local_17 = symbol_069(
+  const local_17 = symbol_067(
     async (arg) => {
       const local = `voice_${Date.now()}.webm`;
       const local_2 = new File([arg], local, {
         type: arg.type || "audio/webm",
       });
-      const local_3 = await symbol_070.uploadMedia(local_2);
+      const local_3 = await symbol_068.uploadMedia(local_2);
       await local_10(arg, {
         text: "",
         attachments: [
@@ -23311,22 +23804,22 @@ function fn_4e3ee8c9({ postId: arg, onClose: arg_2 }) {
     },
     [local_10, arg],
   );
-  return symbol_073(symbol_014, {
+  return symbol_071(symbol_014, {
     frameless: true,
     onClose: arg_2,
     className: local_bd39b1cd.commentsModal,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_bd39b1cd.header,
-        children: symbol_073("span", {
+        children: symbol_071("span", {
           className: local_bd39b1cd.title,
           children: "Комментарии",
         }),
       }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_bd39b1cd.content,
         "data-comments-modal": true,
-        children: symbol_073(symbol_024, {
+        children: symbol_071(symbol_024, {
           comments: local_2,
           isLoading: local_3,
           isLoadingMore: local_4,
@@ -23342,15 +23835,15 @@ function fn_4e3ee8c9({ postId: arg, onClose: arg_2 }) {
     ],
   });
 }
-const local_c65d5c43 = symbol_078(() =>
-  symbol_064(
+const local_c65d5c43 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/drawing-canvas.js"),
-    local_5b673d6a([25, 26]),
+    local_80136556([25, 26]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
 );
-function symbol_015({
+function symbol_013({
   onSubmit: arg,
   autoFocus: arg_2 = false,
   placeholder: arg_3 = "Что нового?",
@@ -23363,12 +23856,12 @@ function symbol_015({
     insertText: local_5,
     reset: local_6,
   } = fn_9d6d3161();
-  const [local_7, local_8] = symbol_056(false);
-  const [local_9, local_10] = symbol_056(false);
-  const [local_11, local_12] = symbol_056(false);
+  const [local_7, local_8] = symbol_054(false);
+  const [local_9, local_10] = symbol_054(false);
+  const [local_11, local_12] = symbol_054(false);
   const local_13 = symbol_002(0);
-  const local_14 = symbol_006();
-  const local_15 = symbol_061()?.subscription?.isActive ?? false;
+  const local_14 = symbol_004();
+  const local_15 = symbol_060()?.subscription?.isActive ?? false;
   const {
     images: local_16,
     uploadingImages: local_17,
@@ -23404,7 +23897,7 @@ function symbol_015({
   const local_44 = local_15
     ? `${local_2ace5464},${local_e23ce327}`
     : local_2ace5464;
-  const local_45 = symbol_069(async () => {
+  const local_45 = symbol_067(async () => {
     if (!(!local_43 || local_40 || local_18 || local_9)) {
       local_10(true);
       try {
@@ -23435,19 +23928,19 @@ function symbol_015({
     local_24,
     local_38,
   ]);
-  const local_46 = symbol_069(
+  const local_46 = symbol_067(
     (arg) => {
       local_22(arg);
     },
     [local_22],
   );
-  const local_47 = symbol_069(
+  const local_47 = symbol_067(
     (arg) => {
       local_5(arg.emoji);
     },
     [local_5],
   );
-  const local_48 = symbol_069((arg) => {
+  const local_48 = symbol_067((arg) => {
     arg.preventDefault();
     arg.stopPropagation();
     local_13.current++;
@@ -23455,11 +23948,11 @@ function symbol_015({
       local_12(true);
     }
   }, []);
-  const local_49 = symbol_069((arg) => {
+  const local_49 = symbol_067((arg) => {
     arg.preventDefault();
     arg.stopPropagation();
   }, []);
-  const local_50 = symbol_069((arg) => {
+  const local_50 = symbol_067((arg) => {
     arg.preventDefault();
     arg.stopPropagation();
     local_13.current--;
@@ -23467,7 +23960,7 @@ function symbol_015({
       local_12(false);
     }
   }, []);
-  const local_51 = symbol_069(
+  const local_51 = symbol_067(
     (arg) => {
       arg.preventDefault();
       arg.stopPropagation();
@@ -23480,46 +23973,46 @@ function symbol_015({
     },
     [local_23],
   );
-  return symbol_073("div", {
-    className: `${local_6930e397.form} ${local_11 ? local_6930e397.dragActive : ""}`,
+  return symbol_071("div", {
+    className: `${local_27c2efda.form} ${local_11 ? local_27c2efda.dragActive : ""}`,
     onDragEnter: local_48,
     onDragOver: local_49,
     onDragLeave: local_50,
     onDrop: local_51,
     children: [
       local_11 &&
-        symbol_073("div", {
-          className: local_6930e397.dragOverlay,
+        symbol_071("div", {
+          className: local_27c2efda.dragOverlay,
           children: [
-            symbol_073(local_fe55573b, {
+            symbol_071(local_fe55573b, {
               size: 32,
             }),
-            symbol_073("span", {
+            symbol_071("span", {
               children: local_15 ? "Перетащите файл" : "Перетащите изображение",
             }),
           ],
         }),
-      symbol_073("div", {
-        className: local_6930e397.whatsNew,
-        children: symbol_073(local_7fa9686b, {
+      symbol_071("div", {
+        className: local_27c2efda.whatsNew,
+        children: symbol_071(local_15986a00, {
           ref: local_3,
           value: local,
           spans: local_2,
           onChange: local_4,
           placeholder: arg_3,
           autoFocus: arg_2,
-          className: local_6930e397.editor,
+          className: local_27c2efda.editor,
           minHeight: 40,
           maxHeight: local_58bcf8ef.MAX_TEXTAREA_HEIGHT,
           onImagePaste: local_23,
         }),
       }),
-      symbol_073(fn_5b2965e1, {
+      symbol_071(fn_5853330e, {
         images: local_16,
         uploadingImages: local_17,
         onRemove: local_21,
       }),
-      symbol_073("input", {
+      symbol_071("input", {
         ref: local_25,
         type: "file",
         accept: local_44,
@@ -23530,7 +24023,7 @@ function symbol_015({
         },
       }),
       local_27 &&
-        symbol_073(fn_9716bb9e, {
+        symbol_071(fn_9716bb9e, {
           poll: local_28,
           onQuestionChange: local_30,
           onOptionChange: local_31,
@@ -23539,49 +24032,49 @@ function symbol_015({
           onMultipleChoiceToggle: local_34,
           onClose: local_35,
         }),
-      symbol_073("div", {
-        className: local_6930e397.actions,
+      symbol_071("div", {
+        className: local_27c2efda.actions,
         children: [
-          symbol_073("div", {
-            className: local_6930e397.mediaButtons,
+          symbol_071("div", {
+            className: local_27c2efda.mediaButtons,
             children: [
-              symbol_073("button", {
-                className: local_6930e397.mediaButton,
+              symbol_071("button", {
+                className: local_27c2efda.mediaButton,
                 onClick: local_20,
                 title: local_15 ? "Добавить медиа" : "Добавить изображение",
-                children: symbol_073(local_e89bf398, {}),
+                children: symbol_071(local_e89bf398, {}),
               }),
               !local_14 &&
-                symbol_073(fn_b143dc03, {
+                symbol_071(fn_88689a78, {
                   onEmojiSelect: local_47,
-                  buttonClassName: local_6930e397.mediaButton,
+                  buttonClassName: local_27c2efda.mediaButton,
                 }),
-              symbol_073("button", {
-                className: local_6930e397.mediaButton,
+              symbol_071("button", {
+                className: local_27c2efda.mediaButton,
                 onClick: () => local_8(true),
                 title: "Нарисовать",
                 disabled: local_19,
-                children: symbol_073(symbol_071, {
+                children: symbol_071(symbol_069, {
                   size: 20,
                 }),
               }),
-              symbol_073("button", {
-                className: `${local_6930e397.mediaButton} ${local_27 ? local_6930e397.active : ""}`,
+              symbol_071("button", {
+                className: `${local_27c2efda.mediaButton} ${local_27 ? local_27c2efda.active : ""}`,
                 onClick: local_29,
                 title: "Добавить опрос",
-                children: symbol_073(local_4837987e, {}),
+                children: symbol_071(local_4837987e, {}),
               }),
             ],
           }),
-          symbol_073("div", {
-            className: local_6930e397.submitGroup,
+          symbol_071("div", {
+            className: local_27c2efda.submitGroup,
             children: [
               local_40 &&
-                symbol_073("span", {
-                  className: `${local_6930e397.charCount} ${local_6930e397.error}`,
+                symbol_071("span", {
+                  className: `${local_27c2efda.charCount} ${local_27c2efda.error}`,
                   children: local_39,
                 }),
-              symbol_073(symbol_003, {
+              symbol_071(symbol_003, {
                 size: "lg",
                 disabled: !local_43 || local_40 || local_18 || local_9,
                 loading: local_9,
@@ -23593,9 +24086,9 @@ function symbol_015({
         ],
       }),
       local_7 &&
-        symbol_073(symbol_062, {
+        symbol_071(symbol_061, {
           fallback: null,
-          children: symbol_073(local_c65d5c43, {
+          children: symbol_071(local_c65d5c43, {
             isOpen: local_7,
             onClose: () => local_8(false),
             onSave: local_46,
@@ -23611,14 +24104,14 @@ const local_339f5c81 = {
   createPostModal: local_9ccfd1d1,
   title: local_9d9cf508_6,
 };
-function symbol_011({
+function symbol_008({
   wallOwnerId: arg,
   placeholder: arg_2,
   onPostCreated: arg_3,
 }) {
-  const { closeModal: local } = symbol_066();
-  const local_2 = symbol_075((arg) => arg.profile);
-  const local_3 = symbol_054((arg) => arg.createPost);
+  const { closeModal: local } = symbol_064();
+  const local_2 = symbol_073((arg) => arg.profile);
+  const local_3 = symbol_052((arg) => arg.createPost);
   const local_4 = async (arg, arg_2, arg_3, arg_4) => {
     if (!local_2) {
       return;
@@ -23634,16 +24127,16 @@ function symbol_011({
     await arg_3?.();
     local();
   };
-  return symbol_073(symbol_014, {
+  return symbol_071(symbol_014, {
     frameless: true,
     onClose: local,
     className: local_339f5c81.createPostModal,
     children: [
-      symbol_073("h2", {
+      symbol_071("h2", {
         className: local_339f5c81.title,
         children: "Создать пост",
       }),
-      symbol_073(symbol_015, {
+      symbol_071(symbol_013, {
         onSubmit: local_4,
         autoFocus: true,
         placeholder: arg_2,
@@ -23679,10 +24172,10 @@ function fn_e1d37297({
   initialText: arg_2,
   initialSpans: arg_3 = [],
 }) {
-  const { closeModal: local } = symbol_066();
-  const local_2 = symbol_054((arg) => arg.editPost);
-  const local_3 = symbol_075((arg) => arg.profile);
-  const local_4 = symbol_006();
+  const { closeModal: local } = symbol_064();
+  const local_2 = symbol_052((arg) => arg.editPost);
+  const local_3 = symbol_073((arg) => arg.profile);
+  const local_4 = symbol_004();
   const {
     text: local_5,
     spans: local_6,
@@ -23690,19 +24183,19 @@ function fn_e1d37297({
     handleChange: local_8,
     insertText: local_9,
   } = fn_9d6d3161(arg_2, arg_3);
-  const [local_10, local_11] = symbol_056(false);
+  const [local_10, local_11] = symbol_054(false);
   const local_12 = local_f06debfc_69 - local_5.length;
   const local_13 = local_12 < 0;
   const local_14 = local_5 !== arg_2;
   const local_15 = JSON.stringify(local_6) !== JSON.stringify(arg_3);
   const local_16 = local_14 || local_15;
-  const local_17 = symbol_069(
+  const local_17 = symbol_067(
     (arg) => {
       local_9(arg.emoji);
     },
     [local_9],
   );
-  const local_18 = symbol_069(async () => {
+  const local_18 = symbol_067(async () => {
     if (!(!local_5.trim() || local_13 || !local_16 || local_10)) {
       local_11(true);
       try {
@@ -23715,21 +24208,21 @@ function fn_e1d37297({
       }
     }
   }, [local_5, local_6, local_13, local_16, local_10, local_2, arg, local]);
-  return symbol_073(symbol_014, {
+  return symbol_071(symbol_014, {
     frameless: true,
     onClose: local,
     className: local_7f9fe33f.editPostModal,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_7f9fe33f.form,
       children: [
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_7f9fe33f.whatsNew,
           children: [
-            symbol_073(symbol_058, {
+            symbol_071(symbol_056, {
               src: local_3?.avatar ?? "",
               size: "md",
             }),
-            symbol_073(local_7fa9686b, {
+            symbol_071(local_15986a00, {
               ref: local_7,
               value: local_5,
               spans: local_6,
@@ -23743,27 +24236,27 @@ function fn_e1d37297({
             }),
           ],
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_7f9fe33f.actions,
           children: [
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_7f9fe33f.mediaButtons,
               children:
                 !local_4 &&
-                symbol_073(fn_b143dc03, {
+                symbol_071(fn_88689a78, {
                   onEmojiSelect: local_17,
                   buttonClassName: local_7f9fe33f.mediaButton,
                 }),
             }),
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_7f9fe33f.submitGroup,
               children: [
                 local_13 &&
-                  symbol_073("span", {
+                  symbol_071("span", {
                     className: `${local_7f9fe33f.charCount} ${local_7f9fe33f.error}`,
                     children: local_12,
                   }),
-                symbol_073(symbol_003, {
+                symbol_071(symbol_003, {
                   size: "lg",
                   disabled: !local_5.trim() || local_13 || !local_16,
                   loading: local_10,
@@ -23799,22 +24292,22 @@ const local_5f1fffe7 = {
   actions: local_8c4f8b4b_7,
 };
 function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
-  const [local, local_2] = symbol_056("");
-  const [local_3, local_4] = symbol_056(false);
-  const local_5 = symbol_075((arg) => arg.profile);
-  const local_6 = symbol_054((arg) => arg.updatePostReposted);
-  const local_7 = symbol_054((arg) => arg.prependPost);
+  const [local, local_2] = symbol_054("");
+  const [local_3, local_4] = symbol_054(false);
+  const local_5 = symbol_073((arg) => arg.profile);
+  const local_6 = symbol_052((arg) => arg.updatePostReposted);
+  const local_7 = symbol_052((arg) => arg.prependPost);
   const local_8 = async () => {
     local_4(true);
     try {
-      const local = await symbol_068.createRepost(
+      const local = await symbol_066.createRepost(
         arg.id,
         local.trim() || undefined,
       );
       local_6(arg.id, true, arg.reposted ? 0 : 1);
       local_7(local);
       if (local_5?.username) {
-        symbol_068.invalidateWallCache(local_5.username);
+        symbol_066.invalidateWallCache(local_5.username);
       }
       arg_3?.();
       arg_2();
@@ -23824,28 +24317,28 @@ function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
       local_4(false);
     }
   };
-  return symbol_073(symbol_014, {
+  return symbol_071(symbol_014, {
     onClose: arg_2,
     showHeader: false,
     frameless: false,
     className: local_5f1fffe7.repostModal,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_5f1fffe7.content,
       children: [
-        symbol_073("h2", {
+        symbol_071("h2", {
           className: local_5f1fffe7.title,
           children: "Репост",
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_5f1fffe7.inputSection,
           children: [
             local_5 &&
-              symbol_073(symbol_058, {
+              symbol_071(symbol_056, {
                 src: local_5.avatar,
                 alt: local_5.displayName,
                 size: "sm",
               }),
-            symbol_073("textarea", {
+            symbol_071("textarea", {
               className: local_5f1fffe7.textarea,
               placeholder: "Добавьте комментарий к репосту...",
               value: local,
@@ -23854,18 +24347,18 @@ function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
             }),
           ],
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_5f1fffe7.originalPost,
           children: [
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_5f1fffe7.postHeader,
               children: [
-                symbol_073(symbol_058, {
+                symbol_071(symbol_056, {
                   src: arg.author.avatar ?? "",
                   alt: arg.author.displayName,
                   size: "xs",
                 }),
-                symbol_073(symbol_022, {
+                symbol_071(symbol_022, {
                   name: arg.author.displayName,
                   verified: arg.author.isVerified,
                   hasNuksta: arg.author.hasNuksta,
@@ -23874,16 +24367,16 @@ function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
                 }),
               ],
             }),
-            symbol_073("p", {
+            symbol_071("p", {
               className: local_5f1fffe7.postText,
               children: arg.text,
             }),
           ],
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_5f1fffe7.actions,
           children: [
-            symbol_073(symbol_003, {
+            symbol_071(symbol_003, {
               variant: "secondary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -23892,7 +24385,7 @@ function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
               disabled: local_3,
               children: "Отмена",
             }),
-            symbol_073(symbol_003, {
+            symbol_071(symbol_003, {
               variant: "primary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -23907,13 +24400,13 @@ function fn_14b687be({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
     }),
   });
 }
-const local_1b97192d = () => {
-  const local = symbol_061();
-  const local_2 = symbol_007();
+const local_bbe3401b = () => {
+  const local = symbol_060();
+  const local_2 = symbol_006();
   const { initialize: local_3, disconnectSSE: local_4 } = local_e4a1ecd0();
   const local_5 = symbol_035();
   const local_6 = symbol_036((arg) => arg.fetchPortal);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_2) {
       local_3();
     }
@@ -23921,7 +24414,7 @@ const local_1b97192d = () => {
       local_4();
     };
   }, [local_2, local_3, local_4]);
-  symbol_077(() => {
+  symbol_058(() => {
     local_6();
   }, [local_6]);
   const local_7 = local?.username ? `/@${local.username}` : "/profile";
@@ -23948,29 +24441,29 @@ const local_1b97192d = () => {
       {
         id: "notifications",
         label: "Уведы",
-        icon: symbol_050,
+        icon: symbol_049,
         href: "/notifications",
       },
       {
         id: "profile",
         label: "Профиль",
-        icon: symbol_051,
+        icon: symbol_050,
         href: local_7,
       },
     ],
     [local_7],
   );
-  const [local_9, local_10] = symbol_056({});
-  const [local_11, local_12] = symbol_056(true);
+  const [local_9, local_10] = symbol_054({});
+  const [local_11, local_12] = symbol_054(true);
   const local_13 = symbol_002([]);
   const local_14 = symbol_002(null);
-  const [local_15] = symbol_045();
-  const { openModal: local_16 } = symbol_066();
-  const local_17 = symbol_054((arg) => arg.fetchFeed);
-  const local_18 = symbol_054((arg) => arg.isRefreshing);
+  const [local_15] = symbol_044();
+  const { openModal: local_16 } = symbol_064();
+  const local_17 = symbol_052((arg) => arg.fetchFeed);
+  const local_18 = symbol_052((arg) => arg.isRefreshing);
   const local_19 = local_9812c6ee();
   const local_20 = fn_3215cb92();
-  const local_21 = symbol_069(() => {
+  const local_21 = symbol_067(() => {
     if (window.scrollY > 1) {
       window.scrollTo({
         top: 0,
@@ -23995,7 +24488,7 @@ const local_1b97192d = () => {
     return false;
   }, [local_15.url, local?.username]);
   const local_24 = symbol_002(null);
-  const local_25 = symbol_069((arg, arg_2 = false) => {
+  const local_25 = symbol_067((arg, arg_2 = false) => {
     if (!arg_2 && local_24.current === arg) {
       return;
     }
@@ -24011,7 +24504,7 @@ const local_1b97192d = () => {
       local_12(true);
     }
   }, []);
-  symbol_077(() => {
+  symbol_058(() => {
     const local = local_15.url || "./site/index.html";
     const local_2 = local_8.findIndex(
       (arg) =>
@@ -24025,12 +24518,12 @@ const local_1b97192d = () => {
       local_25(local_2, true);
     }
   }, [local_15.url, local_8, local_23, local_25]);
-  symbol_077(() => {
+  symbol_058(() => {
     const local = local_14.current;
     if (!local) {
       return;
     }
-    const local_2 = local.querySelector(`.${local_6a5ba56f.active}`);
+    const local_2 = local.querySelector(`.${local_236f2925.active}`);
     if (local_2) {
       const local = local_13.current.indexOf(local_2);
       if (local !== -1) {
@@ -24039,13 +24532,13 @@ const local_1b97192d = () => {
       }
     }
   }, []);
-  symbol_077(() => {
+  symbol_058(() => {
     const local = local_14.current;
     if (!local) {
       return;
     }
     const local_2 = () => {
-      const local = local.querySelector(`.${local_6a5ba56f.active}`);
+      const local = local.querySelector(`.${local_236f2925.active}`);
       if (local) {
         const local = local_13.current.indexOf(local);
         if (local !== -1) {
@@ -24062,20 +24555,20 @@ const local_1b97192d = () => {
     };
   }, [local_25]);
   const local_26 = () => {
-    local_16(symbol_073(symbol_011, {}));
+    local_16(symbol_071(symbol_008, {}));
   };
   if (local_22) {
     return null;
   }
-  return symbol_073("div", {
-    className: local_6a5ba56f.mobileNavigationWrapper,
+  return symbol_071("div", {
+    className: local_236f2925.mobileNavigationWrapper,
     children: [
-      symbol_073("nav", {
+      symbol_071("nav", {
         ref: local_14,
-        className: local_6a5ba56f.navigation,
+        className: local_236f2925.navigation,
         children: [
-          symbol_073("div", {
-            className: `${local_6a5ba56f.indicator} ${local_11 ? "" : local_6a5ba56f.indicatorHidden}`,
+          symbol_071("div", {
+            className: `${local_236f2925.indicator} ${local_11 ? "" : local_236f2925.indicatorHidden}`,
             style: local_9,
           }),
           local_8.map((arg, arg_2) => {
@@ -24087,7 +24580,7 @@ const local_1b97192d = () => {
               local_4 === arg.href ||
               local_4.startsWith(`${arg.href}/`) ||
               (arg.id === "profile" && local_23);
-            return symbol_073(
+            return symbol_071(
               "a",
               {
                 href: local_3 ? local_5.url : arg.href,
@@ -24099,7 +24592,7 @@ const local_1b97192d = () => {
                     local_25(arg_2);
                   }
                 },
-                className: `${local_6a5ba56f.navItem} ${local_5 ? local_6a5ba56f.active : ""}`,
+                className: `${local_236f2925.navItem} ${local_5 ? local_236f2925.active : ""}`,
                 onClick: (arg) => {
                   if (local_5 && arg.id === "feed") {
                     arg.preventDefault();
@@ -24107,38 +24600,38 @@ const local_1b97192d = () => {
                   }
                 },
                 children: [
-                  symbol_073("span", {
-                    className: local_6a5ba56f.iconWrapper,
+                  symbol_071("span", {
+                    className: local_236f2925.iconWrapper,
                     children: local_2
-                      ? symbol_073("img", {
+                      ? symbol_071("img", {
                           src: local_5.active
                             ? "/assets/portal/portal-active.gif"
                             : "./assets/portal-inactive.png",
                           alt: "Ивент",
-                          className: `${local_6a5ba56f.portalImage} ${local_5.active ? local_6a5ba56f.portalImageActive : ""}`,
+                          className: `${local_236f2925.portalImage} ${local_5.active ? local_236f2925.portalImageActive : ""}`,
                         })
-                      : symbol_073(symbol_063, {
+                      : symbol_071(symbol_020, {
                           children: [
                             arg.id === "feed" && local_18
-                              ? symbol_073(symbol_048, {})
-                              : symbol_073(local, {}),
+                              ? symbol_071(symbol_047, {})
+                              : symbol_071(local, {}),
                             arg.id === "notifications" &&
                               local_19 > 0 &&
-                              symbol_073("span", {
-                                className: local_6a5ba56f.badge,
+                              symbol_071("span", {
+                                className: local_236f2925.badge,
                                 children: local_19 > 99 ? "99+" : local_19,
                               }),
                             arg.id === "shop" &&
                               local_20 > 0 &&
-                              symbol_073("span", {
-                                className: local_6a5ba56f.badge,
+                              symbol_071("span", {
+                                className: local_236f2925.badge,
                                 children: local_20,
                               }),
                           ],
                         }),
                   }),
-                  symbol_073("span", {
-                    className: local_6a5ba56f.label,
+                  symbol_071("span", {
+                    className: local_236f2925.label,
                     children: arg.label,
                   }),
                 ],
@@ -24149,11 +24642,11 @@ const local_1b97192d = () => {
         ],
       }),
       local_2 &&
-        symbol_073("button", {
-          className: local_6a5ba56f.createButton,
+        symbol_071("button", {
+          className: local_236f2925.createButton,
           onClick: local_26,
           "aria-label": "Создать пост",
-          children: symbol_073(symbol_065, {}),
+          children: symbol_071(symbol_063, {}),
         }),
     ],
   });
@@ -24168,32 +24661,32 @@ const local_760f4793 = {
   green: local_d4ea5c9b,
   blue: local_153f84c8,
 };
-function fn_f3d00567({ type: arg }) {
+function fn_85546bd7({ type: arg }) {
   const local =
     arg === "like"
       ? local_760f4793.red
       : ["wall_post", "reply", "repost"].includes(arg)
         ? local_760f4793.green
         : local_760f4793.blue;
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_760f4793.badge} ${local}`,
     children: [
       arg === "follow" &&
-        symbol_073(symbol_065, {
+        symbol_071(symbol_063, {
           size: 12,
         }),
       ["wall_post", "reply"].includes(arg) &&
-        symbol_073(symbol_027, {
+        symbol_071(symbol_027, {
           size: 12,
           filled: true,
         }),
       arg === "like" &&
-        symbol_073(symbol_030, {
+        symbol_071(symbol_030, {
           size: 12,
           filled: true,
         }),
       arg === "repost" &&
-        symbol_073(symbol_031, {
+        symbol_071(symbol_031, {
           size: 12,
         }),
     ],
@@ -24223,10 +24716,10 @@ const local_4f4408db = {
   closeButton: local_df39e8f2_2,
   belowTabs: local_a2acbc37,
 };
-const local_dc634aac_3 = fn_c05a86e1(null);
+const local_dc634aac_3 = fn_aa547820(null);
 function fn_6f3a9292({ children: arg }) {
-  const [local, local_2] = symbol_056([]);
-  const local_3 = symbol_069((arg) => {
+  const [local, local_2] = symbol_054([]);
+  const local_3 = symbol_067((arg) => {
     const local = `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
     local_2((arg) => [
       ...arg,
@@ -24244,14 +24737,14 @@ function fn_6f3a9292({ children: arg }) {
       },
     ]);
   }, []);
-  const local_4 = symbol_069((arg) => {
+  const local_4 = symbol_067((arg) => {
     local_2((arg) => arg.filter((arg) => arg.id !== arg));
   }, []);
-  const local_5 = symbol_069(() => {
+  const local_5 = symbol_067(() => {
     local_2([]);
   }, []);
   const local_6 = local_9812c6ee_2();
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_6) {
       const local = fn_6844b49a(local_6.type);
       local_3({
@@ -24270,7 +24763,7 @@ function fn_6f3a9292({ children: arg }) {
       });
     }
   }, [local_6, local_3]);
-  return symbol_073(local_dc634aac_3.Provider, {
+  return symbol_071(local_dc634aac_3.Provider, {
     value: {
       toasts: local,
       addToast: local_3,
@@ -24279,7 +24772,7 @@ function fn_6f3a9292({ children: arg }) {
     },
     children: [
       arg,
-      symbol_073(fn_5854f35f, {
+      symbol_071(fn_5854f35f, {
         toasts: local,
         onRemove: local_4,
         onClearAll: local_5,
@@ -24288,7 +24781,7 @@ function fn_6f3a9292({ children: arg }) {
   });
 }
 function fn_5854f35f({ toasts: arg, onRemove: arg_2, onClearAll: arg_3 }) {
-  const [local, local_2] = symbol_056(false);
+  const [local, local_2] = symbol_054(false);
   const local_3 =
     typeof window !== "undefined" &&
     (window.location.pathname === "./site/index.html" ||
@@ -24304,13 +24797,13 @@ function fn_5854f35f({ toasts: arg, onRemove: arg_2, onClearAll: arg_3 }) {
       local_2(false);
     }, 300);
   };
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_4f4408db.container} ${local_3 ? local_4f4408db.belowTabs : ""} ym-hide-content`,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: `${local_4f4408db.toastList} ${local ? local_4f4408db.clearing : ""}`,
         children: local_4.map((arg, arg_2) =>
-          symbol_073(
+          symbol_071(
             fn_d77c5a70,
             {
               toast: arg,
@@ -24323,7 +24816,7 @@ function fn_5854f35f({ toasts: arg, onRemove: arg_2, onClearAll: arg_3 }) {
         ),
       }),
       arg.length > 1 &&
-        symbol_073(symbol_003, {
+        symbol_071(symbol_003, {
           className: local_4f4408db.clearAllButton,
           onClick: local_5,
           children: "Скрыть все",
@@ -24391,9 +24884,9 @@ function fn_d77c5a70({
   isClearing: arg_4 = false,
 }) {
   const local = symbol_002(null);
-  const [local_2, local_3] = symbol_056(0);
-  const [local_4, local_5] = symbol_056(false);
-  const [local_6, local_7] = symbol_056(false);
+  const [local_2, local_3] = symbol_054(0);
+  const [local_4, local_5] = symbol_054(false);
+  const [local_6, local_7] = symbol_054(false);
   const local_8 = symbol_002(0);
   const local_9 = symbol_002(false);
   const local_10 = (arg) => {
@@ -24401,7 +24894,7 @@ function fn_d77c5a70({
     local_9.current = false;
     local_5(true);
   };
-  const local_11 = symbol_069(
+  const local_11 = symbol_067(
     (arg) => {
       if (!local_4) {
         return;
@@ -24414,7 +24907,7 @@ function fn_d77c5a70({
     },
     [local_4],
   );
-  const local_12 = symbol_069(() => {
+  const local_12 = symbol_067(() => {
     if (local_4) {
       local_5(false);
       if (Math.abs(local_2) > local_f06debfc_70) {
@@ -24426,14 +24919,14 @@ function fn_d77c5a70({
         if (!local_9.current) {
           const local = fn_a844a33b(arg);
           if (local) {
-            symbol_057(local);
+            symbol_055(local);
             arg_2(arg.id);
           }
         }
       }
     }
   }, [local_4, local_2, arg_2, arg]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_4) {
       document.addEventListener("mousemove", local_11);
       document.addEventListener("mouseup", local_12);
@@ -24460,7 +24953,7 @@ function fn_d77c5a70({
   const local_16 =
     local_6 || arg_4 ? 0 : Math.max(0, 1 - Math.abs(local_2) / 200);
   const local_17 = arg_4 ? 400 : local_2;
-  return symbol_073("div", {
+  return symbol_071("div", {
     ref: local,
     className: `${local_4f4408db.toast} ${local_4 ? local_4f4408db.dragging : ""}`,
     style: {
@@ -24475,26 +24968,26 @@ function fn_d77c5a70({
     onTouchMove: local_14,
     onTouchEnd: local_15,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_4f4408db.toastLeft,
         children: [
-          symbol_073(symbol_058, {
+          symbol_071(symbol_056, {
             src: arg.actorAvatar || "",
-            badge: symbol_073(fn_f3d00567, {
+            badge: symbol_071(fn_85546bd7, {
               type: arg.notificationType,
             }),
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_4f4408db.toastData,
             children: [
               arg.actorName &&
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_4f4408db.title,
-                  children: symbol_073(symbol_022, {
+                  children: symbol_071(symbol_022, {
                     name: arg.actorName,
                   }),
                 }),
-              symbol_073("p", {
+              symbol_071("p", {
                 className: local_4f4408db.message,
                 children: arg.message,
               }),
@@ -24502,7 +24995,7 @@ function fn_d77c5a70({
           }),
         ],
       }),
-      symbol_073("button", {
+      symbol_071("button", {
         className: local_4f4408db.closeButton,
         onClick: (arg) => {
           arg.stopPropagation();
@@ -24510,7 +25003,7 @@ function fn_d77c5a70({
         },
         onMouseDown: (arg) => arg.stopPropagation(),
         onTouchStart: (arg) => arg.stopPropagation(),
-        children: symbol_073(symbol_049, {
+        children: symbol_071(symbol_048, {
           size: 16,
         }),
       }),
@@ -24543,37 +25036,37 @@ const local_2e5ff558 = {
   success: local_132b8ed2,
   error: local_b2622f5b,
 };
-function fn_97f7214e({
+function fn_add1a093({
   id: arg,
   type: arg_2,
   message: arg_3,
   onRemove: arg_4,
 }) {
-  const [local, local_2] = symbol_056(false);
+  const [local, local_2] = symbol_054(false);
   const local_3 = local_2e5ff558[arg_2];
-  const local_4 = symbol_069(() => {
+  const local_4 = symbol_067(() => {
     local_2(true);
     setTimeout(() => {
       arg_4(arg);
     }, 300);
   }, [arg, arg_4]);
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: `${local_cda3bf5e.toast} ${local_cda3bf5e[arg_2]} ${local ? local_cda3bf5e.leaving : ""}`,
     children: [
-      symbol_073("span", {
+      symbol_071("span", {
         className: local_cda3bf5e.icon,
-        children: symbol_073(local_3, {
+        children: symbol_071(local_3, {
           size: 20,
         }),
       }),
-      symbol_073("span", {
+      symbol_071("span", {
         className: local_cda3bf5e.message,
         children: arg_3,
       }),
-      symbol_073("button", {
+      symbol_071("button", {
         className: local_cda3bf5e.closeButton,
         onClick: local_4,
-        children: symbol_073(symbol_049, {
+        children: symbol_071(symbol_048, {
           size: 14,
         }),
       }),
@@ -24586,11 +25079,11 @@ function fn_bd4e493e() {
   if (local.length === 0) {
     return null;
   }
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_cda3bf5e.container,
     children: local.map((arg) =>
-      symbol_073(
-        fn_97f7214e,
+      symbol_071(
+        fn_add1a093,
         {
           id: arg.id,
           type: arg.type,
@@ -24612,20 +25105,20 @@ const local_bd39b1cd_2 = {
   button: local_9e87ce8c_4,
   active: local_6ab69625_4,
 };
-function symbol_013({
+function symbol_012({
   tabs: arg,
   defaultTab: arg_2 = 0,
   activeIndex: arg_3,
   onChange: arg_4,
   className: arg_5 = "",
 }) {
-  const [local, local_2] = symbol_056(arg_2);
+  const [local, local_2] = symbol_054(arg_2);
   const local_3 = arg_3 !== undefined ? arg_3 : local;
-  const [local_4, local_5] = symbol_056({});
+  const [local_4, local_5] = symbol_054({});
   const local_6 = symbol_002([]);
   const local_7 = symbol_002(null);
   const local_8 = symbol_002(false);
-  const local_9 = symbol_069(() => {
+  const local_9 = symbol_067(() => {
     const local = local_6.current[local_3];
     if (local) {
       const local = local.parentElement;
@@ -24653,10 +25146,10 @@ function symbol_013({
       }
     }
   }, [local_3]);
-  symbol_077(() => {
+  symbol_058(() => {
     local_9();
   }, [local_9]);
-  symbol_077(() => {
+  symbol_058(() => {
     const local = local_7.current;
     if (!local) {
       return;
@@ -24687,16 +25180,16 @@ function symbol_013({
     }
     return arg.id;
   };
-  return symbol_073("div", {
+  return symbol_071("div", {
     ref: local_7,
     className: `${local_bd39b1cd_2.tabs} ${arg_5}`,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_bd39b1cd_2.indicator,
         style: local_4,
       }),
       arg.map((arg, arg_2) =>
-        symbol_073(
+        symbol_071(
           "button",
           {
             ref: (arg) => {
@@ -24712,10 +25205,10 @@ function symbol_013({
     ],
   });
 }
-const local_e5f18eb8 = symbol_078(() =>
-  symbol_064(
+const local_e5f18eb8 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/image-viewer.js"),
-    local_5b673d6a([27, 28, 6, 5, 29]),
+    local_80136556([27, 28, 6, 5, 29]),
   ).then((arg) => ({
     default: arg.ImageViewer,
   })),
@@ -24733,9 +25226,9 @@ function fn_30574445() {
     close: local_9,
   } = local_aac74809();
   if (local) {
-    return symbol_073(symbol_062, {
+    return symbol_071(symbol_061, {
       fallback: null,
-      children: symbol_073(
+      children: symbol_071(
         local_e5f18eb8,
         {
           images: local_2,
@@ -24762,10 +25255,10 @@ const local_e42c74a1 = {
   wrapperShop: local_97d89813,
   content: local_4d84dbb6_7,
 };
-const local_8e5652b5 = symbol_078(() =>
-  symbol_064(
+const local_8e5652b5 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/auth-layout.js"),
-    local_5b673d6a([30, 31]),
+    local_80136556([30, 31]),
   ).then((arg) => ({
     default: arg.AuthLayout,
   })),
@@ -24789,61 +25282,39 @@ const local_d50c9609 = [
   "/recurring-terms",
 ];
 const local_808f09a9 = ["/shop"];
-const local_ba097f2c = ({ children: arg }) => {
-  const local = symbol_006();
-  const local_2 = symbol_007();
+const local_7472566a = ({ children: arg, currentPath: arg_2 }) => {
+  const local = symbol_004();
+  const local_2 = symbol_006();
   const local_3 = local_c15c3c53();
-  const [local_4, local_5] = symbol_056(window.location.pathname);
-  symbol_077(() => {
-    const local = () => {
-      local_5(window.location.pathname);
-    };
-    window.addEventListener("popstate", local);
-    const local_2 = history.pushState.bind(history);
-    const local_3 = history.replaceState.bind(history);
-    history.pushState = (...arg) => {
-      local_2(...arg);
-      local();
-    };
-    history.replaceState = (...arg) => {
-      local_3(...arg);
-      local();
-    };
-    return () => {
-      window.removeEventListener("popstate", local);
-      history.pushState = local_2;
-      history.replaceState = local_3;
-    };
-  }, []);
-  const local_6 = local_483bd706.includes(local_4);
-  const local_7 = local_808f09a9.some(
-    (arg) => local_4 === arg || local_4.startsWith(`${arg}/`),
+  const local_4 = local_483bd706.includes(arg_2);
+  const local_5 = local_808f09a9.some(
+    (arg) => arg_2 === arg || arg_2.startsWith(`${arg}/`),
   );
-  const local_8 = local_d50c9609.includes(local_4);
-  const local_9 = (local_2 || local_7) && !local_8;
-  if (local_6) {
-    return symbol_073(symbol_062, {
+  const local_6 = local_d50c9609.includes(arg_2);
+  const local_7 = (local_2 || local_5) && !local_6;
+  if (local_4) {
+    return symbol_071(symbol_061, {
       fallback: null,
-      children: symbol_073(local_8e5652b5, {
+      children: symbol_071(local_8e5652b5, {
         children: arg,
       }),
     });
   }
-  return symbol_073(local_3825d11b.Provider, {
+  return symbol_071(local_3825d11b.Provider, {
     value: {
       isHidden: local_3,
     },
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_e42c74a1.layout,
-      children: symbol_073("div", {
-        className: `${local_e42c74a1.wrapper} ${local_7 ? local_e42c74a1.wrapperShop : ""}`,
+      children: symbol_071("div", {
+        className: `${local_e42c74a1.wrapper} ${local_5 ? local_e42c74a1.wrapperShop : ""}`,
         children: [
-          local_9 &&
+          local_7 &&
             (local
-              ? symbol_073(local_1b97192d, {})
-              : symbol_073(local_610f3303, {})),
-          local_9 && !local && symbol_073(local_945b98e5, {}),
-          symbol_073("div", {
+              ? symbol_071(local_bbe3401b, {})
+              : symbol_071(local_54710c20, {})),
+          local_7 && !local && symbol_071(local_945b98e5, {}),
+          symbol_071("div", {
             className: local_e42c74a1.content,
             children: arg,
           }),
@@ -24909,11 +25380,11 @@ function fn_e90a3968(arg) {
     }
   } catch {}
 }
-function fn_58b6388b() {
-  const local = symbol_007();
-  const [local_2, local_3] = symbol_056(null);
-  const [local_4, local_5] = symbol_056(false);
-  const local_6 = symbol_069(() => {
+function fn_ef295974() {
+  const local = symbol_006();
+  const [local_2, local_3] = symbol_054(null);
+  const [local_4, local_5] = symbol_054(false);
+  const local_6 = symbol_067(() => {
     local_5(false);
     local_3((arg) => {
       if (arg) {
@@ -24922,7 +25393,7 @@ function fn_58b6388b() {
       return null;
     });
   }, []);
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local) {
       return;
     }
@@ -24944,7 +25415,7 @@ function fn_58b6388b() {
       local = true;
     };
   }, [local]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local_2) {
       return;
     }
@@ -24970,7 +25441,7 @@ function fn_58b6388b() {
       local.url &&
       (/^https?:\/\//.test(local.url)
         ? window.open(local.url, "_blank", "noopener,noreferrer")
-        : symbol_057(local.url));
+        : symbol_055(local.url));
     local_6();
   };
   const local_8 = (arg) => {
@@ -24987,17 +25458,17 @@ function fn_58b6388b() {
     buttons: local_14,
   } = local_2;
   return symbol_001(
-    symbol_073("div", {
+    symbol_071("div", {
       className: local_a8453371.overlay,
       onClick: local_8,
-      children: symbol_073("div", {
+      children: symbol_071("div", {
         className: local_a8453371.card,
         role: "dialog",
         "aria-modal": "true",
         "aria-label": local_11,
         children: [
           local_9?.url &&
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_a8453371.imageWrap,
               style:
                 local_9.width && local_9.height
@@ -25005,7 +25476,7 @@ function fn_58b6388b() {
                       aspectRatio: `${local_9.width} / ${local_9.height}`,
                     }
                   : undefined,
-              children: symbol_073("img", {
+              children: symbol_071("img", {
                 className: local_a8453371.image,
                 src: local_9.url,
                 alt: "",
@@ -25013,39 +25484,39 @@ function fn_58b6388b() {
                 height: local_9.height,
               }),
             }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: local_a8453371.body,
             children: [
-              symbol_073("div", {
+              symbol_071("div", {
                 className: local_a8453371.titleRow,
                 children: [
-                  symbol_073("h2", {
+                  symbol_071("h2", {
                     className: local_a8453371.title,
                     children: local_11,
                   }),
                   local_10 &&
-                    symbol_073("span", {
+                    symbol_071("span", {
                       className: local_a8453371.badge,
                       children: local_10,
                     }),
                 ],
               }),
               (local_12 || local_13) &&
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_a8453371.texts,
                   children: [
                     local_12 &&
-                      symbol_073("p", {
+                      symbol_071("p", {
                         className: local_a8453371.text,
                         children: local_12,
                       }),
                     local_13 &&
                       (local_4
-                        ? symbol_073("p", {
+                        ? symbol_071("p", {
                             className: local_a8453371.text,
                             children: local_13,
                           })
-                        : symbol_073("button", {
+                        : symbol_071("button", {
                             type: "button",
                             className: local_a8453371.moreButton,
                             onClick: () => local_5(true),
@@ -25054,10 +25525,10 @@ function fn_58b6388b() {
                   ],
                 }),
               !!local_14?.length &&
-                symbol_073("div", {
+                symbol_071("div", {
                   className: local_a8453371.buttons,
                   children: local_14.map((arg, arg_2) =>
-                    symbol_073(
+                    symbol_071(
                       "button",
                       {
                         type: "button",
@@ -25088,9 +25559,9 @@ const local_6717f24f = [
   "scroll",
 ];
 function fn_7d2d0183() {
-  const local = symbol_054((arg) => arg.applyStatsUpdates);
+  const local = symbol_052((arg) => arg.applyStatsUpdates);
   const local_2 = local_9812c6ee_3();
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_2 !== "authenticated") {
       return;
     }
@@ -25121,7 +25592,7 @@ function fn_7d2d0183() {
       const local_2 = Date.now();
       try {
         const local = local.length > 20 ? local.slice(0, 20) : local;
-        const local_2 = await symbol_068.getPostsStats(local);
+        const local_2 = await symbol_066.getPostsStats(local);
         if (local_2.length > 0) {
           local(local_2, local_2);
         }
@@ -25184,13 +25655,13 @@ function fn_7d2d0183() {
   }, [local, local_2]);
 }
 const local_8d71271f = () =>
-  symbol_073(symbol_012, {
+  symbol_071(symbol_011, {
     kind: "notFound",
     title: "Страница не найдена",
     description:
       "Такой страницы нет — возможно, ссылка устарела или в адресе опечатка.",
-    action: symbol_073(symbol_003, {
-      onClick: () => symbol_057("./site/index.html"),
+    action: symbol_071(symbol_003, {
+      onClick: () => symbol_055("./site/index.html"),
       children: "Вернуться на главную",
     }),
   });
@@ -25240,115 +25711,115 @@ const local_382fe44d = {
   pill: local_51204fb7,
   list: local_e9ccbd22_2,
 };
-function fn_2ef394dd(arg) {
+function fn_af1450fa(arg) {
   switch (arg) {
     case "short":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_382fe44d.body,
-        children: symbol_073("div", {
+        children: symbol_071("div", {
           className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w65}`,
         }),
       });
     case "medium":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_382fe44d.body,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w100}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w78}`,
           }),
         ],
       });
     case "long":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_382fe44d.body,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w100}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w92}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w85}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w50}`,
           }),
         ],
       });
     case "media":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_382fe44d.body,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w92}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w40}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.media}`,
           }),
         ],
       });
     case "mediaTall":
-      return symbol_073("div", {
+      return symbol_071("div", {
         className: local_382fe44d.body,
         children: [
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.line} ${local_382fe44d.w78}`,
           }),
-          symbol_073("div", {
+          symbol_071("div", {
             className: `${local_382fe44d.shimmer} ${local_382fe44d.mediaTall}`,
           }),
         ],
       });
   }
 }
-function fn_65a75b4d({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
+function fn_909c5e8a({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
   const local = arg_2
     ? {
         "--shimmer-delay": `${arg_2}ms`,
       }
     : undefined;
-  return symbol_073("article", {
+  return symbol_071("article", {
     className: local_382fe44d.skeleton,
     "aria-hidden": "true",
     style: local,
-    children: symbol_073("div", {
+    children: symbol_071("div", {
       className: local_382fe44d.inner,
       children: [
-        symbol_073("div", {
+        symbol_071("div", {
           className: `${local_382fe44d.shimmer} ${local_382fe44d.avatar}`,
         }),
-        symbol_073("div", {
+        symbol_071("div", {
           className: local_382fe44d.content,
           children: [
-            symbol_073("div", {
+            symbol_071("div", {
               className: local_382fe44d.header,
               children: [
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_382fe44d.shimmer} ${local_382fe44d.name}`,
                 }),
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_382fe44d.shimmer} ${local_382fe44d.time}`,
                 }),
               ],
             }),
-            fn_2ef394dd(arg),
-            symbol_073("div", {
+            fn_af1450fa(arg),
+            symbol_071("div", {
               className: local_382fe44d.actions,
               children: [
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_382fe44d.shimmer} ${local_382fe44d.pill}`,
                 }),
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_382fe44d.shimmer} ${local_382fe44d.pill}`,
                 }),
-                symbol_073("div", {
+                symbol_071("div", {
                   className: `${local_382fe44d.shimmer} ${local_382fe44d.pill}`,
                 }),
               ],
@@ -25361,7 +25832,7 @@ function fn_65a75b4d({ variant: arg = "medium", delayMs: arg_2 = 0 }) {
 }
 const local_b9554821 = ["medium", "media", "short", "long", "mediaTall"];
 function symbol_017({ count: arg = 4 }) {
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_382fe44d.list,
     role: "status",
     "aria-busy": "true",
@@ -25372,8 +25843,8 @@ function symbol_017({ count: arg = 4 }) {
         length: arg,
       },
       (arg, arg_2) =>
-        symbol_073(
-          fn_65a75b4d,
+        symbol_071(
+          fn_909c5e8a,
           {
             variant: local_b9554821[arg_2 % local_b9554821.length],
             delayMs: arg_2 * 120,
@@ -25405,17 +25876,17 @@ function symbol_023({
 }) {
   const local = symbol_002(null);
   const local_2 = symbol_002(false);
-  const [local_3, local_4] = symbol_056(null);
-  const [local_5, local_6] = symbol_056(window.innerWidth < 1174);
-  const local_7 = symbol_054((arg) => arg.highlightedPostId);
-  const local_8 = symbol_054((arg) => arg.clearHighlightedPost);
-  symbol_077(() => {
+  const [local_3, local_4] = symbol_054(null);
+  const [local_5, local_6] = symbol_054(window.innerWidth < 1174);
+  const local_7 = symbol_052((arg) => arg.highlightedPostId);
+  const local_8 = symbol_052((arg) => arg.clearHighlightedPost);
+  symbol_058(() => {
     const local = () => local_6(window.innerWidth < 1174);
     window.addEventListener("resize", local);
     return () => window.removeEventListener("resize", local);
   }, []);
   const local_9 = local_5 ? 0 : arg_8;
-  const local_10 = symbol_069(
+  const local_10 = symbol_067(
     (arg) => {
       const local = arg[arg];
       if (!local) {
@@ -25439,7 +25910,7 @@ function symbol_023({
     getItemKey: local_10,
     initialMeasuredHeights: arg_9,
   });
-  symbol_077(
+  symbol_058(
     () => () => {
       if (arg_10) {
         arg_10(local_14());
@@ -25447,7 +25918,7 @@ function symbol_023({
     },
     [arg_10, local_14],
   );
-  symbol_077(() => {
+  symbol_058(() => {
     if (!local_7) {
       return;
     }
@@ -25462,7 +25933,7 @@ function symbol_023({
     }, 300);
     return () => clearTimeout(local);
   }, [local_7, local_8]);
-  const local_15 = symbol_069(() => {
+  const local_15 = symbol_067(() => {
     if (!arg_5 || !arg_4 || arg_3) {
       return;
     }
@@ -25478,22 +25949,22 @@ function symbol_023({
       local_2.current = false;
     }
   }, [arg_5, arg_4, arg_3]);
-  symbol_077(() => {
+  symbol_058(() => {
     if (!arg_3) {
       local_2.current = false;
     }
   }, [arg_3]);
-  symbol_077(() => {
+  symbol_058(() => {
     window.addEventListener("scroll", local_15, {
       passive: true,
     });
     return () => window.removeEventListener("scroll", local_15);
   }, [local_15]);
-  return symbol_073("div", {
+  return symbol_071("div", {
     ref: local,
     className: local_a16b021c.virtualFeed,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_a16b021c.virtualContent,
         style: {
           height: `${local_12}px`,
@@ -25501,7 +25972,7 @@ function symbol_023({
         children: local_11.map((arg) => {
           const local = arg[arg.index];
           if (local) {
-            return symbol_073(
+            return symbol_071(
               "div",
               {
                 ref: (arg) => local_13(arg, arg.index),
@@ -25518,11 +25989,11 @@ function symbol_023({
         }),
       }),
       arg_3 &&
-        symbol_073("div", {
+        symbol_071("div", {
           style: {
             marginTop: `${local_9}px`,
           },
-          children: symbol_073(fn_65a75b4d, {
+          children: symbol_071(fn_909c5e8a, {
             variant: "medium",
           }),
         }),
@@ -25544,26 +26015,26 @@ const local_76da9dd7 = {
   empty: local_119f77f9_3,
 };
 const local_bcb2f379 = (arg) => {
-  const local = symbol_054((arg) => arg.posts);
-  const local_2 = symbol_054((arg) => arg.activeFeed);
-  const local_3 = symbol_054((arg) => arg.isLoading);
-  const local_4 = symbol_054((arg) => arg.isLoadingMore);
-  const local_5 = symbol_054((arg) => arg.hasMore);
-  const local_6 = symbol_054((arg) => arg.error);
-  const local_7 = symbol_054((arg) => arg.feedScrollPosition);
-  const local_8 = symbol_054((arg) => arg.feedMeasuredHeights);
-  const local_9 = symbol_054((arg) => arg.feedRestoreToken);
-  const local_10 = symbol_054((arg) => arg.setActiveFeed);
-  const local_11 = symbol_054((arg) => arg.fetchFeed);
-  const local_12 = symbol_054((arg) => arg.loadMoreFeed);
-  const local_13 = symbol_054((arg) => arg.createPost);
-  const local_14 = symbol_054((arg) => arg.cacheFeedHeights);
-  const local_15 = symbol_075((arg) => arg.profile);
-  const local_16 = symbol_075((arg) => arg.status);
+  const local = symbol_052((arg) => arg.posts);
+  const local_2 = symbol_052((arg) => arg.activeFeed);
+  const local_3 = symbol_052((arg) => arg.isLoading);
+  const local_4 = symbol_052((arg) => arg.isLoadingMore);
+  const local_5 = symbol_052((arg) => arg.hasMore);
+  const local_6 = symbol_052((arg) => arg.error);
+  const local_7 = symbol_052((arg) => arg.feedScrollPosition);
+  const local_8 = symbol_052((arg) => arg.feedMeasuredHeights);
+  const local_9 = symbol_052((arg) => arg.feedRestoreToken);
+  const local_10 = symbol_052((arg) => arg.setActiveFeed);
+  const local_11 = symbol_052((arg) => arg.fetchFeed);
+  const local_12 = symbol_052((arg) => arg.loadMoreFeed);
+  const local_13 = symbol_052((arg) => arg.createPost);
+  const local_14 = symbol_052((arg) => arg.cacheFeedHeights);
+  const local_15 = symbol_073((arg) => arg.profile);
+  const local_16 = symbol_073((arg) => arg.status);
   const local_17 = symbol_002(false);
   const local_18 = symbol_021(() => local.map((arg) => arg.author.id), [local]);
   fn_585b8996(local_18);
-  symbol_077(() => {
+  symbol_058(() => {
     if (local_16 === "authenticated" && local.length === 0 && !local_3) {
       local_11();
     }
@@ -25590,7 +26061,7 @@ const local_bcb2f379 = (arg) => {
     window.scrollTo(0, local);
     requestAnimationFrame(() => window.scrollTo(0, local));
   }, [local_9, local_7]);
-  const local_20 = symbol_069(
+  const local_20 = symbol_067(
     (arg) => {
       local_14(local_2, arg);
     },
@@ -25620,7 +26091,7 @@ const local_bcb2f379 = (arg) => {
       });
     }
   };
-  const local_23 = symbol_069(() => {
+  const local_23 = symbol_067(() => {
     if (local_5 && !local_4) {
       local_12();
     }
@@ -25631,10 +26102,10 @@ const local_bcb2f379 = (arg) => {
       : local_2 === "following"
         ? "feed_following"
         : "feed_clan";
-  const local_25 = symbol_069(
+  const local_25 = symbol_067(
     (arg, arg_2, arg_3) =>
-      symbol_073(
-        symbol_055,
+      symbol_071(
+        symbol_053,
         {
           post: arg,
           isHighlighted: arg_3,
@@ -25644,63 +26115,63 @@ const local_bcb2f379 = (arg) => {
       ),
     [local_24],
   );
-  return symbol_073("div", {
+  return symbol_071("div", {
     className: local_76da9dd7.page,
     children: [
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_76da9dd7.tabsWrapper,
         children: [
-          symbol_073(symbol_013, {
+          symbol_071(symbol_012, {
             tabs: ["Для вас", "Лента кланов", "Подписки"],
             activeIndex: local_2 === "global" ? 0 : local_2 === "clan" ? 1 : 2,
             onChange: local_21,
           }),
-          symbol_073("a", {
+          symbol_071("a", {
             href: "/search",
             className: local_76da9dd7.searchButton,
             "aria-label": "Поиск",
-            children: symbol_073(local_e33d719c, {}),
+            children: symbol_071(local_e33d719c, {}),
           }),
         ],
       }),
-      symbol_073("div", {
+      symbol_071("div", {
         className: local_76da9dd7.createPostWrapper,
         children: [
           local_15 &&
-            symbol_073(symbol_058, {
+            symbol_071(symbol_056, {
               src: local_15.avatar ?? "",
               alt: local_15.displayName,
               size: "sm",
             }),
-          symbol_073(symbol_015, {
+          symbol_071(symbol_013, {
             onSubmit: local_22,
           }),
         ],
       }),
       local_6
-        ? symbol_073("div", {
+        ? symbol_071("div", {
             className: local_76da9dd7.error,
             children: [
-              symbol_073("p", {
+              symbol_071("p", {
                 children: local_6,
               }),
-              symbol_073("button", {
+              symbol_071("button", {
                 onClick: () => local_11(),
                 children: "Повторить",
               }),
             ],
           })
         : local_3 && local.length === 0
-          ? symbol_073(symbol_017, {
+          ? symbol_071(symbol_017, {
               count: 4,
             })
           : local.length === 0
-            ? symbol_073("div", {
+            ? symbol_071("div", {
                 className: local_76da9dd7.empty,
                 children: "Нет постов",
               })
             : local.length > 0
-              ? symbol_073(
+              ? symbol_071(
                   symbol_023,
                   {
                     posts: local,
@@ -25719,187 +26190,187 @@ const local_bcb2f379 = (arg) => {
     ],
   });
 };
-const local_98d04132 = symbol_078(() =>
-  symbol_064(
+const local_98d04132 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/global-video-player.js"),
-    local_5b673d6a([32, 28, 14, 33]),
+    local_80136556([32, 28, 14, 33]),
   ).then((arg) => ({
     default: arg.GlobalVideoPlayer,
   })),
 );
-const local_3f597d55 = symbol_078(() =>
-  symbol_064(
+const local_3f597d55 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/hashtag.js"),
-    local_5b673d6a([34, 6, 35]),
+    local_80136556([34, 6, 35]),
   ).then((arg) => ({
     default: arg.Hashtag,
   })),
 );
-const local_44b61a2d = symbol_078(() =>
-  symbol_064(
+const local_44b61a2d = symbol_076(() =>
+  symbol_062(
     () => import("./routes/profile.js"),
-    local_5b673d6a([36, 37, 1, 2, 38]),
+    local_80136556([36, 37, 1, 2, 38]),
   ).then((arg) => ({
     default: arg.Profile,
   })),
 );
-const local_dd51dc2e = symbol_078(() =>
-  symbol_064(
+const local_dd51dc2e = symbol_076(() =>
+  symbol_062(
     () => import("./routes/post-page.js"),
-    local_5b673d6a([39, 6, 40]),
+    local_80136556([39, 6, 40]),
   ).then((arg) => ({
     default: arg.PostPage,
   })),
 );
-const local_67ce3a09 = symbol_078(() =>
-  symbol_064(
+const local_67ce3a09 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/notifications.js"),
-    local_5b673d6a([41, 4, 37, 42]),
+    local_80136556([41, 4, 37, 42]),
   ).then((arg) => ({
     default: arg.Notifications,
   })),
 );
-const local_da240d58 = symbol_078(() =>
-  symbol_064(() => import("./routes/search.js"), local_5b673d6a([43, 44])).then(
+const local_da240d58 = symbol_076(() =>
+  symbol_062(() => import("./routes/search.js"), local_80136556([43, 44])).then(
     (arg) => ({
       default: arg.Search,
     }),
   ),
 );
-const local_e757f6d6 = symbol_078(() =>
-  symbol_064(
+const local_e757f6d6 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/shop-frame.js"),
-    local_5b673d6a([45, 46]),
+    local_80136556([45, 46]),
   ).then((arg) => ({
     default: arg.ShopFrame,
   })),
 );
-const local_d72873f9 = symbol_078(() =>
-  symbol_064(
+const local_d72873f9 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/delete-account.js"),
-    local_5b673d6a([47, 6, 48]),
+    local_80136556([47, 6, 48]),
   ).then((arg) => ({
     default: arg.DeleteAccount,
   })),
 );
-const local_2e50693e = symbol_078(() =>
-  symbol_064(
+const local_2e50693e = symbol_076(() =>
+  symbol_062(
     () => import("./routes/terms.js"),
-    local_5b673d6a([49, 6, 50]),
+    local_80136556([49, 6, 50]),
   ).then((arg) => ({
     default: arg.Terms,
   })),
 );
-const local_9294a375 = symbol_078(() =>
-  symbol_064(
+const local_9294a375 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/privacy.js"),
-    local_5b673d6a([51, 6, 52]),
+    local_80136556([51, 6, 52]),
   ).then((arg) => ({
     default: arg.Privacy,
   })),
 );
-const local_e631d126 = symbol_078(() =>
-  symbol_064(
+const local_e631d126 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/cookies.js"),
-    local_5b673d6a([53, 6, 54]),
+    local_80136556([53, 6, 54]),
   ).then((arg) => ({
     default: arg.Cookies,
   })),
 );
-const local_7e8db683 = symbol_078(() =>
-  symbol_064(
+const local_7e8db683 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/external-link.js"),
-    local_5b673d6a([55, 6, 3, 56]),
+    local_80136556([55, 6, 3, 56]),
   ).then((arg) => ({
     default: arg.ExternalLink,
   })),
 );
-const local_abff2b23 = symbol_078(() =>
-  symbol_064(
+const local_abff2b23 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/support.js"),
-    local_5b673d6a([57, 6, 58]),
+    local_80136556([57, 6, 58]),
   ).then((arg) => ({
     default: arg.Support,
   })),
 );
-const local_258ec8ab = symbol_078(() =>
-  symbol_064(
+const local_258ec8ab = symbol_076(() =>
+  symbol_062(
     () => import("./routes/child-safety.js"),
-    local_5b673d6a([59, 6, 60]),
+    local_80136556([59, 6, 60]),
   ).then((arg) => ({
     default: arg.ChildSafety,
   })),
 );
-const local_d0a4bb43 = symbol_078(() =>
-  symbol_064(() => import("./routes/event.js"), local_5b673d6a([61, 62])).then(
+const local_d0a4bb43 = symbol_076(() =>
+  symbol_062(() => import("./routes/event.js"), local_80136556([61, 62])).then(
     (arg) => ({
       default: arg.Event,
     }),
   ),
 );
-const local_842f5b5a = symbol_078(() =>
-  symbol_064(
+const local_842f5b5a = symbol_076(() =>
+  symbol_062(
     () => import("./routes/subscription-terms.js"),
-    local_5b673d6a([63, 64, 65, 6]),
+    local_80136556([63, 64, 65, 6]),
   ).then((arg) => ({
     default: arg.SubscriptionTerms,
   })),
 );
-const local_fc232288 = symbol_078(() =>
-  symbol_064(
+const local_fc232288 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/recurring-terms.js"),
-    local_5b673d6a([66, 64, 65, 6]),
+    local_80136556([66, 64, 65, 6]),
   ).then((arg) => ({
     default: arg.RecurringTerms,
   })),
 );
-const local_0c023eb0 = symbol_078(() =>
-  symbol_064(
+const local_0c023eb0 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/login.js"),
-    local_5b673d6a([67, 68, 69, 70, 71, 72, 73]),
+    local_80136556([67, 68, 69, 70, 71, 72, 73]),
   ).then((arg) => ({
     default: arg.Login,
   })),
 );
-const local_c56cfae5 = symbol_078(() =>
-  symbol_064(
+const local_c56cfae5 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/register.js"),
-    local_5b673d6a([74, 68, 69, 70, 71, 72, 75]),
+    local_80136556([74, 68, 69, 70, 71, 72, 75]),
   ).then((arg) => ({
     default: arg.Register,
   })),
 );
-const local_90c62287 = symbol_078(() =>
-  symbol_064(
+const local_90c62287 = symbol_076(() =>
+  symbol_062(
     () => import("./routes/forgot-password.js"),
-    local_5b673d6a([76, 68, 69, 72, 77]),
+    local_80136556([76, 68, 69, 72, 77]),
   ).then((arg) => ({
     default: arg.ForgotPassword,
   })),
 );
-const local_ed3a5f6b = symbol_078(() =>
-  symbol_064(
+const local_ed3a5f6b = symbol_076(() =>
+  symbol_062(
     () => import("./routes/reset-password.js"),
-    local_5b673d6a([78, 72, 79]),
+    local_80136556([78, 72, 79]),
   ).then((arg) => ({
     default: arg.ResetPassword,
   })),
 );
-const local_5926c003 = symbol_078(() =>
-  symbol_064(() => import("./routes/verify-email.js"), []).then((arg) => ({
+const local_5926c003 = symbol_076(() =>
+  symbol_062(() => import("./routes/verify-email.js"), []).then((arg) => ({
     default: arg.VerifyEmail,
   })),
 );
-const local_df5e24cd = symbol_078(() =>
-  symbol_064(
+const local_df5e24cd = symbol_076(() =>
+  symbol_062(
     () => import("./routes/onboarding.js"),
-    local_5b673d6a([80, 81]),
+    local_80136556([80, 81]),
   ).then((arg) => ({
     default: arg.Onboarding,
   })),
 );
-const local_c5c21362 = symbol_078(() =>
-  symbol_064(() => import("./routes/verification.js"), []).then((arg) => ({
+const local_c5c21362 = symbol_076(() =>
+  symbol_062(() => import("./routes/verification.js"), []).then((arg) => ({
     default: arg.Verification,
   })),
 );
@@ -25912,43 +26383,44 @@ function fn_8da7f068(arg) {
 }
 const local_581e3cd8 = ({ slug: arg }) => {
   if (!arg?.startsWith("@")) {
-    return symbol_073(local_8d71271f, {});
+    return symbol_071(local_8d71271f, {});
   }
   const local = arg.slice(1);
-  return symbol_073(local_44b61a2d, {
+  return symbol_071(local_44b61a2d, {
     username: local,
   });
 };
-function fn_2fde2b5f() {
-  const [local, local_2] = symbol_056(window.location.pathname);
+function fn_ce0d5d86() {
+  const [local, local_2] = symbol_054(window.location.pathname);
   const local_3 = symbol_029((arg) => arg.isOpen);
   fn_7d2d0183();
-  return symbol_073(fn_6f3a9292, {
-    children: symbol_073(fn_16376bbf, {
-      children: symbol_073(fn_fc99b4db, {
+  return symbol_071(fn_6f3a9292, {
+    children: symbol_071(fn_84bc68ae, {
+      children: symbol_071(fn_fc99b4db, {
         currentPath: local,
         children: [
-          symbol_073(fn_30574445, {}),
+          symbol_071(fn_30574445, {}),
           local_3 &&
-            symbol_073(symbol_062, {
+            symbol_071(symbol_061, {
               fallback: null,
-              children: symbol_073(local_98d04132, {}),
+              children: symbol_071(local_98d04132, {}),
             }),
-          symbol_073(fn_bd4e493e, {}),
-          symbol_073(fn_f2614556, {}),
-          symbol_073(fn_58b6388b, {}),
-          symbol_073(local_ba097f2c, {
-            children: symbol_073(symbol_062, {
+          symbol_071(fn_bd4e493e, {}),
+          symbol_071(fn_f2614556, {}),
+          symbol_071(fn_ef295974, {}),
+          symbol_071(local_7472566a, {
+            currentPath: local,
+            children: symbol_071(symbol_061, {
               fallback: null,
-              children: symbol_073(fn_1889606d, {
+              children: symbol_071(fn_1889606d, {
                 onChange: (arg) => {
                   const local = local;
                   local_2(arg.url);
                   if (arg.url === local) {
                     return;
                   }
-                  symbol_019.getState().markNavigated();
-                  const local_2 = symbol_054.getState();
+                  symbol_018.getState().markNavigated();
+                  const local_2 = symbol_052.getState();
                   if (local === "./site/index.html" || local === "") {
                     local_2.setFeedScrollPosition(window.scrollY);
                   } else {
@@ -25964,79 +26436,79 @@ function fn_2fde2b5f() {
                   }
                 },
                 children: [
-                  symbol_073(local_bcb2f379, {
+                  symbol_071(local_bcb2f379, {
                     path: "./site/index.html",
                   }),
-                  symbol_073(local_67ce3a09, {
+                  symbol_071(local_67ce3a09, {
                     path: "/notifications",
                   }),
-                  symbol_073(local_0c023eb0, {
+                  symbol_071(local_0c023eb0, {
                     path: "/login",
                   }),
-                  symbol_073(local_c56cfae5, {
+                  symbol_071(local_c56cfae5, {
                     path: "/register",
                   }),
-                  symbol_073(local_90c62287, {
+                  symbol_071(local_90c62287, {
                     path: "/forgot-password",
                   }),
-                  symbol_073(local_ed3a5f6b, {
+                  symbol_071(local_ed3a5f6b, {
                     path: "/reset-password",
                   }),
-                  symbol_073(local_5926c003, {
+                  symbol_071(local_5926c003, {
                     path: "/verify-email",
                   }),
-                  symbol_073(local_2e50693e, {
+                  symbol_071(local_2e50693e, {
                     path: "/terms",
                   }),
-                  symbol_073(local_9294a375, {
+                  symbol_071(local_9294a375, {
                     path: "/privacy",
                   }),
-                  symbol_073(local_e631d126, {
+                  symbol_071(local_e631d126, {
                     path: "/cookies",
                   }),
-                  symbol_073(local_df5e24cd, {
+                  symbol_071(local_df5e24cd, {
                     path: "/onboarding",
                   }),
-                  symbol_073(local_da240d58, {
+                  symbol_071(local_da240d58, {
                     path: "/search",
                   }),
-                  symbol_073(local_e757f6d6, {
+                  symbol_071(local_e757f6d6, {
                     path: "/shop/:rest*",
                   }),
-                  symbol_073(local_3f597d55, {
+                  symbol_071(local_3f597d55, {
                     path: "/hashtag/:name",
                   }),
-                  symbol_073(local_7e8db683, {
+                  symbol_071(local_7e8db683, {
                     path: "/external",
                   }),
-                  symbol_073(local_abff2b23, {
+                  symbol_071(local_abff2b23, {
                     path: "/support",
                   }),
-                  symbol_073(local_d72873f9, {
+                  symbol_071(local_d72873f9, {
                     path: "/delete-account",
                   }),
-                  symbol_073(local_258ec8ab, {
+                  symbol_071(local_258ec8ab, {
                     path: "/child-safety",
                   }),
-                  symbol_073(local_d0a4bb43, {
+                  symbol_071(local_d0a4bb43, {
                     path: "/event",
                   }),
-                  symbol_073(local_c5c21362, {
+                  symbol_071(local_c5c21362, {
                     path: "/verification",
                   }),
-                  symbol_073(local_842f5b5a, {
+                  symbol_071(local_842f5b5a, {
                     path: "/subscription-terms",
                   }),
-                  symbol_073(local_fc232288, {
+                  symbol_071(local_fc232288, {
                     path: "/recurring-terms",
                   }),
-                  symbol_073(local_dd51dc2e, {
+                  symbol_071(local_dd51dc2e, {
                     path: "/:username/post/:postId",
                   }),
-                  symbol_073(local_581e3cd8, {
+                  symbol_071(local_581e3cd8, {
                     path: "/:slug",
                   }),
-                  symbol_073(local_8d71271f, {
+                  symbol_071(local_8d71271f, {
                     default: true,
                   }),
                 ],
@@ -26052,12 +26524,12 @@ if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
 fn_909ba931(document.getElementById("root")).render(
-  symbol_073(local_f090a36f_17, {
-    children: symbol_073(clazz_b30b8e71, {
-      fallback: symbol_073("div", {
+  symbol_071(symbol_020, {
+    children: symbol_071(clazz_b30b8e71, {
+      fallback: symbol_071("div", {
         children: "Something went wrong",
       }),
-      children: symbol_073(fn_2fde2b5f, {}),
+      children: symbol_071(fn_ce0d5d86, {}),
     }),
   }),
 );
@@ -26138,6 +26610,4 @@ export {
   symbol_074,
   symbol_075,
   symbol_076,
-  symbol_077,
-  symbol_078,
 };

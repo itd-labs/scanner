@@ -1,12 +1,12 @@
 import {
-  symbol_069 as imported,
-  symbol_056 as imported_2,
-  symbol_077 as imported_3,
+  symbol_067 as imported,
+  symbol_054 as imported_2,
+  symbol_058 as imported_3,
   symbol_002 as imported_4,
   symbol_021 as imported_5,
-  symbol_073 as imported_6,
-  symbol_063 as imported_7,
-  symbol_006 as imported_8,
+  symbol_071 as imported_6,
+  symbol_020 as imported_7,
+  symbol_004 as imported_8,
   symbol_028 as imported_9,
   symbol_001 as imported_10,
 } from "../entry.js";
@@ -26,7 +26,7 @@ import { I as imported_13 } from "../components/icon-chevron-right.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -1284,7 +1284,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_8c9a3cce({
+function fn_5d7bad9d({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_ee3325fe({
+export function fn_9d6d4906({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_ee3325fe({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_8c9a3cce, {
+          imported_6(fn_5d7bad9d, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_ee3325fe({
     document.body,
   );
 }
-export { fn_ee3325fe as default };
+export { fn_9d6d4906 as default };

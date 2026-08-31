@@ -1,12 +1,12 @@
 import {
   symbol_002 as imported,
-  symbol_069 as imported_2,
-  symbol_073 as imported_3,
-  symbol_077 as imported_4,
-  ax as imported_5,
-  symbol_056 as imported_6,
-  symbol_006 as imported_7,
-  symbol_053 as imported_8,
+  symbol_067 as imported_2,
+  symbol_071 as imported_3,
+  symbol_058 as imported_4,
+  symbol_051 as imported_5,
+  symbol_054 as imported_6,
+  symbol_004 as imported_7,
+  az as imported_8,
 } from "../entry.js";
 import { V as imported_9 } from "../components/volume-glyph.js";
 (function () {
@@ -22,7 +22,7 @@ import { V as imported_9 } from "../components/volume-glyph.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -42,7 +42,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_75fa0972({
+function fn_f6b86911({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -285,7 +285,7 @@ function fn_34f0bf46(arg) {
   local_09086d0f = arg;
   localStorage.setItem("video-volume", String(arg));
 }
-function fn_493ae501(arg) {
+function fn_c502a482(arg) {
   const local = Math.floor(arg / 60);
   const local_2 = arg % 60;
   return `${local}:${local_2.toString().padStart(2, "0")}`;
@@ -340,7 +340,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_2a454b47({
+export function fn_3ea9b2e6({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -628,7 +628,7 @@ export function fn_2a454b47({
         local_39 &&
         imported_3("div", {
           className: local_66259d24.duration,
-          children: fn_493ae501(arg_5),
+          children: fn_c502a482(arg_5),
         }),
       (local_6 || !arg_2) &&
         imported_3("div", {
@@ -666,7 +666,7 @@ export function fn_2a454b47({
                   children: [
                     imported_3("div", {
                       className: local_66259d24.volumeSlider,
-                      children: imported_3(fn_75fa0972, {
+                      children: imported_3(fn_f6b86911, {
                         value: local_12 ? 0 : local_14,
                         onChange: local_38,
                         onDragStart: () => {

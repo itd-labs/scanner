@@ -1,0 +1,115 @@
+.c_form {
+  width: 100%;
+}
+.c_inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.c_label {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.c_codeInputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.c_codeInput {
+  width: 100%;
+  height: 58px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  text-align: center;
+}
+.c_codeInput:focus {
+  border-color: #fff6;
+}
+:root .c_codeInput:focus {
+  border-color: #0006;
+}
+[data-theme="dark"] .c_codeInput:focus {
+  border-color: #fff6;
+}
+.c_codeInput.c_error {
+  border-color: var(--error-color, #ff4444);
+}
+.c_codeInput:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c_errorText {
+  font-size: 14px;
+  color: var(--error-color, #ff4444);
+  margin: 0;
+}
+.c_submitButton {
+  margin-top: 36px;
+}
+.c_resendLink {
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.c_resendButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--accent-primary);
+  cursor: pointer;
+  font-weight: 500;
+}
+.c_resendButton:hover {
+  text-decoration: underline;
+}
+.c_resendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c_overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: #0006;
+}
+.c_loader {
+  width: 26px;
+  height: 26px;
+  border: 2.5px solid rgba(255, 255, 255, 0.85);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: keyframe_1 0.7s linear infinite;
+}
+.c_pending {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+@keyframes keyframe_1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .c_loader {
+    animation: none;
+    opacity: 0.5;
+  }
+}

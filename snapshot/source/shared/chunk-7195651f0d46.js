@@ -1,15 +1,15 @@
 import {
-  symbol_075 as imported,
-  symbol_056 as imported_2,
-  symbol_069 as imported_3,
-  symbol_057 as imported_4,
-  symbol_076 as imported_5,
-  symbol_037 as imported_6,
-  symbol_073 as imported_7,
+  symbol_073 as imported,
+  symbol_054 as imported_2,
+  symbol_067 as imported_3,
+  symbol_055 as imported_4,
+  symbol_074 as imported_5,
+  ae as imported_6,
+  symbol_071 as imported_7,
   symbol_014 as imported_8,
   symbol_003 as imported_9,
 } from "../entry.js";
-import { symbol_001 as imported_10 } from "./chunk-0684deeacdb3.js";
+import { symbol_002 as imported_10 } from "./chunk-12b08122b95d.js";
 (function () {
   try {
     const local =
@@ -23,7 +23,7 @@ import { symbol_001 as imported_10 } from "./chunk-0684deeacdb3.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

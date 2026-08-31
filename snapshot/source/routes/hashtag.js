@@ -1,14 +1,14 @@
 import {
-  symbol_056 as imported,
-  symbol_054 as imported_2,
-  symbol_077 as imported_3,
-  symbol_069 as imported_4,
-  symbol_068 as imported_5,
-  symbol_073 as imported_6,
+  symbol_054 as imported,
+  symbol_052 as imported_2,
+  symbol_058 as imported_3,
+  symbol_067 as imported_4,
+  symbol_066 as imported_5,
+  symbol_071 as imported_6,
   symbol_017 as imported_7,
   symbol_023 as imported_8,
-  symbol_055 as imported_9,
-  symbol_057 as imported_10,
+  symbol_053 as imported_9,
+  symbol_055 as imported_10,
 } from "../entry.js";
 import { I as imported_11 } from "../components/icon-chevron-left.js";
 (function () {
@@ -24,7 +24,7 @@ import { I as imported_11 } from "../components/icon-chevron-left.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

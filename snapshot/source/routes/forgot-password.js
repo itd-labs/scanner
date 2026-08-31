@@ -1,22 +1,23 @@
 import {
-  symbol_056 as imported,
-  symbol_069 as imported_2,
-  symbol_039 as imported_3,
-  symbol_076 as imported_4,
-  symbol_037 as imported_5,
-  symbol_057 as imported_6,
-  symbol_073 as imported_7,
-  symbol_038 as imported_8,
+  symbol_054 as imported,
+  symbol_067 as imported_2,
+  symbol_038 as imported_3,
+  symbol_074 as imported_4,
+  ae as imported_5,
+  symbol_055 as imported_6,
+  symbol_071 as imported_7,
+  symbol_037 as imported_8,
   symbol_003 as imported_9,
-  symbol_063 as imported_10,
+  symbol_020 as imported_10,
 } from "../entry.js";
 import {
-  symbol_001 as imported_11,
-  C as imported_12,
-} from "../shared/chunk-0684deeacdb3.js";
+  symbol_003 as imported_11,
+  symbol_002 as imported_12,
+  symbol_001 as imported_13,
+} from "../shared/chunk-12b08122b95d.js";
 import {
-  I as imported_13,
-  a as imported_14,
+  I as imported_14,
+  a as imported_15,
 } from "../components/icon-eye-off.js";
 (function () {
   try {
@@ -31,7 +32,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -81,7 +82,7 @@ const local_66259d24 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_87e3405a = (arg) => {
+export const local_6ad44da9 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported("");
@@ -108,13 +109,13 @@ export const local_87e3405a = (arg) => {
     local_16(true);
   };
   const local_32 = imported_2(
-    async (arg) => {
+    async (arg, arg_2) => {
       local_16(false);
       local_14(true);
       try {
         const local = await imported_3.forgotPassword({
           email: local,
-          turnstileToken: arg,
+          ...imported_11(arg, arg_2),
         });
         local_4(local.flowToken ?? "");
         local_18("otp");
@@ -358,7 +359,7 @@ export const local_87e3405a = (arg) => {
                     className: local_66259d24.success,
                     children: "Код отправлен повторно",
                   }),
-                imported_7(imported_11, {
+                imported_7(imported_12, {
                   onSubmit: local_33,
                   onResend: local_35,
                   disabled: local_13,
@@ -425,10 +426,10 @@ export const local_87e3405a = (arg) => {
                               className: local_66259d24.eyeButton,
                               onClick: () => local_24(!local_23),
                               children: local_23
-                                ? imported_7(imported_13, {
+                                ? imported_7(imported_14, {
                                     size: 20,
                                   })
-                                : imported_7(imported_14, {
+                                : imported_7(imported_15, {
                                     size: 20,
                                   }),
                             }),
@@ -467,10 +468,10 @@ export const local_87e3405a = (arg) => {
                               className: local_66259d24.eyeButton,
                               onClick: () => local_26(!local_25),
                               children: local_25
-                                ? imported_7(imported_13, {
+                                ? imported_7(imported_14, {
                                     size: 20,
                                   })
-                                : imported_7(imported_14, {
+                                : imported_7(imported_15, {
                                     size: 20,
                                   }),
                             }),
@@ -504,12 +505,13 @@ export const local_87e3405a = (arg) => {
             }),
         ],
       }),
-      imported_7(imported_12, {
+      imported_7(imported_13, {
         isOpen: local_15,
         onClose: () => local_16(false),
         onVerify: local_32,
+        action: "password_reset",
       }),
     ],
   });
 };
-export { local_87e3405a as default };
+export { local_6ad44da9 as default };

@@ -1,4 +1,4 @@
-import { symbol_073 as imported, symbol_057 as imported_2 } from "../entry.js";
+import { symbol_071 as imported, symbol_055 as imported_2 } from "../entry.js";
 import { symbol_001 as imported_3 } from "../shared/subscription-terms-module.js";
 import { I as imported_4 } from "../components/icon-chevron-left.js";
 (function () {
@@ -14,7 +14,7 @@ import { I as imported_4 } from "../components/icon-chevron-left.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

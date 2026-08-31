@@ -1,22 +1,22 @@
 import {
-  symbol_073 as imported,
-  symbol_058 as imported_2,
+  symbol_071 as imported,
+  symbol_056 as imported_2,
   symbol_022 as imported_3,
   symbol_003 as imported_4,
-  symbol_065 as imported_5,
+  symbol_063 as imported_5,
   symbol_026 as imported_6,
   symbol_027 as imported_7,
   symbol_030 as imported_8,
   symbol_031 as imported_9,
-  symbol_057 as imported_10,
+  symbol_055 as imported_10,
   a2 as imported_11,
   a3 as imported_12,
   symbol_002 as imported_13,
-  symbol_056 as imported_14,
-  symbol_077 as imported_15,
+  symbol_054 as imported_14,
+  symbol_058 as imported_15,
   a4 as imported_16,
-  symbol_069 as imported_17,
-  symbol_004 as imported_18,
+  symbol_067 as imported_17,
+  symbol_075 as imported_18,
   a5 as imported_19,
 } from "../entry.js";
 import { I as imported_20 } from "../components/icon-notification-mention.js";
@@ -34,7 +34,7 @@ import { I as imported_21 } from "../components/icon-check.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

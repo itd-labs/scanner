@@ -1,13 +1,13 @@
 import {
-  symbol_056 as imported,
-  symbol_077 as imported_2,
-  symbol_064 as imported_3,
+  symbol_054 as imported,
+  symbol_058 as imported_2,
+  symbol_062 as imported_3,
   symbol_021 as imported_4,
   symbol_002 as imported_5,
-  symbol_069 as imported_6,
-  symbol_073 as imported_7,
+  symbol_067 as imported_6,
+  symbol_071 as imported_7,
   a5 as imported_8,
-  symbol_063 as imported_9,
+  symbol_020 as imported_9,
 } from "../entry.js";
 (function () {
   try {
@@ -22,7 +22,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -302,7 +302,7 @@ const local_18921ecf = ({
       onInput: (arg) => arg_2(arg.target.value),
     }),
   });
-export const local_b5b0095e = ({
+export const local_dba5fc49 = ({
   onEmojiSelect: arg,
   onClose: arg_2,
   width: arg_3 = 280,
@@ -462,4 +462,4 @@ export const local_b5b0095e = ({
     ],
   });
 };
-export { local_b5b0095e as default };
+export { local_dba5fc49 as default };

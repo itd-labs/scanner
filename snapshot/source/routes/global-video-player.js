@@ -1,11 +1,11 @@
 import {
   symbol_002 as imported,
-  symbol_069 as imported_2,
-  symbol_073 as imported_3,
+  symbol_067 as imported_2,
+  symbol_071 as imported_3,
   symbol_029 as imported_4,
   symbol_001 as imported_5,
-  symbol_056 as imported_6,
-  symbol_077 as imported_7,
+  symbol_054 as imported_6,
+  symbol_058 as imported_7,
   symbol_028 as imported_8,
 } from "../entry.js";
 import { u as imported_9 } from "../shared/use-body-scroll-lock.js";
@@ -23,7 +23,7 @@ import { V as imported_10 } from "../components/volume-glyph.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -162,7 +162,7 @@ const local_2ba33e70 = {
 const local_f06debfc = 280;
 const local_b45f1b6a = "cubic-bezier(0.32, 0.72, 0, 1)";
 const local_a3e1b3a5 = [0.5, 1, 1.5, 2];
-function fn_4a1b442d(arg) {
+function fn_e1cfa157(arg) {
   if (!isFinite(arg) || arg < 0) {
     return "0:00";
   }
@@ -196,7 +196,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_1e515f7c,
+      fn_d2c81560,
       {
         options: local_2,
         onUnmount: local_4,
@@ -206,7 +206,7 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_1e515f7c({ options: arg, onUnmount: arg_2 }) {
+function fn_d2c81560({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
@@ -684,9 +684,9 @@ function fn_1e515f7c({ options: arg, onUnmount: arg_2 }) {
               imported_3("span", {
                 className: local_2ba33e70.time,
                 children: [
-                  fn_4a1b442d(local_7),
+                  fn_e1cfa157(local_7),
                   "../site/index.html",
-                  fn_4a1b442d(local_9),
+                  fn_e1cfa157(local_9),
                 ],
               }),
               imported_3("button", {

@@ -1,25 +1,25 @@
 import {
   symbol_002 as imported,
-  symbol_056 as imported_2,
-  symbol_069 as imported_3,
-  symbol_004 as socialApi,
-  symbol_077 as imported_4,
+  symbol_054 as imported_2,
+  symbol_067 as imported_3,
+  symbol_075 as socialApi,
+  symbol_058 as imported_4,
   a4 as imported_5,
-  symbol_066 as imported_6,
-  symbol_075 as imported_7,
-  symbol_057 as imported_8,
-  symbol_073 as imported_9,
+  symbol_064 as imported_6,
+  symbol_073 as imported_7,
+  symbol_055 as imported_8,
+  symbol_071 as imported_9,
   a5 as imported_10,
-  symbol_058 as imported_11,
+  symbol_056 as imported_11,
   symbol_022 as imported_12,
   symbol_003 as imported_13,
-  symbol_049 as imported_14,
+  symbol_048 as imported_14,
   symbol_014 as imported_15,
-  symbol_008 as UnfollowConfirmModal,
-  symbol_067 as profileApi,
-  aA as useFollowStatus,
-  aB as useFollowStatusStore,
-  symbol_032 as useFollowUser,
+  symbol_007 as UnfollowConfirmModal,
+  symbol_065 as profileApi,
+  aB as useFollowStatus,
+  symbol_032 as useFollowStatusStore,
+  aD as useFollowUser,
 } from "../entry.js";
 import { I as imported_16 } from "../components/icon-check.js";
 import { VerificationModal } from "./chunk-1f9577716691.js";
@@ -37,7 +37,7 @@ import "../components/icon-check-circle.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -54,18 +54,18 @@ export function fn_66c2d60a(arg, arg_2) {
   const [local_5, local_6] = imported_2(true);
   const [local_7, local_8] = imported_2(false);
   const [local_9, local_10] = imported_2(null);
-  const [local_11, local_12] = imported_2(new Map());
-  const [local_13, local_14] = imported_2(new Set());
-  const local_15 = imported(null);
+  const [UnfollowConfirmModal, local_11] = imported_2(new Map());
+  const [local_12, local_13] = imported_2(new Set());
+  const local_14 = imported(null);
   if (local.current !== local_2) {
     local.current = local_2;
     local_4([]);
     local_6(true);
     local_10(null);
-    local_12(new Map());
-    local_14(new Set());
+    local_11(new Map());
+    local_13(new Set());
   }
-  const local_16 = imported_3(
+  const local_15 = imported_3(
     async (arg) => {
       const local = !arg;
       if (local) {
@@ -117,7 +117,7 @@ export function fn_66c2d60a(arg, arg_2) {
         };
         if (local) {
           local_4(local.data);
-          local_12(local_2(local.data));
+          local_11(local_2(local.data));
         } else {
           local_4((arg) => {
             const local = new Set(arg.map((profileApi) => profileApi.userId));
@@ -128,7 +128,7 @@ export function fn_66c2d60a(arg, arg_2) {
               ),
             ];
           });
-          local_12((arg) => {
+          local_11((arg) => {
             const local = new Map(arg);
             for (const profileApi of local.data) {
               local.has(profileApi.userId) ||
@@ -152,36 +152,36 @@ export function fn_66c2d60a(arg, arg_2) {
     [arg, arg_2],
   );
   imported_4(() => {
-    local_16();
-  }, [local_16]);
-  const local_17 = imported_3(() => {
+    local_15();
+  }, [local_15]);
+  const local_16 = imported_3(() => {
     if (local_9) {
-      local_16(local_9);
+      local_15(local_9);
     }
-  }, [local_9, local_16]);
+  }, [local_9, local_15]);
   imported_5({
-    sentinelRef: local_15,
+    sentinelRef: local_14,
     hasMore: !!local_9,
     isLoading: local_7,
-    onLoadMore: local_17,
+    onLoadMore: local_16,
   });
-  const local_18 = imported_3(
+  const local_17 = imported_3(
     async (arg, arg_2) => {
       arg_2.stopPropagation();
-      if (!local_13.has(arg)) {
-        local_14((arg) => new Set(arg).add(arg));
+      if (!local_12.has(arg)) {
+        local_13((arg) => new Set(arg).add(arg));
         try {
-          const local = local_11.get(arg);
+          const local = UnfollowConfirmModal.get(arg);
           if (local === "following" || local === "requested") {
             await socialApi.unfollowUser(arg);
-            local_12((arg) => {
+            local_11((arg) => {
               const local = new Map(arg);
               local.set(arg, null);
               return local;
             });
           } else {
             const local = await socialApi.followUser(arg);
-            local_12((arg) => {
+            local_11((arg) => {
               const local = new Map(arg);
               local.set(arg, local);
               return local;
@@ -190,7 +190,7 @@ export function fn_66c2d60a(arg, arg_2) {
         } catch (error) {
           console.error("Failed to toggle follow:", error);
         } finally {
-          local_14((arg) => {
+          local_13((arg) => {
             const local = new Set(arg);
             local.delete(arg);
             return local;
@@ -198,17 +198,17 @@ export function fn_66c2d60a(arg, arg_2) {
         }
       }
     },
-    [local_11, local_13],
+    [UnfollowConfirmModal, local_12],
   );
   return {
     users: local_3,
     isLoading: local_5,
     isLoadingMore: local_7,
     nextCursor: local_9,
-    loadMoreRef: local_15,
-    userFollowStatus: local_11,
-    loadingFollowIds: local_13,
-    handleToggleFollow: local_18,
+    loadMoreRef: local_14,
+    userFollowStatus: UnfollowConfirmModal,
+    loadingFollowIds: local_12,
+    handleToggleFollow: local_17,
   };
 }
 const local_dd2b2953 = "c_userListModal";

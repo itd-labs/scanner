@@ -1,15 +1,15 @@
 import {
-  symbol_073 as imported,
-  symbol_056 as imported_2,
+  symbol_071 as imported,
+  symbol_054 as imported_2,
   symbol_002 as imported_3,
-  symbol_069 as imported_4,
-  symbol_052 as imported_5,
-  symbol_074 as imported_6,
-  symbol_077 as imported_7,
+  symbol_067 as imported_4,
+  ax as imported_5,
+  symbol_072 as imported_6,
+  symbol_058 as imported_7,
   symbol_001 as imported_8,
   symbol_014 as imported_9,
-  symbol_063 as imported_10,
-  symbol_048 as imported_11,
+  symbol_020 as imported_10,
+  symbol_047 as imported_11,
 } from "../entry.js";
 (function () {
   try {
@@ -24,7 +24,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

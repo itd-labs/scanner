@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 358px;
   max-width: 100%;
 }
 .c_logo {
@@ -141,4 +140,36 @@
 }
 .c_signupLink a:hover {
   text-decoration: underline;
+}
+.c_row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.c_form {
+  width: 358px;
+  max-width: 100%;
+}
+.c_qrCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  flex-shrink: 0;
+  padding-top: 6px;
+}
+.c_qrLabel {
+  margin: 0 0 12px;
+  align-self: flex-start;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+.c_qrSlot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 248px;
 }

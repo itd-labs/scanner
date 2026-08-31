@@ -1,0 +1,108 @@
+.c_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.c_codeBox {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.c_code {
+  display: block;
+}
+.c_placeholder {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background: #8080801f;
+}
+.c_overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background: #ffffff80;
+}
+@supports (backdrop-filter: blur(3px)) {
+  .c_overlay {
+    background: #fff3;
+  }
+}
+.c_refreshButton {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 10px #00000038;
+  transition: background 0.15s;
+}
+.c_refreshButton:hover {
+  background: var(--bg-secondary);
+}
+.c_resumeButton {
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #00000038;
+  transition: background 0.15s;
+}
+.c_resumeButton:hover {
+  background: var(--bg-secondary);
+}
+@media (prefers-reduced-motion: reduce) {
+  .c_refreshButton,
+  .c_resumeButton {
+    transition: none;
+  }
+}
+.c_spinner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 2.5px solid rgba(128, 128, 128, 0.75);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: keyframe_1 0.7s linear infinite;
+}
+.c_hint {
+  margin: 0;
+  min-height: 36px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+.c_hintActive {
+  color: var(--text-primary);
+}
+@keyframes keyframe_1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .c_spinner {
+    animation: none;
+    opacity: 0.5;
+  }
+}

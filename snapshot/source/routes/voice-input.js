@@ -1,11 +1,11 @@
 import {
-  symbol_056 as imported,
+  symbol_054 as imported,
   symbol_002 as imported_2,
-  symbol_077 as imported_3,
-  symbol_069 as imported_4,
-  symbol_073 as imported_5,
+  symbol_058 as imported_3,
+  symbol_067 as imported_4,
+  symbol_071 as imported_5,
   a5 as imported_6,
-  aj as imported_7,
+  ak as imported_7,
 } from "../entry.js";
 import { I as imported_8, a as imported_9 } from "../components/icon-play.js";
 (function () {
@@ -21,7 +21,7 @@ import { I as imported_8, a as imported_9 } from "../components/icon-play.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.2",
+      id: "1.1.4",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -447,7 +447,7 @@ const local_f06debfc_3 = 24;
 const local_f06debfc_4 = 80;
 const local_15086922 = "rgba(142, 142, 147, 0.6)";
 const local_3a5b5f52 = "#FFFFFF";
-function fn_0eea54e7({
+function fn_9bc11df4({
   levels: arg,
   slideOffset: arg_2,
   audioRef: arg_3,
@@ -755,7 +755,7 @@ const local_c9c49b86 = {
   recordingTime: local_21b2c703,
   exiting: local_8a90869a,
 };
-export function fn_c0f09f71({
+export function fn_cb39b492({
   onCancel: arg,
   onSend: arg_2,
   isExiting: arg_3,
@@ -864,7 +864,7 @@ export function fn_c0f09f71({
         children: [
           imported_5("div", {
             className: local_c9c49b86.waveformContainer,
-            children: imported_5(fn_0eea54e7, {
+            children: imported_5(fn_9bc11df4, {
               levels: local_6,
               slideOffset: local_7,
               audioRef: local_11,
