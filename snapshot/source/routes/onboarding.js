@@ -10,22 +10,22 @@ const local_605932fe = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_071 as imported,
-  symbol_054 as imported_2,
+  symbol_081 as imported,
+  symbol_064 as imported_2,
   symbol_002 as imported_3,
-  symbol_073 as imported_4,
-  symbol_067 as imported_5,
+  symbol_026 as imported_4,
+  symbol_077 as imported_5,
   symbol_001 as imported_6,
   symbol_003 as imported_7,
-  symbol_061 as imported_8,
-  symbol_076 as imported_9,
+  symbol_071 as imported_8,
+  symbol_086 as imported_9,
   symbol_020 as imported_10,
-  symbol_065 as imported_11,
-  symbol_055 as imported_12,
-  symbol_074 as imported_13,
-  symbol_040 as imported_14,
-  ae as imported_15,
-  symbol_062 as imported_16,
+  symbol_016 as imported_11,
+  symbol_065 as imported_12,
+  symbol_012 as imported_13,
+  aD as imported_14,
+  symbol_033 as imported_15,
+  symbol_072 as imported_16,
 } from "../entry.js";
 (function () {
   try {
@@ -40,7 +40,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -155,7 +155,7 @@ const local_968eaf70 = imported_9(() =>
     default: arg.EmojiPicker,
   })),
 );
-export const local_9fae70e6 = (arg) => {
+export const local_c29eface = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -517,4 +517,4 @@ export const local_9fae70e6 = (arg) => {
     ],
   });
 };
-export { local_9fae70e6 as default };
+export { local_c29eface as default };

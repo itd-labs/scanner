@@ -1,10 +1,10 @@
 import {
   symbol_002 as imported,
-  symbol_054 as imported_2,
-  symbol_058 as imported_3,
-  symbol_033 as imported_4,
-  symbol_071 as imported_5,
-  symbol_034 as imported_6,
+  symbol_064 as imported_2,
+  symbol_068 as imported_3,
+  symbol_055 as imported_4,
+  symbol_056 as imported_5,
+  symbol_081 as imported_6,
 } from "../entry.js";
 (function () {
   try {
@@ -19,7 +19,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -55,7 +55,7 @@ export function fn_29449b32(arg) {
         local.postMessage(
           {
             type: "itd-shop:auth",
-            token: imported_6(),
+            token: imported_5(),
           },
           window.location.origin,
         );
@@ -157,7 +157,7 @@ export function fn_29449b32(arg) {
       );
     }
   });
-  return imported_5("iframe", {
+  return imported_6("iframe", {
     ref: local,
     className: `${local_4ae1eafe.frame} ${local_3 ? local_4ae1eafe.raised : ""}`,
     src: local_2,

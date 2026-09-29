@@ -1,12 +1,12 @@
 import {
-  symbol_067 as imported,
-  symbol_054 as imported_2,
-  symbol_058 as imported_3,
+  symbol_077 as imported,
+  symbol_064 as imported_2,
+  symbol_068 as imported_3,
   symbol_002 as imported_4,
-  symbol_021 as imported_5,
-  symbol_071 as imported_6,
+  a5 as imported_5,
+  symbol_081 as imported_6,
   symbol_020 as imported_7,
-  symbol_004 as imported_8,
+  symbol_031 as imported_8,
   symbol_028 as imported_9,
   symbol_001 as imported_10,
 } from "../entry.js";
@@ -26,7 +26,7 @@ import { I as imported_13 } from "../components/icon-chevron-right.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -1131,7 +1131,7 @@ function fn_00da9caf(arg) {
     return null;
   }
 }
-function fn_1bd8ba58({
+function fn_5cf777b7({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1284,7 +1284,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_5d7bad9d({
+function fn_f3a4d7b8({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1358,7 +1358,7 @@ function fn_5d7bad9d({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_5cf777b7, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1433,7 +1433,7 @@ function fn_9cf23fc2({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_5cf777b7, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_9d6d4906({
+export function fn_24fc7ddb({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_9d6d4906({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_5d7bad9d, {
+          imported_6(fn_f3a4d7b8, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_9d6d4906({
     document.body,
   );
 }
-export { fn_9d6d4906 as default };
+export { fn_24fc7ddb as default };

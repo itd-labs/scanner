@@ -1,8 +1,8 @@
 import {
-  symbol_035 as imported,
-  symbol_036 as imported_2,
-  symbol_058 as imported_3,
-  symbol_071 as imported_4,
+  symbol_057 as imported,
+  symbol_059 as imported_2,
+  symbol_068 as imported_3,
+  symbol_081 as imported_4,
   symbol_020 as imported_5,
 } from "../entry.js";
 (function () {
@@ -18,7 +18,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

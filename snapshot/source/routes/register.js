@@ -1,22 +1,19 @@
 import {
-  symbol_054 as imported,
-  symbol_073 as imported_2,
-  symbol_067 as imported_3,
-  symbol_074 as imported_4,
-  ae as imported_5,
-  symbol_071 as imported_6,
-  symbol_037 as imported_7,
+  symbol_064 as imported,
+  symbol_026 as imported_2,
+  symbol_077 as imported_3,
+  symbol_012 as imported_4,
+  symbol_033 as imported_5,
+  symbol_081 as imported_6,
+  aB as imported_7,
   symbol_003 as imported_8,
   symbol_020 as imported_9,
 } from "../entry.js";
+import { C as imported_10 } from "../shared/chunk-92b5556b33fa.js";
+import { V as imported_11 } from "../shared/chunk-7195651f0d46.js";
 import {
-  symbol_003 as imported_10,
-  symbol_001 as imported_11,
-} from "../shared/chunk-12b08122b95d.js";
-import { symbol_001 as imported_12 } from "../shared/chunk-7195651f0d46.js";
-import {
-  I as imported_13,
-  a as imported_14,
+  I as imported_12,
+  a as imported_13,
 } from "../components/icon-eye-off.js";
 (function () {
   try {
@@ -31,7 +28,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -79,7 +76,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   loginLink: local_8ed84883,
 };
-export const local_d657c807 = (arg) => {
+export const local_01d34dde = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -122,13 +119,13 @@ export const local_d657c807 = (arg) => {
     local_8(true);
   };
   const local_22 = imported_3(
-    async (arg, arg_2) => {
+    async (arg) => {
       local_8(false);
       try {
         await local_17({
           email: local,
           password: local_3,
-          ...imported_10(arg, arg_2),
+          turnstileToken: arg,
         });
         local_16("verify");
       } catch (error) {
@@ -249,10 +246,10 @@ export const local_d657c807 = (arg) => {
                                 className: local_474661d1.eyeButton,
                                 onClick: () => local_6(!local_5),
                                 children: local_5
-                                  ? imported_6(imported_13, {
+                                  ? imported_6(imported_12, {
                                       size: 20,
                                     })
-                                  : imported_6(imported_14, {
+                                  : imported_6(imported_13, {
                                       size: 20,
                                     }),
                               }),
@@ -309,19 +306,18 @@ export const local_d657c807 = (arg) => {
                   }),
                 ],
               })
-            : imported_6(imported_12, {
+            : imported_6(imported_11, {
                 email: local,
                 onBack: local_23,
               }),
         ],
       }),
-      imported_6(imported_11, {
+      imported_6(imported_10, {
         isOpen: local_7,
         onClose: () => local_8(false),
         onVerify: local_22,
-        action: "register",
       }),
     ],
   });
 };
-export { local_d657c807 as default };
+export { local_01d34dde as default };

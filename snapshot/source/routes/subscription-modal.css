@@ -714,7 +714,7 @@
 .c_bioTextarea::placeholder {
   color: var(--text-secondary);
 }
-.c_auto_6f84db323c {
+.c_auto_c02cef98c9 {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 32px #0000004d;
@@ -1553,4 +1553,90 @@
 .c_option:hover,
 .c_option.c_selected {
   background: var(--bg-hover);
+}
+.c_note {
+  margin: 8px 0 16px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.c_nicknameRow {
+  min-width: 0;
+}
+.c_nicknameRow > :last-child {
+  min-width: 0;
+  max-width: 50%;
+}
+.c_nicknameRow > :last-child button {
+  min-width: 0;
+  max-width: 100%;
+}
+.c_nicknameRow > :last-child button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.c_error {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.c_error button {
+  border: 0;
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: var(--block-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.c_avatarRow {
+  gap: 12px;
+}
+.c_avatarPreview {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--block-bg);
+}
+.c_avatarActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+.c_avatarActions button {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: var(--block-bg);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.c_avatarActions button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.c_avatarActions .c_danger {
+  color: #ef5350;
+}
+@media (max-width: 600px) {
+  .c_nicknameRow {
+    flex-wrap: wrap;
+  }
+  .c_nicknameRow > :last-child {
+    max-width: 100%;
+    margin-left: auto;
+  }
+  .c_avatarRow {
+    align-items: flex-start;
+  }
+  .c_avatarActions {
+    width: 100%;
+  }
 }

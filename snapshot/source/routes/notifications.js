@@ -1,23 +1,23 @@
 import {
-  symbol_071 as imported,
-  symbol_056 as imported_2,
-  symbol_022 as imported_3,
+  symbol_081 as imported,
+  symbol_066 as imported_2,
+  symbol_025 as imported_3,
   symbol_003 as imported_4,
-  symbol_063 as imported_5,
-  symbol_026 as imported_6,
-  symbol_027 as imported_7,
-  symbol_030 as imported_8,
-  symbol_031 as imported_9,
-  symbol_055 as imported_10,
-  a2 as imported_11,
-  a3 as imported_12,
+  symbol_073 as imported_5,
+  af as imported_6,
+  symbol_047 as imported_7,
+  symbol_048 as imported_8,
+  symbol_049 as imported_9,
+  symbol_065 as imported_10,
+  aj as imported_11,
+  symbol_050 as imported_12,
   symbol_002 as imported_13,
-  symbol_054 as imported_14,
-  symbol_058 as imported_15,
-  a4 as imported_16,
-  symbol_067 as imported_17,
-  symbol_075 as imported_18,
-  a5 as imported_19,
+  symbol_064 as imported_14,
+  symbol_068 as imported_15,
+  symbol_051 as imported_16,
+  symbol_077 as imported_17,
+  symbol_030 as imported_18,
+  symbol_052 as imported_19,
 } from "../entry.js";
 import { I as imported_20 } from "../components/icon-notification-mention.js";
 import { I as imported_21 } from "../components/icon-check.js";
@@ -34,7 +34,7 @@ import { I as imported_21 } from "../components/icon-check.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -227,7 +227,7 @@ const local_5adaadb3 = ({ type: arg }) => {
       }),
   });
 };
-function fn_33707005({
+function fn_4ea2f153({
   notification: arg,
   isVisuallyUnread: arg_2,
   onMarkRead: arg_3,
@@ -356,6 +356,7 @@ function fn_33707005({
                     onClick: local_10,
                     title: "Перейти в профиль",
                     children: imported(imported_3, {
+                      userId: local_2?.id,
                       name: local_2?.displayName || "Пользователь",
                       verified:
                         local_2?.isVerified ?? local_2?.verified ?? false,
@@ -610,7 +611,7 @@ export const local_58a6e47b = (arg) => {
               local.map((arg) => {
                 const local = arg.payload.actors[0]?.id;
                 return imported(
-                  fn_33707005,
+                  fn_4ea2f153,
                   {
                     notification: arg,
                     isVisuallyUnread: local_8.has(arg.id),

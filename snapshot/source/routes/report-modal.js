@@ -1,11 +1,11 @@
 import {
-  a6 as imported,
-  a7 as imported_2,
-  symbol_054 as imported_3,
-  symbol_071 as imported_4,
+  symbol_053 as imported,
+  ao as imported_2,
+  symbol_064 as imported_3,
+  symbol_081 as imported_4,
   symbol_003 as imported_5,
   symbol_014 as imported_6,
-  symbol_074 as imported_7,
+  symbol_012 as imported_7,
 } from "../entry.js";
 import { I as imported_8 } from "../components/icon-check-circle.js";
 (function () {
@@ -21,7 +21,7 @@ import { I as imported_8 } from "../components/icon-check-circle.js";
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {

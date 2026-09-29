@@ -1,17 +1,17 @@
 import {
-  a6 as imported,
-  a7 as imported_2,
-  a8 as imported_3,
-  symbol_054 as imported_4,
+  symbol_053 as imported,
+  ao as imported_2,
+  symbol_054 as imported_3,
+  symbol_064 as imported_4,
   symbol_002 as imported_5,
-  symbol_058 as imported_6,
-  symbol_067 as imported_7,
-  symbol_071 as imported_8,
-  a9 as imported_9,
+  symbol_068 as imported_6,
+  symbol_077 as imported_7,
+  symbol_081 as imported_8,
+  aq as imported_9,
   symbol_020 as imported_10,
-  symbol_056 as imported_11,
-  symbol_022 as imported_12,
-  a5 as imported_13,
+  symbol_066 as imported_11,
+  symbol_025 as imported_12,
+  symbol_052 as imported_13,
 } from "../entry.js";
 (function () {
   try {
@@ -26,7 +26,7 @@ import {
               ? self
               : {};
     local.SENTRY_RELEASE = {
-      id: "1.1.4",
+      id: "1.1.2",
     };
     const local_2 = new local.Error().stack;
     if (local_2) {
@@ -39,7 +39,7 @@ import {
 const local_f50950e4 = new imported_3(1, 300 * 1000);
 const local_f50950e4_2 = new imported_3(1, 300 * 1000);
 const local_c07ef0a9 = "data";
-const local_c7b8b2c8 = {
+const local_f19ffda0 = {
   async getTrendingHashtags(arg = 10) {
     const local = local_f50950e4.get(local_c07ef0a9);
     if (local) {
@@ -158,7 +158,7 @@ const local_18dd68e0 = (arg) => {
   }
   return arg.toString();
 };
-export const local_b6d7f790 = (arg) => {
+export const local_ba2f5cb0 = (arg) => {
   const [local, local_2] = imported_4("");
   const [local_3, local_4] = imported_4([]);
   const [local_5, local_6] = imported_4([]);
@@ -172,8 +172,8 @@ export const local_b6d7f790 = (arg) => {
     (async () => {
       try {
         const [local, local_2] = await Promise.all([
-          local_c7b8b2c8.getPopularAvatars(),
-          local_c7b8b2c8.getTrendingHashtags(),
+          local_f19ffda0.getPopularAvatars(),
+          local_f19ffda0.getTrendingHashtags(),
         ]);
         local_4(local.slice(0, 10));
         local_6(local_2.slice(0, 10));
@@ -195,7 +195,7 @@ export const local_b6d7f790 = (arg) => {
     }
     local_16(true);
     try {
-      const local = await local_c7b8b2c8.globalSearch(local, 10, 5);
+      const local = await local_f19ffda0.globalSearch(local, 10, 5);
       local_8(local.users);
       local_10(local.hashtags);
     } catch (error) {
@@ -285,6 +285,7 @@ export const local_b6d7f790 = (arg) => {
                                       className: local_f2bf345a.userInfo,
                                       children: [
                                         imported_8(imported_12, {
+                                          userId: arg.id,
                                           name: arg.displayName,
                                           verified:
                                             arg.isVerified ?? arg.verified,
@@ -459,4 +460,4 @@ export const local_b6d7f790 = (arg) => {
     ],
   });
 };
-export { local_b6d7f790 as default };
+export { local_ba2f5cb0 as default };
