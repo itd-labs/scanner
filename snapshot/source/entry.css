@@ -512,7 +512,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_cb56ed666e {
+.c_bottomSheet.c_auto_0cdd51ea03 {
   animation: keyframe_9 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -910,7 +910,7 @@ h6 {
 .c_userName .c_badges {
   display: inline-flex;
   align-items: center;
-  gap: inherit;
+  gap: 6px;
   margin-left: 6px;
   flex-shrink: 0;
 }
@@ -957,6 +957,7 @@ h6 {
   gap: 4px;
 }
 .c_userName.c_xs .c_badges {
+  gap: 4px;
   margin-left: 4px;
 }
 .c_userName.c_sm {
@@ -2495,7 +2496,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_f1217db27e {
+.c_textInput.c_entering .c_auto_0479076295 {
   animation: keyframe_16 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -3741,7 +3742,7 @@ h6 {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_96150e9a3f {
+.c_auto_a9d5531daa {
   display: block;
   animation: keyframe_28 0.4s ease;
 }
@@ -4327,7 +4328,7 @@ h6 {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_26130ff64d {
+.c_auto_ff4ebf04f2 {
   animation: keyframe_31 0.4s ease;
 }
 .c_auto_7f6ce735eb {

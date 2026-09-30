@@ -107,7 +107,7 @@ const local_ecb71779 = [
     label: "Другое",
   },
 ];
-export function fn_b2801762({
+export function fn_c3c3b6ac({
   targetType: arg,
   targetId: arg_2,
   onClose: arg_3,
@@ -284,4 +284,4 @@ export function fn_b2801762({
     }),
   });
 }
-export { fn_b2801762 as default };
+export { fn_c3c3b6ac as default };

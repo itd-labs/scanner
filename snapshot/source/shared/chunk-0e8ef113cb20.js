@@ -342,8 +342,8 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                   const local = local_8.get(arg.userId);
                   const local_2 = local === "following";
                   const local_3 = local === "requested";
-                  const local_4 = local_9.has(arg.userId);
-                  const profileApi = arg.userId === local_2;
+                  const profileApi = local_9.has(arg.userId);
+                  const local_4 = arg.userId === local_2;
                   const local_5 = local_11.get(arg.userId);
                   const local_6 = local_13.has(arg.userId);
                   const local_7 = () => {
@@ -501,12 +501,12 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                               }),
                           ],
                         }),
-                        !profileApi &&
+                        !local_4 &&
                           imported_9(imported_13, {
                             size: "sm",
                             variant:
                               local_2 || local_3 ? "secondary" : "primary",
-                            disabled: local_4,
+                            disabled: profileApi,
                             onClick: (arg) => local_10(arg.userId, arg),
                             className: local_e1f3b173.followButton,
                             children: local_7(),
