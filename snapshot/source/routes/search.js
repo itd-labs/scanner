@@ -1,17 +1,17 @@
 import {
-  symbol_053 as imported,
-  ao as imported_2,
-  symbol_054 as imported_3,
-  symbol_064 as imported_4,
+  symbol_055 as imported,
+  symbol_056 as imported_2,
+  aq as imported_3,
+  symbol_066 as imported_4,
   symbol_002 as imported_5,
-  symbol_068 as imported_6,
-  symbol_077 as imported_7,
-  symbol_081 as imported_8,
-  aq as imported_9,
+  symbol_070 as imported_6,
+  symbol_079 as imported_7,
+  symbol_083 as imported_8,
+  symbol_057 as imported_9,
   symbol_020 as imported_10,
-  symbol_066 as imported_11,
+  symbol_068 as imported_11,
   symbol_025 as imported_12,
-  symbol_052 as imported_13,
+  symbol_054 as imported_13,
 } from "../entry.js";
 (function () {
   try {
@@ -39,7 +39,7 @@ import {
 const local_f50950e4 = new imported_3(1, 300 * 1000);
 const local_f50950e4_2 = new imported_3(1, 300 * 1000);
 const local_c07ef0a9 = "data";
-const local_f19ffda0 = {
+const local_e1f08836 = {
   async getTrendingHashtags(arg = 10) {
     const local = local_f50950e4.get(local_c07ef0a9);
     if (local) {
@@ -172,8 +172,8 @@ export const local_ba2f5cb0 = (arg) => {
     (async () => {
       try {
         const [local, local_2] = await Promise.all([
-          local_f19ffda0.getPopularAvatars(),
-          local_f19ffda0.getTrendingHashtags(),
+          local_e1f08836.getPopularAvatars(),
+          local_e1f08836.getTrendingHashtags(),
         ]);
         local_4(local.slice(0, 10));
         local_6(local_2.slice(0, 10));
@@ -195,7 +195,7 @@ export const local_ba2f5cb0 = (arg) => {
     }
     local_16(true);
     try {
-      const local = await local_f19ffda0.globalSearch(local, 10, 5);
+      const local = await local_e1f08836.globalSearch(local, 10, 5);
       local_8(local.users);
       local_10(local.hashtags);
     } catch (error) {

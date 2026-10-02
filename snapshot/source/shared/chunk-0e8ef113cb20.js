@@ -1,25 +1,25 @@
 import {
   symbol_002 as imported,
-  symbol_064 as imported_2,
-  symbol_077 as imported_3,
+  symbol_066 as imported_2,
+  symbol_079 as imported_3,
   symbol_030 as socialApi,
-  symbol_068 as imported_4,
-  symbol_051 as imported_5,
+  symbol_070 as imported_4,
+  symbol_053 as imported_5,
   symbol_004 as imported_6,
   symbol_026 as imported_7,
-  symbol_065 as imported_8,
-  symbol_081 as imported_9,
-  symbol_052 as imported_10,
-  symbol_066 as imported_11,
+  symbol_067 as imported_8,
+  symbol_083 as imported_9,
+  symbol_054 as imported_10,
+  symbol_068 as imported_11,
   symbol_025 as imported_12,
   symbol_003 as imported_13,
   symbol_008 as imported_14,
   symbol_014 as imported_15,
   a3 as UnfollowConfirmModal,
   symbol_016 as profileApi,
-  aV as useFollowStatus,
-  aW as useFollowStatusStore,
-  aX as useFollowUser,
+  aW as useFollowStatus,
+  aX as useFollowStatusStore,
+  aY as useFollowUser,
 } from "../entry.js";
 import { I as imported_16 } from "../components/icon-check.js";
 import { VerificationModal } from "./chunk-1f9577716691.js";
@@ -342,11 +342,11 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                   const local = local_8.get(arg.userId);
                   const local_2 = local === "following";
                   const local_3 = local === "requested";
-                  const profileApi = local_9.has(arg.userId);
-                  const local_4 = arg.userId === local_2;
-                  const local_5 = local_11.get(arg.userId);
-                  const local_6 = local_13.has(arg.userId);
-                  const local_7 = () => {
+                  const local_4 = local_9.has(arg.userId);
+                  const local_5 = arg.userId === local_2;
+                  const local_6 = local_11.get(arg.userId);
+                  const local_7 = local_13.has(arg.userId);
+                  const profileApi = () => {
                     if (local_2) {
                       return "Отписаться";
                     }
@@ -384,12 +384,12 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                                 }),
                             ],
                           }),
-                          local_5 === "accepted"
+                          local_6 === "accepted"
                             ? imported_9("span", {
                                 className: local_e1f3b173.actionStatus,
                                 children: "Принято",
                               })
-                            : local_5 === "rejected"
+                            : local_6 === "rejected"
                               ? imported_9("span", {
                                   className: local_e1f3b173.actionStatus,
                                   children: "Отклонено",
@@ -400,7 +400,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                                     imported_9(imported_13, {
                                       size: "sm",
                                       variant: "primary",
-                                      disabled: local_6,
+                                      disabled: local_7,
                                       onClick: (arg) =>
                                         local_18(arg.userId, arg),
                                       className: local_e1f3b173.acceptButton,
@@ -411,7 +411,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                                     imported_9(imported_13, {
                                       size: "sm",
                                       variant: "secondary",
-                                      disabled: local_6,
+                                      disabled: local_7,
                                       onClick: (arg) =>
                                         local_19(arg.userId, arg),
                                       className: local_e1f3b173.rejectButton,
@@ -455,7 +455,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                                 }),
                             ],
                           }),
-                          local_5 === "rejected"
+                          local_6 === "rejected"
                             ? imported_9("span", {
                                 className: local_e1f3b173.actionStatus,
                                 children: "Отменено",
@@ -463,7 +463,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                             : imported_9(imported_13, {
                                 size: "sm",
                                 variant: "secondary",
-                                disabled: local_6,
+                                disabled: local_7,
                                 onClick: (arg) => local_20(arg.userId, arg),
                                 className: local_e1f3b173.followButton,
                                 children: "Отменить",
@@ -501,15 +501,15 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                               }),
                           ],
                         }),
-                        !local_4 &&
+                        !local_5 &&
                           imported_9(imported_13, {
                             size: "sm",
                             variant:
                               local_2 || local_3 ? "secondary" : "primary",
-                            disabled: profileApi,
+                            disabled: local_4,
                             onClick: (arg) => local_10(arg.userId, arg),
                             className: local_e1f3b173.followButton,
-                            children: local_7(),
+                            children: profileApi(),
                           }),
                       ],
                     },

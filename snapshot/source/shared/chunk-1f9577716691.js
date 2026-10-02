@@ -1,10 +1,10 @@
 import {
-  symbol_081 as imported,
-  symbol_064 as imported_2,
+  symbol_083 as imported,
+  symbol_066 as imported_2,
   symbol_002 as imported_3,
-  symbol_068 as imported_4,
+  symbol_070 as imported_4,
   symbol_016 as imported_5,
-  symbol_052 as imported_6,
+  symbol_054 as imported_6,
   symbol_014 as imported_7,
   symbol_003 as imported_8,
   symbol_008 as imported_9,
@@ -166,7 +166,7 @@ const local_143ad0dd = {
 };
 const local_4cc8ec46 = 50 * 1024 * 1024;
 const local_865f321e = ["video/mp4", "video/webm", "video/quicktime"];
-export function fn_91cf7052({ onClose: arg }) {
+export function fn_b7a43ad1({ onClose: arg }) {
   const [local, local_2] = imported_2("loading");
   const [local_3, local_4] = imported_2(null);
   const [local_5, local_6] = imported_2(null);
@@ -427,4 +427,4 @@ export function fn_91cf7052({ onClose: arg }) {
     }),
   });
 }
-export { fn_91cf7052 as default };
+export { fn_b7a43ad1 as default };

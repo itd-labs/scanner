@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `b4d6ee1649848857af4397424241c37a4013b83c2682d7418611bdee15289580`
-- Resources: 153
-- Downloaded bytes: 5392871
+- Build fingerprint: `0158a489d7479bdcc75bc9a4300c1ab7d98aaf6c3c29b99456c83555365713bc`
+- Resources: 154
+- Downloaded bytes: 5823086
 - Sentry releases: `1.1.2`
 
 ## Routes
@@ -25,6 +25,8 @@ No changes.
 
 ## User-visible strings
 
-- Added: `Сбор завершён: 10000 постов уже сдано`
-- Added: `Сегодня уже сдано три поста — это дневной предел. Заходи завтра`
-- Removed: `Сбор завершён: 1000 постов уже сдано`
+- Added: `Алиса AI`
+- Added: `Скрыть уведомление`
+- Added: `SSE message parse error`
+- Added: `SSE stream closed`
+- Removed: `SSE message parse error:`

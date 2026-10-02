@@ -1,19 +1,19 @@
 import {
-  symbol_057 as imported,
-  symbol_058 as imported_2,
-  symbol_059 as imported_3,
-  symbol_060 as imported_4,
-  symbol_068 as imported_5,
-  symbol_065 as imported_6,
-  ax as imported_7,
-  symbol_081 as imported_8,
+  symbol_060 as imported,
+  symbol_061 as imported_2,
+  symbol_062 as imported_3,
+  ax as imported_4,
+  symbol_070 as imported_5,
+  symbol_067 as imported_6,
+  symbol_063 as imported_7,
+  symbol_083 as imported_8,
   symbol_002 as imported_9,
-  symbol_055 as imported_10,
-  symbol_061 as imported_11,
-  az as imported_12,
-  symbol_056 as imported_13,
+  symbol_058 as imported_10,
+  az as imported_11,
+  symbol_033 as imported_12,
+  symbol_059 as imported_13,
   symbol_026 as imported_14,
-  symbol_062 as imported_15,
+  symbol_064 as imported_15,
   symbol_006 as imported_16,
 } from "../entry.js";
 (function () {
@@ -43,9 +43,9 @@ const local_e2a47d41 = "c_frame";
 const local_e3cffaad = {
   frame: local_e2a47d41,
 };
-const local_c7421c91 = new RegExp(`^${imported_7.ALICE_EVENT}/?`);
-function fn_9c89ef3c() {
-  const local = window.location.pathname.replace(local_c7421c91, "");
+const local_a07d92c1 = new RegExp(`^${imported_7.ALICE_EVENT}/?`);
+function fn_e063082e() {
+  const local = window.location.pathname.replace(local_a07d92c1, "");
   return `${imported_11}/${local}${window.location.search}`;
 }
 export function fn_3c3ff162(arg) {
@@ -64,13 +64,13 @@ export function fn_3c3ff162(arg) {
   if (!local_2 || !local_4) {
     return null;
   }
-  return imported_8(fn_fa6214dc, {});
+  return imported_8(fn_fe166f3e, {});
 }
-function fn_fa6214dc() {
+function fn_fe166f3e() {
   const local = imported_9(null);
-  const local_2 = imported_9(fn_9c89ef3c()).current;
+  const local_2 = imported_9(fn_e063082e()).current;
   const local_3 = imported_9(
-    window.location.pathname.replace(local_c7421c91, ""),
+    window.location.pathname.replace(local_a07d92c1, ""),
   );
   const local_4 = imported_9(window.location.search);
   imported_5(() => {
@@ -149,7 +149,7 @@ function fn_fa6214dc() {
     };
   }, []);
   imported_5(() => {
-    const local = window.location.pathname.replace(local_c7421c91, "");
+    const local = window.location.pathname.replace(local_a07d92c1, "");
     const local_2 = window.location.search;
     if (!(local === local_3.current && local_2 === local_4.current)) {
       local_3.current = local;

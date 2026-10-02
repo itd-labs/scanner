@@ -1,10 +1,10 @@
 import {
-  symbol_077 as imported,
-  symbol_064 as imported_2,
-  symbol_068 as imported_3,
+  symbol_079 as imported,
+  symbol_066 as imported_2,
+  symbol_070 as imported_3,
   symbol_002 as imported_4,
   a5 as imported_5,
-  symbol_081 as imported_6,
+  symbol_083 as imported_6,
   symbol_020 as imported_7,
   symbol_031 as imported_8,
   symbol_028 as imported_9,
@@ -1284,7 +1284,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_8c9a3cce({
+function fn_5d7bad9d({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_eb3519c3({
+export function fn_d2751cc2({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_eb3519c3({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_8c9a3cce, {
+          imported_6(fn_5d7bad9d, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_eb3519c3({
     document.body,
   );
 }
-export { fn_eb3519c3 as default };
+export { fn_d2751cc2 as default };

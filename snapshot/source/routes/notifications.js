@@ -1,26 +1,28 @@
 import {
-  symbol_081 as imported,
-  symbol_066 as imported_2,
-  symbol_025 as imported_3,
-  symbol_003 as imported_4,
-  symbol_073 as imported_5,
-  af as imported_6,
-  symbol_047 as imported_7,
+  symbol_083 as imported,
+  symbol_047 as imported_2,
+  symbol_068 as imported_3,
+  symbol_020 as imported_4,
+  symbol_025 as imported_5,
+  symbol_003 as imported_6,
+  symbol_075 as imported_7,
   symbol_048 as imported_8,
   symbol_049 as imported_9,
-  symbol_065 as imported_10,
+  symbol_050 as imported_10,
   aj as imported_11,
-  symbol_050 as imported_12,
-  symbol_002 as imported_13,
-  symbol_064 as imported_14,
-  symbol_068 as imported_15,
-  symbol_051 as imported_16,
-  symbol_077 as imported_17,
-  symbol_030 as imported_18,
-  symbol_052 as imported_19,
+  symbol_067 as imported_12,
+  symbol_051 as imported_13,
+  symbol_052 as imported_14,
+  symbol_002 as imported_15,
+  symbol_066 as imported_16,
+  symbol_070 as imported_17,
+  symbol_053 as imported_18,
+  symbol_079 as imported_19,
+  symbol_030 as imported_20,
+  symbol_054 as imported_21,
 } from "../entry.js";
-import { I as imported_20 } from "../components/icon-notification-mention.js";
-import { I as imported_21 } from "../components/icon-check.js";
+import { I as imported_22 } from "../components/icon-notification-mention.js";
+import { I as imported_23 } from "../components/icon-check.js";
 (function () {
   try {
     const local =
@@ -63,11 +65,13 @@ const local_8d0c49b2 = "c_name";
 const local_406cc78f = "c_action";
 const local_95ed4c70 = "c_text";
 const local_ceae4223 = "c_date";
+const local_1f2ab4d0 = "c_reminderTitle";
+const local_0dbe8a71 = "c_reminderText";
 const local_34365a93 = "c_titleRow";
 const local_ae3e6ade = "c_unread";
 const local_119f77f9 = "c_empty";
 const local_dd77767a = "c_loadMore";
-const local_2ba33e70 = {
+const local_f2bf345a = {
   page: local_ef251bc6,
   pageTitle: local_b79c6e36,
   list: local_e9ccbd22,
@@ -87,6 +91,8 @@ const local_2ba33e70 = {
   action: local_406cc78f,
   text: local_95ed4c70,
   date: local_ceae4223,
+  reminderTitle: local_1f2ab4d0,
+  reminderText: local_0dbe8a71,
   titleRow: local_34365a93,
   unread: local_ae3e6ade,
   empty: local_119f77f9,
@@ -105,10 +111,10 @@ function fn_8998240c(arg) {
     month: "short",
   });
 }
-const local_48901e53 = {
+const local_7f22a07b = {
   follow: {
     badgeColor: "blue",
-    icon: imported(imported_5, {
+    icon: imported(imported_7, {
       size: 12,
     }),
     getAction: (arg) => {
@@ -120,21 +126,21 @@ const local_48901e53 = {
   },
   follow_request: {
     badgeColor: "blue",
-    icon: imported(imported_5, {
+    icon: imported(imported_7, {
       size: 12,
     }),
     getAction: () => "хочет подписаться на вас",
   },
   follow_accepted: {
     badgeColor: "green",
-    icon: imported(imported_21, {
+    icon: imported(imported_23, {
       size: 12,
     }),
     getAction: () => "принял(а) вашу заявку на подписку",
   },
   post_reaction: {
     badgeColor: "red",
-    icon: imported(imported_8, {
+    icon: imported(imported_10, {
       size: 12,
       filled: true,
     }),
@@ -147,7 +153,7 @@ const local_48901e53 = {
   },
   post_comment: {
     badgeColor: "green",
-    icon: imported(imported_7, {
+    icon: imported(imported_9, {
       size: 12,
       filled: true,
     }),
@@ -155,7 +161,7 @@ const local_48901e53 = {
   },
   post_repost: {
     badgeColor: "blue",
-    icon: imported(imported_9, {
+    icon: imported(imported_11, {
       size: 12,
     }),
     getAction: (arg) => {
@@ -167,7 +173,7 @@ const local_48901e53 = {
   },
   comment_reaction: {
     badgeColor: "red",
-    icon: imported(imported_8, {
+    icon: imported(imported_10, {
       size: 12,
       filled: true,
     }),
@@ -180,7 +186,7 @@ const local_48901e53 = {
   },
   comment_reply: {
     badgeColor: "green",
-    icon: imported(imported_7, {
+    icon: imported(imported_9, {
       size: 12,
       filled: true,
     }),
@@ -188,46 +194,46 @@ const local_48901e53 = {
   },
   post_mention: {
     badgeColor: "purple",
-    icon: imported(imported_20, {
+    icon: imported(imported_22, {
       size: 12,
     }),
     getAction: () => "упомянул(а) вас в посте",
   },
   comment_mention: {
     badgeColor: "purple",
-    icon: imported(imported_20, {
+    icon: imported(imported_22, {
       size: 12,
     }),
     getAction: () => "упомянул(а) вас в комментарии",
   },
   wall_post: {
     badgeColor: "blue",
-    icon: imported(imported_6, {
+    icon: imported(imported_8, {
       size: 12,
     }),
     getAction: () => "написал(а) на вашей стене",
   },
 };
-const local_5adaadb3 = ({ type: arg }) => {
-  const local = local_48901e53[arg];
+const local_97259913 = ({ type: arg }) => {
+  const local = local_7f22a07b[arg];
   const local_2 =
     local?.badgeColor === "red"
-      ? local_2ba33e70.red
+      ? local_f2bf345a.red
       : local?.badgeColor === "green"
-        ? local_2ba33e70.green
+        ? local_f2bf345a.green
         : local?.badgeColor === "purple"
-          ? local_2ba33e70.purple
-          : local_2ba33e70.blue;
+          ? local_f2bf345a.purple
+          : local_f2bf345a.blue;
   return imported("div", {
-    className: `${local_2ba33e70.badge} ${local_2}`,
+    className: `${local_f2bf345a.badge} ${local_2}`,
     children:
       local?.icon ||
-      imported(imported_7, {
+      imported(imported_9, {
         size: 12,
       }),
   });
 };
-function fn_4ea2f153({
+function fn_235240cf({
   notification: arg,
   isVisuallyUnread: arg_2,
   onMarkRead: arg_3,
@@ -235,10 +241,11 @@ function fn_4ea2f153({
   onFollowToggle: arg_5,
   isFollowLoading: arg_6,
 }) {
-  const local = local_48901e53[arg.type];
+  const local = local_7f22a07b[arg.type];
   const local_2 = arg.payload.actors[0];
   const local_3 = arg.payload.count;
-  const local_4 = () => {
+  const local_4 = arg.type === "alice_task_reminder";
+  const local_5 = () => {
     arg_3(arg.id);
     const {
       type: local,
@@ -273,11 +280,11 @@ function fn_4ea2f153({
       local_5 = `/@${local_2.username}`;
     }
     if (local_5) {
-      imported_10(local_5);
+      imported_12(local_5);
     }
   };
-  const local_5 = arg.type === "follow" || arg.type === "follow_request";
-  const local_6 = arg_6
+  const local_6 = arg.type === "follow" || arg.type === "follow_request";
+  const local_7 = arg_6
     ? "loading"
     : arg_4
       ? arg_4.isFollowing
@@ -286,8 +293,8 @@ function fn_4ea2f153({
           ? "requested"
           : "none"
       : "none";
-  const local_7 = () => {
-    switch (local_6) {
+  const local_8 = () => {
+    switch (local_7) {
       case "loading":
         return "Загрузка...";
       case "following":
@@ -301,122 +308,142 @@ function fn_4ea2f153({
         return "Подписаться";
     }
   };
-  const local_8 = () => {
-    if (local_6 === "following" || local_6 === "requested") {
+  const local_9 = () => {
+    if (local_7 === "following" || local_7 === "requested") {
       return "secondary";
     }
     return "primary";
   };
-  const local_9 = (arg) => {
+  const local_10 = (arg) => {
     arg.stopPropagation();
     if (local_2?.id && !arg_6) {
       arg_5(local_2.id);
     }
   };
-  const local_10 = (arg) => {
+  const local_11 = (arg) => {
     arg.stopPropagation();
     arg.preventDefault();
     arg_3(arg.id);
     if (local_2?.username) {
-      imported_10(`/@${local_2.username}`);
+      imported_12(`/@${local_2.username}`);
     }
   };
   return imported("div", {
-    className: `${local_2ba33e70.item} ${arg_2 ? local_2ba33e70.unread : ""}`,
-    onClick: local_4,
+    className: `${local_f2bf345a.item} ${arg_2 ? local_f2bf345a.unread : ""}`,
+    onClick: local_5,
     role: "button",
     tabIndex: 0,
+    onKeyDown: (arg) => {
+      if (
+        local_4 &&
+        (arg.key === "Enter" || arg.key === "./notifications.js")
+      ) {
+        arg.preventDefault();
+        local_5();
+      }
+    },
     children: [
       imported("div", {
-        className: local_2ba33e70.content,
+        className: local_f2bf345a.content,
         children: [
-          imported("a", {
-            href: local_2?.username ? `/@${local_2.username}` : "#",
-            className: local_2ba33e70.avatarLink,
-            onClick: local_10,
-            title: "Перейти в профиль",
-            children: imported(imported_2, {
-              src: local_2?.avatar || "",
-              alt: local_2?.displayName || "User",
-              size: "md",
-              badge: imported(local_5adaadb3, {
-                type: arg.type,
+          local_4
+            ? imported(imported_2, {})
+            : imported("a", {
+                href: local_2?.username ? `/@${local_2.username}` : "#",
+                className: local_f2bf345a.avatarLink,
+                onClick: local_11,
+                title: "Перейти в профиль",
+                children: imported(imported_3, {
+                  src: local_2?.avatar || "",
+                  alt: local_2?.displayName || "User",
+                  size: "md",
+                  badge: imported(local_97259913, {
+                    type: arg.type,
+                  }),
+                }),
               }),
-            }),
-          }),
           imported("div", {
-            className: local_2ba33e70.info,
+            className: local_f2bf345a.info,
             children: [
               imported("div", {
-                className: local_2ba33e70.header,
-                children: [
-                  imported("a", {
-                    href: local_2?.username ? `/@${local_2.username}` : "#",
-                    className: local_2ba33e70.actorLink,
-                    onClick: local_10,
-                    title: "Перейти в профиль",
-                    children: imported(imported_3, {
-                      userId: local_2?.id,
-                      name: local_2?.displayName || "Пользователь",
-                      verified:
-                        local_2?.isVerified ?? local_2?.verified ?? false,
-                      pin: local_2?.pin,
-                      size: "sm",
-                      className: local_2ba33e70.name,
+                className: local_f2bf345a.header,
+                children: local_4
+                  ? imported("span", {
+                      className: local_f2bf345a.reminderTitle,
+                      children: arg.payload.title,
+                    })
+                  : imported(imported_4, {
+                      children: [
+                        imported("a", {
+                          href: local_2?.username
+                            ? `/@${local_2.username}`
+                            : "#",
+                          className: local_f2bf345a.actorLink,
+                          onClick: local_11,
+                          title: "Перейти в профиль",
+                          children: imported(imported_5, {
+                            userId: local_2?.id,
+                            name: local_2?.displayName || "Пользователь",
+                            verified:
+                              local_2?.isVerified ?? local_2?.verified ?? false,
+                            pin: local_2?.pin,
+                            size: "sm",
+                            className: local_f2bf345a.name,
+                          }),
+                        }),
+                        imported("span", {
+                          className: local_f2bf345a.action,
+                          children: local?.getAction(local_3) || "уведомление",
+                        }),
+                      ],
                     }),
-                  }),
-                  imported("span", {
-                    className: local_2ba33e70.action,
-                    children: local?.getAction(local_3) || "уведомление",
-                  }),
-                ],
               }),
               arg.payload.entityPreview &&
                 imported("p", {
-                  className: local_2ba33e70.text,
+                  className: `${local_f2bf345a.text} ${local_4 ? local_f2bf345a.reminderText : ""}`,
                   children: arg.payload.entityPreview,
                 }),
               imported("span", {
-                className: local_2ba33e70.date,
+                className: local_f2bf345a.date,
                 children: fn_8998240c(arg.createdAt),
               }),
             ],
           }),
         ],
       }),
-      local_5 &&
+      local_6 &&
         local_2?.id &&
-        imported(imported_4, {
-          variant: local_8(),
+        imported(imported_6, {
+          variant: local_9(),
           size: "md",
-          className: local_2ba33e70.btn,
-          onClick: local_9,
+          className: local_f2bf345a.btn,
+          onClick: local_10,
           disabled: arg_6,
           children: [
-            local_6 === "none" &&
-              imported(imported_5, {
+            local_7 === "none" &&
+              imported(imported_7, {
                 size: 18,
               }),
-            local_7(),
+            local_8(),
           ],
         }),
     ],
   });
 }
-export const local_58a6e47b = (arg) => {
+export const local_8242fbd6 = (arg) => {
   const {
     notifications: local,
     status: local_2,
     nextCursor: local_3,
     fetchNotifications: local_4,
     markAllAsRead: local_5,
-  } = imported_11();
-  const local_6 = imported_12();
-  const local_7 = imported_13(null);
-  const [local_8, local_9] = imported_14(new Set());
-  const [local_10, local_11] = imported_14(new Map());
-  const [local_12, local_13] = imported_14(new Set());
-  imported_15(() => {
+  } = imported_13();
+  const local_6 = imported_14();
+  const local_7 = imported_15(null);
+  const [local_8, local_9] = imported_16(new Set());
+  const [local_10, local_11] = imported_16(new Map());
+  const [local_12, local_13] = imported_16(new Set());
+  imported_17(() => {
     const local = new Set();
     for (const local of local) {
       if (!local.isRead) {
@@ -431,9 +458,9 @@ export const local_58a6e47b = (arg) => {
       return local;
     });
   }, [local]);
-  imported_15(() => {
+  imported_17(() => {
     local_4(true).then(() => {
-      const local = imported_11
+      const local = imported_13
         .getState()
         .notifications.filter((arg) => !arg.isRead)
         .map((arg) => arg.id);
@@ -449,7 +476,7 @@ export const local_58a6e47b = (arg) => {
       local_5();
     });
   }, [local_4, local_5]);
-  imported_15(() => {
+  imported_17(() => {
     const local = ["follow", "follow_request"];
     const local_2 = [];
     for (const local of local) {
@@ -481,31 +508,31 @@ export const local_58a6e47b = (arg) => {
       });
     }
   }, [local]);
-  imported_16({
+  imported_18({
     sentinelRef: local_7,
     hasMore: !!local_3,
     isLoading: local_2 === "loading",
     onLoadMore: local_4,
   });
-  const local_14 = imported_17((arg) => {
+  const local_14 = imported_19((arg) => {
     local_9((arg) => {
       const local = new Set(arg);
       local.delete(arg);
       return local;
     });
   }, []);
-  const local_15 = imported_17(() => {
+  const local_15 = imported_19(() => {
     local_9(new Set());
     local_5();
   }, [local_5]);
-  const local_16 = imported_17(
+  const local_16 = imported_19(
     async (arg) => {
       if (!local_12.has(arg)) {
         local_13((arg) => new Set(arg).add(arg));
         try {
           const local = local_10.get(arg);
           if (local?.isFollowing || local?.hasOutgoingRequest) {
-            await imported_18.unfollowUser(arg);
+            await imported_20.unfollowUser(arg);
             local_11((arg) => {
               const local = new Map(arg);
               const local_2 = local.get(arg);
@@ -519,7 +546,7 @@ export const local_58a6e47b = (arg) => {
               return local;
             });
           } else {
-            const local = await imported_18.followUser(arg);
+            const local = await imported_20.followUser(arg);
             local_11((arg) => {
               const local = new Map(arg);
               const local_2 = local.get(arg);
@@ -580,17 +607,17 @@ export const local_58a6e47b = (arg) => {
   const local_17 = local_2 === "loading";
   const local_18 = local.length === 0 && !local_17;
   return imported("div", {
-    className: `${local_2ba33e70.page} ym-hide-content`,
+    className: `${local_f2bf345a.page} ym-hide-content`,
     children: [
       imported("div", {
-        className: local_2ba33e70.titleRow,
+        className: local_f2bf345a.titleRow,
         children: [
           imported("h1", {
-            className: local_2ba33e70.pageTitle,
+            className: local_f2bf345a.pageTitle,
             children: "Уведомления",
           }),
           local_6 > 0 &&
-            imported(imported_4, {
+            imported(imported_6, {
               variant: "ghost",
               size: "sm",
               onClick: local_15,
@@ -600,18 +627,18 @@ export const local_58a6e47b = (arg) => {
       }),
       local_18
         ? imported("div", {
-            className: local_2ba33e70.empty,
+            className: local_f2bf345a.empty,
             children: imported("p", {
               children: "Нет уведомлений",
             }),
           })
         : imported("div", {
-            className: local_2ba33e70.list,
+            className: local_f2bf345a.list,
             children: [
               local.map((arg) => {
                 const local = arg.payload.actors[0]?.id;
                 return imported(
-                  fn_4ea2f153,
+                  fn_235240cf,
                   {
                     notification: arg,
                     isVisuallyUnread: local_8.has(arg.id),
@@ -626,10 +653,10 @@ export const local_58a6e47b = (arg) => {
               local_3 &&
                 imported("div", {
                   ref: local_7,
-                  className: local_2ba33e70.loadMore,
+                  className: local_f2bf345a.loadMore,
                   children:
                     local_17 &&
-                    imported(imported_19, {
+                    imported(imported_21, {
                       size: "sm",
                     }),
                 }),

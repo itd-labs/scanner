@@ -1,4 +1,4 @@
-import { symbol_068 as imported } from "../entry.js";
+import { symbol_070 as imported } from "../entry.js";
 (function () {
   try {
     const local =
