@@ -512,7 +512,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_f1ab8f5699 {
+.c_bottomSheet.c_auto_f586dba167 {
   animation: keyframe_9 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -2496,7 +2496,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_634b8aadda {
+.c_textInput.c_entering .c_auto_18f0c2270c {
   animation: keyframe_16 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -3742,7 +3742,7 @@ h6 {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_8179e4065b {
+.c_auto_b4db5524d9 {
   display: block;
   animation: keyframe_28 0.4s ease;
 }
@@ -4328,7 +4328,7 @@ h6 {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_4f9cd1928d {
+.c_auto_338514a013 {
   animation: keyframe_31 0.4s ease;
 }
 .c_auto_7f6ce735eb {
@@ -5027,10 +5027,8 @@ h6 {
     }
   }
 }
-.c_avatar img {
-  box-sizing: border-box;
-  object-fit: contain;
-  padding: 6px;
+.c_avatar {
+  background: var(--bg-secondary);
 }
 .c_container {
   position: fixed;

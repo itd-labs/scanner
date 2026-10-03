@@ -346,7 +346,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                   const local_5 = arg.userId === local_2;
                   const local_6 = local_11.get(arg.userId);
                   const local_7 = local_13.has(arg.userId);
-                  const profileApi = () => {
+                  const local_8 = () => {
                     if (local_2) {
                       return "Отписаться";
                     }
@@ -509,7 +509,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                             disabled: local_4,
                             onClick: (arg) => local_10(arg.userId, arg),
                             className: local_e1f3b173.followButton,
-                            children: profileApi(),
+                            children: local_8(),
                           }),
                       ],
                     },

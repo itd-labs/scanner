@@ -931,7 +931,7 @@ function fn_1dd73c40(arg) {
   }
   return local ?? null;
 }
-function fn_8d77985e({
+function fn_e7020c18({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -2590,7 +2590,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_d2dd3310({
+function fn_c7135091({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2905,7 +2905,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_fb773a41({
+function fn_c75dcfa3({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3049,7 +3049,7 @@ function fn_fb773a41({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_10 &&
-            imported(fn_8d77985e, {
+            imported(fn_e7020c18, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3257,7 +3257,7 @@ function fn_fb773a41({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_d2dd3310, {
+                      children: imported(fn_c7135091, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -4161,7 +4161,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_fb773a41, {
+      imported(fn_c75dcfa3, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,

@@ -14433,14 +14433,14 @@ function symbol_014({
   });
 }
 const local_ee7a6f6b = "c_spinner";
-const local_612d8f43 = "PDrL";
+const local_6cce6007 = "Q1Kp";
 const local_d3808147 = "c_xs";
 const local_9350219d = "c_sm";
 const local_a8a24a1e = "c_md";
 const local_afefddb7 = "c_lg";
 const local_0ab9bf6f = {
   spinner: local_ee7a6f6b,
-  spin: local_612d8f43,
+  spin: local_6cce6007,
   xs: local_d3808147,
   sm: local_9350219d,
   md: local_a8a24a1e,
@@ -16288,7 +16288,7 @@ function fn_0a256f58() {
   };
   return local_2;
 }
-async function fn_1dfc7e83(arg = [...local_a1e12a9e_12.keys()]) {
+async function fn_976ec011(arg = [...local_a1e12a9e_12.keys()]) {
   if (!arg.length) {
     return;
   }
@@ -16308,11 +16308,11 @@ async function fn_1dfc7e83(arg = [...local_a1e12a9e_12.keys()]) {
     throw new Error("Invalid event state response");
   }
   const local_4 = arg
-    .filter((arg) => local_a1e12a9e_12.has(arg))
     .map((arg) => {
       const local = local_3.data[arg] ?? null;
       return [arg, local_ce9f9c1f_2.replace(arg, local, local_2)];
-    });
+    })
+    .filter(([arg]) => local_a1e12a9e_12.has(arg));
   const local_5 = Object.fromEntries(
     local_4.map(([arg, arg_2]) => [arg, arg_2.state]),
   );
@@ -16339,7 +16339,7 @@ function fn_c4530fbf() {
     fn_0a256f58(),
     (async () => {
       for (let local = 0; local < local.length; local += 100) {
-        await fn_1dfc7e83(local.slice(local, local + 100));
+        await fn_976ec011(local.slice(local, local + 100));
       }
     })(),
   ])
@@ -16349,7 +16349,7 @@ function fn_c4530fbf() {
       local_657db3b7_36 = undefined;
     });
 }
-function fn_08ef8d6e(arg) {
+function fn_dce886d7(arg) {
   local_a1e12a9e_12.set(arg, (local_a1e12a9e_12.get(arg) ?? 0) + 1);
   if (!local_657db3b7_35) {
     local_657db3b7_35 = setInterval(fn_c4530fbf, 15000);
@@ -16389,7 +16389,6 @@ function fn_08ef8d6e(arg) {
       local_657db3b7_35 = undefined;
       window.removeEventListener("focus", fn_c4530fbf);
       document.removeEventListener("visibilitychange", fn_c4530fbf);
-      local_f06debfc_38++;
       local_68b835b6.setState({
         inventory: null,
       });
@@ -16406,7 +16405,7 @@ fn_ec062882(() => {
     generation: local_f06debfc_38,
   });
   if (local_a1e12a9e_12.size) {
-    fn_1dfc7e83().catch(() => {});
+    fn_976ec011().catch(() => {});
     fn_0a256f58().catch(() => {});
   }
 });
@@ -16465,7 +16464,7 @@ function fn_0f81f3da() {
   };
   return local_2;
 }
-async function fn_9cf521d1(arg = [...local_a1e12a9e_13.keys()]) {
+async function fn_f717406b(arg = [...local_a1e12a9e_13.keys()]) {
   if (!arg.length) {
     return;
   }
@@ -16488,11 +16487,11 @@ async function fn_9cf521d1(arg = [...local_a1e12a9e_13.keys()]) {
     throw new Error("Invalid event state response");
   }
   const local_4 = arg
-    .filter((arg) => local_a1e12a9e_13.has(arg))
     .map((arg) => {
       const local = local_3.data[arg] ?? null;
       return [arg, local_ce9f9c1f_3.replace(arg, local, local_2)];
-    });
+    })
+    .filter(([arg]) => local_a1e12a9e_13.has(arg));
   const local_5 = Object.fromEntries(
     local_4.map(([arg, arg_2]) => [arg, arg_2.state]),
   );
@@ -16519,7 +16518,7 @@ function fn_c4530fbf_2() {
     fn_0f81f3da(),
     (async () => {
       for (let local = 0; local < local.length; local += 100) {
-        await fn_9cf521d1(local.slice(local, local + 100));
+        await fn_f717406b(local.slice(local, local + 100));
       }
     })(),
   ])
@@ -16529,7 +16528,7 @@ function fn_c4530fbf_2() {
       local_657db3b7_39 = undefined;
     });
 }
-function fn_08ef8d6e_2(arg) {
+function fn_dce886d7_2(arg) {
   local_a1e12a9e_13.set(arg, (local_a1e12a9e_13.get(arg) ?? 0) + 1);
   if (!local_657db3b7_38) {
     local_657db3b7_38 = setInterval(fn_c4530fbf_2, 15000);
@@ -16569,7 +16568,6 @@ function fn_08ef8d6e_2(arg) {
       local_657db3b7_38 = undefined;
       window.removeEventListener("focus", fn_c4530fbf_2);
       document.removeEventListener("visibilitychange", fn_c4530fbf_2);
-      local_f06debfc_39++;
       local_68b835b6_2.setState({
         inventory: null,
       });
@@ -16586,7 +16584,7 @@ fn_ec062882(() => {
     generation: local_f06debfc_39,
   });
   if (local_a1e12a9e_13.size) {
-    fn_9cf521d1().catch(() => {});
+    fn_f717406b().catch(() => {});
     fn_0f81f3da().catch(() => {});
   }
 });
@@ -21570,7 +21568,7 @@ function fn_a2f54c44(arg) {
   const local_3 = btoa(local_2);
   return `/external?url=${encodeURIComponent(local_3)}`;
 }
-function fn_0ca115ae({
+function fn_641c89f3({
   text: arg,
   spans: arg_2 = [],
   className: arg_3 = "",
@@ -22628,7 +22626,7 @@ function fn_d75660dd(arg, arg_2) {
   const local_7 = !!arg_2;
   symbol_070(() => {
     if (local_7) {
-      return fn_08ef8d6e_2(arg);
+      return fn_dce886d7_2(arg);
     }
   }, [arg, local_7]);
   symbol_070(() => {
@@ -22999,7 +22997,7 @@ function fn_38a60d2e({
               skipErrorToast: true,
             },
           );
-          await fn_9cf521d1([arg_2]);
+          await fn_f717406b([arg_2]);
           arg_4();
         } catch {
           local_6("Не удалось удалить закрашивания. Попробуйте ещё раз");
@@ -23287,7 +23285,7 @@ function fn_951cd306(arg, arg_2) {
   const local_7 = !!arg_2;
   symbol_070(() => {
     if (local_7) {
-      return fn_08ef8d6e(arg);
+      return fn_dce886d7(arg);
     }
   }, [arg, local_7]);
   symbol_070(() => {
@@ -23686,7 +23684,7 @@ function fn_4b48d6be({
               skipErrorToast: true,
             },
           );
-          await fn_1dfc7e83([arg]);
+          await fn_976ec011([arg]);
           arg_4();
         } catch {
           local_6("Не удалось удалить правки. Попробуйте ещё раз");
@@ -24212,8 +24210,8 @@ function fn_e63494a2({
     : "";
   const local_43 = () =>
     Promise.allSettled([
-      ...(arg_5 ? [fn_9cf521d1([arg]), fn_0f81f3da()] : []),
-      ...(arg_6 ? [fn_1dfc7e83([arg]), fn_0a256f58()] : []),
+      ...(arg_5 ? [fn_f717406b([arg]), fn_0f81f3da()] : []),
+      ...(arg_6 ? [fn_976ec011([arg]), fn_0a256f58()] : []),
     ]);
   async function fn() {
     if (!local_16 || local_3.current) {
@@ -24332,7 +24330,7 @@ function fn_e63494a2({
                 ? symbol_083("span", {
                     children: "Пост изменился. Обновите страницу",
                   })
-                : symbol_083(fn_0ca115ae, {
+                : symbol_083(fn_641c89f3, {
                     text: arg_3,
                     spans: arg_4,
                     correctorMarks: local_6.marks,
@@ -25692,7 +25690,7 @@ function fn_7c6ba9d4(arg, arg_2) {
   const local_19 = symbol_079(
     (arg) => {
       local(
-        symbol_083(fn_c5fac8c9, {
+        symbol_083(fn_47fb33aa, {
           postId: arg.id,
           initialText: arg.text ?? "",
           initialSpans: arg.spans ?? [],
@@ -26288,7 +26286,7 @@ const symbol_065 = symbol_040(
                                 signature: false,
                                 selectable: !local_41 && !arg_9,
                               })
-                            : symbol_083(fn_0ca115ae, {
+                            : symbol_083(fn_641c89f3, {
                                 text: arg.text,
                                 spans: arg.spans ?? [],
                               }),
@@ -26610,7 +26608,7 @@ const local_69acd45b = symbol_040(function ({
                     ],
                   }),
                 arg_3 &&
-                  symbol_083(fn_0ca115ae, {
+                  symbol_083(fn_641c89f3, {
                     text: arg_3,
                     spans: arg_4,
                   }),
@@ -27900,7 +27898,7 @@ const local_c65d5c43 = symbol_088(() =>
     default: arg.DrawingCanvas,
   })),
 );
-export function fn_296fd830({
+export function fn_f2975446({
   onSubmit: arg,
   autoFocus: arg_2 = false,
   placeholder: arg_3 = "Что нового?",
@@ -28414,7 +28412,7 @@ export function fn_5452d041({
         className: local_339f5c81.title,
         children: "Создать пост",
       }),
-      symbol_083(fn_296fd830, {
+      symbol_083(fn_f2975446, {
         onSubmit: local_4,
         autoFocus: true,
         placeholder: arg_2,
@@ -28445,7 +28443,7 @@ const local_7f9fe33f = {
   error: local_cd23a337_5,
 };
 const local_f06debfc_79 = 5000;
-function fn_c5fac8c9({
+function fn_47fb33aa({
   postId: arg,
   initialText: arg_2,
   initialSpans: arg_3 = [],
@@ -29032,8 +29030,8 @@ const local_c2837da0 = {
 };
 function symbol_047() {
   return symbol_083(symbol_068, {
-    src: "./assets/alice-ai.png",
-    alt: "Алиса AI",
+    src: "🔔",
+    alt: "Напоминание",
     size: "md",
     className: local_c2837da0.avatar,
     badge: symbol_083(fn_8aba1a35, {
@@ -30653,7 +30651,7 @@ const local_ea4ae1cd = (arg) => {
               alt: local_15.displayName,
               size: "sm",
             }),
-          symbol_083(fn_296fd830, {
+          symbol_083(fn_f2975446, {
             onSubmit: local_22,
           }),
         ],

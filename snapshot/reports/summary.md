@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `0158a489d7479bdcc75bc9a4300c1ab7d98aaf6c3c29b99456c83555365713bc`
-- Resources: 154
-- Downloaded bytes: 5823086
+- Build fingerprint: `a21939ef7ee04fa3bb518e6b0a9e48689e11962cbfa28368723705985af9a244`
+- Resources: 153
+- Downloaded bytes: 5398013
 - Sentry releases: `1.1.2`
 
 ## Routes
@@ -25,8 +25,5 @@ No changes.
 
 ## User-visible strings
 
-- Added: `Алиса AI`
-- Added: `Скрыть уведомление`
-- Added: `SSE message parse error`
-- Added: `SSE stream closed`
-- Removed: `SSE message parse error:`
+- Added: `Напоминание`
+- Removed: `Алиса AI`

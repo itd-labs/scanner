@@ -62,7 +62,7 @@ const local_fcd1eed3 = {
   step: local_cd89e6b9,
   active: local_6ab69625,
 };
-function fn_3fe694e7({
+function fn_f33e0dd4({
   steps: arg,
   currentStep: arg_2,
   onStepClick: arg_3,
@@ -155,7 +155,7 @@ const local_968eaf70 = imported_9(() =>
     default: arg.EmojiPicker,
   })),
 );
-export const local_9fae70e6 = (arg) => {
+export const local_922b6eff = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -340,7 +340,7 @@ export const local_9fae70e6 = (arg) => {
                 }),
               ],
             }),
-            imported(fn_3fe694e7, {
+            imported(fn_f33e0dd4, {
               steps: 2,
               currentStep: local,
               onStepClick: local_29,
@@ -517,4 +517,4 @@ export const local_9fae70e6 = (arg) => {
     ],
   });
 };
-export { local_9fae70e6 as default };
+export { local_922b6eff as default };

@@ -42,7 +42,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_f6b86911({
+function fn_75fa0972({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -340,7 +340,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_3ea9b2e6({
+export function fn_54fa4e81({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -666,7 +666,7 @@ export function fn_3ea9b2e6({
                   children: [
                     imported_3("div", {
                       className: local_66259d24.volumeSlider,
-                      children: imported_3(fn_f6b86911, {
+                      children: imported_3(fn_75fa0972, {
                         value: local_12 ? 0 : local_14,
                         onChange: local_38,
                         onDragStart: () => {

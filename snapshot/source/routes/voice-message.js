@@ -89,7 +89,7 @@ function fn_b5bf2c3a(arg) {
   const local_2 = Math.floor(arg % 60);
   return `${local}:${local_2.toString().padStart(2, "0")}`;
 }
-export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
+export function fn_02f278af({ src: arg, duration: arg_2 = 0 }) {
   const local = imported_2(() => arg, [arg]);
   const local_2 = imported_2(() => fn_9c291bbd(arg), [arg]);
   const local_3 = local_57f57962((arg) => arg.activeAudioId);
@@ -287,4 +287,4 @@ export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
     ],
   });
 }
-export { fn_5eac85a0 as default };
+export { fn_02f278af as default };
