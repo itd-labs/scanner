@@ -1,11 +1,11 @@
 import {
-  symbol_066 as imported,
-  symbol_083 as imported_2,
-  symbol_034 as imported_3,
+  symbol_064 as imported,
+  symbol_081 as imported_2,
+  symbol_033 as imported_3,
   symbol_003 as imported_4,
   symbol_020 as imported_5,
   aD as imported_6,
-  symbol_067 as imported_7,
+  symbol_065 as imported_7,
   symbol_012 as imported_8,
   aB as imported_9,
 } from "../entry.js";
@@ -74,7 +74,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_7016ae42 = (arg) => {
+export const local_a34523c6 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -286,4 +286,4 @@ export const local_7016ae42 = (arg) => {
     }),
   });
 };
-export { local_7016ae42 as default };
+export { local_a34523c6 as default };

@@ -1,11 +1,11 @@
 import {
   aH as imported,
   a5 as imported_2,
-  symbol_066 as imported_3,
+  symbol_064 as imported_3,
   symbol_002 as imported_4,
-  symbol_070 as imported_5,
-  symbol_079 as imported_6,
-  symbol_083 as imported_7,
+  symbol_068 as imported_5,
+  symbol_077 as imported_6,
+  symbol_081 as imported_7,
   aP as imported_8,
 } from "../entry.js";
 import { I as imported_9, a as imported_10 } from "../components/icon-play.js";
@@ -89,7 +89,7 @@ function fn_b5bf2c3a(arg) {
   const local_2 = Math.floor(arg % 60);
   return `${local}:${local_2.toString().padStart(2, "0")}`;
 }
-export function fn_02f278af({ src: arg, duration: arg_2 = 0 }) {
+export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
   const local = imported_2(() => arg, [arg]);
   const local_2 = imported_2(() => fn_9c291bbd(arg), [arg]);
   const local_3 = local_57f57962((arg) => arg.activeAudioId);
@@ -287,4 +287,4 @@ export function fn_02f278af({ src: arg, duration: arg_2 = 0 }) {
     ],
   });
 }
-export { fn_02f278af as default };
+export { fn_5eac85a0 as default };

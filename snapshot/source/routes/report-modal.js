@@ -1,8 +1,8 @@
 import {
-  symbol_055 as imported,
-  symbol_056 as imported_2,
-  symbol_066 as imported_3,
-  symbol_083 as imported_4,
+  symbol_053 as imported,
+  symbol_054 as imported_2,
+  symbol_064 as imported_3,
+  symbol_081 as imported_4,
   symbol_003 as imported_5,
   symbol_014 as imported_6,
   symbol_012 as imported_7,
@@ -107,7 +107,7 @@ const local_ecb71779 = [
     label: "Другое",
   },
 ];
-export function fn_7d91b848({
+export function fn_b2801762({
   targetType: arg,
   targetId: arg_2,
   onClose: arg_3,
@@ -284,4 +284,4 @@ export function fn_7d91b848({
     }),
   });
 }
-export { fn_7d91b848 as default };
+export { fn_b2801762 as default };

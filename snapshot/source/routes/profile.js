@@ -26,36 +26,36 @@ const local_d3e9f901 = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_083 as imported,
-  symbol_068 as imported_2,
+  symbol_081 as imported,
+  symbol_066 as imported_2,
   symbol_003 as imported_3,
   symbol_014 as imported_4,
   symbol_005 as imported_5,
   symbol_010 as imported_6,
-  symbol_069 as imported_7,
-  symbol_071 as imported_8,
-  symbol_066 as imported_9,
-  symbol_072 as imported_10,
-  symbol_073 as imported_11,
-  symbol_088 as imported_12,
+  symbol_067 as imported_7,
+  symbol_069 as imported_8,
+  symbol_064 as imported_9,
+  symbol_070 as imported_10,
+  symbol_071 as imported_11,
+  symbol_086 as imported_12,
   symbol_020 as imported_13,
-  symbol_074 as imported_14,
-  symbol_075 as imported_15,
+  symbol_072 as imported_14,
+  symbol_073 as imported_15,
   symbol_002 as imported_16,
-  symbol_070 as imported_17,
-  symbol_076 as imported_18,
-  symbol_077 as imported_19,
+  symbol_068 as imported_17,
+  symbol_074 as imported_18,
+  symbol_075 as imported_19,
   symbol_028 as imported_20,
-  symbol_079 as imported_21,
-  symbol_080 as imported_22,
-  symbol_081 as imported_23,
-  symbol_082 as imported_24,
-  symbol_084 as imported_25,
-  symbol_085 as imported_26,
-  symbol_086 as imported_27,
+  symbol_077 as imported_21,
+  symbol_078 as imported_22,
+  symbol_079 as imported_23,
+  symbol_080 as imported_24,
+  symbol_082 as imported_25,
+  symbol_083 as imported_26,
+  symbol_084 as imported_27,
   symbol_001 as imported_28,
-  symbol_067 as imported_29,
-  symbol_087 as imported_30,
+  symbol_065 as imported_29,
+  symbol_085 as imported_30,
   symbol_004 as imported_31,
   symbol_006 as imported_32,
   symbol_007 as imported_33,
@@ -72,13 +72,13 @@ import {
   symbol_022 as imported_44,
   symbol_024 as imported_45,
   symbol_025 as imported_46,
-  symbol_078 as imported_47,
+  symbol_076 as imported_47,
   symbol_026 as imported_48,
-  symbol_064 as imported_49,
+  symbol_062 as imported_49,
   symbol_027 as imported_50,
-  symbol_030 as imported_51,
-  symbol_031 as imported_52,
-  symbol_032 as imported_53,
+  a0 as imported_51,
+  symbol_030 as imported_52,
+  symbol_031 as imported_53,
   a3 as imported_54,
   a4 as imported_55,
   a5 as imported_56,
@@ -86,7 +86,7 @@ import {
   a7 as imported_58,
   a8 as imported_59,
   symbol_023 as imported_60,
-  symbol_065 as imported_61,
+  symbol_063 as imported_61,
   symbol_017 as imported_62,
 } from "../entry.js";
 import { I as imported_63 } from "../components/icon-check.js";
@@ -2536,8 +2536,8 @@ function fn_0d28a8dd({
     ],
   });
 }
-const local_8f8b7f34 = "../assets/curtains-icon-d6-ivj7-uz.svg";
-const local_e71a4ca6 = "../assets/chalk-icon-d6l-u3ica.svg";
+const local_c599458a = "../assets/curtains-icon-dkt-wc-cfp.svg";
+const local_e0bd16fb = "../assets/chalk-icon-mga-qzg0s.svg";
 const local_868e89b5 = "c_fund";
 const local_f1c23efb_2 = "c_header";
 const local_a0cefcb4 = "c_footer";
@@ -2590,7 +2590,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_c7135091({
+function fn_998215db({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2716,7 +2716,7 @@ function fn_c7135091({
               arg_3.goal,
               "./profile.js",
               imported("img", {
-                src: local_e71a4ca6,
+                src: local_e0bd16fb,
                 alt: "мелков",
               }),
             ],
@@ -2815,7 +2815,7 @@ function fn_c7135091({
                             "./profile.js",
                             imported("img", {
                               className: local_bbc4ec22.chalkIcon,
-                              src: local_e71a4ca6,
+                              src: local_e0bd16fb,
                               alt: "мелков",
                             }),
                           ],
@@ -2842,7 +2842,7 @@ function fn_c7135091({
             className: local_bbc4ec22.modalTitle,
             children: [
               imported("img", {
-                src: local_8f8b7f34,
+                src: local_c599458a,
                 alt: "",
                 "aria-hidden": "true",
               }),
@@ -2905,7 +2905,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_c75dcfa3({
+function fn_debfe95b({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3257,7 +3257,7 @@ function fn_c75dcfa3({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_c7135091, {
+                      children: imported(fn_998215db, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -4161,7 +4161,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_c75dcfa3, {
+      imported(fn_debfe95b, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,

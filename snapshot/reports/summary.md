@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `a21939ef7ee04fa3bb518e6b0a9e48689e11962cbfa28368723705985af9a244`
+- Build fingerprint: `1bb42a9b707de2895847a814ae414a80ce2770f04971de007663e7de1e24d61a`
 - Resources: 153
-- Downloaded bytes: 5398013
+- Downloaded bytes: 5400553
 - Sentry releases: `1.1.2`
 
 ## Routes
@@ -25,5 +25,5 @@ No changes.
 
 ## User-visible strings
 
-- Added: `Напоминание`
-- Removed: `Алиса AI`
+- Added: `сек.`
+- Added: `Слишком много запросов. Повторите через`

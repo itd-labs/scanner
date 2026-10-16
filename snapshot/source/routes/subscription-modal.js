@@ -1,10 +1,10 @@
 import {
   aH as imported,
-  symbol_036 as imported_2,
-  symbol_083 as imported_3,
-  symbol_055 as imported_4,
-  symbol_056 as imported_5,
-  symbol_066 as imported_6,
+  symbol_035 as imported_2,
+  symbol_081 as imported_3,
+  symbol_053 as imported_4,
+  symbol_054 as imported_5,
+  symbol_064 as imported_6,
   symbol_003 as imported_7,
   symbol_014 as imported_8,
   aD as imported_9,
@@ -12,39 +12,39 @@ import {
   symbol_012 as imported_11,
   aB as imported_12,
   aJ as imported_13,
-  symbol_035 as imported_14,
+  symbol_034 as imported_14,
   aK as imported_15,
   symbol_004 as imported_16,
-  symbol_031 as imported_17,
-  symbol_037 as imported_18,
+  symbol_030 as imported_17,
+  symbol_036 as imported_18,
   symbol_002 as imported_19,
-  symbol_070 as imported_20,
+  symbol_068 as imported_20,
   symbol_016 as imported_21,
-  symbol_079 as imported_22,
+  symbol_077 as imported_22,
   aM as imported_23,
-  symbol_054 as imported_24,
+  symbol_052 as imported_24,
   symbol_020 as imported_25,
-  symbol_038 as imported_26,
-  symbol_067 as imported_27,
+  symbol_037 as imported_26,
+  symbol_065 as imported_27,
   symbol_001 as imported_28,
-  symbol_072 as imported_29,
-  symbol_068 as imported_30,
-  symbol_049 as imported_31,
+  symbol_070 as imported_29,
+  symbol_066 as imported_30,
+  symbol_047 as imported_31,
   aO as imported_32,
-  symbol_087 as imported_33,
-  symbol_075 as imported_34,
+  symbol_085 as imported_33,
+  symbol_073 as imported_34,
   aP as imported_35,
   symbol_008 as imported_36,
-  symbol_051 as imported_37,
+  symbol_049 as imported_37,
   aQ as imported_38,
-  symbol_030 as imported_39,
-  symbol_080 as imported_40,
+  a0 as imported_39,
+  symbol_078 as imported_40,
   symbol_006 as imported_41,
-  symbol_064 as imported_42,
+  symbol_062 as imported_42,
   symbol_015 as imported_43,
-  symbol_039 as imported_44,
+  symbol_038 as imported_44,
   symbol_019 as imported_45,
-  symbol_044 as useSettingsStore,
+  symbol_042 as useSettingsStore,
 } from "../entry.js";
 import { C as imported_46 } from "../shared/chunk-3d5994e265d4.js";
 import { I as imported_47 } from "../components/icon-info.js";
@@ -359,7 +359,7 @@ const local_339f5c81 = {
   toggle: local_4e84fc10,
   active: local_6ab69625,
 };
-function fn_2f9ad32c({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
+function fn_604e178a({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
   const local = (arg) => {
     arg.stopPropagation();
     if (!arg_3) {
@@ -449,7 +449,7 @@ const local_3cccfc6a = {
   outline: local_29e5fdcf,
   errorText: local_bcebeb33,
 };
-function fn_adb5b65f({
+function fn_85a49694({
   value: arg,
   onChange: arg_2,
   label: arg_3,
@@ -594,7 +594,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Текущий пароль",
             }),
-            imported_3(fn_adb5b65f, {
+            imported_3(fn_85a49694, {
               type: "password",
               value: local,
               onChange: local_2,
@@ -615,7 +615,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Новый пароль",
             }),
-            imported_3(fn_adb5b65f, {
+            imported_3(fn_85a49694, {
               type: "password",
               value: local_3,
               onChange: local_4,
@@ -640,7 +640,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Подтверждение пароля",
             }),
-            imported_3(fn_adb5b65f, {
+            imported_3(fn_85a49694, {
               type: "password",
               value: local_5,
               onChange: local_6,
@@ -1139,7 +1139,7 @@ const local_44247051 = imported_15(function (
               imported_3("div", {
                 className: local_b77a44cd.settingControl,
                 children: [
-                  imported_3(fn_adb5b65f, {
+                  imported_3(fn_85a49694, {
                     value: local_20.name,
                     onChange: (arg) => local_30("name", arg),
                   }),
@@ -1175,7 +1175,7 @@ const local_44247051 = imported_15(function (
               imported_3("div", {
                 className: local_b77a44cd.settingControl,
                 children: [
-                  imported_3(fn_adb5b65f, {
+                  imported_3(fn_85a49694, {
                     value: local_20.username,
                     onChange: (arg) => local_30("username", arg),
                   }),
@@ -1731,7 +1731,7 @@ function fn_b267a7cf(arg, arg_2) {
   }
   return local_2;
 }
-function fn_ef7168e3() {
+function fn_95ce18bc() {
   const local = imported_19(null);
   const local_2 = imported_19(null);
   const local_3 = imported_19({
@@ -2034,7 +2034,7 @@ export function fn_7d234823({ isOpen: arg, onClose: arg_2 }) {
       frameless: true,
       className: local_23034546.modal,
       children: [
-        imported_3(fn_ef7168e3, {}),
+        imported_3(fn_95ce18bc, {}),
         imported_3("div", {
           className: local_23034546.sub,
           children: [
@@ -2375,7 +2375,7 @@ function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
 const local_f06debfc_5 = 5;
-function fn_d6a8038b() {
+function fn_2924c1d4() {
   const local = imported_10((arg) => arg.profile);
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -3457,7 +3457,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.webEnabled,
                 onChange: (arg) => local_14("webEnabled", arg),
               }),
@@ -3491,7 +3491,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.soundEnabled,
                 onChange: (arg) => local_14("soundEnabled", arg),
               }),
@@ -3534,7 +3534,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.follows,
                 onChange: (arg) => local_14("follows", arg),
               }),
@@ -3568,7 +3568,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.wallPosts,
                 onChange: (arg) => local_14("wallPosts", arg),
               }),
@@ -3612,7 +3612,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.reactions,
                 onChange: (arg) => local_14("reactions", arg),
               }),
@@ -3646,7 +3646,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.replies,
                 onChange: (arg) => local_14("replies", arg),
               }),
@@ -3680,7 +3680,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.mentions,
                 onChange: (arg) => local_14("mentions", arg),
               }),
@@ -3908,7 +3908,7 @@ const local_db92a3ab = imported_15(function (
                     ],
                   }),
                 }),
-                imported_3(fn_2f9ad32c, {
+                imported_3(fn_604e178a, {
                   checked: local.showLastSeen,
                   onChange: (arg) => local_27("showLastSeen", arg),
                 }),
@@ -4210,7 +4210,7 @@ function fn_a922827f() {
                           ],
                         }),
                       }),
-                      imported_3(fn_2f9ad32c, {
+                      imported_3(fn_604e178a, {
                         checked: local_20?.closed ?? false,
                         disabled: !local_20?.hasCurtains || local_12,
                         onChange: (arg) => {
@@ -4436,7 +4436,7 @@ export function fn_e2a8041b({ onClose: arg }) {
           onClose: arg,
         });
       case "payment":
-        return imported_3(fn_d6a8038b, {});
+        return imported_3(fn_2924c1d4, {});
       case "appearance":
         return imported_3(fn_92ca2ba3, {});
       case "security":

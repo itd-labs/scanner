@@ -1,11 +1,11 @@
 import {
   symbol_026 as imported,
-  symbol_066 as imported_2,
-  symbol_079 as imported_3,
-  symbol_067 as imported_4,
+  symbol_064 as imported_2,
+  symbol_077 as imported_3,
+  symbol_065 as imported_4,
   symbol_012 as imported_5,
   aB as imported_6,
-  symbol_083 as imported_7,
+  symbol_081 as imported_7,
   symbol_014 as imported_8,
   symbol_003 as imported_9,
 } from "../entry.js";
@@ -44,7 +44,7 @@ const local_b3567ea0 = "c_expiredModal";
 const local_1482e028 = "c_expiredTitle";
 const local_2dca8ec3 = "c_expiredText";
 const local_6fcad58f = "c_expiredActions";
-const local_0869c018 = {
+const local_c7bd9f4b = {
   container: local_adb43aea,
   header: local_f1c23efb,
   title: local_9d9cf508,
@@ -151,17 +151,17 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
     arg_2?.();
   }, [arg_2]);
   return imported_7("div", {
-    className: local_0869c018.container,
+    className: local_c7bd9f4b.container,
     children: [
       imported_7("div", {
-        className: local_0869c018.header,
+        className: local_c7bd9f4b.header,
         children: [
           imported_7("h1", {
-            className: local_0869c018.title,
+            className: local_c7bd9f4b.title,
             children: "Подтверждение действия",
           }),
           imported_7("p", {
-            className: local_0869c018.subtitle,
+            className: local_c7bd9f4b.subtitle,
             children: [
               "Мы отправили шестизначный код на почту ",
               arg,
@@ -172,12 +172,12 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
       }),
       local_3 &&
         imported_7("div", {
-          className: local_0869c018.error,
+          className: local_c7bd9f4b.error,
           children: local_3,
         }),
       local_7 &&
         imported_7("div", {
-          className: local_0869c018.success,
+          className: local_c7bd9f4b.success,
           children: "Код отправлен повторно",
         }),
       imported_7(imported_10, {
@@ -188,7 +188,7 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
       arg_2 &&
         imported_7("button", {
           type: "button",
-          className: local_0869c018.backButton,
+          className: local_c7bd9f4b.backButton,
           onClick: arg_2,
           children: "Назад",
         }),
@@ -197,19 +197,19 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
           onClose: local_17,
           showHeader: false,
           children: imported_7("div", {
-            className: local_0869c018.expiredModal,
+            className: local_c7bd9f4b.expiredModal,
             children: [
               imported_7("h2", {
-                className: local_0869c018.expiredTitle,
+                className: local_c7bd9f4b.expiredTitle,
                 children: "Время истекло",
               }),
               imported_7("p", {
-                className: local_0869c018.expiredText,
+                className: local_c7bd9f4b.expiredText,
                 children:
                   "Прошло слишком много времени, и прошлый код больше не действителен. Отправить новый код?",
               }),
               imported_7("div", {
-                className: local_0869c018.expiredActions,
+                className: local_c7bd9f4b.expiredActions,
                 children: [
                   imported_7(imported_9, {
                     variant: "secondary",
