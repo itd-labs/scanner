@@ -38,6 +38,29 @@ import {
     }
   } catch {}
 })();
+const local_12bca483 =
+  "От 8 до 100 символов, хотя бы одна латинская буква и одна цифра.";
+function fn_fa99ef8c(arg) {
+  return (
+    arg.length >= 8 &&
+    arg.length <= 100 &&
+    /[A-Za-z]/.test(arg) &&
+    /\d/.test(arg)
+  );
+}
+function fn_0a31d76f(arg) {
+  if (arg.code === "INVALID_PASSWORD") {
+    return true;
+  }
+  return (
+    arg.code === "VALIDATION_ERROR" &&
+    [
+      "Password must be 8-100 chars with at least 1 letter and 1 number",
+      "Password requirement not met",
+      "Password is required",
+    ].includes(arg.message)
+  );
+}
 const local_adb43aea = "c_container";
 const local_3f8170c1 = "c_logo";
 const local_7ab56d01 = "c_form";
@@ -52,11 +75,12 @@ const local_301b9a53 = "c_input";
 const local_fe9ec23f = "c_label";
 const local_053694e9 = "c_inputError";
 const local_889abf52 = "c_fieldError";
+const local_9edfc4a1 = "c_passwordHint";
 const local_43fe4b00 = "c_eyeButton";
 const local_57643cbe = "c_terms";
 const local_7149ec44 = "c_submitButton";
 const local_8ed84883 = "c_loginLink";
-const local_474661d1 = {
+const local_66259d24 = {
   container: local_adb43aea,
   logo: local_3f8170c1,
   form: local_7ab56d01,
@@ -71,12 +95,13 @@ const local_474661d1 = {
   label: local_fe9ec23f,
   inputError: local_053694e9,
   fieldError: local_889abf52,
+  passwordHint: local_9edfc4a1,
   eyeButton: local_43fe4b00,
   terms: local_57643cbe,
   submitButton: local_7149ec44,
   loginLink: local_8ed84883,
 };
-export const local_01d34dde = (arg) => {
+export const local_b5f78787 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -100,20 +125,9 @@ export const local_01d34dde = (arg) => {
       local_12("Введите email");
       return;
     }
-    if (!local_3.trim()) {
-      local_14("Введите пароль");
-      return;
-    }
-    if (local_3.length < 10) {
-      local_14("Минимум 10 символов");
-      return;
-    }
-    if (local_3.length > 128) {
-      local_14("Максимум 128 символов");
-      return;
-    }
-    if (!/^[\x21-\x7E]+$/.test(local_3)) {
-      local_14("Только латиница, цифры и знаки пунктуации");
+    if (!fn_fa99ef8c(local_3)) {
+      local_14(local_12bca483);
+      local_10(local_12bca483);
       return;
     }
     local_8(true);
@@ -130,6 +144,11 @@ export const local_01d34dde = (arg) => {
         local_16("verify");
       } catch (error) {
         if (imported_4(error)) {
+          if (fn_0a31d76f(error)) {
+            local_14(local_12bca483);
+            local_10(local_12bca483);
+            return;
+          }
           switch (error.code) {
             case imported_5.ENTITY_ALREADY_EXISTS:
               local_12("Этот email уже зарегистрирован");
@@ -163,48 +182,52 @@ export const local_01d34dde = (arg) => {
   return imported_6(imported_9, {
     children: [
       imported_6("div", {
-        className: local_474661d1.container,
+        className: local_66259d24.container,
         children: [
           imported_6("div", {
-            className: local_474661d1.logo,
+            className: local_66259d24.logo,
             children: imported_6(imported_7, {}),
           }),
           local_15 === "credentials"
             ? imported_6("form", {
-                className: local_474661d1.form,
+                className: local_66259d24.form,
                 onSubmit: local_21,
                 children: [
                   imported_6("div", {
-                    className: local_474661d1.header,
+                    className: local_66259d24.header,
                     children: [
                       imported_6("h1", {
-                        className: local_474661d1.title,
+                        className: local_66259d24.title,
                         children: "Создание аккаунта",
                       }),
                       imported_6("p", {
-                        className: local_474661d1.subtitle,
+                        className: local_66259d24.subtitle,
                         children: "Пожалуйста, введите ваши данные",
                       }),
                     ],
                   }),
                   local_9 &&
                     imported_6("div", {
-                      className: local_474661d1.error,
+                      className: local_66259d24.error,
+                      role: "alert",
                       children: local_9,
                     }),
                   imported_6("div", {
-                    className: local_474661d1.inputs,
+                    className: local_66259d24.inputs,
                     children: [
                       imported_6("div", {
-                        className: local_474661d1.inputGroup,
+                        className: local_66259d24.inputGroup,
                         children: [
                           imported_6("label", {
-                            className: local_474661d1.label,
+                            className: local_66259d24.label,
+                            htmlFor: "register-email",
                             children: "E-Mail",
                           }),
                           imported_6("input", {
+                            id: "register-email",
                             type: "email",
-                            className: `${local_474661d1.input} ${local_11 ? local_474661d1.inputError : ""}`,
+                            autoComplete: "email",
+                            className: `${local_66259d24.input} ${local_11 ? local_66259d24.inputError : ""}`,
                             value: local,
                             onInput: (arg) => {
                               local_2(arg.target.value);
@@ -215,35 +238,46 @@ export const local_01d34dde = (arg) => {
                           }),
                           local_11 &&
                             imported_6("span", {
-                              className: local_474661d1.fieldError,
+                              className: local_66259d24.fieldError,
                               children: local_11,
                             }),
                         ],
                       }),
                       imported_6("div", {
-                        className: local_474661d1.inputGroup,
+                        className: local_66259d24.inputGroup,
                         children: [
                           imported_6("label", {
-                            className: local_474661d1.label,
+                            className: local_66259d24.label,
+                            htmlFor: "register-password",
                             children: "Пароль",
                           }),
                           imported_6("div", {
-                            className: local_474661d1.inputWrapper,
+                            className: local_66259d24.inputWrapper,
                             children: [
                               imported_6("input", {
+                                id: "register-password",
                                 type: local_5 ? "text" : "password",
-                                className: `${local_474661d1.input} ${local_13 ? local_474661d1.inputError : ""}`,
+                                autoComplete: "new-password",
+                                "aria-describedby": "register-password-hint",
+                                "aria-invalid": !!local_13,
+                                className: `${local_66259d24.input} ${local_13 ? local_66259d24.inputError : ""}`,
                                 value: local_3,
                                 onInput: (arg) => {
                                   local_4(arg.target.value);
+                                  if (local_13) {
+                                    local_10(null);
+                                  }
                                   local_14(null);
                                 },
-                                placeholder: "Минимум 10 символов",
+                                placeholder: "Введите пароль",
                                 disabled: local_20,
                               }),
                               imported_6("button", {
                                 type: "button",
-                                className: local_474661d1.eyeButton,
+                                "aria-label": local_5
+                                  ? "Скрыть пароль"
+                                  : "Показать пароль",
+                                className: local_66259d24.eyeButton,
                                 onClick: () => local_6(!local_5),
                                 children: local_5
                                   ? imported_6(imported_12, {
@@ -255,17 +289,17 @@ export const local_01d34dde = (arg) => {
                               }),
                             ],
                           }),
-                          local_13 &&
-                            imported_6("span", {
-                              className: local_474661d1.fieldError,
-                              children: local_13,
-                            }),
+                          imported_6("p", {
+                            id: "register-password-hint",
+                            className: local_66259d24.passwordHint,
+                            children: local_12bca483,
+                          }),
                         ],
                       }),
                     ],
                   }),
                   imported_6("p", {
-                    className: local_474661d1.terms,
+                    className: local_66259d24.terms,
                     children: [
                       "Продолжая, вы соглашаетесь с",
                       "./register.js",
@@ -290,12 +324,12 @@ export const local_01d34dde = (arg) => {
                     variant: "primary",
                     size: "lg",
                     fullWidth: true,
-                    className: local_474661d1.submitButton,
+                    className: local_66259d24.submitButton,
                     disabled: local_20,
                     children: local_20 ? "Регистрация..." : "Продолжить",
                   }),
                   imported_6("p", {
-                    className: local_474661d1.loginLink,
+                    className: local_66259d24.loginLink,
                     children: [
                       "Уже есть аккаунт? ",
                       imported_6("a", {
@@ -320,4 +354,4 @@ export const local_01d34dde = (arg) => {
     ],
   });
 };
-export { local_01d34dde as default };
+export { local_b5f78787 as default };

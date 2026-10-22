@@ -214,7 +214,7 @@ const local_7f22a07b = {
     getAction: () => "написал(а) на вашей стене",
   },
 };
-const local_5a686f51 = ({ type: arg }) => {
+const local_f18caa66 = ({ type: arg }) => {
   const local = local_7f22a07b[arg];
   const local_2 =
     local?.badgeColor === "red"
@@ -233,7 +233,7 @@ const local_5a686f51 = ({ type: arg }) => {
       }),
   });
 };
-function fn_a1b5ce7a({
+function fn_235240cf({
   notification: arg,
   isVisuallyUnread: arg_2,
   onMarkRead: arg_3,
@@ -357,7 +357,7 @@ function fn_a1b5ce7a({
                   src: local_2?.avatar || "",
                   alt: local_2?.displayName || "User",
                   size: "md",
-                  badge: imported(local_5a686f51, {
+                  badge: imported(local_f18caa66, {
                     type: arg.type,
                   }),
                 }),
@@ -430,7 +430,7 @@ function fn_a1b5ce7a({
     ],
   });
 }
-export const local_4c42bb04 = (arg) => {
+export const local_8242fbd6 = (arg) => {
   const {
     notifications: local,
     status: local_2,
@@ -638,7 +638,7 @@ export const local_4c42bb04 = (arg) => {
               local.map((arg) => {
                 const local = arg.payload.actors[0]?.id;
                 return imported(
-                  fn_a1b5ce7a,
+                  fn_235240cf,
                   {
                     notification: arg,
                     isVisuallyUnread: local_8.has(arg.id),

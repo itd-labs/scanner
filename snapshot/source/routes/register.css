@@ -26,6 +26,7 @@
   color: #ef4444;
   font-size: 14px;
   text-align: center;
+  line-height: 1.5;
 }
 .c_title {
   font-size: 24px;
@@ -96,6 +97,12 @@
   font-size: 13px;
   color: #ef4444;
   margin-top: -4px;
+}
+.c_passwordHint {
+  margin: -4px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
 }
 .c_eyeButton {
   position: absolute;

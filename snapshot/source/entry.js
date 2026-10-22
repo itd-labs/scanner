@@ -4351,7 +4351,7 @@ function fn_aa58755e(arg) {
   const local_2 = arg.port ? `:${arg.port}` : "";
   return `${local}//${arg.host}${local_2}${arg.path ? `/${arg.path}` : ""}/api/`;
 }
-function fn_e494525f(arg) {
+function fn_0790a6fc(arg) {
   return `${fn_aa58755e(arg)}${arg.projectId}/envelope/`;
 }
 function fn_9d49a2ce(arg, arg_2) {
@@ -4367,9 +4367,9 @@ function fn_9d49a2ce(arg, arg_2) {
   return new URLSearchParams(local).toString();
 }
 function fn_1e787e77(arg, arg_2, arg_3) {
-  return arg_2 || `${fn_e494525f(arg)}?${fn_9d49a2ce(arg, arg_3)}`;
+  return arg_2 || `${fn_0790a6fc(arg)}?${fn_9d49a2ce(arg, arg_3)}`;
 }
-function fn_1f7e0c41(arg, arg_2) {
+function fn_d81b980c(arg, arg_2) {
   const local = fn_2d12d30f(arg);
   if (!local) {
     return "";
@@ -8478,7 +8478,7 @@ function fn_92c4c017(arg = {}) {
   const local_6 = local_f090a36f_8.document.createElement("script");
   local_6.async = true;
   local_6.crossOrigin = "anonymous";
-  local_6.src = fn_1f7e0c41(local_4, local_5);
+  local_6.src = fn_d81b980c(local_4, local_5);
   const { onLoad: local_7, onClose: local_8 } = local_5;
   if (local_7) {
     local_6.onload = local_7;
@@ -14574,14 +14574,14 @@ function symbol_014({
   });
 }
 const local_ee7a6f6b = "c_spinner";
-const local_34e540b6 = "F4Gs";
+const local_4a2dea87 = "BqVr";
 const local_d3808147 = "c_xs";
 const local_9350219d = "c_sm";
 const local_a8a24a1e = "c_md";
 const local_afefddb7 = "c_lg";
 const local_0ab9bf6f = {
   spinner: local_ee7a6f6b,
-  spin: local_34e540b6,
+  spin: local_4a2dea87,
   xs: local_d3808147,
   sm: local_9350219d,
   md: local_a8a24a1e,
@@ -14720,7 +14720,7 @@ export function fn_e97bc576({
 }
 const local_dc634aac_2 = fn_2825d2bd(null);
 let local_f06debfc_32 = 0;
-function fn_96922a21({ children: arg }) {
+function fn_405ea232({ children: arg }) {
   const [local, local_2] = symbol_064([]);
   const local_3 = symbol_077((arg) => {
     const local = `modal-${++local_f06debfc_32}`;
@@ -19094,7 +19094,7 @@ const local_6ba9fd1a = (arg) =>
   symbol_081(local_e68fc2dd, {
     ...arg,
   });
-const local_8009b9d2 = () => {
+const local_0be64840 = () => {
   const local = symbol_015();
   const [local_2] = symbol_036();
   const local_3 = symbol_062((arg) => arg.fetchFeed);
@@ -21742,7 +21742,7 @@ function fn_a2f54c44(arg) {
   const local_3 = btoa(local_2);
   return `/external?url=${encodeURIComponent(local_3)}`;
 }
-function fn_bd739708({
+function fn_a88c504c({
   text: arg,
   spans: arg_2 = [],
   className: arg_3 = "",
@@ -23338,7 +23338,7 @@ function fn_4268af78({ marks: arg, postId: arg_2 }) {
   }
   return null;
 }
-function fn_ae0b93bd(arg, arg_2) {
+function fn_3ec1a39b(arg, arg_2) {
   symbol_028(() => {
     const local = arg.current;
     if (!local || !arg_2) {
@@ -23663,7 +23663,7 @@ const local_6320c014 = {
   penIcon: local_d81b4fad,
   signatureText: local_8616ef50_2,
 };
-function fn_7c278a95({ root: arg, corrections: arg_2 }) {
+function fn_6a22835d({ root: arg, corrections: arg_2 }) {
   const [local, local_2] = symbol_064([]);
   symbol_028(() => {
     const local = arg.current;
@@ -24112,7 +24112,7 @@ function fn_7a59b92b({
   const local_33 =
     local_26?.tool ??
     (local_18 === "pen" && local_14 ? "pen" : local_13 ? "corrector" : "pen");
-  fn_ae0b93bd(local_2, local_32 ? local_16?.anchor : undefined);
+  fn_3ec1a39b(local_2, local_32 ? local_16?.anchor : undefined);
   symbol_028(() => {
     let local = false;
     if (
@@ -24504,14 +24504,14 @@ function fn_7a59b92b({
                 ? symbol_081("span", {
                     children: "Пост изменился. Обновите страницу",
                   })
-                : symbol_081(fn_bd739708, {
+                : symbol_081(fn_a88c504c, {
                     text: arg_3,
                     spans: arg_4,
                     correctorMarks: local_6.marks,
                   }),
           }),
           local_6.corrections.length > 0 &&
-            symbol_081(fn_7c278a95, {
+            symbol_081(fn_6a22835d, {
               root: local,
               corrections: local_6.corrections,
             }),
@@ -25803,7 +25803,7 @@ const local_b84ad31b = symbol_086(() =>
     default: arg.ReportModal,
   })),
 );
-function fn_7c6ba9d4(arg, arg_2) {
+function fn_1208c628(arg, arg_2) {
   const { openModal: local, closeModal: local_2, onDelete: local_3 } = arg_2;
   const local_4 = symbol_030();
   const local_5 = symbol_062((arg) => arg.deletePost);
@@ -25864,7 +25864,7 @@ function fn_7c6ba9d4(arg, arg_2) {
   const local_19 = symbol_077(
     (arg) => {
       local(
-        symbol_081(fn_47fb33aa, {
+        symbol_081(fn_c5fac8c9, {
           postId: arg.id,
           initialText: arg.text ?? "",
           initialSpans: arg.spans ?? [],
@@ -26056,7 +26056,7 @@ function fn_5ef7518c({ attachments: arg, postVs: arg_2, source: arg_3 }) {
     }),
   });
 }
-function fn_34b5a3c9({
+function fn_9fc7902c({
   originalPost: arg,
   source: arg_2,
   showcase: arg_3 = false,
@@ -26069,7 +26069,7 @@ function fn_34b5a3c9({
     handleLike: local_6,
     handleComment: local_7,
     handleRepost: local_8,
-  } = fn_7c6ba9d4(arg, {
+  } = fn_1208c628(arg, {
     openModal: local_2,
     closeModal: local_3,
   });
@@ -26255,7 +26255,7 @@ const symbol_063 = symbol_039(
       handleCopyLink: local_26,
       handlePollVote: local_27,
       handlePollVoteMultiple: local_28,
-    } = fn_7c6ba9d4(arg, {
+    } = fn_1208c628(arg, {
       openModal: local_3,
       closeModal: local_4,
       onDelete: arg_12,
@@ -26460,7 +26460,7 @@ const symbol_063 = symbol_039(
                                 signature: false,
                                 selectable: !local_41 && !arg_9,
                               })
-                            : symbol_081(fn_bd739708, {
+                            : symbol_081(fn_a88c504c, {
                                 text: arg.text,
                                 spans: arg.spans ?? [],
                               }),
@@ -26506,7 +26506,7 @@ const symbol_063 = symbol_039(
                     }),
                   }),
                 arg.originalPost &&
-                  symbol_081(fn_34b5a3c9, {
+                  symbol_081(fn_9fc7902c, {
                     originalPost: arg.originalPost,
                     source: arg_7,
                     showcase: arg_9,
@@ -26782,7 +26782,7 @@ const local_846947ed = symbol_039(function ({
                     ],
                   }),
                 arg_3 &&
-                  symbol_081(fn_bd739708, {
+                  symbol_081(fn_a88c504c, {
                     text: arg_3,
                     spans: arg_4,
                   }),
@@ -26841,7 +26841,7 @@ const local_846947ed = symbol_039(function ({
     ],
   });
 });
-const local_13521dd1 = symbol_039(function ({
+const local_c565812e = symbol_039(function ({
   comment: arg,
   onLike: arg_2,
   onLikeReply: arg_3,
@@ -27284,7 +27284,7 @@ function fn_14f85618({
                   width: "100%",
                   transform: `translateY(${arg.start}px)`,
                 },
-                children: symbol_081(local_13521dd1, {
+                children: symbol_081(local_c565812e, {
                   comment: local,
                   onLike: () => arg_9(local.id),
                   onLikeReply: arg_10,
@@ -27876,7 +27876,7 @@ function symbol_043({
                       "div",
                       {
                         className: local_dc4fb1de.commentItem,
-                        children: symbol_081(local_13521dd1, {
+                        children: symbol_081(local_c565812e, {
                           comment: arg,
                           onLike: () => arg_7(arg.id),
                           onLikeReply: local_20,
@@ -28072,7 +28072,7 @@ const local_c65d5c43 = symbol_086(() =>
     default: arg.DrawingCanvas,
   })),
 );
-export function fn_66d379be({
+export function fn_3989f998({
   onSubmit: arg,
   autoFocus: arg_2 = false,
   placeholder: arg_3 = "Что нового?",
@@ -28586,7 +28586,7 @@ export function fn_5452d041({
         className: local_339f5c81.title,
         children: "Создать пост",
       }),
-      symbol_081(fn_66d379be, {
+      symbol_081(fn_3989f998, {
         onSubmit: local_4,
         autoFocus: true,
         placeholder: arg_2,
@@ -28617,7 +28617,7 @@ const local_7f9fe33f = {
   error: local_cd23a337_5,
 };
 const local_f06debfc_79 = 5000;
-function fn_47fb33aa({
+function fn_c5fac8c9({
   postId: arg,
   initialText: arg_2,
   initialSpans: arg_3 = [],
@@ -29640,7 +29640,7 @@ const local_2e5ff558 = {
   success: local_132b8ed2,
   error: local_b2622f5b,
 };
-function fn_c330ccdd({
+function fn_91003235({
   id: arg,
   type: arg_2,
   message: arg_3,
@@ -29687,7 +29687,7 @@ function fn_bd4e493e() {
     className: local_cda3bf5e.container,
     children: local.map((arg) =>
       symbol_081(
-        fn_c330ccdd,
+        fn_91003235,
         {
           id: arg.id,
           type: arg.type,
@@ -29709,7 +29709,7 @@ const local_bd39b1cd_2 = {
   button: local_9e87ce8c_4,
   active: local_6ab69625_4,
 };
-export function fn_0ed610f3({
+export function fn_f53ba7bf({
   tabs: arg,
   defaultTab: arg_2 = 0,
   activeIndex: arg_3,
@@ -29956,7 +29956,7 @@ const local_7a8977d6 = ({ children: arg }) => {
               ? symbol_081(local_34cd8d22, {
                   showCreateButton: !local_12,
                 })
-              : symbol_081(local_8009b9d2, {})),
+              : symbol_081(local_0be64840, {})),
           local_13 && !local && symbol_081(local_945b98e5, {}),
           symbol_081("div", {
             className: local_7f4c2d94.content,
@@ -30803,7 +30803,7 @@ const local_ea4ae1cd = (arg) => {
       symbol_081("div", {
         className: local_76da9dd7.tabsWrapper,
         children: [
-          symbol_081(fn_0ed610f3, {
+          symbol_081(fn_f53ba7bf, {
             tabs: ["Для вас", "Лента кланов", "Подписки"],
             activeIndex: local_2 === "global" ? 0 : local_2 === "clan" ? 1 : 2,
             onChange: local_21,
@@ -30825,7 +30825,7 @@ const local_ea4ae1cd = (arg) => {
               alt: local_15.displayName,
               size: "sm",
             }),
-          symbol_081(fn_66d379be, {
+          symbol_081(fn_3989f998, {
             onSubmit: local_22,
           }),
         ],
@@ -31117,7 +31117,7 @@ function fn_ba3e5aaa() {
   const local_3 = symbol_029((arg) => arg.isOpen);
   fn_7d2d0183();
   return symbol_081(fn_b1eea1b9, {
-    children: symbol_081(fn_96922a21, {
+    children: symbol_081(fn_405ea232, {
       children: symbol_081(fn_fc99b4db, {
         currentPath: local,
         children: [

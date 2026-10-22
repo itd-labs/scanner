@@ -1131,7 +1131,7 @@ function fn_00da9caf(arg) {
     return null;
   }
 }
-function fn_1bd8ba58({
+function fn_8d61d49f({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1284,7 +1284,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_0134359a({
+function fn_8c9a3cce({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1358,7 +1358,7 @@ function fn_0134359a({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_8d61d49f, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1433,7 +1433,7 @@ function fn_9cf23fc2({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_8d61d49f, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_41e0d535({
+export function fn_56b8bbdd({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_41e0d535({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_0134359a, {
+          imported_6(fn_8c9a3cce, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_41e0d535({
     document.body,
   );
 }
-export { fn_41e0d535 as default };
+export { fn_56b8bbdd as default };
