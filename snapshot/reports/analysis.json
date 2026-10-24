@@ -1672,6 +1672,7 @@
     "Integration skipped because it was already installed:",
     "Invalid Alice profile state",
     "Invalid event state response",
+    "Invalid event status",
     "Invalid nickname clock",
     "Invalid nickname response",
     "Invalid response format",

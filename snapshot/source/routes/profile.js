@@ -26,72 +26,74 @@ const local_d3e9f901 = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_081 as imported,
-  symbol_066 as imported_2,
+  symbol_084 as imported,
+  symbol_009 as imported_2,
   symbol_003 as imported_3,
   symbol_014 as imported_4,
-  symbol_005 as imported_5,
-  symbol_010 as imported_6,
-  symbol_067 as imported_7,
-  symbol_069 as imported_8,
-  symbol_064 as imported_9,
-  symbol_070 as imported_10,
-  symbol_071 as imported_11,
-  symbol_086 as imported_12,
+  symbol_057 as imported_5,
+  symbol_058 as imported_6,
+  aq as imported_7,
+  ar as imported_8,
+  symbol_067 as imported_9,
+  symbol_059 as imported_10,
+  symbol_048 as imported_11,
+  symbol_049 as imported_12,
   symbol_020 as imported_13,
-  symbol_072 as imported_14,
-  symbol_073 as imported_15,
+  symbol_051 as imported_14,
+  symbol_011 as imported_15,
   symbol_002 as imported_16,
-  symbol_068 as imported_17,
-  symbol_074 as imported_18,
-  symbol_075 as imported_19,
-  symbol_028 as imported_20,
-  symbol_077 as imported_21,
-  symbol_078 as imported_22,
-  symbol_079 as imported_23,
-  symbol_080 as imported_24,
-  symbol_082 as imported_25,
-  symbol_083 as imported_26,
-  symbol_084 as imported_27,
-  symbol_001 as imported_28,
-  symbol_065 as imported_29,
-  symbol_085 as imported_30,
-  symbol_004 as imported_31,
-  symbol_006 as imported_32,
-  symbol_007 as imported_33,
-  symbol_008 as imported_34,
-  symbol_009 as imported_35,
-  symbol_011 as imported_36,
-  symbol_012 as imported_37,
-  symbol_013 as imported_38,
-  symbol_015 as imported_39,
-  symbol_016 as imported_40,
-  symbol_018 as imported_41,
-  symbol_019 as imported_42,
-  symbol_021 as imported_43,
-  symbol_022 as imported_44,
-  symbol_024 as imported_45,
-  symbol_025 as imported_46,
-  symbol_076 as imported_47,
-  symbol_026 as imported_48,
-  symbol_062 as imported_49,
-  symbol_027 as imported_50,
-  a0 as imported_51,
-  symbol_030 as imported_52,
-  symbol_031 as imported_53,
-  a3 as imported_54,
-  a4 as imported_55,
-  a5 as imported_56,
-  a6 as imported_57,
-  a7 as imported_58,
-  a8 as imported_59,
-  symbol_023 as imported_60,
-  symbol_063 as imported_61,
-  symbol_017 as imported_62,
+  symbol_071 as imported_17,
+  symbol_060 as imported_18,
+  symbol_061 as imported_19,
+  symbol_047 as imported_20,
+  symbol_080 as imported_21,
+  symbol_062 as imported_22,
+  symbol_063 as imported_23,
+  ax as imported_24,
+  symbol_064 as imported_25,
+  az as imported_26,
+  symbol_033 as imported_27,
+  aB as imported_28,
+  symbol_034 as imported_29,
+  symbol_006 as imported_30,
+  symbol_001 as imported_31,
+  aD as imported_32,
+  a5 as imported_33,
+  symbol_087 as imported_34,
+  symbol_035 as imported_35,
+  a6 as imported_36,
+  aF as imported_37,
+  aG as imported_38,
+  symbol_088 as imported_39,
+  aH as imported_40,
+  symbol_036 as imported_41,
+  a7 as imported_42,
+  symbol_076 as imported_43,
+  aJ as imported_44,
+  symbol_056 as imported_45,
+  aK as imported_46,
+  symbol_037 as imported_47,
+  symbol_022 as imported_48,
+  symbol_079 as imported_49,
+  symbol_029 as imported_50,
+  symbol_065 as imported_51,
+  aM as imported_52,
+  symbol_026 as imported_53,
+  symbol_053 as imported_54,
+  symbol_038 as imported_55,
+  symbol_045 as imported_56,
+  aO as imported_57,
+  symbol_021 as imported_58,
+  symbol_039 as imported_59,
+  aQ as imported_60,
+  symbol_040 as imported_61,
+  symbol_023 as imported_62,
+  symbol_068 as imported_63,
+  symbol_066 as imported_64,
 } from "../entry.js";
-import { I as imported_63 } from "../components/icon-check.js";
-import { I as imported_64 } from "../components/icon-chevron-left.js";
-import { C as imported_65 } from "../shared/chunk-3d5994e265d4.js";
+import { I as imported_65 } from "../components/icon-check.js";
+import { I as imported_66 } from "../components/icon-chevron-left.js";
+import { C as imported_67 } from "../shared/chunk-3d5994e265d4.js";
 (function () {
   try {
     const local =
@@ -462,7 +464,7 @@ function fn_5d3ea10e({
       children: arg_2
         ? imported(imported_13, {
             children: [
-              imported(imported_63, {
+              imported(imported_65, {
                 size: 18,
               }),
               "Вы подписаны",
@@ -585,7 +587,7 @@ function fn_e44fd459(arg, arg_2, arg_3, arg_4) {
   arg.drawImage(arg_2, -arg_4 / 2, -arg_4 / 2, arg_4, arg_4);
   arg.restore();
 }
-function fn_9163d334({ asset: arg, id: arg_2, stage: arg_3 }) {
+function fn_0a9872b8({ asset: arg, id: arg_2, stage: arg_3 }) {
   const local = imported_16(null);
   imported_17(() => {
     if (arg_3 <= 0 || !local.current) {
@@ -883,7 +885,7 @@ function fn_99993622(arg, arg_2) {
     Array.isArray(local.placements)
   );
 }
-function fn_929a8e10(arg) {
+function fn_dd5d1ac8(arg) {
   try {
     const local = window.sessionStorage.getItem(`${local_d1dbed9e}${arg}`);
     if (!local) {
@@ -905,7 +907,7 @@ function fn_929a8e10(arg) {
     return null;
   }
 }
-function fn_a72cc1ab(arg, arg_2) {
+function fn_1d0fdade(arg, arg_2) {
   local_a1e12a9e.delete(arg);
   local_a1e12a9e.set(arg, arg_2);
   if (local_a1e12a9e.size > local_f06debfc) {
@@ -925,13 +927,13 @@ function fn_a72cc1ab(arg, arg_2) {
   } catch {}
 }
 function fn_1dd73c40(arg) {
-  const local = local_a1e12a9e.get(arg) ?? fn_929a8e10(arg);
+  const local = local_a1e12a9e.get(arg) ?? fn_dd5d1ac8(arg);
   if (local) {
-    fn_a72cc1ab(arg, local);
+    fn_1d0fdade(arg, local);
   }
   return local ?? null;
 }
-function fn_4ac23eda({
+function fn_2c162465({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -957,14 +959,18 @@ function fn_4ac23eda({
     local_13.current++;
   }, []);
   const local_16 = imported_21(async () => {
-    if (local_14.current) {
+    if (local_14.current || !imported_22()) {
       return;
     }
     local_14.current = true;
     const local = ++local_13.current;
     try {
-      const local = await imported_22.profile(arg);
-      if (local_12.current !== arg || local !== local_13.current) {
+      const local = await imported_23.profile(arg);
+      if (
+        !imported_22() ||
+        local_12.current !== arg ||
+        local !== local_13.current
+      ) {
         return;
       }
       if (!fn_99993622(local, arg)) {
@@ -973,7 +979,7 @@ function fn_4ac23eda({
       if ((local_a1e12a9e.get(arg)?.rev ?? -1) > local.rev) {
         return;
       }
-      fn_a72cc1ab(arg, local);
+      fn_1d0fdade(arg, local);
       local_2(local);
       arg_7?.(local);
     } catch {
@@ -1007,8 +1013,8 @@ function fn_4ac23eda({
         local_16();
       }
     };
-    window.addEventListener(imported_23, local);
-    return () => window.removeEventListener(imported_23, local);
+    window.addEventListener(imported_24, local);
+    return () => window.removeEventListener(imported_24, local);
   }, [local_16, arg]);
   imported_17(() => {
     const local = (arg) => {
@@ -1041,14 +1047,34 @@ function fn_4ac23eda({
           local_3,
         ],
       };
-      fn_a72cc1ab(arg, local_4);
+      fn_1d0fdade(arg, local_4);
       local_2(local_4);
       arg_7?.(local_4);
     };
-    window.addEventListener(imported_24, local);
-    return () => window.removeEventListener(imported_24, local);
+    window.addEventListener(imported_25, local);
+    return () => window.removeEventListener(imported_25, local);
   }, [arg, local, arg_7]);
-  const local_17 = local?.profileId === arg ? local : null;
+  imported_17(
+    () =>
+      imported_26((arg) => {
+        if (!arg) {
+          local_15();
+          local_a1e12a9e.clear();
+          local_2(null);
+          local_6(null);
+          arg_7?.(null);
+          try {
+            for (const local of Object.keys(sessionStorage)) {
+              if (local.startsWith("alice-profile")) {
+                sessionStorage.removeItem(local);
+              }
+            }
+          } catch {}
+        }
+      }),
+    [local_15, arg_7],
+  );
+  const local_17 = imported_22() && local?.profileId === arg ? local : null;
   const local_18 = local_17 !== null;
   const local_19 = imported_21(() => {
     if (local_4.current === arg) {
@@ -1057,7 +1083,7 @@ function fn_4ac23eda({
     let local = true;
     let local_2;
     local_4.current = arg;
-    imported_22
+    imported_23
       .claimCushion(arg)
       .then((arg) => {
         if (!(!local || local_12.current !== arg)) {
@@ -1080,8 +1106,8 @@ function fn_4ac23eda({
                 : "В этот профиль подкинули подушку-пердушку!",
               notificationType: "like",
             });
-            local_2 = imported_25(
-              imported_26,
+            local_2 = imported_27(
+              imported_28,
               0.65,
               Date.parse(arg.expiresAt ?? "") || Date.now(),
             );
@@ -1131,8 +1157,8 @@ function fn_4ac23eda({
         local_19();
       }
     };
-    window.addEventListener(imported_23, local);
-    return () => window.removeEventListener(imported_23, local);
+    window.addEventListener(imported_24, local);
+    return () => window.removeEventListener(imported_24, local);
   }, [local_19, arg]);
   const local_20 =
     local_17?.layers.some((arg) => arg.slot === "curtains") ?? false;
@@ -1191,7 +1217,7 @@ function fn_4ac23eda({
     }
     local_8(true);
     const local_4 = window.setTimeout(() => local_8(false), 520);
-    const local_5 = new Audio(imported_27);
+    const local_5 = new Audio(imported_29);
     local_5.volume = 0.72;
     let local_6 = true;
     const local_7 = () => {
@@ -1250,30 +1276,30 @@ function fn_4ac23eda({
     if (window.history.length > 1) {
       window.history.back();
     } else {
-      imported_29("../site/index.html");
+      imported_31("../site/index.html");
     }
   };
   const local_30 = async () => {
     if (!(!arg_5 || local_9 || !local_17)) {
       local_10(true);
       try {
-        const local = await imported_22.setCurtains(arg, false);
+        const local = await imported_23.setCurtains(arg, false);
         const local_2 = {
           ...local_17,
           rev: local.rev,
           curtains: local.curtains,
           layers: local_17.layers.filter((arg) => arg.slot !== "curtains"),
         };
-        fn_a72cc1ab(arg, local_2);
+        fn_1d0fdade(arg, local_2);
         local_2(local_2);
         arg_7?.(local_2);
         window.dispatchEvent(
-          new CustomEvent(imported_23, {
+          new CustomEvent(imported_24, {
             detail: arg,
           }),
         );
       } catch {
-        imported_30.error("Не удалось открыть шторы. Попробуйте ещё раз.");
+        imported_32.error("Не удалось открыть шторы. Попробуйте ещё раз.");
       } finally {
         local_10(false);
       }
@@ -1283,7 +1309,7 @@ function fn_4ac23eda({
     children: [
       local_5 &&
         local_28 &&
-        imported_28(
+        imported_30(
           imported(
             "span",
             {
@@ -1342,7 +1368,7 @@ function fn_4ac23eda({
               "aria-hidden": "true",
               children:
                 arg.kind === "sticker"
-                  ? imported(fn_9163d334, {
+                  ? imported(fn_0a9872b8, {
                       asset: arg.asset,
                       id: arg.id,
                       stage: arg.wear.stage,
@@ -1358,7 +1384,7 @@ function fn_4ac23eda({
         ),
       }),
       local_25 &&
-        imported_28(
+        imported_30(
           imported("div", {
             className: `${local_c642bb00.curtainCover} ${local_20 ? "" : local_c642bb00.curtainOpening}`,
             role: "dialog",
@@ -1383,7 +1409,7 @@ function fn_4ac23eda({
                 className: local_c642bb00.curtainBack,
                 onClick: local_29,
                 "aria-label": "Вернуться назад",
-                children: imported(imported_64, {
+                children: imported(imported_66, {
                   size: 24,
                 }),
               }),
@@ -1503,7 +1529,7 @@ const local_2f99206e = (arg) => {
   if (arg.kind === "splash") {
     return imported("img", {
       className: local_c9902c8d.balloonBody,
-      src: imported_33,
+      src: imported_35,
       alt: "",
       draggable: false,
     });
@@ -1619,7 +1645,7 @@ function fn_3bbe2496(arg) {
   return null;
 }
 function fn_75d71f4e(arg) {
-  if (imported_37(arg)) {
+  if (imported_39(arg)) {
     if (arg.status >= 500) {
       return "Не удалось получить подтверждение. Повторите тем же предметом — второго списания не будет.";
     }
@@ -1627,7 +1653,7 @@ function fn_75d71f4e(arg) {
   }
   return "Не удалось подтвердить размещение. Повторите тем же предметом.";
 }
-function fn_13234f11({
+function fn_29aed5a3({
   profileId: arg,
   profileUsername: arg_2,
   ownProfile: arg_3 = false,
@@ -1655,7 +1681,7 @@ function fn_13234f11({
   const local_21 = imported_16(new Map());
   const [local_22, local_23] = imported_9(null);
   const [local_24, local_25] = imported_9("");
-  const { openModal: local_26, closeModal: local_27 } = imported_31();
+  const { openModal: local_26, closeModal: local_27 } = imported_33();
   imported_17(() => {
     if (!local_16) {
       return;
@@ -1707,14 +1733,14 @@ function fn_13234f11({
   }, [local_7?.kind, local_18, local_11]);
   const local_28 = imported_21(() => {
     arg_5();
-    imported_32(arg);
+    imported_34(arg);
   }, [arg_5, arg]);
   const local_29 = imported_21(async () => {
     local_2(true);
     local_4(true);
     local_25("");
     try {
-      const local = await imported_22.inventory();
+      const local = await imported_23.inventory();
       local_6(
         local.items.filter((arg) =>
           (arg_3
@@ -1741,7 +1767,7 @@ function fn_13234f11({
         const local = local_21.current.get(arg.id) ?? crypto.randomUUID();
         local_21.current.set(arg.id, local);
         try {
-          await imported_22.breakWindow(arg, arg.id, local);
+          await imported_23.breakWindow(arg, arg.id, local);
           local_21.current.delete(arg.id);
           local_2(false);
           local_28();
@@ -1757,7 +1783,7 @@ function fn_13234f11({
       if (arg.kind === "eraser") {
         local_4(true);
         try {
-          const local = await imported_22.profile(arg);
+          const local = await imported_23.profile(arg);
           if (!local.placements.some((arg) => arg.kind === "sticker")) {
             local_25("На этом профиле пока нет наклеек.");
             return;
@@ -1827,7 +1853,7 @@ function fn_13234f11({
       local_7.kind === "splash" || local_7.kind === "whoopee_cushion";
     if (local && !local_18 && !local_11) {
       local_12(null);
-      imported_30.error("Выберите место для предмета.");
+      imported_32.error("Выберите место для предмета.");
       return;
     }
     const local_2 = local_7;
@@ -1858,7 +1884,7 @@ function fn_13234f11({
     try {
       const local =
         local_2.kind === "splash"
-          ? await imported_22.throwBalloon(
+          ? await imported_23.throwBalloon(
               arg,
               local_3.itemId,
               {
@@ -1870,19 +1896,19 @@ function fn_13234f11({
             )
           : null;
       if (local_2.kind === "whoopee_cushion") {
-        await imported_22.throwCushion(arg, local_3.itemId, local_3.key, {
+        await imported_23.throwCushion(arg, local_3.itemId, local_3.key, {
           x: local_3.position.x,
           y: local_3.position.y,
           ...local_3.anchor,
         });
       } else if (local_2.kind === "sticker") {
-        const local = await imported_22.place(
+        const local = await imported_23.place(
           arg,
           local_3.itemId,
           local_3.position,
           local_3.key,
         );
-        imported_35({
+        imported_37({
           profileId: arg,
           ...local,
         });
@@ -1890,7 +1916,7 @@ function fn_13234f11({
       if (local_2.kind === "splash" && local_11) {
         const local = fn_3bbe2496(local_11);
         if (local) {
-          imported_36(local.balloon);
+          imported_38(local.balloon);
           if (local) {
             local_17({
               key: local_3.key,
@@ -1905,7 +1931,7 @@ function fn_13234f11({
       local_12(null);
       local_8(null);
       local_28();
-      imported_30.success(
+      imported_32.success(
         local_2.kind === "splash"
           ? "Шарик попал! След останется на 48 часов"
           : local_2.kind === "whoopee_cushion"
@@ -1913,14 +1939,14 @@ function fn_13234f11({
             : "Наклейка размещена",
       );
     } catch (error) {
-      if (imported_37(error) && error.code === "CUSHION_ACTIVE") {
-        imported_30.error(
+      if (imported_39(error) && error.code === "CUSHION_ACTIVE") {
+        imported_32.error(
           "На этом профиле уже есть подушка. Попробуйте после окончания суток.",
         );
-      } else if (imported_37(error) && error.code === "ITEM_UNAVAILABLE") {
-        imported_30.error("Этот предмет уже потрачен. Откройте рюкзак заново.");
+      } else if (imported_39(error) && error.code === "ITEM_UNAVAILABLE") {
+        imported_32.error("Этот предмет уже потрачен. Откройте рюкзак заново.");
       } else {
-        imported_30.error(fn_75d71f4e(error));
+        imported_32.error(fn_75d71f4e(error));
       }
     } finally {
       local_4(false);
@@ -1930,15 +1956,15 @@ function fn_13234f11({
     const local = local_20.current.get(arg) ?? crypto.randomUUID();
     local_20.current.set(arg, local);
     try {
-      const local = await imported_22.erase(arg, arg, local);
+      const local = await imported_23.erase(arg, arg, local);
       local_20.current.delete(arg);
       local_23(null);
       local_28();
-      imported_30.success(
+      imported_32.success(
         local.removed ? "Наклейка стёрта" : "Наклейка потёрта",
       );
     } catch {
-      imported_30.error(
+      imported_32.error(
         "Не удалось подтвердить стирание. Можно повторить без второго списания.",
       );
       throw new Error("Erase result is unknown");
@@ -1946,7 +1972,7 @@ function fn_13234f11({
   };
   const local_35 = (arg) => {
     local_26(
-      imported(imported_65, {
+      imported(imported_67, {
         title: "Стереть наклейку?",
         message:
           "Будет использован один ластик. Наклейка исчезнет после третьего стирания.",
@@ -1960,7 +1986,7 @@ function fn_13234f11({
   return imported(imported_13, {
     children: [
       local_16 &&
-        imported_28(
+        imported_30(
           imported(
             "span",
             {
@@ -1982,7 +2008,7 @@ function fn_13234f11({
                 children: [
                   imported("img", {
                     className: local_c9902c8d.balloonBody,
-                    src: imported_33,
+                    src: imported_35,
                     alt: "",
                     draggable: false,
                   }),
@@ -2072,7 +2098,7 @@ function fn_13234f11({
           }),
         }),
       local_7?.kind === "sticker" &&
-        imported_28(
+        imported_30(
           imported("div", {
             className: local_c9902c8d.pagePlacementControls,
             "data-alice-sticker-placement-controls": true,
@@ -2113,7 +2139,7 @@ function fn_13234f11({
           document.body,
         ),
       (local_7?.kind === "splash" || local_7?.kind === "whoopee_cushion") &&
-        imported_28(
+        imported_30(
           imported(imported_13, {
             children: [
               imported("div", {
@@ -2310,7 +2336,7 @@ function fn_13234f11({
           ],
         }),
       local &&
-        imported_28(
+        imported_30(
           imported(imported_4, {
             showHeader: false,
             className: local_c9902c8d.modal,
@@ -2330,7 +2356,7 @@ function fn_13234f11({
                       className: local_c9902c8d.close,
                       "aria-label": "Закрыть",
                       onClick: () => local_2(false),
-                      children: imported(imported_34, {
+                      children: imported(imported_36, {
                         size: 18,
                       }),
                     }),
@@ -2349,7 +2375,7 @@ function fn_13234f11({
                       returnTo: `/@${arg_2.replace(/^@/, "")}`,
                     });
                     local_2(false);
-                    imported_29(`/event/alice-ai?${local.toString()}`);
+                    imported_31(`/event/alice-ai?${local.toString()}`);
                   },
                   children: "Открыть магазин",
                 }),
@@ -2469,7 +2495,7 @@ const local_464a8bbc = (arg) => {
     color: "#f26b6b",
   };
 };
-function fn_0d28a8dd({
+function fn_bbe0bf5e({
   value: arg,
   profileUsername: arg_2,
   compact: arg_3 = false,
@@ -2508,7 +2534,7 @@ function fn_0d28a8dd({
                 "aria-label": "Открыть анализатор ауры в магазине",
                 title: "Оценку выдаёт анализатор ауры из ивент-магазина.",
                 onClick: () =>
-                  imported_29(`/event/alice-ai?${local_2.toString()}`),
+                  imported_31(`/event/alice-ai?${local_2.toString()}`),
                 children: "?",
               }),
             ],
@@ -2590,7 +2616,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_163b338f({
+function fn_3f070292({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2615,7 +2641,7 @@ function fn_163b338f({
   }, [arg]);
   imported_17(() => {
     if (local_3) {
-      imported_22.balance().then(local_8, () => local_8(null));
+      imported_23.balance().then(local_8, () => local_8(null));
     }
   }, [local_3]);
   const local_18 = [...local_2d3b5f59, local_2].filter(
@@ -2639,7 +2665,7 @@ function fn_163b338f({
     local_10(true);
     local_14("");
     try {
-      const local = await imported_22.donateCurtains(
+      const local = await imported_23.donateCurtains(
         arg,
         local.amount,
         local.key,
@@ -2648,9 +2674,9 @@ function fn_163b338f({
       local_12(false);
       local_8(local.balance);
       arg_5(local.curtains);
-      imported_32(arg);
+      imported_34(arg);
       const local_2 = local.curtains.hasCurtains;
-      imported_30.success(
+      imported_32.success(
         local_2
           ? "Сбор завершён — шторы теперь доступны"
           : `Скинули ${local.donated} мелков`,
@@ -2666,7 +2692,7 @@ function fn_163b338f({
         );
       }
     } catch (error) {
-      const local = imported_37(error) ? local_7f66de41[error.code] : undefined;
+      const local = imported_39(error) ? local_7f66de41[error.code] : undefined;
       if (local) {
         local_17.current = null;
         local_12(false);
@@ -2837,7 +2863,7 @@ function fn_163b338f({
           ],
         }),
       local_15 &&
-        imported(imported_38, {
+        imported(imported_40, {
           title: imported("span", {
             className: local_bbc4ec22.modalTitle,
             children: [
@@ -2905,7 +2931,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_b55ea0ac({
+function fn_85d79cfb({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -2933,8 +2959,14 @@ function fn_b55ea0ac({
     },
     [arg_15],
   );
-  const local_10 = imported_39().status === "allowed";
-  const { openModal: local_11, closeModal: local_12 } = imported_31();
+  const local_10 = imported_41().status === "allowed";
+  imported_17(() => {
+    if (!local_10) {
+      local_8(null);
+      arg_15?.(null);
+    }
+  }, [local_10, arg_15]);
+  const { openModal: local_11, closeModal: local_12 } = imported_33();
   const local_13 = imported_21(() => {
     local_2(true);
   }, []);
@@ -2974,7 +3006,7 @@ function fn_b55ea0ac({
   }, []);
   const local_18 = imported_21(() => {
     local_11(
-      imported(imported_65, {
+      imported(imported_67, {
         title: "Удалить баннер?",
         message:
           "Баннер будет удалён из профиля. Это действие нельзя отменить.",
@@ -2982,13 +3014,13 @@ function fn_b55ea0ac({
         danger: true,
         onConfirm: async () => {
           try {
-            await imported_40.updateProfile({
+            await imported_42.updateProfile({
               bannerId: null,
             });
             arg_14?.(null);
           } catch (error) {
             console.error("Failed to delete banner:", error);
-            imported_30.error("Не удалось удалить баннер");
+            imported_32.error("Не удалось удалить баннер");
             throw error;
           }
         },
@@ -3012,8 +3044,8 @@ function fn_b55ea0ac({
         const local_7 = new File([local_6], "banner.png", {
           type: "image/png",
         });
-        const local_8 = await imported_41.uploadMedia(local_7);
-        await imported_40.updateProfile({
+        const local_8 = await imported_43.uploadMedia(local_7);
+        await imported_42.updateProfile({
           bannerId: local_8.id,
         });
         arg_14?.({
@@ -3025,7 +3057,7 @@ function fn_b55ea0ac({
         });
       } catch (error) {
         console.error("Failed to upload banner:", error);
-        imported_30.error("Не удалось загрузить баннер");
+        imported_32.error("Не удалось загрузить баннер");
         throw error;
       }
     },
@@ -3049,7 +3081,7 @@ function fn_b55ea0ac({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_10 &&
-            imported(fn_4ac23eda, {
+            imported(fn_2c162465, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3063,7 +3095,7 @@ function fn_b55ea0ac({
             local_7?.aura != null &&
             imported("div", {
               className: local_819ff8dc.bannerAura,
-              children: imported(fn_0d28a8dd, {
+              children: imported(fn_bbe0bf5e, {
                 value: local_7.aura,
                 profileUsername: arg.username,
                 compact: true,
@@ -3071,7 +3103,7 @@ function fn_b55ea0ac({
             }),
           local_10 &&
             imported(
-              fn_13234f11,
+              fn_29aed5a3,
               {
                 profileId: arg.id,
                 profileUsername: arg.username,
@@ -3089,7 +3121,7 @@ function fn_b55ea0ac({
                   className: local_819ff8dc.bannerActionButton,
                   onClick: local_13,
                   title: "Нарисовать баннер",
-                  children: imported(imported_42, {
+                  children: imported(imported_44, {
                     size: 20,
                   }),
                 }),
@@ -3098,7 +3130,7 @@ function fn_b55ea0ac({
                     className: `${local_819ff8dc.bannerActionButton} ${local_819ff8dc.deleteBannerButton}`,
                     onClick: local_18,
                     title: "Удалить баннер",
-                    children: imported(imported_43, {
+                    children: imported(imported_45, {
                       size: 20,
                     }),
                   }),
@@ -3107,8 +3139,8 @@ function fn_b55ea0ac({
         ],
       }),
       local_10 &&
-        imported(imported_44, {
-          placements: imported_45(local_7?.balloons, "profile_header", null),
+        imported(imported_46, {
+          placements: imported_47(local_7?.balloons, "profile_header", null),
           anchorKind: "profile_header",
           anchorId: null,
         }),
@@ -3130,6 +3162,8 @@ function fn_b55ea0ac({
             children: [
               imported(imported_2, {
                 src: arg.avatar,
+                username: arg.username,
+                fallback: arg.clanAvatar,
                 alt: arg.displayName,
                 size: "lg",
                 online: arg.online,
@@ -3160,7 +3194,7 @@ function fn_b55ea0ac({
               imported("div", {
                 className: local_819ff8dc.userInfo,
                 children: [
-                  imported(imported_46, {
+                  imported(imported_48, {
                     userId: arg.id,
                     name: arg.displayName,
                     verified: arg.isVerified,
@@ -3246,7 +3280,7 @@ function fn_b55ea0ac({
                     local_7?.aura != null &&
                     imported("div", {
                       className: local_819ff8dc.mobileAura,
-                      children: imported(fn_0d28a8dd, {
+                      children: imported(fn_bbe0bf5e, {
                         value: local_7.aura,
                         profileUsername: arg.username,
                         centered: !local_20,
@@ -3257,7 +3291,7 @@ function fn_b55ea0ac({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_163b338f, {
+                      children: imported(fn_3f070292, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -3306,7 +3340,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
   const local_3 = arg?.id;
   const [local_4] = imported_9(() => {
     if (arg && !arg_2) {
-      return imported_47.getCachedWall(
+      return imported_49.getCachedWall(
         arg.username || arg.id,
         arg.pinnedPostId,
       );
@@ -3324,7 +3358,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
   const local_21 = imported_21(async (arg, arg_2, arg_3) => {
     local_8(true);
     try {
-      const local = await imported_47.getUserWall(arg, {
+      const local = await imported_49.getUserWall(arg, {
         cursor: arg_3,
         limit: 20,
         pinnedPostId: arg_2,
@@ -3350,7 +3384,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
       }
       local_20(null);
       try {
-        const local = await imported_47.getUserLikedPosts(arg, {
+        const local = await imported_49.getUserLikedPosts(arg, {
           cursor: arg_2,
           limit: 20,
         });
@@ -3387,7 +3421,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
   imported_17(() => {
     const local = (arg) => {
       const local = arg.detail;
-      const local_2 = imported_48.getState().profile;
+      const local_2 = imported_50.getState().profile;
       if (!local_3 || local !== local_3 || local_2?.id !== local) {
         return;
       }
@@ -3395,20 +3429,20 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
       local_6((arg) => arg.map((arg) => fn_632095dd(arg, local, local_3)));
       local_12((arg) => arg.map((arg) => fn_632095dd(arg, local, local_3)));
     };
-    window.addEventListener(imported_23, local);
-    return () => window.removeEventListener(imported_23, local);
+    window.addEventListener(imported_24, local);
+    return () => window.removeEventListener(imported_24, local);
   }, [local_3]);
   imported_17(() => {
     if (local === "likes" && arg) {
       local_22(arg.id);
     }
   }, [local, arg?.id, local_22]);
-  const local_23 = imported_49((arg) => arg.posts);
-  const local_24 = imported_49((arg) => arg.highlightedPostId);
-  const local_25 = imported_49((arg) => arg._lastPostEdit);
-  const local_26 = imported_49((arg) => arg._lastLikeUpdate);
-  const local_27 = imported_49((arg) => arg._lastRepostUpdate);
-  const local_28 = imported_49((arg) => arg._lastStatsBatch);
+  const local_23 = imported_51((arg) => arg.posts);
+  const local_24 = imported_51((arg) => arg.highlightedPostId);
+  const local_25 = imported_51((arg) => arg._lastPostEdit);
+  const local_26 = imported_51((arg) => arg._lastLikeUpdate);
+  const local_27 = imported_51((arg) => arg._lastRepostUpdate);
+  const local_28 = imported_51((arg) => arg._lastStatsBatch);
   imported_17(() => {
     if (!local_24 || !arg) {
       return;
@@ -3548,9 +3582,9 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
       const local = arg.pinnedPostId === arg;
       try {
         if (local) {
-          await imported_40.unpinPost(arg);
+          await imported_42.unpinPost(arg);
         } else {
-          await imported_40.pinPost(arg);
+          await imported_42.pinPost(arg);
         }
       } catch (error) {
         console.error("Failed to pin/unpin post:", error);
@@ -3561,7 +3595,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
   );
   const local_31 = imported_21(async () => {
     if (arg) {
-      imported_47.invalidateWallCache(arg.username || arg.id);
+      imported_49.invalidateWallCache(arg.username || arg.id);
       await local_21(arg.username || arg.id, arg.pinnedPostId);
     }
   }, [arg, local_21]);
@@ -3570,7 +3604,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
       local_6((arg) => arg.filter((arg) => arg.id !== arg));
       local_12((arg) => arg.filter((arg) => arg.id !== arg));
       if (arg) {
-        imported_47.removePostFromWallCache(arg.username || arg.id, arg);
+        imported_49.removePostFromWallCache(arg.username || arg.id, arg);
       }
     },
     [arg],
@@ -3603,12 +3637,12 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
   };
 }
 function fn_ac8e62aa({ username: arg }) {
-  const local = imported_48((arg) => arg.profile);
+  const local = imported_50((arg) => arg.profile);
   const local_2 = local?.id;
-  const local_3 = imported_48((arg) => arg.setProfile);
+  const local_3 = imported_50((arg) => arg.setProfile);
   const [local_4, local_5] = imported_9(() => {
     if (arg) {
-      return imported_40.getCachedProfile(arg);
+      return imported_42.getCachedProfile(arg);
     }
     return null;
   });
@@ -3682,8 +3716,8 @@ function fn_ac8e62aa({ username: arg }) {
       local_10(null);
       try {
         const local = arg
-          ? await imported_40.getProfileByUsername(arg)
-          : await imported_40.getMyProfile();
+          ? await imported_42.getProfileByUsername(arg)
+          : await imported_42.getMyProfile();
         if (!local_38.current || local.signal.aborted) {
           return;
         }
@@ -3695,8 +3729,8 @@ function fn_ac8e62aa({ username: arg }) {
           return;
         }
         console.error("Failed to fetch profile:", error);
-        const local = imported_37(error) ? error.status : 0;
-        local_10(local === imported_50.NOT_FOUND ? "notFound" : "server");
+        const local = imported_39(error) ? error.status : 0;
+        local_10(local === imported_52.NOT_FOUND ? "notFound" : "server");
       } finally {
         if (local_38.current && !local.signal.aborted) {
           local_7(false);
@@ -3710,7 +3744,7 @@ function fn_ac8e62aa({ username: arg }) {
   imported_17(() => {
     const local = (arg) => {
       const local = arg.detail;
-      const local_2 = imported_48.getState().profile;
+      const local_2 = imported_50.getState().profile;
       if (!(!local_11 || local !== local_11 || local_2?.id !== local)) {
         local_5(
           (arg) =>
@@ -3720,20 +3754,20 @@ function fn_ac8e62aa({ username: arg }) {
             },
         );
         if (local_12) {
-          imported_40.updateProfileCache(local_12, {
+          imported_42.updateProfileCache(local_12, {
             avatar: local_2.avatar,
           });
         }
       }
     };
-    window.addEventListener(imported_23, local);
-    return () => window.removeEventListener(imported_23, local);
+    window.addEventListener(imported_24, local);
+    return () => window.removeEventListener(imported_24, local);
   }, [local_11, local_12]);
   const local_39 = imported_21(async () => {
     if (!(!local_4 || local_15)) {
       local_16(true);
       try {
-        const local = await imported_51.followUser(local_4.id);
+        const local = await imported_53.followUser(local_4.id);
         local_14(local);
         if (local === "following" && local_4.stats) {
           const local = local_4.stats.followers + 1;
@@ -3750,7 +3784,7 @@ function fn_ac8e62aa({ username: arg }) {
             return arg;
           });
           if (local_4.username) {
-            imported_40.updateProfileCache(local_4.username, {
+            imported_42.updateProfileCache(local_4.username, {
               stats: {
                 ...local_4.stats,
                 followers: local,
@@ -3769,7 +3803,7 @@ function fn_ac8e62aa({ username: arg }) {
     if (!(!local_4 || local_15)) {
       local_16(true);
       try {
-        await imported_51.unfollowUser(local_4.id);
+        await imported_53.unfollowUser(local_4.id);
         local_14("none");
         if (local_22 && local_4.stats) {
           const local = local_4.stats.followers - 1;
@@ -3786,7 +3820,7 @@ function fn_ac8e62aa({ username: arg }) {
             return arg;
           });
           if (local_4.username) {
-            imported_40.updateProfileCache(local_4.username, {
+            imported_42.updateProfileCache(local_4.username, {
               stats: {
                 ...local_4.stats,
                 followers: local,
@@ -3838,23 +3872,23 @@ function fn_ac8e62aa({ username: arg }) {
       local_20(true);
       try {
         if (local_17) {
-          await imported_51.unblockUser(local_4.id);
+          await imported_53.unblockUser(local_4.id);
           local_18(false);
-          imported_30.success("Пользователь разблокирован");
+          imported_32.success("Пользователь разблокирован");
         } else {
-          await imported_51.blockUser(local_4.id);
+          await imported_53.blockUser(local_4.id);
           local_18(true);
-          imported_30.success("Пользователь заблокирован");
+          imported_32.success("Пользователь заблокирован");
           if (local_22) {
             local_14("none");
           }
         }
         if (local_4.username) {
-          imported_40.invalidateProfileCache(local_4.username);
+          imported_42.invalidateProfileCache(local_4.username);
         }
       } catch (error) {
         console.error("Failed to toggle block:", error);
-        imported_30.error("Не удалось выполнить действие");
+        imported_32.error("Не удалось выполнить действие");
       } finally {
         local_20(false);
       }
@@ -3939,13 +3973,13 @@ export const local_877a0c56 = ({ username: arg }) => {
       return arg;
     });
   }, []);
-  const local_4 = imported_52();
-  const local_5 = imported_53();
-  const { openModal: local_6, closeModal: local_7 } = imported_31();
-  const local_8 = imported_49((arg) => arg.createPost);
-  const local_9 = imported_49((arg) => arg.profileScrollByUser);
-  const local_10 = imported_49((arg) => arg.profileMeasuredHeightsByUser);
-  const local_11 = imported_49((arg) => arg.setProfileMeasuredHeights);
+  const local_4 = imported_54();
+  const local_5 = imported_55();
+  const { openModal: local_6, closeModal: local_7 } = imported_33();
+  const local_8 = imported_51((arg) => arg.createPost);
+  const local_9 = imported_51((arg) => arg.profileScrollByUser);
+  const local_10 = imported_51((arg) => arg.profileMeasuredHeightsByUser);
+  const local_11 = imported_51((arg) => arg.setProfileMeasuredHeights);
   const local_12 = arg ? (local_9[arg] ?? 0) : 0;
   const local_13 = imported_16(null);
   const {
@@ -3989,7 +4023,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_41 = imported_21(() => {
     if (local_21 || local_24) {
       local_6(
-        imported(imported_54, {
+        imported(imported_56, {
           displayName: local_14?.displayName ?? "",
           onConfirm: local_28,
           onClose: local_7,
@@ -4052,7 +4086,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_46 = imported_21(() => {
     if (local_14) {
       local_6(
-        imported(imported_55, {
+        imported(imported_57, {
           wallOwnerId: local_14.id,
           placeholder: `Написать на стене ${local_14.displayName}`,
           onPostCreated: local_32,
@@ -4069,7 +4103,7 @@ export const local_877a0c56 = ({ username: arg }) => {
       }
     }
   }, [arg, local_17.length, local_12]);
-  const local_47 = imported_56(() => {
+  const local_47 = imported_58(() => {
     if (local_34 !== "posts" || !local_14?.pinnedPostId) {
       return local_17;
     }
@@ -4082,7 +4116,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     }
     return local_17;
   }, [local_17, local_14?.pinnedPostId, local_34]);
-  const local_48 = imported_56(() => {
+  const local_48 = imported_58(() => {
     if (!local_5) {
       return false;
     }
@@ -4114,7 +4148,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_49 =
     local_20 ||
     local_14?.privacySettings?.whoCanSeeMyPostReactions === "everyone";
-  const local_50 = imported_56(() => {
+  const local_50 = imported_58(() => {
     const local = ["Посты"];
     if (local_49) {
       local.push("Лайки");
@@ -4145,14 +4179,14 @@ export const local_877a0c56 = ({ username: arg }) => {
   }
   if (local_16 || !local_14) {
     const local = local_16 === "server";
-    return imported(imported_57, {
+    return imported(imported_59, {
       kind: local ? "server" : "notFound",
       title: local ? "Сервис недоступен" : "Профиль не найден",
       description: local
         ? "Не удалось получить профиль — сервер не ответил. Попробуйте обновить страницу позже."
         : "Пользователя с таким адресом нет. Возможно, профиль удалён или в ссылке опечатка.",
       action: imported(imported_3, {
-        onClick: () => imported_29("../site/index.html"),
+        onClick: () => imported_31("../site/index.html"),
         children: "Вернуться на главную",
       }),
     });
@@ -4161,7 +4195,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_b55ea0ac, {
+      imported(fn_85d79cfb, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,
@@ -4180,7 +4214,7 @@ export const local_877a0c56 = ({ username: arg }) => {
       }),
       imported("div", {
         className: local_819ff8dc.tabsWrapper,
-        children: imported(imported_58, {
+        children: imported(imported_60, {
           tabs: local_50,
           activeIndex: local_34 === "posts" ? 0 : 1,
           onChange: local_51,
@@ -4200,7 +4234,7 @@ export const local_877a0c56 = ({ username: arg }) => {
                       alt: local_14.displayName,
                       size: "sm",
                     }),
-                    imported(imported_59, {
+                    imported(imported_61, {
                       onSubmit: local_45,
                       placeholder: local_20
                         ? "Что нового?"
@@ -4228,13 +4262,13 @@ export const local_877a0c56 = ({ username: arg }) => {
                 })
               : local_47.length > 0
                 ? imported(
-                    imported_60,
+                    imported_62,
                     {
                       posts: local_47,
                       renderPost: (arg, arg_2, arg_3) =>
-                        imported(imported_61, {
+                        imported(imported_63, {
                           post: arg,
-                          aliceWaterStains: imported_45(
+                          aliceWaterStains: imported_47(
                             local?.profileId === local_14.id
                               ? local.balloons
                               : [],
@@ -4263,7 +4297,7 @@ export const local_877a0c56 = ({ username: arg }) => {
                     local_38 ?? local_34,
                   )
                 : local_18 && local_47.length === 0
-                  ? imported(imported_62, {
+                  ? imported(imported_64, {
                       count: 4,
                     })
                   : imported("div", {

@@ -1,14 +1,14 @@
 import {
-  symbol_077 as imported,
-  symbol_064 as imported_2,
-  symbol_068 as imported_3,
+  symbol_080 as imported,
+  symbol_067 as imported_2,
+  symbol_071 as imported_3,
   symbol_002 as imported_4,
-  a5 as imported_5,
-  symbol_081 as imported_6,
+  symbol_021 as imported_5,
+  symbol_084 as imported_6,
   symbol_020 as imported_7,
-  symbol_030 as imported_8,
-  symbol_028 as imported_9,
-  symbol_001 as imported_10,
+  symbol_053 as imported_8,
+  symbol_047 as imported_9,
+  symbol_006 as imported_10,
 } from "../entry.js";
 import { u as imported_11 } from "../shared/use-body-scroll-lock.js";
 import { I as imported_12 } from "../components/icon-chevron-left.js";
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_56b8bbdd({
+export function fn_9d6d4906({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2133,4 +2133,4 @@ export function fn_56b8bbdd({
     document.body,
   );
 }
-export { fn_56b8bbdd as default };
+export { fn_9d6d4906 as default };

@@ -1,11 +1,11 @@
 import {
-  symbol_064 as imported,
+  symbol_067 as imported,
   symbol_002 as imported_2,
-  symbol_068 as imported_3,
-  symbol_077 as imported_4,
-  symbol_081 as imported_5,
-  symbol_052 as imported_6,
-  aG as imported_7,
+  symbol_071 as imported_3,
+  symbol_080 as imported_4,
+  symbol_084 as imported_5,
+  symbol_027 as imported_6,
+  symbol_052 as imported_7,
 } from "../entry.js";
 import { I as imported_8, a as imported_9 } from "../components/icon-play.js";
 (function () {
@@ -447,7 +447,7 @@ const local_f06debfc_3 = 24;
 const local_f06debfc_4 = 80;
 const local_15086922 = "rgba(142, 142, 147, 0.6)";
 const local_3a5b5f52 = "#FFFFFF";
-function fn_9bc11df4({
+function fn_e4ae8d9d({
   levels: arg,
   slideOffset: arg_2,
   audioRef: arg_3,
@@ -755,7 +755,7 @@ const local_c9c49b86 = {
   recordingTime: local_21b2c703,
   exiting: local_8a90869a,
 };
-export function fn_a0bd959f({
+export function fn_ae3017b5({
   onCancel: arg,
   onSend: arg_2,
   isExiting: arg_3,
@@ -864,7 +864,7 @@ export function fn_a0bd959f({
         children: [
           imported_5("div", {
             className: local_c9c49b86.waveformContainer,
-            children: imported_5(fn_9bc11df4, {
+            children: imported_5(fn_e4ae8d9d, {
               levels: local_6,
               slideOffset: local_7,
               audioRef: local_11,

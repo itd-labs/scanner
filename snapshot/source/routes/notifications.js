@@ -1,25 +1,25 @@
 import {
-  symbol_081 as imported,
-  symbol_045 as imported_2,
-  symbol_066 as imported_3,
+  symbol_084 as imported,
+  symbol_008 as imported_2,
+  symbol_009 as imported_3,
   symbol_020 as imported_4,
-  symbol_025 as imported_5,
+  symbol_022 as imported_5,
   symbol_003 as imported_6,
-  symbol_073 as imported_7,
-  symbol_046 as imported_8,
-  symbol_047 as imported_9,
-  symbol_048 as imported_10,
-  aj as imported_11,
-  symbol_065 as imported_12,
-  symbol_049 as imported_13,
-  symbol_050 as imported_14,
+  symbol_011 as imported_7,
+  symbol_012 as imported_8,
+  symbol_013 as imported_9,
+  symbol_015 as imported_10,
+  symbol_016 as imported_11,
+  symbol_001 as imported_12,
+  symbol_018 as imported_13,
+  symbol_024 as imported_14,
   symbol_002 as imported_15,
-  symbol_064 as imported_16,
-  symbol_068 as imported_17,
-  symbol_051 as imported_18,
-  symbol_077 as imported_19,
-  a0 as imported_20,
-  symbol_052 as imported_21,
+  symbol_067 as imported_16,
+  symbol_071 as imported_17,
+  symbol_025 as imported_18,
+  symbol_080 as imported_19,
+  symbol_026 as imported_20,
+  symbol_027 as imported_21,
 } from "../entry.js";
 import { I as imported_22 } from "../components/icon-notification-mention.js";
 import { I as imported_23 } from "../components/icon-check.js";
@@ -214,7 +214,7 @@ const local_7f22a07b = {
     getAction: () => "написал(а) на вашей стене",
   },
 };
-const local_f18caa66 = ({ type: arg }) => {
+const local_97259913 = ({ type: arg }) => {
   const local = local_7f22a07b[arg];
   const local_2 =
     local?.badgeColor === "red"
@@ -357,7 +357,7 @@ function fn_235240cf({
                   src: local_2?.avatar || "",
                   alt: local_2?.displayName || "User",
                   size: "md",
-                  badge: imported(local_f18caa66, {
+                  badge: imported(local_97259913, {
                     type: arg.type,
                   }),
                 }),
