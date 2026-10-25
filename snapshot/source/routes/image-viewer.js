@@ -10,9 +10,9 @@ import {
   symbol_047 as imported_9,
   symbol_006 as imported_10,
 } from "../entry.js";
-import { u as imported_11 } from "../shared/use-body-scroll-lock.js";
-import { I as imported_12 } from "../components/icon-chevron-left.js";
-import { I as imported_13 } from "../components/icon-chevron-right.js";
+import { u as imported_11 } from "../shared/use-body-scroll-lock-dkg5-ym-lv-portal20261026.js";
+import { I as imported_12 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
+import { I as imported_13 } from "../components/icon-chevron-right-5-hi-tdjz-portal20261026.js";
 (function () {
   try {
     const local =

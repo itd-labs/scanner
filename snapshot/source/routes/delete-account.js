@@ -5,7 +5,7 @@ import {
   symbol_003 as imported_4,
   symbol_001 as imported_5,
 } from "../entry.js";
-import { I as imported_6 } from "../components/icon-chevron-left.js";
+import { I as imported_6 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
 (function () {
   try {
     const local =

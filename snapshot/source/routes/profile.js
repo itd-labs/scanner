@@ -1,28 +1,28 @@
-const local_d3e9f901 = (
+const local_a64a5df6 = (
   arg,
-  arg_2 = local_d3e9f901,
+  arg_2 = local_a64a5df6,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./subscription-modal.js",
       "../entry.js",
       "../entry.css",
-      "../shared/chunk-3d5994e265d4.js",
-      "../shared/chunk-3d5994e265d4.css",
-      "../components/icon-info.js",
-      "../components/icon-notification-mention.js",
-      "../components/icon-chevron-right.js",
-      "../components/icon-chevron-left.js",
+      "../shared/index-bkpoiy5w-portal20261026.js",
+      "../shared/index-bkpoiy5w-portal20261026.css",
+      "../components/icon-info-cnv1-fsp-t-portal20261026.js",
+      "../components/icon-notification-mention-bl-vye8-v-portal20261026.js",
+      "../components/icon-chevron-right-5-hi-tdjz-portal20261026.js",
+      "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js",
       "./subscription-modal.css",
       "./drawing-canvas.js",
       "./drawing-canvas.css",
-      "../shared/chunk-1f9577716691.js",
-      "../components/icon-check-circle.js",
-      "../shared/chunk-1f9577716691.css",
+      "../shared/index-q-tv-tful4-portal20261026.js",
+      "../components/icon-check-circle-dbcn-e3nn-portal20261026.js",
+      "../shared/index-q-tv-tful4-portal20261026.css",
       "./report-modal.js",
       "./report-modal.css",
-      "../shared/chunk-0e8ef113cb20.js",
-      "../components/icon-check.js",
-      "../shared/chunk-0e8ef113cb20.css",
+      "../shared/index-hqd-ia-v-b-portal20261026.js",
+      "../components/icon-check-bs-no8q94-portal20261026.js",
+      "../shared/index-hqd-ia-v-b-portal20261026.css",
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
@@ -91,9 +91,9 @@ import {
   symbol_068 as imported_63,
   symbol_066 as imported_64,
 } from "../entry.js";
-import { I as imported_65 } from "../components/icon-check.js";
-import { I as imported_66 } from "../components/icon-chevron-left.js";
-import { C as imported_67 } from "../shared/chunk-3d5994e265d4.js";
+import { I as imported_65 } from "../components/icon-check-bs-no8q94-portal20261026.js";
+import { I as imported_66 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
+import { C as imported_67 } from "../shared/index-bkpoiy5w-portal20261026.js";
 (function () {
   try {
     const local =
@@ -408,7 +408,7 @@ function fn_312ee776({
 const local_64782940 = imported_12(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_d3e9f901([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
+    local_a64a5df6([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -2904,15 +2904,15 @@ function fn_3f070292({
 const local_06128897 = imported_12(() =>
   imported_14(
     () => import("./drawing-canvas.js"),
-    local_d3e9f901([10, 1, 2, 11]),
+    local_a64a5df6([10, 1, 2, 11]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
 );
-const local_cfec21e2 = imported_12(() =>
+const local_e399251c = imported_12(() =>
   imported_14(
-    () => import("../shared/chunk-1f9577716691.js"),
-    local_d3e9f901([12, 1, 2, 13, 14]),
+    () => import("../shared/index-q-tv-tful4-portal20261026.js"),
+    local_a64a5df6([12, 1, 2, 13, 14]),
   ).then((arg) => ({
     default: arg.VerificationModal,
   })),
@@ -2920,7 +2920,7 @@ const local_cfec21e2 = imported_12(() =>
 const local_f8603183 = imported_12(() =>
   imported_14(
     () => import("./report-modal.js"),
-    local_d3e9f901([15, 1, 2, 13, 16]),
+    local_a64a5df6([15, 1, 2, 13, 16]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -2972,7 +2972,7 @@ function fn_85d79cfb({
   }, []);
   const local_14 = imported_21(() => {
     local_11(
-      imported(local_cfec21e2, {
+      imported(local_e399251c, {
         onClose: local_12,
       }),
     );
@@ -3946,15 +3946,15 @@ function fn_ac8e62aa({ username: arg }) {
 const local_64782940_2 = imported_12(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_d3e9f901([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
+    local_a64a5df6([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
   ).then((arg) => ({
     default: arg.SettingsModal,
   })),
 );
-const local_01d34312 = imported_12(() =>
+const local_0fe1a4d5 = imported_12(() =>
   imported_14(
-    () => import("../shared/chunk-0e8ef113cb20.js"),
-    local_d3e9f901([17, 1, 2, 18, 12, 13, 14, 19]),
+    () => import("../shared/index-hqd-ia-v-b-portal20261026.js"),
+    local_a64a5df6([17, 1, 2, 18, 12, 13, 14, 19]),
   ).then((arg) => ({
     default: arg.UserListModal,
   })),
@@ -4051,7 +4051,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_43 = imported_21(() => {
     if (local_14) {
       local_6(
-        imported(local_01d34312, {
+        imported(local_0fe1a4d5, {
           userId: local_14.id,
           type: "followers",
           title: "Подписчики",
@@ -4062,7 +4062,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_44 = imported_21(() => {
     if (local_14) {
       local_6(
-        imported(local_01d34312, {
+        imported(local_0fe1a4d5, {
           userId: local_14.id,
           type: "following",
           title: "Подписки",

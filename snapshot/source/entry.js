@@ -1,26 +1,26 @@
-const local_d3104e75 = (
+const local_5a0466d5 = (
   symbol_084,
-  arg = local_d3104e75,
+  arg = local_5a0466d5,
   arg_2 = arg.f ||
     (arg.f = [
       "./routes/subscription-modal.js",
-      "./shared/chunk-3d5994e265d4.js",
-      "./shared/chunk-3d5994e265d4.css",
-      "./components/icon-info.js",
-      "./components/icon-notification-mention.js",
-      "./components/icon-chevron-right.js",
-      "./components/icon-chevron-left.js",
+      "./shared/index-bkpoiy5w-portal20261026.js",
+      "./shared/index-bkpoiy5w-portal20261026.css",
+      "./components/icon-info-cnv1-fsp-t-portal20261026.js",
+      "./components/icon-notification-mention-bl-vye8-v-portal20261026.js",
+      "./components/icon-chevron-right-5-hi-tdjz-portal20261026.js",
+      "./components/icon-chevron-left-dwlxrxw-s-portal20261026.js",
       "./routes/subscription-modal.css",
       "./routes/changelog-modal.js",
       "./routes/changelog-modal.css",
       "./routes/voice-input.js",
-      "./components/icon-play.js",
+      "./components/icon-play-dvz-ak-tqd-portal20261026.js",
       "./routes/voice-input.css",
       "./routes/post-media-video.js",
-      "./components/volume-glyph.js",
+      "./components/volume-glyph-qk2s26-sz-portal20261026.js",
       "./routes/post-media-video.css",
       "./routes/report-modal.js",
-      "./components/icon-check-circle.js",
+      "./components/icon-check-circle-dbcn-e3nn-portal20261026.js",
       "./routes/report-modal.css",
       "./routes/poll.js",
       "./routes/poll.css",
@@ -31,7 +31,7 @@ const local_d3104e75 = (
       "./routes/drawing-canvas.js",
       "./routes/drawing-canvas.css",
       "./routes/image-viewer.js",
-      "./shared/use-body-scroll-lock.js",
+      "./shared/use-body-scroll-lock-dkg5-ym-lv-portal20261026.js",
       "./routes/image-viewer.css",
       "./routes/auth-layout.js",
       "./routes/auth-layout.css",
@@ -40,7 +40,7 @@ const local_d3104e75 = (
       "./routes/hashtag.js",
       "./routes/hashtag.css",
       "./routes/profile.js",
-      "./components/icon-check.js",
+      "./components/icon-check-bs-no8q94-portal20261026.js",
       "./routes/profile.css",
       "./routes/post-page.js",
       "./routes/post-page.css",
@@ -69,15 +69,15 @@ const local_d3104e75 = (
       "./routes/event.js",
       "./routes/event.css",
       "./routes/subscription-terms.js",
-      "./shared/subscription-terms-module.js",
-      "./shared/subscription-terms-module.css",
+      "./shared/subscription-terms-module-b4mno-yom-portal20261026.js",
+      "./shared/subscription-terms-module-b4mno-yom-portal20261026.css",
       "./routes/recurring-terms.js",
       "./routes/login.js",
-      "./shared/chunk-92b5556b33fa.js",
-      "./shared/chunk-92b5556b33fa.css",
-      "./shared/chunk-7195651f0d46.js",
-      "./shared/chunk-7195651f0d46.css",
-      "./components/icon-eye-off.js",
+      "./shared/index-ggtxn-mrt-portal20261026.js",
+      "./shared/index-ggtxn-mrt-portal20261026.css",
+      "./shared/index-df-ak-iq-portal20261026.js",
+      "./shared/index-df-ak-iq-portal20261026.css",
+      "./components/icon-eye-off-onz-fzvhn-portal20261026.js",
       "./routes/login.css",
       "./routes/register.js",
       "./routes/register.css",
@@ -14792,7 +14792,7 @@ function fn_b4ceaff0(arg) {
 const local_f2c3a8a6 = symbol_049(() =>
   symbol_051(
     () => import("./routes/subscription-modal.js"),
-    local_d3104e75([0, 1, 2, 3, 4, 5, 6, 7]),
+    local_5a0466d5([0, 1, 2, 3, 4, 5, 6, 7]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -19258,7 +19258,7 @@ function fn_3215cb92() {
 const local_f88ff501 = symbol_049(() =>
   symbol_051(
     () => import("./routes/changelog-modal.js"),
-    local_d3104e75([8, 9]),
+    local_5a0466d5([8, 9]),
   ).then((arg) => ({
     default: arg.ChangelogModal,
   })),
@@ -19266,7 +19266,7 @@ const local_f88ff501 = symbol_049(() =>
 const local_f2c3a8a6_2 = symbol_049(() =>
   symbol_051(
     () => import("./routes/subscription-modal.js"),
-    local_d3104e75([0, 1, 2, 3, 4, 5, 6, 7]),
+    local_5a0466d5([0, 1, 2, 3, 4, 5, 6, 7]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -19314,7 +19314,7 @@ const local_6ba9fd1a = (arg) =>
   symbol_084(local_cb5ce010, {
     ...arg,
   });
-const local_33b48122 = () => {
+const local_71e5d1bb = () => {
   const local = symbol_036();
   const [local_2] = fn_cf45b3ba();
   const local_3 = symbol_065((arg) => arg.fetchFeed);
@@ -19412,27 +19412,25 @@ const local_33b48122 = () => {
                 badge: local_9,
                 children: "Магаз",
               }),
-              ((local_14.active && local_14.url) ||
-                local.status === "allowed") &&
-                symbol_084("a", {
-                  href: local_18,
-                  target: local_17 ? "_blank" : undefined,
-                  rel: local_17 ? "noopener noreferrer" : undefined,
-                  className: `${local_bd6a6a7b.portalButton} ${local_14.active ? local_bd6a6a7b.portalActive : ""} ${local_19 ? local_bd6a6a7b.active : ""}`,
-                  title: "Ивент",
-                  children: [
-                    symbol_084("img", {
-                      src: local_14.active
-                        ? "/assets/portal/portal-active.gif"
-                        : "./assets/portal-inactive.png",
-                      alt: "Ивент",
-                      className: local_bd6a6a7b.portalImage,
-                    }),
-                    symbol_084("span", {
-                      children: "Ивент",
-                    }),
-                  ],
-                }),
+              symbol_084("a", {
+                href: local_18,
+                target: local_17 ? "_blank" : undefined,
+                rel: local_17 ? "noopener noreferrer" : undefined,
+                className: `${local_bd6a6a7b.portalButton} ${local_14.active ? local_bd6a6a7b.portalActive : ""} ${local_19 ? local_bd6a6a7b.active : ""}`,
+                title: "Ивент",
+                children: [
+                  symbol_084("img", {
+                    src: local_14.active
+                      ? "/assets/portal/portal-active.gif"
+                      : "./assets/portal-inactive.png",
+                    alt: "Ивент",
+                    className: local_bd6a6a7b.portalImage,
+                  }),
+                  symbol_084("span", {
+                    children: "Ивент",
+                  }),
+                ],
+              }),
               symbol_084(local_6ba9fd1a, {
                 href: "/notifications",
                 icon: symbol_084(local_d58fc756, {}),
@@ -21291,7 +21289,7 @@ function fn_872fd2bd({
 const local_c0a30487 = symbol_049(() =>
   symbol_051(
     () => import("./routes/voice-input.js"),
-    local_d3104e75([10, 11, 12]),
+    local_5a0466d5([10, 11, 12]),
   ).then((arg) => ({
     default: arg.VoiceInput,
   })),
@@ -22726,7 +22724,7 @@ const local_89a6df8b = {
 const local_b492dcb2 = symbol_049(() =>
   symbol_051(
     () => import("./routes/post-media-video.js"),
-    local_d3104e75([13, 14, 15]),
+    local_5a0466d5([13, 14, 15]),
   ).then((arg) => ({
     default: arg.PostMediaVideo,
   })),
@@ -26047,7 +26045,7 @@ function fn_82a21233({
 const local_b84ad31b = symbol_049(() =>
   symbol_051(
     () => import("./routes/report-modal.js"),
-    local_d3104e75([16, 17, 18]),
+    local_5a0466d5([16, 17, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -26415,7 +26413,7 @@ function fn_9fc7902c({
   });
 }
 const local_0da67384 = symbol_049(() =>
-  symbol_051(() => import("./routes/poll.js"), local_d3104e75([19, 20])).then(
+  symbol_051(() => import("./routes/poll.js"), local_5a0466d5([19, 20])).then(
     (arg) => ({
       default: arg.Poll,
     }),
@@ -26891,7 +26889,7 @@ const local_d0b5dd4d = {
 const local_22c6c85e = symbol_049(() =>
   symbol_051(
     () => import("./routes/voice-message.js"),
-    local_d3104e75([21, 11, 22]),
+    local_5a0466d5([21, 11, 22]),
   ).then((arg) => ({
     default: arg.VoiceMessage,
   })),
@@ -27579,7 +27577,7 @@ const local_a98795d7 = {
 const local_76950eb5 = symbol_049(() =>
   symbol_051(
     () => import("./routes/emoji-picker.js"),
-    local_d3104e75([23, 24]),
+    local_5a0466d5([23, 24]),
   ).then((arg) => ({
     default: arg.EmojiPicker,
   })),
@@ -27906,7 +27904,7 @@ function fn_1f04db66({
 const local_b84ad31b_2 = symbol_049(() =>
   symbol_051(
     () => import("./routes/report-modal.js"),
-    local_d3104e75([16, 17, 18]),
+    local_5a0466d5([16, 17, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -28322,7 +28320,7 @@ const local_13cf0331 = {
 const local_c65d5c43 = symbol_049(() =>
   symbol_051(
     () => import("./routes/drawing-canvas.js"),
-    local_d3104e75([25, 26]),
+    local_5a0466d5([25, 26]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -29122,7 +29120,7 @@ function fn_ba97fefe({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
     }),
   });
 }
-const local_6c84965c = ({ showCreateButton: arg = true }) => {
+const local_027f6a69 = ({ showCreateButton: arg = true }) => {
   const local = symbol_036();
   const local_2 = symbol_059();
   const local_3 = symbol_038();
@@ -29153,17 +29151,13 @@ const local_6c84965c = ({ showCreateButton: arg = true }) => {
         icon: local_1b669a11,
         href: "/shop",
       },
-      ...((local_4.active && local_4.url) || local.status === "allowed"
-        ? [
-            {
-              id: "event",
-              label: "Ивент",
-              icon: null,
-              href: local_8,
-              match: symbol_019.EVENT,
-            },
-          ]
-        : []),
+      {
+        id: "event",
+        label: "Ивент",
+        icon: null,
+        href: local_8,
+        match: symbol_019.EVENT,
+      },
       {
         id: "notifications",
         label: "Уведы",
@@ -30072,7 +30066,7 @@ export function fn_fc4aaebc({
 const local_e5f18eb8 = symbol_049(() =>
   symbol_051(
     () => import("./routes/image-viewer.js"),
-    local_d3104e75([27, 28, 6, 5, 29]),
+    local_5a0466d5([27, 28, 6, 5, 29]),
   ).then((arg) => ({
     default: arg.ImageViewer,
   })),
@@ -30126,7 +30120,7 @@ const local_7f4c2d94 = {
 const local_8e5652b5 = symbol_049(() =>
   symbol_051(
     () => import("./routes/auth-layout.js"),
-    local_d3104e75([30, 31]),
+    local_5a0466d5([30, 31]),
   ).then((arg) => ({
     default: arg.AuthLayout,
   })),
@@ -30213,10 +30207,10 @@ const local_24469600 = ({ children: arg }) => {
         children: [
           local_13 &&
             (local
-              ? symbol_084(local_6c84965c, {
+              ? symbol_084(local_027f6a69, {
                   showCreateButton: !local_12,
                 })
-              : symbol_084(local_33b48122, {})),
+              : symbol_084(local_71e5d1bb, {})),
           local_13 && !local && symbol_084(local_945b98e5, {}),
           symbol_084("div", {
             className: local_7f4c2d94.content,
@@ -31134,7 +31128,7 @@ const local_21249fe7 = (arg) => {
 const local_98d04132 = symbol_049(() =>
   symbol_051(
     () => import("./routes/global-video-player.js"),
-    local_d3104e75([32, 28, 14, 33]),
+    local_5a0466d5([32, 28, 14, 33]),
   ).then((arg) => ({
     default: arg.GlobalVideoPlayer,
   })),
@@ -31143,7 +31137,7 @@ fn_e1ec6bac();
 const local_3f597d55 = symbol_049(() =>
   symbol_051(
     () => import("./routes/hashtag.js"),
-    local_d3104e75([34, 6, 35]),
+    local_5a0466d5([34, 6, 35]),
   ).then((arg) => ({
     default: arg.Hashtag,
   })),
@@ -31151,7 +31145,7 @@ const local_3f597d55 = symbol_049(() =>
 const local_6f1b6ef7 = symbol_049(() =>
   symbol_051(
     () => import("./routes/profile.js"),
-    local_d3104e75([36, 37, 6, 1, 2, 38]),
+    local_5a0466d5([36, 37, 6, 1, 2, 38]),
   ).then((arg) => ({
     default: arg.Profile,
   })),
@@ -31159,7 +31153,7 @@ const local_6f1b6ef7 = symbol_049(() =>
 const local_dd51dc2e = symbol_049(() =>
   symbol_051(
     () => import("./routes/post-page.js"),
-    local_d3104e75([39, 6, 40]),
+    local_5a0466d5([39, 6, 40]),
   ).then((arg) => ({
     default: arg.PostPage,
   })),
@@ -31167,13 +31161,13 @@ const local_dd51dc2e = symbol_049(() =>
 const local_67ce3a09 = symbol_049(() =>
   symbol_051(
     () => import("./routes/notifications.js"),
-    local_d3104e75([41, 4, 37, 42]),
+    local_5a0466d5([41, 4, 37, 42]),
   ).then((arg) => ({
     default: arg.Notifications,
   })),
 );
 const local_da240d58 = symbol_049(() =>
-  symbol_051(() => import("./routes/search.js"), local_d3104e75([43, 44])).then(
+  symbol_051(() => import("./routes/search.js"), local_5a0466d5([43, 44])).then(
     (arg) => ({
       default: arg.Search,
     }),
@@ -31182,7 +31176,7 @@ const local_da240d58 = symbol_049(() =>
 const local_e757f6d6 = symbol_049(() =>
   symbol_051(
     () => import("./routes/shop-frame.js"),
-    local_d3104e75([45, 46]),
+    local_5a0466d5([45, 46]),
   ).then((arg) => ({
     default: arg.ShopFrame,
   })),
@@ -31190,7 +31184,7 @@ const local_e757f6d6 = symbol_049(() =>
 const local_2f6a7e7d = symbol_049(() =>
   symbol_051(
     () => import("./routes/event-frame.js"),
-    local_d3104e75([47, 48]),
+    local_5a0466d5([47, 48]),
   ).then((arg) => ({
     default: arg.EventFrame,
   })),
@@ -31229,7 +31223,7 @@ function fn_0c76ecb8({ children: arg }) {
 const local_d72873f9 = symbol_049(() =>
   symbol_051(
     () => import("./routes/delete-account.js"),
-    local_d3104e75([49, 6, 50]),
+    local_5a0466d5([49, 6, 50]),
   ).then((arg) => ({
     default: arg.DeleteAccount,
   })),
@@ -31237,7 +31231,7 @@ const local_d72873f9 = symbol_049(() =>
 const local_2e50693e = symbol_049(() =>
   symbol_051(
     () => import("./routes/terms.js"),
-    local_d3104e75([51, 6, 52]),
+    local_5a0466d5([51, 6, 52]),
   ).then((arg) => ({
     default: arg.Terms,
   })),
@@ -31245,7 +31239,7 @@ const local_2e50693e = symbol_049(() =>
 const local_9294a375 = symbol_049(() =>
   symbol_051(
     () => import("./routes/privacy.js"),
-    local_d3104e75([53, 6, 54]),
+    local_5a0466d5([53, 6, 54]),
   ).then((arg) => ({
     default: arg.Privacy,
   })),
@@ -31253,7 +31247,7 @@ const local_9294a375 = symbol_049(() =>
 const local_e631d126 = symbol_049(() =>
   symbol_051(
     () => import("./routes/cookies.js"),
-    local_d3104e75([55, 6, 56]),
+    local_5a0466d5([55, 6, 56]),
   ).then((arg) => ({
     default: arg.Cookies,
   })),
@@ -31261,7 +31255,7 @@ const local_e631d126 = symbol_049(() =>
 const local_7e8db683 = symbol_049(() =>
   symbol_051(
     () => import("./routes/external-link.js"),
-    local_d3104e75([57, 6, 3, 58]),
+    local_5a0466d5([57, 6, 3, 58]),
   ).then((arg) => ({
     default: arg.ExternalLink,
   })),
@@ -31269,7 +31263,7 @@ const local_7e8db683 = symbol_049(() =>
 const local_abff2b23 = symbol_049(() =>
   symbol_051(
     () => import("./routes/support.js"),
-    local_d3104e75([59, 6, 60]),
+    local_5a0466d5([59, 6, 60]),
   ).then((arg) => ({
     default: arg.Support,
   })),
@@ -31277,13 +31271,13 @@ const local_abff2b23 = symbol_049(() =>
 const local_258ec8ab = symbol_049(() =>
   symbol_051(
     () => import("./routes/child-safety.js"),
-    local_d3104e75([61, 6, 62]),
+    local_5a0466d5([61, 6, 62]),
   ).then((arg) => ({
     default: arg.ChildSafety,
   })),
 );
 const local_d0a4bb43 = symbol_049(() =>
-  symbol_051(() => import("./routes/event.js"), local_d3104e75([63, 64])).then(
+  symbol_051(() => import("./routes/event.js"), local_5a0466d5([63, 64])).then(
     (arg) => ({
       default: arg.Event,
     }),
@@ -31292,7 +31286,7 @@ const local_d0a4bb43 = symbol_049(() =>
 const local_842f5b5a = symbol_049(() =>
   symbol_051(
     () => import("./routes/subscription-terms.js"),
-    local_d3104e75([65, 66, 67, 6]),
+    local_5a0466d5([65, 66, 67, 6]),
   ).then((arg) => ({
     default: arg.SubscriptionTerms,
   })),
@@ -31300,7 +31294,7 @@ const local_842f5b5a = symbol_049(() =>
 const local_fc232288 = symbol_049(() =>
   symbol_051(
     () => import("./routes/recurring-terms.js"),
-    local_d3104e75([68, 66, 67, 6]),
+    local_5a0466d5([68, 66, 67, 6]),
   ).then((arg) => ({
     default: arg.RecurringTerms,
   })),
@@ -31308,7 +31302,7 @@ const local_fc232288 = symbol_049(() =>
 const local_0c023eb0 = symbol_049(() =>
   symbol_051(
     () => import("./routes/login.js"),
-    local_d3104e75([69, 70, 71, 72, 73, 74, 75]),
+    local_5a0466d5([69, 70, 71, 72, 73, 74, 75]),
   ).then((arg) => ({
     default: arg.Login,
   })),
@@ -31316,7 +31310,7 @@ const local_0c023eb0 = symbol_049(() =>
 const local_c56cfae5 = symbol_049(() =>
   symbol_051(
     () => import("./routes/register.js"),
-    local_d3104e75([76, 70, 71, 72, 73, 74, 77]),
+    local_5a0466d5([76, 70, 71, 72, 73, 74, 77]),
   ).then((arg) => ({
     default: arg.Register,
   })),
@@ -31324,7 +31318,7 @@ const local_c56cfae5 = symbol_049(() =>
 const local_90c62287 = symbol_049(() =>
   symbol_051(
     () => import("./routes/forgot-password.js"),
-    local_d3104e75([78, 70, 71, 74, 79]),
+    local_5a0466d5([78, 70, 71, 74, 79]),
   ).then((arg) => ({
     default: arg.ForgotPassword,
   })),
@@ -31332,7 +31326,7 @@ const local_90c62287 = symbol_049(() =>
 const local_ed3a5f6b = symbol_049(() =>
   symbol_051(
     () => import("./routes/reset-password.js"),
-    local_d3104e75([80, 74, 81]),
+    local_5a0466d5([80, 74, 81]),
   ).then((arg) => ({
     default: arg.ResetPassword,
   })),
@@ -31345,7 +31339,7 @@ const local_5926c003 = symbol_049(() =>
 const local_df5e24cd = symbol_049(() =>
   symbol_051(
     () => import("./routes/onboarding.js"),
-    local_d3104e75([82, 83]),
+    local_5a0466d5([82, 83]),
   ).then((arg) => ({
     default: arg.Onboarding,
   })),

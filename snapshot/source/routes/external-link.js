@@ -3,8 +3,8 @@ import {
   symbol_021 as imported_2,
   symbol_001 as imported_3,
 } from "../entry.js";
-import { I as imported_4 } from "../components/icon-chevron-left.js";
-import { I as imported_5 } from "../components/icon-info.js";
+import { I as imported_4 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
+import { I as imported_5 } from "../components/icon-info-cnv1-fsp-t-portal20261026.js";
 (function () {
   try {
     const local =

@@ -8,7 +8,7 @@ import {
   symbol_053 as imported_7,
   symbol_054 as imported_8,
 } from "../entry.js";
-import { V as imported_9 } from "../components/volume-glyph.js";
+import { V as imported_9 } from "../components/volume-glyph-qk2s26-sz-portal20261026.js";
 (function () {
   try {
     const local =

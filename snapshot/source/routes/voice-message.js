@@ -8,7 +8,10 @@ import {
   symbol_084 as imported_7,
   a4 as imported_8,
 } from "../entry.js";
-import { I as imported_9, a as imported_10 } from "../components/icon-play.js";
+import {
+  I as imported_9,
+  a as imported_10,
+} from "../components/icon-play-dvz-ak-tqd-portal20261026.js";
 (function () {
   try {
     const local =

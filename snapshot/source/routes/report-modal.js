@@ -7,7 +7,7 @@ import {
   symbol_014 as imported_6,
   symbol_088 as imported_7,
 } from "../entry.js";
-import { I as imported_8 } from "../components/icon-check-circle.js";
+import { I as imported_8 } from "../components/icon-check-circle-dbcn-e3nn-portal20261026.js";
 (function () {
   try {
     const local =

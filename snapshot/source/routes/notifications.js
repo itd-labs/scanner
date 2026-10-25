@@ -21,8 +21,8 @@ import {
   symbol_026 as imported_20,
   symbol_027 as imported_21,
 } from "../entry.js";
-import { I as imported_22 } from "../components/icon-notification-mention.js";
-import { I as imported_23 } from "../components/icon-check.js";
+import { I as imported_22 } from "../components/icon-notification-mention-bl-vye8-v-portal20261026.js";
+import { I as imported_23 } from "../components/icon-check-bs-no8q94-portal20261026.js";
 (function () {
   try {
     const local =

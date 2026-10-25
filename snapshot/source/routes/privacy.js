@@ -1,5 +1,5 @@
 import { symbol_084 as imported, symbol_001 as imported_2 } from "../entry.js";
-import { I as imported_3 } from "../components/icon-chevron-left.js";
+import { I as imported_3 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
 (function () {
   try {
     const local =

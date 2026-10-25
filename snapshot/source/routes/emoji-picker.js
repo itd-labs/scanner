@@ -123,7 +123,7 @@ const local_cc74e010 = (arg) => {
   };
 };
 let local_0a9fda83 = null;
-const local_d84aed9c = () => {
+const local_16efc0a4 = () => {
   const [local, local_2] = imported(local_0a9fda83);
   const [local_3, local_4] = imported(!local_0a9fda83);
   imported_2(() => {
@@ -133,7 +133,7 @@ const local_d84aed9c = () => {
     (async () => {
       try {
         const local = await imported_3(
-          () => import("../shared/emoji-data.js"),
+          () => import("../shared/emoji-data-cl-sjx-mk-portal20261026.js"),
           [],
         );
         const local_2 = local_cc74e010(local.default);
@@ -319,7 +319,7 @@ export const local_dba5fc49 = ({
     all: local_10,
     byCategory: local_11,
     isLoading: local_12,
-  } = local_d84aed9c();
+  } = local_16efc0a4();
   const {
     recentEmojis: local_13,
     addRecentEmoji: local_14,

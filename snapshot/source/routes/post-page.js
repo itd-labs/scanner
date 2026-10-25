@@ -16,7 +16,7 @@ import {
   symbol_004 as imported_15,
   symbol_074 as imported_16,
 } from "../entry.js";
-import { I as imported_17 } from "../components/icon-chevron-left.js";
+import { I as imported_17 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
 (function () {
   try {
     const local =

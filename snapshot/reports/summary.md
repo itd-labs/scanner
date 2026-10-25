@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `c5f7a39f8b6ef3203f4ba11d0b388cae2442a3495dd6f806f759a2f0dd6afedc`
+- Build fingerprint: `be5b5682ff7f1b448e354ee3c62900a91d50972ae35822052ddfd0faff97ce01`
 - Resources: 153
-- Downloaded bytes: 5404353
+- Downloaded bytes: 5407416
 - Sentry releases: `1.1.2`
 
 ## Routes
@@ -25,4 +25,4 @@ No changes.
 
 ## User-visible strings
 
-- Added: `Invalid event status`
+No changes.
