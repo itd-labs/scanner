@@ -1,79 +1,56 @@
 import {
-  a3 as imported,
-  symbol_041 as imported_2,
-  symbol_084 as imported_3,
-  symbol_028 as imported_4,
-  symbol_030 as imported_5,
-  symbol_067 as imported_6,
+  symbol_027 as imported,
+  symbol_048 as imported_2,
+  symbol_092 as imported_3,
+  symbol_018 as imported_4,
+  symbol_019 as imported_5,
+  symbol_075 as imported_6,
   symbol_003 as imported_7,
   symbol_014 as imported_8,
-  symbol_005 as imported_9,
+  symbol_091 as imported_9,
   symbol_029 as imported_10,
-  symbol_088 as imported_11,
-  z as imported_12,
-  symbol_042 as imported_13,
-  symbol_050 as imported_14,
+  symbol_086 as imported_11,
+  symbol_089 as imported_12,
+  symbol_049 as imported_13,
+  symbol_055 as imported_14,
   aU as imported_15,
-  a5 as imported_16,
-  symbol_053 as imported_17,
+  symbol_033 as imported_16,
+  aj as imported_17,
   aV as imported_18,
   symbol_002 as imported_19,
-  symbol_071 as imported_20,
-  a7 as imported_21,
-  symbol_080 as imported_22,
+  symbol_079 as imported_20,
+  symbol_035 as imported_21,
+  symbol_088 as imported_22,
   aW as imported_23,
-  symbol_027 as imported_24,
+  symbol_016 as imported_24,
   symbol_020 as imported_25,
   aX as imported_26,
   symbol_001 as imported_27,
-  symbol_006 as imported_28,
-  symbol_059 as imported_29,
-  symbol_009 as imported_30,
-  symbol_013 as imported_31,
+  symbol_093 as imported_28,
+  symbol_066 as imported_29,
+  symbol_096 as imported_30,
+  symbol_006 as imported_31,
   aY as imported_32,
-  aD as imported_33,
-  symbol_011 as imported_34,
-  a4 as imported_35,
-  a6 as imported_36,
-  symbol_018 as imported_37,
+  symbol_063 as imported_33,
+  symbol_097 as imported_34,
+  symbol_032 as imported_35,
+  symbol_034 as imported_36,
+  symbol_011 as imported_37,
   aZ as imported_38,
-  symbol_026 as imported_39,
-  symbol_063 as imported_40,
-  symbol_087 as imported_41,
-  symbol_065 as imported_42,
-  symbol_036 as imported_43,
-  symbol_043 as imported_44,
-  aJ as imported_45,
-  symbol_073 as useSettingsStore,
+  symbol_015 as imported_39,
+  symbol_070 as imported_40,
+  symbol_031 as imported_41,
+  symbol_073 as imported_42,
+  aH as imported_43,
+  symbol_050 as imported_44,
+  symbol_041 as imported_45,
+  symbol_081 as useSettingsStore,
 } from "../entry.js";
-import { C as imported_46 } from "../shared/index-bkpoiy5w-portal20261026.js";
-import { I as imported_47 } from "../components/icon-info-cnv1-fsp-t-portal20261026.js";
-import { I as imported_48 } from "../components/icon-notification-mention-bl-vye8-v-portal20261026.js";
-import { I as imported_49 } from "../components/icon-chevron-right-5-hi-tdjz-portal20261026.js";
-import { I as imported_50 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { symbol_001 as imported_46 } from "../shared/index-bkpoiy5w-portal20261026.js";
+import { I as imported_47 } from "../components/icon-info.js";
+import { I as imported_48 } from "../components/icon-notification-mention.js";
+import { I as imported_49 } from "../components/icon-chevron-right.js";
+import { I as imported_50 } from "../components/icon-chevron-left.js";
 const local_4942f276 = () => {
   if (
     typeof window !== "undefined" &&
@@ -359,7 +336,7 @@ const local_339f5c81 = {
   toggle: local_4e84fc10,
   active: local_6ab69625,
 };
-function fn_2f9ad32c({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
+function fn_604e178a({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
   const local = (arg) => {
     arg.stopPropagation();
     if (!arg_3) {
@@ -449,7 +426,7 @@ const local_3cccfc6a = {
   outline: local_29e5fdcf,
   errorText: local_bcebeb33,
 };
-function fn_619c4558({
+function fn_6eddad28({
   value: arg,
   onChange: arg_2,
   label: arg_3,
@@ -594,7 +571,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Текущий пароль",
             }),
-            imported_3(fn_619c4558, {
+            imported_3(fn_6eddad28, {
               type: "password",
               value: local,
               onChange: local_2,
@@ -615,7 +592,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Новый пароль",
             }),
-            imported_3(fn_619c4558, {
+            imported_3(fn_6eddad28, {
               type: "password",
               value: local_3,
               onChange: local_4,
@@ -640,7 +617,7 @@ export function fn_689a0068({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Подтверждение пароля",
             }),
-            imported_3(fn_619c4558, {
+            imported_3(fn_6eddad28, {
               type: "password",
               value: local_5,
               onChange: local_6,
@@ -1139,7 +1116,7 @@ const local_44247051 = imported_15(function (
               imported_3("div", {
                 className: local_b77a44cd.settingControl,
                 children: [
-                  imported_3(fn_619c4558, {
+                  imported_3(fn_6eddad28, {
                     value: local_20.name,
                     onChange: (arg) => local_30("name", arg),
                   }),
@@ -1175,7 +1152,7 @@ const local_44247051 = imported_15(function (
               imported_3("div", {
                 className: local_b77a44cd.settingControl,
                 children: [
-                  imported_3(fn_619c4558, {
+                  imported_3(fn_6eddad28, {
                     value: local_20.username,
                     onChange: (arg) => local_30("username", arg),
                   }),
@@ -1731,7 +1708,7 @@ function fn_b267a7cf(arg, arg_2) {
   }
   return local_2;
 }
-function fn_c243f318() {
+function fn_ea633388() {
   const local = imported_19(null);
   const local_2 = imported_19(null);
   const local_3 = imported_19({
@@ -1933,7 +1910,7 @@ function fn_36b21ae2(arg) {
   }
   return arg.type;
 }
-export function fn_7d234823({ isOpen: arg, onClose: arg_2 }) {
+export function fn_ef47f53c({ isOpen: arg, onClose: arg_2 }) {
   const local = imported_29();
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -2034,7 +2011,7 @@ export function fn_7d234823({ isOpen: arg, onClose: arg_2 }) {
       frameless: true,
       className: local_23034546.modal,
       children: [
-        imported_3(fn_c243f318, {}),
+        imported_3(fn_ea633388, {}),
         imported_3("div", {
           className: local_23034546.sub,
           children: [
@@ -2057,6 +2034,7 @@ export function fn_7d234823({ isOpen: arg, onClose: arg_2 }) {
                       children: [
                         imported_3(imported_30, {
                           src: local?.avatar || null,
+                          baseAvatar: local?.baseAvatar,
                           size: "sm",
                         }),
                         imported_3("div", {
@@ -2375,7 +2353,7 @@ function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
 const local_f06debfc_5 = 5;
-function fn_d6a8038b() {
+function fn_a51d642c() {
   const local = imported_10((arg) => arg.profile);
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -2790,7 +2768,7 @@ function fn_d6a8038b() {
           onConfirm: () => local_22(local_16),
           onClose: () => local_17(null),
         }),
-      imported_3(fn_7d234823, {
+      imported_3(fn_ef47f53c, {
         isOpen: local_6,
         onClose: () => {
           local_7(false);
@@ -2974,7 +2952,7 @@ function fn_db72d620(arg, arg_2, arg_3, arg_4) {
   }
   return arg_4;
 }
-function fn_4ca5e77a(arg) {
+function fn_cf9f817c(arg) {
   const local = new Date(arg).getTime();
   if (Number.isNaN(local)) {
     return "—";
@@ -3094,7 +3072,7 @@ function fn_2d43bd11({ type: arg }) {
       });
   }
 }
-function fn_18c5efb9({ onChangePassword: arg }) {
+function fn_849eb520({ onChangePassword: arg }) {
   const [local, local_2] = imported_6([]);
   const [local_3, local_4] = imported_6(true);
   const [local_5, local_6] = imported_6(null);
@@ -3248,7 +3226,7 @@ function fn_18c5efb9({ onChangePassword: arg }) {
                                       children: [
                                         fn_983517b5(arg),
                                         " · ",
-                                        fn_4ca5e77a(arg.lastUsedAt),
+                                        fn_cf9f817c(arg.lastUsedAt),
                                       ],
                                     }),
                                   ],
@@ -3457,7 +3435,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.webEnabled,
                 onChange: (arg) => local_14("webEnabled", arg),
               }),
@@ -3491,7 +3469,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.soundEnabled,
                 onChange: (arg) => local_14("soundEnabled", arg),
               }),
@@ -3534,7 +3512,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.follows,
                 onChange: (arg) => local_14("follows", arg),
               }),
@@ -3568,7 +3546,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.wallPosts,
                 onChange: (arg) => local_14("wallPosts", arg),
               }),
@@ -3612,7 +3590,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.reactions,
                 onChange: (arg) => local_14("reactions", arg),
               }),
@@ -3646,7 +3624,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.replies,
                 onChange: (arg) => local_14("replies", arg),
               }),
@@ -3680,7 +3658,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_2f9ad32c, {
+              imported_3(fn_604e178a, {
                 checked: local_4.mentions,
                 onChange: (arg) => local_14("mentions", arg),
               }),
@@ -3908,7 +3886,7 @@ const local_db92a3ab = imported_15(function (
                     ],
                   }),
                 }),
-                imported_3(fn_2f9ad32c, {
+                imported_3(fn_604e178a, {
                   checked: local.showLastSeen,
                   onChange: (arg) => local_27("showLastSeen", arg),
                 }),
@@ -4210,7 +4188,7 @@ function fn_a922827f() {
                           ],
                         }),
                       }),
-                      imported_3(fn_2f9ad32c, {
+                      imported_3(fn_604e178a, {
                         checked: local_20?.closed ?? false,
                         disabled: !local_20?.hasCurtains || local_12,
                         onChange: (arg) => {
@@ -4436,11 +4414,11 @@ export function fn_e2a8041b({ onClose: arg }) {
           onClose: arg,
         });
       case "payment":
-        return imported_3(fn_d6a8038b, {});
+        return imported_3(fn_a51d642c, {});
       case "appearance":
         return imported_3(fn_92ca2ba3, {});
       case "security":
-        return imported_3(fn_18c5efb9, {
+        return imported_3(fn_849eb520, {
           onChangePassword: () => local_9(true),
         });
       case "notifications":

@@ -1,39 +1,17 @@
 import {
-  symbol_084 as imported,
-  symbol_067 as imported_2,
+  symbol_092 as imported,
+  symbol_075 as imported_2,
   symbol_002 as imported_3,
-  symbol_080 as imported_4,
-  symbol_055 as imported_5,
-  symbol_056 as imported_6,
-  symbol_071 as imported_7,
-  symbol_006 as imported_8,
-  symbol_014 as imported_9,
-  symbol_020 as imported_10,
-  a4 as imported_11,
+  symbol_088 as imported_4,
+  symbol_061 as imported_5,
+  symbol_062 as imported_6,
+  symbol_079 as imported_7,
+  symbol_063 as imported_8,
+  symbol_093 as imported_9,
+  symbol_014 as imported_10,
+  symbol_020 as imported_11,
+  symbol_032 as imported_12,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_5ba4d0cb = ({ size: arg = 20 }) =>
   imported("svg", {
     width: arg,
@@ -332,82 +310,81 @@ function fn_b69a1496(arg, arg_2, arg_3) {
   };
 }
 const local_f06debfc_4 = 50;
-function fn_bc5b8eee(arg, arg_2, arg_3) {
-  const [local, local_2] = imported_2([]);
-  const [local_3, local_4] = imported_2(-1);
-  const local_5 = imported_3(-1);
-  local_5.current = local_3;
-  const local_6 = imported_4(() => {
+function fn_226a05fe(arg, arg_2, arg_3, arg_4) {
+  const local = imported_3([]);
+  const local_2 = imported_3(-1);
+  const [local_3, local_4] = imported_2({
+    index: -1,
+    length: 0,
+  });
+  const local_5 = imported_4(() => {
     const local = arg_2.current;
     const local_2 = arg.current;
     if (!local || !local_2) {
       return;
     }
-    const local_3 = local.getImageData(0, 0, local_2.width, local_2.height);
-    local_2((arg) => {
-      const local = arg.slice(0, local_5.current + 1);
-      local.push(local_3);
-      if (local.length > local_f06debfc_4) {
-        local.shift();
-      }
-      return local;
+    const local_3 = local.current.slice(0, local_2.current + 1);
+    local_3.push({
+      image: local.getImageData(0, 0, local_2.width, local_2.height),
+      extra: arg_4?.current,
     });
-    local_4((arg) => Math.min(arg + 1, local_f06debfc_4 - 1));
-  }, [arg, arg_2]);
-  const local_7 = imported_4(() => {
-    local_2((arg) => {
-      const local = local_5.current;
-      if (local <= 0) {
-        return arg;
-      }
+    if (local_3.length > local_f06debfc_4) {
+      local_3.shift();
+    }
+    local.current = local_3;
+    local_2.current = local_3.length - 1;
+    local_4({
+      index: local_2.current,
+      length: local_3.length,
+    });
+  }, [arg, arg_2, arg_4]);
+  const local_6 = imported_4(
+    (arg) => {
+      const local = local.current[arg];
       const local_2 = arg_2.current;
-      if (!local_2) {
-        return arg;
-      }
-      const local_3 = arg[local - 1];
-      if (local_3) {
-        local_2.putImageData(local_3, 0, 0);
-        local_5.current = local - 1;
-        local_4(local - 1);
+      if (!(!local || !local_2)) {
+        local_2.putImageData(local.image, 0, 0);
+        if (arg_4 && local.extra !== undefined) {
+          arg_4.current = local.extra;
+        }
+        local_2.current = arg;
+        local_4({
+          index: arg,
+          length: local.current.length,
+        });
         arg_3.current?.();
       }
-      return arg;
-    });
-  }, [arg_2, arg_3]);
-  const local_8 = imported_4(() => {
-    local_2((arg) => {
-      const local = local_5.current;
-      if (local >= arg.length - 1) {
-        return arg;
-      }
-      const local_2 = arg_2.current;
-      if (!local_2) {
-        return arg;
-      }
-      const local_3 = arg[local + 1];
-      if (local_3) {
-        local_2.putImageData(local_3, 0, 0);
-        local_5.current = local + 1;
-        local_4(local + 1);
-        arg_3.current?.();
-      }
-      return arg;
-    });
-  }, [arg_2, arg_3]);
-  const local_9 = imported_4((arg, arg_2) => {
-    const local = arg.getImageData(0, 0, arg_2.width, arg_2.height);
-    local_2([local]);
-    local_4(0);
-    local_5.current = 0;
-  }, []);
+    },
+    [arg_2, arg_3, arg_4],
+  );
+  const local_7 = imported_4(() => local_6(local_2.current - 1), [local_6]);
+  const local_8 = imported_4(() => local_6(local_2.current + 1), [local_6]);
+  const local_9 = imported_4(() => local_6(local_2.current), [local_6]);
+  const local_10 = imported_4(
+    (arg, arg_2) => {
+      local.current = [
+        {
+          image: arg.getImageData(0, 0, arg_2.width, arg_2.height),
+          extra: arg_4?.current,
+        },
+      ];
+      local_2.current = 0;
+      local_4({
+        index: 0,
+        length: 1,
+      });
+    },
+    [arg_4],
+  );
   return {
-    historyIndex: local_3,
-    canUndo: local_3 > 0,
-    canRedo: local_3 < local.length - 1,
-    saveToHistory: local_6,
+    historyIndex: local_3.index,
+    canUndo: local_3.index > 0,
+    canRedo: local_3.index < local_3.length - 1,
+    saveToHistory: local_5,
     undo: local_7,
     redo: local_8,
-    initHistory: local_9,
+    initHistory: local_10,
+    restoreCurrent: local_9,
   };
 }
 const local_93af662a = "c_modalContent";
@@ -477,7 +454,7 @@ const local_ad13562f = [
   "#00C7BE",
 ];
 const local_eeb70029 = [2, 4, 8, 12, 20, 32];
-const local_88d8904b = imported_5(function ({
+const local_bf7e5a2f = imported_5(function ({
   tool: arg,
   color: arg_2,
   brushSize: arg_3,
@@ -646,6 +623,14 @@ const local_88d8904b = imported_5(function ({
     ],
   });
 });
+function fn_1234d96b(arg, arg_2, arg_3, arg_4) {
+  if (arg.current) {
+    arg.current = false;
+    arg_2.current = null;
+    arg_3.current = null;
+    arg_4();
+  }
+}
 const local_d1058df2 = {
   post: {
     width: 800,
@@ -656,7 +641,7 @@ const local_d1058df2 = {
     height: 380,
   },
 };
-export function fn_f6067da6({
+export function fn_5ac499e9({
   isOpen: arg,
   onClose: arg_2,
   onSave: arg_3,
@@ -685,24 +670,27 @@ export function fn_f6067da6({
   const [local_15, local_16] = imported_2("#000000");
   const [local_17, local_18] = imported_2(4);
   const local_19 = imported_3(false);
-  const local_20 = imported_3(null);
-  const { width: local_21, height: local_22 } = local_d1058df2[arg_4];
+  const local_20 = imported_3([]);
+  const local_21 = imported_3(null);
+  const local_22 = imported_3(0);
+  const local_23 = imported_3(null);
+  const { width: local_24, height: local_25 } = local_d1058df2[arg_4];
   const {
-    zoom: local_23,
-    panOffset: local_24,
-    zoomRef: local_25,
-    panOffsetRef: local_26,
-    isPanningRef: local_27,
-    panStartRef: local_28,
-    pinchRef: local_29,
-    updateTransform: local_30,
-    zoomToPoint: local_31,
-    fitAndCenter: local_32,
-    zoomIn: local_33,
-    zoomOut: local_34,
-    zoomReset: local_35,
-  } = fn_b69a1496(local_9, local_21, local_22);
-  const local_36 = imported_4(() => {
+    zoom: local_26,
+    panOffset: local_27,
+    zoomRef: local_28,
+    panOffsetRef: local_29,
+    isPanningRef: local_30,
+    panStartRef: local_31,
+    pinchRef: local_32,
+    updateTransform: local_33,
+    zoomToPoint: local_34,
+    fitAndCenter: local_35,
+    zoomIn: local_36,
+    zoomOut: local_37,
+    zoomReset: local_38,
+  } = fn_b69a1496(local_9, local_24, local_25);
+  const local_39 = imported_4(() => {
     const local = local_8.current;
     const local_2 = local_10.current;
     if (!local || !local_2) {
@@ -715,8 +703,8 @@ export function fn_f6067da6({
     const local_4 = local_12.current;
     const local_5 = local.width / local_4;
     const local_6 = local.height / local_4;
-    const local_7 = local_25.current;
-    const local_8 = local_26.current;
+    const local_7 = local_28.current;
+    const local_8 = local_29.current;
     local_3.save();
     local_3.setTransform(local_4, 0, 0, local_4, 0, 0);
     local_3.clearRect(0, 0, local_5, local_6);
@@ -727,14 +715,14 @@ export function fn_f6067da6({
     local_3.shadowOffsetX = 0;
     local_3.shadowOffsetY = 4 / local_7;
     local_3.fillStyle = "#FFFFFF";
-    local_3.fillRect(0, 0, local_21, local_22);
+    local_3.fillRect(0, 0, local_24, local_25);
     local_3.shadowColor = "transparent";
     local_3.shadowBlur = 0;
     local_3.shadowOffsetY = 0;
     local_3.imageSmoothingEnabled = local_7 < 2;
-    local_3.drawImage(local_2, 0, 0, local_21, local_22);
+    local_3.drawImage(local_2, 0, 0, local_24, local_25);
     local_3.imageSmoothingEnabled = true;
-    const local_9 = local_20.current;
+    const local_9 = local_23.current;
     if (local_9) {
       local_3.strokeStyle = local_9.color;
       local_3.lineWidth = local_9.lineWidth;
@@ -761,18 +749,19 @@ export function fn_f6067da6({
       local_3.stroke();
     }
     local_3.restore();
-  }, [local_21, local_22]);
-  const local_37 = imported_3(local_36);
-  local_37.current = local_36;
+  }, [local_24, local_25]);
+  const local_40 = imported_3(local_39);
+  local_40.current = local_39;
   const {
-    saveToHistory: local_38,
-    undo: local_39,
-    redo: local_40,
-    canUndo: local_41,
-    canRedo: local_42,
-    initHistory: local_43,
-  } = fn_bc5b8eee(local_10, local_11, local_37);
-  const local_44 = local_32;
+    saveToHistory: local_41,
+    undo: local_42,
+    redo: local_43,
+    canUndo: local_44,
+    canRedo: local_45,
+    initHistory: local_46,
+    restoreCurrent: local_47,
+  } = fn_226a05fe(local_10, local_11, local_40, local_20);
+  const local_48 = local_35;
   imported_7(() => {
     if (!arg || !local_8.current || !local_9.current) {
       return;
@@ -785,8 +774,8 @@ export function fn_f6067da6({
     local.width = local_4.width * local_3;
     local.height = local_4.height * local_3;
     const local_5 = document.createElement("canvas");
-    local_5.width = local_21 * local_3;
-    local_5.height = local_22 * local_3;
+    local_5.width = local_24 * local_3;
+    local_5.height = local_25 * local_3;
     const local_6 = local_5.getContext("2d", {
       willReadFrequently: true,
     });
@@ -795,10 +784,13 @@ export function fn_f6067da6({
     }
     local_6.scale(local_3, local_3);
     local_6.fillStyle = "#FFFFFF";
-    local_6.fillRect(0, 0, local_21, local_22);
+    local_6.fillRect(0, 0, local_24, local_25);
     local_10.current = local_5;
     local_11.current = local_6;
-    local_43(local_6, local_5);
+    local_20.current = [];
+    local_21.current = null;
+    local_19.current = false;
+    local_46(local_6, local_5);
     let local_7 = true;
     const local_8 = new ResizeObserver((arg) => {
       for (const local of arg) {
@@ -807,15 +799,15 @@ export function fn_f6067da6({
           local.width = local * local_12.current;
           local.height = local_2 * local_12.current;
           if (local_7) {
-            const local = (local - 64) / local_21;
-            const local_2 = (local_2 - 64) / local_22;
+            const local = (local - 64) / local_24;
+            const local_2 = (local_2 - 64) / local_25;
             const local_3 = Math.max(local_f06debfc, Math.min(local, local_2));
-            local_30(local_3, {
-              x: (local - local_21 * local_3) / 2,
-              y: (local_2 - local_22 * local_3) / 2,
+            local_33(local_3, {
+              x: (local - local_24 * local_3) / 2,
+              y: (local_2 - local_25 * local_3) / 2,
             });
           }
-          local_37.current();
+          local_40.current();
         }
       }
     });
@@ -829,34 +821,53 @@ export function fn_f6067da6({
       local_10.current = null;
       local_11.current = null;
     };
-  }, [arg, local_21, local_22]);
+  }, [arg, local_24, local_25]);
   imported_7(() => {
-    local_36();
-  }, [local_23, local_24, local_36]);
-  const local_45 = imported_4((arg) => {
-    const local = local_8.current;
-    if (!local) {
+    local_39();
+  }, [local_26, local_27, local_39]);
+  const local_49 = imported_4(
+    (arg) => {
+      const local = local_8.current;
+      if (!local) {
+        return {
+          x: 0,
+          y: 0,
+        };
+      }
+      const local_2 = local.getBoundingClientRect();
+      let local_3;
+      let local_4;
+      if ("touches" in arg) {
+        local_3 = arg.touches[0].clientX;
+        local_4 = arg.touches[0].clientY;
+      } else {
+        local_3 = arg.clientX;
+        local_4 = arg.clientY;
+      }
+      const local_5 =
+        (local_3 - local_2.left - local_29.current.x) / local_28.current;
+      const local_6 =
+        (local_4 - local_2.top - local_29.current.y) / local_28.current;
+      if (arg_4 === "banner") {
+        return {
+          x:
+            Math.round(
+              Math.max(-2 * local_24, Math.min(3 * local_24, local_5)) * 100,
+            ) / 100,
+          y:
+            Math.round(
+              Math.max(-2 * local_25, Math.min(3 * local_25, local_6)) * 100,
+            ) / 100,
+        };
+      }
       return {
-        x: 0,
-        y: 0,
+        x: local_5,
+        y: local_6,
       };
-    }
-    const local_2 = local.getBoundingClientRect();
-    let local_3;
-    let local_4;
-    if ("touches" in arg) {
-      local_3 = arg.touches[0].clientX;
-      local_4 = arg.touches[0].clientY;
-    } else {
-      local_3 = arg.clientX;
-      local_4 = arg.clientY;
-    }
-    return {
-      x: (local_3 - local_2.left - local_26.current.x) / local_25.current,
-      y: (local_4 - local_2.top - local_26.current.y) / local_25.current,
-    };
-  }, []);
-  const local_46 = imported_4(
+    },
+    [local_24, local_25, arg_4],
+  );
+  const local_50 = imported_4(
     (arg) => {
       if (
         ("button" in arg && arg.button !== 0) ||
@@ -869,7 +880,26 @@ export function fn_f6067da6({
       if (!local) {
         return;
       }
-      const local_2 = local_45(arg);
+      const local_2 = local_49(arg);
+      if (arg_4 === "banner" && local_20.current.length >= 2000) {
+        imported_8.error(
+          "Рисунок слишком сложный. Упростите его перед сохранением",
+        );
+        return;
+      }
+      if (arg_4 === "banner") {
+        local_22.current = local_20.current.reduce(
+          (arg, arg_2) =>
+            arg + (arg_2.tool === "clear" ? 0 : arg_2.points.length),
+          0,
+        );
+        local_21.current = {
+          tool: local_13,
+          color: local_15,
+          width: local_17,
+          points: [[local_2.x, local_2.y]],
+        };
+      }
       local_19.current = true;
       if (local_13 === "brush" || local_13 === "eraser") {
         local.beginPath();
@@ -878,8 +908,10 @@ export function fn_f6067da6({
         local.lineJoin = "round";
         local.lineWidth = local_17;
         local.strokeStyle = local_13 === "eraser" ? "#FFFFFF" : local_15;
+        local.lineTo(local_2.x, local_2.y);
+        local.stroke();
       } else {
-        local_20.current = {
+        local_23.current = {
           start: local_2,
           current: local_2,
           tool: local_13,
@@ -888,15 +920,38 @@ export function fn_f6067da6({
         };
       }
     },
-    [local_13, local_15, local_17, local_45],
+    [local_13, local_15, local_17, local_49, arg_4],
   );
-  const local_47 = imported_4(
+  const local_51 = imported_4(
     (arg) => {
       if (!local_19.current || ("touches" in arg && arg.touches.length > 1)) {
         return;
       }
       arg.preventDefault();
-      const local = local_45(arg);
+      const local = local_49(arg);
+      const local_2 = local_21.current;
+      if (local_2) {
+        const local = [local.x, local.y];
+        if (local_13 === "brush" || local_13 === "eraser") {
+          local_2.points.push(local);
+        } else {
+          local_2.points = [local_2.points[0], local];
+        }
+        if (
+          arg_4 === "banner" &&
+          (local_2.points.length > 4096 ||
+            local_22.current + local_2.points.length > 60000)
+        ) {
+          local_19.current = false;
+          local_23.current = null;
+          local_21.current = null;
+          local_47();
+          imported_8.error(
+            "Штрих слишком сложный и не сохранён. Нарисуйте его несколькими частями",
+          );
+          return;
+        }
+      }
       if (local_13 === "brush" || local_13 === "eraser") {
         const local = local_11.current;
         if (!local) {
@@ -904,25 +959,25 @@ export function fn_f6067da6({
         }
         local.lineTo(local.x, local.y);
         local.stroke();
-        local_37.current();
+        local_40.current();
       } else {
-        if (local_20.current) {
-          local_20.current = {
-            ...local_20.current,
+        if (local_23.current) {
+          local_23.current = {
+            ...local_23.current,
             current: local,
           };
-          local_37.current();
+          local_40.current();
         }
       }
     },
-    [local_13, local_45],
+    [local_13, local_49, arg_4, local_47],
   );
-  const local_48 = imported_4(() => {
+  const local_52 = imported_4(() => {
     if (!local_19.current) {
       return;
     }
     local_19.current = false;
-    const local = local_20.current;
+    const local = local_23.current;
     if (local) {
       const local = local_11.current;
       if (local) {
@@ -950,20 +1005,42 @@ export function fn_f6067da6({
         }
         local.stroke();
       }
-      local_20.current = null;
+      local_23.current = null;
     }
-    local_38();
-    local_37.current();
-  }, [local_38]);
-  const local_49 = imported_3(local_47);
-  const local_50 = imported_3(local_48);
-  local_49.current = local_47;
-  local_50.current = local_48;
-  const local_51 = imported_4((arg) => {
+    const local_2 = local_21.current;
+    if (local_2) {
+      if (
+        !["brush", "eraser"].includes(local_2.tool) &&
+        local_2.points.length === 1
+      ) {
+        local_2.points.push(local_2.points[0]);
+      }
+      local_20.current = [...local_20.current, local_2];
+    }
+    local_21.current = null;
+    local_41();
+    local_40.current();
+  }, [local_41]);
+  const local_53 = imported_3(local_51);
+  const local_54 = imported_3(local_52);
+  local_53.current = local_51;
+  local_54.current = local_52;
+  const local_55 = imported_4(() => {
+    fn_1234d96b(local_19, local_21, local_23, local_47);
+  }, [local_47]);
+  const local_56 = imported_4(() => {
+    local_55();
+    local_42();
+  }, [local_55, local_42]);
+  const local_57 = imported_4(() => {
+    local_55();
+    local_43();
+  }, [local_55, local_43]);
+  const local_58 = imported_4((arg) => {
     if (arg.button === 1) {
       arg.preventDefault();
-      local_27.current = true;
-      local_28.current = {
+      local_30.current = true;
+      local_31.current = {
         x: arg.clientX,
         y: arg.clientY,
       };
@@ -974,28 +1051,28 @@ export function fn_f6067da6({
       return;
     }
     const local = (arg) => {
-      if (local_27.current) {
-        const local = arg.clientX - local_28.current.x;
-        const local_2 = arg.clientY - local_28.current.y;
-        local_28.current = {
+      if (local_30.current) {
+        const local = arg.clientX - local_31.current.x;
+        const local_2 = arg.clientY - local_31.current.y;
+        local_31.current = {
           x: arg.clientX,
           y: arg.clientY,
         };
-        const local_3 = local_26.current;
-        local_30(local_25.current, {
+        const local_3 = local_29.current;
+        local_33(local_28.current, {
           x: local_3.x + local,
           y: local_3.y + local_2,
         });
         return;
       }
-      local_49.current(arg);
+      local_53.current(arg);
     };
     const local_2 = () => {
-      if (local_27.current) {
-        local_27.current = false;
+      if (local_30.current) {
+        local_30.current = false;
         return;
       }
-      local_50.current();
+      local_54.current();
     };
     window.addEventListener("mousemove", local);
     window.addEventListener("mouseup", local_2);
@@ -1003,7 +1080,7 @@ export function fn_f6067da6({
       window.removeEventListener("mousemove", local);
       window.removeEventListener("mouseup", local_2);
     };
-  }, [arg, local_30]);
+  }, [arg, local_33]);
   imported_7(() => {
     if (!arg) {
       return;
@@ -1012,14 +1089,14 @@ export function fn_f6067da6({
       if ((arg.ctrlKey || arg.metaKey) && arg.key === "z") {
         arg.preventDefault();
         if (arg.shiftKey) {
-          local_40();
+          local_57();
         } else {
-          local_39();
+          local_56();
         }
       }
       if ((arg.ctrlKey || arg.metaKey) && arg.key === "y") {
         arg.preventDefault();
-        local_40();
+        local_57();
       }
       if (
         (arg.ctrlKey || arg.metaKey) &&
@@ -1033,11 +1110,11 @@ export function fn_f6067da6({
         const local_2 = local.getBoundingClientRect();
         const local_3 = local_2.width / 2;
         const local_4 = local_2.height / 2;
-        const local_5 = local_25.current;
+        const local_5 = local_28.current;
         const local_6 = Math.min(local_f06debfc_2, local_5 + local_f06debfc_3);
-        local_30(
+        local_33(
           local_6,
-          local_31(local_5, local_6, local_26.current, local_3, local_4),
+          local_34(local_5, local_6, local_29.current, local_3, local_4),
         );
       }
       if ((arg.ctrlKey || arg.metaKey) && arg.key === "-") {
@@ -1049,21 +1126,21 @@ export function fn_f6067da6({
         const local_2 = local.getBoundingClientRect();
         const local_3 = local_2.width / 2;
         const local_4 = local_2.height / 2;
-        const local_5 = local_25.current;
+        const local_5 = local_28.current;
         const local_6 = Math.max(local_f06debfc, local_5 - local_f06debfc_3);
-        local_30(
+        local_33(
           local_6,
-          local_31(local_5, local_6, local_26.current, local_3, local_4),
+          local_34(local_5, local_6, local_29.current, local_3, local_4),
         );
       }
       if ((arg.ctrlKey || arg.metaKey) && arg.key === "0") {
         arg.preventDefault();
-        local_44();
+        local_48();
       }
     };
     window.addEventListener("keydown", local);
     return () => window.removeEventListener("keydown", local);
-  }, [arg, local_39, local_40, local_30, local_31, local_44]);
+  }, [arg, local_56, local_57, local_33, local_34, local_48]);
   imported_7(() => {
     if (!arg) {
       return;
@@ -1078,7 +1155,7 @@ export function fn_f6067da6({
       const local_2 = arg.clientX - local.left;
       const local_3 = arg.clientY - local.top;
       if (arg.ctrlKey || arg.metaKey) {
-        const local = local_25.current;
+        const local = local_28.current;
         const local_2 = arg.deltaY > 0 ? -local_f06debfc_3 : local_f06debfc_3;
         const local_3 = Math.min(
           local_f06debfc_2,
@@ -1087,14 +1164,14 @@ export function fn_f6067da6({
         if (local_3 === local) {
           return;
         }
-        local_30(
+        local_33(
           local_3,
-          local_31(local, local_3, local_26.current, local_2, local_3),
+          local_34(local, local_3, local_29.current, local_2, local_3),
         );
       } else {
-        local_30(local_25.current, {
-          x: local_26.current.x - arg.deltaX,
-          y: local_26.current.y - arg.deltaY,
+        local_33(local_28.current, {
+          x: local_29.current.x - arg.deltaX,
+          y: local_29.current.y - arg.deltaY,
         });
       }
     };
@@ -1102,7 +1179,7 @@ export function fn_f6067da6({
       passive: false,
     });
     return () => local.removeEventListener("wheel", local_2);
-  }, [arg, local_30, local_31]);
+  }, [arg, local_33, local_34]);
   imported_7(() => {
     if (!arg) {
       return;
@@ -1116,14 +1193,14 @@ export function fn_f6067da6({
     const local_3 = (arg) => {
       if (arg.touches.length === 2) {
         arg.preventDefault();
-        if (local_19.current) {
-          local_19.current = false;
-          local_20.current = null;
-        }
+        local_19.current &&
+          (arg_4 === "banner"
+            ? local_54.current()
+            : ((local_19.current = false), (local_23.current = null)));
         const local = local.getBoundingClientRect();
         const local_2 = arg.touches[0];
         const local_3 = arg.touches[1];
-        local_29.current = {
+        local_32.current = {
           dist: local_2(local_2, local_3),
           midX: (local_2.clientX + local_3.clientX) / 2 - local.left,
           midY: (local_2.clientY + local_3.clientY) / 2 - local.top,
@@ -1131,7 +1208,7 @@ export function fn_f6067da6({
       }
     };
     const local_4 = (arg) => {
-      if (arg.touches.length === 2 && local_29.current) {
+      if (arg.touches.length === 2 && local_32.current) {
         arg.preventDefault();
         const local = local.getBoundingClientRect();
         const local_2 = arg.touches[0];
@@ -1139,26 +1216,26 @@ export function fn_f6067da6({
         const local_4 = local_2(local_2, local_3);
         const local_5 = (local_2.clientX + local_3.clientX) / 2 - local.left;
         const local_6 = (local_2.clientY + local_3.clientY) / 2 - local.top;
-        const local_7 = local_4 / local_29.current.dist;
-        const local_8 = local_25.current;
+        const local_7 = local_4 / local_32.current.dist;
+        const local_8 = local_28.current;
         const local_9 = Math.min(
           local_f06debfc_2,
           Math.max(local_f06debfc, local_8 * local_7),
         );
-        const local_10 = local_5 - local_29.current.midX;
-        const local_11 = local_6 - local_29.current.midY;
-        const local_12 = local_31(
+        const local_10 = local_5 - local_32.current.midX;
+        const local_11 = local_6 - local_32.current.midY;
+        const local_12 = local_34(
           local_8,
           local_9,
-          local_26.current,
-          local_29.current.midX,
-          local_29.current.midY,
+          local_29.current,
+          local_32.current.midX,
+          local_32.current.midY,
         );
-        local_30(local_9, {
+        local_33(local_9, {
           x: local_12.x + local_10,
           y: local_12.y + local_11,
         });
-        local_29.current = {
+        local_32.current = {
           dist: local_4,
           midX: local_5,
           midY: local_6,
@@ -1167,7 +1244,7 @@ export function fn_f6067da6({
     };
     const local_5 = (arg) => {
       if (arg.touches.length < 2) {
-        local_29.current = null;
+        local_32.current = null;
       }
     };
     local.addEventListener("touchstart", local_3, {
@@ -1184,25 +1261,40 @@ export function fn_f6067da6({
       local.removeEventListener("touchend", local_5);
       local.removeEventListener("touchcancel", local_5);
     };
-  }, [arg, local_30, local_31]);
-  const local_52 = imported_4(() => {
+  }, [arg, local_33, local_34, arg_4]);
+  const local_59 = imported_4(() => {
     const local = local_11.current;
     if (local) {
       local.fillStyle = "#FFFFFF";
-      local.fillRect(0, 0, local_21, local_22);
-      local_38();
-      local_37.current();
+      local.fillRect(0, 0, local_24, local_25);
+      local_20.current = [];
+      local_21.current = null;
+      local_23.current = null;
+      local_19.current = false;
+      local_41();
+      local_40.current();
     }
-  }, [local_21, local_22, local_38]);
-  const local_53 = async () => {
+  }, [local_24, local_25, local_41]);
+  const local_60 = async () => {
     const local = local_10.current;
     if (!local || local) {
       return;
     }
+    local_54.current();
     const local_2 = local.toDataURL("image/png");
     local_2(true);
     try {
-      await arg_3(local_2);
+      await arg_3(
+        local_2,
+        arg_4 === "banner"
+          ? {
+              version: 1,
+              width: local_24,
+              height: local_25,
+              ops: local_20.current,
+            }
+          : undefined,
+      );
       arg_2();
     } catch (error) {
       console.error("Failed to save drawing:", error);
@@ -1211,9 +1303,9 @@ export function fn_f6067da6({
     }
   };
   if (arg) {
-    return imported(imported_10, {
+    return imported(imported_11, {
       children: [
-        imported(imported_9, {
+        imported(imported_10, {
           onClose: arg_2,
           onBeforeClose: local_5,
           showHeader: false,
@@ -1222,35 +1314,35 @@ export function fn_f6067da6({
           children: imported("div", {
             className: local_f2bf345a.container,
             children: [
-              imported(local_88d8904b, {
+              imported(local_bf7e5a2f, {
                 tool: local_13,
                 color: local_15,
                 brushSize: local_17,
-                zoom: local_23,
-                canUndo: local_41,
-                canRedo: local_42,
+                zoom: local_26,
+                canUndo: local_44,
+                canRedo: local_45,
                 onToolChange: local_14,
                 onColorChange: local_16,
                 onBrushSizeChange: local_18,
-                onZoomIn: local_33,
-                onZoomOut: local_34,
-                onZoomReset: local_35,
-                onUndo: local_39,
-                onRedo: local_40,
-                onClear: local_52,
+                onZoomIn: local_36,
+                onZoomOut: local_37,
+                onZoomReset: local_38,
+                onUndo: local_56,
+                onRedo: local_57,
+                onClear: local_59,
               }),
               imported("div", {
                 ref: local_9,
                 className: local_f2bf345a.canvasContainer,
-                onMouseDown: local_51,
+                onMouseDown: local_58,
                 children: imported("canvas", {
                   ref: local_8,
                   className: local_f2bf345a.viewport,
-                  onMouseDown: local_46,
-                  onTouchStart: local_46,
-                  onTouchMove: local_47,
-                  onTouchEnd: local_48,
-                  onTouchCancel: local_48,
+                  onMouseDown: local_50,
+                  onTouchStart: local_50,
+                  onTouchMove: local_51,
+                  onTouchEnd: local_52,
+                  onTouchCancel: local_52,
                 }),
               }),
               imported("div", {
@@ -1264,11 +1356,11 @@ export function fn_f6067da6({
                   }),
                   imported("button", {
                     className: local_f2bf345a.saveButton,
-                    onClick: local_53,
+                    onClick: local_60,
                     disabled: local,
                     children: local
-                      ? imported(imported_10, {
-                          children: [imported(imported_11, {}), "Загрузка..."],
+                      ? imported(imported_11, {
+                          children: [imported(imported_12, {}), "Загрузка..."],
                         })
                       : arg_5 ||
                         (arg_4 === "banner"
@@ -1281,7 +1373,7 @@ export function fn_f6067da6({
           }),
         }),
         local_3 &&
-          imported_8(
+          imported_9(
             imported("div", {
               className: local_f2bf345a.confirmOverlay,
               onClick: local_7,

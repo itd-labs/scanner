@@ -1,41 +1,18 @@
 import {
-  symbol_067 as imported,
-  symbol_084 as imported_2,
+  symbol_075 as imported,
+  symbol_092 as imported_2,
   symbol_010 as imported_3,
   symbol_003 as imported_4,
   symbol_020 as imported_5,
-  symbol_005 as imported_6,
+  symbol_091 as imported_6,
   symbol_001 as imported_7,
-  symbol_088 as imported_8,
-  z as imported_9,
+  symbol_086 as imported_8,
+  symbol_089 as imported_9,
 } from "../entry.js";
 import {
   I as imported_10,
   a as imported_11,
-} from "../components/icon-eye-off-onz-fzvhn-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+} from "../components/icon-eye-off.js";
 const local_adb43aea = "c_container";
 const local_3f8170c1 = "c_logo";
 const local_7ab56d01 = "c_form";
@@ -74,7 +51,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_d14fc4ac = (arg) => {
+export const local_a429543d = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -286,4 +263,4 @@ export const local_d14fc4ac = (arg) => {
     }),
   });
 };
-export { local_d14fc4ac as default };
+export { local_a429543d as default };

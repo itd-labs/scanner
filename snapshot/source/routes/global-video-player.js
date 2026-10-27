@@ -1,38 +1,15 @@
 import {
   symbol_002 as imported,
-  symbol_080 as imported_2,
-  symbol_084 as imported_3,
-  symbol_046 as imported_4,
-  symbol_006 as imported_5,
-  symbol_067 as imported_6,
-  symbol_071 as imported_7,
-  symbol_047 as imported_8,
+  symbol_088 as imported_2,
+  symbol_092 as imported_3,
+  symbol_051 as imported_4,
+  symbol_093 as imported_5,
+  symbol_075 as imported_6,
+  symbol_079 as imported_7,
+  symbol_052 as imported_8,
 } from "../entry.js";
-import { u as imported_9 } from "../shared/use-body-scroll-lock-dkg5-ym-lv-portal20261026.js";
-import { V as imported_10 } from "../components/volume-glyph-qk2s26-sz-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { u as imported_9 } from "../shared/use-body-scroll-lock.js";
+import { V as imported_10 } from "../components/volume-glyph.js";
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";
@@ -43,7 +20,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_736b4603({
+function fn_0de446cb({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -162,7 +139,7 @@ const local_2ba33e70 = {
 const local_f06debfc = 280;
 const local_b45f1b6a = "cubic-bezier(0.32, 0.72, 0, 1)";
 const local_a3e1b3a5 = [0.5, 1, 1.5, 2];
-function fn_53f06a90(arg) {
+function fn_51299c59(arg) {
   if (!isFinite(arg) || arg < 0) {
     return "0:00";
   }
@@ -196,7 +173,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_d7d28625,
+      fn_cb675dac,
       {
         options: local_2,
         onUnmount: local_4,
@@ -206,7 +183,7 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_d7d28625({ options: arg, onUnmount: arg_2 }) {
+function fn_cb675dac({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
@@ -684,9 +661,9 @@ function fn_d7d28625({ options: arg, onUnmount: arg_2 }) {
               imported_3("span", {
                 className: local_2ba33e70.time,
                 children: [
-                  fn_53f06a90(local_7),
+                  fn_51299c59(local_7),
                   "../site/index.html",
-                  fn_53f06a90(local_9),
+                  fn_51299c59(local_9),
                 ],
               }),
               imported_3("button", {
@@ -705,7 +682,7 @@ function fn_d7d28625({ options: arg, onUnmount: arg_2 }) {
                 children: [
                   imported_3("div", {
                     className: local_2ba33e70.volumeSlider,
-                    children: imported_3(fn_736b4603, {
+                    children: imported_3(fn_0de446cb, {
                       value: local_13 ? 0 : local_11,
                       onChange: local_37,
                       onDragStart: () => {

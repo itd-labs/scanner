@@ -1,34 +1,11 @@
 import {
   symbol_029 as imported,
-  symbol_067 as imported_2,
-  symbol_084 as imported_3,
+  symbol_075 as imported_2,
+  symbol_092 as imported_3,
   symbol_003 as imported_4,
   symbol_001 as imported_5,
 } from "../entry.js";
-import { I as imported_6 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_6 } from "../components/icon-chevron-left.js";
 const local_87ee5215 = "c_legal";
 const local_85b1b822 = "c_backButton";
 const local_9d9cf508 = "c_title";

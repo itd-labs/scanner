@@ -1,55 +1,32 @@
-const local_605932fe = (
+const local_e016d005 = (
   arg,
-  arg_2 = local_605932fe,
+  arg_2 = local_e016d005,
   arg_3 = arg_2.f ||
     (arg_2.f = [
-      "./emoji-picker.js",
-      "../entry.js",
-      "../entry.css",
-      "./emoji-picker.css",
+      "assets/unresolved-001.js",
+      "assets/unresolved-002.js",
+      "assets/unresolved-003.css",
+      "assets/unresolved-004.css",
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_084 as imported,
-  symbol_067 as imported_2,
+  symbol_092 as imported,
+  symbol_075 as imported_2,
   symbol_002 as imported_3,
   symbol_029 as imported_4,
-  symbol_080 as imported_5,
-  symbol_006 as imported_6,
+  symbol_088 as imported_5,
+  symbol_093 as imported_6,
   symbol_003 as imported_7,
-  symbol_048 as imported_8,
-  symbol_049 as imported_9,
+  symbol_053 as imported_8,
+  symbol_054 as imported_9,
   symbol_020 as imported_10,
-  a7 as imported_11,
+  symbol_035 as imported_11,
   symbol_001 as imported_12,
-  symbol_088 as imported_13,
-  symbol_050 as imported_14,
-  z as imported_15,
-  symbol_051 as imported_16,
+  symbol_086 as imported_13,
+  symbol_055 as imported_14,
+  symbol_089 as imported_15,
+  symbol_056 as imported_16,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_fb418fb7 = "c_stepper";
 const local_2d2dc45b = "c_track";
 const local_c6284533 = "c_progress";
@@ -62,7 +39,7 @@ const local_fcd1eed3 = {
   step: local_cd89e6b9,
   active: local_6ab69625,
 };
-function fn_753e19e1({
+function fn_3f20f804({
   steps: arg,
   currentStep: arg_2,
   onStepClick: arg_3,
@@ -150,12 +127,12 @@ const local_1edc2ace = {
 const local_968eaf70 = imported_9(() =>
   imported_16(
     () => import("./emoji-picker.js"),
-    local_605932fe([0, 1, 2, 3]),
+    local_e016d005([0, 1, 2, 3]),
   ).then((arg) => ({
     default: arg.EmojiPicker,
   })),
 );
-export const local_c29eface = (arg) => {
+export const local_952156e4 = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -340,7 +317,7 @@ export const local_c29eface = (arg) => {
                 }),
               ],
             }),
-            imported(fn_753e19e1, {
+            imported(fn_3f20f804, {
               steps: 2,
               currentStep: local,
               onStepClick: local_29,
@@ -517,4 +494,4 @@ export const local_c29eface = (arg) => {
     ],
   });
 };
-export { local_c29eface as default };
+export { local_952156e4 as default };

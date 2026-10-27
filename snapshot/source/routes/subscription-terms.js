@@ -1,29 +1,6 @@
-import { symbol_084 as imported, symbol_001 as imported_2 } from "../entry.js";
-import { symbol_001 as imported_3 } from "../shared/subscription-terms-module-b4mno-yom-portal20261026.js";
-import { I as imported_4 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { symbol_092 as imported, symbol_001 as imported_2 } from "../entry.js";
+import { symbol_001 as imported_3 } from "../shared/subscription-terms-module.js";
+import { I as imported_4 } from "../components/icon-chevron-left.js";
 export function fn_c8dece42(arg) {
   const local = () => {
     if (window.history.length > 1) {

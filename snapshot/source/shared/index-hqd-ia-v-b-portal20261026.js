@@ -1,53 +1,30 @@
 import {
   symbol_002 as imported,
-  symbol_067 as imported_2,
-  symbol_080 as imported_3,
-  symbol_026 as socialApi,
-  symbol_071 as imported_4,
-  symbol_025 as imported_5,
-  a5 as imported_6,
+  symbol_075 as imported_2,
+  symbol_088 as imported_3,
+  symbol_015 as socialApi,
+  symbol_079 as imported_4,
+  symbol_013 as imported_5,
+  symbol_033 as imported_6,
   symbol_029 as imported_7,
   symbol_001 as imported_8,
-  symbol_084 as imported_9,
-  symbol_027 as imported_10,
-  symbol_009 as imported_11,
+  symbol_092 as imported_9,
+  symbol_016 as imported_10,
+  symbol_096 as imported_11,
   symbol_022 as imported_12,
   symbol_003 as imported_13,
-  a6 as imported_14,
+  symbol_034 as imported_14,
   symbol_014 as imported_15,
-  symbol_045 as UnfollowConfirmModal,
-  a7 as profileApi,
-  a8 as useFollowStatus,
-  a9 as useFollowStatusStore,
-  symbol_044 as useFollowUser,
+  a9 as UnfollowConfirmModal,
+  symbol_035 as profileApi,
+  symbol_036 as useFollowStatus,
+  a7 as useFollowStatusStore,
+  a8 as useFollowUser,
 } from "../entry.js";
-import { I as imported_16 } from "../components/icon-check-bs-no8q94-portal20261026.js";
+import { I as imported_16 } from "../components/icon-check.js";
 import { VerificationModal } from "./index-q-tv-tful4-portal20261026.js";
-import "../components/icon-check-circle-dbcn-e3nn-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
-export function fn_66c2d60a(arg, arg_2) {
+import "../components/icon-check-circle.js";
+export function fn_a8323ee1(arg, arg_2) {
   const local = imported(null);
   const local_2 = `${arg || "me"}-${arg_2}`;
   const [local_3, local_4] = imported_2([]);
@@ -241,7 +218,7 @@ const local_e1f3b173 = {
   empty: local_119f77f9,
   loadMoreSentinel: local_ef501043,
 };
-export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
+export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
   const { closeModal: local } = imported_6();
   const local_2 = imported_7((arg) => arg.profile?.id);
   const {
@@ -253,7 +230,7 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
     userFollowStatus: local_8,
     loadingFollowIds: local_9,
     handleToggleFollow: local_10,
-  } = fn_66c2d60a(arg, arg_2);
+  } = fn_a8323ee1(arg, arg_2);
   const [local_11, local_12] = imported_2(new Map());
   const [local_13, local_14] = imported_2(new Set());
   const local_15 = arg_2 === "pending-incoming";
@@ -365,12 +342,14 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                           imported_9(imported_11, {
                             src: arg.avatar,
                             size: "md",
+                            halloween: arg.halloween,
                           }),
                           imported_9("div", {
                             className: local_e1f3b173.userInfo,
                             children: [
                               imported_9(imported_12, {
                                 userId: arg.userId,
+                                halloween: arg.halloween,
                                 name: arg.displayName,
                                 verified: arg.isVerified,
                                 pin: arg.pin,
@@ -436,12 +415,14 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                           imported_9(imported_11, {
                             src: arg.avatar,
                             size: "md",
+                            halloween: arg.halloween,
                           }),
                           imported_9("div", {
                             className: local_e1f3b173.userInfo,
                             children: [
                               imported_9(imported_12, {
                                 userId: arg.userId,
+                                halloween: arg.halloween,
                                 name: arg.displayName,
                                 verified: arg.isVerified,
                                 pin: arg.pin,
@@ -482,12 +463,14 @@ export function fn_d92766cf({ userId: arg, type: arg_2, title: arg_3 }) {
                         imported_9(imported_11, {
                           src: arg.avatar,
                           size: "md",
+                          halloween: arg.halloween,
                         }),
                         imported_9("div", {
                           className: local_e1f3b173.userInfo,
                           children: [
                             imported_9(imported_12, {
                               userId: arg.userId,
+                              halloween: arg.halloween,
                               name: arg.displayName,
                               verified: arg.isVerified,
                               pin: arg.pin,

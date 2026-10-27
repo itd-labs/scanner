@@ -1,33 +1,10 @@
 import {
-  symbol_067 as imported,
-  symbol_006 as imported_2,
-  symbol_084 as imported_3,
+  symbol_075 as imported,
+  symbol_093 as imported_2,
+  symbol_092 as imported_3,
   symbol_003 as imported_4,
   symbol_014 as imported_5,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_4d84dbb6 = "c_content";
 const local_9d9cf508 = "c_title";
 const local_8c84ac4c = "c_subtitle";
@@ -38,7 +15,7 @@ const local_960709d8 = {
   subtitle: local_8c84ac4c,
   actions: local_8c4f8b4b,
 };
-export function fn_a0e3d540({
+function symbol_001({
   title: arg,
   message: arg_2,
   confirmText: arg_3 = "Подтвердить",
@@ -103,3 +80,4 @@ export function fn_a0e3d540({
     document.body,
   );
 }
+export { symbol_001 };

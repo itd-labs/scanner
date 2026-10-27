@@ -1,10 +1,10 @@
 import {
-  symbol_067 as imported,
+  symbol_075 as imported,
   symbol_029 as imported_2,
-  symbol_080 as imported_3,
-  symbol_088 as imported_4,
-  z as imported_5,
-  symbol_084 as imported_6,
+  symbol_088 as imported_3,
+  symbol_086 as imported_4,
+  symbol_089 as imported_5,
+  symbol_092 as imported_6,
   symbol_010 as imported_7,
   symbol_003 as imported_8,
   symbol_020 as imported_9,
@@ -14,30 +14,7 @@ import { symbol_001 as imported_11 } from "../shared/index-df-ak-iq-portal202610
 import {
   I as imported_12,
   a as imported_13,
-} from "../components/icon-eye-off-onz-fzvhn-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+} from "../components/icon-eye-off.js";
 const local_12bca483 =
   "От 8 до 100 символов, хотя бы одна латинская буква и одна цифра.";
 function fn_fa99ef8c(arg) {
@@ -101,7 +78,7 @@ const local_66259d24 = {
   submitButton: local_7149ec44,
   loginLink: local_8ed84883,
 };
-export const local_b5f78787 = (arg) => {
+export const local_dceeaa65 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -354,4 +331,4 @@ export const local_b5f78787 = (arg) => {
     ],
   });
 };
-export { local_b5f78787 as default };
+export { local_dceeaa65 as default };

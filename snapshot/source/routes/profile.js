@@ -1,122 +1,100 @@
-const local_a64a5df6 = (
+const local_bc333837 = (
   arg,
-  arg_2 = local_a64a5df6,
+  arg_2 = local_bc333837,
   arg_3 = arg_2.f ||
     (arg_2.f = [
-      "./subscription-modal.js",
-      "../entry.js",
-      "../entry.css",
-      "../shared/index-bkpoiy5w-portal20261026.js",
-      "../shared/index-bkpoiy5w-portal20261026.css",
-      "../components/icon-info-cnv1-fsp-t-portal20261026.js",
-      "../components/icon-notification-mention-bl-vye8-v-portal20261026.js",
-      "../components/icon-chevron-right-5-hi-tdjz-portal20261026.js",
-      "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js",
-      "./subscription-modal.css",
-      "./drawing-canvas.js",
-      "./drawing-canvas.css",
-      "../shared/index-q-tv-tful4-portal20261026.js",
-      "../components/icon-check-circle-dbcn-e3nn-portal20261026.js",
-      "../shared/index-q-tv-tful4-portal20261026.css",
-      "./report-modal.js",
-      "./report-modal.css",
-      "../shared/index-hqd-ia-v-b-portal20261026.js",
-      "../components/icon-check-bs-no8q94-portal20261026.js",
-      "../shared/index-hqd-ia-v-b-portal20261026.css",
+      "assets/unresolved-001.js",
+      "assets/unresolved-002.js",
+      "assets/unresolved-003.css",
+      "assets/unresolved-004.js",
+      "assets/unresolved-005.css",
+      "assets/IconInfo.js",
+      "assets/IconNotificationMention.js",
+      "assets/IconChevronRight.js",
+      "assets/IconChevronLeft.js",
+      "assets/unresolved-006.css",
+      "assets/unresolved-007.js",
+      "assets/unresolved-008.css",
+      "assets/unresolved-009.js",
+      "assets/IconCheckCircle.js",
+      "assets/unresolved-010.css",
+      "assets/unresolved-011.js",
+      "assets/unresolved-012.css",
+      "assets/unresolved-013.js",
+      "assets/IconCheck.js",
+      "assets/unresolved-014.css",
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_084 as imported,
-  symbol_009 as imported_2,
+  symbol_092 as imported,
+  symbol_096 as imported_2,
   symbol_003 as imported_3,
   symbol_014 as imported_4,
-  symbol_057 as imported_5,
-  symbol_058 as imported_6,
+  symbol_064 as imported_5,
+  symbol_065 as imported_6,
   aq as imported_7,
   ar as imported_8,
-  symbol_067 as imported_9,
-  symbol_059 as imported_10,
-  symbol_048 as imported_11,
-  symbol_049 as imported_12,
+  symbol_075 as imported_9,
+  symbol_066 as imported_10,
+  symbol_053 as imported_11,
+  symbol_054 as imported_12,
   symbol_020 as imported_13,
-  symbol_051 as imported_14,
-  symbol_011 as imported_15,
+  symbol_056 as imported_14,
+  symbol_097 as imported_15,
   symbol_002 as imported_16,
-  symbol_071 as imported_17,
-  symbol_060 as imported_18,
-  symbol_061 as imported_19,
-  symbol_047 as imported_20,
-  symbol_080 as imported_21,
-  symbol_062 as imported_22,
-  symbol_063 as imported_23,
-  ax as imported_24,
-  symbol_064 as imported_25,
+  symbol_079 as imported_17,
+  symbol_067 as imported_18,
+  symbol_068 as imported_19,
+  symbol_052 as imported_20,
+  symbol_088 as imported_21,
+  symbol_069 as imported_22,
+  symbol_070 as imported_23,
+  symbol_071 as imported_24,
+  symbol_072 as imported_25,
   az as imported_26,
-  symbol_033 as imported_27,
+  symbol_037 as imported_27,
   aB as imported_28,
-  symbol_034 as imported_29,
-  symbol_006 as imported_30,
+  symbol_038 as imported_29,
+  symbol_093 as imported_30,
   symbol_001 as imported_31,
-  aD as imported_32,
-  a5 as imported_33,
-  symbol_087 as imported_34,
-  symbol_035 as imported_35,
-  a6 as imported_36,
-  aF as imported_37,
-  aG as imported_38,
-  symbol_088 as imported_39,
-  aH as imported_40,
-  symbol_036 as imported_41,
-  a7 as imported_42,
-  symbol_076 as imported_43,
-  aJ as imported_44,
-  symbol_056 as imported_45,
-  aK as imported_46,
-  symbol_037 as imported_47,
+  symbol_063 as imported_32,
+  symbol_033 as imported_33,
+  symbol_031 as imported_34,
+  symbol_039 as imported_35,
+  symbol_034 as imported_36,
+  symbol_040 as imported_37,
+  aF as imported_38,
+  symbol_086 as imported_39,
+  aG as imported_40,
+  aH as imported_41,
+  symbol_035 as imported_42,
+  symbol_084 as imported_43,
+  symbol_041 as imported_44,
+  symbol_062 as imported_45,
+  aJ as imported_46,
+  aK as imported_47,
   symbol_022 as imported_48,
-  symbol_079 as imported_49,
+  symbol_087 as imported_49,
   symbol_029 as imported_50,
-  symbol_065 as imported_51,
-  aM as imported_52,
-  symbol_026 as imported_53,
-  symbol_053 as imported_54,
-  symbol_038 as imported_55,
-  symbol_045 as imported_56,
-  aO as imported_57,
-  symbol_021 as imported_58,
-  symbol_039 as imported_59,
-  aQ as imported_60,
-  symbol_040 as imported_61,
-  symbol_023 as imported_62,
-  symbol_068 as imported_63,
-  symbol_066 as imported_64,
+  symbol_042 as imported_51,
+  symbol_073 as imported_52,
+  symbol_043 as imported_53,
+  symbol_015 as imported_54,
+  aj as imported_55,
+  symbol_044 as imported_56,
+  a9 as imported_57,
+  symbol_045 as imported_58,
+  symbol_021 as imported_59,
+  symbol_046 as imported_60,
+  aQ as imported_61,
+  symbol_047 as imported_62,
+  symbol_023 as imported_63,
+  symbol_076 as imported_64,
+  symbol_074 as imported_65,
 } from "../entry.js";
-import { I as imported_65 } from "../components/icon-check-bs-no8q94-portal20261026.js";
-import { I as imported_66 } from "../components/icon-chevron-left-dwlxrxw-s-portal20261026.js";
-import { C as imported_67 } from "../shared/index-bkpoiy5w-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_66 } from "../components/icon-check.js";
+import { I as imported_67 } from "../components/icon-chevron-left.js";
+import { symbol_001 as imported_68 } from "../shared/index-bkpoiy5w-portal20261026.js";
 const local_e67a7b1e = ({ size: arg = 24 }) =>
   imported("svg", {
     width: arg,
@@ -325,7 +303,7 @@ function fn_0f3f04de(arg, arg_2, arg_3, arg_4) {
   }
   return arg_4;
 }
-function fn_7dc01f3c(arg) {
+function fn_f3850f21(arg) {
   if (!arg) {
     return null;
   }
@@ -408,7 +386,7 @@ function fn_312ee776({
 const local_64782940 = imported_12(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_a64a5df6([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
+    local_bc333837([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -464,7 +442,7 @@ function fn_5d3ea10e({
       children: arg_2
         ? imported(imported_13, {
             children: [
-              imported(imported_65, {
+              imported(imported_66, {
                 size: 18,
               }),
               "Вы подписаны",
@@ -587,7 +565,7 @@ function fn_e44fd459(arg, arg_2, arg_3, arg_4) {
   arg.drawImage(arg_2, -arg_4 / 2, -arg_4 / 2, arg_4, arg_4);
   arg.restore();
 }
-function fn_0a9872b8({ asset: arg, id: arg_2, stage: arg_3 }) {
+function fn_0bf2498a({ asset: arg, id: arg_2, stage: arg_3 }) {
   const local = imported_16(null);
   imported_17(() => {
     if (arg_3 <= 0 || !local.current) {
@@ -933,7 +911,7 @@ function fn_1dd73c40(arg) {
   }
   return local ?? null;
 }
-function fn_2c162465({
+function fn_5f2662c9({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -1368,7 +1346,7 @@ function fn_2c162465({
               "aria-hidden": "true",
               children:
                 arg.kind === "sticker"
-                  ? imported(fn_0a9872b8, {
+                  ? imported(fn_0bf2498a, {
                       asset: arg.asset,
                       id: arg.id,
                       stage: arg.wear.stage,
@@ -1409,7 +1387,7 @@ function fn_2c162465({
                 className: local_c642bb00.curtainBack,
                 onClick: local_29,
                 "aria-label": "Вернуться назад",
-                children: imported(imported_66, {
+                children: imported(imported_67, {
                   size: 24,
                 }),
               }),
@@ -1653,7 +1631,7 @@ function fn_75d71f4e(arg) {
   }
   return "Не удалось подтвердить размещение. Повторите тем же предметом.";
 }
-function fn_29aed5a3({
+function fn_e0465310({
   profileId: arg,
   profileUsername: arg_2,
   ownProfile: arg_3 = false,
@@ -1972,7 +1950,7 @@ function fn_29aed5a3({
   };
   const local_35 = (arg) => {
     local_26(
-      imported(imported_67, {
+      imported(imported_68, {
         title: "Стереть наклейку?",
         message:
           "Будет использован один ластик. Наклейка исчезнет после третьего стирания.",
@@ -2495,7 +2473,7 @@ const local_464a8bbc = (arg) => {
     color: "#f26b6b",
   };
 };
-function fn_bbe0bf5e({
+function fn_abcf42b7({
   value: arg,
   profileUsername: arg_2,
   compact: arg_3 = false,
@@ -2616,7 +2594,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_3f070292({
+function fn_e705e466({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2904,7 +2882,7 @@ function fn_3f070292({
 const local_06128897 = imported_12(() =>
   imported_14(
     () => import("./drawing-canvas.js"),
-    local_a64a5df6([10, 1, 2, 11]),
+    local_bc333837([10, 1, 2, 11]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -2912,7 +2890,7 @@ const local_06128897 = imported_12(() =>
 const local_e399251c = imported_12(() =>
   imported_14(
     () => import("../shared/index-q-tv-tful4-portal20261026.js"),
-    local_a64a5df6([12, 1, 2, 13, 14]),
+    local_bc333837([12, 1, 2, 13, 14]),
   ).then((arg) => ({
     default: arg.VerificationModal,
   })),
@@ -2920,7 +2898,7 @@ const local_e399251c = imported_12(() =>
 const local_f8603183 = imported_12(() =>
   imported_14(
     () => import("./report-modal.js"),
-    local_a64a5df6([15, 1, 2, 13, 16]),
+    local_bc333837([15, 1, 2, 13, 16]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -2931,7 +2909,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_85d79cfb({
+function fn_57c880a5({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3006,7 +2984,7 @@ function fn_85d79cfb({
   }, []);
   const local_18 = imported_21(() => {
     local_11(
-      imported(imported_67, {
+      imported(imported_68, {
         title: "Удалить баннер?",
         message:
           "Баннер будет удалён из профиля. Это действие нельзя отменить.",
@@ -3029,31 +3007,21 @@ function fn_85d79cfb({
     );
   }, [local_11, local_12, arg_14]);
   const local_19 = imported_21(
-    async (arg) => {
+    async (arg, arg_2) => {
       try {
-        const [local, local_2] = arg.split(",");
-        const local_3 = local.match(/:(.*?);/)?.[1] || "image/png";
-        const local_4 = atob(local_2);
-        const local_5 = new Uint8Array(local_4.length);
-        for (let local = 0; local < local_4.length; local++) {
-          local_5[local] = local_4.charCodeAt(local);
+        if (!arg_2) {
+          throw new Error("Banner drawing is missing");
         }
-        const local_6 = new Blob([local_5], {
-          type: local_3,
-        });
-        const local_7 = new File([local_6], "banner.png", {
-          type: "image/png",
-        });
-        const local_8 = await imported_43.uploadMedia(local_7);
+        const local = await imported_43.uploadBannerDrawing(arg_2);
         await imported_42.updateProfile({
-          bannerId: local_8.id,
+          bannerId: local.id,
         });
         arg_14?.({
-          id: local_8.id,
+          id: local.id,
           type: "image",
-          url: local_8.url,
-          width: local_8.width,
-          height: local_8.height,
+          url: local.url,
+          width: local.width,
+          height: local.height,
         });
       } catch (error) {
         console.error("Failed to upload banner:", error);
@@ -3081,7 +3049,7 @@ function fn_85d79cfb({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_10 &&
-            imported(fn_2c162465, {
+            imported(fn_5f2662c9, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3095,7 +3063,7 @@ function fn_85d79cfb({
             local_7?.aura != null &&
             imported("div", {
               className: local_819ff8dc.bannerAura,
-              children: imported(fn_bbe0bf5e, {
+              children: imported(fn_abcf42b7, {
                 value: local_7.aura,
                 profileUsername: arg.username,
                 compact: true,
@@ -3103,7 +3071,7 @@ function fn_85d79cfb({
             }),
           local_10 &&
             imported(
-              fn_29aed5a3,
+              fn_e0465310,
               {
                 profileId: arg.id,
                 profileUsername: arg.username,
@@ -3161,13 +3129,14 @@ function fn_85d79cfb({
             className: local_819ff8dc.avatarRow,
             children: [
               imported(imported_2, {
-                src: arg.avatar,
                 username: arg.username,
-                fallback: arg.clanAvatar,
+                src: arg.avatar,
+                baseAvatar: arg.baseAvatar,
                 alt: arg.displayName,
                 size: "lg",
                 online: arg.online,
                 className: local_819ff8dc.avatar,
+                halloween: arg.halloween,
               }),
               !arg_8 &&
                 imported(fn_2480d55e, {
@@ -3196,6 +3165,7 @@ function fn_85d79cfb({
                 children: [
                   imported(imported_48, {
                     userId: arg.id,
+                    halloween: arg.halloween,
                     name: arg.displayName,
                     verified: arg.isVerified,
                     hasNuksta: arg.hasNuksta,
@@ -3255,7 +3225,7 @@ function fn_85d79cfb({
                           className: local_819ff8dc.metaItem,
                           children: [
                             "Был(а) в сети: ",
-                            fn_7dc01f3c(arg.lastSeen),
+                            fn_f3850f21(arg.lastSeen),
                           ],
                         }),
                       arg.createdAt &&
@@ -3280,7 +3250,7 @@ function fn_85d79cfb({
                     local_7?.aura != null &&
                     imported("div", {
                       className: local_819ff8dc.mobileAura,
-                      children: imported(fn_bbe0bf5e, {
+                      children: imported(fn_abcf42b7, {
                         value: local_7.aura,
                         profileUsername: arg.username,
                         centered: !local_20,
@@ -3291,7 +3261,7 @@ function fn_85d79cfb({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_3f070292, {
+                      children: imported(fn_e705e466, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -3335,7 +3305,7 @@ function fn_632095dd(arg, arg_2, arg_3) {
   }
   return arg;
 }
-function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
+function fn_b0eaeee5({ profile: arg, isBlocked: arg_2 }) {
   const [local, local_2] = imported_9("posts");
   const local_3 = arg?.id;
   const [local_4] = imported_9(() => {
@@ -3433,16 +3403,31 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
     return () => window.removeEventListener(imported_24, local);
   }, [local_3]);
   imported_17(() => {
+    const local = (arg) => {
+      const local = arg.detail;
+      const local_2 = imported_50.getState().profile;
+      if (local_2?.id !== local) {
+        return;
+      }
+      const local_3 = local_2.halloween ?? null;
+      local_6((arg) => arg.map((arg) => imported_51(arg, local, local_3)));
+      local_12((arg) => arg.map((arg) => imported_51(arg, local, local_3)));
+    };
+    window.addEventListener("halloween-profile-refreshed", local);
+    return () =>
+      window.removeEventListener("halloween-profile-refreshed", local);
+  }, []);
+  imported_17(() => {
     if (local === "likes" && arg) {
       local_22(arg.id);
     }
   }, [local, arg?.id, local_22]);
-  const local_23 = imported_51((arg) => arg.posts);
-  const local_24 = imported_51((arg) => arg.highlightedPostId);
-  const local_25 = imported_51((arg) => arg._lastPostEdit);
-  const local_26 = imported_51((arg) => arg._lastLikeUpdate);
-  const local_27 = imported_51((arg) => arg._lastRepostUpdate);
-  const local_28 = imported_51((arg) => arg._lastStatsBatch);
+  const local_23 = imported_52((arg) => arg.posts);
+  const local_24 = imported_52((arg) => arg.highlightedPostId);
+  const local_25 = imported_52((arg) => arg._lastPostEdit);
+  const local_26 = imported_52((arg) => arg._lastLikeUpdate);
+  const local_27 = imported_52((arg) => arg._lastRepostUpdate);
+  const local_28 = imported_52((arg) => arg._lastStatsBatch);
   imported_17(() => {
     if (!local_24 || !arg) {
       return;
@@ -3636,7 +3621,7 @@ function fn_849b710a({ profile: arg, isBlocked: arg_2 }) {
     resetPosts: local_34,
   };
 }
-function fn_ac8e62aa({ username: arg }) {
+function fn_29dd6153({ username: arg }) {
   const local = imported_50((arg) => arg.profile);
   const local_2 = local?.id;
   const local_3 = imported_50((arg) => arg.setProfile);
@@ -3673,7 +3658,7 @@ function fn_ac8e62aa({ username: arg }) {
     removePost: local_35,
     handleTabChange: local_36,
     resetPosts: local_37,
-  } = fn_849b710a({
+  } = fn_b0eaeee5({
     profile: local_4,
     isBlocked: local_17,
   });
@@ -3730,7 +3715,7 @@ function fn_ac8e62aa({ username: arg }) {
         }
         console.error("Failed to fetch profile:", error);
         const local = imported_39(error) ? error.status : 0;
-        local_10(local === imported_52.NOT_FOUND ? "notFound" : "server");
+        local_10(local === imported_53.NOT_FOUND ? "notFound" : "server");
       } finally {
         if (local_38.current && !local.signal.aborted) {
           local_7(false);
@@ -3763,11 +3748,29 @@ function fn_ac8e62aa({ username: arg }) {
     window.addEventListener(imported_24, local);
     return () => window.removeEventListener(imported_24, local);
   }, [local_11, local_12]);
+  imported_17(() => {
+    const local = (arg) => {
+      const local = arg.detail;
+      const local_2 = imported_50.getState().profile;
+      if (!(local !== local_11 || local_2?.id !== local)) {
+        local_5(
+          (arg) =>
+            arg && {
+              ...arg,
+              halloween: local_2.halloween,
+            },
+        );
+      }
+    };
+    window.addEventListener("halloween-profile-refreshed", local);
+    return () =>
+      window.removeEventListener("halloween-profile-refreshed", local);
+  }, [local_11]);
   const local_39 = imported_21(async () => {
     if (!(!local_4 || local_15)) {
       local_16(true);
       try {
-        const local = await imported_53.followUser(local_4.id);
+        const local = await imported_54.followUser(local_4.id);
         local_14(local);
         if (local === "following" && local_4.stats) {
           const local = local_4.stats.followers + 1;
@@ -3803,7 +3806,7 @@ function fn_ac8e62aa({ username: arg }) {
     if (!(!local_4 || local_15)) {
       local_16(true);
       try {
-        await imported_53.unfollowUser(local_4.id);
+        await imported_54.unfollowUser(local_4.id);
         local_14("none");
         if (local_22 && local_4.stats) {
           const local = local_4.stats.followers - 1;
@@ -3872,11 +3875,11 @@ function fn_ac8e62aa({ username: arg }) {
       local_20(true);
       try {
         if (local_17) {
-          await imported_53.unblockUser(local_4.id);
+          await imported_54.unblockUser(local_4.id);
           local_18(false);
           imported_32.success("Пользователь разблокирован");
         } else {
-          await imported_53.blockUser(local_4.id);
+          await imported_54.blockUser(local_4.id);
           local_18(true);
           imported_32.success("Пользователь заблокирован");
           if (local_22) {
@@ -3946,7 +3949,7 @@ function fn_ac8e62aa({ username: arg }) {
 const local_64782940_2 = imported_12(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_a64a5df6([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
+    local_bc333837([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]),
   ).then((arg) => ({
     default: arg.SettingsModal,
   })),
@@ -3954,12 +3957,12 @@ const local_64782940_2 = imported_12(() =>
 const local_0fe1a4d5 = imported_12(() =>
   imported_14(
     () => import("../shared/index-hqd-ia-v-b-portal20261026.js"),
-    local_a64a5df6([17, 1, 2, 18, 12, 13, 14, 19]),
+    local_bc333837([17, 1, 2, 18, 12, 13, 14, 19]),
   ).then((arg) => ({
     default: arg.UserListModal,
   })),
 );
-export const local_877a0c56 = ({ username: arg }) => {
+export const local_cd906cd3 = ({ username: arg }) => {
   const [local, local_2] = imported_9(null);
   const local_3 = imported_21((arg) => {
     local_2((arg) => {
@@ -3973,13 +3976,13 @@ export const local_877a0c56 = ({ username: arg }) => {
       return arg;
     });
   }, []);
-  const local_4 = imported_54();
-  const local_5 = imported_55();
+  const local_4 = imported_55();
+  const local_5 = imported_56();
   const { openModal: local_6, closeModal: local_7 } = imported_33();
-  const local_8 = imported_51((arg) => arg.createPost);
-  const local_9 = imported_51((arg) => arg.profileScrollByUser);
-  const local_10 = imported_51((arg) => arg.profileMeasuredHeightsByUser);
-  const local_11 = imported_51((arg) => arg.setProfileMeasuredHeights);
+  const local_8 = imported_52((arg) => arg.createPost);
+  const local_9 = imported_52((arg) => arg.profileScrollByUser);
+  const local_10 = imported_52((arg) => arg.profileMeasuredHeightsByUser);
+  const local_11 = imported_52((arg) => arg.setProfileMeasuredHeights);
   const local_12 = arg ? (local_9[arg] ?? 0) : 0;
   const local_13 = imported_16(null);
   const {
@@ -4007,7 +4010,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     handleTabChange: local_35,
     likesError: local_36,
     updateBanner: local_37,
-  } = fn_ac8e62aa({
+  } = fn_29dd6153({
     username: arg,
   });
   const local_38 = arg ? `${arg}:${local_34}` : null;
@@ -4023,7 +4026,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_41 = imported_21(() => {
     if (local_21 || local_24) {
       local_6(
-        imported(imported_56, {
+        imported(imported_57, {
           displayName: local_14?.displayName ?? "",
           onConfirm: local_28,
           onClose: local_7,
@@ -4072,7 +4075,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   }, [local_14, local_6]);
   const local_45 = async (arg, arg_2, arg_3, arg_4, arg_5) => {
     if (local_14) {
-      await local_8({
+      const local = await local_8({
         wallOwnerId: local_14.id,
         text: arg,
         spans: arg_2,
@@ -4081,12 +4084,13 @@ export const local_877a0c56 = ({ username: arg }) => {
         notebook: arg_5,
       });
       local_32();
+      return local;
     }
   };
   const local_46 = imported_21(() => {
     if (local_14) {
       local_6(
-        imported(imported_57, {
+        imported(imported_58, {
           wallOwnerId: local_14.id,
           placeholder: `Написать на стене ${local_14.displayName}`,
           onPostCreated: local_32,
@@ -4103,7 +4107,7 @@ export const local_877a0c56 = ({ username: arg }) => {
       }
     }
   }, [arg, local_17.length, local_12]);
-  const local_47 = imported_58(() => {
+  const local_47 = imported_59(() => {
     if (local_34 !== "posts" || !local_14?.pinnedPostId) {
       return local_17;
     }
@@ -4116,7 +4120,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     }
     return local_17;
   }, [local_17, local_14?.pinnedPostId, local_34]);
-  const local_48 = imported_58(() => {
+  const local_48 = imported_59(() => {
     if (!local_5) {
       return false;
     }
@@ -4148,7 +4152,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   const local_49 =
     local_20 ||
     local_14?.privacySettings?.whoCanSeeMyPostReactions === "everyone";
-  const local_50 = imported_58(() => {
+  const local_50 = imported_59(() => {
     const local = ["Посты"];
     if (local_49) {
       local.push("Лайки");
@@ -4179,7 +4183,7 @@ export const local_877a0c56 = ({ username: arg }) => {
   }
   if (local_16 || !local_14) {
     const local = local_16 === "server";
-    return imported(imported_59, {
+    return imported(imported_60, {
       kind: local ? "server" : "notFound",
       title: local ? "Сервис недоступен" : "Профиль не найден",
       description: local
@@ -4195,7 +4199,7 @@ export const local_877a0c56 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_85d79cfb, {
+      imported(fn_57c880a5, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,
@@ -4214,7 +4218,7 @@ export const local_877a0c56 = ({ username: arg }) => {
       }),
       imported("div", {
         className: local_819ff8dc.tabsWrapper,
-        children: imported(imported_60, {
+        children: imported(imported_61, {
           tabs: local_50,
           activeIndex: local_34 === "posts" ? 0 : 1,
           onChange: local_51,
@@ -4231,10 +4235,11 @@ export const local_877a0c56 = ({ username: arg }) => {
                   children: [
                     imported(imported_2, {
                       src: local_14.avatar ?? "",
+                      baseAvatar: local_14.baseAvatar,
                       alt: local_14.displayName,
                       size: "sm",
                     }),
-                    imported(imported_61, {
+                    imported(imported_62, {
                       onSubmit: local_45,
                       placeholder: local_20
                         ? "Что нового?"
@@ -4262,11 +4267,11 @@ export const local_877a0c56 = ({ username: arg }) => {
                 })
               : local_47.length > 0
                 ? imported(
-                    imported_62,
+                    imported_63,
                     {
                       posts: local_47,
                       renderPost: (arg, arg_2, arg_3) =>
-                        imported(imported_63, {
+                        imported(imported_64, {
                           post: arg,
                           aliceWaterStains: imported_47(
                             local?.profileId === local_14.id
@@ -4297,7 +4302,7 @@ export const local_877a0c56 = ({ username: arg }) => {
                     local_38 ?? local_34,
                   )
                 : local_18 && local_47.length === 0
-                  ? imported(imported_64, {
+                  ? imported(imported_65, {
                       count: 4,
                     })
                   : imported("div", {

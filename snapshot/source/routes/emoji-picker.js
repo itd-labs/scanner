@@ -1,37 +1,14 @@
 import {
-  symbol_067 as imported,
-  symbol_071 as imported_2,
-  symbol_051 as imported_3,
+  symbol_075 as imported,
+  symbol_079 as imported_2,
+  symbol_056 as imported_3,
   symbol_021 as imported_4,
   symbol_002 as imported_5,
-  symbol_080 as imported_6,
-  symbol_084 as imported_7,
-  symbol_027 as imported_8,
+  symbol_088 as imported_6,
+  symbol_092 as imported_7,
+  symbol_016 as imported_8,
   symbol_020 as imported_9,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_2b79335c = "c_picker";
 const local_9c08f813 = "c_searchFloating";
 const local_7fe71380 = "c_searchInput";
@@ -123,7 +100,7 @@ const local_cc74e010 = (arg) => {
   };
 };
 let local_0a9fda83 = null;
-const local_16efc0a4 = () => {
+const local_d84aed9c = () => {
   const [local, local_2] = imported(local_0a9fda83);
   const [local_3, local_4] = imported(!local_0a9fda83);
   imported_2(() => {
@@ -133,7 +110,7 @@ const local_16efc0a4 = () => {
     (async () => {
       try {
         const local = await imported_3(
-          () => import("../shared/emoji-data-cl-sjx-mk-portal20261026.js"),
+          () => import("../shared/emoji-data.js"),
           [],
         );
         const local_2 = local_cc74e010(local.default);
@@ -302,7 +279,7 @@ const local_18921ecf = ({
       onInput: (arg) => arg_2(arg.target.value),
     }),
   });
-export const local_dba5fc49 = ({
+export const local_b5b0095e = ({
   onEmojiSelect: arg,
   onClose: arg_2,
   width: arg_3 = 280,
@@ -319,7 +296,7 @@ export const local_dba5fc49 = ({
     all: local_10,
     byCategory: local_11,
     isLoading: local_12,
-  } = local_16efc0a4();
+  } = local_d84aed9c();
   const {
     recentEmojis: local_13,
     addRecentEmoji: local_14,
@@ -462,4 +439,4 @@ export const local_dba5fc49 = ({
     ],
   });
 };
-export { local_dba5fc49 as default };
+export { local_b5b0095e as default };

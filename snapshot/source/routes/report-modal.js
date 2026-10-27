@@ -1,36 +1,13 @@
 import {
-  symbol_028 as imported,
-  symbol_030 as imported_2,
-  symbol_067 as imported_3,
-  symbol_084 as imported_4,
+  symbol_018 as imported,
+  symbol_019 as imported_2,
+  symbol_075 as imported_3,
+  symbol_092 as imported_4,
   symbol_003 as imported_5,
   symbol_014 as imported_6,
-  symbol_088 as imported_7,
+  symbol_086 as imported_7,
 } from "../entry.js";
-import { I as imported_8 } from "../components/icon-check-circle-dbcn-e3nn-portal20261026.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_8 } from "../components/icon-check-circle.js";
 const local_d1ae2605 = {
   TARGET_NOT_FOUND: "REPORT_TARGET_NOT_FOUND",
   CANNOT_REPORT_OWN_CONTENT: "REPORT_CANNOT_REPORT_OWN_CONTENT",
@@ -107,7 +84,7 @@ const local_ecb71779 = [
     label: "Другое",
   },
 ];
-export function fn_b2801762({
+export function fn_1b01f8ee({
   targetType: arg,
   targetId: arg_2,
   onClose: arg_3,
@@ -284,4 +261,4 @@ export function fn_b2801762({
     }),
   });
 }
-export { fn_b2801762 as default };
+export { fn_1b01f8ee as default };
