@@ -8,10 +8,11 @@
   },
   "target": "https://xn--d1ah4a.com/",
   "documentUrl": "https://xn--d1ah4a.com/",
-  "buildFingerprint": "eddfc52bacc5021757e980e7b1730fd0b663de86f3c44604401f51a1e714cf89",
+  "buildFingerprint": "6dd3ce22bd41ee7ec7e3f4be4efb02fac5d22afe5cb200f6bf52ef6de0e7fbcd",
   "entrypoints": [
     "entry.js",
-    "entry.css"
+    "entry.css",
+    "entry-2.css"
   ],
   "resources": [
     {
@@ -3417,6 +3418,52 @@
       ],
       "etag": "W/\"6ae15aea-261\"",
       "lastModified": "Wed, 28 Oct 2026 02:16:10 GMT"
+    },
+    {
+      "sourceUrl": "https://xn--d1ah4a.com/assets/pumpkin-glow-fix-fd7ff580be39.css",
+      "originalPath": "assets/pumpkin-glow-fix-fd7ff580be39.css",
+      "logicalPath": "entry-2.css",
+      "kind": "css",
+      "mediaType": "text/css",
+      "bytes": 1071,
+      "sha256": "fd7ff580be39c3999c9539ec5328882042b13e5982be771cf6a5d97cfb8a82db",
+      "shapeHash": "1db8f009d5aeaa1b04b92ad809077f5fa1a27e105edaf47385ec404c52fdc627",
+      "minhash": [
+        "000d633d",
+        "00ec1834",
+        "00abd2a3",
+        "01ca3455",
+        "007d660f",
+        "00430b15",
+        "000151c4",
+        "005a2ea1",
+        "00763e46",
+        "00491bbd",
+        "00470465",
+        "00828062",
+        "00438363",
+        "0243fdb5",
+        "00245291",
+        "01effe94",
+        "01b8238a",
+        "008cb08a",
+        "012a1141",
+        "02180d63",
+        "005e4b16",
+        "0156b253",
+        "00e170e8",
+        "005dc45b",
+        "004fd63f",
+        "014f20b2",
+        "007d09e4",
+        "03606fa6",
+        "034280b3",
+        "00eb40a1",
+        "00ce17fe",
+        "001dbbdf"
+      ],
+      "etag": "W/\"6ae1b5ee-42f\"",
+      "lastModified": "Wed, 28 Oct 2026 08:44:30 GMT"
     },
     {
       "sourceUrl": "https://xn--d1ah4a.com/assets/index-BBafZ8_m.css",
@@ -7334,9 +7381,9 @@
       "logicalPath": "site/index.html",
       "kind": "html",
       "mediaType": "text/html",
-      "bytes": 3465,
-      "sha256": "d06ade58ff4caf1256a7dd2af8452993d0cf39d8964cef6fa0442a3848497fc7",
-      "shapeHash": "21378cdc1da9c3c054500ba9f2c3a7168baf8ef3f6d9e3234245a613c64ba830",
+      "bytes": 3540,
+      "sha256": "d3fe7b2f97e452fda7e92644cb908cecf0bdf89d22697676f81523cd0f8a6359",
+      "shapeHash": "f203d0b159bdc8d350ce45861e0593e46945ea3630fe6d24f1cc90cf6e5f21bf",
       "minhash": [
         "003b56b4",
         "001bd177",
@@ -7371,8 +7418,8 @@
         "00731ca7",
         "0024e2d0"
       ],
-      "etag": "W/\"6ae15aea-d89\"",
-      "lastModified": "Wed, 28 Oct 2026 02:16:10 GMT"
+      "etag": "W/\"6ae1b5ee-dd4\"",
+      "lastModified": "Wed, 28 Oct 2026 08:44:30 GMT"
     },
     {
       "sourceUrl": "https://xn--d1ah4a.com/assets/index-EUm9d9hu.css",
