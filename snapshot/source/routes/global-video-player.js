@@ -139,7 +139,7 @@ const local_2ba33e70 = {
 const local_f06debfc = 280;
 const local_b45f1b6a = "cubic-bezier(0.32, 0.72, 0, 1)";
 const local_a3e1b3a5 = [0.5, 1, 1.5, 2];
-function fn_e6b3b402(arg) {
+function fn_51299c59(arg) {
   if (!isFinite(arg) || arg < 0) {
     return "0:00";
   }
@@ -173,7 +173,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_a8314ed2,
+      fn_cb675dac,
       {
         options: local_2,
         onUnmount: local_4,
@@ -183,7 +183,7 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_a8314ed2({ options: arg, onUnmount: arg_2 }) {
+function fn_cb675dac({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
@@ -661,9 +661,9 @@ function fn_a8314ed2({ options: arg, onUnmount: arg_2 }) {
               imported_3("span", {
                 className: local_2ba33e70.time,
                 children: [
-                  fn_e6b3b402(local_7),
+                  fn_51299c59(local_7),
                   "../site/index.html",
-                  fn_e6b3b402(local_9),
+                  fn_51299c59(local_9),
                 ],
               }),
               imported_3("button", {

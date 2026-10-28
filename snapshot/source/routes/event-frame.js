@@ -15,7 +15,7 @@ import {
 } from "../entry.js";
 const local_6ca67a93 = (arg) =>
   arg.slice(imported.route.length).replace(/^\//, "");
-function fn_3aa13d2f(arg, arg_2) {
+function fn_8f9099b6(arg, arg_2) {
   if (
     arg.length > 512 ||
     arg_2.length > 2048 ||
@@ -132,7 +132,7 @@ export const local_defeef44 = () => {
           imported_10("div", {
             className: local_960709d8.viewport,
             inert: local_6 || undefined,
-            children: imported_10(fn_a5d2c08b, {}),
+            children: imported_10(fn_1eaa57dd, {}),
           }),
           local_6 &&
             imported_10("p", {
@@ -144,7 +144,7 @@ export const local_defeef44 = () => {
       });
   }
 };
-function fn_a5d2c08b() {
+function fn_1eaa57dd() {
   const local = imported_11(null);
   const local_2 = imported_11(
     `${imported.framePath}/${local_6ca67a93(window.location.pathname)}${window.location.search}`,
@@ -156,7 +156,7 @@ function fn_a5d2c08b() {
     const local_2 = (arg, arg_2) => {
       local_3.current = arg;
       local_4.current = arg_2;
-      const local = fn_3aa13d2f(arg, arg_2);
+      const local = fn_8f9099b6(arg, arg_2);
       if (!(
         !local || local === window.location.pathname + window.location.search
       )) {

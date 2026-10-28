@@ -15,7 +15,7 @@ const local_960709d8 = {
   subtitle: local_8c84ac4c,
   actions: local_8c4f8b4b,
 };
-function symbol_001({
+export function fn_a0e3d540({
   title: arg,
   message: arg_2,
   confirmText: arg_3 = "Подтвердить",
@@ -80,4 +80,3 @@ function symbol_001({
     document.body,
   );
 }
-export { symbol_001 };

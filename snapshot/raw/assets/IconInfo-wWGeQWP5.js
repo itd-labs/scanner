@@ -1,0 +1,1 @@
+import{u as r}from"./index-AoERIL5v.js";const e=({size:o=24})=>r("svg",{xmlns:"http://www.w3.org/2000/svg",width:o,height:o,fill:"none",viewBox:"0 0 24 24",children:[r("circle",{cx:"12",cy:"12",r:"10",stroke:"currentColor",strokeWidth:"2"}),r("path",{stroke:"currentColor",strokeLinecap:"round",strokeWidth:"2",d:"M12 16v-4m0-4h.01"})]});export{e as I};

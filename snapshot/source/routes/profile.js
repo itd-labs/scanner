@@ -94,7 +94,7 @@ import {
 } from "../entry.js";
 import { I as imported_66 } from "../components/icon-check.js";
 import { I as imported_67 } from "../components/icon-chevron-left.js";
-import { symbol_001 as imported_68 } from "../shared/index-bkpoiy5w-portal20261026.js";
+import { C as imported_68 } from "../shared/index-bkpoiy5w-portal20261026.js";
 const local_e67a7b1e = ({ size: arg = 24 }) =>
   imported("svg", {
     width: arg,
@@ -911,7 +911,7 @@ function fn_1dd73c40(arg) {
   }
   return local ?? null;
 }
-function fn_ef703d76({
+function fn_98d4ceed({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -1631,7 +1631,7 @@ function fn_75d71f4e(arg) {
   }
   return "Не удалось подтвердить размещение. Повторите тем же предметом.";
 }
-function fn_ae5c9e2f({
+function fn_e0465310({
   profileId: arg,
   profileUsername: arg_2,
   ownProfile: arg_3 = false,
@@ -2594,7 +2594,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_9b89821e({
+function fn_b688ba94({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2909,7 +2909,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_dada25aa({
+function fn_73e4e3f3({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3049,7 +3049,7 @@ function fn_dada25aa({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_10 &&
-            imported(fn_ef703d76, {
+            imported(fn_98d4ceed, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3071,7 +3071,7 @@ function fn_dada25aa({
             }),
           local_10 &&
             imported(
-              fn_ae5c9e2f,
+              fn_e0465310,
               {
                 profileId: arg.id,
                 profileUsername: arg.username,
@@ -3167,6 +3167,7 @@ function fn_dada25aa({
                     userId: arg.id,
                     halloween: arg.halloween,
                     name: arg.displayName,
+                    owner: arg,
                     verified: arg.isVerified,
                     hasNuksta: arg.hasNuksta,
                     pin: arg.pin,
@@ -3261,7 +3262,7 @@ function fn_dada25aa({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_9b89821e, {
+                      children: imported(fn_b688ba94, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -4199,7 +4200,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_dada25aa, {
+      imported(fn_73e4e3f3, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,

@@ -262,7 +262,7 @@ function fn_34f0bf46(arg) {
   local_09086d0f = arg;
   localStorage.setItem("video-volume", String(arg));
 }
-function fn_6071869e(arg) {
+function fn_0c2d49e5(arg) {
   const local = Math.floor(arg / 60);
   const local_2 = arg % 60;
   return `${local}:${local_2.toString().padStart(2, "0")}`;
@@ -317,7 +317,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_3ea9b2e6({
+export function fn_5c8537aa({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -605,7 +605,7 @@ export function fn_3ea9b2e6({
         local_39 &&
         imported_3("div", {
           className: local_66259d24.duration,
-          children: fn_6071869e(arg_5),
+          children: fn_0c2d49e5(arg_5),
         }),
       (local_6 || !arg_2) &&
         imported_3("div", {

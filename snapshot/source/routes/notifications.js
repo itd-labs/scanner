@@ -88,7 +88,7 @@ function fn_8998240c(arg) {
     month: "short",
   });
 }
-const local_17802517 = {
+const local_ccee8970 = {
   follow: {
     badgeColor: "blue",
     icon: imported(imported_7, {
@@ -192,7 +192,7 @@ const local_17802517 = {
   },
 };
 const local_0997b872 = ({ type: arg }) => {
-  const local = local_17802517[arg];
+  const local = local_ccee8970[arg];
   const local_2 =
     local?.badgeColor === "red"
       ? local_f2bf345a.red
@@ -218,7 +218,7 @@ function fn_f6c15f42({
   onFollowToggle: arg_5,
   isFollowLoading: arg_6,
 }) {
-  const local = local_17802517[arg.type];
+  const local = local_ccee8970[arg.type];
   const local_2 = arg.payload.actors[0];
   const local_3 = arg.payload.count;
   const local_4 = arg.type === "alice_task_reminder";

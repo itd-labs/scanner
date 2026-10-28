@@ -818,7 +818,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_805c71ccaf {
+.c_bottomSheet.c_auto_24eacb6688 {
   animation: keyframe_14 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -1476,6 +1476,44 @@ h6 {
   .c_pumpkinView svg {
     animation: none;
   }
+}
+[data-halloween-pumpkin]:has(> svg[style*="drop-shadow"]) {
+  --pumpkin-halo-opacity: 0.32;
+  --pumpkin-halo-brightness: 1.05;
+}
+[data-halloween-pumpkin]:has(> svg[style*="drop-shadow"]):before {
+  content: "";
+  position: absolute;
+  left: -38%;
+  top: -66%;
+  width: 176%;
+  height: 232%;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse closest-side at center,
+    rgb(255, 170, 60, var(--pumpkin-halo-opacity)) 0%,
+    rgb(255, 140, 40, calc(var(--pumpkin-halo-opacity) * 0.65)) 32%,
+    transparent 70%
+  );
+}
+[data-halloween-pumpkin]:has(> svg[style*="drop-shadow"]) > svg {
+  filter: brightness(var(--pumpkin-halo-brightness)) !important;
+}
+[data-halloween-pumpkin]:has(> svg[style*="brightness(1.1)"]) {
+  --pumpkin-halo-opacity: 0.4;
+  --pumpkin-halo-brightness: 1.1;
+}
+[data-halloween-pumpkin]:has(> svg[style*="brightness(1.15)"]) {
+  --pumpkin-halo-opacity: 0.48;
+  --pumpkin-halo-brightness: 1.15;
+}
+[data-halloween-pumpkin]:has(> svg[style*="brightness(1.2)"]) {
+  --pumpkin-halo-opacity: 0.56;
+  --pumpkin-halo-brightness: 1.2;
+}
+[data-halloween-pumpkin]:has(> svg[style*="brightness(1.25)"]) {
+  --pumpkin-halo-opacity: 0.64;
+  --pumpkin-halo-brightness: 1.25;
 }
 .c_lit {
   animation: keyframe_18 2.2s ease-in-out infinite;
@@ -2769,7 +2807,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_7bb1d29b7f {
+.c_textInput.c_entering .c_auto_2dd8ba4149 {
   animation: keyframe_23 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -6485,7 +6523,7 @@ body:has([data-halloween-tour]) .c_thanks {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_c66aa546be {
+.c_auto_45b047d48b {
   display: block;
   animation: keyframe_88 0.4s ease;
 }
@@ -6497,7 +6535,7 @@ body:has([data-halloween-tour]) .c_thanks {
 }
 @media (prefers-reduced-motion: reduce) {
   .c_action [data-icon],
-  .c_auto_c66aa546be {
+  .c_auto_45b047d48b {
     animation: none !important;
     transition: none;
   }
@@ -7099,7 +7137,7 @@ body:has([data-halloween-tour]) .c_thanks {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_36457504de {
+.c_auto_4228a3c859 {
   animation: keyframe_92 0.4s ease;
 }
 .c_auto_7f6ce735eb {

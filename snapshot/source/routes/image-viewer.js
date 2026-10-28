@@ -761,7 +761,7 @@ const local_c642bb00 = {
   filmshotActive: local_5756bcd2,
   filmshotImage: local_87a54fb0,
 };
-function fn_82a95af5({
+function fn_6a21b789({
   currentIndex: arg,
   total: arg_2,
   onPrev: arg_3,
@@ -791,7 +791,7 @@ function fn_82a95af5({
     ],
   });
 }
-function fn_bf8b8d6e({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
+function fn_856a9d72({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
   if (arg <= 1) {
     return null;
   }
@@ -813,7 +813,7 @@ function fn_bf8b8d6e({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
     ),
   });
 }
-function fn_a64a4818({
+function fn_0b68fa19({
   images: arg,
   currentIndex: arg_2,
   isClosing: arg_3,
@@ -1108,7 +1108,7 @@ function fn_00da9caf(arg) {
     return null;
   }
 }
-function fn_1bd8ba58({
+function fn_244720dc({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1261,7 +1261,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_353fb0c0({
+function fn_8c9a3cce({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1335,7 +1335,7 @@ function fn_353fb0c0({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_244720dc, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1410,7 +1410,7 @@ function fn_6ea0e39a({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_244720dc, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1448,7 +1448,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_fcaa0105({
+export function fn_7137c35e({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2052,7 +2052,7 @@ export function fn_fcaa0105({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_353fb0c0, {
+          imported_6(fn_8c9a3cce, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2081,14 +2081,14 @@ export function fn_fcaa0105({
             zoom: local_27.zoom,
           }),
         !local_11 &&
-          imported_6(fn_82a95af5, {
+          imported_6(fn_6a21b789, {
             currentIndex: local_13.currentIndex,
             total: arg.length,
             onPrev: local_17,
             onNext: local_18,
           }),
         arg_6
-          ? imported_6(fn_a64a4818, {
+          ? imported_6(fn_0b68fa19, {
               images: arg,
               currentIndex: local_13.currentIndex,
               isClosing: local_7,
@@ -2097,7 +2097,7 @@ export function fn_fcaa0105({
                 local_13.goToIndex(arg);
               },
             })
-          : imported_6(fn_bf8b8d6e, {
+          : imported_6(fn_856a9d72, {
               total: arg.length,
               currentIndex: local_13.currentIndex,
               onDotClick: (arg) => {
@@ -2110,4 +2110,4 @@ export function fn_fcaa0105({
     document.body,
   );
 }
-export { fn_fcaa0105 as default };
+export { fn_7137c35e as default };
