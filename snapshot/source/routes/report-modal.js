@@ -1,11 +1,11 @@
 import {
   symbol_018 as imported,
   symbol_019 as imported_2,
-  symbol_075 as imported_3,
-  symbol_092 as imported_4,
+  symbol_077 as imported_3,
+  symbol_094 as imported_4,
   symbol_003 as imported_5,
   symbol_014 as imported_6,
-  symbol_086 as imported_7,
+  symbol_088 as imported_7,
 } from "../entry.js";
 import { I as imported_8 } from "../components/icon-check-circle.js";
 const local_d1ae2605 = {
@@ -84,7 +84,7 @@ const local_ecb71779 = [
     label: "Другое",
   },
 ];
-export function fn_1b01f8ee({
+export function fn_7d91b848({
   targetType: arg,
   targetId: arg_2,
   onClose: arg_3,
@@ -261,4 +261,4 @@ export function fn_1b01f8ee({
     }),
   });
 }
-export { fn_1b01f8ee as default };
+export { fn_7d91b848 as default };

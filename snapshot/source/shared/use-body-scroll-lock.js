@@ -1,4 +1,4 @@
-import { symbol_079 as imported } from "../entry.js";
+import { symbol_081 as imported } from "../entry.js";
 export function fn_30722b36() {
   imported(() => {
     const local = document.documentElement;

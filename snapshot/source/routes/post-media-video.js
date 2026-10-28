@@ -1,12 +1,12 @@
 import {
   symbol_002 as imported,
-  symbol_088 as imported_2,
-  symbol_092 as imported_3,
-  symbol_079 as imported_4,
-  symbol_059 as imported_5,
-  symbol_075 as imported_6,
+  symbol_090 as imported_2,
+  symbol_094 as imported_3,
+  symbol_081 as imported_4,
+  symbol_060 as imported_5,
+  symbol_077 as imported_6,
   aj as imported_7,
-  symbol_060 as imported_8,
+  symbol_061 as imported_8,
 } from "../entry.js";
 import { V as imported_9 } from "../components/volume-glyph.js";
 const local_82353520 = "c_wrapper";
@@ -19,7 +19,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_75fa0972({
+function fn_f6b86911({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -317,7 +317,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_5c8537aa({
+export function fn_3ea9b2e6({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -643,7 +643,7 @@ export function fn_5c8537aa({
                   children: [
                     imported_3("div", {
                       className: local_66259d24.volumeSlider,
-                      children: imported_3(fn_75fa0972, {
+                      children: imported_3(fn_f6b86911, {
                         value: local_12 ? 0 : local_14,
                         onChange: local_38,
                         onDragStart: () => {

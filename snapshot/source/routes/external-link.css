@@ -1,0 +1,134 @@
+.c_page {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: var(--text-primary);
+}
+.c_backButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px 8px 10px;
+  margin-bottom: 24px;
+  margin-left: -16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  border-radius: 20px;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+.c_backButton:hover {
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+}
+.c_iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 24px;
+  background: var(--bg-secondary);
+  border-radius: 50%;
+  color: var(--text-secondary);
+}
+.c_title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.c_description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+.c_urlSection {
+  margin-bottom: 32px;
+}
+.c_sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.c_urlBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--block-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+.c_domain {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.c_fullUrl {
+  font-size: 13px;
+  color: var(--text-secondary);
+  word-break: break-all;
+  line-height: 1.4;
+}
+.c_warningSection {
+  margin-bottom: 32px;
+}
+.c_warningList {
+  list-style: disc;
+  padding-left: 24px;
+}
+.c_warningList li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.c_actions {
+  display: flex;
+  gap: 12px;
+}
+.c_primaryButton,
+.c_secondaryButton {
+  flex: 1;
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    background 0.2s ease;
+}
+.c_primaryButton:hover,
+.c_secondaryButton:hover {
+  opacity: 0.9;
+}
+.c_primaryButton {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.c_secondaryButton {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+.c_secondaryButton:hover {
+  background: var(--bg-hover);
+}
+@media (max-width: 480px) {
+  .c_page {
+    padding: 24px 16px;
+  }
+  .c_title {
+    font-size: 24px;
+  }
+  .c_actions {
+    flex-direction: column;
+  }
+  .c_primaryButton,
+  .c_secondaryButton {
+    width: 100%;
+  }
+}

@@ -1,0 +1,227 @@
+.c_checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.c_checkbox.c_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c_input {
+  display: none;
+}
+.c_checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  flex-shrink: 0;
+  position: relative;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+.c_checkmark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.c_input:checked + .c_checkmark {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+.c_input:checked + .c_checkmark:after {
+  opacity: 1;
+}
+.c_checkbox:not(.c_disabled):hover .c_checkmark {
+  border-color: var(--accent-primary);
+}
+.c_label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+@media (max-width: 1173px) {
+  .c_label {
+    font-size: 13px;
+  }
+}
+.c_modal {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 24px;
+}
+@media (max-width: 1173px) {
+  .c_modal {
+    width: 100%;
+    border-radius: 0 !important;
+  }
+}
+.c_content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 1173px) {
+  .c_content {
+    padding: 20px;
+  }
+}
+.c_auto_98809c2831 {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px 0;
+}
+.c_statusIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.c_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 1173px) {
+  .c_title {
+    font-size: 18px;
+  }
+}
+.c_description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (max-width: 1173px) {
+  .c_description {
+    font-size: 13px;
+  }
+}
+.c_rejectionNotice {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px;
+  background: #ef44441a;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 12px;
+}
+.c_rejectionTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ef4444;
+}
+.c_rejectionReason {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.c_fileInput {
+  display: none;
+}
+.c_dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 24px;
+  border: 2px dashed var(--border-color);
+  border-radius: 16px;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+.c_dropzone:hover {
+  border-color: var(--accent-primary);
+  background: var(--bg-hover);
+}
+.c_dropzoneIcon {
+  color: var(--text-secondary);
+}
+.c_dropzoneText {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+.c_dropzoneHint {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.c_preview {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+}
+.c_video {
+  width: 100%;
+  max-height: 240px;
+  display: block;
+}
+.c_removeButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0009;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.c_removeButton:hover {
+  background: #000c;
+}
+.c_error {
+  padding: 12px 16px;
+  background: #ef44441a;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 12px;
+  color: #ef4444;
+  font-size: 14px;
+  text-align: center;
+}
+.c_progressBar {
+  height: 4px;
+  background: var(--bg-secondary);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.c_progressFill {
+  height: 100%;
+  background: var(--accent-primary);
+  transition: width 0.3s ease;
+}
+.c_actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+.c_actions button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}

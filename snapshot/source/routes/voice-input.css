@@ -1,0 +1,154 @@
+.c_voiceInput {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+.c_circleButton {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    margin 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.c_circleButton:hover {
+  opacity: 0.8;
+}
+.c_playButton {
+  margin-left: -40px;
+  transform: translate(-40px);
+  opacity: 0;
+}
+.c_hasRecording .c_playButton {
+  margin-left: 6px;
+  transform: translate(0);
+  opacity: 1;
+}
+.c_stopButton {
+  margin-right: -40px;
+  transform: translate(40px);
+  opacity: 0;
+}
+.c_recording .c_stopButton {
+  margin-right: 6px;
+  transform: translate(0);
+  opacity: 1;
+}
+.c_auto_934d2f7587 {
+  margin-right: -40px;
+  transform: translate(40px);
+  opacity: 0;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+.c_hasRecording .c_auto_934d2f7587 {
+  margin-right: 6px;
+  transform: translate(0);
+  opacity: 1;
+}
+.c_sendButton {
+  margin-right: -40px;
+  transform: translate(40px);
+  opacity: 0;
+}
+.c_sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c_hasRecording .c_sendButton,
+.c_recording .c_sendButton {
+  margin-right: 6px;
+  transform: translate(0);
+  opacity: 1;
+}
+.c_audioVisualizer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  min-width: 0;
+  transition:
+    margin 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.c_waveformContainer {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: 0;
+  transform: translate(-20px);
+  animation: keyframe_1 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes keyframe_1 {
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.c_recordingTime {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  min-width: 35px;
+  opacity: 0;
+  transform: translate(20px);
+  animation: keyframe_2 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+@keyframes keyframe_2 {
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.c_exiting .c_waveformContainer {
+  animation: keyframe_3 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.c_exiting .c_recordingTime {
+  animation: keyframe_4 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.c_exiting .c_playButton,
+.c_exiting .c_stopButton,
+.c_exiting .c_sendButton {
+  opacity: 0;
+  transform: translate(20px);
+}
+@keyframes keyframe_3 {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+}
+@keyframes keyframe_4 {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(20px);
+  }
+}

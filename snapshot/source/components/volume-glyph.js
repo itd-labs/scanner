@@ -1,4 +1,4 @@
-import { symbol_092 as imported, symbol_020 as imported_2 } from "../entry.js";
+import { symbol_094 as imported, symbol_020 as imported_2 } from "../entry.js";
 export function fn_86d3d305({
   muted: arg = false,
   volume: arg_2 = 1,

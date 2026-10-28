@@ -1,26 +1,26 @@
 import {
   symbol_009 as imported,
   symbol_029 as imported_2,
-  symbol_035 as imported_3,
+  symbol_036 as imported_3,
   symbol_024 as imported_4,
-  symbol_073 as imported_5,
-  symbol_085 as imported_6,
-  symbol_079 as imported_7,
+  symbol_075 as imported_5,
+  symbol_087 as imported_6,
+  symbol_081 as imported_7,
   symbol_001 as imported_8,
   symbol_028 as imported_9,
-  symbol_092 as imported_10,
+  symbol_094 as imported_10,
   symbol_002 as imported_11,
-  symbol_090 as imported_12,
-  symbol_057 as imported_13,
+  symbol_092 as imported_12,
+  symbol_058 as imported_13,
 } from "../entry.js";
 const local_6ca67a93 = (arg) =>
   arg.slice(imported.route.length).replace(/^\//, "");
-function fn_d000d2f3(arg, arg_2) {
+function fn_3aa13d2f(arg, arg_2) {
   if (
     arg.length > 512 ||
     arg_2.length > 2048 ||
     /[\\#?]/.test(arg) ||
-    arg.includes("..") ||
+    arg.includes("../site/index.html") ||
     arg.startsWith("../site/index.html") ||
     (arg_2 && !arg_2.startsWith("?"))
   ) {
@@ -156,7 +156,7 @@ function fn_a5d2c08b() {
     const local_2 = (arg, arg_2) => {
       local_3.current = arg;
       local_4.current = arg_2;
-      const local = fn_d000d2f3(arg, arg_2);
+      const local = fn_3aa13d2f(arg, arg_2);
       if (!(
         !local || local === window.location.pathname + window.location.search
       )) {

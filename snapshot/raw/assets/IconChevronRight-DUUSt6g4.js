@@ -1,0 +1,1 @@
+import{u as r}from"./index-CxpzQKXX.js";const n=({size:o=24})=>r("svg",{width:o,height:o,viewBox:"0 0 24 24",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:r("path",{d:"M9 18L15 12L9 6",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"})});export{n as I};

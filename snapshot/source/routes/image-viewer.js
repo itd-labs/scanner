@@ -1,14 +1,14 @@
 import {
-  symbol_088 as imported,
-  symbol_075 as imported_2,
-  symbol_079 as imported_3,
+  symbol_090 as imported,
+  symbol_077 as imported_2,
+  symbol_081 as imported_3,
   symbol_002 as imported_4,
   symbol_021 as imported_5,
-  symbol_092 as imported_6,
+  symbol_094 as imported_6,
   symbol_020 as imported_7,
   aj as imported_8,
-  symbol_052 as imported_9,
-  symbol_093 as imported_10,
+  symbol_053 as imported_9,
+  symbol_095 as imported_10,
 } from "../entry.js";
 import { u as imported_11 } from "../shared/use-body-scroll-lock.js";
 import { I as imported_12 } from "../components/icon-chevron-left.js";
@@ -761,7 +761,7 @@ const local_c642bb00 = {
   filmshotActive: local_5756bcd2,
   filmshotImage: local_87a54fb0,
 };
-function fn_6a21b789({
+function fn_82a95af5({
   currentIndex: arg,
   total: arg_2,
   onPrev: arg_3,
@@ -791,7 +791,7 @@ function fn_6a21b789({
     ],
   });
 }
-function fn_856a9d72({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
+function fn_bf8b8d6e({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
   if (arg <= 1) {
     return null;
   }
@@ -813,7 +813,7 @@ function fn_856a9d72({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
     ),
   });
 }
-function fn_0b68fa19({
+function fn_a64a4818({
   images: arg,
   currentIndex: arg_2,
   isClosing: arg_3,
@@ -1261,7 +1261,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_8c9a3cce({
+function fn_353fb0c0({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1448,7 +1448,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_32bc93fd({
+export function fn_fcaa0105({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2052,7 +2052,7 @@ export function fn_32bc93fd({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_8c9a3cce, {
+          imported_6(fn_353fb0c0, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2081,14 +2081,14 @@ export function fn_32bc93fd({
             zoom: local_27.zoom,
           }),
         !local_11 &&
-          imported_6(fn_6a21b789, {
+          imported_6(fn_82a95af5, {
             currentIndex: local_13.currentIndex,
             total: arg.length,
             onPrev: local_17,
             onNext: local_18,
           }),
         arg_6
-          ? imported_6(fn_0b68fa19, {
+          ? imported_6(fn_a64a4818, {
               images: arg,
               currentIndex: local_13.currentIndex,
               isClosing: local_7,
@@ -2097,7 +2097,7 @@ export function fn_32bc93fd({
                 local_13.goToIndex(arg);
               },
             })
-          : imported_6(fn_856a9d72, {
+          : imported_6(fn_bf8b8d6e, {
               total: arg.length,
               currentIndex: local_13.currentIndex,
               onDotClick: (arg) => {
@@ -2110,4 +2110,4 @@ export function fn_32bc93fd({
     document.body,
   );
 }
-export { fn_32bc93fd as default };
+export { fn_fcaa0105 as default };

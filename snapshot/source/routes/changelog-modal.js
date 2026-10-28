@@ -1,9 +1,9 @@
 import {
-  symbol_075 as imported,
-  symbol_079 as imported_2,
-  symbol_094 as imported_3,
-  symbol_093 as imported_4,
-  symbol_092 as imported_5,
+  symbol_077 as imported,
+  symbol_081 as imported_2,
+  symbol_096 as imported_3,
+  symbol_095 as imported_4,
+  symbol_094 as imported_5,
   symbol_014 as imported_6,
 } from "../entry.js";
 const local_dc758942 = "c_changelog";

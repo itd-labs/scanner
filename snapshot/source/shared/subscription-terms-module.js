@@ -1,21 +1,21 @@
-const local_e2920383 = "daOJ";
-const local_27deb71e = "QXnZ";
-const local_debe5d5e = "TKeQ";
-const local_38c72fb4 = "jE5k";
-const local_0153cb0a = "ihan";
-const local_60aea2e5 = "pn5A";
-const local_80e4fd76 = "PrpL";
-const local_a94cf45d = "JEA9";
-const local_ce9a8238 = "vMh4";
+const local_87ee5215 = "c_legal";
+const local_85b1b822 = "c_backButton";
+const local_9d9cf508 = "c_title";
+const local_c7caffa4 = "c_updated";
+const local_af0b94fd = "c_section";
+const local_288346ca = "c_sectionTitle";
+const local_95ed4c70 = "c_text";
+const local_e9ccbd22 = "c_list";
+const local_354b4818 = "c_contact";
 const symbol_001 = {
-  legal: local_e2920383,
-  backButton: local_27deb71e,
-  title: local_debe5d5e,
-  updated: local_38c72fb4,
-  section: local_0153cb0a,
-  sectionTitle: local_60aea2e5,
-  text: local_80e4fd76,
-  list: local_a94cf45d,
-  contact: local_ce9a8238,
+  legal: local_87ee5215,
+  backButton: local_85b1b822,
+  title: local_9d9cf508,
+  updated: local_c7caffa4,
+  section: local_af0b94fd,
+  sectionTitle: local_288346ca,
+  text: local_95ed4c70,
+  list: local_e9ccbd22,
+  contact: local_354b4818,
 };
 export { symbol_001 };

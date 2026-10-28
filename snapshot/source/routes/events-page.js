@@ -1,9 +1,9 @@
 import {
-  symbol_085 as imported,
-  symbol_079 as imported_2,
+  symbol_087 as imported,
+  symbol_081 as imported_2,
   symbol_001 as imported_3,
   symbol_009 as imported_4,
-  symbol_092 as imported_5,
+  symbol_094 as imported_5,
 } from "../entry.js";
 const local_ef251bc6 = "c_page";
 const local_f1c23efb = "c_header";

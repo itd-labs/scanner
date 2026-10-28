@@ -1,4 +1,4 @@
-import { symbol_079 as imported, symbol_001 as imported_2 } from "../entry.js";
+import { symbol_081 as imported, symbol_001 as imported_2 } from "../entry.js";
 export const local_6b55d5d9 = (arg) => {
   imported(() => {
     imported_2("/login", true);

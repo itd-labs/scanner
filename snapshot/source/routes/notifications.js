@@ -1,11 +1,11 @@
 import {
-  symbol_092 as imported,
-  symbol_095 as imported_2,
-  symbol_096 as imported_3,
+  symbol_094 as imported,
+  symbol_097 as imported_2,
+  symbol_098 as imported_3,
   symbol_020 as imported_4,
   symbol_022 as imported_5,
   symbol_003 as imported_6,
-  symbol_097 as imported_7,
+  symbol_099 as imported_7,
   symbol_005 as imported_8,
   symbol_006 as imported_9,
   symbol_007 as imported_10,
@@ -14,10 +14,10 @@ import {
   symbol_011 as imported_13,
   symbol_012 as imported_14,
   symbol_002 as imported_15,
-  symbol_075 as imported_16,
-  symbol_079 as imported_17,
+  symbol_077 as imported_16,
+  symbol_081 as imported_17,
   symbol_013 as imported_18,
-  symbol_088 as imported_19,
+  symbol_090 as imported_19,
   symbol_015 as imported_20,
   symbol_016 as imported_21,
 } from "../entry.js";
@@ -88,7 +88,7 @@ function fn_8998240c(arg) {
     month: "short",
   });
 }
-const local_ccee8970 = {
+const local_17802517 = {
   follow: {
     badgeColor: "blue",
     icon: imported(imported_7, {
@@ -192,7 +192,7 @@ const local_ccee8970 = {
   },
 };
 const local_0997b872 = ({ type: arg }) => {
-  const local = local_ccee8970[arg];
+  const local = local_17802517[arg];
   const local_2 =
     local?.badgeColor === "red"
       ? local_f2bf345a.red
@@ -218,7 +218,7 @@ function fn_f6c15f42({
   onFollowToggle: arg_5,
   isFollowLoading: arg_6,
 }) {
-  const local = local_ccee8970[arg.type];
+  const local = local_17802517[arg.type];
   const local_2 = arg.payload.actors[0];
   const local_3 = arg.payload.count;
   const local_4 = arg.type === "alice_task_reminder";
