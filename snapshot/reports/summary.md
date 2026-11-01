@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `acbccf71c783819112fb78fba1d3ed20d412ce391424f6c4b513ca7e82c3cebe`
-- Resources: 161
-- Downloaded bytes: 5586692
+- Build fingerprint: `932ab7e9755fb91b8486ce56973522a3de7d5b72cc7d87e4b7d4c7c78cb53c7c`
+- Resources: 155
+- Downloaded bytes: 5543689
 - Sentry releases: none
 
 ## Routes
@@ -25,6 +25,4 @@ No changes.
 
 ## User-visible strings
 
-- Added: `px rgba(255, 160, 50,`
-- Removed: `px rgba(255, 140, 40,`
-- Removed: `px rgba(255, 170, 60,`
+No changes.
