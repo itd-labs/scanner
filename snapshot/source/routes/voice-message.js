@@ -1,14 +1,37 @@
 import {
   symbol_027 as imported,
   symbol_021 as imported_2,
-  symbol_077 as imported_3,
+  symbol_076 as imported_3,
   symbol_002 as imported_4,
-  symbol_081 as imported_5,
-  symbol_090 as imported_6,
-  symbol_094 as imported_7,
+  symbol_080 as imported_5,
+  symbol_089 as imported_6,
+  symbol_093 as imported_7,
   symbol_032 as imported_8,
 } from "../entry.js";
 import { I as imported_9, a as imported_10 } from "../components/icon-play.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_57f57962 = imported((arg) => ({
   activeAudioId: null,
   setActiveAudio: (arg) =>
@@ -58,7 +81,7 @@ function fn_9c291bbd(arg) {
   }
   return local;
 }
-function fn_ab71c996(arg) {
+function fn_b5bf2c3a(arg) {
   if (!isFinite(arg) || isNaN(arg)) {
     return "0:00";
   }
@@ -66,7 +89,7 @@ function fn_ab71c996(arg) {
   const local_2 = Math.floor(arg % 60);
   return `${local}:${local_2.toString().padStart(2, "0")}`;
 }
-export function fn_cae8a553({ src: arg, duration: arg_2 = 0 }) {
+export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
   const local = imported_2(() => arg, [arg]);
   const local_2 = imported_2(() => fn_9c291bbd(arg), [arg]);
   const local_3 = local_57f57962((arg) => arg.activeAudioId);
@@ -248,14 +271,14 @@ export function fn_cae8a553({ src: arg, duration: arg_2 = 0 }) {
             children: [
               imported_7("span", {
                 className: local_92418e80.time,
-                children: fn_ab71c996(
+                children: fn_b5bf2c3a(
                   local_16 || local_7 > 0 ? local_7 : local_9,
                 ),
               }),
               (local_16 || local_7 > 0) &&
                 imported_7("span", {
                   className: local_92418e80.duration,
-                  children: ["../site/index.html", fn_ab71c996(local_9)],
+                  children: ["../site/index.html", fn_b5bf2c3a(local_9)],
                 }),
             ],
           }),
@@ -264,4 +287,4 @@ export function fn_cae8a553({ src: arg, duration: arg_2 = 0 }) {
     ],
   });
 }
-export { fn_cae8a553 as default };
+export { fn_5eac85a0 as default };

@@ -1,15 +1,38 @@
 import {
   symbol_002 as imported,
-  symbol_090 as imported_2,
-  symbol_094 as imported_3,
+  symbol_089 as imported_2,
+  symbol_093 as imported_3,
   symbol_052 as imported_4,
-  symbol_095 as imported_5,
-  symbol_077 as imported_6,
-  symbol_081 as imported_7,
+  symbol_094 as imported_5,
+  symbol_076 as imported_6,
+  symbol_080 as imported_7,
   symbol_053 as imported_8,
 } from "../entry.js";
 import { u as imported_9 } from "../shared/use-body-scroll-lock.js";
 import { V as imported_10 } from "../components/volume-glyph.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";
@@ -139,7 +162,7 @@ const local_2ba33e70 = {
 const local_f06debfc = 280;
 const local_b45f1b6a = "cubic-bezier(0.32, 0.72, 0, 1)";
 const local_a3e1b3a5 = [0.5, 1, 1.5, 2];
-function fn_51299c59(arg) {
+function fn_4a1b442d(arg) {
   if (!isFinite(arg) || arg < 0) {
     return "0:00";
   }
@@ -173,7 +196,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_cb675dac,
+      fn_e172f982,
       {
         options: local_2,
         onUnmount: local_4,
@@ -183,7 +206,7 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_cb675dac({ options: arg, onUnmount: arg_2 }) {
+function fn_e172f982({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
@@ -661,9 +684,9 @@ function fn_cb675dac({ options: arg, onUnmount: arg_2 }) {
               imported_3("span", {
                 className: local_2ba33e70.time,
                 children: [
-                  fn_51299c59(local_7),
+                  fn_4a1b442d(local_7),
                   "../site/index.html",
-                  fn_51299c59(local_9),
+                  fn_4a1b442d(local_9),
                 ],
               }),
               imported_3("button", {

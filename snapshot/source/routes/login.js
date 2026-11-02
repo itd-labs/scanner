@@ -1,10 +1,10 @@
 import {
-  symbol_077 as imported,
+  symbol_076 as imported,
   symbol_029 as imported_2,
-  symbol_090 as imported_3,
-  symbol_088 as imported_4,
-  symbol_091 as imported_5,
-  symbol_094 as imported_6,
+  symbol_089 as imported_3,
+  symbol_087 as imported_4,
+  symbol_090 as imported_5,
+  symbol_093 as imported_6,
   symbol_010 as imported_7,
   symbol_003 as imported_8,
   symbol_020 as imported_9,
@@ -15,6 +15,29 @@ import {
   I as imported_12,
   a as imported_13,
 } from "../components/icon-eye-off.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_adb43aea = "c_container";
 const local_3f8170c1 = "c_logo";
 const local_7ab56d01 = "c_form";
@@ -53,7 +76,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   signupLink: local_ac2763e8,
 };
-export const local_c686a307 = (arg) => {
+export const local_2e0168a2 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -261,4 +284,4 @@ export const local_c686a307 = (arg) => {
     ],
   });
 };
-export { local_c686a307 as default };
+export { local_2e0168a2 as default };

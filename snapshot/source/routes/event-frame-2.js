@@ -1,18 +1,41 @@
 import {
   symbol_027 as imported,
   symbol_018 as imported_2,
-  symbol_081 as imported_3,
+  symbol_080 as imported_3,
   symbol_001 as imported_4,
   symbol_028 as imported_5,
-  symbol_094 as imported_6,
+  symbol_093 as imported_6,
   symbol_002 as imported_7,
-  symbol_092 as imported_8,
+  symbol_091 as imported_8,
   symbol_030 as imported_9,
-  symbol_085 as imported_10,
+  symbol_084 as imported_10,
   symbol_029 as imported_11,
-  symbol_075 as imported_12,
+  symbol_074 as imported_12,
   symbol_031 as imported_13,
 } from "../entry.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_e9c2b385 = imported((arg) => ({
   portal: {
     active: false,
@@ -35,7 +58,7 @@ const local_e9c2b385 = imported((arg) => ({
 const local_9812c6ee = () => local_e9c2b385((arg) => arg.portal);
 const local_9812c6ee_2 = () => local_e9c2b385((arg) => arg.loaded);
 const local_084773c6 = "/public/events/aliceai";
-function fn_59f5ed30(arg) {
+function fn_dc4c6753(arg) {
   if (!arg.active || !arg.url) {
     return false;
   }
@@ -62,7 +85,7 @@ const local_e3cffaad = {
   frame: local_e2a47d41,
 };
 const local_4cce3d02 = new RegExp(`^${imported_5.ALICE_EVENT}/?`);
-function fn_52161e6f() {
+function fn_7869e039() {
   const local = window.location.pathname.replace(local_4cce3d02, "");
   return `${local_084773c6}/${local}${window.location.search}`;
 }
@@ -70,7 +93,7 @@ export function fn_3c3ff162(arg) {
   const local = local_9812c6ee();
   const local_2 = local_9812c6ee_2();
   const local_3 = local_e9c2b385((arg) => arg.fetchPortal);
-  const local_4 = fn_59f5ed30(local);
+  const local_4 = fn_dc4c6753(local);
   imported_3(() => {
     local_3();
   }, [local_3]);
@@ -86,7 +109,7 @@ export function fn_3c3ff162(arg) {
 }
 function fn_20cd22cf() {
   const local = imported_7(null);
-  const local_2 = imported_7(fn_52161e6f()).current;
+  const local_2 = imported_7(fn_7869e039()).current;
   const local_3 = imported_7(
     window.location.pathname.replace(local_4cce3d02, ""),
   );

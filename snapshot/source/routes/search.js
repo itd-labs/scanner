@@ -3,21 +3,44 @@ import {
   symbol_019 as imported_2,
   symbol_024 as imported_3,
   symbol_025 as imported_4,
-  symbol_077 as imported_5,
+  symbol_076 as imported_5,
   symbol_002 as imported_6,
-  symbol_081 as imported_7,
-  symbol_090 as imported_8,
-  symbol_094 as imported_9,
+  symbol_080 as imported_7,
+  symbol_089 as imported_8,
+  symbol_093 as imported_9,
   symbol_026 as imported_10,
   symbol_020 as imported_11,
-  symbol_098 as imported_12,
+  symbol_097 as imported_12,
   symbol_022 as imported_13,
   symbol_016 as imported_14,
 } from "../entry.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_f50950e4 = new imported_4(1, 300 * 1000);
 const local_f50950e4_2 = new imported_4(1, 300 * 1000);
 const local_c07ef0a9 = "data";
-const local_5a1d67b6 = {
+const local_28228565 = {
   async getTrendingHashtags(arg = 10) {
     const local = local_f50950e4.get(local_c07ef0a9);
     if (local) {
@@ -153,8 +176,8 @@ export const local_933b8574 = (arg) => {
     (async () => {
       try {
         const [local, local_2] = await Promise.all([
-          local_5a1d67b6.getPopularAvatars(),
-          local_5a1d67b6.getTrendingHashtags(),
+          local_28228565.getPopularAvatars(),
+          local_28228565.getTrendingHashtags(),
         ]);
         local_4(local.slice(0, 10));
         local_6(local_2.slice(0, 10));
@@ -176,7 +199,7 @@ export const local_933b8574 = (arg) => {
     }
     local_16(true);
     try {
-      const local = await local_5a1d67b6.globalSearch(local, 10, 5);
+      const local = await local_28228565.globalSearch(local, 10, 5);
       local_8(local.users);
       local_10(local.hashtags);
     } catch (error) {

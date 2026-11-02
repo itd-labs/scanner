@@ -1,11 +1,34 @@
 import {
   symbol_002 as imported,
-  symbol_077 as imported_2,
-  symbol_081 as imported_3,
-  symbol_092 as imported_4,
-  symbol_085 as imported_5,
-  symbol_094 as imported_6,
+  symbol_076 as imported_2,
+  symbol_080 as imported_3,
+  symbol_091 as imported_4,
+  symbol_084 as imported_5,
+  symbol_093 as imported_6,
 } from "../entry.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_e2a47d41 = "c_frame";
 const local_30e69e8f = "c_raised";
 const local_4ae1eafe = {
@@ -13,16 +36,16 @@ const local_4ae1eafe = {
   raised: local_30e69e8f,
 };
 const local_bcced4d6 = "/public/shop";
-function fn_96ef6b05() {
+function fn_d9068f76() {
   const local = window.location.pathname.replace(/^\/shop\/?/, "");
   if (local) {
     return `${local_bcced4d6}/${local}${window.location.search}`;
   }
   return `${local_bcced4d6}/`;
 }
-export function fn_bc6f63b1(arg) {
+export function fn_29449b32(arg) {
   const local = imported(null);
-  const local_2 = imported(fn_96ef6b05()).current;
+  const local_2 = imported(fn_d9068f76()).current;
   const [local_3, local_4] = imported_2(false);
   const local_5 = imported(window.location.pathname.replace(/^\/shop\/?/, ""));
   imported_3(() => {

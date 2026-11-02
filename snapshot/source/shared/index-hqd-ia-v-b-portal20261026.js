@@ -1,16 +1,16 @@
 import {
   symbol_002 as imported,
-  symbol_077 as imported_2,
-  symbol_090 as imported_3,
+  symbol_076 as imported_2,
+  symbol_089 as imported_3,
   symbol_015 as socialApi,
-  symbol_081 as imported_4,
+  symbol_080 as imported_4,
   symbol_013 as imported_5,
   symbol_033 as imported_6,
   symbol_029 as imported_7,
   symbol_001 as imported_8,
-  symbol_094 as imported_9,
+  symbol_093 as imported_9,
   symbol_016 as imported_10,
-  symbol_098 as imported_11,
+  symbol_097 as imported_11,
   symbol_022 as imported_12,
   symbol_003 as imported_13,
   symbol_034 as imported_14,
@@ -24,7 +24,30 @@ import {
 import { I as imported_16 } from "../components/icon-check.js";
 import { VerificationModal } from "./index-q-tv-tful4-portal20261026.js";
 import "../components/icon-check-circle.js";
-export function fn_a8323ee1(arg, arg_2) {
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
+export function fn_154f7350(arg, arg_2) {
   const local = imported(null);
   const local_2 = `${arg || "me"}-${arg_2}`;
   const [local_3, local_4] = imported_2([]);
@@ -230,7 +253,7 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
     userFollowStatus: local_8,
     loadingFollowIds: local_9,
     handleToggleFollow: local_10,
-  } = fn_a8323ee1(arg, arg_2);
+  } = fn_154f7350(arg, arg_2);
   const [local_11, local_12] = imported_2(new Map());
   const [local_13, local_14] = imported_2(new Set());
   const local_15 = arg_2 === "pending-incoming";

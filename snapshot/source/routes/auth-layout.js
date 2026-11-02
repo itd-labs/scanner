@@ -1,9 +1,32 @@
 import {
   symbol_002 as imported,
-  symbol_081 as imported_2,
-  symbol_094 as imported_3,
-  symbol_078 as imported_4,
+  symbol_080 as imported_2,
+  symbol_093 as imported_3,
+  symbol_077 as imported_4,
 } from "../entry.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_3eb06192 = (arg) => ({
   id: arg.id,
   username: arg.username,
@@ -593,7 +616,7 @@ const local_15213d5c = [14, 11];
 const local_f06debfc = 2.5;
 const local_f06debfc_2 = 3000;
 const local_f06debfc_3 = 1.1;
-function fn_6439ae83({ posts: arg, trackRef: arg_2 }) {
+function fn_fb5050ef({ posts: arg, trackRef: arg_2 }) {
   return imported_3("div", {
     className: local_edc0448f.column,
     children: imported_3("div", {
@@ -622,7 +645,7 @@ function fn_6439ae83({ posts: arg, trackRef: arg_2 }) {
     }),
   });
 }
-export const local_06c4c344 = ({ children: arg }) => {
+export const local_21a4f168 = ({ children: arg }) => {
   const local = local_6d272ac7.filter((arg, arg_2) => arg_2 % 2 === 0);
   const local_2 = local_6d272ac7.filter((arg, arg_2) => arg_2 % 2 === 1);
   const local_3 = imported(null);
@@ -702,11 +725,11 @@ export const local_06c4c344 = ({ children: arg }) => {
         "aria-hidden": "true",
         ref: local_3,
         children: [
-          imported_3(fn_6439ae83, {
+          imported_3(fn_fb5050ef, {
             posts: local,
             trackRef: local_4,
           }),
-          imported_3(fn_6439ae83, {
+          imported_3(fn_fb5050ef, {
             posts: local_2,
             trackRef: local_5,
           }),
@@ -719,4 +742,4 @@ export const local_06c4c344 = ({ children: arg }) => {
     ],
   });
 };
-export { local_06c4c344 as default };
+export { local_21a4f168 as default };

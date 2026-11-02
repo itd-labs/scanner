@@ -1,11 +1,34 @@
 import {
-  symbol_077 as imported,
-  symbol_081 as imported_2,
-  symbol_096 as imported_3,
-  symbol_095 as imported_4,
-  symbol_094 as imported_5,
+  symbol_076 as imported,
+  symbol_080 as imported_2,
+  symbol_095 as imported_3,
+  symbol_094 as imported_4,
+  symbol_093 as imported_5,
   symbol_014 as imported_6,
 } from "../entry.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_dc758942 = "c_changelog";
 const local_c8e0e11a = "c_entry";
 const local_dfc44b32 = "c_entryHeader";

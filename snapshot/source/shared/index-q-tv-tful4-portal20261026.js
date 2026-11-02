@@ -1,16 +1,39 @@
 import {
-  symbol_094 as imported,
-  symbol_077 as imported_2,
+  symbol_093 as imported,
+  symbol_076 as imported_2,
   symbol_002 as imported_3,
-  symbol_081 as imported_4,
+  symbol_080 as imported_4,
   symbol_036 as imported_5,
   symbol_016 as imported_6,
   symbol_014 as imported_7,
   symbol_003 as imported_8,
   symbol_034 as imported_9,
-  symbol_086 as imported_10,
+  symbol_085 as imported_10,
 } from "../entry.js";
 import { I as imported_11 } from "../components/icon-check-circle.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_3aecdb4a = ({ size: arg = 48 }) =>
   imported("svg", {
     width: arg,
@@ -143,7 +166,7 @@ const local_143ad0dd = {
 };
 const local_4cc8ec46 = 50 * 1024 * 1024;
 const local_865f321e = ["video/mp4", "video/webm", "video/quicktime"];
-export function fn_e49d7cc0({ onClose: arg }) {
+export function fn_b7a43ad1({ onClose: arg }) {
   const [local, local_2] = imported_2("loading");
   const [local_3, local_4] = imported_2(null);
   const [local_5, local_6] = imported_2(null);
@@ -404,4 +427,4 @@ export function fn_e49d7cc0({ onClose: arg }) {
     }),
   });
 }
-export { fn_e49d7cc0 as default };
+export { fn_b7a43ad1 as default };

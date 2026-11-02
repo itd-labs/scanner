@@ -1,22 +1,45 @@
 import {
   symbol_002 as imported,
   symbol_021 as imported_2,
-  symbol_075 as imported_3,
-  symbol_079 as imported_4,
-  symbol_080 as imported_5,
-  symbol_082 as imported_6,
-  symbol_083 as imported_7,
+  symbol_074 as imported_3,
+  symbol_078 as imported_4,
+  symbol_079 as imported_5,
+  symbol_081 as imported_6,
+  symbol_082 as imported_7,
   symbol_029 as imported_8,
-  symbol_081 as imported_9,
-  symbol_090 as imported_10,
-  symbol_086 as imported_11,
-  symbol_094 as imported_12,
+  symbol_080 as imported_9,
+  symbol_089 as imported_10,
+  symbol_085 as imported_11,
+  symbol_093 as imported_12,
   symbol_001 as imported_13,
-  symbol_078 as imported_14,
+  symbol_077 as imported_14,
   symbol_004 as imported_15,
-  symbol_084 as imported_16,
+  symbol_083 as imported_16,
 } from "../entry.js";
 import { I as imported_17 } from "../components/icon-chevron-left.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_301dfc98 = "c_postPage";
 const local_969d651e = "c_pageHeader";
 const local_b79c6e36 = "c_pageTitle";
@@ -37,7 +60,7 @@ const local_50ed0b16 = {
   fixedInputWrapper: local_7abbc161,
   notFound: local_79555638,
 };
-export function fn_d4b6d1c9({ postId: arg, comment: arg_2 }) {
+export function fn_d8341946({ postId: arg, comment: arg_2 }) {
   const local = imported(null);
   const local_2 = imported_2(
     () =>
@@ -258,4 +281,4 @@ export function fn_d4b6d1c9({ postId: arg, comment: arg_2 }) {
   }
   return null;
 }
-export { fn_d4b6d1c9 as default };
+export { fn_d8341946 as default };

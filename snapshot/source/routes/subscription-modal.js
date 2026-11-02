@@ -1,16 +1,16 @@
 import {
   symbol_027 as imported,
   symbol_049 as imported_2,
-  symbol_094 as imported_3,
+  symbol_093 as imported_3,
   symbol_018 as imported_4,
   symbol_019 as imported_5,
-  symbol_077 as imported_6,
+  symbol_076 as imported_6,
   symbol_003 as imported_7,
   symbol_014 as imported_8,
-  symbol_093 as imported_9,
+  symbol_092 as imported_9,
   symbol_029 as imported_10,
-  symbol_088 as imported_11,
-  symbol_091 as imported_12,
+  symbol_087 as imported_11,
+  symbol_090 as imported_12,
   symbol_050 as imported_13,
   symbol_055 as imported_14,
   aU as imported_15,
@@ -18,39 +18,62 @@ import {
   aj as imported_17,
   aV as imported_18,
   symbol_002 as imported_19,
-  symbol_081 as imported_20,
+  symbol_080 as imported_20,
   symbol_036 as imported_21,
-  symbol_090 as imported_22,
+  symbol_089 as imported_22,
   aW as imported_23,
   symbol_016 as imported_24,
   symbol_020 as imported_25,
   aX as imported_26,
   symbol_001 as imported_27,
-  symbol_095 as imported_28,
-  symbol_067 as imported_29,
-  symbol_098 as imported_30,
+  symbol_094 as imported_28,
+  symbol_066 as imported_29,
+  symbol_097 as imported_30,
   symbol_006 as imported_31,
   aY as imported_32,
-  symbol_064 as imported_33,
-  symbol_099 as imported_34,
+  symbol_063 as imported_33,
+  symbol_098 as imported_34,
   symbol_032 as imported_35,
   symbol_034 as imported_36,
   symbol_011 as imported_37,
   aZ as imported_38,
   symbol_015 as imported_39,
-  symbol_072 as imported_40,
+  symbol_071 as imported_40,
   symbol_031 as imported_41,
-  symbol_075 as imported_42,
+  symbol_074 as imported_42,
   aH as imported_43,
   symbol_051 as imported_44,
   symbol_042 as imported_45,
-  symbol_083 as useSettingsStore,
+  symbol_082 as useSettingsStore,
 } from "../entry.js";
 import { C as imported_46 } from "../shared/index-bkpoiy5w-portal20261026.js";
 import { I as imported_47 } from "../components/icon-info.js";
 import { I as imported_48 } from "../components/icon-notification-mention.js";
 import { I as imported_49 } from "../components/icon-chevron-right.js";
 import { I as imported_50 } from "../components/icon-chevron-left.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_4942f276 = () => {
   if (
     typeof window !== "undefined" &&
@@ -336,7 +359,7 @@ const local_339f5c81 = {
   toggle: local_4e84fc10,
   active: local_6ab69625,
 };
-function fn_ceab75d6({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
+function fn_e408261d({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
   const local = (arg) => {
     arg.stopPropagation();
     if (!arg_3) {
@@ -1710,7 +1733,7 @@ function fn_b267a7cf(arg, arg_2) {
   }
   return local_2;
 }
-function fn_7800780e() {
+function fn_7d685cb5() {
   const local = imported_19(null);
   const local_2 = imported_19(null);
   const local_3 = imported_19({
@@ -1912,7 +1935,7 @@ function fn_36b21ae2(arg) {
   }
   return arg.type;
 }
-export function fn_ef47f53c({ isOpen: arg, onClose: arg_2 }) {
+export function fn_4ebc4523({ isOpen: arg, onClose: arg_2 }) {
   const local = imported_29();
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -2013,7 +2036,7 @@ export function fn_ef47f53c({ isOpen: arg, onClose: arg_2 }) {
       frameless: true,
       className: local_23034546.modal,
       children: [
-        imported_3(fn_7800780e, {}),
+        imported_3(fn_7d685cb5, {}),
         imported_3("div", {
           className: local_23034546.sub,
           children: [
@@ -2355,7 +2378,7 @@ function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
 const local_f06debfc_5 = 5;
-function fn_a51d642c() {
+function fn_d6a8038b() {
   const local = imported_10((arg) => arg.profile);
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -2770,7 +2793,7 @@ function fn_a51d642c() {
           onConfirm: () => local_22(local_16),
           onClose: () => local_17(null),
         }),
-      imported_3(fn_ef47f53c, {
+      imported_3(fn_4ebc4523, {
         isOpen: local_6,
         onClose: () => {
           local_7(false);
@@ -2954,7 +2977,7 @@ function fn_db72d620(arg, arg_2, arg_3, arg_4) {
   }
   return arg_4;
 }
-function fn_cf9f817c(arg) {
+function fn_4ca5e77a(arg) {
   const local = new Date(arg).getTime();
   if (Number.isNaN(local)) {
     return "—";
@@ -3228,7 +3251,7 @@ function fn_18c5efb9({ onChangePassword: arg }) {
                                       children: [
                                         fn_983517b5(arg),
                                         " · ",
-                                        fn_cf9f817c(arg.lastUsedAt),
+                                        fn_4ca5e77a(arg.lastUsedAt),
                                       ],
                                     }),
                                   ],
@@ -3437,7 +3460,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.webEnabled,
                 onChange: (arg) => local_14("webEnabled", arg),
               }),
@@ -3471,7 +3494,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.soundEnabled,
                 onChange: (arg) => local_14("soundEnabled", arg),
               }),
@@ -3514,7 +3537,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.follows,
                 onChange: (arg) => local_14("follows", arg),
               }),
@@ -3548,7 +3571,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.wallPosts,
                 onChange: (arg) => local_14("wallPosts", arg),
               }),
@@ -3592,7 +3615,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.reactions,
                 onChange: (arg) => local_14("reactions", arg),
               }),
@@ -3626,7 +3649,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.replies,
                 onChange: (arg) => local_14("replies", arg),
               }),
@@ -3660,7 +3683,7 @@ const local_a5ebbbd3 = imported_15(function (
                   }),
                 ],
               }),
-              imported_3(fn_ceab75d6, {
+              imported_3(fn_e408261d, {
                 checked: local_4.mentions,
                 onChange: (arg) => local_14("mentions", arg),
               }),
@@ -3888,7 +3911,7 @@ const local_db92a3ab = imported_15(function (
                     ],
                   }),
                 }),
-                imported_3(fn_ceab75d6, {
+                imported_3(fn_e408261d, {
                   checked: local.showLastSeen,
                   onChange: (arg) => local_27("showLastSeen", arg),
                 }),
@@ -4190,7 +4213,7 @@ function fn_a922827f() {
                           ],
                         }),
                       }),
-                      imported_3(fn_ceab75d6, {
+                      imported_3(fn_e408261d, {
                         checked: local_20?.closed ?? false,
                         disabled: !local_20?.hasCurtains || local_12,
                         onChange: (arg) => {
@@ -4336,7 +4359,7 @@ const local_f81543a8 = [
     color: "#a855f7",
   },
 ];
-export function fn_e2a8041b({ onClose: arg }) {
+export function fn_fe6a6b14({ onClose: arg }) {
   const local = imported_43();
   const local_2 = local_f81543a8.filter(
     (arg) => arg.id !== "event" || local.status === "allowed",
@@ -4416,7 +4439,7 @@ export function fn_e2a8041b({ onClose: arg }) {
           onClose: arg,
         });
       case "payment":
-        return imported_3(fn_a51d642c, {});
+        return imported_3(fn_d6a8038b, {});
       case "appearance":
         return imported_3(fn_92ca2ba3, {});
       case "security":
@@ -4487,37 +4510,46 @@ export function fn_e2a8041b({ onClose: arg }) {
                   }),
                   imported_3("nav", {
                     className: local_b77a44cd.mobileMenu,
-                    children: local_2.map((arg) =>
-                      imported_3(
-                        "button",
-                        {
-                          type: "button",
-                          className: local_b77a44cd.mobileMenuItem,
-                          onClick: () => local_23(arg.id),
-                          children: [
-                            imported_3("span", {
-                              className: local_b77a44cd.mobileMenuIcon,
-                              style: {
-                                background: arg.color,
-                              },
-                              children: imported_3(arg.icon, {
-                                size: 16,
+                    children: [
+                      local_2.map((arg) =>
+                        imported_3(
+                          "button",
+                          {
+                            type: "button",
+                            className: local_b77a44cd.mobileMenuItem,
+                            onClick: () => local_23(arg.id),
+                            children: [
+                              imported_3("span", {
+                                className: local_b77a44cd.mobileMenuIcon,
+                                style: {
+                                  background: arg.color,
+                                },
+                                children: imported_3(arg.icon, {
+                                  size: 16,
+                                }),
                               }),
-                            }),
-                            imported_3("span", {
-                              children: arg.label,
-                            }),
-                            imported_3("span", {
-                              className: local_b77a44cd.mobileMenuChevron,
-                              children: imported_3(imported_49, {
-                                size: 18,
+                              imported_3("span", {
+                                children: arg.label,
                               }),
-                            }),
-                          ],
-                        },
-                        arg.id,
+                              imported_3("span", {
+                                className: local_b77a44cd.mobileMenuChevron,
+                                children: imported_3(imported_49, {
+                                  size: 18,
+                                }),
+                              }),
+                            ],
+                          },
+                          arg.id,
+                        ),
                       ),
-                    ),
+                      imported_3("a", {
+                        className: local_b77a44cd.mobileMenuItem,
+                        href: "/legal",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: "Правовые документы",
+                      }),
+                    ],
                   }),
                 ],
               }),

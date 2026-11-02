@@ -26,58 +26,58 @@ const local_10365213 = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_094 as imported,
-  symbol_098 as imported_2,
+  symbol_093 as imported,
+  symbol_097 as imported_2,
   symbol_003 as imported_3,
   symbol_014 as imported_4,
-  symbol_065 as imported_5,
-  symbol_066 as imported_6,
+  symbol_064 as imported_5,
+  symbol_065 as imported_6,
   aq as imported_7,
-  symbol_077 as imported_8,
-  symbol_067 as imported_9,
+  symbol_076 as imported_8,
+  symbol_066 as imported_9,
   symbol_054 as imported_10,
   symbol_020 as imported_11,
-  symbol_068 as imported_12,
-  symbol_056 as imported_13,
-  symbol_057 as imported_14,
-  symbol_099 as imported_15,
+  symbol_067 as imported_12,
+  ae as imported_13,
+  symbol_056 as imported_14,
+  symbol_098 as imported_15,
   symbol_002 as imported_16,
-  symbol_081 as imported_17,
-  symbol_069 as imported_18,
-  symbol_070 as imported_19,
+  symbol_080 as imported_17,
+  symbol_068 as imported_18,
+  symbol_069 as imported_19,
   symbol_053 as imported_20,
-  symbol_090 as imported_21,
-  symbol_071 as imported_22,
-  symbol_072 as imported_23,
-  symbol_073 as imported_24,
-  symbol_074 as imported_25,
+  symbol_089 as imported_21,
+  symbol_070 as imported_22,
+  symbol_071 as imported_23,
+  symbol_072 as imported_24,
+  symbol_073 as imported_25,
   az as imported_26,
   symbol_038 as imported_27,
   aB as imported_28,
   symbol_039 as imported_29,
-  symbol_095 as imported_30,
+  symbol_094 as imported_30,
   symbol_001 as imported_31,
-  symbol_064 as imported_32,
+  symbol_063 as imported_32,
   symbol_033 as imported_33,
   symbol_031 as imported_34,
   symbol_040 as imported_35,
   symbol_034 as imported_36,
   symbol_041 as imported_37,
   aF as imported_38,
-  symbol_088 as imported_39,
+  symbol_087 as imported_39,
   aG as imported_40,
   aH as imported_41,
   symbol_036 as imported_42,
-  symbol_086 as imported_43,
+  symbol_085 as imported_43,
   symbol_042 as imported_44,
-  symbol_063 as imported_45,
+  symbol_062 as imported_45,
   aJ as imported_46,
   aK as imported_47,
   symbol_022 as imported_48,
-  symbol_089 as imported_49,
+  symbol_088 as imported_49,
   symbol_029 as imported_50,
   symbol_043 as imported_51,
-  symbol_075 as imported_52,
+  symbol_074 as imported_52,
   symbol_044 as imported_53,
   symbol_015 as imported_54,
   aj as imported_55,
@@ -89,12 +89,35 @@ import {
   aQ as imported_61,
   symbol_048 as imported_62,
   symbol_023 as imported_63,
-  symbol_078 as imported_64,
-  symbol_076 as imported_65,
+  symbol_077 as imported_64,
+  symbol_075 as imported_65,
 } from "../entry.js";
 import { I as imported_66 } from "../components/icon-check.js";
 import { I as imported_67 } from "../components/icon-chevron-left.js";
 import { C as imported_68 } from "../shared/index-bkpoiy5w-portal20261026.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_e67a7b1e = ({ size: arg = 24 }) =>
   imported("svg", {
     width: arg,
@@ -303,7 +326,7 @@ function fn_0f3f04de(arg, arg_2, arg_3, arg_4) {
   }
   return arg_4;
 }
-function fn_f3850f21(arg) {
+function fn_7dc01f3c(arg) {
   if (!arg) {
     return null;
   }
@@ -341,7 +364,7 @@ function fn_ddbbf12c(arg) {
   }
   return arg.toString();
 }
-function fn_b667ffe7({
+function fn_312ee776({
   followers: arg,
   following: arg_2,
   isPhone: arg_3 = false,
@@ -911,7 +934,7 @@ function fn_1dd73c40(arg) {
   }
   return local ?? null;
 }
-function fn_98d4ceed({
+function fn_d4ebe153({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -2594,7 +2617,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_b688ba94({
+function fn_adf03306({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2909,7 +2932,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_73e4e3f3({
+function fn_01a94f35({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3049,7 +3072,7 @@ function fn_73e4e3f3({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_10 &&
-            imported(fn_98d4ceed, {
+            imported(fn_d4ebe153, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3192,7 +3215,7 @@ function fn_73e4e3f3({
                   imported("div", {
                     className: local_819ff8dc.detailsMain,
                     children: [
-                      imported(fn_b667ffe7, {
+                      imported(fn_312ee776, {
                         isPhone: arg_8,
                         followers: arg.stats?.followers ?? 0,
                         following: arg.stats?.following ?? 0,
@@ -3226,7 +3249,7 @@ function fn_73e4e3f3({
                           className: local_819ff8dc.metaItem,
                           children: [
                             "Был(а) в сети: ",
-                            fn_f3850f21(arg.lastSeen),
+                            fn_7dc01f3c(arg.lastSeen),
                           ],
                         }),
                       arg.createdAt &&
@@ -3262,7 +3285,7 @@ function fn_73e4e3f3({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_b688ba94, {
+                      children: imported(fn_adf03306, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -4200,7 +4223,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_73e4e3f3, {
+      imported(fn_01a94f35, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,

@@ -1,15 +1,38 @@
 import {
   symbol_029 as imported,
-  symbol_077 as imported_2,
-  symbol_090 as imported_3,
+  symbol_076 as imported_2,
+  symbol_089 as imported_3,
   symbol_001 as imported_4,
-  symbol_088 as imported_5,
-  symbol_091 as imported_6,
-  symbol_094 as imported_7,
+  symbol_087 as imported_5,
+  symbol_090 as imported_6,
+  symbol_093 as imported_7,
   symbol_014 as imported_8,
   symbol_003 as imported_9,
 } from "../entry.js";
 import { symbol_001 as imported_10 } from "./index-ggtxn-mrt-portal20261026.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_adb43aea = "c_container";
 const local_f1c23efb = "c_header";
 const local_9d9cf508 = "c_title";
@@ -21,7 +44,7 @@ const local_b3567ea0 = "c_expiredModal";
 const local_1482e028 = "c_expiredTitle";
 const local_2dca8ec3 = "c_expiredText";
 const local_6fcad58f = "c_expiredActions";
-const local_c9c49b86 = {
+const local_9667ddd6 = {
   container: local_adb43aea,
   header: local_f1c23efb,
   title: local_9d9cf508,
@@ -34,7 +57,7 @@ const local_c9c49b86 = {
   expiredText: local_2dca8ec3,
   expiredActions: local_6fcad58f,
 };
-function symbol_001({ email: arg, onBack: arg_2 }) {
+function symbol_001({ email: arg, onBack: arg_2, onLegalError: arg_3 }) {
   const { verifyOtp: local, resendOtp: local_2 } = imported();
   const [local_3, local_4] = imported_2(null);
   const [local_5, local_6] = imported_2(false);
@@ -64,7 +87,9 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
             : imported_4("../site/index.html")
           : local === "password_reset" && imported_4("/reset-password");
       } catch (error) {
-        if (local_13(error)) {
+        if (imported_5(error) && error.code.startsWith("LEGAL_") && arg_3) {
+          arg_3(error.code);
+        } else if (local_13(error)) {
           local_10(true);
         } else if (imported_5(error)) {
           switch (error.code) {
@@ -84,7 +109,7 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
         local_6(false);
       }
     },
-    [local],
+    [local, arg_3],
   );
   const local_15 = imported_3(async () => {
     local_4(null);
@@ -128,17 +153,17 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
     arg_2?.();
   }, [arg_2]);
   return imported_7("div", {
-    className: local_c9c49b86.container,
+    className: local_9667ddd6.container,
     children: [
       imported_7("div", {
-        className: local_c9c49b86.header,
+        className: local_9667ddd6.header,
         children: [
           imported_7("h1", {
-            className: local_c9c49b86.title,
+            className: local_9667ddd6.title,
             children: "Подтверждение действия",
           }),
           imported_7("p", {
-            className: local_c9c49b86.subtitle,
+            className: local_9667ddd6.subtitle,
             children: [
               "Мы отправили шестизначный код на почту ",
               arg,
@@ -149,12 +174,12 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
       }),
       local_3 &&
         imported_7("div", {
-          className: local_c9c49b86.error,
+          className: local_9667ddd6.error,
           children: local_3,
         }),
       local_7 &&
         imported_7("div", {
-          className: local_c9c49b86.success,
+          className: local_9667ddd6.success,
           children: "Код отправлен повторно",
         }),
       imported_7(imported_10, {
@@ -165,7 +190,7 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
       arg_2 &&
         imported_7("button", {
           type: "button",
-          className: local_c9c49b86.backButton,
+          className: local_9667ddd6.backButton,
           onClick: arg_2,
           children: "Назад",
         }),
@@ -174,19 +199,19 @@ function symbol_001({ email: arg, onBack: arg_2 }) {
           onClose: local_17,
           showHeader: false,
           children: imported_7("div", {
-            className: local_c9c49b86.expiredModal,
+            className: local_9667ddd6.expiredModal,
             children: [
               imported_7("h2", {
-                className: local_c9c49b86.expiredTitle,
+                className: local_9667ddd6.expiredTitle,
                 children: "Время истекло",
               }),
               imported_7("p", {
-                className: local_c9c49b86.expiredText,
+                className: local_9667ddd6.expiredText,
                 children:
                   "Прошло слишком много времени, и прошлый код больше не действителен. Отправить новый код?",
               }),
               imported_7("div", {
-                className: local_c9c49b86.expiredActions,
+                className: local_9667ddd6.expiredActions,
                 children: [
                   imported_7(imported_9, {
                     variant: "secondary",

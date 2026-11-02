@@ -3,16 +3,39 @@ import {
   symbol_029 as imported_2,
   symbol_036 as imported_3,
   symbol_024 as imported_4,
-  symbol_075 as imported_5,
-  symbol_087 as imported_6,
-  symbol_081 as imported_7,
+  symbol_074 as imported_5,
+  symbol_086 as imported_6,
+  symbol_080 as imported_7,
   symbol_001 as imported_8,
   symbol_028 as imported_9,
-  symbol_094 as imported_10,
+  symbol_093 as imported_10,
   symbol_002 as imported_11,
-  symbol_092 as imported_12,
-  symbol_058 as imported_13,
+  symbol_091 as imported_12,
+  symbol_057 as imported_13,
 } from "../entry.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_6ca67a93 = (arg) =>
   arg.slice(imported.route.length).replace(/^\//, "");
 function fn_8f9099b6(arg, arg_2) {

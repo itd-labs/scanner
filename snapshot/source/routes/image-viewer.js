@@ -1,18 +1,41 @@
 import {
-  symbol_090 as imported,
-  symbol_077 as imported_2,
-  symbol_081 as imported_3,
+  symbol_089 as imported,
+  symbol_076 as imported_2,
+  symbol_080 as imported_3,
   symbol_002 as imported_4,
   symbol_021 as imported_5,
-  symbol_094 as imported_6,
+  symbol_093 as imported_6,
   symbol_020 as imported_7,
   aj as imported_8,
   symbol_053 as imported_9,
-  symbol_095 as imported_10,
+  symbol_094 as imported_10,
 } from "../entry.js";
 import { u as imported_11 } from "../shared/use-body-scroll-lock.js";
 import { I as imported_12 } from "../components/icon-chevron-left.js";
 import { I as imported_13 } from "../components/icon-chevron-right.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_f06debfc = 100;
 function fn_bb641065(arg, arg_2) {
   const local = imported(() => {
@@ -1108,7 +1131,7 @@ function fn_00da9caf(arg) {
     return null;
   }
 }
-function fn_244720dc({
+function fn_1bd8ba58({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1335,7 +1358,7 @@ function fn_8c9a3cce({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_244720dc, {
+              imported_6(fn_1bd8ba58, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1352,7 +1375,7 @@ function fn_8c9a3cce({
   });
 }
 const local_f06debfc_5 = 2;
-function fn_6ea0e39a({
+function fn_48b518c3({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1410,7 +1433,7 @@ function fn_6ea0e39a({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_244720dc, {
+              imported_6(fn_1bd8ba58, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1448,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_7137c35e({
+export function fn_cc144c14({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2067,7 +2090,7 @@ export function fn_7137c35e({
             zoom: local_28,
           }),
         local_11 &&
-          imported_6(fn_6ea0e39a, {
+          imported_6(fn_48b518c3, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2110,4 +2133,4 @@ export function fn_7137c35e({
     document.body,
   );
 }
-export { fn_7137c35e as default };
+export { fn_cc144c14 as default };

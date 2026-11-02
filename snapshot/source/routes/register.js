@@ -1,20 +1,82 @@
 import {
-  symbol_077 as imported,
-  symbol_029 as imported_2,
-  symbol_090 as imported_3,
-  symbol_088 as imported_4,
-  symbol_091 as imported_5,
-  symbol_094 as imported_6,
-  symbol_010 as imported_7,
-  symbol_003 as imported_8,
-  symbol_020 as imported_9,
+  symbol_076 as imported,
+  symbol_002 as imported_2,
+  symbol_089 as imported_3,
+  symbol_080 as imported_4,
+  symbol_029 as imported_5,
+  symbol_087 as imported_6,
+  symbol_090 as imported_7,
+  symbol_093 as imported_8,
+  symbol_010 as imported_9,
+  symbol_003 as imported_10,
+  symbol_020 as imported_11,
 } from "../entry.js";
-import { C as imported_10 } from "../shared/index-ggtxn-mrt-portal20261026.js";
-import { symbol_001 as imported_11 } from "../shared/index-df-ak-iq-portal20261026.js";
+import { C as imported_12 } from "../shared/index-ggtxn-mrt-portal20261026.js";
+import { symbol_001 as imported_13 } from "../shared/index-df-ak-iq-portal20261026.js";
 import {
-  I as imported_12,
-  a as imported_13,
+  I as imported_14,
+  a as imported_15,
 } from "../components/icon-eye-off.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
+async function fn_c8f66bab() {
+  const local = await fetch("/api/v1/auth/registration-context", {
+    cache: "no-store",
+    credentials: "include",
+  });
+  if (!local.ok) {
+    throw Error("LEGAL_UNAVAILABLE");
+  }
+  const local_2 = await local.json();
+  if (
+    local_2.protocolVersion !== 1 ||
+    typeof local_2.contextToken !== "string" ||
+    local_2.expiresAt <= Date.now() ||
+    !Array.isArray(local_2.bundle?.documents)
+  ) {
+    throw Error("LEGAL_UNAVAILABLE");
+  }
+  if (
+    local_2.bundle.actionVersion !== "registration-v1" ||
+    local_2.bundle.actionText !==
+      "Нажимая «Зарегистрироваться», вы принимаете Пользовательское соглашение и подтверждаете, что ознакомились с Политикой конфиденциальности."
+  ) {
+    throw Error("LEGAL_ACTION_UNSUPPORTED");
+  }
+  for (const local of ["terms", "privacy"]) {
+    const local = local_2.bundle.documents.find((arg) => arg.slug === local);
+    if (
+      !local ||
+      !/^[\d.-]+$/.test(local.version) ||
+      !/^[a-f0-9]{64}$/.test(local.contentSha256) ||
+      local.url !== `/legal/${local}/versions/${local.version}`
+    ) {
+      throw Error("LEGAL_UNAVAILABLE");
+    }
+  }
+  return local_2;
+}
 const local_12bca483 =
   "От 8 до 100 символов, хотя бы одна латинская буква и одна цифра.";
 function fn_fa99ef8c(arg) {
@@ -78,7 +140,7 @@ const local_66259d24 = {
   submitButton: local_7149ec44,
   loginLink: local_8ed84883,
 };
-export const local_dceeaa65 = (arg) => {
+export const local_8a5692cc = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -87,13 +149,38 @@ export const local_dceeaa65 = (arg) => {
   const [local_11, local_12] = imported(null);
   const [local_13, local_14] = imported(null);
   const [local_15, local_16] = imported("credentials");
+  const [local_17, local_18] = imported(null);
+  const [local_19, local_20] = imported("");
+  const local_21 = imported_2(null);
+  const local_22 = imported_2(0);
+  const local_23 = imported_3(async () => {
+    const local = ++local_22.current;
+    local_18(null);
+    local_20("");
+    try {
+      const local = await fn_c8f66bab();
+      if (local === local_22.current) {
+        local_18(local);
+      }
+    } catch {
+      if (local === local_22.current) {
+        local_20("Не удалось загрузить документы. Попробуйте ещё раз");
+      }
+    }
+  }, []);
+  imported_4(() => {
+    local_23();
+    return () => {
+      local_22.current++;
+    };
+  }, [local_23]);
   const {
-    register: local_17,
-    status: local_18,
-    reset: local_19,
-  } = imported_2();
-  const local_20 = local_18 === "loading";
-  const local_21 = (arg) => {
+    register: local_24,
+    status: local_25,
+    reset: local_26,
+  } = imported_5();
+  const local_27 = local_25 === "loading";
+  const local_28 = (arg) => {
     arg.preventDefault();
     local_10(null);
     local_12(null);
@@ -107,39 +194,67 @@ export const local_dceeaa65 = (arg) => {
       local_10(local_12bca483);
       return;
     }
+    if (!local_17 || local_17.expiresAt <= Date.now()) {
+      local_10(
+        "Документы обновлены. Проверьте ссылки и нажмите «Зарегистрироваться» ещё раз",
+      );
+      local_23();
+      return;
+    }
+    local_21.current = local_17;
     local_8(true);
   };
-  const local_22 = imported_3(
+  const local_29 = imported_3(
     async (arg) => {
       local_8(false);
       try {
-        await local_17({
+        if (!local_21.current) {
+          throw Error("LEGAL_CONTEXT_REQUIRED");
+        }
+        await local_24({
           email: local,
           password: local_3,
           turnstileToken: arg,
+          legal: {
+            protocolVersion: 1,
+            contextToken: local_21.current.contextToken,
+          },
         });
         local_16("verify");
       } catch (error) {
-        if (imported_4(error)) {
+        if (
+          error &&
+          typeof error === "object" &&
+          "code" in error &&
+          String(error.code).startsWith("LEGAL_")
+        ) {
+          local_10(
+            "Не удалось подтвердить документы. Проверьте их и повторите регистрацию",
+          );
+          local_21.current = null;
+          local_23();
+          return;
+        }
+        if (imported_6(error)) {
           if (fn_0a31d76f(error)) {
             local_14(local_12bca483);
             local_10(local_12bca483);
             return;
           }
           switch (error.code) {
-            case imported_5.ENTITY_ALREADY_EXISTS:
+            case imported_7.ENTITY_ALREADY_EXISTS:
               local_12("Этот email уже зарегистрирован");
               break;
-            case imported_5.ACCOUNT_EMAIL_DOMAIN_NOT_ALLOWED:
+            case imported_7.ACCOUNT_EMAIL_DOMAIN_NOT_ALLOWED:
               local_12("Почта этого домена не поддерживается");
               break;
-            case imported_5.CAPTCHA_FAILED:
+            case imported_7.CAPTCHA_FAILED:
               local_10("Проверка captcha не пройдена. Попробуйте снова");
               break;
-            case imported_5.RATE_LIMIT_EXCEEDED:
+            case imported_7.RATE_LIMIT_EXCEEDED:
               local_10("Слишком много попыток. Попробуйте позже");
               break;
-            case imported_5.VALIDATION_ERROR:
+            case imported_7.VALIDATION_ERROR:
               local_10("Проверьте введённые данные");
               break;
             default:
@@ -150,57 +265,71 @@ export const local_dceeaa65 = (arg) => {
         }
       }
     },
-    [local, local_3, local_17],
+    [local, local_3, local_24, local_23],
   );
-  const local_23 = imported_3(() => {
-    local_19();
+  const local_30 = imported_3(() => {
+    local_26();
     local_16("credentials");
-  }, [local_19]);
-  return imported_6(imported_9, {
+  }, [local_26]);
+  const local_31 = imported_3(
+    (arg) => {
+      local_26();
+      local_21.current = null;
+      local_16("credentials");
+      local_10(
+        arg === "LEGAL_RECEIPT_EXPIRED"
+          ? "Время подтверждения документов истекло. Проверьте ссылки и нажмите «Зарегистрироваться» ещё раз"
+          : "Не удалось подтвердить документы. Проверьте ссылки и повторите регистрацию",
+      );
+      local_23();
+    },
+    [local_26, local_23],
+  );
+  return imported_8(imported_11, {
     children: [
-      imported_6("div", {
+      imported_8("div", {
         className: local_66259d24.container,
         children: [
-          imported_6("div", {
+          imported_8("div", {
             className: local_66259d24.logo,
-            children: imported_6(imported_7, {}),
+            children: imported_8(imported_9, {}),
           }),
           local_15 === "credentials"
-            ? imported_6("form", {
+            ? imported_8("form", {
                 className: local_66259d24.form,
-                onSubmit: local_21,
+                onSubmit: local_28,
                 children: [
-                  imported_6("div", {
+                  imported_8("div", {
                     className: local_66259d24.header,
                     children: [
-                      imported_6("h1", {
+                      imported_8("h1", {
                         className: local_66259d24.title,
                         children: "Создание аккаунта",
                       }),
-                      imported_6("p", {
+                      imported_8("p", {
                         className: local_66259d24.subtitle,
                         children: "Пожалуйста, введите ваши данные",
                       }),
                     ],
                   }),
                   local_9 &&
-                    imported_6("div", {
+                    imported_8("div", {
                       className: local_66259d24.error,
                       role: "alert",
                       children: local_9,
                     }),
-                  imported_6("div", {
+                  imported_8("div", {
                     className: local_66259d24.inputs,
                     children: [
-                      imported_6("div", {
+                      imported_8("div", {
                         className: local_66259d24.inputGroup,
                         children: [
-                          imported_6("label", {
+                          imported_8("label", {
                             className: local_66259d24.label,
                             htmlFor: "register-email",
                             children: "E-Mail",
                           }),
-                          imported_6("input", {
+                          imported_8("input", {
                             id: "register-email",
                             type: "email",
                             autoComplete: "email",
@@ -211,27 +340,27 @@ export const local_dceeaa65 = (arg) => {
                               local_12(null);
                             },
                             placeholder: "ilya@gmail.com",
-                            disabled: local_20,
+                            disabled: local_27,
                           }),
                           local_11 &&
-                            imported_6("span", {
+                            imported_8("span", {
                               className: local_66259d24.fieldError,
                               children: local_11,
                             }),
                         ],
                       }),
-                      imported_6("div", {
+                      imported_8("div", {
                         className: local_66259d24.inputGroup,
                         children: [
-                          imported_6("label", {
+                          imported_8("label", {
                             className: local_66259d24.label,
                             htmlFor: "register-password",
                             children: "Пароль",
                           }),
-                          imported_6("div", {
+                          imported_8("div", {
                             className: local_66259d24.inputWrapper,
                             children: [
-                              imported_6("input", {
+                              imported_8("input", {
                                 id: "register-password",
                                 type: local_5 ? "text" : "password",
                                 autoComplete: "new-password",
@@ -247,9 +376,9 @@ export const local_dceeaa65 = (arg) => {
                                   local_14(null);
                                 },
                                 placeholder: "Введите пароль",
-                                disabled: local_20,
+                                disabled: local_27,
                               }),
-                              imported_6("button", {
+                              imported_8("button", {
                                 type: "button",
                                 "aria-label": local_5
                                   ? "Скрыть пароль"
@@ -257,16 +386,16 @@ export const local_dceeaa65 = (arg) => {
                                 className: local_66259d24.eyeButton,
                                 onClick: () => local_6(!local_5),
                                 children: local_5
-                                  ? imported_6(imported_12, {
+                                  ? imported_8(imported_14, {
                                       size: 20,
                                     })
-                                  : imported_6(imported_13, {
+                                  : imported_8(imported_15, {
                                       size: 20,
                                     }),
                               }),
                             ],
                           }),
-                          imported_6("p", {
+                          imported_8("p", {
                             id: "register-password-hint",
                             className: local_66259d24.passwordHint,
                             children: local_12bca483,
@@ -275,41 +404,69 @@ export const local_dceeaa65 = (arg) => {
                       }),
                     ],
                   }),
-                  imported_6("p", {
+                  imported_8("p", {
                     className: local_66259d24.terms,
                     children: [
-                      "Продолжая, вы соглашаетесь с",
+                      "Нажимая «Зарегистрироваться», вы принимаете",
                       "./register.js",
-                      imported_6("a", {
-                        href: "/terms",
+                      imported_8("a", {
+                        href:
+                          local_17?.bundle.documents.find(
+                            (arg) => arg.slug === "terms",
+                          )?.url ?? "/terms",
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        children: "условиями использования",
+                        children: "Пользовательское соглашение",
                       }),
-                      " и",
                       "./register.js",
-                      imported_6("a", {
-                        href: "/privacy",
+                      "и подтверждаете, что ознакомились с",
+                      "./register.js",
+                      imported_8("a", {
+                        href:
+                          local_17?.bundle.documents.find(
+                            (arg) => arg.slug === "privacy",
+                          )?.url ?? "/privacy",
                         target: "_blank",
                         rel: "noopener noreferrer",
-                        children: "политикой конфиденциальности",
+                        children: "Политикой конфиденциальности",
                       }),
+                      ".",
                     ],
                   }),
-                  imported_6(imported_8, {
+                  local_19 &&
+                    imported_8("p", {
+                      role: "alert",
+                      className: local_66259d24.fieldError,
+                      children: [
+                        local_19,
+                        "./register.js",
+                        imported_8("button", {
+                          type: "button",
+                          onClick: () => {
+                            local_23();
+                          },
+                          children: "Повторить",
+                        }),
+                      ],
+                    }),
+                  imported_8(imported_10, {
                     type: "submit",
                     variant: "primary",
                     size: "lg",
                     fullWidth: true,
                     className: local_66259d24.submitButton,
-                    disabled: local_20,
-                    children: local_20 ? "Регистрация..." : "Продолжить",
+                    disabled: local_27 || !local_17,
+                    children: local_27
+                      ? "Регистрация..."
+                      : !local_17 && !local_19
+                        ? "Загрузка документов..."
+                        : "Зарегистрироваться",
                   }),
-                  imported_6("p", {
+                  imported_8("p", {
                     className: local_66259d24.loginLink,
                     children: [
                       "Уже есть аккаунт? ",
-                      imported_6("a", {
+                      imported_8("a", {
                         href: "/login",
                         children: "Войти",
                       }),
@@ -317,18 +474,19 @@ export const local_dceeaa65 = (arg) => {
                   }),
                 ],
               })
-            : imported_6(imported_11, {
+            : imported_8(imported_13, {
                 email: local,
-                onBack: local_23,
+                onBack: local_30,
+                onLegalError: local_31,
               }),
         ],
       }),
-      imported_6(imported_10, {
+      imported_8(imported_12, {
         isOpen: local_7,
         onClose: () => local_8(false),
-        onVerify: local_22,
+        onVerify: local_29,
       }),
     ],
   });
 };
-export { local_dceeaa65 as default };
+export { local_8a5692cc as default };

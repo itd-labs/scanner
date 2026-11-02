@@ -1,11 +1,11 @@
 import {
-  symbol_094 as imported,
-  symbol_097 as imported_2,
-  symbol_098 as imported_3,
+  symbol_093 as imported,
+  symbol_096 as imported_2,
+  symbol_097 as imported_3,
   symbol_020 as imported_4,
   symbol_022 as imported_5,
   symbol_003 as imported_6,
-  symbol_099 as imported_7,
+  symbol_098 as imported_7,
   symbol_005 as imported_8,
   symbol_006 as imported_9,
   symbol_007 as imported_10,
@@ -14,15 +14,38 @@ import {
   symbol_011 as imported_13,
   symbol_012 as imported_14,
   symbol_002 as imported_15,
-  symbol_077 as imported_16,
-  symbol_081 as imported_17,
+  symbol_076 as imported_16,
+  symbol_080 as imported_17,
   symbol_013 as imported_18,
-  symbol_090 as imported_19,
+  symbol_089 as imported_19,
   symbol_015 as imported_20,
   symbol_016 as imported_21,
 } from "../entry.js";
 import { I as imported_22 } from "../components/icon-notification-mention.js";
 import { I as imported_23 } from "../components/icon-check.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_ef251bc6 = "c_page";
 const local_b79c6e36 = "c_pageTitle";
 const local_e9ccbd22 = "c_list";
@@ -88,7 +111,7 @@ function fn_8998240c(arg) {
     month: "short",
   });
 }
-const local_ccee8970 = {
+const local_7f22a07b = {
   follow: {
     badgeColor: "blue",
     icon: imported(imported_7, {
@@ -191,8 +214,8 @@ const local_ccee8970 = {
     getAction: () => "написал(а) на вашей стене",
   },
 };
-const local_0997b872 = ({ type: arg }) => {
-  const local = local_ccee8970[arg];
+const local_97259913 = ({ type: arg }) => {
+  const local = local_7f22a07b[arg];
   const local_2 =
     local?.badgeColor === "red"
       ? local_f2bf345a.red
@@ -218,7 +241,7 @@ function fn_f6c15f42({
   onFollowToggle: arg_5,
   isFollowLoading: arg_6,
 }) {
-  const local = local_ccee8970[arg.type];
+  const local = local_7f22a07b[arg.type];
   const local_2 = arg.payload.actors[0];
   const local_3 = arg.payload.count;
   const local_4 = arg.type === "alice_task_reminder";
@@ -335,7 +358,7 @@ function fn_f6c15f42({
                   alt: local_2?.displayName || "User",
                   size: "md",
                   halloween: local_2?.halloween,
-                  badge: imported(local_0997b872, {
+                  badge: imported(local_97259913, {
                     type: arg.type,
                   }),
                 }),

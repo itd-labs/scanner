@@ -1,14 +1,37 @@
 import {
   symbol_002 as imported,
-  symbol_090 as imported_2,
-  symbol_094 as imported_3,
-  symbol_081 as imported_4,
-  symbol_060 as imported_5,
-  symbol_077 as imported_6,
+  symbol_089 as imported_2,
+  symbol_093 as imported_3,
+  symbol_080 as imported_4,
+  symbol_059 as imported_5,
+  symbol_076 as imported_6,
   aj as imported_7,
-  symbol_061 as imported_8,
+  symbol_060 as imported_8,
 } from "../entry.js";
 import { V as imported_9 } from "../components/volume-glyph.js";
+(function () {
+  try {
+    const local =
+      typeof window !== "undefined"
+        ? window
+        : typeof global !== "undefined"
+          ? global
+          : typeof globalThis !== "undefined"
+            ? globalThis
+            : typeof self !== "undefined"
+              ? self
+              : {};
+    local.SENTRY_RELEASE = {
+      id: "1.1.2",
+    };
+    const local_2 = new local.Error().stack;
+    if (local_2) {
+      local._sentryDebugIds = local._sentryDebugIds || {};
+      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
+      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
+    }
+  } catch {}
+})();
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";
@@ -262,7 +285,7 @@ function fn_34f0bf46(arg) {
   local_09086d0f = arg;
   localStorage.setItem("video-volume", String(arg));
 }
-function fn_0c2d49e5(arg) {
+function fn_493ae501(arg) {
   const local = Math.floor(arg / 60);
   const local_2 = arg % 60;
   return `${local}:${local_2.toString().padStart(2, "0")}`;
@@ -317,7 +340,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_5c8537aa({
+export function fn_54fa4e81({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -605,7 +628,7 @@ export function fn_5c8537aa({
         local_39 &&
         imported_3("div", {
           className: local_66259d24.duration,
-          children: fn_0c2d49e5(arg_5),
+          children: fn_493ae501(arg_5),
         }),
       (local_6 || !arg_2) &&
         imported_3("div", {
