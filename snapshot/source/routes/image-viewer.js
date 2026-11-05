@@ -1375,7 +1375,7 @@ function fn_8c9a3cce({
   });
 }
 const local_f06debfc_5 = 2;
-function fn_48b518c3({
+function fn_9cf23fc2({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_cc144c14({
+export function fn_53bb5dd9({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2090,7 +2090,7 @@ export function fn_cc144c14({
             zoom: local_28,
           }),
         local_11 &&
-          imported_6(fn_48b518c3, {
+          imported_6(fn_9cf23fc2, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_cc144c14({
     document.body,
   );
 }
-export { fn_cc144c14 as default };
+export { fn_53bb5dd9 as default };

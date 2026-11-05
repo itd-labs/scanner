@@ -47,7 +47,7 @@ import "../components/icon-check-circle.js";
     }
   } catch {}
 })();
-export function fn_154f7350(arg, arg_2) {
+export function fn_66c2d60a(arg, arg_2) {
   const local = imported(null);
   const local_2 = `${arg || "me"}-${arg_2}`;
   const [local_3, local_4] = imported_2([]);
@@ -253,7 +253,7 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
     userFollowStatus: local_8,
     loadingFollowIds: local_9,
     handleToggleFollow: local_10,
-  } = fn_154f7350(arg, arg_2);
+  } = fn_66c2d60a(arg, arg_2);
   const [local_11, local_12] = imported_2(new Map());
   const [local_13, local_14] = imported_2(new Set());
   const local_15 = arg_2 === "pending-incoming";

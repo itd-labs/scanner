@@ -886,7 +886,7 @@ function fn_99993622(arg, arg_2) {
     Array.isArray(local.placements)
   );
 }
-function fn_dd5d1ac8(arg) {
+function fn_b783d360(arg) {
   try {
     const local = window.sessionStorage.getItem(`${local_d1dbed9e}${arg}`);
     if (!local) {
@@ -908,7 +908,7 @@ function fn_dd5d1ac8(arg) {
     return null;
   }
 }
-function fn_1d0fdade(arg, arg_2) {
+function fn_138b1347(arg, arg_2) {
   local_a1e12a9e.delete(arg);
   local_a1e12a9e.set(arg, arg_2);
   if (local_a1e12a9e.size > local_f06debfc) {
@@ -928,13 +928,13 @@ function fn_1d0fdade(arg, arg_2) {
   } catch {}
 }
 function fn_1dd73c40(arg) {
-  const local = local_a1e12a9e.get(arg) ?? fn_dd5d1ac8(arg);
+  const local = local_a1e12a9e.get(arg) ?? fn_b783d360(arg);
   if (local) {
-    fn_1d0fdade(arg, local);
+    fn_138b1347(arg, local);
   }
   return local ?? null;
 }
-function fn_d4ebe153({
+function fn_430f0f55({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -980,7 +980,7 @@ function fn_d4ebe153({
       if ((local_a1e12a9e.get(arg)?.rev ?? -1) > local.rev) {
         return;
       }
-      fn_1d0fdade(arg, local);
+      fn_138b1347(arg, local);
       local_2(local);
       arg_7?.(local);
     } catch {
@@ -1048,7 +1048,7 @@ function fn_d4ebe153({
           local_3,
         ],
       };
-      fn_1d0fdade(arg, local_4);
+      fn_138b1347(arg, local_4);
       local_2(local_4);
       arg_7?.(local_4);
     };
@@ -1291,7 +1291,7 @@ function fn_d4ebe153({
           curtains: local.curtains,
           layers: local_17.layers.filter((arg) => arg.slot !== "curtains"),
         };
-        fn_1d0fdade(arg, local_2);
+        fn_138b1347(arg, local_2);
         local_2(local_2);
         arg_7?.(local_2);
         window.dispatchEvent(
@@ -1654,7 +1654,7 @@ function fn_75d71f4e(arg) {
   }
   return "Не удалось подтвердить размещение. Повторите тем же предметом.";
 }
-function fn_e0465310({
+function fn_083711d1({
   profileId: arg,
   profileUsername: arg_2,
   ownProfile: arg_3 = false,
@@ -2617,7 +2617,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_adf03306({
+function fn_b563c371({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2932,7 +2932,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_01a94f35({
+function fn_60266e9e({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3072,7 +3072,7 @@ function fn_01a94f35({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_10 &&
-            imported(fn_d4ebe153, {
+            imported(fn_430f0f55, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3094,7 +3094,7 @@ function fn_01a94f35({
             }),
           local_10 &&
             imported(
-              fn_e0465310,
+              fn_083711d1,
               {
                 profileId: arg.id,
                 profileUsername: arg.username,
@@ -3285,7 +3285,7 @@ function fn_01a94f35({
                     local_7?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_adf03306, {
+                      children: imported(fn_b563c371, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_7.curtains,
@@ -4223,7 +4223,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_01a94f35, {
+      imported(fn_60266e9e, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,

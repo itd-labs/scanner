@@ -1,6 +1,6 @@
-const local_fed3fcaa = (
+const local_50aba28d = (
   symbol_093,
-  arg = local_fed3fcaa,
+  arg = local_50aba28d,
   arg_2 = arg.f ||
     (arg.f = [
       "./routes/subscription-modal.js",
@@ -65,6 +65,8 @@ const local_fed3fcaa = (
       "./routes/events-page.js",
       "./routes/events-page.css",
       "./routes/login.js",
+      "./shared/chunk-d4522ef773ce.js",
+      "./styles/index-2.css",
       "./shared/index-ggtxn-mrt-portal20261026.js",
       "./shared/index-ggtxn-mrt-portal20261026.css",
       "./shared/index-df-ak-iq-portal20261026.js",
@@ -1608,7 +1610,7 @@ function fn_131e115c(arg, arg_2) {
     }
   }
 }
-function fn_db416018(arg, arg_2) {
+function fn_7bebd856(arg, arg_2) {
   const local = arg && local_603ced16_3[arg];
   if (local) {
     for (const local of local) {
@@ -1637,7 +1639,7 @@ function fn_2d8ea36f(arg) {
 function fn_a4c75214() {
   local_0a9fda83 = local_f090a36f.onerror;
   local_f090a36f.onerror = function (arg, arg_2, arg_3, arg_4, arg_5) {
-    fn_db416018("error", {
+    fn_7bebd856("error", {
       column: arg_4,
       error: arg_5,
       line: arg_3,
@@ -1660,7 +1662,7 @@ function fn_6f6110ff(arg) {
 function fn_3b1c59a9() {
   local_0a9fda83_2 = local_f090a36f.onunhandledrejection;
   local_f090a36f.onunhandledrejection = function (arg) {
-    fn_db416018("unhandledrejection", arg);
+    fn_7bebd856("unhandledrejection", arg);
     if (local_0a9fda83_2) {
       return local_0a9fda83_2.apply(this, arguments);
     }
@@ -1893,7 +1895,7 @@ function fn_ca7d5fff(
   ) {
     return arg_2;
   }
-  const local_3 = fn_5d50a61e(arg, arg_2);
+  const local_3 = fn_87b9b97e(arg, arg_2);
   if (!local_3.startsWith("[object ")) {
     return local_3;
   }
@@ -1933,7 +1935,7 @@ function fn_ca7d5fff(
   local_2(arg_2);
   return local_7;
 }
-function fn_5d50a61e(arg, arg_2) {
+function fn_87b9b97e(arg, arg_2) {
   try {
     if (local_657db3b7_17) {
       const local = local_657db3b7_17(arg_2);
@@ -1993,7 +1995,7 @@ function fn_910ea535(arg, arg_2 = 0) {
   }
   return `${arg.slice(0, arg_2)}...`;
 }
-function fn_ac7299ed(arg, arg_2) {
+function fn_2647b9b8(arg, arg_2) {
   if (!Array.isArray(arg)) {
     return "";
   }
@@ -2007,7 +2009,7 @@ function fn_ac7299ed(arg, arg_2) {
         local.message ? `${local.name}: ${local.message}` : local.name,
       );
     } else {
-      local.push(fn_5d50a61e(undefined, local));
+      local.push(fn_87b9b97e(undefined, local));
     }
   }
   return local.join(arg_2);
@@ -3994,7 +3996,7 @@ class clazz_bb0a3dcc {
 }
 function fn_329a7e61(arg, arg_2, arg_3, arg_4 = 0) {
   try {
-    const local = fn_c85321a6(arg_2, arg_3, arg, arg_4);
+    const local = fn_9cb6b0f8(arg_2, arg_3, arg, arg_4);
     if (fn_0dbd451a(local)) {
       return local;
     }
@@ -4003,7 +4005,7 @@ function fn_329a7e61(arg, arg_2, arg_3, arg_4 = 0) {
     return fn_1fd7697a(error);
   }
 }
-function fn_c85321a6(arg, arg_2, arg_3, arg_4) {
+function fn_9cb6b0f8(arg, arg_2, arg_3, arg_4) {
   const local = arg_3[arg_4];
   if (!arg || !local) {
     return arg;
@@ -4018,9 +4020,9 @@ function fn_c85321a6(arg, arg_2, arg_3, arg_4) {
     local_5a6ba1bf.log(`Event processor "${local.id || "?"}" dropped event`);
   }
   if (fn_0dbd451a(local_2)) {
-    return local_2.then((arg) => fn_c85321a6(arg, arg_2, arg_3, arg_4 + 1));
+    return local_2.then((arg) => fn_9cb6b0f8(arg, arg_2, arg_3, arg_4 + 1));
   }
-  return fn_c85321a6(local_2, arg_2, arg_3, arg_4 + 1);
+  return fn_9cb6b0f8(local_2, arg_2, arg_3, arg_4 + 1);
 }
 let local_657db3b7_20;
 let local_657db3b7_21;
@@ -4361,7 +4363,7 @@ function fn_9d49a2ce(arg, arg_2) {
 function fn_c1298039(arg, arg_2, arg_3) {
   return arg_2 || `${fn_16c7a2be(arg)}?${fn_9d49a2ce(arg, arg_3)}`;
 }
-function fn_5b0782a2(arg, arg_2) {
+function fn_962686a0(arg, arg_2) {
   const local = fn_2d12d30f(arg);
   if (!local) {
     return "";
@@ -5128,7 +5130,7 @@ function fn_3e339946(arg, arg_2, arg_3, arg_4, arg_5) {
     arg_5(arg);
   });
 }
-class clazz_c3507ecd {
+class clazz_82236116 {
   constructor(arg) {
     this._options = arg;
     this._integrations = {};
@@ -5841,7 +5843,7 @@ function fn_95df3475(arg) {
     relative: local[5] + local_2 + local_3,
   };
 }
-function fn_1ec1a0d0(arg, arg_2 = true) {
+function fn_dccc88a0(arg, arg_2 = true) {
   if (arg.startsWith("data:")) {
     const local = arg.match(/^data:([^;,]+)/);
     const local_2 = local ? local[1] : "text/plain";
@@ -5866,7 +5868,7 @@ function fn_67dfb170(arg) {
       })
     : arg.ipAddress === undefined && (arg.ipAddress = "{{auto}}");
 }
-function fn_23b8b6bf(arg, arg_2, arg_3 = [arg_2], arg_4 = "npm") {
+function fn_cfc9948b(arg, arg_2, arg_3 = [arg_2], arg_4 = "npm") {
   const local = ((arg._metadata = arg._metadata || {}).sdk =
     arg._metadata.sdk || {});
   if (!local.name) {
@@ -5957,7 +5959,7 @@ const local_60e83861 = (arg = {}) => {
         const local = arg_3.getOptions();
         local = fn_d101b114(arg, local);
       }
-      if (fn_f3861e45(arg, local)) {
+      if (fn_91aca223(arg, local)) {
         return null;
       }
       return arg;
@@ -5983,7 +5985,7 @@ function fn_d101b114(arg = {}, arg_2 = {}) {
     ],
   };
 }
-function fn_f3861e45(arg, arg_2) {
+function fn_91aca223(arg, arg_2) {
   if (arg.type) {
     if (
       arg.type === "transaction" &&
@@ -6014,7 +6016,7 @@ Event: ${fn_75006934(arg)}`);
       if (local_23bb5d69) {
         local_5a6ba1bf.warn(`Event dropped due to being matched by \`denyUrls\` option.
 Event: ${fn_75006934(arg)}.
-Url: ${fn_811b0546(arg)}`);
+Url: ${fn_d70de2d4(arg)}`);
       }
       return true;
     }
@@ -6022,7 +6024,7 @@ Url: ${fn_811b0546(arg)}`);
       if (local_23bb5d69) {
         local_5a6ba1bf.warn(`Event dropped due to not being matched by \`allowUrls\` option.
 Event: ${fn_75006934(arg)}.
-Url: ${fn_811b0546(arg)}`);
+Url: ${fn_d70de2d4(arg)}`);
       }
       return true;
     }
@@ -6049,7 +6051,7 @@ function fn_a97c4528(arg, arg_2) {
   if (!arg_2?.length) {
     return false;
   }
-  const local = fn_811b0546(arg);
+  const local = fn_d70de2d4(arg);
   if (local) {
     return fn_39ed76d4(local, arg_2);
   }
@@ -6059,7 +6061,7 @@ function fn_eac09cc1(arg, arg_2) {
   if (!arg_2?.length) {
     return true;
   }
-  const local = fn_811b0546(arg);
+  const local = fn_d70de2d4(arg);
   if (local) {
     return fn_39ed76d4(local, arg_2);
   }
@@ -6078,7 +6080,7 @@ function fn_1f71d398(arg = []) {
   }
   return null;
 }
-function fn_811b0546(arg) {
+function fn_d70de2d4(arg) {
   try {
     const local = [...(arg.exception?.values ?? [])]
       .reverse()
@@ -6238,7 +6240,7 @@ function fn_84d107ae() {
               typeof local === "string" &&
               fn_39ed76d4(local, local_82ae0903);
             if (!local_3) {
-              fn_db416018("console", {
+              fn_7bebd856("console", {
                 args: arg,
                 level: arg,
               });
@@ -6476,12 +6478,12 @@ function fn_dc01c4f2(arg, arg_2 = false) {
           virtualError: local,
           headers: fn_374832b3(arg),
         };
-        fn_db416018("fetch", {
+        fn_7bebd856("fetch", {
           ...local_4,
         });
         return arg.apply(local_f090a36f, arg).then(
           async (arg) => {
-            fn_db416018("fetch", {
+            fn_7bebd856("fetch", {
               ...local_4,
               endTimestamp: fn_d10ac820() * 1000,
               response: arg,
@@ -6489,7 +6491,7 @@ function fn_dc01c4f2(arg, arg_2 = false) {
             return arg;
           },
           (arg) => {
-            fn_db416018("fetch", {
+            fn_7bebd856("fetch", {
               ...local_4,
               endTimestamp: fn_d10ac820() * 1000,
               error: arg,
@@ -6964,11 +6966,11 @@ function fn_9b832241(arg) {
 function fn_bf6be14b(arg) {
   return Object.values(arg).find((arg) => arg instanceof Error);
 }
-class clazz_8265a9a2 extends clazz_c3507ecd {
+class clazz_8265a9a2 extends clazz_82236116 {
   constructor(arg) {
     const local = fn_9965b2cb(arg);
     const local_2 = local_f090a36f_8.SENTRY_SDK_SOURCE || fn_b502e70d();
-    fn_23b8b6bf(local, "browser", ["browser"], local_2);
+    fn_cfc9948b(local, "browser", ["browser"], local_2);
     super(local);
     const { userInfo: local_3 } = this.getDataCollectionOptions();
     if (local._metadata?.sdk) {
@@ -7138,7 +7140,7 @@ function fn_e61d61c3(arg, arg_2 = {}) {
     while (
       local &&
       local_4++ < local_2 &&
-      ((local_8 = fn_25a86043(local, local_9)),
+      ((local_8 = fn_e1b0bd7c(local, local_9)),
       !(
         local_8 === "html" ||
         (local_4 > 1 &&
@@ -7154,7 +7156,7 @@ function fn_e61d61c3(arg, arg_2 = {}) {
     return "<unknown>";
   }
 }
-function fn_25a86043(arg, arg_2) {
+function fn_e1b0bd7c(arg, arg_2) {
   const local = [];
   const local_2 = fn_14ca3bc6(arg, "tagName");
   if (!local_2) {
@@ -7214,7 +7216,7 @@ function fn_01fd347a() {
   if (!local_f090a36f_9.document) {
     return;
   }
-  const local = fn_db416018.bind(null, "dom");
+  const local = fn_7bebd856.bind(null, "dom");
   const local_2 = fn_c07356fa(local, true);
   local_f090a36f_9.document.addEventListener("click", local_2, false);
   local_f090a36f_9.document.addEventListener("keypress", local_2, false);
@@ -7338,7 +7340,7 @@ function fn_abed4dcd() {
     if (local_2 === local) {
       return;
     }
-    fn_db416018("history", {
+    fn_7bebd856("history", {
       from: local_2,
       to: local,
     });
@@ -7356,7 +7358,7 @@ function fn_abed4dcd() {
         if (local === local_2) {
           return arg.apply(this, arg);
         }
-        fn_db416018("history", {
+        fn_7bebd856("history", {
           from: local,
           to: local_2,
         });
@@ -7450,7 +7452,7 @@ function fn_e4ba250a() {
             xhr: arg_2,
             virtualError: local,
           };
-          fn_db416018("xhr", local);
+          fn_7bebd856("xhr", local);
           arg_2.removeEventListener("readystatechange", local_5);
         }
       };
@@ -7493,7 +7495,7 @@ function fn_e4ba250a() {
         startTimestamp: fn_d10ac820() * 1000,
         xhr: arg_2,
       };
-      fn_db416018("xhr", local_2);
+      fn_7bebd856("xhr", local_2);
       return arg.apply(arg_2, arg_3);
     },
   });
@@ -7669,7 +7671,7 @@ const local_facdb130 = (arg = {}) => {
         fn_cd7d391d(fn_bedb612f(arg));
       }
       if (local.dom) {
-        fn_8d79bda4(fn_abdcdb5f(arg, local.dom));
+        fn_8d79bda4(fn_f753c8f6(arg, local.dom));
       }
       if (local.xhr) {
         fn_33a7addb(fn_687021b8(arg));
@@ -7704,7 +7706,7 @@ function fn_3e1f45eb(arg) {
     }
   };
 }
-function fn_abdcdb5f(arg, arg_2) {
+function fn_f753c8f6(arg, arg_2) {
   return function (arg) {
     if (fn_df50106e() !== arg) {
       return;
@@ -7770,11 +7772,11 @@ function fn_bedb612f(arg) {
         logger: "console",
       },
       level: fn_60d07a08(arg.level),
-      message: fn_ac7299ed(arg.args, "./entry.js"),
+      message: fn_2647b9b8(arg.args, "./entry.js"),
     };
     if (arg.level === "assert") {
       if (arg.args[0] === false) {
-        local.message = `Assertion failed: ${fn_ac7299ed(arg.args.slice(1), "./entry.js") || "console.assert"}`;
+        local.message = `Assertion failed: ${fn_2647b9b8(arg.args.slice(1), "./entry.js") || "console.assert"}`;
         local.data.arguments = arg.args.slice(1);
       } else {
         return;
@@ -7930,16 +7932,16 @@ const local_028efd13 = (arg = {}) => {
     name: local_4748e695,
     setupOnce() {
       if (local.setTimeout) {
-        fn_344b1aa6(local_f090a36f_8, "setTimeout", fn_7a507116);
+        fn_344b1aa6(local_f090a36f_8, "setTimeout", fn_b54b8725);
       }
       if (local.setInterval) {
-        fn_344b1aa6(local_f090a36f_8, "setInterval", fn_7a507116);
+        fn_344b1aa6(local_f090a36f_8, "setInterval", fn_b54b8725);
       }
       if (local.requestAnimationFrame) {
         fn_344b1aa6(local_f090a36f_8, "requestAnimationFrame", fn_32fd6b13);
       }
       if (local.XMLHttpRequest && "XMLHttpRequest" in local_f090a36f_8) {
-        fn_344b1aa6(XMLHttpRequest.prototype, "send", fn_08cbfb31);
+        fn_344b1aa6(XMLHttpRequest.prototype, "send", fn_31eabf22);
       }
       const local = local.eventTarget;
       if (local) {
@@ -7951,7 +7953,7 @@ const local_028efd13 = (arg = {}) => {
   };
 };
 const local_f090a36f_11 = local_028efd13;
-function fn_7a507116(arg) {
+function fn_b54b8725(arg) {
   return function (...arg) {
     const local = arg[0];
     arg[0] = fn_fa6522c8(local, {
@@ -7978,7 +7980,7 @@ function fn_32fd6b13(arg) {
     ]);
   };
 }
-function fn_08cbfb31(arg) {
+function fn_31eabf22(arg) {
   return function (...arg) {
     const local = this;
     ["onload", "onerror", "onprogress", "onreadystatechange"].forEach((arg) => {
@@ -8299,7 +8301,7 @@ function fn_6f485e72() {
 function fn_3e241305(arg) {
   if (!(!fn_bdd4075c(arg) || arg.length === 0)) {
     if (arg.startsWith("data:")) {
-      return `<${fn_1ec1a0d0(arg, false)}>`;
+      return `<${fn_dccc88a0(arg, false)}>`;
     }
     return arg;
   }
@@ -8469,7 +8471,7 @@ function fn_92c4c017(arg = {}) {
   const local_6 = local_f090a36f_8.document.createElement("script");
   local_6.async = true;
   local_6.crossOrigin = "anonymous";
-  local_6.src = fn_5b0782a2(local_4, local_5);
+  local_6.src = fn_962686a0(local_4, local_5);
   const { onLoad: local_7, onClose: local_8 } = local_5;
   if (local_7) {
     local_6.onload = local_7;
@@ -9640,7 +9642,7 @@ function fn_314011cd(arg) {
   const local = {
     ...arg,
   };
-  fn_23b8b6bf(local, "react");
+  fn_cfc9948b(local, "react");
   fn_2e3776e9("react", {
     version: local_8f06da6d,
   });
@@ -10294,7 +10296,7 @@ const local_f5cbdd13 = (arg) => {
   Object.assign(local_2, local);
   return local_2;
 };
-const symbol_027 = (arg) => {
+const symbol_028 = (arg) => {
   if (arg) {
     return local_f5cbdd13(arg);
   }
@@ -10352,7 +10354,7 @@ const local_9dbd4d0a = (arg) => (arg) => {
     };
   }
 };
-const local_c520fcd3 = (arg, arg_2) => (arg, arg_2, arg_3) => {
+const local_af593a14 = (arg, arg_2) => (arg, arg_2, arg_3) => {
   let local = {
     storage: fn_fe2ed958(() => window.localStorage),
     partialize: (arg) => arg,
@@ -10505,8 +10507,8 @@ const local_c520fcd3 = (arg, arg_2) => (arg, arg_2, arg_3) => {
   }
   return local_10 || local_9;
 };
-const symbol_049 = local_c520fcd3;
-const local_aac74809 = symbol_027((arg, arg_2) => ({
+const symbol_049 = local_af593a14;
+const local_aac74809 = symbol_028((arg, arg_2) => ({
   isOpen: false,
   images: [],
   initialIndex: 0,
@@ -10540,7 +10542,7 @@ const local_aac74809 = symbol_027((arg, arg_2) => ({
     }
   },
 }));
-const symbol_052 = symbol_027((arg, arg_2) => ({
+const symbol_052 = symbol_028((arg, arg_2) => ({
   isOpen: false,
   options: null,
   session: 0,
@@ -10556,7 +10558,7 @@ const symbol_052 = symbol_027((arg, arg_2) => ({
       options: null,
     }),
 }));
-const symbol_081 = symbol_027((arg, arg_2) => ({
+const symbol_081 = symbol_028((arg, arg_2) => ({
   navigatedInApp: false,
   markNavigated: () => {
     if (!arg_2().navigatedInApp) {
@@ -10621,7 +10623,7 @@ const symbol_090 = {
   VIDEO_REQUIRES_VERIFICATION: "VIDEO_REQUIRES_VERIFICATION",
 };
 const local_f06debfc_23 = 4000;
-const local_88a74145 = symbol_027((arg, arg_2) => ({
+const local_88a74145 = symbol_028((arg, arg_2) => ({
   toasts: [],
   addToast: (arg) => {
     const local = arg_2().toasts.find(
@@ -10844,7 +10846,7 @@ function symbol_055(arg, arg_2 = "Произошла ошибка") {
   return local_f49e61ca[fn_bedfa411(arg)] ?? local;
 }
 const local_f4d9947e = "/api";
-const symbol_019 = {
+const symbol_024 = {
   auth: {
     signUp: "/sign-up",
     signIn: "/sign-in",
@@ -10968,7 +10970,7 @@ function symbol_091(arg) {
     local_a1e12a9e_3.delete(arg);
   };
 }
-function fn_3feff988() {
+function fn_7cce5d54() {
   if (local_0a9fda83_4) {
     return {
       Authorization: `Bearer ${local_0a9fda83_4}`,
@@ -11197,7 +11199,7 @@ class clazz_e244d48c {
     const local = new Headers({
       ...this.defaultHeaders,
       ...arg,
-      ...fn_3feff988(),
+      ...fn_7cce5d54(),
     });
     local.set("X-Device-Id", local_ce9f9c1f);
     return local;
@@ -11390,7 +11392,7 @@ class clazz_e244d48c {
     const local_3 = {
       "X-Requested-With": "XMLHttpRequest",
       "X-Device-Id": local_ce9f9c1f,
-      ...fn_3feff988(),
+      ...fn_7cce5d54(),
     };
     const local_4 = new AbortController();
     const local_5 = arg_3?.timeout ?? this.defaultTimeout;
@@ -11895,7 +11897,7 @@ const local_9582fd2f = (arg, arg_2 = false) => {
   local_a1e12a9e_7.set(arg, local_2);
   return local_2;
 };
-const local_37925552 = (arg, arg_2) =>
+const local_068a445c = (arg, arg_2) =>
   arg.replace(/<svg\b([^>]*)>/i, (arg, arg_2) => {
     const local = /\bwidth\s*=\s*["']([^"']+)["']/i.exec(arg_2)?.[1];
     const local_2 = /\bheight\s*=\s*["']([^"']+)["']/i.exec(arg_2)?.[1];
@@ -11933,7 +11935,7 @@ const local_39aeca81 = ({ name: arg, size: arg_2 = 20, className: arg_3 }) => {
     },
     dangerouslySetInnerHTML: local
       ? {
-          __html: local_37925552(local, arg_2),
+          __html: local_068a445c(local, arg_2),
         }
       : undefined,
   });
@@ -12549,7 +12551,7 @@ const symbol_008 = ({ size: arg = 20 }) =>
     name: "share",
     size: arg,
   });
-const symbol_026 = ({ size: arg = 24 }) =>
+const symbol_027 = ({ size: arg = 24 }) =>
   symbol_093("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: arg,
@@ -12763,7 +12765,7 @@ const local_c568dd2f = {
   spiderBody: local_6884a846,
   spiderLegs: local_4a0ddf9f,
 };
-const symbol_028 = {
+const symbol_019 = {
   HOME: "./site/index.html",
   LOGIN: "/login",
   REGISTER: "/register",
@@ -12785,32 +12787,32 @@ const symbol_028 = {
   RECURRING_TERMS: "/recurring-terms",
 };
 const local_514e3757 = [
-  symbol_028.SHOP,
-  symbol_028.LOGIN,
-  symbol_028.REGISTER,
-  symbol_028.FORGOT_PASSWORD,
-  symbol_028.RESET_PASSWORD,
-  symbol_028.VERIFY_EMAIL,
-  symbol_028.TERMS,
-  symbol_028.PRIVACY,
-  symbol_028.LEGAL,
-  symbol_028.COOKIES,
-  symbol_028.EXTERNAL,
-  symbol_028.SUPPORT,
-  symbol_028.CHILD_SAFETY,
-  symbol_028.SUBSCRIPTION_TERMS,
-  symbol_028.RECURRING_TERMS,
+  symbol_019.SHOP,
+  symbol_019.LOGIN,
+  symbol_019.REGISTER,
+  symbol_019.FORGOT_PASSWORD,
+  symbol_019.RESET_PASSWORD,
+  symbol_019.VERIFY_EMAIL,
+  symbol_019.TERMS,
+  symbol_019.PRIVACY,
+  symbol_019.LEGAL,
+  symbol_019.COOKIES,
+  symbol_019.EXTERNAL,
+  symbol_019.SUPPORT,
+  symbol_019.CHILD_SAFETY,
+  symbol_019.SUBSCRIPTION_TERMS,
+  symbol_019.RECURRING_TERMS,
 ];
 const local_e0268f28 = [
-  symbol_028.LOGIN,
-  symbol_028.REGISTER,
-  symbol_028.FORGOT_PASSWORD,
-  symbol_028.RESET_PASSWORD,
-  symbol_028.VERIFY_EMAIL,
-  symbol_028.ONBOARDING,
+  symbol_019.LOGIN,
+  symbol_019.REGISTER,
+  symbol_019.FORGOT_PASSWORD,
+  symbol_019.RESET_PASSWORD,
+  symbol_019.VERIFY_EMAIL,
+  symbol_019.ONBOARDING,
 ];
 function fn_700d9542() {
-  const local = symbol_027(() => ({
+  const local = symbol_028(() => ({
     status: "checking",
     enabled: false,
   }));
@@ -12860,7 +12862,7 @@ const local_d7d24a63 = Object.freeze(
     {
       __proto__: null,
       HttpClient: clazz_e244d48c,
-      authHeader: fn_3feff988,
+      authHeader: fn_7cce5d54,
       authHttpClient: local_8b3b0704,
       authorizedFetch: fn_bddeb5bb,
       getAccessToken: symbol_084,
@@ -12895,19 +12897,19 @@ const symbol_085 = {
   async uploadMedia(arg) {
     const local = new FormData();
     local.append("file", arg);
-    return await symbol_018.uploadFormData(symbol_019.files.upload, local, {
+    return await symbol_018.uploadFormData(symbol_024.files.upload, local, {
       timeout: 300 * 1000,
     });
   },
   async uploadAvatar(arg) {
     const local = new FormData();
     local.append("file", arg);
-    return symbol_018.uploadFormData(symbol_019.files.uploadAvatar, local, {
+    return symbol_018.uploadFormData(symbol_024.files.uploadAvatar, local, {
       timeout: 120 * 1000,
     });
   },
   async deleteFile(arg) {
-    await symbol_018.delete(symbol_019.files.delete(arg));
+    await symbol_018.delete(symbol_024.files.delete(arg));
   },
   isValidImageType(arg) {
     return local_4e0e1df1.includes(arg.type);
@@ -12921,21 +12923,21 @@ const symbol_085 = {
 };
 const symbol_095 = {
   async getChangelog() {
-    const local = await symbol_018.get(symbol_019.platform.changelog);
+    const local = await symbol_018.get(symbol_024.platform.changelog);
     if (Array.isArray(local)) {
       return local;
     }
     return local?.data ?? [];
   },
   async getAnnouncements() {
-    const local = await symbol_018.get(symbol_019.platform.announcements);
+    const local = await symbol_018.get(symbol_024.platform.announcements);
     if (Array.isArray(local)) {
       return local;
     }
     return local?.announcements ?? [];
   },
 };
-class symbol_025 {
+class symbol_026 {
   cache = new Map();
   maxSize;
   ttl;
@@ -13127,7 +13129,7 @@ function fn_dbe99fe3(arg) {
   }
   return Object.keys(arg.parameters).length === 0;
 }
-function symbol_024(arg) {
+function symbol_025(arg) {
   if (!arg || typeof arg !== "object") {
     return null;
   }
@@ -13176,7 +13178,7 @@ function symbol_024(arg) {
   };
 }
 function fn_e0591550(arg, arg_2, arg_3) {
-  const local = symbol_024(arg);
+  const local = symbol_025(arg);
   if (
     !local ||
     !arg_2 ||
@@ -13200,7 +13202,7 @@ function fn_f0868670(arg) {
   const local = {
     ...arg,
   };
-  local.halloween = symbol_024(arg.halloween);
+  local.halloween = symbol_025(arg.halloween);
   if ("verified" in local && !("isVerified" in local)) {
     local.isVerified = local.verified;
   }
@@ -13252,7 +13254,7 @@ function fn_f0868670(arg) {
   }
   return local;
 }
-const local_f50950e4 = new symbol_025(100, 300 * 1000);
+const local_f50950e4 = new symbol_026(100, 300 * 1000);
 const local_aad0de78_3 = 60 * 1000;
 setInterval(() => local_f50950e4.cleanup(), 120 * 1000);
 const symbol_036 = {
@@ -13267,11 +13269,11 @@ const symbol_036 = {
     return await symbol_018.post("/users/profile", arg);
   },
   async getMyProfile() {
-    const local = await symbol_018.get(symbol_019.users.me);
+    const local = await symbol_018.get(symbol_024.users.me);
     return fn_f0868670(local);
   },
   async updateProfile(arg) {
-    return await symbol_018.put(symbol_019.users.updateProfile, arg);
+    return await symbol_018.put(symbol_024.users.updateProfile, arg);
   },
   async getProfileByUsername(arg) {
     const local = arg.toLowerCase();
@@ -13288,7 +13290,7 @@ const symbol_036 = {
     return local_f50950e4.get(arg.toLowerCase()) ?? null;
   },
   async _fetchAndCacheProfile(arg, arg_2) {
-    const local = await symbol_018.get(symbol_019.users.profile(arg), {
+    const local = await symbol_018.get(symbol_024.users.profile(arg), {
       skipErrorToast: [symbol_044.NOT_FOUND],
     });
     const local_2 = fn_f0868670(local);
@@ -13309,19 +13311,19 @@ const symbol_036 = {
     }
   },
   async followUser(arg) {
-    await symbol_018.post(symbol_019.users.follow(arg), {});
+    await symbol_018.post(symbol_024.users.follow(arg), {});
   },
   async unfollowUser(arg) {
-    await symbol_018.delete(symbol_019.users.follow(arg));
+    await symbol_018.delete(symbol_024.users.follow(arg));
   },
   async pinPost(arg) {
-    await symbol_018.post(symbol_019.posts.pin(arg));
+    await symbol_018.post(symbol_024.posts.pin(arg));
   },
   async unpinPost(arg) {
-    await symbol_018.delete(symbol_019.posts.pin(arg));
+    await symbol_018.delete(symbol_024.posts.pin(arg));
   },
   async getPrivacySettings() {
-    const local = await symbol_018.get(symbol_019.users.privacy);
+    const local = await symbol_018.get(symbol_024.users.privacy);
     return {
       isPrivate: local.isPrivate ?? false,
       showLastSeen: local.showLastSeen ?? true,
@@ -13347,11 +13349,11 @@ const symbol_036 = {
     if (arg.showLastSeen !== undefined) {
       local.showLastSeen = arg.showLastSeen;
     }
-    await symbol_018.put(symbol_019.users.privacy, local);
+    await symbol_018.put(symbol_024.users.privacy, local);
   },
   async getVerificationStatus() {
     try {
-      return await symbol_018.get(symbol_019.verification.status);
+      return await symbol_018.get(symbol_024.verification.status);
     } catch (error) {
       if (
         error &&
@@ -13365,12 +13367,12 @@ const symbol_036 = {
     }
   },
   async submitVerificationRequest(arg) {
-    return await symbol_018.post(symbol_019.verification.submit, {
+    return await symbol_018.post(symbol_024.verification.submit, {
       videoUrl: arg,
     });
   },
   async getMyPins() {
-    const local = await symbol_018.get(symbol_019.users.pins);
+    const local = await symbol_018.get(symbol_024.users.pins);
     const local_2 = local.data ?? local;
     return {
       pins: local_2.pins ?? [],
@@ -13378,18 +13380,18 @@ const symbol_036 = {
     };
   },
   async setActivePin(arg) {
-    await symbol_018.put(symbol_019.users.setPin, {
+    await symbol_018.put(symbol_024.users.setPin, {
       slug: arg,
     });
   },
   async removeActivePin() {
-    await symbol_018.delete(symbol_019.users.setPin);
+    await symbol_018.delete(symbol_024.users.setPin);
   },
   async deleteAccount() {
-    await symbol_018.delete(symbol_019.users.deleteAccount);
+    await symbol_018.delete(symbol_024.users.deleteAccount);
   },
   async restoreAccount() {
-    await symbol_018.post(symbol_019.users.restoreAccount);
+    await symbol_018.post(symbol_024.users.restoreAccount);
   },
 };
 function fn_cc118060(arg) {
@@ -13403,7 +13405,7 @@ function fn_cc118060(arg) {
     avatar: local.avatar ?? "",
     isVerified: local.isVerified ?? local.verified ?? false,
     isPrivate: local.isPrivate ?? false,
-    halloween: symbol_024(local.halloween),
+    halloween: symbol_025(local.halloween),
     interaction: arg.interaction ?? {
       isFollowing: arg.isFollowing ?? false,
       isFollowedBy: arg.isFollowedBy ?? false,
@@ -13426,68 +13428,68 @@ const local_1014925d = {
 const symbol_092 = {
   async register(arg) {
     return await local_8b3b0704.post(
-      symbol_019.auth.signUp,
+      symbol_024.auth.signUp,
       arg,
       local_1014925d,
     );
   },
   async login(arg) {
     return await local_8b3b0704.post(
-      symbol_019.auth.signIn,
+      symbol_024.auth.signIn,
       arg,
       local_1014925d,
     );
   },
   async verifyOtp(arg) {
     return await local_8b3b0704.post(
-      symbol_019.auth.verifyOtp,
+      symbol_024.auth.verifyOtp,
       arg,
       local_1014925d,
     );
   },
   async resendOtp(arg) {
-    await local_8b3b0704.post(symbol_019.auth.resendOtp, arg, local_1014925d);
+    await local_8b3b0704.post(symbol_024.auth.resendOtp, arg, local_1014925d);
   },
   async refreshSession() {
-    return await local_8b3b0704.post(symbol_019.auth.refresh);
+    return await local_8b3b0704.post(symbol_024.auth.refresh);
   },
   async logout() {
-    await local_8b3b0704.post(symbol_019.auth.logout);
+    await local_8b3b0704.post(symbol_024.auth.logout);
   },
   async logoutAll() {
-    await local_8b3b0704.post(`${symbol_019.auth.logout}-all`);
+    await local_8b3b0704.post(`${symbol_024.auth.logout}-all`);
   },
   async forgotPassword(arg) {
     return await local_8b3b0704.post(
-      symbol_019.auth.forgotPassword,
+      symbol_024.auth.forgotPassword,
       arg,
       local_1014925d,
     );
   },
   async resetPassword(arg) {
     await local_8b3b0704.post(
-      symbol_019.auth.resetPassword,
+      symbol_024.auth.resetPassword,
       arg,
       local_1014925d,
     );
   },
   async changePassword(arg) {
     await local_8b3b0704.post(
-      symbol_019.auth.changePassword,
+      symbol_024.auth.changePassword,
       arg,
       local_1014925d,
     );
   },
 };
 const local_ee7a6f6b = "c_spinner";
-const local_869aedb8 = "fa7e";
+const local_f12b8202 = "ja8L";
 const local_d3808147 = "c_xs";
 const local_9350219d = "c_sm";
 const local_a8a24a1e = "c_md";
 const local_afefddb7 = "c_lg";
 const local_0ab9bf6f = {
   spinner: local_ee7a6f6b,
-  spin: local_869aedb8,
+  spin: local_f12b8202,
   xs: local_d3808147,
   sm: local_9350219d,
   md: local_a8a24a1e,
@@ -13632,16 +13634,16 @@ function fn_ec024b12({ children: arg, currentPath: arg_2 }) {
       (arg) => local_3 === arg || local_3.startsWith(`${arg}/`),
     );
     local === "unauthenticated" && !local
-      ? symbol_001(symbol_028.LOGIN) ||
-        window.location.replace(symbol_028.LOGIN)
-      : local === "needs_profile" && local_3 !== symbol_028.ONBOARDING && !local
-        ? symbol_001(symbol_028.ONBOARDING) ||
-          window.location.replace(symbol_028.ONBOARDING)
+      ? symbol_001(symbol_019.LOGIN) ||
+        window.location.replace(symbol_019.LOGIN)
+      : local === "needs_profile" && local_3 !== symbol_019.ONBOARDING && !local
+        ? symbol_001(symbol_019.ONBOARDING) ||
+          window.location.replace(symbol_019.ONBOARDING)
         : local === "authenticated" &&
-          (local_3 === symbol_028.LOGIN ||
-            local_3 === symbol_028.REGISTER ||
-            local_3 === symbol_028.ONBOARDING) &&
-          symbol_001(symbol_028.HOME);
+          (local_3 === symbol_019.LOGIN ||
+            local_3 === symbol_019.REGISTER ||
+            local_3 === symbol_019.ONBOARDING) &&
+          symbol_001(symbol_019.HOME);
   }, [local, local_3]);
   const local_4 = local_514e3757.some(
     (arg) => local_3 === arg || local_3.startsWith(`${arg}/`),
@@ -13657,7 +13659,7 @@ function fn_ec024b12({ children: arg, currentPath: arg_2 }) {
   }
   if (
     (local === "unauthenticated" && !local_4) ||
-    (local === "needs_profile" && local_3 !== symbol_028.ONBOARDING && !local_4)
+    (local === "needs_profile" && local_3 !== symbol_019.ONBOARDING && !local_4)
   ) {
     return null;
   }
@@ -14182,7 +14184,7 @@ function fn_f2614556() {
     }),
   });
 }
-const symbol_037 = symbol_027((arg) => ({
+const symbol_037 = symbol_028((arg) => ({
   statuses: {},
   setStatuses: (arg) =>
     arg((arg) => ({
@@ -14255,11 +14257,11 @@ export function fn_585b8996(arg) {
     statuses: local_2,
   };
 }
-const local_f50950e4_2 = new symbol_025(500, 120 * 1000);
+const local_f50950e4_2 = new symbol_026(500, 120 * 1000);
 setInterval(() => local_f50950e4_2.cleanup(), 60 * 1000);
 const symbol_015 = {
   async followUser(arg) {
-    const local = await symbol_018.post(symbol_019.users.follow(arg), {});
+    const local = await symbol_018.post(symbol_024.users.follow(arg), {});
     local_f50950e4_2.delete(arg);
     symbol_037.getState().setStatus(arg, true);
     if (local.following) {
@@ -14268,7 +14270,7 @@ const symbol_015 = {
     return local.status ?? "following";
   },
   async unfollowUser(arg) {
-    await symbol_018.delete(symbol_019.users.follow(arg));
+    await symbol_018.delete(symbol_024.users.follow(arg));
     local_f50950e4_2.delete(arg);
     symbol_037.getState().setStatus(arg, false);
   },
@@ -14279,7 +14281,7 @@ const symbol_015 = {
     const local_3 = arg_2.cursor ? parseInt(arg_2.cursor) : (arg_2.page ?? 1);
     local.set("page", local_3.toString());
     const local_4 = local.toString();
-    const local_5 = `${symbol_019.users.followers(arg)}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${symbol_024.users.followers(arg)}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await symbol_018.get(local_5);
     const local_7 = local_6.data ?? local_6;
     const local_8 = local_7.users ?? local_7.followers ?? [];
@@ -14297,7 +14299,7 @@ const symbol_015 = {
     const local_3 = arg_2.cursor ? parseInt(arg_2.cursor) : (arg_2.page ?? 1);
     local.set("page", local_3.toString());
     const local_4 = local.toString();
-    const local_5 = `${symbol_019.users.following(arg)}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${symbol_024.users.following(arg)}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await symbol_018.get(local_5);
     const local_7 = local_6.data ?? local_6;
     const local_8 = local_7.users ?? local_7.following ?? [];
@@ -14309,11 +14311,11 @@ const symbol_015 = {
     };
   },
   async blockUser(arg) {
-    await symbol_018.post(symbol_019.users.block(arg), {});
+    await symbol_018.post(symbol_024.users.block(arg), {});
     local_f50950e4_2.delete(arg);
   },
   async unblockUser(arg) {
-    await symbol_018.delete(symbol_019.users.block(arg));
+    await symbol_018.delete(symbol_024.users.block(arg));
     local_f50950e4_2.delete(arg);
   },
   async getBlockedUsers(arg = {}) {
@@ -14323,7 +14325,7 @@ const symbol_015 = {
     const local_3 = arg.cursor ? parseInt(arg.cursor) : (arg.page ?? 1);
     local.set("page", local_3.toString());
     const local_4 = local.toString();
-    const local_5 = `${symbol_019.users.blocked}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${symbol_024.users.blocked}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await symbol_018.get(local_5);
     const local_7 = local_6.data ?? local_6;
     let local_8 = [];
@@ -14358,7 +14360,7 @@ const symbol_015 = {
     }
     return (
       (
-        await symbol_018.post(symbol_019.users.followStatus, {
+        await symbol_018.post(symbol_024.users.followStatus, {
           userIds: arg,
         })
       ).data ?? {}
@@ -15041,7 +15043,7 @@ const local_82dbe90b = [
   "cursor-book.png",
 ];
 const local_e01042f8 = (arg) => `--hw-asset-${arg.replaceAll(".", "-")}`;
-function fn_6c82f4b3(arg, arg_2, arg_3) {
+function fn_7aaa9bba(arg, arg_2, arg_3) {
   const local = arg;
   if (
     !arg_2.releaseId ||
@@ -15106,7 +15108,7 @@ function fn_52ead611(arg) {
   }
   return `${local_c5eaa041_2}/${arg}.mp3`;
 }
-async function fn_562cb309(arg, arg_2) {
+async function fn_e47ed853(arg, arg_2) {
   const local = `${arg.releaseId}:${arg.assetManifestHash}`;
   if (local_c5eaa041_3 === local && local_c5eaa041) {
     return;
@@ -15118,7 +15120,7 @@ async function fn_562cb309(arg, arg_2) {
     skipErrorToast: true,
     signal: arg_2,
   });
-  const local_3 = fn_6c82f4b3(
+  const local_3 = fn_7aaa9bba(
     local_2,
     arg,
     local_603ced16_10?.VITE_HALLOWEEN_ASSET_ORIGIN ||
@@ -15223,7 +15225,7 @@ const local_7b7aeece = {
     "46,60 54,60 51,65 56,70 63,70 68,65 70,67 64,74 55,74 50,70 45,74 36,74 30,67 32,65 37,70 44,70 49,65",
   ],
 };
-function fn_044fac21(arg, arg_2) {
+function fn_8a71a02f(arg, arg_2) {
   if (
     arg === "custom" ? !fn_04e671fb(arg_2) : !Object.hasOwn(local_7b7aeece, arg)
   ) {
@@ -15245,7 +15247,7 @@ function fn_158ab25c(arg, arg_2) {
   }
   return "saturate(.6) brightness(.9)";
 }
-function fn_878cf56d({
+function fn_1aed972a({
   templateId: arg,
   contours: arg_2,
   glow: arg_3 = 0,
@@ -15255,7 +15257,7 @@ function fn_878cf56d({
   inline: arg_7 = false,
 }) {
   const local = `pumpkin-face-${fn_9c941575()}`;
-  const local_2 = fn_044fac21(arg, arg_2);
+  const local_2 = fn_8a71a02f(arg, arg_2);
   if (local_2) {
     return symbol_093("svg", {
       className: `${arg_5 ?? ""} ${arg_3 ? local_c2837da0.lit : ""}`,
@@ -15308,7 +15310,7 @@ function fn_878cf56d({
   }
   return null;
 }
-const local_b5c5adda = symbol_027(() => ({
+const local_b5c5adda = symbol_028(() => ({
   list: [],
 }));
 let local_f06debfc_33 = 0;
@@ -15432,7 +15434,7 @@ function fn_2800a981() {
 const local_17549bfd = (arg) =>
   /^(https?:)?\/\//.test(arg) || arg.startsWith("./site/index.html");
 async function fn_43bd87eb(arg) {
-  const local = fn_044fac21(arg.templateId, arg.contours);
+  const local = fn_8a71a02f(arg.templateId, arg.contours);
   if (!local) {
     throw new Error("Unknown pumpkin");
   }
@@ -15741,7 +15743,7 @@ const local_0cc55e86 = {
   serverOffsetMs: 0,
   revision: null,
 };
-const symbol_086 = symbol_027(() => local_0cc55e86);
+const symbol_086 = symbol_028(() => local_0cc55e86);
 function fn_6938ab6e() {
   return Date.now() + symbol_086.getState().serverOffsetMs;
 }
@@ -15834,7 +15836,7 @@ function fn_b4ede4fa(arg) {
       );
       const local_2 = Date.parse(local.serverTime);
       if (local.event?.visible) {
-        await fn_562cb309(local, local.signal);
+        await fn_e47ed853(local, local.signal);
       }
       if (local === local_f06debfc_38 && local_2 >= local_6) {
         clearTimeout(local_4);
@@ -16060,7 +16062,7 @@ function fn_47cdb6b3({
               }
             }
           : undefined,
-        children: symbol_093(fn_878cf56d, {
+        children: symbol_093(fn_1aed972a, {
           templateId: local_9.templateId,
           contours: arg.contours,
           glow: arg.glow,
@@ -16083,7 +16085,7 @@ function fn_47cdb6b3({
               }
             },
             children: [
-              symbol_093(fn_878cf56d, {
+              symbol_093(fn_1aed972a, {
                 templateId: local_9.templateId,
                 contours: arg.contours,
                 glow: arg.glow,
@@ -16163,7 +16165,7 @@ function fn_47cdb6b3({
 const local_f2c3a8a6 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/subscription-modal.js"),
-    local_fed3fcaa([0, 1, 2, 3, 4, 5, 6, 7]),
+    local_50aba28d([0, 1, 2, 3, 4, 5, 6, 7]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -16404,7 +16406,7 @@ const local_7ede37c7 = {
   canRestore: null,
   restoreDeadline: null,
 };
-const symbol_029 = symbol_027()(
+const symbol_029 = symbol_028()(
   symbol_049(
     (arg, arg_2) => {
       const local = fn_e7e0f229;
@@ -16974,7 +16976,7 @@ function fn_027d561c(arg) {
         ? [
             {
               ...arg.actor,
-              halloween: symbol_024(arg.actor.halloween),
+              halloween: symbol_025(arg.actor.halloween),
             },
           ]
         : [],
@@ -16992,7 +16994,7 @@ function fn_027d561c(arg) {
     updatedAt: arg.readAt ?? arg.createdAt,
   };
 }
-const local_8cd74b1b = {
+const local_2906fb60 = {
   async getNotifications(arg = {}) {
     const local = new URLSearchParams();
     const local_2 = arg.limit ?? 20;
@@ -17002,7 +17004,7 @@ const local_8cd74b1b = {
       local.set("offset", local_3.toString());
     }
     const local_4 = local.toString();
-    const local_5 = `${symbol_019.notifications.list}${local_4 ? `?${local_4}` : ""}`;
+    const local_5 = `${symbol_024.notifications.list}${local_4 ? `?${local_4}` : ""}`;
     const local_6 = await symbol_018.get(local_5);
     const local_7 = local_6.notifications ?? [];
     const local_8 = local_6.hasMore ? String(local_3 + local_7.length) : null;
@@ -17012,16 +17014,16 @@ const local_8cd74b1b = {
     };
   },
   async getUnreadCount() {
-    return (await symbol_018.get(symbol_019.notifications.count)).count;
+    return (await symbol_018.get(symbol_024.notifications.count)).count;
   },
   async getUnreadStatus() {
-    return symbol_018.get(symbol_019.notifications.count);
+    return symbol_018.get(symbol_024.notifications.count);
   },
   async markAllAsRead() {
-    await symbol_018.post(symbol_019.notifications.markAllRead);
+    await symbol_018.post(symbol_024.notifications.markAllRead);
   },
   async getSettings() {
-    const local = await symbol_018.get(symbol_019.notifications.settings);
+    const local = await symbol_018.get(symbol_024.notifications.settings);
     return {
       webEnabled: local.enabled ?? true,
       soundEnabled: local.sound ?? true,
@@ -17058,7 +17060,7 @@ const local_8cd74b1b = {
     if (local_2?.wallPosts !== undefined) {
       local.wallPosts = local_2.wallPosts;
     }
-    await symbol_018.put(symbol_019.notifications.settings, local);
+    await symbol_018.put(symbol_024.notifications.settings, local);
   },
 };
 const local_eeb70029 = [1000, 2000, 4000, 8000, 16000, 30000];
@@ -17498,7 +17500,7 @@ function fn_24be191f() {
       symbol_011.getState().fetchUnreadCount());
 }
 const local_dda66a5c = fn_62f40fb7({
-  url: `${local_f4d9947e}${symbol_019.notifications.stream}`,
+  url: `${local_f4d9947e}${symbol_024.notifications.stream}`,
   onMessage: (arg, arg_2) => {
     if (arg === "notification.event-ended") {
       fn_f29263d7(arg_2.eventId);
@@ -17582,7 +17584,7 @@ const local_dda66a5c = fn_62f40fb7({
     }
   },
 });
-const symbol_011 = symbol_027()((arg, arg_2) => ({
+const symbol_011 = symbol_028()((arg, arg_2) => ({
   ...local_6d574dcf,
   initialize: () => {
     if (arg_2().isInitialized) {
@@ -17635,7 +17637,7 @@ const symbol_011 = symbol_027()((arg, arg_2) => ({
       });
       try {
         const local = arg ? undefined : (local_3 ?? undefined);
-        const local_2 = await local_8cd74b1b.getNotifications({
+        const local_2 = await local_2906fb60.getNotifications({
           cursor: local,
           limit: 20,
         });
@@ -17672,7 +17674,7 @@ const symbol_011 = symbol_027()((arg, arg_2) => ({
     const local = local_f06debfc_44;
     local_0a9fda83_11 = (async () => {
       try {
-        const local = await local_8cd74b1b.getUnreadStatus();
+        const local = await local_2906fb60.getUnreadStatus();
         if (!arg_2().isInitialized || local !== local_f06debfc_44) {
           return;
         }
@@ -17717,7 +17719,7 @@ const symbol_011 = symbol_027()((arg, arg_2) => ({
       unreadCount: 0,
     }));
     try {
-      await local_8cd74b1b.markAllAsRead();
+      await local_2906fb60.markAllAsRead();
     } catch {}
   },
   connectSSE: () => local_dda66a5c.connect(),
@@ -17728,7 +17730,7 @@ const symbol_011 = symbol_027()((arg, arg_2) => ({
       settingsLoading: true,
     });
     try {
-      const local = await local_8cd74b1b.getSettings();
+      const local = await local_2906fb60.getSettings();
       if (local !== local_f06debfc_44) {
         return;
       }
@@ -17761,7 +17763,7 @@ const symbol_011 = symbol_027()((arg, arg_2) => ({
       });
     }
     try {
-      await local_8cd74b1b.updateSettings(arg);
+      await local_2906fb60.updateSettings(arg);
     } catch {
       if (local === local_f06debfc_44) {
         arg({
@@ -18002,7 +18004,7 @@ function fn_9c5ea688(arg) {
   };
 }
 const local_ce9f9c1f_3 = fn_ef65276e();
-const local_68b835b6 = symbol_027(() => ({
+const local_68b835b6 = symbol_028(() => ({
   posts: {},
   received: {},
   inventory: null,
@@ -18186,7 +18188,7 @@ fn_45760754((arg) => {
   }
 });
 const local_ce9f9c1f_4 = fn_ef65276e();
-const local_68b835b6_2 = symbol_027(() => ({
+const local_68b835b6_2 = symbol_028(() => ({
   posts: {},
   received: {},
   inventory: null,
@@ -18375,7 +18377,7 @@ fn_45760754((arg) => {
 function fn_548a27eb(arg) {
   return arg.pagination?.nextCursor ?? arg.cursor ?? null;
 }
-const local_f50950e4_3 = new symbol_025(50, 300 * 1000);
+const local_f50950e4_3 = new symbol_026(50, 300 * 1000);
 const local_aad0de78_4 = 60 * 1000;
 setInterval(() => local_f50950e4_3.cleanup(), 120 * 1000);
 function fn_63ffb8c1(arg) {
@@ -18391,7 +18393,7 @@ function fn_63ffb8c1(arg) {
     isVerified: arg.isVerified ?? arg.verified ?? false,
     hasNuksta: arg.hasNuksta ?? false,
     pin: arg.pin ?? null,
-    halloween: symbol_024(arg.halloween),
+    halloween: symbol_025(arg.halloween),
   };
 }
 function fn_7047a138(arg) {
@@ -18491,7 +18493,7 @@ const symbol_088 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.posts.list}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.posts.list}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     return {
       data: local_4.data.posts.map(fn_7047a138),
@@ -18499,7 +18501,7 @@ const symbol_088 = {
     };
   },
   async getPost(arg) {
-    const local = await symbol_018.get(symbol_019.posts.single(arg));
+    const local = await symbol_018.get(symbol_024.posts.single(arg));
     return fn_7047a138(local.data);
   },
   async getUserWall(arg, arg_2 = {}) {
@@ -18566,7 +18568,7 @@ const symbol_088 = {
       local.set("pinnedPostId", arg_2.pinnedPostId);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     return {
       data: local_4.data.posts.map(fn_7047a138),
@@ -18608,13 +18610,13 @@ const symbol_088 = {
     }
   },
   async likePost(arg) {
-    return await symbol_018.post(symbol_019.posts.like(arg));
+    return await symbol_018.post(symbol_024.posts.like(arg));
   },
   async unlikePost(arg) {
-    return await symbol_018.delete(symbol_019.posts.like(arg));
+    return await symbol_018.delete(symbol_024.posts.like(arg));
   },
   async createPost(arg) {
-    return await symbol_018.post(symbol_019.posts.create, {
+    return await symbol_018.post(symbol_024.posts.create, {
       content: arg.text,
       spans: arg.spans,
       wallRecipientId: arg.wallOwnerId,
@@ -18624,7 +18626,7 @@ const symbol_088 = {
     });
   },
   async createRepost(arg, arg_2) {
-    const local = await symbol_018.post(symbol_019.posts.repost(arg), {
+    const local = await symbol_018.post(symbol_024.posts.repost(arg), {
       content: arg_2,
     });
     return fn_7047a138(local);
@@ -18635,7 +18637,7 @@ const symbol_088 = {
     }
     return (
       (
-        await symbol_018.post(`${symbol_019.posts.list}/stats`, {
+        await symbol_018.post(`${symbol_024.posts.list}/stats`, {
           ids: arg,
         })
       ).posts ?? []
@@ -18643,16 +18645,16 @@ const symbol_088 = {
   },
   async editPost(arg, arg_2) {
     const local = arg_2.content ?? arg_2.text;
-    await symbol_018.put(symbol_019.posts.update(arg), {
+    await symbol_018.put(symbol_024.posts.update(arg), {
       content: local,
       spans: arg_2.spans,
     });
   },
   async deletePost(arg) {
-    await symbol_018.delete(symbol_019.posts.delete(arg));
+    await symbol_018.delete(symbol_024.posts.delete(arg));
   },
   async restorePost(arg) {
-    await symbol_018.post(symbol_019.posts.restore(arg));
+    await symbol_018.post(symbol_024.posts.restore(arg));
   },
   async getUserPosts(arg, arg_2 = {}) {
     const local = new URLSearchParams();
@@ -18669,7 +18671,7 @@ const symbol_088 = {
       local.set("pinnedPostId", arg_2.pinnedPostId);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.posts.byUser(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     return {
       data: local_4.data.posts.map(fn_7047a138),
@@ -18685,7 +18687,7 @@ const symbol_088 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.posts.likedByUser(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.posts.likedByUser(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     return {
       data: local_4.data.posts.map(fn_7047a138),
@@ -18693,19 +18695,19 @@ const symbol_088 = {
     };
   },
   async pinPost(arg) {
-    await symbol_018.post(symbol_019.posts.pin(arg));
+    await symbol_018.post(symbol_024.posts.pin(arg));
   },
   async unpinPost(arg) {
-    await symbol_018.delete(symbol_019.posts.pin(arg));
+    await symbol_018.delete(symbol_024.posts.pin(arg));
   },
   async votePoll(arg, arg_2) {
-    const local = await symbol_018.post(symbol_019.posts.pollVote(arg), {
+    const local = await symbol_018.post(symbol_024.posts.pollVote(arg), {
       optionIds: arg_2,
     });
     return local.data ?? local;
   },
   async unrepost(arg) {
-    await symbol_018.delete(symbol_019.posts.repost(arg));
+    await symbol_018.delete(symbol_024.posts.repost(arg));
   },
   async getPostsByHashtag(arg, arg_2 = {}) {
     const local = new URLSearchParams();
@@ -18716,7 +18718,7 @@ const symbol_088 = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.hashtags.posts(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.hashtags.posts(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     return {
       data: local_4.data.posts.map(fn_7047a138),
@@ -18742,7 +18744,7 @@ function fn_63ffb8c1_2(arg) {
     isVerified: arg.isVerified ?? arg.verified ?? false,
     hasNuksta: arg.hasNuksta ?? false,
     pin: arg.pin ?? null,
-    halloween: symbol_024(arg.halloween),
+    halloween: symbol_025(arg.halloween),
   };
 }
 function fn_b6c83bb9(arg) {
@@ -18788,7 +18790,7 @@ const local_8f2457ce = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.posts.comments(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.posts.comments(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     let local_5 = [];
     let local_6 = null;
@@ -18815,7 +18817,7 @@ const local_8f2457ce = {
       local.set("cursor", arg_2.cursor);
     }
     const local_2 = local.toString();
-    const local_3 = `${symbol_019.comments.replies(arg)}${local_2 ? `?${local_2}` : ""}`;
+    const local_3 = `${symbol_024.comments.replies(arg)}${local_2 ? `?${local_2}` : ""}`;
     const local_4 = await symbol_018.get(local_3);
     let local_5 = [];
     let local_6 = null;
@@ -18834,31 +18836,31 @@ const local_8f2457ce = {
     };
   },
   async createComment(arg, arg_2, arg_3, arg_4, arg_5) {
-    return await symbol_018.post(symbol_019.posts.comments(arg), {
+    return await symbol_018.post(symbol_024.posts.comments(arg), {
       content: arg_2,
       attachmentIds: arg_5?.map((arg) => arg.mediaId),
     });
   },
   async createReply(arg, arg_2, arg_3, arg_4, arg_5) {
-    return await symbol_018.post(symbol_019.comments.replies(arg), {
+    return await symbol_018.post(symbol_024.comments.replies(arg), {
       content: arg_2,
       replyToUserId: arg_4,
       attachmentIds: arg_5?.map((arg) => arg.mediaId),
     });
   },
   async editComment(arg, arg_2, arg_3) {
-    await symbol_018.patch(symbol_019.comments.edit(arg), {
+    await symbol_018.patch(symbol_024.comments.edit(arg), {
       content: arg_2,
     });
   },
   async deleteComment(arg) {
-    await symbol_018.delete(symbol_019.comments.delete(arg));
+    await symbol_018.delete(symbol_024.comments.delete(arg));
   },
   async likeComment(arg) {
-    await symbol_018.post(symbol_019.comments.like(arg));
+    await symbol_018.post(symbol_024.comments.like(arg));
   },
   async unlikeComment(arg) {
-    await symbol_018.delete(symbol_019.comments.like(arg));
+    await symbol_018.delete(symbol_024.comments.like(arg));
   },
 };
 function symbol_043(arg, arg_2, arg_3) {
@@ -18901,7 +18903,7 @@ function fn_632095dd(arg, arg_2, arg_3) {
   }
   return arg;
 }
-const symbol_074 = symbol_027((arg, arg_2) => ({
+const symbol_074 = symbol_028((arg, arg_2) => ({
   posts: [],
   activeFeed: "global",
   isLoading: false,
@@ -19764,7 +19766,7 @@ const local_ab34ad2e = Object.freeze(
     },
   ),
 );
-const symbol_082 = symbol_027()(
+const symbol_082 = symbol_028()(
   symbol_049(
     (arg) => ({
       commentsSort: "popular",
@@ -19801,7 +19803,7 @@ function fn_e336e58a() {
       .forEach(([arg]) => local_a1e12a9e_18.delete(arg));
   }
 }
-const symbol_079 = symbol_027((arg, arg_2) => ({
+const symbol_079 = symbol_028((arg, arg_2) => ({
   comments: [],
   commentsLoading: false,
   commentsLoadingMore: false,
@@ -20406,7 +20408,7 @@ function fn_c7a41549(arg) {
     arg.intersectionRatio > 0.95
   );
 }
-class clazz_46835f90 {
+class clazz_e8d5519a {
   observer = null;
   elementToPostId = new WeakMap();
   posts = new Map();
@@ -20620,7 +20622,7 @@ class clazz_46835f90 {
     const { body: local_3, headers: local_4 } =
       await this.maybeCompress(local_2);
     symbol_018
-      .post(symbol_019.posts.dwellLog, local_3, {
+      .post(symbol_024.posts.dwellLog, local_3, {
         headers: local_4,
       })
       .catch(() => {});
@@ -20633,7 +20635,7 @@ class clazz_46835f90 {
     this.buffer = [];
     symbol_018
       .post(
-        symbol_019.posts.dwellLog,
+        symbol_024.posts.dwellLog,
         {
           sid: this.sessionId,
           e: local,
@@ -20645,7 +20647,7 @@ class clazz_46835f90 {
       .catch(() => {});
   }
 }
-const local_a1e12a9e_19 = new clazz_46835f90();
+const local_a1e12a9e_19 = new clazz_e8d5519a();
 function fn_2df383fe(arg, arg_2, arg_3, arg_4 = "", arg_5 = undefined) {
   symbol_080(() => {
     const local = arg_2.current;
@@ -20703,7 +20705,7 @@ function fn_3215cb92() {
 const local_f88ff501 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/changelog-modal.js"),
-    local_fed3fcaa([8, 9]),
+    local_50aba28d([8, 9]),
   ).then((arg) => ({
     default: arg.ChangelogModal,
   })),
@@ -20711,7 +20713,7 @@ const local_f88ff501 = fn_85199249(() =>
 const local_f2c3a8a6_2 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/subscription-modal.js"),
-    local_fed3fcaa([0, 1, 2, 3, 4, 5, 6, 7]),
+    local_50aba28d([0, 1, 2, 3, 4, 5, 6, 7]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -20772,7 +20774,7 @@ const local_bb2cde64 = () => {
   const [local_10, local_11] = symbol_076(false);
   const [local_12, local_13] = symbol_076(false);
   const local_14 = (local_2.url || "./site/index.html").startsWith(
-    symbol_028.EVENT,
+    symbol_019.EVENT,
   );
   const local_15 = local_7?.username ? `/@${local_7.username}` : "/profile";
   const local_16 = symbol_089(() => {
@@ -20872,7 +20874,7 @@ const local_bb2cde64 = () => {
               }),
               symbol_093(local_6ba9fd1a, {
                 href: "/search",
-                icon: symbol_093(symbol_026, {}),
+                icon: symbol_093(symbol_027, {}),
                 children: "Поиск",
               }),
               symbol_093(local_6ba9fd1a, {
@@ -20949,7 +20951,7 @@ const local_bb2cde64 = () => {
             })
           : symbol_093("a", {
               className: local_c568dd2f.logoutButton,
-              href: symbol_028.LOGIN,
+              href: symbol_019.LOGIN,
               children: [
                 symbol_093(symbol_051, {
                   size: 20,
@@ -21761,7 +21763,7 @@ function fn_12ea3240({ src: arg, type: arg_2 }) {
     alt: "",
   });
 }
-function fn_da3e8dfb({ images: arg, uploadingImages: arg_2, onRemove: arg_3 }) {
+function fn_bc681893({ images: arg, uploadingImages: arg_2, onRemove: arg_3 }) {
   if (arg.length > 0 || arg_2.length > 0) {
     return symbol_093("div", {
       className: local_330541da.attachments,
@@ -21978,7 +21980,7 @@ function fn_2a874703(arg) {
 function fn_9d34860e(arg) {
   return arg !== "mention" && arg !== "hashtag";
 }
-function fn_313bdcee(arg, arg_2) {
+function fn_05cac9d5(arg, arg_2) {
   if (arg_2.length === 0) {
     return arg;
   }
@@ -22269,7 +22271,7 @@ const local_9d8a651c = fn_12556f66(function (
     for (const local of local_2) {
       if (local.pos > local_4) {
         const local = arg.substring(local_4, local.pos);
-        local_3 += fn_313bdcee(fn_6e13c644(local), local_5);
+        local_3 += fn_05cac9d5(fn_6e13c644(local), local_5);
         local_4 = local.pos;
       }
       if (local.type === "start") {
@@ -22283,7 +22285,7 @@ const local_9d8a651c = fn_12556f66(function (
     }
     if (local_4 < arg.length) {
       const local = arg.substring(local_4);
-      local_3 += fn_313bdcee(fn_6e13c644(local), local_5);
+      local_3 += fn_05cac9d5(fn_6e13c644(local), local_5);
     }
     return local_3 || "<br>";
   }, [arg, arg_2]);
@@ -22758,7 +22760,7 @@ function fn_052fa675({
 const local_c0a30487 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/voice-input.js"),
-    local_fed3fcaa([10, 11, 12]),
+    local_50aba28d([10, 11, 12]),
   ).then((arg) => ({
     default: arg.VoiceInput,
   })),
@@ -22944,7 +22946,7 @@ function symbol_083({
         local_27 &&
         symbol_093("div", {
           className: local_de74f1c0.attachmentStrip,
-          children: symbol_093(fn_da3e8dfb, {
+          children: symbol_093(fn_bc681893, {
             images: local_18,
             uploadingImages: local_19,
             onRemove: local_22,
@@ -23420,7 +23422,7 @@ function fn_1bfd6162(arg) {
     return false;
   }
 }
-function fn_a2f54c44(arg) {
+function fn_d9bbcb06(arg) {
   if (!fn_1bfd6162(arg)) {
     return "#";
   }
@@ -23429,7 +23431,7 @@ function fn_a2f54c44(arg) {
   const local_3 = btoa(local_2);
   return `/external?url=${encodeURIComponent(local_3)}`;
 }
-function fn_cb0a6dec({
+function fn_e20a4feb({
   text: arg,
   spans: arg_2 = [],
   className: arg_3 = "",
@@ -23620,7 +23622,7 @@ function fn_cb0a6dec({
       });
     }
     if (arg.styles.has("link") && arg.url) {
-      const local = fn_a2f54c44(arg.url);
+      const local = fn_d9bbcb06(arg.url);
       local = symbol_093("a", {
         href: local,
         target: "_blank",
@@ -23818,7 +23820,7 @@ const local_91772deb = {
   canvas: local_529ee1fe,
 };
 const local_f06debfc_61 = 5;
-function fn_4de5b5da({
+function fn_75110e34({
   src: arg,
   alt: arg_2 = "",
   spoiler: arg_3 = false,
@@ -24131,7 +24133,7 @@ class clazz_af2db558 {
     const { body: local_3, headers: local_4 } =
       await this.maybeCompress(local_2);
     symbol_018
-      .post(symbol_019.posts.interactionLog, local_3, {
+      .post(symbol_024.posts.interactionLog, local_3, {
         headers: local_4,
       })
       .catch(() => {});
@@ -24144,7 +24146,7 @@ class clazz_af2db558 {
     this.buffer = [];
     symbol_018
       .post(
-        symbol_019.posts.interactionLog,
+        symbol_024.posts.interactionLog,
         {
           sid: this.sessionId,
           e: local,
@@ -24188,7 +24190,7 @@ const local_89a6df8b = {
 const local_b492dcb2 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/post-media-video.js"),
-    local_fed3fcaa([13, 14, 15]),
+    local_50aba28d([13, 14, 15]),
   ).then((arg) => ({
     default: arg.PostMediaVideo,
   })),
@@ -24378,7 +24380,7 @@ function fn_38dee82d({
             local_21(0, arg);
           },
           children: symbol_093(
-            fn_4de5b5da,
+            fn_75110e34,
             {
               src: local.url,
               spoiler: local.spoiler,
@@ -24459,7 +24461,7 @@ function fn_38dee82d({
         ),
         local.map((arg, arg_2) =>
           symbol_093(
-            fn_4de5b5da,
+            fn_75110e34,
             {
               src: arg.url,
               spoiler: arg.spoiler,
@@ -25247,7 +25249,7 @@ function fn_25f2e195(arg, arg_2, arg_3) {
   }
   return "Выделите одно слово без пробелов";
 }
-function fn_19cfa626(arg, arg_2, arg_3 = false) {
+function fn_958155fc(arg, arg_2, arg_3 = false) {
   if (arg_2) {
     if (local_376310c6.test(arg_2)) {
       if ([...local_4bb88f00.segment(arg_2)].length > local_f06debfc_70) {
@@ -25373,7 +25375,7 @@ const local_6320c014 = {
   penIcon: local_d81b4fad,
   signatureText: local_8616ef50_2,
 };
-function fn_d2080ac2({ root: arg, corrections: arg_2 }) {
+function fn_880ea015({ root: arg, corrections: arg_2 }) {
   const [local, local_2] = symbol_076([]);
   symbol_053(() => {
     const local = arg.current;
@@ -25772,7 +25774,7 @@ const local_4bb88f00_2 = new Intl.Segmenter("ru", {
   granularity: "grapheme",
 });
 const local_f06debfc_71 = 3;
-function fn_ab0b2845({
+function fn_ad326311({
   postId: arg,
   authorId: arg_2,
   text: arg_3,
@@ -25830,7 +25832,7 @@ function fn_ab0b2845({
       !local_20 ||
       !local.current ||
       fn_25f2e195(arg_3, local_16.start, local_16.end) ||
-      fn_19cfa626(
+      fn_958155fc(
         local_16.text,
         local_20,
         local_5.corrections.some(
@@ -26062,7 +26064,7 @@ function fn_ab0b2845({
                 : local_37
                   ? "Это слово уже так исправлено"
                   : local_16
-                    ? fn_19cfa626(
+                    ? fn_958155fc(
                         local_16.text,
                         local_20,
                         local_5.corrections.some(
@@ -26214,14 +26216,14 @@ function fn_ab0b2845({
                 ? symbol_093("span", {
                     children: "Пост изменился. Обновите страницу",
                   })
-                : symbol_093(fn_cb0a6dec, {
+                : symbol_093(fn_e20a4feb, {
                     text: arg_3,
                     spans: arg_4,
                     correctorMarks: local_6.marks,
                   }),
           }),
           local_6.corrections.length > 0 &&
-            symbol_093(fn_d2080ac2, {
+            symbol_093(fn_880ea015, {
               root: local,
               corrections: local_6.corrections,
             }),
@@ -26354,7 +26356,7 @@ function fn_ab0b2845({
                           !!local_26 ||
                           (!!local_40 &&
                             local_40 !==
-                              fn_19cfa626(
+                              fn_958155fc(
                                 local_16.text,
                                 local_20,
                                 local_5.corrections.some(
@@ -26674,7 +26676,7 @@ const local_8825fe8b = {
   stain: local_7d9f0699,
   arriving: local_b5ee0661,
 };
-export function fn_a48a4d0a({
+export function fn_b1bc9f37({
   placements: arg,
   anchorKind: arg_2,
   anchorId: arg_3,
@@ -27273,7 +27275,7 @@ const local_2d64103c = {
   night: false,
   posts: {},
 };
-const local_2aa3d9f5 = symbol_027(() => local_2d64103c);
+const local_2aa3d9f5 = symbol_028(() => local_2d64103c);
 const local_78b6ff29 = () => Date.now() + local_2aa3d9f5.getState().offset;
 const local_a1e12a9e_28 = new Map();
 let local_0a9fda83_15 = null;
@@ -27659,7 +27661,7 @@ const local_84b00f5b = {
   multiline: local_5b0e20a9,
   arrow: local_06d417e6,
 };
-export function fn_40d5b9d0({
+export function fn_4e041455({
   text: arg,
   children: arg_2,
   className: arg_3,
@@ -27754,7 +27756,7 @@ function fn_2a679752({
     alt: arg_2,
     size: "xs",
   });
-  return symbol_093(fn_40d5b9d0, {
+  return symbol_093(fn_4e041455, {
     text: arg_2,
     children: arg
       ? symbol_093("a", {
@@ -27873,7 +27875,7 @@ function fn_c09962ce({
 }
 const local_be7bf688 =
   "EXORCIZAMUS TE · OMNIS IMMUNDUS SPIRITUS · VADE RETRO · ";
-const local_e12cb837 = `M${Array.from(
+const local_fdc84155 = `M${Array.from(
   {
     length: 121,
   },
@@ -27909,7 +27911,7 @@ function fn_4d8c4f42({ tool: arg, id: arg_2 }) {
             r: "40",
           }),
           symbol_093("path", {
-            d: local_e12cb837,
+            d: local_fdc84155,
           }),
         ],
       });
@@ -28211,7 +28213,7 @@ function fn_f56195c8({ possessionId: arg, onClose: arg_2 }) {
     sandbox: "allow-scripts allow-same-origin",
   });
 }
-function fn_a4ad5b5c({ possession: arg }) {
+function fn_3df19f44({ possession: arg }) {
   const local = symbol_066();
   const local_2 = local?.id ?? null;
   const local_3 = arg.savers ?? [];
@@ -28576,7 +28578,7 @@ function fn_6eafd0d7(arg) {
   local_fdf659df.observe(local);
   if (!local_f06debfc_78) {
     local_f06debfc_79 = performance.now();
-    local_f06debfc_78 = requestAnimationFrame(fn_29f13f5e);
+    local_f06debfc_78 = requestAnimationFrame(fn_4dcd1f2f);
   }
   return local;
 }
@@ -28592,7 +28594,7 @@ function fn_de5f8584(arg, arg_2) {
     local.face.src = `${local_c5eaa041}/g-face-${local_e2a6eff6[arg_2].face}.webp`;
   }
 }
-function fn_29f13f5e(arg) {
+function fn_4dcd1f2f(arg) {
   if (!local_a1e12a9e_31.size) {
     local_f06debfc_78 = 0;
     return;
@@ -28639,7 +28641,7 @@ function fn_29f13f5e(arg) {
       local.blinkAt = arg + 2500 + Math.random() * 3000;
     }
   }
-  local_f06debfc_78 = requestAnimationFrame(fn_29f13f5e);
+  local_f06debfc_78 = requestAnimationFrame(fn_4dcd1f2f);
 }
 const local_ea151836 = "translateY(95px)";
 const local_301dfa28 = [
@@ -28938,7 +28940,7 @@ const local_f8df44c6 = {
   taken: "Пост захвачен. Жми «Освободить» и лови призрака фонарём",
   stamp: "Имена спасителей видны под постом в течение часа",
 };
-function fn_6e5811bb(arg, { holders: arg_2, threshold: arg_3 }) {
+function fn_4dc76336(arg, { holders: arg_2, threshold: arg_3 }) {
   if (arg !== "friend") {
     return local_f8df44c6[arg];
   }
@@ -29026,7 +29028,7 @@ function fn_8009f676(arg, arg_2, arg_3) {
   }, [arg_2]);
   return {
     kind: arg_2,
-    text: arg_2 ? fn_6e5811bb(arg_2, arg) : "",
+    text: arg_2 ? fn_4dc76336(arg_2, arg) : "",
     show: !!arg_2 && (local_3 || (local && !local_55efe85c(arg_2))),
     onHover: (arg) => () => local_2(arg && !arg_3.holding.current),
     dismiss: () => {
@@ -29073,7 +29075,7 @@ function fn_b0e3f3ef(arg) {
 }
 const local_467c0070 = () => fn_c2e394d4([30, 50, 18]);
 const local_40daa76e = () => navigator.vibrate?.(0);
-function fn_2c48cf4d(arg) {
+function fn_4d95c9d8(arg) {
   const local = arg.getBoundingClientRect();
   for (let local = 0; local < 6; local++) {
     const local = document.createElement("img");
@@ -29721,7 +29723,7 @@ function fn_48c04a5d(arg, arg_2, arg_3) {
     webFrom: local_6,
   };
 }
-async function fn_eeb4de13(arg, arg_2, arg_3 = 1.6) {
+async function fn_364f97df(arg, arg_2, arg_3 = 1.6) {
   const local = arg.getBoundingClientRect();
   const local_2 = arg_2.getBoundingClientRect();
   const local_3 = document.createElement("img");
@@ -29828,7 +29830,7 @@ function fn_041fcc4f(arg, arg_2, arg_3, arg_4) {
     },
   ).then(() => local.remove());
 }
-async function fn_60f4be04(arg, arg_2) {
+async function fn_5a5ea605(arg, arg_2) {
   fn_de5f8584(arg, "poof");
   const local = arg.getBoundingClientRect();
   const local_2 = arg_2.getBoundingClientRect();
@@ -29928,7 +29930,7 @@ async function fn_60f4be04(arg, arg_2) {
       easing: "ease-in",
     },
   );
-  const local_9 = fn_eeb4de13(local_7, arg_2, 1);
+  const local_9 = fn_364f97df(local_7, arg_2, 1);
   await local_a9931784(
     local_7,
     [
@@ -29995,9 +29997,9 @@ async function fn_98d65c9e(arg, arg_2) {
       easing: "ease-in",
     },
   );
-  await fn_eeb4de13(arg, arg_2, 1.2);
+  await fn_364f97df(arg, arg_2, 1.2);
 }
-async function fn_613ab4e8(arg, arg_2) {
+async function fn_1a007428(arg, arg_2) {
   fn_de5f8584(arg, "poof");
   const local = arg.getBoundingClientRect();
   const local_2 = arg_2.getBoundingClientRect();
@@ -30108,9 +30110,9 @@ async function fn_76827e33(arg, arg_2) {
 }
 function fn_ea9443b5(arg, arg_2, arg_3) {
   return {
-    salt: fn_60f4be04,
+    salt: fn_5a5ea605,
     water: fn_98d65c9e,
-    trap: fn_613ab4e8,
+    trap: fn_1a007428,
     latin: fn_76827e33,
   }[arg](arg_2, arg_3);
 }
@@ -30138,7 +30140,7 @@ function fn_5a50f80b(arg, arg_2) {
   local.alt = "";
   return local;
 }
-function fn_0e7a558b(arg) {
+function fn_2c787189(arg) {
   const local = document.createElement("div");
   const local_2 = document.createElement("span");
   local.className = local_7c5c4e98.jar;
@@ -30185,7 +30187,7 @@ function fn_fe97100c(arg, arg_2, arg_3) {
 async function fn_87800edf(arg, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7) {
   const local = Math.max(8, arg_5 - 210);
   const local_2 = arg_6 - 4;
-  const { jar: local_3, put: local_4 } = fn_0e7a558b(arg_4);
+  const { jar: local_3, put: local_4 } = fn_2c787189(arg_4);
   Object.assign(local_3.style, {
     left: `${local}px`,
     top: `${local_2}px`,
@@ -30547,7 +30549,7 @@ function fn_c326e13a(arg, arg_2) {
     try {
       await local_a94faf68.thanks(arg);
       if (!local_3ac3d05c()) {
-        fn_2c48cf4d(arg);
+        fn_4d95c9d8(arg);
       }
       fn_9962d461({
         title: "Спасибо отправлено",
@@ -30618,7 +30620,7 @@ function fn_dc81520d({ postId: arg }) {
 }
 const local_f06debfc_81 = 26;
 const local_f06debfc_82 = 10;
-function fn_71750e18(arg, arg_2, arg_3) {
+function fn_3f76360a(arg, arg_2, arg_3) {
   const local = arg_2.getBoundingClientRect();
   const local_2 = arg_3.getBoundingClientRect();
   const local_3 = local_2.left + local_2.width / 2 - local.left;
@@ -30641,7 +30643,7 @@ function fn_6ebded21({ hint: arg }) {
     if (!local || !local_2 || !local_3) {
       return;
     }
-    const local_4 = () => fn_71750e18(local, local_2, local_3);
+    const local_4 = () => fn_3f76360a(local, local_2, local_3);
     local_4();
     addEventListener("resize", local_4);
     return () => removeEventListener("resize", local_4);
@@ -30799,7 +30801,7 @@ function fn_c5ffae10({
           onClose: local_26,
         }),
       local_21 &&
-        symbol_093(fn_a4ad5b5c, {
+        symbol_093(fn_3df19f44, {
           possession: {
             ...arg_2,
             resolved: local_5,
@@ -31256,7 +31258,7 @@ const local_f3d38a36 = (arg) => () => {
     local.remove();
   }
 };
-function fn_7a6d7951(arg, arg_2, arg_3, arg_4 = () => arg.remove()) {
+function fn_813161ae(arg, arg_2, arg_3, arg_4 = () => arg.remove()) {
   arg.setAttribute("class", arg_2);
   arg.setAttribute("aria-hidden", "true");
   for (const [local, local_2] of Object.entries(arg_3)) {
@@ -31282,7 +31284,7 @@ const local_de6f2a96 = [
         (arg, arg_2) => {
           const local = (arg_2 / (local - 1) - 0.5) * 2.4;
           const local_2 = local_0bf0d85a_2(70, 110);
-          return fn_7a6d7951(
+          return fn_813161ae(
             arg.cloneNode(true),
             `${local_e5421abe.bat} ${local_e5421abe.mini}`,
             {
@@ -31302,7 +31304,7 @@ const local_de6f2a96 = [
     local.textContent =
       local_aad9f759[Math.floor(Math.random() * local_aad9f759.length)];
     return local_f3d38a36([
-      fn_7a6d7951(
+      fn_813161ae(
         local,
         local_e5421abe.shoo,
         local_6858367c(arg_2, 0, -arg_2.size / 2),
@@ -31317,7 +31319,7 @@ const local_de6f2a96 = [
           length: 6 + Math.floor(Math.random() * 3),
         },
         () =>
-          fn_7a6d7951(document.createElement("i"), local_e5421abe.spark, {
+          fn_813161ae(document.createElement("i"), local_e5421abe.spark, {
             ...local_6858367c(arg_2, local_0bf0d85a_2(-0.4, 0.4) * arg_2.size),
             dx: local_c9d6eee2(local_0bf0d85a_2(-24, 24)),
             dy: local_c9d6eee2(local_0bf0d85a_2(50, 90)),
@@ -31359,7 +31361,7 @@ function fn_86c56b1f(arg, arg_2, arg_3) {
   arg.style.visibility = "hidden";
   local_3.removeAttribute("role");
   local_3.removeAttribute("aria-label");
-  fn_7a6d7951(
+  fn_813161ae(
     local_3,
     `${local_e5421abe.bat} ${local_e5421abe.caught}`,
     {
@@ -31398,7 +31400,7 @@ function fn_86c56b1f(arg, arg_2, arg_3) {
   }
 }
 const local_f06debfc_86 = 4;
-const local_55b1270e = symbol_027(() => ({
+const local_55b1270e = symbol_028(() => ({
   thanks: null,
   moonDay: false,
   blackout: null,
@@ -31490,7 +31492,7 @@ function fn_0f228b25(arg = false) {
   };
 }
 const local_24a81ef4 = "halloween-bat-burst";
-function fn_f48cafa3() {
+function fn_d181bee2() {
   return Array.from(
     {
       length: 16,
@@ -31527,7 +31529,7 @@ function fn_d6f2368c() {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return null;
     }
-    return fn_f48cafa3();
+    return fn_d181bee2();
   });
   symbol_080(() => {
     if (!local) {
@@ -32055,7 +32057,7 @@ function fn_4b189ca9({ composing: arg = false }) {
     ],
   });
 }
-function fn_b030cfab({ wolf: arg, own: arg_2, flipped: arg_3, onFlip: arg_4 }) {
+function fn_d3677e39({ wolf: arg, own: arg_2, flipped: arg_3, onFlip: arg_4 }) {
   const local = !arg.night && arg.revealed && arg.text !== undefined;
   const local_2 = !arg.night && !local;
   fn_5e74608c(local_2 && arg_2, 30000);
@@ -32065,7 +32067,7 @@ function fn_b030cfab({ wolf: arg, own: arg_2, flipped: arg_3, onFlip: arg_4 }) {
   return symbol_093(fn_6e1fd374, {
     className: local_7954ca0b.badge,
     children: [
-      symbol_093(fn_40d5b9d0, {
+      symbol_093(fn_4e041455, {
         multiline: true,
         className: local_7954ca0b.chip,
         text: arg.night
@@ -32362,7 +32364,7 @@ function fn_87e48d5d({
                         children: [
                           local,
                           arg_5 &&
-                            symbol_093(fn_40d5b9d0, {
+                            symbol_093(fn_4e041455, {
                               text: new Date(arg_5).toLocaleString("ru-RU"),
                               children: symbol_093("span", {
                                 className: local_fdd07717.edited,
@@ -32382,7 +32384,7 @@ function fn_87e48d5d({
                   children: [
                     local,
                     arg_5 &&
-                      symbol_093(fn_40d5b9d0, {
+                      symbol_093(fn_4e041455, {
                         text: new Date(arg_5).toLocaleString("ru-RU"),
                         children: symbol_093("span", {
                           className: local_fdd07717.edited,
@@ -32585,7 +32587,7 @@ function fn_0438bc77({
         children: [
           arg_7 &&
             (arg_13
-              ? symbol_093(fn_40d5b9d0, {
+              ? symbol_093(fn_4e041455, {
                   text: "Эмоджи, которое чаще всего лайкало этот пост",
                   className: local_2a234171.capturedSolo,
                   children: symbol_093("span", {
@@ -32595,7 +32597,7 @@ function fn_0438bc77({
                 })
               : symbol_093(symbol_020, {
                   children: [
-                    symbol_093(fn_40d5b9d0, {
+                    symbol_093(fn_4e041455, {
                       text: "Эмоджи, которое чаще всего лайкало этот пост",
                       className: local_2a234171.captured,
                       children: [
@@ -32609,7 +32611,7 @@ function fn_0438bc77({
                         }),
                       ],
                     }),
-                    symbol_093(fn_40d5b9d0, {
+                    symbol_093(fn_4e041455, {
                       text: "Эмоджи, которое чаще всего лайкало этот пост",
                       className: local_2a234171.capturedMobile,
                       children: symbol_093("span", {
@@ -32637,7 +32639,7 @@ function fn_0438bc77({
 const local_b84ad31b = fn_85199249(() =>
   symbol_056(
     () => import("./routes/report-modal.js"),
-    local_fed3fcaa([16, 17, 18]),
+    local_50aba28d([16, 17, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -32897,7 +32899,7 @@ function fn_5ef7518c({ attachments: arg, postVs: arg_2, source: arg_3 }) {
     }),
   });
 }
-function fn_ee3090f6({
+function fn_a7c2fae8({
   originalPost: arg,
   source: arg_2,
   showcase: arg_3 = false,
@@ -33007,7 +33009,7 @@ function fn_ee3090f6({
             className: local_ae167855.originalPostText,
             children:
               arg.corrector || arg.redPen
-                ? symbol_093(fn_ab0b2845, {
+                ? symbol_093(fn_ad326311, {
                     postId: arg.id,
                     authorId: arg.author.id,
                     text: arg.text,
@@ -33049,7 +33051,7 @@ function fn_ee3090f6({
   });
 }
 const local_0da67384 = fn_85199249(() =>
-  symbol_056(() => import("./routes/poll.js"), local_fed3fcaa([19, 20])).then(
+  symbol_056(() => import("./routes/poll.js"), local_50aba28d([19, 20])).then(
     (arg) => ({
       default: arg.Poll,
     }),
@@ -33344,7 +33346,7 @@ const symbol_077 = symbol_061(
                 : null,
             }),
             local_15?.werewolf &&
-              symbol_093(fn_b030cfab, {
+              symbol_093(fn_d3677e39, {
                 wolf: local_15.werewolf,
                 own: local_11?.id === arg.author.id,
                 flipped: local_16,
@@ -33368,12 +33370,12 @@ const symbol_077 = symbol_061(
                             : undefined,
                         "data-haunt-text": true,
                         children: local_18
-                          ? symbol_093(fn_cb0a6dec, {
+                          ? symbol_093(fn_e20a4feb, {
                               text: local_18.text ?? "",
                               spans: [],
                             })
                           : arg.corrector || arg.redPen
-                            ? symbol_093(fn_ab0b2845, {
+                            ? symbol_093(fn_ad326311, {
                                 postId: arg.id,
                                 authorId: arg.author.id,
                                 text: arg.text,
@@ -33383,7 +33385,7 @@ const symbol_077 = symbol_061(
                                 signature: false,
                                 selectable: !local_50 && !arg_9,
                               })
-                            : symbol_093(fn_cb0a6dec, {
+                            : symbol_093(fn_e20a4feb, {
                                 text: arg.text,
                                 spans: arg.spans ?? [],
                               }),
@@ -33441,7 +33443,7 @@ const symbol_077 = symbol_061(
                   }),
                 !local_18 &&
                   arg.originalPost &&
-                  symbol_093(fn_ee3090f6, {
+                  symbol_093(fn_a7c2fae8, {
                     originalPost: arg.originalPost,
                     source: arg_7,
                     showcase: arg_9,
@@ -33492,7 +33494,7 @@ const symbol_077 = symbol_061(
         onClick: local_58,
         children: [
           local &&
-            symbol_093(fn_a48a4d0a, {
+            symbol_093(fn_b1bc9f37, {
               placements: arg_13,
               anchorKind: "post",
               anchorId: arg.id,
@@ -33612,7 +33614,7 @@ const local_074cb7eb = {
 const local_22c6c85e = fn_85199249(() =>
   symbol_056(
     () => import("./routes/voice-message.js"),
-    local_fed3fcaa([21, 11, 22]),
+    local_50aba28d([21, 11, 22]),
   ).then((arg) => ({
     default: arg.VoiceMessage,
   })),
@@ -33758,7 +33760,7 @@ const local_108202b7 = symbol_061(function ({
                     ],
                   }),
                 arg_3 &&
-                  symbol_093(fn_cb0a6dec, {
+                  symbol_093(fn_e20a4feb, {
                     text: arg_3,
                     spans: arg_4,
                   }),
@@ -34309,7 +34311,7 @@ const local_a98795d7_2 = {
 const local_76950eb5 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/emoji-picker.js"),
-    local_fed3fcaa([23, 24]),
+    local_50aba28d([23, 24]),
   ).then((arg) => ({
     default: arg.EmojiPicker,
   })),
@@ -34320,7 +34322,7 @@ const local_f06debfc_92 = 8;
 const local_f06debfc_93 = 100;
 const local_f06debfc_94 = 150;
 const local_f06debfc_95 = 150;
-function fn_7acb75b5({
+function fn_8ee74151({
   onEmojiSelect: arg,
   buttonClassName: arg_2,
   size: arg_3 = 20,
@@ -34599,7 +34601,7 @@ function fn_af7ac8a7({
               className: local_9bab1bec.mediaButtons,
               children:
                 !local_4 &&
-                symbol_093(fn_7acb75b5, {
+                symbol_093(fn_8ee74151, {
                   onEmojiSelect: local_17,
                   buttonClassName: local_9bab1bec.mediaButton,
                 }),
@@ -34636,7 +34638,7 @@ function fn_af7ac8a7({
 const local_b84ad31b_2 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/report-modal.js"),
-    local_fed3fcaa([16, 17, 18]),
+    local_50aba28d([16, 17, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -35044,7 +35046,7 @@ function fn_4e3ee8c9({ postId: arg, onClose: arg_2 }) {
 const local_13cf0331 = {
   inventory: async () =>
     (
-      await symbol_018.get(symbol_019.postNotebooks.inventory, {
+      await symbol_018.get(symbol_024.postNotebooks.inventory, {
         skipErrorToast: true,
       })
     ).data,
@@ -35135,7 +35137,7 @@ function fn_d17b5a43({ night: arg, hidden: arg_2 }) {
           }
         },
       }),
-      symbol_093(fn_da3e8dfb, {
+      symbol_093(fn_bc681893, {
         images: local_2.images,
         uploadingImages: local_2.uploadingImages,
         onRemove: local_2.removeImage,
@@ -35249,7 +35251,7 @@ function fn_8a01e048({ value: arg, onChange: arg_2 }) {
 const local_c65d5c43 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/drawing-canvas.js"),
-    local_fed3fcaa([25, 26]),
+    local_50aba28d([25, 26]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -35568,7 +35570,7 @@ function symbol_048({
           hidden: !local_56,
         }),
       !local_56 &&
-        symbol_093(fn_da3e8dfb, {
+        symbol_093(fn_bc681893, {
           images: local_28,
           uploadingImages: local_29,
           onRemove: local_33,
@@ -35698,7 +35700,7 @@ function symbol_048({
                 children: symbol_093(local_e89bf398, {}),
               }),
               !local_25 &&
-                symbol_093(fn_7acb75b5, {
+                symbol_093(fn_8ee74151, {
                   onEmojiSelect: local_63,
                   buttonClassName: local_330541da.mediaButton,
                 }),
@@ -35935,7 +35937,7 @@ function fn_4bd56478({
               className: local_7f9fe33f.mediaButtons,
               children:
                 !local_4 &&
-                symbol_093(fn_7acb75b5, {
+                symbol_093(fn_8ee74151, {
                   onEmojiSelect: local_17,
                   buttonClassName: local_7f9fe33f.mediaButton,
                 }),
@@ -36074,7 +36076,7 @@ function fn_561114b9({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
                 local_9 !== undefined
                   ? local_9
                   : arg.corrector || arg.redPen
-                    ? symbol_093(fn_ab0b2845, {
+                    ? symbol_093(fn_ad326311, {
                         postId: arg.id,
                         authorId: arg.author.id,
                         text: arg.text,
@@ -36114,7 +36116,7 @@ function fn_561114b9({ post: arg, onClose: arg_2, onSuccess: arg_3 }) {
     }),
   });
 }
-const local_e3765f6f = ({ showCreateButton: arg = true }) => {
+const local_35fe0bc8 = ({ showCreateButton: arg = true }) => {
   const local = symbol_086((arg) => arg.event);
   const local_2 = symbol_066();
   const local_3 = symbol_045();
@@ -36138,8 +36140,8 @@ const local_e3765f6f = ({ showCreateButton: arg = true }) => {
         id: "event",
         label: "Ивент",
         icon: null,
-        href: local_4 ? symbol_009.route : symbol_028.EVENT,
-        match: symbol_028.EVENT,
+        href: local_4 ? symbol_009.route : symbol_019.EVENT,
+        match: symbol_019.EVENT,
       },
       {
         id: "notifications",
@@ -36372,7 +36374,7 @@ const local_fcd1eed3 = {
   blue: local_153f84c8,
   violet: local_ded94e52,
 };
-function fn_104a7728({ type: arg }) {
+function fn_be6a9c96({ type: arg }) {
   const local =
     arg === "like"
       ? local_fcd1eed3.red
@@ -36447,7 +36449,7 @@ function symbol_096() {
     alt: "Напоминание",
     size: "md",
     className: local_c2837da0_2.avatar,
-    badge: symbol_093(fn_104a7728, {
+    badge: symbol_093(fn_be6a9c96, {
       type: "bell",
     }),
   });
@@ -36581,7 +36583,7 @@ function fn_ee26310b({ children: arg }) {
     },
     children: [
       arg,
-      symbol_093(fn_5a61de12, {
+      symbol_093(fn_1e3d9d84, {
         toasts: local,
         onRemove: local_4,
         onClearAll: local_5,
@@ -36589,7 +36591,7 @@ function fn_ee26310b({ children: arg }) {
     ],
   });
 }
-function fn_5a61de12({ toasts: arg, onRemove: arg_2, onClearAll: arg_3 }) {
+function fn_1e3d9d84({ toasts: arg, onRemove: arg_2, onClearAll: arg_3 }) {
   const [local, local_2] = symbol_076(false);
   const local_3 =
     typeof window !== "undefined" &&
@@ -36805,7 +36807,7 @@ function fn_149cd00e({
             ? symbol_093(symbol_096, {})
             : symbol_093(symbol_097, {
                 src: arg.actorAvatar || "",
-                badge: symbol_093(fn_104a7728, {
+                badge: symbol_093(fn_be6a9c96, {
                   type: arg.notificationType,
                 }),
               }),
@@ -36882,7 +36884,7 @@ const local_2e5ff558 = {
   success: local_132b8ed2,
   error: local_b2622f5b,
 };
-function fn_80a43e5f({
+function fn_5e49abf9({
   id: arg,
   type: arg_2,
   message: arg_3,
@@ -36929,7 +36931,7 @@ function fn_bd4e493e() {
     className: local_cda3bf5e.container,
     children: local.map((arg) =>
       symbol_093(
-        fn_80a43e5f,
+        fn_5e49abf9,
         {
           id: arg.id,
           type: arg.type,
@@ -36951,7 +36953,7 @@ const local_bd39b1cd = {
   button: local_9e87ce8c_4,
   active: local_6ab69625_4,
 };
-export function fn_bdce0f35({
+export function fn_30645001({
   tabs: arg,
   defaultTab: arg_2 = 0,
   activeIndex: arg_3,
@@ -37054,7 +37056,7 @@ export function fn_bdce0f35({
 const local_e5f18eb8 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/image-viewer.js"),
-    local_fed3fcaa([27, 28, 6, 5, 29]),
+    local_50aba28d([27, 28, 6, 5, 29]),
   ).then((arg) => ({
     default: arg.ImageViewer,
   })),
@@ -37286,11 +37288,11 @@ function fn_ac538d43() {
     };
   }, [local, local_4]);
   if (local && local_5) {
-    return symbol_093(fn_bb182c16, {}, local_5);
+    return symbol_093(fn_93201baa, {}, local_5);
   }
   return null;
 }
-function fn_bb182c16() {
+function fn_93201baa() {
   const local = symbol_002(null);
   const [local_2] = symbol_076(fn_77700c2c);
   const [local_3] = symbol_076(fn_cf372f36);
@@ -37437,7 +37439,7 @@ function fn_bb182c16() {
     ],
   });
 }
-function fn_1d782ee1({ thanks: arg }) {
+function fn_e921249d({ thanks: arg }) {
   symbol_080(() => {
     const local = setTimeout(local_0b3f309f_2, 7000);
     return () => clearTimeout(local);
@@ -37556,7 +37558,7 @@ function fn_7dbd5d0f() {
             ],
           }),
         local &&
-          symbol_093(fn_1d782ee1, {
+          symbol_093(fn_e921249d, {
             thanks: local,
           }),
       ],
@@ -37994,7 +37996,7 @@ function fn_e3d8aefb({ ownerId: arg }) {
 const local_8e5652b5 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/auth-layout.js"),
-    local_fed3fcaa([30, 31]),
+    local_50aba28d([30, 31]),
   ).then((arg) => ({
     default: arg.AuthLayout,
   })),
@@ -38056,7 +38058,7 @@ const local_9f8666c9 = ({ children: arg }) => {
     (arg) => local_8 === arg || local_8.startsWith(`${arg}/`),
   );
   const local_13 =
-    local_8 === symbol_028.EVENT || local_8.startsWith(`${symbol_028.EVENT}/`);
+    local_8 === symbol_019.EVENT || local_8.startsWith(`${symbol_019.EVENT}/`);
   const local_14 = (local_2 || local_12) && !local_10;
   if (local_9) {
     return symbol_093(symbol_054, {
@@ -38090,7 +38092,7 @@ const local_9f8666c9 = ({ children: arg }) => {
           children: [
             local_14 &&
               (local
-                ? symbol_093(local_e3765f6f, {
+                ? symbol_093(local_35fe0bc8, {
                     showCreateButton: !local_13,
                   })
                 : symbol_093(local_bb2cde64, {})),
@@ -39073,7 +39075,7 @@ const local_e9c598b7 = (arg) => {
       symbol_093("div", {
         className: local_76da9dd7.tabsWrapper,
         children: [
-          symbol_093(fn_bdce0f35, {
+          symbol_093(fn_30645001, {
             tabs: ["Для вас", "Лента кланов", "Подписки"],
             activeIndex: local_2 === "global" ? 0 : local_2 === "clan" ? 1 : 2,
             onChange: local_21,
@@ -39082,7 +39084,7 @@ const local_e9c598b7 = (arg) => {
             href: "/search",
             className: local_76da9dd7.searchButton,
             "aria-label": "Поиск",
-            children: symbol_093(symbol_026, {}),
+            children: symbol_093(symbol_027, {}),
           }),
         ],
       }),
@@ -39149,7 +39151,7 @@ const local_e9c598b7 = (arg) => {
 const local_98d04132 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/global-video-player.js"),
-    local_fed3fcaa([32, 28, 14, 33]),
+    local_50aba28d([32, 28, 14, 33]),
   ).then((arg) => ({
     default: arg.GlobalVideoPlayer,
   })),
@@ -39158,7 +39160,7 @@ fn_e1ec6bac();
 const local_3f597d55 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/hashtag.js"),
-    local_fed3fcaa([34, 6, 35]),
+    local_50aba28d([34, 6, 35]),
   ).then((arg) => ({
     default: arg.Hashtag,
   })),
@@ -39166,7 +39168,7 @@ const local_3f597d55 = fn_85199249(() =>
 const local_6f1b6ef7 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/profile.js"),
-    local_fed3fcaa([36, 37, 6, 1, 2, 38]),
+    local_50aba28d([36, 37, 6, 1, 2, 38]),
   ).then((arg) => ({
     default: arg.Profile,
   })),
@@ -39174,7 +39176,7 @@ const local_6f1b6ef7 = fn_85199249(() =>
 const local_dd51dc2e = fn_85199249(() =>
   symbol_056(
     () => import("./routes/post-page.js"),
-    local_fed3fcaa([39, 6, 40]),
+    local_50aba28d([39, 6, 40]),
   ).then((arg) => ({
     default: arg.PostPage,
   })),
@@ -39182,13 +39184,13 @@ const local_dd51dc2e = fn_85199249(() =>
 const local_67ce3a09 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/notifications.js"),
-    local_fed3fcaa([41, 4, 37, 42]),
+    local_50aba28d([41, 4, 37, 42]),
   ).then((arg) => ({
     default: arg.Notifications,
   })),
 );
 const local_da240d58 = fn_85199249(() =>
-  symbol_056(() => import("./routes/search.js"), local_fed3fcaa([43, 44])).then(
+  symbol_056(() => import("./routes/search.js"), local_50aba28d([43, 44])).then(
     (arg) => ({
       default: arg.Search,
     }),
@@ -39197,7 +39199,7 @@ const local_da240d58 = fn_85199249(() =>
 const local_e757f6d6 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/shop-frame.js"),
-    local_fed3fcaa([45, 46]),
+    local_50aba28d([45, 46]),
   ).then((arg) => ({
     default: arg.ShopFrame,
   })),
@@ -39205,7 +39207,7 @@ const local_e757f6d6 = fn_85199249(() =>
 const local_2f6a7e7d = fn_85199249(() =>
   symbol_056(
     () => import("./routes/event-frame.js"),
-    local_fed3fcaa([47, 48]),
+    local_50aba28d([47, 48]),
   ).then((arg) => ({
     default: arg.EventFrame,
   })),
@@ -39213,7 +39215,7 @@ const local_2f6a7e7d = fn_85199249(() =>
 const local_bce15d50 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/event-frame-2.js"),
-    local_fed3fcaa([49, 50]),
+    local_50aba28d([49, 50]),
   ).then((arg) => ({
     default: arg.EventFrame,
   })),
@@ -39252,7 +39254,7 @@ function fn_0c76ecb8({ children: arg }) {
 const local_d72873f9 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/delete-account.js"),
-    local_fed3fcaa([51, 6, 52]),
+    local_50aba28d([51, 6, 52]),
   ).then((arg) => ({
     default: arg.DeleteAccount,
   })),
@@ -39260,7 +39262,7 @@ const local_d72873f9 = fn_85199249(() =>
 const local_c4da111f = fn_85199249(() =>
   symbol_056(
     () => import("./routes/legal-documents-page.js"),
-    local_fed3fcaa([53, 6, 54]),
+    local_50aba28d([53, 6, 54]),
   ).then((arg) => ({
     default: arg.LegalDocumentsPage,
   })),
@@ -39268,7 +39270,7 @@ const local_c4da111f = fn_85199249(() =>
 const local_c4da111f_2 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/legal-documents-page.js"),
-    local_fed3fcaa([53, 6, 54]),
+    local_50aba28d([53, 6, 54]),
   ).then((arg) => ({
     default: arg.LegalDocumentPage,
   })),
@@ -39276,7 +39278,7 @@ const local_c4da111f_2 = fn_85199249(() =>
 const local_c4da111f_3 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/legal-documents-page.js"),
-    local_fed3fcaa([53, 6, 54]),
+    local_50aba28d([53, 6, 54]),
   ).then((arg) => ({
     default: arg.LegalHistoryPage,
   })),
@@ -39284,7 +39286,7 @@ const local_c4da111f_3 = fn_85199249(() =>
 const local_7e8db683 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/external-link.js"),
-    local_fed3fcaa([55, 6, 3, 56]),
+    local_50aba28d([55, 6, 3, 56]),
   ).then((arg) => ({
     default: arg.ExternalLink,
   })),
@@ -39292,7 +39294,7 @@ const local_7e8db683 = fn_85199249(() =>
 const local_abff2b23 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/support.js"),
-    local_fed3fcaa([57, 6, 58]),
+    local_50aba28d([57, 6, 58]),
   ).then((arg) => ({
     default: arg.Support,
   })),
@@ -39300,15 +39302,15 @@ const local_abff2b23 = fn_85199249(() =>
 const local_98c5ab21 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/events-page.js"),
-    local_fed3fcaa([59, 60]),
+    local_50aba28d([59, 60]),
   ).then((arg) => ({
     default: arg.EventsPage,
   })),
 );
-const local_0c023eb0 = fn_85199249(() =>
+const local_eb60c9e2 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/login.js"),
-    local_fed3fcaa([61, 62, 63, 64, 65, 66, 67]),
+    local_50aba28d([61, 62, 63, 64, 65, 66, 67, 68, 69]),
   ).then((arg) => ({
     default: arg.Login,
   })),
@@ -39316,15 +39318,15 @@ const local_0c023eb0 = fn_85199249(() =>
 const local_c56cfae5 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/register.js"),
-    local_fed3fcaa([68, 62, 63, 64, 65, 66, 69]),
+    local_50aba28d([70, 64, 65, 66, 67, 68, 71]),
   ).then((arg) => ({
     default: arg.Register,
   })),
 );
-const local_90c62287 = fn_85199249(() =>
+const local_326ccdf5 = fn_85199249(() =>
   symbol_056(
     () => import("./routes/forgot-password.js"),
-    local_fed3fcaa([70, 62, 63, 66, 71]),
+    local_50aba28d([72, 62, 63, 64, 65, 68, 73]),
   ).then((arg) => ({
     default: arg.ForgotPassword,
   })),
@@ -39332,7 +39334,7 @@ const local_90c62287 = fn_85199249(() =>
 const local_ed3a5f6b = fn_85199249(() =>
   symbol_056(
     () => import("./routes/reset-password.js"),
-    local_fed3fcaa([72, 66, 73]),
+    local_50aba28d([74, 68, 75]),
   ).then((arg) => ({
     default: arg.ResetPassword,
   })),
@@ -39345,7 +39347,7 @@ const local_5926c003 = fn_85199249(() =>
 const local_df5e24cd = fn_85199249(() =>
   symbol_056(
     () => import("./routes/onboarding.js"),
-    local_fed3fcaa([74, 75]),
+    local_50aba28d([76, 77]),
   ).then((arg) => ({
     default: arg.Onboarding,
   })),
@@ -39434,13 +39436,13 @@ function fn_3d5e19e4() {
                   symbol_093(local_67ce3a09, {
                     path: "/notifications",
                   }),
-                  symbol_093(local_0c023eb0, {
+                  symbol_093(local_eb60c9e2, {
                     path: "/login",
                   }),
                   symbol_093(local_c56cfae5, {
                     path: "/register",
                   }),
-                  symbol_093(local_90c62287, {
+                  symbol_093(local_326ccdf5, {
                     path: "/forgot-password",
                   }),
                   symbol_093(local_ed3a5f6b, {

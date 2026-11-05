@@ -9,11 +9,12 @@ import {
   symbol_003 as imported_8,
   symbol_020 as imported_9,
 } from "../entry.js";
-import { C as imported_10 } from "../shared/index-ggtxn-mrt-portal20261026.js";
-import { symbol_001 as imported_11 } from "../shared/index-df-ak-iq-portal20261026.js";
+import { P as imported_10 } from "../shared/chunk-d4522ef773ce.js";
+import { C as imported_11 } from "../shared/index-ggtxn-mrt-portal20261026.js";
+import { symbol_001 as imported_12 } from "../shared/index-df-ak-iq-portal20261026.js";
 import {
-  I as imported_12,
-  a as imported_13,
+  I as imported_13,
+  a as imported_14,
 } from "../components/icon-eye-off.js";
 (function () {
   try {
@@ -76,7 +77,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   signupLink: local_ac2763e8,
 };
-export const local_2e0168a2 = (arg) => {
+export const local_8415da86 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -231,10 +232,10 @@ export const local_2e0168a2 = (arg) => {
                                 className: local_474661d1.eyeButton,
                                 onClick: () => local_6(!local_5),
                                 children: local_5
-                                  ? imported_6(imported_12, {
+                                  ? imported_6(imported_13, {
                                       size: 20,
                                     })
-                                  : imported_6(imported_13, {
+                                  : imported_6(imported_14, {
                                       size: 20,
                                     }),
                               }),
@@ -247,6 +248,7 @@ export const local_2e0168a2 = (arg) => {
                           }),
                         ],
                       }),
+                      imported_6(imported_10, {}),
                     ],
                   }),
                   imported_6(imported_8, {
@@ -270,13 +272,13 @@ export const local_2e0168a2 = (arg) => {
                   }),
                 ],
               })
-            : imported_6(imported_11, {
+            : imported_6(imported_12, {
                 email: local,
                 onBack: local_21,
               }),
         ],
       }),
-      imported_6(imported_10, {
+      imported_6(imported_11, {
         isOpen: local_7,
         onClose: () => local_8(false),
         onVerify: local_20,
@@ -284,4 +286,4 @@ export const local_2e0168a2 = (arg) => {
     ],
   });
 };
-export { local_2e0168a2 as default };
+export { local_8415da86 as default };

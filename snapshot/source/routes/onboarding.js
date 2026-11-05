@@ -62,7 +62,7 @@ const local_fcd1eed3 = {
   step: local_cd89e6b9,
   active: local_6ab69625,
 };
-function fn_f33e0dd4({
+function fn_753e19e1({
   steps: arg,
   currentStep: arg_2,
   onStepClick: arg_3,
@@ -340,7 +340,7 @@ export const local_9fae70e6 = (arg) => {
                 }),
               ],
             }),
-            imported(fn_f33e0dd4, {
+            imported(fn_753e19e1, {
               steps: 2,
               currentStep: local,
               onStepClick: local_29,

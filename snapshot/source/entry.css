@@ -818,7 +818,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_bc782c8098 {
+.c_bottomSheet.c_auto_173491edeb {
   animation: keyframe_14 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -2807,7 +2807,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_075d7da3b0 {
+.c_textInput.c_entering .c_auto_018bdd9fa2 {
   animation: keyframe_23 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -6523,7 +6523,7 @@ body:has([data-halloween-tour]) .c_thanks {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_bc1dbf1a74 {
+.c_auto_dcdb925c7f {
   display: block;
   animation: keyframe_88 0.4s ease;
 }
@@ -6535,7 +6535,7 @@ body:has([data-halloween-tour]) .c_thanks {
 }
 @media (prefers-reduced-motion: reduce) {
   .c_action [data-icon],
-  .c_auto_bc1dbf1a74 {
+  .c_auto_dcdb925c7f {
     animation: none !important;
     transition: none;
   }
@@ -7137,7 +7137,7 @@ body:has([data-halloween-tour]) .c_thanks {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_c47c4b5b83 {
+.c_auto_09bc094860 {
   animation: keyframe_92 0.4s ease;
 }
 .c_auto_7f6ce735eb {

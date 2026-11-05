@@ -1,5 +1,5 @@
 import {
-  symbol_027 as imported,
+  symbol_028 as imported,
   symbol_021 as imported_2,
   symbol_076 as imported_3,
   symbol_002 as imported_4,
@@ -81,7 +81,7 @@ function fn_9c291bbd(arg) {
   }
   return local;
 }
-function fn_b5bf2c3a(arg) {
+function fn_f1931fe8(arg) {
   if (!isFinite(arg) || isNaN(arg)) {
     return "0:00";
   }
@@ -271,14 +271,14 @@ export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
             children: [
               imported_7("span", {
                 className: local_92418e80.time,
-                children: fn_b5bf2c3a(
+                children: fn_f1931fe8(
                   local_16 || local_7 > 0 ? local_7 : local_9,
                 ),
               }),
               (local_16 || local_7 > 0) &&
                 imported_7("span", {
                   className: local_92418e80.duration,
-                  children: ["../site/index.html", fn_b5bf2c3a(local_9)],
+                  children: ["../site/index.html", fn_f1931fe8(local_9)],
                 }),
             ],
           }),

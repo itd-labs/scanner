@@ -10,13 +10,14 @@ import {
   symbol_003 as imported_9,
   symbol_020 as imported_10,
 } from "../entry.js";
+import { P as imported_11 } from "../shared/chunk-d4522ef773ce.js";
 import {
-  symbol_001 as imported_11,
-  C as imported_12,
+  symbol_001 as imported_12,
+  C as imported_13,
 } from "../shared/index-ggtxn-mrt-portal20261026.js";
 import {
-  I as imported_13,
-  a as imported_14,
+  I as imported_14,
+  a as imported_15,
 } from "../components/icon-eye-off.js";
 (function () {
   try {
@@ -58,9 +59,10 @@ const local_889abf52 = "c_fieldError";
 const local_43fe4b00 = "c_eyeButton";
 const local_988f55fc = "c_success";
 const local_85b1b822 = "c_backButton";
+const local_5a20ceac = "c_requestSubmitButton";
 const local_7149ec44 = "c_submitButton";
 const local_0e84bcea = "c_backLink";
-const local_66259d24 = {
+const local_143ad0dd = {
   container: local_adb43aea,
   logo: local_3f8170c1,
   form: local_7ab56d01,
@@ -78,10 +80,11 @@ const local_66259d24 = {
   eyeButton: local_43fe4b00,
   success: local_988f55fc,
   backButton: local_85b1b822,
+  requestSubmitButton: local_5a20ceac,
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_c0c18d84 = (arg) => {
+export const local_3b367165 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported("");
@@ -256,74 +259,77 @@ export const local_c0c18d84 = (arg) => {
   return imported_7(imported_10, {
     children: [
       imported_7("div", {
-        className: local_66259d24.container,
+        className: local_143ad0dd.container,
         children: [
           imported_7("div", {
-            className: local_66259d24.logo,
+            className: local_143ad0dd.logo,
             children: imported_7(imported_8, {}),
           }),
           local_17 === "email" &&
             imported_7("form", {
-              className: local_66259d24.form,
+              className: local_143ad0dd.form,
               onSubmit: local_31,
               children: [
                 imported_7("div", {
-                  className: local_66259d24.header,
+                  className: local_143ad0dd.header,
                   children: [
                     imported_7("h1", {
-                      className: local_66259d24.title,
+                      className: local_143ad0dd.title,
                       children: "Забыли пароль?",
                     }),
                     imported_7("p", {
-                      className: local_66259d24.subtitle,
+                      className: local_143ad0dd.subtitle,
                       children: "Введите ваш E-Mail для восстановления",
                     }),
                   ],
                 }),
                 local_7 &&
                   imported_7("div", {
-                    className: local_66259d24.error,
+                    className: local_143ad0dd.error,
                     children: local_7,
                   }),
                 imported_7("div", {
-                  className: local_66259d24.inputs,
-                  children: imported_7("div", {
-                    className: local_66259d24.inputGroup,
-                    children: [
-                      imported_7("label", {
-                        className: local_66259d24.label,
-                        children: "E-Mail",
-                      }),
-                      imported_7("input", {
-                        type: "email",
-                        className: `${local_66259d24.input} ${local_9 ? local_66259d24.inputError : ""}`,
-                        value: local,
-                        onInput: (arg) => {
-                          local_2(arg.target.value);
-                          local_10(null);
-                        },
-                        placeholder: "ilya@gmail.com",
-                        disabled: local_13,
-                      }),
-                      local_9 &&
-                        imported_7("span", {
-                          className: local_66259d24.fieldError,
-                          children: local_9,
+                  className: local_143ad0dd.inputs,
+                  children: [
+                    imported_7("div", {
+                      className: local_143ad0dd.inputGroup,
+                      children: [
+                        imported_7("label", {
+                          className: local_143ad0dd.label,
+                          children: "E-Mail",
                         }),
-                    ],
-                  }),
+                        imported_7("input", {
+                          type: "email",
+                          className: `${local_143ad0dd.input} ${local_9 ? local_143ad0dd.inputError : ""}`,
+                          value: local,
+                          onInput: (arg) => {
+                            local_2(arg.target.value);
+                            local_10(null);
+                          },
+                          placeholder: "ilya@gmail.com",
+                          disabled: local_13,
+                        }),
+                        local_9 &&
+                          imported_7("span", {
+                            className: local_143ad0dd.fieldError,
+                            children: local_9,
+                          }),
+                      ],
+                    }),
+                    imported_7(imported_11, {}),
+                  ],
                 }),
                 imported_7(imported_9, {
                   type: "submit",
                   variant: "primary",
                   size: "lg",
                   fullWidth: true,
-                  className: local_66259d24.submitButton,
+                  className: local_143ad0dd.requestSubmitButton,
                   disabled: local_13,
                   children: local_13 ? "Отправка..." : "Отправить",
                 }),
                 imported_7("p", {
-                  className: local_66259d24.backLink,
+                  className: local_143ad0dd.backLink,
                   children: imported_7("a", {
                     href: "/login",
                     children: "Вернуться ко входу",
@@ -333,32 +339,32 @@ export const local_c0c18d84 = (arg) => {
             }),
           local_17 === "otp" &&
             imported_7("div", {
-              className: local_66259d24.form,
+              className: local_143ad0dd.form,
               children: [
                 imported_7("div", {
-                  className: local_66259d24.header,
+                  className: local_143ad0dd.header,
                   children: [
                     imported_7("h1", {
-                      className: local_66259d24.title,
+                      className: local_143ad0dd.title,
                       children: "Введите код",
                     }),
                     imported_7("p", {
-                      className: local_66259d24.subtitle,
+                      className: local_143ad0dd.subtitle,
                       children: ["Мы отправили шестизначный код на ", local],
                     }),
                   ],
                 }),
                 local_7 &&
                   imported_7("div", {
-                    className: local_66259d24.error,
+                    className: local_143ad0dd.error,
                     children: local_7,
                   }),
                 local_29 &&
                   imported_7("div", {
-                    className: local_66259d24.success,
+                    className: local_143ad0dd.success,
                     children: "Код отправлен повторно",
                   }),
-                imported_7(imported_11, {
+                imported_7(imported_12, {
                   onSubmit: local_33,
                   onResend: local_35,
                   disabled: local_13,
@@ -366,7 +372,7 @@ export const local_c0c18d84 = (arg) => {
                 }),
                 imported_7("button", {
                   type: "button",
-                  className: local_66259d24.backButton,
+                  className: local_143ad0dd.backButton,
                   onClick: local_36,
                   children: "Назад",
                 }),
@@ -374,43 +380,43 @@ export const local_c0c18d84 = (arg) => {
             }),
           local_17 === "password" &&
             imported_7("form", {
-              className: local_66259d24.form,
+              className: local_143ad0dd.form,
               onSubmit: local_34,
               children: [
                 imported_7("div", {
-                  className: local_66259d24.header,
+                  className: local_143ad0dd.header,
                   children: [
                     imported_7("h1", {
-                      className: local_66259d24.title,
+                      className: local_143ad0dd.title,
                       children: "Новый пароль",
                     }),
                     imported_7("p", {
-                      className: local_66259d24.subtitle,
+                      className: local_143ad0dd.subtitle,
                       children: "Придумайте новый пароль для вашего аккаунта",
                     }),
                   ],
                 }),
                 local_7 &&
                   imported_7("div", {
-                    className: local_66259d24.error,
+                    className: local_143ad0dd.error,
                     children: local_7,
                   }),
                 imported_7("div", {
-                  className: local_66259d24.inputs,
+                  className: local_143ad0dd.inputs,
                   children: [
                     imported_7("div", {
-                      className: local_66259d24.inputGroup,
+                      className: local_143ad0dd.inputGroup,
                       children: [
                         imported_7("label", {
-                          className: local_66259d24.label,
+                          className: local_143ad0dd.label,
                           children: "Новый пароль",
                         }),
                         imported_7("div", {
-                          className: local_66259d24.inputWrapper,
+                          className: local_143ad0dd.inputWrapper,
                           children: [
                             imported_7("input", {
                               type: local_23 ? "text" : "password",
-                              className: `${local_66259d24.input} ${local_11 ? local_66259d24.inputError : ""}`,
+                              className: `${local_143ad0dd.input} ${local_11 ? local_143ad0dd.inputError : ""}`,
                               value: local_19,
                               onInput: (arg) => {
                                 local_20(arg.target.value);
@@ -422,13 +428,13 @@ export const local_c0c18d84 = (arg) => {
                             }),
                             imported_7("button", {
                               type: "button",
-                              className: local_66259d24.eyeButton,
+                              className: local_143ad0dd.eyeButton,
                               onClick: () => local_24(!local_23),
                               children: local_23
-                                ? imported_7(imported_13, {
+                                ? imported_7(imported_14, {
                                     size: 20,
                                   })
-                                : imported_7(imported_14, {
+                                : imported_7(imported_15, {
                                     size: 20,
                                   }),
                             }),
@@ -436,24 +442,24 @@ export const local_c0c18d84 = (arg) => {
                         }),
                         local_11 &&
                           imported_7("span", {
-                            className: local_66259d24.fieldError,
+                            className: local_143ad0dd.fieldError,
                             children: local_11,
                           }),
                       ],
                     }),
                     imported_7("div", {
-                      className: local_66259d24.inputGroup,
+                      className: local_143ad0dd.inputGroup,
                       children: [
                         imported_7("label", {
-                          className: local_66259d24.label,
+                          className: local_143ad0dd.label,
                           children: "Повторите пароль",
                         }),
                         imported_7("div", {
-                          className: local_66259d24.inputWrapper,
+                          className: local_143ad0dd.inputWrapper,
                           children: [
                             imported_7("input", {
                               type: local_25 ? "text" : "password",
-                              className: `${local_66259d24.input} ${local_27 ? local_66259d24.inputError : ""}`,
+                              className: `${local_143ad0dd.input} ${local_27 ? local_143ad0dd.inputError : ""}`,
                               value: local_21,
                               onInput: (arg) => {
                                 local_22(arg.target.value);
@@ -464,13 +470,13 @@ export const local_c0c18d84 = (arg) => {
                             }),
                             imported_7("button", {
                               type: "button",
-                              className: local_66259d24.eyeButton,
+                              className: local_143ad0dd.eyeButton,
                               onClick: () => local_26(!local_25),
                               children: local_25
-                                ? imported_7(imported_13, {
+                                ? imported_7(imported_14, {
                                     size: 20,
                                   })
-                                : imported_7(imported_14, {
+                                : imported_7(imported_15, {
                                     size: 20,
                                   }),
                             }),
@@ -478,7 +484,7 @@ export const local_c0c18d84 = (arg) => {
                         }),
                         local_27 &&
                           imported_7("span", {
-                            className: local_66259d24.fieldError,
+                            className: local_143ad0dd.fieldError,
                             children: local_27,
                           }),
                       ],
@@ -490,13 +496,13 @@ export const local_c0c18d84 = (arg) => {
                   variant: "primary",
                   size: "lg",
                   fullWidth: true,
-                  className: local_66259d24.submitButton,
+                  className: local_143ad0dd.submitButton,
                   disabled: local_13 || !local_19.trim(),
                   children: local_13 ? "Сброс..." : "Сбросить пароль",
                 }),
                 imported_7("button", {
                   type: "button",
-                  className: local_66259d24.backButton,
+                  className: local_143ad0dd.backButton,
                   onClick: local_36,
                   children: "Назад",
                 }),
@@ -504,7 +510,7 @@ export const local_c0c18d84 = (arg) => {
             }),
         ],
       }),
-      imported_7(imported_12, {
+      imported_7(imported_13, {
         isOpen: local_15,
         onClose: () => local_16(false),
         onVerify: local_32,
@@ -512,4 +518,4 @@ export const local_c0c18d84 = (arg) => {
     ],
   });
 };
-export { local_c0c18d84 as default };
+export { local_3b367165 as default };

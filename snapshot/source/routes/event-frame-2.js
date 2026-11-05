@@ -1,9 +1,9 @@
 import {
-  symbol_027 as imported,
+  symbol_028 as imported,
   symbol_018 as imported_2,
   symbol_080 as imported_3,
   symbol_001 as imported_4,
-  symbol_028 as imported_5,
+  symbol_019 as imported_5,
   symbol_093 as imported_6,
   symbol_002 as imported_7,
   symbol_091 as imported_8,
@@ -84,9 +84,9 @@ const local_e2a47d41 = "c_frame";
 const local_e3cffaad = {
   frame: local_e2a47d41,
 };
-const local_4cce3d02 = new RegExp(`^${imported_5.ALICE_EVENT}/?`);
+const local_12cdc051 = new RegExp(`^${imported_5.ALICE_EVENT}/?`);
 function fn_7869e039() {
-  const local = window.location.pathname.replace(local_4cce3d02, "");
+  const local = window.location.pathname.replace(local_12cdc051, "");
   return `${local_084773c6}/${local}${window.location.search}`;
 }
 export function fn_3c3ff162(arg) {
@@ -105,13 +105,13 @@ export function fn_3c3ff162(arg) {
   if (!local_2 || !local_4) {
     return null;
   }
-  return imported_6(fn_20cd22cf, {});
+  return imported_6(fn_c70eae4b, {});
 }
-function fn_20cd22cf() {
+function fn_c70eae4b() {
   const local = imported_7(null);
   const local_2 = imported_7(fn_7869e039()).current;
   const local_3 = imported_7(
-    window.location.pathname.replace(local_4cce3d02, ""),
+    window.location.pathname.replace(local_12cdc051, ""),
   );
   const local_4 = imported_7(window.location.search);
   imported_3(() => {
@@ -190,7 +190,7 @@ function fn_20cd22cf() {
     };
   }, []);
   imported_3(() => {
-    const local = window.location.pathname.replace(local_4cce3d02, "");
+    const local = window.location.pathname.replace(local_12cdc051, "");
     const local_2 = window.location.search;
     if (!(local === local_3.current && local_2 === local_4.current)) {
       local_3.current = local;
