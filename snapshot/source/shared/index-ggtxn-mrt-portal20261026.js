@@ -1,11 +1,10 @@
 import {
-  symbol_076 as imported,
+  symbol_057 as imported,
   symbol_002 as imported_2,
-  symbol_080 as imported_3,
-  symbol_093 as imported_4,
+  symbol_061 as imported_3,
+  symbol_074 as imported_4,
   symbol_003 as imported_5,
   symbol_020 as imported_6,
-  symbol_014 as imported_7,
 } from "../entry.js";
 (function () {
   try {
@@ -40,7 +39,7 @@ const local_bcebeb33 = "c_errorText";
 const local_7149ec44 = "c_submitButton";
 const local_e76ac6e9 = "c_resendLink";
 const local_22fad9fb = "c_resendButton";
-const local_cddbeee5 = {
+const local_c9fa317d = {
   form: local_7ab56d01,
   inputGroup: local_4dc32079,
   label: local_fe9ec23f,
@@ -123,18 +122,18 @@ const symbol_001 = ({
   };
   const local_13 = local.every((arg) => arg !== "");
   return imported_4("form", {
-    className: local_cddbeee5.form,
+    className: local_c9fa317d.form,
     onSubmit: local_11,
     children: [
       imported_4("div", {
-        className: local_cddbeee5.inputGroup,
+        className: local_c9fa317d.inputGroup,
         children: [
           imported_4("label", {
-            className: local_cddbeee5.label,
+            className: local_c9fa317d.label,
             children: arg,
           }),
           imported_4("div", {
-            className: local_cddbeee5.codeInputs,
+            className: local_c9fa317d.codeInputs,
             children: local.map((arg, arg_2) =>
               imported_4(
                 "input",
@@ -145,7 +144,7 @@ const symbol_001 = ({
                   type: "text",
                   inputMode: "numeric",
                   pattern: "[0-9]*",
-                  className: `${local_cddbeee5.codeInput} ${arg_2 ? local_cddbeee5.error : ""}`,
+                  className: `${local_c9fa317d.codeInput} ${arg_2 ? local_c9fa317d.error : ""}`,
                   value: arg,
                   onInput: (arg) => local_8(arg_2, arg.target.value),
                   onKeyDown: (arg) => local_9(arg_2, arg),
@@ -159,7 +158,7 @@ const symbol_001 = ({
           }),
           arg_2 &&
             imported_4("p", {
-              className: local_cddbeee5.errorText,
+              className: local_c9fa317d.errorText,
               children: arg_2,
             }),
         ],
@@ -169,16 +168,16 @@ const symbol_001 = ({
         variant: "primary",
         size: "lg",
         fullWidth: true,
-        className: local_cddbeee5.submitButton,
+        className: local_c9fa317d.submitButton,
         disabled: !local_13 || arg_9,
         children: arg_3,
       }),
       imported_4("p", {
-        className: local_cddbeee5.resendLink,
+        className: local_c9fa317d.resendLink,
         children: local_5
           ? imported_4("button", {
               type: "button",
-              className: local_cddbeee5.resendButton,
+              className: local_c9fa317d.resendButton,
               onClick: local_12,
               disabled: arg_9,
               children: arg_4,
@@ -190,85 +189,4 @@ const symbol_001 = ({
     ],
   });
 };
-const local_b4ad899c = "0x4AAAAAACHhxczw6fJGwPBg";
-function fn_855f38a4({
-  onVerify: arg,
-  onExpire: arg_2,
-  onError: arg_3,
-  theme: arg_4 = "auto",
-}) {
-  const local = imported_2(null);
-  const local_2 = imported_2(null);
-  const [local_3, local_4] = imported(false);
-  imported_3(() => {
-    window.onTurnstileLoad = () => {
-      local_4(true);
-    };
-    if (document.getElementById("cf-turnstile-script")) {
-      if (window.turnstile) {
-        local_4(true);
-      }
-    } else {
-      const local = document.createElement("script");
-      local.id = "cf-turnstile-script";
-      local.src =
-        "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad";
-      local.async = true;
-      local.defer = true;
-      document.head.appendChild(local);
-    }
-    return () => {
-      if (local_2.current && window.turnstile) {
-        window.turnstile.remove(local_2.current);
-        local_2.current = null;
-      }
-    };
-  }, []);
-  imported_3(() => {
-    if (!local_3 || !local.current || local_2.current) {
-      return;
-    }
-    const local = window.turnstile;
-    if (local) {
-      local_2.current = local.render(local.current, {
-        sitekey: local_b4ad899c,
-        theme: arg_4,
-        callback: arg,
-        "expired-callback": arg_2,
-        "error-callback": arg_3,
-      });
-    }
-  }, [local_3, arg, arg_2, arg_3, arg_4]);
-  return imported_4("div", {
-    style: {
-      display: "flex",
-      width: "300px",
-      height: "65px",
-    },
-    ref: local,
-  });
-}
-const local_49250f21 = "c_modal";
-const local_e3cffaad = {
-  modal: local_49250f21,
-};
-export function fn_30ee9c0c({ isOpen: arg, onClose: arg_2, onVerify: arg_3 }) {
-  if (!arg) {
-    return null;
-  }
-  const local = (arg) => {
-    arg_3(arg);
-    arg_2();
-  };
-  return imported_4(imported_7, {
-    onClose: arg_2,
-    showHeader: false,
-    className: local_e3cffaad.modal,
-    frameless: true,
-    children: imported_4(fn_855f38a4, {
-      onVerify: local,
-      onError: () => {},
-    }),
-  });
-}
 export { symbol_001 };

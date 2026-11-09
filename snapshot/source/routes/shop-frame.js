@@ -1,10 +1,10 @@
 import {
   symbol_002 as imported,
-  symbol_076 as imported_2,
-  symbol_080 as imported_3,
-  symbol_091 as imported_4,
-  symbol_084 as imported_5,
-  symbol_093 as imported_6,
+  symbol_057 as imported_2,
+  symbol_061 as imported_3,
+  symbol_035 as imported_4,
+  symbol_074 as imported_5,
+  symbol_036 as imported_6,
 } from "../entry.js";
 (function () {
   try {
@@ -55,7 +55,7 @@ export function fn_29449b32(arg) {
         local.postMessage(
           {
             type: "itd-shop:auth",
-            token: imported_5(),
+            token: imported_6(),
           },
           window.location.origin,
         );
@@ -157,7 +157,7 @@ export function fn_29449b32(arg) {
       );
     }
   });
-  return imported_6("iframe", {
+  return imported_5("iframe", {
     ref: local,
     className: `${local_4ae1eafe.frame} ${local_3 ? local_4ae1eafe.raised : ""}`,
     src: local_2,

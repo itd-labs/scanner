@@ -10,22 +10,22 @@ const local_605932fe = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_093 as imported,
-  symbol_076 as imported_2,
+  symbol_074 as imported,
+  symbol_057 as imported_2,
   symbol_002 as imported_3,
-  symbol_029 as imported_4,
-  symbol_089 as imported_5,
-  symbol_003 as imported_6,
-  symbol_094 as imported_7,
-  symbol_054 as imported_8,
-  symbol_020 as imported_9,
-  symbol_036 as imported_10,
-  symbol_001 as imported_11,
-  symbol_087 as imported_12,
-  symbol_055 as imported_13,
-  symbol_090 as imported_14,
+  symbol_076 as imported_4,
+  symbol_070 as imported_5,
+  symbol_001 as imported_6,
+  symbol_003 as imported_7,
+  symbol_064 as imported_8,
+  symbol_079 as imported_9,
+  symbol_020 as imported_10,
+  symbol_068 as imported_11,
+  symbol_058 as imported_12,
+  symbol_077 as imported_13,
+  symbol_046 as imported_14,
   ae as imported_15,
-  symbol_056 as imported_16,
+  symbol_065 as imported_16,
 } from "../entry.js";
 (function () {
   try {
@@ -62,7 +62,7 @@ const local_fcd1eed3 = {
   step: local_cd89e6b9,
   active: local_6ab69625,
 };
-function fn_753e19e1({
+function fn_f33e0dd4({
   steps: arg,
   currentStep: arg_2,
   onStepClick: arg_3,
@@ -147,7 +147,7 @@ const local_1edc2ace = {
   emojiPickerBackdrop: local_8b15c25b,
   submitButton: local_7149ec44,
 };
-const local_968eaf70 = imported_15(() =>
+const local_968eaf70 = imported_9(() =>
   imported_16(
     () => import("./emoji-picker.js"),
     local_605932fe([0, 1, 2, 3]),
@@ -155,7 +155,7 @@ const local_968eaf70 = imported_15(() =>
     default: arg.EmojiPicker,
   })),
 );
-export const local_9fae70e6 = (arg) => {
+export const local_de87c481 = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -215,7 +215,7 @@ export const local_9fae70e6 = (arg) => {
     }
     local_18(true);
     try {
-      if (!(await imported_10.checkUsername(local_2))) {
+      if (!(await imported_11.checkUsername(local_2))) {
         local_14("Этот username уже занят");
         return;
       }
@@ -238,19 +238,19 @@ export const local_9fae70e6 = (arg) => {
           username: local_5.trim(),
           avatar: local_7,
         });
-        imported_11("../site/index.html");
+        imported_12("../site/index.html");
       } catch (error) {
         console.error("Profile creation error:", error);
-        if (imported_12(error)) {
+        if (imported_13(error)) {
           switch (error.code) {
-            case imported_14.PROFILE_USERNAME_TAKEN:
-            case imported_14.PROFILE_USERNAME_RESERVED:
+            case imported_15.PROFILE_USERNAME_TAKEN:
+            case imported_15.PROFILE_USERNAME_RESERVED:
               local_2(1);
-              local_14(imported_13(error.code, error.message));
+              local_14(imported_14(error.code, error.message));
               break;
             default:
               local_10(
-                imported_13(
+                imported_14(
                   error.code,
                   error.message || "Ошибка создания профиля",
                 ),
@@ -320,7 +320,7 @@ export const local_9fae70e6 = (arg) => {
     });
     local_20(true);
   }, []);
-  return imported(imported_9, {
+  return imported(imported_10, {
     children: [
       imported("div", {
         className: local_1edc2ace.page,
@@ -340,7 +340,7 @@ export const local_9fae70e6 = (arg) => {
                 }),
               ],
             }),
-            imported(fn_753e19e1, {
+            imported(fn_f33e0dd4, {
               steps: 2,
               currentStep: local,
               onStepClick: local_29,
@@ -415,7 +415,7 @@ export const local_9fae70e6 = (arg) => {
                         }),
                     ],
                   }),
-                  imported(imported_6, {
+                  imported(imported_7, {
                     type: "submit",
                     variant: "primary",
                     size: "lg",
@@ -462,7 +462,7 @@ export const local_9fae70e6 = (arg) => {
                       }),
                     ],
                   }),
-                  imported(imported_6, {
+                  imported(imported_7, {
                     type: "button",
                     variant: "secondary",
                     size: "lg",
@@ -471,7 +471,7 @@ export const local_9fae70e6 = (arg) => {
                     disabled: local_15,
                     children: "Назад",
                   }),
-                  imported(imported_6, {
+                  imported(imported_7, {
                     type: "submit",
                     variant: "primary",
                     size: "lg",
@@ -487,7 +487,7 @@ export const local_9fae70e6 = (arg) => {
       }),
       local_19 &&
         local_21 &&
-        imported_7(
+        imported_6(
           imported("div", {
             className: local_1edc2ace.emojiPickerPortal,
             style: {
@@ -517,4 +517,4 @@ export const local_9fae70e6 = (arg) => {
     ],
   });
 };
-export { local_9fae70e6 as default };
+export { local_de87c481 as default };

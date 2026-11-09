@@ -1,9 +1,9 @@
 import {
-  symbol_076 as imported,
+  symbol_057 as imported,
   symbol_002 as imported_2,
-  symbol_080 as imported_3,
-  symbol_089 as imported_4,
-  symbol_093 as imported_5,
+  symbol_061 as imported_3,
+  symbol_070 as imported_4,
+  symbol_074 as imported_5,
   symbol_020 as imported_6,
 } from "../entry.js";
 (function () {
@@ -79,7 +79,7 @@ const local_5d55bc8c = {
   footer: local_a0cefcb4,
   revoteBtn: local_8492d214,
 };
-export function fn_9f85c378({
+export function fn_20cb0213({
   title: arg,
   options: arg_2,
   totalVotes: arg_3,
@@ -445,4 +445,4 @@ export function fn_9f85c378({
     ],
   });
 }
-export { fn_9f85c378 as default };
+export { fn_20cb0213 as default };

@@ -60,7 +60,6 @@
 .c_userList {
   display: flex;
   flex-direction: column;
-  padding-top: 8px;
 }
 .c_userItem {
   display: flex;

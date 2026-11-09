@@ -1,17 +1,18 @@
 import {
-  symbol_076 as imported,
-  symbol_093 as imported_2,
-  symbol_010 as imported_3,
+  symbol_057 as imported,
+  symbol_074 as imported_2,
+  symbol_039 as imported_3,
   symbol_003 as imported_4,
   symbol_020 as imported_5,
-  symbol_092 as imported_6,
-  symbol_001 as imported_7,
-  symbol_087 as imported_8,
-  symbol_090 as imported_9,
+  symbol_044 as imported_6,
+  symbol_058 as imported_7,
+  symbol_077 as imported_8,
+  ae as imported_9,
 } from "../entry.js";
+import { P as imported_10 } from "../shared/chunk-d4522ef773ce.js";
 import {
-  I as imported_10,
-  a as imported_11,
+  I as imported_11,
+  a as imported_12,
 } from "../components/icon-eye-off.js";
 (function () {
   try {
@@ -74,7 +75,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_a34523c6 = (arg) => {
+export const local_1bdb57a2 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -198,10 +199,10 @@ export const local_a34523c6 = (arg) => {
                           className: local_474661d1.eyeButton,
                           onClick: () => local_6(!local_5),
                           children: local_5
-                            ? imported_2(imported_10, {
+                            ? imported_2(imported_11, {
                                 size: 20,
                               })
-                            : imported_2(imported_11, {
+                            : imported_2(imported_12, {
                                 size: 20,
                               }),
                         }),
@@ -246,10 +247,10 @@ export const local_a34523c6 = (arg) => {
                           className: local_474661d1.eyeButton,
                           onClick: () => local_8(!local_7),
                           children: local_7
-                            ? imported_2(imported_10, {
+                            ? imported_2(imported_11, {
                                 size: 20,
                               })
-                            : imported_2(imported_11, {
+                            : imported_2(imported_12, {
                                 size: 20,
                               }),
                         }),
@@ -280,10 +281,11 @@ export const local_a34523c6 = (arg) => {
                 children: "Вернуться ко входу",
               }),
             }),
+            imported_2(imported_10, {}),
           ],
         }),
       ],
     }),
   });
 };
-export { local_a34523c6 as default };
+export { local_1bdb57a2 as default };

@@ -1,25 +1,25 @@
 import {
   symbol_002 as imported,
-  symbol_076 as imported_2,
-  symbol_089 as imported_3,
-  symbol_015 as socialApi,
-  symbol_080 as imported_4,
-  symbol_013 as imported_5,
-  symbol_033 as imported_6,
-  symbol_029 as imported_7,
-  symbol_001 as imported_8,
-  symbol_093 as imported_9,
-  symbol_016 as imported_10,
-  symbol_097 as imported_11,
+  symbol_057 as imported_2,
+  symbol_070 as imported_3,
+  symbol_078 as socialApi,
+  symbol_061 as imported_4,
+  a4 as imported_5,
+  symbol_067 as imported_6,
+  symbol_076 as imported_7,
+  symbol_058 as imported_8,
+  symbol_074 as imported_9,
+  a5 as imported_10,
+  symbol_059 as imported_11,
   symbol_022 as imported_12,
   symbol_003 as imported_13,
-  symbol_034 as imported_14,
+  symbol_032 as imported_14,
   symbol_014 as imported_15,
-  symbol_035 as UnfollowConfirmModal,
-  symbol_036 as profileApi,
-  a7 as useFollowStatus,
-  symbol_037 as useFollowStatusStore,
-  a9 as useFollowUser,
+  symbol_007 as UnfollowConfirmModal,
+  symbol_068 as profileApi,
+  symbol_034 as useFollowStatus,
+  aO as useFollowStatusStore,
+  aP as useFollowUser,
 } from "../entry.js";
 import { I as imported_16 } from "../components/icon-check.js";
 import { VerificationModal } from "./index-q-tv-tful4-portal20261026.js";
@@ -54,18 +54,18 @@ export function fn_66c2d60a(arg, arg_2) {
   const [local_5, local_6] = imported_2(true);
   const [local_7, local_8] = imported_2(false);
   const [local_9, local_10] = imported_2(null);
-  const [local_11, local_12] = imported_2(new Map());
-  const [local_13, local_14] = imported_2(new Set());
-  const local_15 = imported(null);
+  const [UnfollowConfirmModal, local_11] = imported_2(new Map());
+  const [local_12, local_13] = imported_2(new Set());
+  const local_14 = imported(null);
   if (local.current !== local_2) {
     local.current = local_2;
     local_4([]);
     local_6(true);
     local_10(null);
-    local_12(new Map());
-    local_14(new Set());
+    local_11(new Map());
+    local_13(new Set());
   }
-  const local_16 = imported_3(
+  const local_15 = imported_3(
     async (arg) => {
       const local = !arg;
       if (local) {
@@ -104,37 +104,39 @@ export function fn_66c2d60a(arg, arg_2) {
         }
         const local_2 = (arg) => {
           const local = new Map();
-          for (const local of arg) {
-            if (local.interaction.isFollowing) {
-              local.set(local.userId, "following");
-            } else if (local.interaction.hasOutgoingRequest) {
-              local.set(local.userId, "requested");
+          for (const profileApi of arg) {
+            if (profileApi.interaction.isFollowing) {
+              local.set(profileApi.userId, "following");
+            } else if (profileApi.interaction.hasOutgoingRequest) {
+              local.set(profileApi.userId, "requested");
             } else {
-              local.set(local.userId, null);
+              local.set(profileApi.userId, null);
             }
           }
           return local;
         };
         if (local) {
           local_4(local.data);
-          local_12(local_2(local.data));
+          local_11(local_2(local.data));
         } else {
           local_4((arg) => {
-            const local = new Set(arg.map((arg) => arg.userId));
+            const local = new Set(arg.map((profileApi) => profileApi.userId));
             return [
               ...arg,
-              ...local.data.filter((arg) => !local.has(arg.userId)),
+              ...local.data.filter(
+                (profileApi) => !local.has(profileApi.userId),
+              ),
             ];
           });
-          local_12((arg) => {
+          local_11((arg) => {
             const local = new Map(arg);
-            for (const local of local.data) {
-              local.has(local.userId) ||
-                (local.interaction.isFollowing
-                  ? local.set(local.userId, "following")
-                  : local.interaction.hasOutgoingRequest
-                    ? local.set(local.userId, "requested")
-                    : local.set(local.userId, null));
+            for (const profileApi of local.data) {
+              local.has(profileApi.userId) ||
+                (profileApi.interaction.isFollowing
+                  ? local.set(profileApi.userId, "following")
+                  : profileApi.interaction.hasOutgoingRequest
+                    ? local.set(profileApi.userId, "requested")
+                    : local.set(profileApi.userId, null));
             }
             return local;
           });
@@ -150,36 +152,36 @@ export function fn_66c2d60a(arg, arg_2) {
     [arg, arg_2],
   );
   imported_4(() => {
-    local_16();
-  }, [local_16]);
-  const local_17 = imported_3(() => {
+    local_15();
+  }, [local_15]);
+  const local_16 = imported_3(() => {
     if (local_9) {
-      local_16(local_9);
+      local_15(local_9);
     }
-  }, [local_9, local_16]);
+  }, [local_9, local_15]);
   imported_5({
-    sentinelRef: local_15,
+    sentinelRef: local_14,
     hasMore: !!local_9,
     isLoading: local_7,
-    onLoadMore: local_17,
+    onLoadMore: local_16,
   });
-  const local_18 = imported_3(
+  const local_17 = imported_3(
     async (arg, arg_2) => {
       arg_2.stopPropagation();
-      if (!local_13.has(arg)) {
-        local_14((arg) => new Set(arg).add(arg));
+      if (!local_12.has(arg)) {
+        local_13((arg) => new Set(arg).add(arg));
         try {
-          const local = local_11.get(arg);
+          const local = UnfollowConfirmModal.get(arg);
           if (local === "following" || local === "requested") {
             await socialApi.unfollowUser(arg);
-            local_12((arg) => {
+            local_11((arg) => {
               const local = new Map(arg);
               local.set(arg, null);
               return local;
             });
           } else {
             const local = await socialApi.followUser(arg);
-            local_12((arg) => {
+            local_11((arg) => {
               const local = new Map(arg);
               local.set(arg, local);
               return local;
@@ -188,7 +190,7 @@ export function fn_66c2d60a(arg, arg_2) {
         } catch (error) {
           console.error("Failed to toggle follow:", error);
         } finally {
-          local_14((arg) => {
+          local_13((arg) => {
             const local = new Set(arg);
             local.delete(arg);
             return local;
@@ -196,17 +198,17 @@ export function fn_66c2d60a(arg, arg_2) {
         }
       }
     },
-    [local_11, local_13],
+    [UnfollowConfirmModal, local_12],
   );
   return {
     users: local_3,
     isLoading: local_5,
     isLoadingMore: local_7,
     nextCursor: local_9,
-    loadMoreRef: local_15,
-    userFollowStatus: local_11,
-    loadingFollowIds: local_13,
-    handleToggleFollow: local_18,
+    loadMoreRef: local_14,
+    userFollowStatus: UnfollowConfirmModal,
+    loadingFollowIds: local_12,
+    handleToggleFollow: local_17,
   };
 }
 const local_dd2b2953 = "c_userListModal";
@@ -241,7 +243,12 @@ const local_e1f3b173 = {
   empty: local_119f77f9,
   loadMoreSentinel: local_ef501043,
 };
-export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
+export function fn_7d27fe5a({
+  userId: arg,
+  type: arg_2,
+  title: arg_3,
+  onCountChange: arg_4,
+}) {
   const { closeModal: local } = imported_6();
   const local_2 = imported_7((arg) => arg.profile?.id);
   const {
@@ -268,8 +275,8 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
     [local],
   );
   const local_18 = imported_3(
-    async (arg, arg_2) => {
-      arg_2.stopPropagation();
+    async (arg, profileApi) => {
+      profileApi.stopPropagation();
       if (!local_13.has(arg)) {
         console.warn("acceptFollowRequest not implemented in old backend");
       }
@@ -277,8 +284,8 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
     [local_13],
   );
   const local_19 = imported_3(
-    async (arg, arg_2) => {
-      arg_2.stopPropagation();
+    async (arg, profileApi) => {
+      profileApi.stopPropagation();
       if (!local_13.has(arg)) {
         console.warn("removeFollower not implemented in old backend");
       }
@@ -286,8 +293,8 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
     [local_13],
   );
   const local_20 = imported_3(
-    async (arg, arg_2) => {
-      arg_2.stopPropagation();
+    async (arg, profileApi) => {
+      profileApi.stopPropagation();
       if (!local_13.has(arg)) {
         local_14((arg) => new Set(arg).add(arg));
         try {
@@ -339,18 +346,18 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
               className: local_e1f3b173.userList,
               children: [
                 local_3.map((arg) => {
-                  const local = local_8.get(arg.userId);
-                  const local_2 = local === "following";
-                  const local_3 = local === "requested";
-                  const local_4 = local_9.has(arg.userId);
-                  const local_5 = arg.userId === local_2;
-                  const local_6 = local_11.get(arg.userId);
-                  const local_7 = local_13.has(arg.userId);
-                  const local_8 = () => {
-                    if (local_2) {
+                  const profileApi = local_8.get(arg.userId);
+                  const local = profileApi === "following";
+                  const local_2 = profileApi === "requested";
+                  const local_3 = local_9.has(arg.userId);
+                  const local_4 = arg.userId === local_2;
+                  const local_5 = local_11.get(arg.userId);
+                  const local_6 = local_13.has(arg.userId);
+                  const local_7 = () => {
+                    if (local) {
                       return "Отписаться";
                     }
-                    if (local_3) {
+                    if (local_2) {
                       return "Отменить";
                     }
                     return "Подписаться";
@@ -365,14 +372,11 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                           imported_9(imported_11, {
                             src: arg.avatar,
                             size: "md",
-                            halloween: arg.halloween,
                           }),
                           imported_9("div", {
                             className: local_e1f3b173.userInfo,
                             children: [
                               imported_9(imported_12, {
-                                userId: arg.userId,
-                                halloween: arg.halloween,
                                 name: arg.displayName,
                                 verified: arg.isVerified,
                                 pin: arg.pin,
@@ -386,12 +390,12 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                                 }),
                             ],
                           }),
-                          local_6 === "accepted"
+                          local_5 === "accepted"
                             ? imported_9("span", {
                                 className: local_e1f3b173.actionStatus,
                                 children: "Принято",
                               })
-                            : local_6 === "rejected"
+                            : local_5 === "rejected"
                               ? imported_9("span", {
                                   className: local_e1f3b173.actionStatus,
                                   children: "Отклонено",
@@ -402,7 +406,7 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                                     imported_9(imported_13, {
                                       size: "sm",
                                       variant: "primary",
-                                      disabled: local_7,
+                                      disabled: local_6,
                                       onClick: (arg) =>
                                         local_18(arg.userId, arg),
                                       className: local_e1f3b173.acceptButton,
@@ -413,7 +417,7 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                                     imported_9(imported_13, {
                                       size: "sm",
                                       variant: "secondary",
-                                      disabled: local_7,
+                                      disabled: local_6,
                                       onClick: (arg) =>
                                         local_19(arg.userId, arg),
                                       className: local_e1f3b173.rejectButton,
@@ -438,14 +442,11 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                           imported_9(imported_11, {
                             src: arg.avatar,
                             size: "md",
-                            halloween: arg.halloween,
                           }),
                           imported_9("div", {
                             className: local_e1f3b173.userInfo,
                             children: [
                               imported_9(imported_12, {
-                                userId: arg.userId,
-                                halloween: arg.halloween,
                                 name: arg.displayName,
                                 verified: arg.isVerified,
                                 pin: arg.pin,
@@ -459,7 +460,7 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                                 }),
                             ],
                           }),
-                          local_6 === "rejected"
+                          local_5 === "rejected"
                             ? imported_9("span", {
                                 className: local_e1f3b173.actionStatus,
                                 children: "Отменено",
@@ -467,7 +468,7 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                             : imported_9(imported_13, {
                                 size: "sm",
                                 variant: "secondary",
-                                disabled: local_7,
+                                disabled: local_6,
                                 onClick: (arg) => local_20(arg.userId, arg),
                                 className: local_e1f3b173.followButton,
                                 children: "Отменить",
@@ -486,17 +487,13 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                         imported_9(imported_11, {
                           src: arg.avatar,
                           size: "md",
-                          halloween: arg.halloween,
                         }),
                         imported_9("div", {
                           className: local_e1f3b173.userInfo,
                           children: [
                             imported_9(imported_12, {
-                              userId: arg.userId,
-                              halloween: arg.halloween,
                               name: arg.displayName,
                               verified: arg.isVerified,
-                              pin: arg.pin,
                               size: "md",
                               className: local_e1f3b173.displayName,
                             }),
@@ -507,15 +504,14 @@ export function fn_7b83e35f({ userId: arg, type: arg_2, title: arg_3 }) {
                               }),
                           ],
                         }),
-                        !local_5 &&
+                        !local_4 &&
                           imported_9(imported_13, {
                             size: "sm",
-                            variant:
-                              local_2 || local_3 ? "secondary" : "primary",
-                            disabled: local_4,
+                            variant: local || local_2 ? "secondary" : "primary",
+                            disabled: local_3,
                             onClick: (arg) => local_10(arg.userId, arg),
                             className: local_e1f3b173.followButton,
-                            children: local_8(),
+                            children: local_7(),
                           }),
                       ],
                     },

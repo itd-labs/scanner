@@ -1,16 +1,16 @@
 import {
-  symbol_093 as imported,
-  symbol_076 as imported_2,
+  symbol_074 as imported,
+  symbol_057 as imported_2,
   symbol_002 as imported_3,
-  symbol_089 as imported_4,
-  symbol_061 as imported_5,
-  symbol_062 as imported_6,
-  symbol_080 as imported_7,
-  symbol_063 as imported_8,
-  symbol_014 as imported_9,
-  symbol_020 as imported_10,
-  symbol_032 as imported_11,
-  symbol_094 as imported_12,
+  symbol_070 as imported_4,
+  aJ as imported_5,
+  symbol_075 as imported_6,
+  symbol_061 as imported_7,
+  symbol_073 as imported_8,
+  symbol_001 as imported_9,
+  symbol_014 as imported_10,
+  symbol_020 as imported_11,
+  aD as imported_12,
 } from "../entry.js";
 (function () {
   try {
@@ -1326,9 +1326,9 @@ export function fn_5ac499e9({
     }
   };
   if (arg) {
-    return imported(imported_10, {
+    return imported(imported_11, {
       children: [
-        imported(imported_9, {
+        imported(imported_10, {
           onClose: arg_2,
           onBeforeClose: local_5,
           showHeader: false,
@@ -1382,8 +1382,8 @@ export function fn_5ac499e9({
                     onClick: local_60,
                     disabled: local,
                     children: local
-                      ? imported(imported_10, {
-                          children: [imported(imported_11, {}), "Загрузка..."],
+                      ? imported(imported_11, {
+                          children: [imported(imported_12, {}), "Загрузка..."],
                         })
                       : arg_5 ||
                         (arg_4 === "banner"
@@ -1396,7 +1396,7 @@ export function fn_5ac499e9({
           }),
         }),
         local_3 &&
-          imported_12(
+          imported_9(
             imported("div", {
               className: local_f2bf345a.confirmOverlay,
               onClick: local_7,

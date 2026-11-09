@@ -1,4 +1,4 @@
-import { symbol_093 as imported, symbol_019 as imported_2 } from "../entry.js";
+import { symbol_074 as imported, symbol_033 as imported_2 } from "../entry.js";
 (function () {
   try {
     const local =
@@ -22,16 +22,18 @@ import { symbol_093 as imported, symbol_019 as imported_2 } from "../entry.js";
     }
   } catch {}
 })();
-const local_2c917740 = "c_link";
+const local_338c8b70 = "c_privacy";
 const local_e3cffaad = {
-  link: local_2c917740,
+  privacy: local_338c8b70,
 };
-export function fn_35c7e49d() {
-  return imported("a", {
-    className: local_e3cffaad.link,
-    href: imported_2.PRIVACY,
-    target: "_blank",
-    rel: "noopener noreferrer",
-    children: "Политика конфиденциальности",
+export function fn_12a54aae() {
+  return imported("p", {
+    className: local_e3cffaad.privacy,
+    children: imported("a", {
+      href: imported_2.PRIVACY,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      children: "Политика конфиденциальности",
+    }),
   });
 }

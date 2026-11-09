@@ -1,18 +1,17 @@
 import {
-  symbol_018 as imported,
-  symbol_024 as imported_2,
-  symbol_025 as imported_3,
-  symbol_026 as imported_4,
-  symbol_076 as imported_5,
-  symbol_002 as imported_6,
-  symbol_080 as imported_7,
-  symbol_089 as imported_8,
-  symbol_093 as imported_9,
-  symbol_027 as imported_10,
-  symbol_020 as imported_11,
-  symbol_097 as imported_12,
-  symbol_022 as imported_13,
-  symbol_016 as imported_14,
+  a6 as imported,
+  a7 as imported_2,
+  a8 as imported_3,
+  symbol_057 as imported_4,
+  symbol_002 as imported_5,
+  symbol_061 as imported_6,
+  symbol_070 as imported_7,
+  symbol_074 as imported_8,
+  a9 as imported_9,
+  symbol_020 as imported_10,
+  symbol_059 as imported_11,
+  symbol_022 as imported_12,
+  a5 as imported_13,
 } from "../entry.js";
 (function () {
   try {
@@ -37,10 +36,10 @@ import {
     }
   } catch {}
 })();
-const local_f50950e4 = new imported_4(1, 300 * 1000);
-const local_f50950e4_2 = new imported_4(1, 300 * 1000);
+const local_f50950e4 = new imported_3(1, 300 * 1000);
+const local_f50950e4_2 = new imported_3(1, 300 * 1000);
 const local_c07ef0a9 = "data";
-const local_6fe721e1 = {
+const local_c7b8b2c8 = {
   async getTrendingHashtags(arg = 10) {
     const local = local_f50950e4.get(local_c07ef0a9);
     if (local) {
@@ -90,10 +89,7 @@ const local_6fe721e1 = {
     );
     const local_3 = local_2.data ?? local_2;
     return {
-      users: (local_3.users ?? []).map((arg) => ({
-        ...arg,
-        halloween: imported_3(arg.halloween),
-      })),
+      users: local_3.users ?? [],
       hashtags: (local_3.hashtags ?? []).map((arg) => ({
         ...arg,
         count: arg.count ?? arg.postsCount ?? 0,
@@ -162,22 +158,22 @@ const local_18dd68e0 = (arg) => {
   }
   return arg.toString();
 };
-export const local_933b8574 = (arg) => {
-  const [local, local_2] = imported_5("");
-  const [local_3, local_4] = imported_5([]);
-  const [local_5, local_6] = imported_5([]);
-  const [local_7, local_8] = imported_5([]);
-  const [local_9, local_10] = imported_5([]);
-  const [local_11, local_12] = imported_5(true);
-  const [local_13, local_14] = imported_5(true);
-  const [local_15, local_16] = imported_5(false);
-  const local_17 = imported_6(null);
-  imported_7(() => {
+export const local_b6d7f790 = (arg) => {
+  const [local, local_2] = imported_4("");
+  const [local_3, local_4] = imported_4([]);
+  const [local_5, local_6] = imported_4([]);
+  const [local_7, local_8] = imported_4([]);
+  const [local_9, local_10] = imported_4([]);
+  const [local_11, local_12] = imported_4(true);
+  const [local_13, local_14] = imported_4(true);
+  const [local_15, local_16] = imported_4(false);
+  const local_17 = imported_5(null);
+  imported_6(() => {
     (async () => {
       try {
         const [local, local_2] = await Promise.all([
-          local_6fe721e1.getPopularAvatars(),
-          local_6fe721e1.getTrendingHashtags(),
+          local_c7b8b2c8.getPopularAvatars(),
+          local_c7b8b2c8.getTrendingHashtags(),
         ]);
         local_4(local.slice(0, 10));
         local_6(local_2.slice(0, 10));
@@ -189,7 +185,7 @@ export const local_933b8574 = (arg) => {
       }
     })();
   }, []);
-  const local_18 = imported_8(async (arg) => {
+  const local_18 = imported_7(async (arg) => {
     const local = arg.trim().replace(/^@/, "").replace(/^#/, "");
     if (!local) {
       local_8([]);
@@ -199,7 +195,7 @@ export const local_933b8574 = (arg) => {
     }
     local_16(true);
     try {
-      const local = await local_6fe721e1.globalSearch(local, 10, 5);
+      const local = await local_c7b8b2c8.globalSearch(local, 10, 5);
       local_8(local.users);
       local_10(local.hashtags);
     } catch (error) {
@@ -221,26 +217,26 @@ export const local_933b8574 = (arg) => {
     }, 1000);
   };
   const local_20 = local.trim().length > 0;
-  return imported_9("div", {
+  return imported_8("div", {
     className: local_f2bf345a.page,
     children: [
-      imported_9("div", {
+      imported_8("div", {
         className: local_f2bf345a.titleRow,
-        children: imported_9("h1", {
+        children: imported_8("h1", {
           className: local_f2bf345a.pageTitle,
           children: "Поиск",
         }),
       }),
-      imported_9("div", {
+      imported_8("div", {
         className: local_f2bf345a.searchWrapper,
         children: [
-          imported_9("div", {
+          imported_8("div", {
             className: local_f2bf345a.searchIcon,
-            children: imported_9(imported_10, {
+            children: imported_8(imported_9, {
               size: 20,
             }),
           }),
-          imported_9("input", {
+          imported_8("input", {
             type: "text",
             className: local_f2bf345a.searchInput,
             placeholder: "Поиск людей и хештегов",
@@ -249,49 +245,46 @@ export const local_933b8574 = (arg) => {
           }),
         ],
       }),
-      imported_9("div", {
+      imported_8("div", {
         className: local_f2bf345a.sections,
         children: local_20
-          ? imported_9(imported_11, {
+          ? imported_8(imported_10, {
               children: [
-                imported_9("section", {
+                imported_8("section", {
                   className: local_f2bf345a.section,
                   children: [
-                    imported_9("div", {
+                    imported_8("div", {
                       className: local_f2bf345a.sectionHeader,
-                      children: imported_9("h2", {
+                      children: imported_8("h2", {
                         className: local_f2bf345a.sectionTitle,
                         children: "Люди",
                       }),
                     }),
-                    imported_9("div", {
+                    imported_8("div", {
                       className: local_f2bf345a.usersList,
                       children: local_15
                         ? null
                         : local_7.length === 0
-                          ? imported_9("div", {
+                          ? imported_8("div", {
                               className: local_f2bf345a.empty,
                               children: "Ничего не найдено",
                             })
                           : local_7.map((arg) =>
-                              imported_9(
+                              imported_8(
                                 "a",
                                 {
                                   href: `/@${arg.username ?? arg.userId}`,
                                   className: local_f2bf345a.userItem,
                                   children: [
-                                    imported_9(imported_12, {
+                                    imported_8(imported_11, {
                                       src: arg.avatar,
                                       alt: arg.displayName,
                                       size: "md",
-                                      halloween: arg.halloween,
                                     }),
-                                    imported_9("div", {
+                                    imported_8("div", {
                                       className: local_f2bf345a.userInfo,
                                       children: [
-                                        imported_9(imported_13, {
-                                          userId: arg.id,
-                                          halloween: arg.halloween,
+                                        imported_8(imported_12, {
                                           name: arg.displayName,
                                           verified:
                                             arg.isVerified ?? arg.verified,
@@ -299,7 +292,7 @@ export const local_933b8574 = (arg) => {
                                           pin: arg.pin,
                                         }),
                                         arg.username &&
-                                          imported_9("span", {
+                                          imported_8("span", {
                                             className:
                                               local_f2bf345a.userUsername,
                                             children: ["@", arg.username],
@@ -315,32 +308,32 @@ export const local_933b8574 = (arg) => {
                   ],
                 }),
                 local_9.length > 0 &&
-                  imported_9("section", {
+                  imported_8("section", {
                     className: local_f2bf345a.section,
                     children: [
-                      imported_9("div", {
+                      imported_8("div", {
                         className: local_f2bf345a.sectionHeader,
-                        children: imported_9("h2", {
+                        children: imported_8("h2", {
                           className: local_f2bf345a.sectionTitle,
                           children: "Хештеги",
                         }),
                       }),
-                      imported_9("div", {
+                      imported_8("div", {
                         className: local_f2bf345a.hashtagsList,
                         children: local_9.map((arg) =>
-                          imported_9(
+                          imported_8(
                             "a",
                             {
                               href: `/hashtag/${encodeURIComponent(arg.name)}`,
                               className: local_f2bf345a.hashtagItem,
-                              children: imported_9("div", {
+                              children: imported_8("div", {
                                 className: local_f2bf345a.hashtagInfo,
                                 children: [
-                                  imported_9("span", {
+                                  imported_8("span", {
                                     className: local_f2bf345a.hashtagTag,
                                     children: ["#", arg.name],
                                   }),
-                                  imported_9("span", {
+                                  imported_8("span", {
                                     className: local_f2bf345a.hashtagCount,
                                     children: [
                                       local_18dd68e0(arg.count),
@@ -358,40 +351,40 @@ export const local_933b8574 = (arg) => {
                   }),
               ],
             })
-          : imported_9(imported_11, {
+          : imported_8(imported_10, {
               children: [
-                imported_9("section", {
+                imported_8("section", {
                   className: local_f2bf345a.section,
                   children: [
-                    imported_9("div", {
+                    imported_8("div", {
                       className: local_f2bf345a.sectionHeader,
-                      children: imported_9("h2", {
+                      children: imported_8("h2", {
                         className: local_f2bf345a.sectionTitle,
                         children: "Топ кланов",
                       }),
                     }),
-                    imported_9("div", {
+                    imported_8("div", {
                       className: local_f2bf345a.clansBadges,
                       children: local_11
-                        ? imported_9(imported_14, {
+                        ? imported_8(imported_13, {
                             size: "sm",
                           })
                         : local_3.length === 0
-                          ? imported_9("div", {
+                          ? imported_8("div", {
                               className: local_f2bf345a.empty,
                               children: "Нет данных",
                             })
                           : local_3.map((arg) =>
-                              imported_9(
+                              imported_8(
                                 "div",
                                 {
                                   className: local_f2bf345a.clanBadge,
                                   children: [
-                                    imported_9("span", {
+                                    imported_8("span", {
                                       className: local_f2bf345a.clanEmoji,
                                       children: arg.avatar,
                                     }),
-                                    imported_9("span", {
+                                    imported_8("span", {
                                       className: local_f2bf345a.clanCount,
                                       children: local_18dd68e0(arg.count),
                                     }),
@@ -403,46 +396,46 @@ export const local_933b8574 = (arg) => {
                     }),
                   ],
                 }),
-                imported_9("section", {
+                imported_8("section", {
                   className: local_f2bf345a.section,
                   children: [
-                    imported_9("div", {
+                    imported_8("div", {
                       className: local_f2bf345a.sectionHeader,
-                      children: imported_9("h2", {
+                      children: imported_8("h2", {
                         className: local_f2bf345a.sectionTitle,
                         children: "Популярные хештеги",
                       }),
                     }),
-                    imported_9("div", {
+                    imported_8("div", {
                       className: local_f2bf345a.hashtagsList,
                       children: local_13
-                        ? imported_9(imported_14, {
+                        ? imported_8(imported_13, {
                             size: "sm",
                           })
                         : local_5.length === 0
-                          ? imported_9("div", {
+                          ? imported_8("div", {
                               className: local_f2bf345a.empty,
                               children: "Нет данных",
                             })
                           : local_5.map((arg, arg_2) =>
-                              imported_9(
+                              imported_8(
                                 "a",
                                 {
                                   href: `/hashtag/${encodeURIComponent(arg.name)}`,
                                   className: local_f2bf345a.hashtagItem,
                                   children: [
-                                    imported_9("span", {
+                                    imported_8("span", {
                                       className: local_f2bf345a.hashtagRank,
                                       children: arg_2 + 1,
                                     }),
-                                    imported_9("div", {
+                                    imported_8("div", {
                                       className: local_f2bf345a.hashtagInfo,
                                       children: [
-                                        imported_9("span", {
+                                        imported_8("span", {
                                           className: local_f2bf345a.hashtagTag,
                                           children: ["#", arg.name],
                                         }),
-                                        imported_9("span", {
+                                        imported_8("span", {
                                           className:
                                             local_f2bf345a.hashtagCount,
                                           children: [
@@ -466,4 +459,4 @@ export const local_933b8574 = (arg) => {
     ],
   });
 };
-export { local_933b8574 as default };
+export { local_b6d7f790 as default };

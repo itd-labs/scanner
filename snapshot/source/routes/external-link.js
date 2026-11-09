@@ -1,7 +1,7 @@
 import {
-  symbol_093 as imported,
+  symbol_074 as imported,
   symbol_021 as imported_2,
-  symbol_001 as imported_3,
+  symbol_058 as imported_3,
 } from "../entry.js";
 import { I as imported_4 } from "../components/icon-chevron-left.js";
 import { I as imported_5 } from "../components/icon-info.js";
