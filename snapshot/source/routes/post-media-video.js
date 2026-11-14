@@ -1,12 +1,12 @@
 import {
   symbol_002 as imported,
-  symbol_070 as imported_2,
-  symbol_074 as imported_3,
-  symbol_061 as imported_4,
-  aK as imported_5,
-  symbol_057 as imported_6,
+  symbol_075 as imported_2,
+  symbol_079 as imported_3,
+  symbol_066 as imported_4,
+  symbol_036 as imported_5,
+  symbol_062 as imported_6,
   symbol_004 as imported_7,
-  aL as imported_8,
+  aO as imported_8,
 } from "../entry.js";
 import { V as imported_9 } from "../components/volume-glyph.js";
 (function () {
@@ -285,7 +285,7 @@ function fn_34f0bf46(arg) {
   local_09086d0f = arg;
   localStorage.setItem("video-volume", String(arg));
 }
-function fn_df7b26c5(arg) {
+function fn_493ae501(arg) {
   const local = Math.floor(arg / 60);
   const local_2 = arg % 60;
   return `${local}:${local_2.toString().padStart(2, "0")}`;
@@ -340,7 +340,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_2a454b47({
+export function fn_2b987059({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -628,7 +628,7 @@ export function fn_2a454b47({
         local_39 &&
         imported_3("div", {
           className: local_66259d24.duration,
-          children: fn_df7b26c5(arg_5),
+          children: fn_493ae501(arg_5),
         }),
       (local_6 || !arg_2) &&
         imported_3("div", {

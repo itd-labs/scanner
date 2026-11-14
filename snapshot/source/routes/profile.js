@@ -1,13 +1,11 @@
-const local_8adc96f4 = (
+const local_8317ffdf = (
   arg,
-  arg_2 = local_8adc96f4,
+  arg_2 = local_8317ffdf,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./subscription-modal.js",
       "../entry.js",
       "../entry.css",
-      "../shared/chunk-d4522ef773ce.js",
-      "../styles/index.css",
       "../shared/index-bkpoiy5w-portal20261026.js",
       "../shared/index-bkpoiy5w-portal20261026.css",
       "../components/icon-info.js",
@@ -30,49 +28,49 @@ const local_8adc96f4 = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_074 as imported,
-  symbol_059 as imported_2,
+  symbol_079 as imported,
+  symbol_064 as imported_2,
   symbol_003 as imported_3,
   symbol_014 as imported_4,
   symbol_005 as imported_5,
   symbol_010 as imported_6,
-  symbol_060 as imported_7,
+  symbol_065 as imported_7,
   symbol_062 as imported_8,
-  symbol_057 as imported_9,
-  symbol_063 as imported_10,
-  symbol_064 as imported_11,
-  symbol_079 as imported_12,
-  symbol_020 as imported_13,
-  symbol_065 as imported_14,
-  symbol_066 as imported_15,
-  symbol_067 as imported_16,
-  symbol_070 as imported_17,
-  symbol_068 as imported_18,
-  symbol_073 as imported_19,
-  symbol_071 as imported_20,
-  symbol_072 as imported_21,
-  symbol_075 as imported_22,
+  symbol_067 as imported_9,
+  symbol_068 as imported_10,
+  symbol_020 as imported_11,
+  symbol_069 as imported_12,
+  symbol_084 as imported_13,
+  symbol_070 as imported_14,
+  symbol_071 as imported_15,
+  symbol_072 as imported_16,
+  symbol_075 as imported_17,
+  symbol_073 as imported_18,
+  symbol_078 as imported_19,
+  symbol_076 as imported_20,
+  symbol_077 as imported_21,
+  symbol_080 as imported_22,
   symbol_022 as imported_23,
-  symbol_069 as imported_24,
-  symbol_061 as imported_25,
-  symbol_055 as imported_26,
-  symbol_076 as imported_27,
+  symbol_074 as imported_24,
+  symbol_066 as imported_25,
+  symbol_060 as imported_26,
+  symbol_081 as imported_27,
   symbol_002 as imported_28,
-  symbol_077 as imported_29,
+  symbol_082 as imported_29,
   symbol_009 as imported_30,
-  symbol_078 as imported_31,
+  symbol_083 as imported_31,
   symbol_004 as imported_32,
   symbol_006 as imported_33,
   symbol_007 as imported_34,
   symbol_008 as imported_35,
   symbol_028 as imported_36,
   symbol_021 as imported_37,
-  symbol_058 as imported_38,
+  symbol_063 as imported_38,
   symbol_011 as imported_39,
   symbol_012 as imported_40,
   symbol_013 as imported_41,
   symbol_023 as imported_42,
-  symbol_056 as imported_43,
+  symbol_061 as imported_43,
   symbol_017 as imported_44,
 } from "../entry.js";
 import { I as imported_45 } from "../components/icon-check.js";
@@ -374,10 +372,10 @@ function fn_4a1f2f84({
     ],
   });
 }
-const local_c07dbcec = imported_12(() =>
+const local_e205d1ef = imported_13(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_8adc96f4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]),
+    local_8317ffdf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -391,10 +389,10 @@ function fn_5d3ea10e({
   onToggleFollow: arg_6,
   fullWidth: arg_7 = false,
 }) {
-  const [local, local_2] = imported_9(false);
-  const local_3 = imported_10()?.subscription?.isActive;
+  const [local, local_2] = imported_8(false);
+  const local_3 = imported_9()?.subscription?.isActive;
   if (arg) {
-    return imported(imported_13, {
+    return imported(imported_11, {
       children: [
         imported("div", {
           className: local_4c95c12d.ownActions,
@@ -414,9 +412,9 @@ function fn_5d3ea10e({
           ],
         }),
         local &&
-          imported(imported_11, {
+          imported(imported_10, {
             fallback: null,
-            children: imported(local_c07dbcec, {
+            children: imported(local_e205d1ef, {
               isOpen: local,
               onClose: () => local_2(false),
             }),
@@ -424,14 +422,14 @@ function fn_5d3ea10e({
       ],
     });
   }
-  return imported(imported_13, {
+  return imported(imported_11, {
     children: imported(imported_3, {
       variant: arg_2 || arg_3 ? "secondary" : "primary",
       onClick: arg_6,
       disabled: arg_4,
       fullWidth: arg_7,
       children: arg_2
-        ? imported(imported_13, {
+        ? imported(imported_11, {
             children: [
               imported(imported_45, {
                 size: 18,
@@ -441,7 +439,7 @@ function fn_5d3ea10e({
           })
         : arg_3
           ? "Заявка отправлена"
-          : imported(imported_13, {
+          : imported(imported_11, {
               children: [
                 imported(imported_15, {
                   size: 18,
@@ -478,7 +476,7 @@ function fn_1ff18f6e({
       local.push({
         id: "report",
         label: "Пожаловаться",
-        icon: imported(imported_8, {
+        icon: imported(imported_12, {
           size: 18,
         }),
         danger: true,
@@ -521,26 +519,26 @@ function fn_1ff18f6e({
     ],
   });
 }
-const local_06128897 = imported_12(() =>
+const local_06128897 = imported_13(() =>
   imported_14(
     () => import("./drawing-canvas.js"),
-    local_8adc96f4([14, 1, 2, 15]),
+    local_8317ffdf([12, 1, 2, 13]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
 );
-const local_e399251c = imported_12(() =>
+const local_e399251c = imported_13(() =>
   imported_14(
     () => import("../shared/index-q-tv-tful4-portal20261026.js"),
-    local_8adc96f4([16, 1, 2, 17, 18]),
+    local_8317ffdf([14, 1, 2, 15, 16]),
   ).then((arg) => ({
     default: arg.VerificationModal,
   })),
 );
-const local_f8603183 = imported_12(() =>
+const local_f8603183 = imported_13(() =>
   imported_14(
     () => import("./report-modal.js"),
-    local_8adc96f4([19, 1, 2, 17, 20]),
+    local_8317ffdf([17, 1, 2, 15, 18]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -567,7 +565,7 @@ function fn_762f0171({
   onFollowingClick: arg_13,
   onBannerUpdate: arg_14,
 }) {
-  const [local, local_2] = imported_9(false);
+  const [local, local_2] = imported_8(false);
   const { openModal: local_3, closeModal: local_4 } = imported_16();
   const local_5 = imported_17(() => {
     local_2(true);
@@ -695,7 +693,7 @@ function fn_762f0171({
         ],
       }),
       local &&
-        imported(imported_11, {
+        imported(imported_10, {
           fallback: null,
           children: imported(local_06128897, {
             isOpen: local,
@@ -755,7 +753,7 @@ function fn_762f0171({
                 ],
               }),
               arg_8 &&
-                imported(imported_13, {
+                imported(imported_11, {
                   children: [
                     imported(fn_4a1f2f84, {
                       isPhone: true,
@@ -824,8 +822,8 @@ function fn_762f0171({
   });
 }
 function fn_330f81cb({ profile: arg, isBlocked: arg_2 }) {
-  const [local, local_2] = imported_9("posts");
-  const [local_3] = imported_9(() => {
+  const [local, local_2] = imported_8("posts");
+  const [local_3] = imported_8(() => {
     if (arg && !arg_2) {
       return imported_24.getCachedWall(
         arg.username || arg.id,
@@ -834,14 +832,14 @@ function fn_330f81cb({ profile: arg, isBlocked: arg_2 }) {
     }
     return null;
   });
-  const [local_4, local_5] = imported_9(local_3?.data ?? []);
-  const [local_6, local_7] = imported_9(false);
-  const [local_8, local_9] = imported_9(local_3?.nextCursor ?? null);
-  const [local_10, local_11] = imported_9([]);
-  const [local_12, local_13] = imported_9(false);
-  const [local_14, local_15] = imported_9(null);
-  const [local_16, local_17] = imported_9(false);
-  const [local_18, local_19] = imported_9(null);
+  const [local_4, local_5] = imported_8(local_3?.data ?? []);
+  const [local_6, local_7] = imported_8(false);
+  const [local_8, local_9] = imported_8(local_3?.nextCursor ?? null);
+  const [local_10, local_11] = imported_8([]);
+  const [local_12, local_13] = imported_8(false);
+  const [local_14, local_15] = imported_8(null);
+  const [local_16, local_17] = imported_8(false);
+  const [local_18, local_19] = imported_8(null);
   const local_20 = imported_17(async (arg, arg_2, arg_3) => {
     local_7(true);
     try {
@@ -1113,19 +1111,19 @@ function fn_c7fa7317({ username: arg }) {
   const local = imported_27((arg) => arg.profile);
   const local_2 = local?.id;
   const local_3 = imported_27((arg) => arg.setProfile);
-  const [local_4, local_5] = imported_9(() => {
+  const [local_4, local_5] = imported_8(() => {
     if (arg) {
       return imported_18.getCachedProfile(arg);
     }
     return null;
   });
-  const [local_6, local_7] = imported_9(local_4 === null);
+  const [local_6, local_7] = imported_8(local_4 === null);
   const local_8 = imported_28(local_4 ? (arg ?? null) : null);
-  const [local_9, local_10] = imported_9(null);
-  const [local_11, local_12] = imported_9("none");
-  const [local_13, local_14] = imported_9(false);
-  const [local_15, local_16] = imported_9(false);
-  const [local_17, local_18] = imported_9(false);
+  const [local_9, local_10] = imported_8(null);
+  const [local_11, local_12] = imported_8("none");
+  const [local_13, local_14] = imported_8(false);
+  const [local_15, local_16] = imported_8(false);
+  const [local_17, local_18] = imported_8(false);
   const local_19 = !!(local && local_4 && local.id === local_4.id);
   const local_20 = local_11 === "following";
   const local_21 = local_11 === "requested";
@@ -1392,18 +1390,18 @@ function fn_c7fa7317({ username: arg }) {
     handleBlockUser: local_41,
   };
 }
-const local_c07dbcec_2 = imported_12(() =>
+const local_e205d1ef_2 = imported_13(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_8adc96f4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]),
+    local_8317ffdf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
   ).then((arg) => ({
     default: arg.SettingsModal,
   })),
 );
-const local_0fe1a4d5 = imported_12(() =>
+const local_0fe1a4d5 = imported_13(() =>
   imported_14(
     () => import("../shared/index-hqd-ia-v-b-portal20261026.js"),
-    local_8adc96f4([21, 1, 2, 22, 16, 17, 18, 23]),
+    local_8317ffdf([19, 1, 2, 20, 14, 15, 16, 21]),
   ).then((arg) => ({
     default: arg.UserListModal,
   })),
@@ -1479,7 +1477,7 @@ export const local_63d098fa = ({ username: arg }) => {
   ]);
   const local_39 = () => {
     local_3(
-      imported(local_c07dbcec_2, {
+      imported(local_e205d1ef_2, {
         onClose: local_4,
       }),
     );
@@ -1657,7 +1655,7 @@ export const local_63d098fa = ({ username: arg }) => {
         className: local_4c95c12d.belowTabs,
         children: [
           local_45 &&
-            imported(imported_13, {
+            imported(imported_11, {
               children: [
                 imported("div", {
                   className: local_4c95c12d.createPostWrapper,

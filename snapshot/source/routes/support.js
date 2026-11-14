@@ -1,4 +1,4 @@
-import { symbol_074 as imported, symbol_058 as imported_2 } from "../entry.js";
+import { symbol_079 as imported, symbol_063 as imported_2 } from "../entry.js";
 import { I as imported_3 } from "../components/icon-chevron-left.js";
 (function () {
   try {

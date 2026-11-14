@@ -1,17 +1,17 @@
 import {
-  symbol_057 as imported,
-  symbol_070 as imported_2,
-  symbol_044 as imported_3,
-  symbol_077 as imported_4,
+  symbol_062 as imported,
+  symbol_075 as imported_2,
+  aq as imported_3,
+  symbol_082 as imported_4,
   ae as imported_5,
-  symbol_058 as imported_6,
-  symbol_074 as imported_7,
-  symbol_039 as imported_8,
+  symbol_063 as imported_6,
+  symbol_079 as imported_7,
+  symbol_043 as imported_8,
   symbol_003 as imported_9,
-  symbol_020 as imported_10,
+  symbol_044 as imported_10,
+  symbol_020 as imported_11,
 } from "../entry.js";
-import { C as imported_11 } from "../shared/chunk-ab6fb2cd21e7.js";
-import { P as imported_12 } from "../shared/chunk-d4522ef773ce.js";
+import { C as imported_12 } from "../shared/chunk-ab6fb2cd21e7.js";
 import { symbol_001 as imported_13 } from "../shared/index-ggtxn-mrt-portal20261026.js";
 import {
   I as imported_14,
@@ -80,7 +80,7 @@ const local_66259d24 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_80dff3e6 = (arg) => {
+export const local_0548bf2c = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported("");
@@ -252,7 +252,7 @@ export const local_80dff3e6 = (arg) => {
       local_18("email");
     }
   }, [local_17]);
-  return imported_7(imported_10, {
+  return imported_7(imported_11, {
     children: [
       imported_7("div", {
         className: local_66259d24.container,
@@ -328,7 +328,7 @@ export const local_80dff3e6 = (arg) => {
                     children: "Вернуться ко входу",
                   }),
                 }),
-                imported_7(imported_12, {}),
+                imported_7(imported_10, {}),
               ],
             }),
           local_17 === "otp" &&
@@ -504,7 +504,7 @@ export const local_80dff3e6 = (arg) => {
             }),
         ],
       }),
-      imported_7(imported_11, {
+      imported_7(imported_12, {
         isOpen: local_15,
         onClose: () => local_16(false),
         onVerify: local_32,
@@ -512,4 +512,4 @@ export const local_80dff3e6 = (arg) => {
     ],
   });
 };
-export { local_80dff3e6 as default };
+export { local_0548bf2c as default };

@@ -1,7 +1,7 @@
 import {
-  symbol_040 as imported,
-  az as imported_2,
-  aH as imported_3,
+  symbol_045 as imported,
+  aL as imported_2,
+  aD as imported_3,
 } from "../entry.js";
 (function () {
   try {
@@ -41,7 +41,7 @@ async function symbol_002(arg, arg_2, arg_3 = false) {
       : {}),
     signal: AbortSignal.timeout(20000),
   };
-  const local_2 = await (arg_3 ? imported_3 : fetch)(
+  const local_2 = await (arg_3 ? imported_2 : fetch)(
     `/api/v1/auth${arg}`,
     local,
   );
@@ -67,7 +67,7 @@ const symbol_001 = {
       throw new Error("Invalid phone flow");
     }
     return {
-      ...imported_2(local),
+      ...imported_3(local),
       flowToken: local.flowToken,
     };
   },
@@ -90,7 +90,7 @@ const symbol_001 = {
       newPassword: arg_3,
     }),
   resend: async (arg, arg_2) =>
-    imported_2(
+    imported_3(
       await symbol_002("/resend-otp", {
         phone: arg,
         flowToken: arg_2,
@@ -142,6 +142,8 @@ const local_6c1d1630 = "c_dialog";
 const local_4745fc36 = "c_dialogContent";
 const local_ca66b2a4 = "c_hint";
 const local_a64731b5 = "c_captcha";
+const local_000fcdf9 = "c_phase";
+const local_1ceb1a82 = "c_verification";
 const symbol_003 = {
   card: local_724c774d,
   brand: local_bd56a6d0,
@@ -160,5 +162,7 @@ const symbol_003 = {
   dialogContent: local_4745fc36,
   hint: local_ca66b2a4,
   captcha: local_a64731b5,
+  phase: local_000fcdf9,
+  verification: local_1ceb1a82,
 };
 export { symbol_001, symbol_002, symbol_003 };

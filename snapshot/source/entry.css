@@ -512,7 +512,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_f95cc15739 {
+.c_bottomSheet.c_auto_a3578d061b {
   animation: keyframe_9 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -1054,6 +1054,226 @@ h6 {
 .c_action {
   margin-top: 8px;
 }
+.c_privacy {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.c_privacy a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.c_root {
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+}
+.c_helpArea,
+.c_panelArea,
+.c_codeArea {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition:
+    grid-template-rows 0.28s cubic-bezier(0.22, 0.68, 0.22, 1),
+    opacity 0.2s ease,
+    transform 0.28s ease,
+    visibility 0s 0.28s;
+}
+.c_helpArea > div,
+.c_panelArea > div,
+.c_codeArea > div {
+  min-height: 0;
+  overflow: hidden;
+}
+.c_helpArea[data-open="true"],
+.c_panelArea[data-open="true"],
+.c_codeArea[data-open="true"] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+.c_codeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.c_link,
+.c_back {
+  padding: 5px;
+  border: 0;
+  background: none;
+  color: var(--accent-primary);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.c_link:disabled,
+.c_back:disabled {
+  color: var(--text-secondary);
+  cursor: default;
+}
+.c_link:focus-visible,
+.c_back:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.c_back {
+  color: var(--text-secondary);
+}
+.c_panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  animation: keyframe_12 0.18s ease-out;
+}
+.c_panel h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.3px;
+}
+.c_panel p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.c_icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-inline: auto;
+  border-radius: 16px;
+  background: var(--modal-bg);
+  color: var(--text-secondary);
+}
+.c_icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+.c_panel .c_notice {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.c_panel.c_embedded {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  gap: 12px;
+}
+.c_embedded .c_notice {
+  font-size: 13px;
+  line-height: 1.6;
+  text-wrap: balance;
+}
+.c_embedded .c_call {
+  padding: 12px 14px;
+  font-size: 22px;
+  line-height: 1.3;
+  border-radius: 28px;
+}
+.c_call {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 13px 10px;
+  border-radius: 28px;
+  background: var(--accent-primary);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    opacity 0.15s,
+    transform 0.15s;
+}
+.c_call span {
+  font-size: 13px;
+  font-weight: 500;
+}
+.c_call:hover {
+  text-decoration: none;
+  opacity: 0.92;
+}
+.c_call:active {
+  transform: scale(0.985);
+}
+.c_call:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 3px;
+}
+.c_panel .c_status {
+  color: var(--text-primary);
+  font-size: 13px;
+}
+.c_panel .c_auto_0445108262 {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.c_panel .c_error {
+  color: var(--error-color, #f27676);
+  font-size: 13px;
+}
+@keyframes keyframe_12 {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 380px) {
+  .c_panel {
+    padding: 18px 12px;
+  }
+  .c_call {
+    font-size: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .c_panel {
+    animation: none;
+  }
+  .c_helpArea,
+  .c_panelArea,
+  .c_codeArea,
+  .c_call {
+    transition: none;
+    transform: none;
+  }
+}
+.c_helpArea[data-open="true"] {
+  margin-top: 10px;
+}
+.c_embedded .c_status {
+  font-size: 13px;
+  line-height: 1.5;
+  text-wrap: balance;
+}
 .c_code {
   --gap: 10px;
   --focus: var(--accent-primary);
@@ -1121,7 +1341,7 @@ h6 {
   font-variant-numeric: tabular-nums;
   line-height: 1;
   pointer-events: none;
-  animation: keyframe_12 0.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation: keyframe_13 0.2s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 .c_focusFrame {
   position: absolute;
@@ -1152,11 +1372,11 @@ h6 {
   height: 24px;
   border-radius: 2px;
   background: var(--focus);
-  animation: keyframe_14 1.15s step-end infinite;
+  animation: keyframe_15 1.15s step-end infinite;
 }
 .c_error {
   --focus: var(--error-color, #e66b76);
-  animation: keyframe_13 0.32s ease-out;
+  animation: keyframe_14 0.32s ease-out;
 }
 .c_error .c_slot {
   border-color: color-mix(in srgb, var(--focus) 65%, transparent);
@@ -1168,7 +1388,7 @@ h6 {
   border-color: var(--focus);
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--focus) 12%, transparent);
 }
-@keyframes keyframe_12 {
+@keyframes keyframe_13 {
   0% {
     transform: translateY(9px);
     opacity: 0;
@@ -1178,7 +1398,7 @@ h6 {
     opacity: 1;
   }
 }
-@keyframes keyframe_13 {
+@keyframes keyframe_14 {
   0%,
   to {
     transform: translate(0);
@@ -1193,7 +1413,7 @@ h6 {
     transform: translate(-2px);
   }
 }
-@keyframes keyframe_14 {
+@keyframes keyframe_15 {
   0%,
   to {
     opacity: 1;
@@ -1275,7 +1495,7 @@ h6 {
   stroke-linejoin: round;
 }
 .c_ringing svg {
-  animation: keyframe_15 2.4s ease-in-out infinite;
+  animation: keyframe_16 2.4s ease-in-out infinite;
 }
 .c_heading {
   margin-bottom: 24px;
@@ -1392,7 +1612,7 @@ h6 {
   border-radius: 16px;
   background: var(--modal-bg);
   box-shadow: 0 12px 32px #0004;
-  animation: keyframe_16 0.15s ease-out;
+  animation: keyframe_17 0.15s ease-out;
 }
 .c_countryOption {
   display: flex;
@@ -1504,7 +1724,7 @@ h6 {
   font-size: 13px;
   color: var(--accent-primary);
 }
-@keyframes keyframe_15 {
+@keyframes keyframe_16 {
   0%,
   35%,
   to {
@@ -1519,7 +1739,7 @@ h6 {
     transform: rotate(9deg);
   }
 }
-@keyframes keyframe_16 {
+@keyframes keyframe_17 {
   0% {
     opacity: 0;
     transform: translateY(-4px);
@@ -1553,6 +1773,26 @@ h6 {
   .c_countryMenu {
     max-height: min(320px, 40vh);
     overflow-y: auto;
+    animation: none;
+  }
+}
+.c_heading,
+.c_form {
+  animation: keyframe_18 0.24s ease-out both;
+}
+@keyframes keyframe_18 {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .c_heading,
+  .c_form {
     animation: none;
   }
 }
@@ -1713,9 +1953,9 @@ h6 {
   object-fit: contain;
 }
 .c_portalImage.c_portalImageActive {
-  animation: keyframe_17 2s ease-in-out infinite;
+  animation: keyframe_19 2s ease-in-out infinite;
 }
-@keyframes keyframe_17 {
+@keyframes keyframe_19 {
   0%,
   to {
     filter: drop-shadow(0 0 4px rgba(144, 162, 255, 0.2));
@@ -1802,10 +2042,10 @@ h6 {
     rgba(255, 255, 255, 0.06) 50%,
     transparent 100%
   );
-  animation: keyframe_18 1.3s ease-in-out infinite;
+  animation: keyframe_20 1.3s ease-in-out infinite;
   animation-delay: var(--shimmer-delay, 0s);
 }
-@keyframes keyframe_18 {
+@keyframes keyframe_20 {
   to {
     transform: translate(100%);
   }
@@ -1981,9 +2221,9 @@ h6 {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-top-color: #fff;
   border-radius: 50%;
-  animation: keyframe_19 0.8s linear infinite;
+  animation: keyframe_21 0.8s linear infinite;
 }
-@keyframes keyframe_19 {
+@keyframes keyframe_21 {
   to {
     transform: rotate(360deg);
   }
@@ -2273,9 +2513,9 @@ h6 {
   border-radius: 8px;
   padding: 4px;
   box-shadow: 0 4px 16px #0003;
-  animation: keyframe_20 0.15s ease;
+  animation: keyframe_22 0.15s ease;
 }
-@keyframes keyframe_20 {
+@keyframes keyframe_22 {
   0% {
     opacity: 0;
     transform: translateY(4px);
@@ -2621,13 +2861,13 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_2bc6de8e26 {
-  animation: keyframe_21 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+.c_textInput.c_entering .c_auto_4515a22894 {
+  animation: keyframe_23 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
-  animation: keyframe_22 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+  animation: keyframe_24 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
 }
-@keyframes keyframe_21 {
+@keyframes keyframe_23 {
   0% {
     opacity: 0;
     transform: translate(-20px);
@@ -2637,7 +2877,7 @@ h6 {
     transform: translate(0);
   }
 }
-@keyframes keyframe_22 {
+@keyframes keyframe_24 {
   0% {
     opacity: 0;
     transform: translate(20px);
@@ -2665,44 +2905,44 @@ h6 {
   align-items: center;
 }
 .c_digit.c_animating.c_up {
-  animation: keyframe_23 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: keyframe_25 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_digit.c_animating.c_up .c_prev {
   order: 1;
-  animation: keyframe_25 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: keyframe_27 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_digit.c_animating.c_up .c_current {
   order: 2;
-  animation: keyframe_26 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: keyframe_28 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_digit.c_animating.c_down {
-  animation: keyframe_24 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: keyframe_26 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_digit.c_animating.c_down .c_current {
   order: 1;
-  animation: keyframe_26 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: keyframe_28 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_digit.c_animating.c_down .c_prev {
   order: 2;
-  animation: keyframe_25 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-@keyframes keyframe_23 {
-  0% {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-1em);
-  }
-}
-@keyframes keyframe_24 {
-  0% {
-    transform: translateY(-1em);
-  }
-  to {
-    transform: translateY(0);
-  }
+  animation: keyframe_27 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 @keyframes keyframe_25 {
+  0% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1em);
+  }
+}
+@keyframes keyframe_26 {
+  0% {
+    transform: translateY(-1em);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes keyframe_27 {
   0% {
     opacity: 1;
   }
@@ -2713,7 +2953,7 @@ h6 {
     opacity: 0;
   }
 }
-@keyframes keyframe_26 {
+@keyframes keyframe_28 {
   0% {
     opacity: 0;
   }
@@ -2753,13 +2993,13 @@ h6 {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   box-shadow: 0 8px 32px #00000040;
-  animation: keyframe_27 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: keyframe_29 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .c_menu.c_hidden {
   visibility: hidden;
   pointer-events: none;
 }
-@keyframes keyframe_27 {
+@keyframes keyframe_29 {
   0% {
     opacity: 0;
     transform: scale(0.9) translateY(-4px);
@@ -3058,9 +3298,9 @@ h6 {
 .c_hint {
   pointer-events: none;
   z-index: 10000;
-  animation: keyframe_28 0.15s ease;
+  animation: keyframe_30 0.15s ease;
 }
-@keyframes keyframe_28 {
+@keyframes keyframe_30 {
   0% {
     opacity: 0;
   }
@@ -3219,10 +3459,10 @@ h6 {
   color: var(--accent-liked);
 }
 .c_action.c_liked [data-icon] {
-  animation: keyframe_30 0.4s ease;
+  animation: keyframe_32 0.4s ease;
 }
 .c_action.c_unliked [data-icon] {
-  animation: keyframe_31 0.4s ease;
+  animation: keyframe_33 0.4s ease;
 }
 .c_action.c_auto_3c28a42c29 {
   color: #ffdc5f;
@@ -3237,9 +3477,9 @@ h6 {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_9bb97f6665 {
+.c_auto_cda8ffee48 {
   display: block;
-  animation: keyframe_29 0.4s ease;
+  animation: keyframe_31 0.4s ease;
 }
 .c_auto_f4c621c5db {
   display: block;
@@ -3247,7 +3487,7 @@ h6 {
 .c_noAnimation [data-icon] {
   animation: none !important;
 }
-@keyframes keyframe_29 {
+@keyframes keyframe_31 {
   0% {
     transform: scale(1);
   }
@@ -3310,7 +3550,7 @@ h6 {
   align-items: center;
   cursor: default;
 }
-@keyframes keyframe_30 {
+@keyframes keyframe_32 {
   0% {
     transform: scale(1);
   }
@@ -3324,7 +3564,7 @@ h6 {
     transform: scale(1);
   }
 }
-@keyframes keyframe_31 {
+@keyframes keyframe_33 {
   0% {
     transform: scale(1);
   }
@@ -3655,13 +3895,13 @@ h6 {
   color: var(--accent-liked);
 }
 .c_commentAction.c_liked [data-icon] {
-  animation: keyframe_33 0.4s ease;
+  animation: keyframe_35 0.4s ease;
 }
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_d2ca42c69d {
-  animation: keyframe_32 0.4s ease;
+.c_auto_47fc21e58c {
+  animation: keyframe_34 0.4s ease;
 }
 .c_auto_7f6ce735eb {
   animation: none;
@@ -3669,7 +3909,7 @@ h6 {
 .c_auto_feb33bcc2b {
   animation: none !important;
 }
-@keyframes keyframe_32 {
+@keyframes keyframe_34 {
   0% {
     transform: scale(0.5);
   }
@@ -3692,7 +3932,7 @@ h6 {
 .c_replyButton:hover {
   color: var(--text-primary);
 }
-@keyframes keyframe_33 {
+@keyframes keyframe_35 {
   0% {
     transform: scale(1);
   }
@@ -3841,12 +4081,12 @@ h6 {
 }
 .c_popup {
   z-index: 10001;
-  animation: keyframe_34 0.15s ease-out forwards;
+  animation: keyframe_36 0.15s ease-out forwards;
 }
 .c_popup.c_closing {
-  animation: keyframe_35 0.15s ease-in forwards;
+  animation: keyframe_37 0.15s ease-in forwards;
 }
-@keyframes keyframe_34 {
+@keyframes keyframe_36 {
   0% {
     opacity: 0;
     transform: scale(0.9);
@@ -3856,7 +4096,7 @@ h6 {
     transform: scale(1);
   }
 }
-@keyframes keyframe_35 {
+@keyframes keyframe_37 {
   0% {
     opacity: 1;
     transform: scale(1);
@@ -4218,7 +4458,7 @@ h6 {
   cursor: pointer;
   background: var(--block-bg);
   border-radius: 36px;
-  animation: keyframe_36 0.3s ease;
+  animation: keyframe_38 0.3s ease;
   min-width: 280px;
 }
 .c_toast .c_toastLeft {
@@ -4271,7 +4511,7 @@ h6 {
 .c_toast.c_auto_d85ae8d429 {
   border-left: 3px solid #ef4444;
 }
-@keyframes keyframe_36 {
+@keyframes keyframe_38 {
   0% {
     opacity: 0;
     transform: translate(100%);
@@ -4308,7 +4548,7 @@ h6 {
     padding: 12px 14px;
     gap: 12px;
     border-radius: 24px;
-    animation: keyframe_37 0.3s ease;
+    animation: keyframe_39 0.3s ease;
   }
   .c_toast .c_toastLeft {
     gap: 12px;
@@ -4319,7 +4559,7 @@ h6 {
   .c_closeButton {
     display: none;
   }
-  @keyframes keyframe_37 {
+  @keyframes keyframe_39 {
     0% {
       opacity: 0;
       transform: translateY(-100%);
@@ -4351,12 +4591,12 @@ h6 {
   background: var(--block-bg);
   border-radius: 12px;
   filter: drop-shadow(0px 0px 64px var(--bg-primary));
-  animation: keyframe_38 0.3s ease;
+  animation: keyframe_40 0.3s ease;
   min-width: 240px;
   pointer-events: auto;
 }
 .c_toast.c_leaving {
-  animation: keyframe_39 0.3s ease forwards;
+  animation: keyframe_41 0.3s ease forwards;
 }
 .c_toast.c_success {
   background: #22c55e;
@@ -4414,7 +4654,7 @@ h6 {
     background 0.2s ease,
     color 0.2s ease;
 }
-@keyframes keyframe_38 {
+@keyframes keyframe_40 {
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -4424,7 +4664,7 @@ h6 {
     transform: translateY(0);
   }
 }
-@keyframes keyframe_39 {
+@keyframes keyframe_41 {
   0% {
     opacity: 1;
     transform: translateY(0);
@@ -4548,9 +4788,9 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  animation: keyframe_40 0.2s ease;
+  animation: keyframe_42 0.2s ease;
 }
-@keyframes keyframe_40 {
+@keyframes keyframe_42 {
   0% {
     opacity: 0;
   }
@@ -4558,7 +4798,7 @@ h6 {
     opacity: 1;
   }
 }
-@keyframes keyframe_41 {
+@keyframes keyframe_43 {
   0% {
     opacity: 0;
     transform: scale(0.96);
@@ -4578,7 +4818,7 @@ h6 {
   box-shadow: var(--shadow-elevated);
   display: flex;
   flex-direction: column;
-  animation: keyframe_41 0.2s ease;
+  animation: keyframe_43 0.2s ease;
 }
 .c_imageWrap {
   width: 100%;
@@ -4730,10 +4970,10 @@ h6 {
     rgba(255, 255, 255, 0.06) 50%,
     transparent 100%
   );
-  animation: keyframe_42 1.3s ease-in-out infinite;
+  animation: keyframe_44 1.3s ease-in-out infinite;
   animation-delay: var(--shimmer-delay, 0s);
 }
-@keyframes keyframe_42 {
+@keyframes keyframe_44 {
   to {
     transform: translate(100%);
   }

@@ -191,3 +191,47 @@
     gap: 8px;
   }
 }
+.c_phase {
+  animation: keyframe_1 0.24s ease-out both;
+}
+@keyframes keyframe_1 {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .c_phase {
+    animation: none;
+  }
+}
+.c_verification {
+  min-width: 0;
+}
+.c_card[data-reverse-open="true"] .c_brand {
+  margin-bottom: 20px;
+}
+.c_card[data-reverse-open="true"] .c_symbol {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 16px;
+  border-radius: 18px;
+}
+.c_card[data-reverse-open="true"] .c_description {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.c_card[data-reverse-open="true"] .c_form {
+  gap: 12px;
+}
+.c_card[data-reverse-open="true"] .c_number {
+  font-size: 16px;
+  line-height: 1.35;
+}
+.c_card[data-reverse-open="true"] .c_form > p:last-child {
+  margin-top: 0;
+}

@@ -10,22 +10,22 @@ const local_605932fe = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_074 as imported,
-  symbol_057 as imported_2,
+  symbol_079 as imported,
+  symbol_062 as imported_2,
   symbol_002 as imported_3,
-  symbol_076 as imported_4,
-  symbol_070 as imported_5,
-  symbol_001 as imported_6,
-  symbol_003 as imported_7,
-  symbol_064 as imported_8,
-  symbol_079 as imported_9,
-  symbol_020 as imported_10,
-  symbol_068 as imported_11,
-  symbol_058 as imported_12,
-  symbol_077 as imported_13,
-  symbol_046 as imported_14,
-  ae as imported_15,
-  symbol_065 as imported_16,
+  symbol_081 as imported_4,
+  symbol_075 as imported_5,
+  symbol_003 as imported_6,
+  symbol_001 as imported_7,
+  symbol_068 as imported_8,
+  symbol_020 as imported_9,
+  symbol_073 as imported_10,
+  symbol_063 as imported_11,
+  symbol_082 as imported_12,
+  symbol_054 as imported_13,
+  ae as imported_14,
+  symbol_084 as imported_15,
+  symbol_070 as imported_16,
 } from "../entry.js";
 (function () {
   try {
@@ -147,7 +147,7 @@ const local_1edc2ace = {
   emojiPickerBackdrop: local_8b15c25b,
   submitButton: local_7149ec44,
 };
-const local_968eaf70 = imported_9(() =>
+const local_968eaf70 = imported_15(() =>
   imported_16(
     () => import("./emoji-picker.js"),
     local_605932fe([0, 1, 2, 3]),
@@ -155,7 +155,7 @@ const local_968eaf70 = imported_9(() =>
     default: arg.EmojiPicker,
   })),
 );
-export const local_de87c481 = (arg) => {
+export const local_41026ddf = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -215,7 +215,7 @@ export const local_de87c481 = (arg) => {
     }
     local_18(true);
     try {
-      if (!(await imported_11.checkUsername(local_2))) {
+      if (!(await imported_10.checkUsername(local_2))) {
         local_14("Этот username уже занят");
         return;
       }
@@ -238,19 +238,19 @@ export const local_de87c481 = (arg) => {
           username: local_5.trim(),
           avatar: local_7,
         });
-        imported_12("../site/index.html");
+        imported_11("../site/index.html");
       } catch (error) {
         console.error("Profile creation error:", error);
-        if (imported_13(error)) {
+        if (imported_12(error)) {
           switch (error.code) {
-            case imported_15.PROFILE_USERNAME_TAKEN:
-            case imported_15.PROFILE_USERNAME_RESERVED:
+            case imported_14.PROFILE_USERNAME_TAKEN:
+            case imported_14.PROFILE_USERNAME_RESERVED:
               local_2(1);
-              local_14(imported_14(error.code, error.message));
+              local_14(imported_13(error.code, error.message));
               break;
             default:
               local_10(
-                imported_14(
+                imported_13(
                   error.code,
                   error.message || "Ошибка создания профиля",
                 ),
@@ -320,7 +320,7 @@ export const local_de87c481 = (arg) => {
     });
     local_20(true);
   }, []);
-  return imported(imported_10, {
+  return imported(imported_9, {
     children: [
       imported("div", {
         className: local_1edc2ace.page,
@@ -415,7 +415,7 @@ export const local_de87c481 = (arg) => {
                         }),
                     ],
                   }),
-                  imported(imported_7, {
+                  imported(imported_6, {
                     type: "submit",
                     variant: "primary",
                     size: "lg",
@@ -462,7 +462,7 @@ export const local_de87c481 = (arg) => {
                       }),
                     ],
                   }),
-                  imported(imported_7, {
+                  imported(imported_6, {
                     type: "button",
                     variant: "secondary",
                     size: "lg",
@@ -471,7 +471,7 @@ export const local_de87c481 = (arg) => {
                     disabled: local_15,
                     children: "Назад",
                   }),
-                  imported(imported_7, {
+                  imported(imported_6, {
                     type: "submit",
                     variant: "primary",
                     size: "lg",
@@ -487,7 +487,7 @@ export const local_de87c481 = (arg) => {
       }),
       local_19 &&
         local_21 &&
-        imported_6(
+        imported_7(
           imported("div", {
             className: local_1edc2ace.emojiPickerPortal,
             style: {
@@ -517,4 +517,4 @@ export const local_de87c481 = (arg) => {
     ],
   });
 };
-export { local_de87c481 as default };
+export { local_41026ddf as default };

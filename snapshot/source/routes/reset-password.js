@@ -1,15 +1,15 @@
 import {
-  symbol_057 as imported,
-  symbol_074 as imported_2,
-  symbol_039 as imported_3,
+  symbol_062 as imported,
+  symbol_079 as imported_2,
+  symbol_043 as imported_3,
   symbol_003 as imported_4,
-  symbol_020 as imported_5,
-  symbol_044 as imported_6,
-  symbol_058 as imported_7,
-  symbol_077 as imported_8,
-  ae as imported_9,
+  symbol_044 as imported_5,
+  symbol_020 as imported_6,
+  aq as imported_7,
+  symbol_063 as imported_8,
+  symbol_082 as imported_9,
+  ae as imported_10,
 } from "../entry.js";
-import { P as imported_10 } from "../shared/chunk-d4522ef773ce.js";
 import {
   I as imported_11,
   a as imported_12,
@@ -75,7 +75,7 @@ const local_474661d1 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_1bdb57a2 = (arg) => {
+export const local_182f6f19 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(false);
@@ -111,22 +111,22 @@ export const local_1bdb57a2 = (arg) => {
     }
     local_16(true);
     try {
-      await imported_6.resetPassword({
+      await imported_7.resetPassword({
         newPassword: local,
       });
-      imported_7("/login");
+      imported_8("/login");
     } catch (error) {
-      if (imported_8(error)) {
+      if (imported_9(error)) {
         switch (error.code) {
-          case imported_9.MISSING_FLOW_TOKEN:
-          case imported_9.UNAUTHORIZED:
-          case imported_9.BAD_REQUEST:
+          case imported_10.MISSING_FLOW_TOKEN:
+          case imported_10.UNAUTHORIZED:
+          case imported_10.BAD_REQUEST:
             local_10("Сессия сброса пароля истекла. Начните заново");
             break;
-          case imported_9.VALIDATION_ERROR:
+          case imported_10.VALIDATION_ERROR:
             local_12("Пароль не соответствует требованиям");
             break;
-          case imported_9.RATE_LIMIT_EXCEEDED:
+          case imported_10.RATE_LIMIT_EXCEEDED:
             local_10("Слишком много попыток. Попробуйте позже");
             break;
           default:
@@ -139,7 +139,7 @@ export const local_1bdb57a2 = (arg) => {
       local_16(false);
     }
   };
-  return imported_2(imported_5, {
+  return imported_2(imported_6, {
     children: imported_2("div", {
       className: local_474661d1.container,
       children: [
@@ -281,11 +281,11 @@ export const local_1bdb57a2 = (arg) => {
                 children: "Вернуться ко входу",
               }),
             }),
-            imported_2(imported_10, {}),
+            imported_2(imported_5, {}),
           ],
         }),
       ],
     }),
   });
 };
-export { local_1bdb57a2 as default };
+export { local_182f6f19 as default };
