@@ -1,7 +1,7 @@
 import {
-  symbol_045 as imported,
-  aL as imported_2,
-  aD as imported_3,
+  symbol_047 as imported,
+  aM as imported_2,
+  symbol_034 as imported_3,
 } from "../entry.js";
 (function () {
   try {
@@ -26,13 +26,19 @@ import {
     }
   } catch {}
 })();
-async function symbol_002(arg, arg_2, arg_3 = false) {
+async function symbol_002(arg, arg_2, arg_3 = false, arg_4 = "direct") {
   const local = {
     method: arg_2 ? "POST" : "GET",
     credentials: "include",
     headers: {
       "Content-Type": "application/json",
       "X-Requested-With": "XMLHttpRequest",
+      "X-ITD-Phone-Reverse": "1",
+      ...(arg_4 === "reverse"
+        ? {
+            "X-ITD-Phone-Method": "reverse",
+          }
+        : {}),
     },
     ...(arg_2
       ? {
@@ -57,12 +63,17 @@ async function symbol_002(arg, arg_2, arg_3 = false) {
   return local_3;
 }
 const symbol_001 = {
-  start: async (arg, arg_2, arg_3) => {
-    const local = await symbol_002("/phone/start", {
-      phone: arg,
-      captcha: arg_2,
-      legal: arg_3,
-    });
+  start: async (arg, arg_2, arg_3, arg_4 = "direct") => {
+    const local = await symbol_002(
+      "/phone/start",
+      {
+        phone: arg,
+        captcha: arg_2,
+        legal: arg_3,
+      },
+      false,
+      arg_4,
+    );
     if (typeof local.flowToken !== "string" || local.flowToken.length !== 32) {
       throw new Error("Invalid phone flow");
     }
@@ -144,7 +155,8 @@ const local_ca66b2a4 = "c_hint";
 const local_a64731b5 = "c_captcha";
 const local_000fcdf9 = "c_phase";
 const local_1ceb1a82 = "c_verification";
-const symbol_003 = {
+const local_037d9701 = "c_reverseEntry";
+export const local_0b724dbc = {
   card: local_724c774d,
   brand: local_bd56a6d0,
   symbol: local_e9fcd358,
@@ -164,5 +176,6 @@ const symbol_003 = {
   captcha: local_a64731b5,
   phase: local_000fcdf9,
   verification: local_1ceb1a82,
+  reverseEntry: local_037d9701,
 };
-export { symbol_001, symbol_002, symbol_003 };
+export { symbol_001, symbol_002 };

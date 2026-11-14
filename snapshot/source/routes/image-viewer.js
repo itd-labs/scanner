@@ -1,10 +1,10 @@
 import {
-  symbol_075 as imported,
-  symbol_062 as imported_2,
-  symbol_066 as imported_3,
+  symbol_077 as imported,
+  symbol_064 as imported_2,
+  symbol_068 as imported_3,
   symbol_002 as imported_4,
   symbol_021 as imported_5,
-  symbol_079 as imported_6,
+  symbol_081 as imported_6,
   symbol_020 as imported_7,
   symbol_004 as imported_8,
   symbol_028 as imported_9,
@@ -1131,7 +1131,7 @@ function fn_00da9caf(arg) {
     return null;
   }
 }
-function fn_8d61d49f({
+function fn_1bd8ba58({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1284,7 +1284,7 @@ function fn_8d61d49f({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_8c9a3cce({
+function fn_f3a4d7b8({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1358,7 +1358,7 @@ function fn_8c9a3cce({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_8d61d49f, {
+              imported_6(fn_1bd8ba58, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1375,7 +1375,7 @@ function fn_8c9a3cce({
   });
 }
 const local_f06debfc_5 = 2;
-function fn_9cf23fc2({
+function fn_7531d522({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1433,7 +1433,7 @@ function fn_9cf23fc2({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_8d61d49f, {
+              imported_6(fn_1bd8ba58, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_d2751cc2({
+export function fn_fc8efa9c({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_d2751cc2({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_8c9a3cce, {
+          imported_6(fn_f3a4d7b8, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2090,7 +2090,7 @@ export function fn_d2751cc2({
             zoom: local_28,
           }),
         local_11 &&
-          imported_6(fn_9cf23fc2, {
+          imported_6(fn_7531d522, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_d2751cc2({
     document.body,
   );
 }
-export { fn_d2751cc2 as default };
+export { fn_fc8efa9c as default };

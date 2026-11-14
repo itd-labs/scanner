@@ -1,22 +1,22 @@
 import {
-  symbol_079 as imported,
-  symbol_064 as imported_2,
+  symbol_081 as imported,
+  symbol_066 as imported_2,
   symbol_022 as imported_3,
   symbol_003 as imported_4,
-  symbol_071 as imported_5,
+  symbol_073 as imported_5,
   symbol_026 as imported_6,
   symbol_027 as imported_7,
   symbol_030 as imported_8,
   symbol_031 as imported_9,
-  symbol_063 as imported_10,
-  a2 as imported_11,
+  symbol_065 as imported_10,
+  symbol_032 as imported_11,
   a3 as imported_12,
   symbol_002 as imported_13,
-  symbol_062 as imported_14,
-  symbol_066 as imported_15,
+  symbol_064 as imported_14,
+  symbol_068 as imported_15,
   a4 as imported_16,
-  symbol_075 as imported_17,
-  symbol_083 as imported_18,
+  symbol_077 as imported_17,
+  symbol_085 as imported_18,
   a5 as imported_19,
 } from "../entry.js";
 import { I as imported_20 } from "../components/icon-notification-mention.js";
@@ -227,7 +227,7 @@ const local_5adaadb3 = ({ type: arg }) => {
       }),
   });
 };
-function fn_33707005({
+function fn_d63a129b({
   notification: arg,
   isVisuallyUnread: arg_2,
   onMarkRead: arg_3,
@@ -610,7 +610,7 @@ export const local_58a6e47b = (arg) => {
               local.map((arg) => {
                 const local = arg.payload.actors[0]?.id;
                 return imported(
-                  fn_33707005,
+                  fn_d63a129b,
                   {
                     notification: arg,
                     isVisuallyUnread: local_8.has(arg.id),

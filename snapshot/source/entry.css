@@ -512,7 +512,7 @@ h6 {
   gap: 0;
   align-items: stretch;
 }
-.c_bottomSheet.c_auto_a3578d061b {
+.c_bottomSheet.c_auto_63ad865a90 {
   animation: keyframe_9 0.2s ease-out forwards;
 }
 .c_bottomSheet .c_modal {
@@ -1274,6 +1274,18 @@ h6 {
   line-height: 1.5;
   text-wrap: balance;
 }
+.c_auto_cbe008c35e {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.c_error {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
 .c_code {
   --gap: 10px;
   --focus: var(--accent-primary);
@@ -1795,6 +1807,12 @@ h6 {
   .c_form {
     animation: none;
   }
+}
+.c_flag img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .c_sidebar {
   position: fixed;
@@ -2861,7 +2879,7 @@ h6 {
   flex: 1;
   min-width: 0;
 }
-.c_textInput.c_entering .c_auto_4515a22894 {
+.c_textInput.c_entering .c_auto_3a4d2c5009 {
   animation: keyframe_23 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 .c_textInput.c_entering .c_sendButton {
@@ -3477,7 +3495,7 @@ h6 {
 .c_action.c_disabled:active [data-icon] {
   transform: none;
 }
-.c_auto_cda8ffee48 {
+.c_auto_6a4ce87fa9 {
   display: block;
   animation: keyframe_31 0.4s ease;
 }
@@ -3900,7 +3918,7 @@ h6 {
 .c_commentAction.c_auto_b94019f612 {
   color: var(--text-primary);
 }
-.c_auto_47fc21e58c {
+.c_auto_b5d19fa453 {
   animation: keyframe_34 0.4s ease;
 }
 .c_auto_7f6ce735eb {

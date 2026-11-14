@@ -1,9 +1,9 @@
 import {
-  symbol_062 as imported,
-  symbol_066 as imported_2,
-  symbol_079 as imported_3,
+  symbol_064 as imported,
+  symbol_068 as imported_2,
+  symbol_081 as imported_3,
   symbol_020 as imported_4,
-  symbol_063 as imported_5,
+  symbol_065 as imported_5,
 } from "../entry.js";
 import { I as imported_6 } from "../components/icon-chevron-left.js";
 (function () {
@@ -418,7 +418,7 @@ export function fn_0ebca6b4({ slug: arg = "", version: arg_2 }) {
     ],
   });
 }
-export function fn_48919dd4({ slug: arg = "" }) {
+export function fn_3dc2cf77({ slug: arg = "" }) {
   const [local, local_2] = imported(null);
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported(0);

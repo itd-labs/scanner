@@ -1,12 +1,12 @@
 import {
   symbol_002 as imported,
-  symbol_075 as imported_2,
-  symbol_079 as imported_3,
-  symbol_066 as imported_4,
-  symbol_036 as imported_5,
-  symbol_062 as imported_6,
+  symbol_077 as imported_2,
+  symbol_081 as imported_3,
+  symbol_068 as imported_4,
+  aO as imported_5,
+  symbol_064 as imported_6,
   symbol_004 as imported_7,
-  aO as imported_8,
+  aP as imported_8,
 } from "../entry.js";
 import { V as imported_9 } from "../components/volume-glyph.js";
 (function () {
@@ -42,7 +42,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_f6b86911({
+function fn_75fa0972({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -285,7 +285,7 @@ function fn_34f0bf46(arg) {
   local_09086d0f = arg;
   localStorage.setItem("video-volume", String(arg));
 }
-function fn_493ae501(arg) {
+function fn_df7b26c5(arg) {
   const local = Math.floor(arg / 60);
   const local_2 = arg % 60;
   return `${local}:${local_2.toString().padStart(2, "0")}`;
@@ -340,7 +340,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_2b987059({
+export function fn_3ea9b2e6({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -628,7 +628,7 @@ export function fn_2b987059({
         local_39 &&
         imported_3("div", {
           className: local_66259d24.duration,
-          children: fn_493ae501(arg_5),
+          children: fn_df7b26c5(arg_5),
         }),
       (local_6 || !arg_2) &&
         imported_3("div", {
@@ -666,7 +666,7 @@ export function fn_2b987059({
                   children: [
                     imported_3("div", {
                       className: local_66259d24.volumeSlider,
-                      children: imported_3(fn_f6b86911, {
+                      children: imported_3(fn_75fa0972, {
                         value: local_12 ? 0 : local_14,
                         onChange: local_38,
                         onDragStart: () => {

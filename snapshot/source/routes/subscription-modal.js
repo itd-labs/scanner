@@ -1,65 +1,65 @@
 import {
-  symbol_057 as imported,
-  symbol_058 as imported_2,
-  symbol_079 as imported_3,
+  symbol_060 as imported,
+  ax as imported_2,
+  symbol_081 as imported_3,
   a6 as imported_4,
   a7 as imported_5,
-  symbol_062 as imported_6,
+  symbol_064 as imported_6,
   symbol_003 as imported_7,
-  symbol_044 as imported_8,
+  symbol_046 as imported_8,
   symbol_014 as imported_9,
-  aq as imported_10,
-  symbol_081 as imported_11,
-  symbol_082 as imported_12,
-  ae as imported_13,
-  ax as imported_14,
-  symbol_054 as imported_15,
-  symbol_059 as imported_16,
-  symbol_072 as imported_17,
+  symbol_055 as imported_10,
+  symbol_083 as imported_11,
+  symbol_084 as imported_12,
+  symbol_044 as imported_13,
+  symbol_061 as imported_14,
+  symbol_057 as imported_15,
+  az as imported_16,
+  symbol_074 as imported_17,
   symbol_004 as imported_18,
-  az as imported_19,
+  aA as imported_19,
   symbol_002 as imported_20,
-  symbol_066 as imported_21,
-  symbol_073 as imported_22,
-  symbol_075 as imported_23,
-  symbol_032 as imported_24,
+  symbol_068 as imported_21,
+  symbol_075 as imported_22,
+  symbol_077 as imported_23,
+  aB as imported_24,
   a5 as imported_25,
   symbol_020 as imported_26,
-  aB as imported_27,
-  symbol_063 as imported_28,
+  symbol_033 as imported_27,
+  symbol_065 as imported_28,
   symbol_001 as imported_29,
-  symbol_067 as imported_30,
-  symbol_064 as imported_31,
+  symbol_069 as imported_30,
+  symbol_066 as imported_31,
   symbol_027 as imported_32,
-  symbol_033 as imported_33,
-  symbol_078 as imported_34,
-  symbol_071 as imported_35,
-  aD as imported_36,
-  symbol_050 as imported_37,
-  symbol_034 as imported_38,
-  aF as imported_39,
-  symbol_045 as imported_40,
-  symbol_048 as imported_41,
-  symbol_046 as imported_42,
+  aD as imported_33,
+  symbol_080 as imported_34,
+  symbol_073 as imported_35,
+  symbol_034 as imported_36,
+  symbol_053 as imported_37,
+  aF as imported_38,
+  aG as imported_39,
+  symbol_047 as imported_40,
+  symbol_050 as imported_41,
+  symbol_048 as imported_42,
   aj as imported_43,
-  symbol_053 as imported_44,
-  symbol_047 as imported_45,
-  symbol_049 as imported_46,
-  aG as imported_47,
-  aH as imported_48,
-  symbol_035 as imported_49,
-  a2 as imported_50,
-  aJ as imported_51,
-  symbol_083 as imported_52,
-  aK as imported_53,
-  symbol_077 as imported_54,
+  symbol_056 as imported_44,
+  symbol_049 as imported_45,
+  symbol_051 as imported_46,
+  aH as imported_47,
+  symbol_035 as imported_48,
+  aJ as imported_49,
+  symbol_032 as imported_50,
+  aK as imported_51,
+  symbol_085 as imported_52,
+  aL as imported_53,
+  symbol_079 as imported_54,
   symbol_019 as useSettingsStore,
 } from "../entry.js";
 import { C as imported_55 } from "../shared/index-bkpoiy5w-portal20261026.js";
 import { I as imported_56 } from "../components/icon-info.js";
 import {
   a as imported_57,
-  symbol_003 as imported_58,
+  s as imported_58,
 } from "../shared/phone-access-module.js";
 import { I as imported_59 } from "../components/icon-notification-mention.js";
 import { I as imported_60 } from "../components/icon-chevron-right.js";
@@ -372,7 +372,7 @@ const local_339f5c81 = {
   toggle: local_4e84fc10,
   active: local_6ab69625,
 };
-function fn_efee520f({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
+function fn_f58b2bb1({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
   const local = (arg) => {
     arg.stopPropagation();
     if (!arg_3) {
@@ -462,7 +462,7 @@ const local_3cccfc6a = {
   outline: local_29e5fdcf,
   errorText: local_bcebeb33,
 };
-function fn_cbff52cb({
+function fn_222e985e({
   value: arg,
   onChange: arg_2,
   label: arg_3,
@@ -625,7 +625,7 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Текущий пароль",
             }),
-            imported_3(fn_cbff52cb, {
+            imported_3(fn_222e985e, {
               type: "password",
               value: local,
               onChange: local_2,
@@ -646,7 +646,7 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Новый пароль",
             }),
-            imported_3(fn_cbff52cb, {
+            imported_3(fn_222e985e, {
               type: "password",
               value: local_3,
               onChange: local_4,
@@ -671,7 +671,7 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
               className: local_b00398c6.label,
               children: "Подтверждение пароля",
             }),
-            imported_3(fn_cbff52cb, {
+            imported_3(fn_222e985e, {
               type: "password",
               value: local_5,
               onChange: local_6,
@@ -917,7 +917,7 @@ const local_41ea1484 = {
   mobileBack: local_33f43040,
   mobileHeaderTitle: local_57bda57c,
 };
-const local_b440b508 = imported_16(function (
+const local_301dbc3b = imported_16(function (
   { onDirtyChange: arg, onSavingChange: arg_2, onClose: arg_3 },
   arg_4,
 ) {
@@ -1178,7 +1178,7 @@ const local_b440b508 = imported_16(function (
               imported_3("div", {
                 className: local_41ea1484.settingControl,
                 children: [
-                  imported_3(fn_cbff52cb, {
+                  imported_3(fn_222e985e, {
                     value: local_20.name,
                     onChange: (arg) => local_30("name", arg),
                   }),
@@ -1214,7 +1214,7 @@ const local_b440b508 = imported_16(function (
               imported_3("div", {
                 className: local_41ea1484.settingControl,
                 children: [
-                  imported_3(fn_cbff52cb, {
+                  imported_3(fn_222e985e, {
                     value: local_20.username,
                     onChange: (arg) => local_30("username", arg),
                   }),
@@ -1770,7 +1770,7 @@ function fn_b267a7cf(arg, arg_2) {
   }
   return local_2;
 }
-function fn_185aace7() {
+function fn_b2800e63() {
   const local = imported_20(null);
   const local_2 = imported_20(null);
   const local_3 = imported_20({
@@ -1972,7 +1972,7 @@ function fn_046f7b47(arg) {
   }
   return arg.type;
 }
-export function fn_ffbc49d6({ isOpen: arg, onClose: arg_2 }) {
+export function fn_ce31ca7a({ isOpen: arg, onClose: arg_2 }) {
   const local = imported_30();
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -2073,7 +2073,7 @@ export function fn_ffbc49d6({ isOpen: arg, onClose: arg_2 }) {
       frameless: true,
       className: local_23034546.modal,
       children: [
-        imported_3(fn_185aace7, {}),
+        imported_3(fn_b2800e63, {}),
         imported_3("div", {
           className: local_23034546.sub,
           children: [
@@ -2414,7 +2414,7 @@ function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
 const local_f06debfc_5 = 5;
-function fn_9aaf3df1() {
+function fn_32ef12a2() {
   const local = imported_11((arg) => arg.profile);
   const [local_2, local_3] = imported_6(false);
   const [local_4, local_5] = imported_6(false);
@@ -2829,7 +2829,7 @@ function fn_9aaf3df1() {
           onConfirm: () => local_22(local_16),
           onClose: () => local_17(null),
         }),
-      imported_3(fn_ffbc49d6, {
+      imported_3(fn_ce31ca7a, {
         isOpen: local_6,
         onClose: () => {
           local_7(false);
@@ -3087,13 +3087,14 @@ function fn_c1264d86({
     document.body,
   );
 }
-async function fn_019752d2(arg, arg_2, arg_3, arg_4 = false) {
+async function fn_597db573(arg, arg_2, arg_3, arg_4 = false) {
   const local = await fetch(`/api/v1/auth${arg_2}`, {
     method: arg,
     credentials: "include",
     headers: {
       "Content-Type": "application/json",
       "X-Requested-With": "XMLHttpRequest",
+      "X-ITD-Phone-Reverse": "1",
       ...imported_38(),
     },
     ...(arg_3
@@ -3114,7 +3115,7 @@ async function fn_019752d2(arg, arg_2, arg_3, arg_4 = false) {
     (!local_3?.code || local_3.code === "UNAUTHORIZED") &&
     (await imported_39())
   ) {
-    return fn_019752d2(arg, arg_2, arg_3, true);
+    return fn_597db573(arg, arg_2, arg_3, true);
   }
   const local_4 = Math.max(
     Number(local_3?.retryIn) || 0,
@@ -3133,30 +3134,30 @@ function fn_d032fbfc(arg) {
   return arg.flowToken;
 }
 const local_c80cfb47 = {
-  methods: () => fn_019752d2("GET", "/methods"),
+  methods: () => fn_597db573("GET", "/methods"),
   setPassword: (arg) =>
-    fn_019752d2("POST", "/set-password", {
+    fn_597db573("POST", "/set-password", {
       password: arg,
     }),
   attachEmail: async (arg) =>
     fn_d032fbfc(
-      await fn_019752d2("POST", "/email/attach", {
+      await fn_597db573("POST", "/email/attach", {
         email: arg,
       }),
     ),
   verifyEmail: (arg, arg_2, arg_3) =>
-    fn_019752d2("POST", "/verify-otp", {
+    fn_597db573("POST", "/verify-otp", {
       email: arg,
       otp: arg_2,
       flowToken: arg_3,
     }),
   resendEmail: (arg, arg_2) =>
-    fn_019752d2("POST", "/resend-otp", {
+    fn_597db573("POST", "/resend-otp", {
       email: arg,
       flowToken: arg_2,
     }),
   changePhone: async (arg, arg_2) => {
-    const local = await fn_019752d2("POST", "/phone/change", {
+    const local = await fn_597db573("POST", "/phone/change", {
       phone: arg,
       captcha: arg_2,
     });
@@ -3167,19 +3168,19 @@ const local_c80cfb47 = {
   },
   resendPhone: async (arg, arg_2) =>
     imported_36(
-      await fn_019752d2("POST", "/resend-otp", {
+      await fn_597db573("POST", "/resend-otp", {
         phone: arg,
         flowToken: arg_2,
       }),
     ),
   changeEmail: async (arg) =>
     fn_d032fbfc(
-      await fn_019752d2("POST", "/email/change", {
+      await fn_597db573("POST", "/email/change", {
         email: arg,
       }),
     ),
   verifyChange: async (arg, arg_2, arg_3) => {
-    const local = await fn_019752d2("POST", "/verify-otp", {
+    const local = await fn_597db573("POST", "/verify-otp", {
       ...arg,
       otp: arg_2,
       flowToken: arg_3,
@@ -3198,7 +3199,7 @@ const local_c80cfb47 = {
     };
   },
   requestProof: async (arg, arg_2) => {
-    const local = await fn_019752d2("POST", "/change/proof", {
+    const local = await fn_597db573("POST", "/change/proof", {
       changeToken: arg,
       method: arg_2,
     });
@@ -3213,17 +3214,17 @@ const local_c80cfb47 = {
     };
   },
   confirm: (arg, arg_2) =>
-    fn_019752d2("POST", "/change/confirm", {
+    fn_597db573("POST", "/change/confirm", {
       changeToken: arg,
       ...arg_2,
     }),
   wait: (arg) =>
-    fn_019752d2("POST", "/change/wait", {
+    fn_597db573("POST", "/change/wait", {
       changeToken: arg,
     }),
-  pending: async () => (await fn_019752d2("GET", "/change/pending")).requests,
+  pending: async () => (await fn_597db573("GET", "/change/pending")).requests,
   cancelPending: (arg) =>
-    fn_019752d2("DELETE", `/change/pending/${encodeURIComponent(arg)}`),
+    fn_597db573("DELETE", `/change/pending/${encodeURIComponent(arg)}`),
 };
 const local_45600a9b = (arg) => {
   if (arg instanceof imported_40) {
@@ -3599,7 +3600,7 @@ function fn_f3c09731(arg, arg_2, arg_3) {
   }
   return "Код на старую почту";
 }
-function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
+function fn_b6e80218({ kind: arg, methods: arg_2, onClose: arg_3 }) {
   const local = arg === "phone";
   const [local_2, local_3] = imported_6("value");
   const [local_4, local_5] = imported_6("ru");
@@ -3703,7 +3704,11 @@ function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
   };
   const local_55 = (arg) => {
     arg.preventDefault();
-    if (!local_49 || local_41) {
+    if (
+      !local_49 ||
+      local_41 ||
+      (local_2 === "code" && local_20?.reverseOnly)
+    ) {
       return;
     }
     const local = local_22.join("");
@@ -3829,9 +3834,11 @@ function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
         ? "Новый номер"
         : "Новая почта"
       : local_2 === "code"
-        ? local_20
-          ? local_b6c83f75(local_20)
-          : "Код из письма"
+        ? local_20?.reverseOnly
+          ? "Не удалось позвонить"
+          : local_20
+            ? local_b6c83f75(local_20)
+            : "Код из письма"
         : local_2 === "proof"
           ? "Подтвердите смену"
           : local_2 === "proofCode"
@@ -3845,9 +3852,11 @@ function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
         ? "Позвоним на него, чтобы убедиться, что номер ваш."
         : "Пришлём на неё код, чтобы убедиться, что почта ваша."
       : local_2 === "code"
-        ? local_20
-          ? local_5d6c4335(local_20)
-          : `Отправили на ${local_16}.`
+        ? local_20?.reverseOnly
+          ? "Вы можете позвонить сами или повторить запрос позже."
+          : local_20
+            ? local_5d6c4335(local_20)
+            : `Отправили на ${local_16}.`
         : local_2 === "proof"
           ? local_50
             ? "Введите пароль от аккаунта или выберите другой способ."
@@ -3986,7 +3995,8 @@ function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
               onSubmit: local_55,
               children: [
                 imported_3(imported_45, {
-                  visible: !local_24 || local_2 !== "code",
+                  visible:
+                    local_2 !== "code" || (!local_24 && !local_20?.reverseOnly),
                   children: [
                     imported_3(imported_41, {
                       value: local_22,
@@ -4030,6 +4040,7 @@ function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                     imported_46,
                     {
                       embedded: true,
+                      initialFailure: local_20?.reverseOnly,
                       phone: local_16,
                       flowToken: local_18,
                       authenticated: true,
@@ -4054,6 +4065,28 @@ function fn_74f327ea({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                     },
                     local_16 + local_18,
                   ),
+                local_2 === "code" &&
+                  local_20?.reverseOnly &&
+                  !local_24 &&
+                  imported_3(imported_26, {
+                    children: [
+                      local_42 &&
+                        imported_3("p", {
+                          className: imported_58.error,
+                          role: "alert",
+                          children: local_42,
+                        }),
+                      imported_3("button", {
+                        type: "button",
+                        className: imported_58.link,
+                        disabled: local_41 || !!local_38,
+                        onClick: local_56,
+                        children: local_38
+                          ? `Повторить через ${local_38} с`
+                          : "Позвонить ещё раз",
+                      }),
+                    ],
+                  }),
                 imported_3("button", {
                   type: "button",
                   className: imported_58.back,
@@ -4494,7 +4527,7 @@ function fn_c599885a({ onChangePassword: arg }) {
       typeof local_7 === "object" &&
         local_7 &&
         local &&
-        imported_3(fn_74f327ea, {
+        imported_3(fn_b6e80218, {
           kind: local_7.change,
           methods: local,
           onClose: local_16,
@@ -4674,7 +4707,7 @@ function fn_2d43bd11({ type: arg }) {
       });
   }
 }
-function fn_da4feb38({ onChangePassword: arg }) {
+function fn_938a8d52({ onChangePassword: arg }) {
   const [local, local_2] = imported_6([]);
   const [local_3, local_4] = imported_6(true);
   const [local_5, local_6] = imported_6(null);
@@ -5011,7 +5044,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.webEnabled,
                 onChange: (arg) => local_14("webEnabled", arg),
               }),
@@ -5045,7 +5078,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.soundEnabled,
                 onChange: (arg) => local_14("soundEnabled", arg),
               }),
@@ -5088,7 +5121,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.follows,
                 onChange: (arg) => local_14("follows", arg),
               }),
@@ -5122,7 +5155,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.wallPosts,
                 onChange: (arg) => local_14("wallPosts", arg),
               }),
@@ -5166,7 +5199,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.reactions,
                 onChange: (arg) => local_14("reactions", arg),
               }),
@@ -5200,7 +5233,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.replies,
                 onChange: (arg) => local_14("replies", arg),
               }),
@@ -5234,7 +5267,7 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_efee520f, {
+              imported_3(fn_f58b2bb1, {
                 checked: local_4.mentions,
                 onChange: (arg) => local_14("mentions", arg),
               }),
@@ -5462,7 +5495,7 @@ const local_789d4fa8 = imported_16(function (
                     ],
                   }),
                 }),
-                imported_3(fn_efee520f, {
+                imported_3(fn_f58b2bb1, {
                   checked: local.showLastSeen,
                   onChange: (arg) => local_27("showLastSeen", arg),
                 }),
@@ -5647,18 +5680,18 @@ export function fn_2665d909({ onClose: arg }) {
   const local_24 = () => {
     switch (local_2) {
       case "account":
-        return imported_3(local_b440b508, {
+        return imported_3(local_301dbc3b, {
           ref: local_12,
           onDirtyChange: local_17("account"),
           onSavingChange: local_18("account"),
           onClose: arg,
         });
       case "payment":
-        return imported_3(fn_9aaf3df1, {});
+        return imported_3(fn_32ef12a2, {});
       case "appearance":
         return imported_3(fn_92ca2ba3, {});
       case "security":
-        return imported_3(fn_da4feb38, {
+        return imported_3(fn_938a8d52, {
           onChangePassword: () => local_7(true),
         });
       case "notifications":
