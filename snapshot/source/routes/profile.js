@@ -1,6 +1,6 @@
-const local_8317ffdf = (
+const local_d443d146 = (
   arg,
-  arg_2 = local_8317ffdf,
+  arg_2 = local_d443d146,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./subscription-modal.js",
@@ -9,8 +9,7 @@ const local_8317ffdf = (
       "../shared/index-bkpoiy5w-portal20261026.js",
       "../shared/index-bkpoiy5w-portal20261026.css",
       "../components/icon-info.js",
-      "../shared/phone-access-module.js",
-      "../shared/phone-access-module.css",
+      "../shared/phone-access.js",
       "../components/icon-notification-mention.js",
       "../components/icon-chevron-right.js",
       "../components/icon-chevron-left.js",
@@ -28,49 +27,49 @@ const local_8317ffdf = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_081 as imported,
-  symbol_066 as imported_2,
+  symbol_086 as imported,
+  symbol_071 as imported_2,
   symbol_003 as imported_3,
   symbol_014 as imported_4,
   symbol_005 as imported_5,
   symbol_010 as imported_6,
-  symbol_067 as imported_7,
-  symbol_064 as imported_8,
-  symbol_069 as imported_9,
-  symbol_070 as imported_10,
+  symbol_072 as imported_7,
+  symbol_069 as imported_8,
+  symbol_074 as imported_9,
+  symbol_075 as imported_10,
   symbol_020 as imported_11,
-  symbol_071 as imported_12,
-  symbol_086 as imported_13,
-  symbol_072 as imported_14,
-  symbol_073 as imported_15,
-  symbol_074 as imported_16,
-  symbol_077 as imported_17,
-  symbol_075 as imported_18,
-  symbol_080 as imported_19,
-  symbol_078 as imported_20,
-  symbol_079 as imported_21,
-  symbol_082 as imported_22,
+  symbol_076 as imported_12,
+  symbol_091 as imported_13,
+  symbol_077 as imported_14,
+  symbol_078 as imported_15,
+  symbol_079 as imported_16,
+  symbol_082 as imported_17,
+  symbol_080 as imported_18,
+  symbol_085 as imported_19,
+  symbol_083 as imported_20,
+  symbol_084 as imported_21,
+  symbol_087 as imported_22,
   symbol_022 as imported_23,
-  symbol_076 as imported_24,
-  symbol_068 as imported_25,
-  symbol_062 as imported_26,
-  symbol_083 as imported_27,
+  symbol_081 as imported_24,
+  symbol_073 as imported_25,
+  symbol_065 as imported_26,
+  symbol_088 as imported_27,
   symbol_002 as imported_28,
-  symbol_084 as imported_29,
+  symbol_089 as imported_29,
   symbol_009 as imported_30,
-  symbol_085 as imported_31,
+  symbol_090 as imported_31,
   symbol_004 as imported_32,
   symbol_006 as imported_33,
   symbol_007 as imported_34,
   symbol_008 as imported_35,
   symbol_028 as imported_36,
   symbol_021 as imported_37,
-  symbol_065 as imported_38,
+  symbol_070 as imported_38,
   symbol_011 as imported_39,
   symbol_012 as imported_40,
   symbol_013 as imported_41,
   symbol_023 as imported_42,
-  symbol_063 as imported_43,
+  symbol_068 as imported_43,
   symbol_017 as imported_44,
 } from "../entry.js";
 import { I as imported_45 } from "../components/icon-check.js";
@@ -372,10 +371,10 @@ function fn_4a1f2f84({
     ],
   });
 }
-const local_e205d1ef = imported_13(() =>
+const local_5dd68930 = imported_13(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_8317ffdf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+    local_d443d146([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -414,7 +413,7 @@ function fn_5d3ea10e({
         local &&
           imported(imported_10, {
             fallback: null,
-            children: imported(local_e205d1ef, {
+            children: imported(local_5dd68930, {
               isOpen: local,
               onClose: () => local_2(false),
             }),
@@ -522,7 +521,7 @@ function fn_1ff18f6e({
 const local_06128897 = imported_13(() =>
   imported_14(
     () => import("./drawing-canvas.js"),
-    local_8317ffdf([12, 1, 2, 13]),
+    local_d443d146([11, 1, 2, 12]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -530,7 +529,7 @@ const local_06128897 = imported_13(() =>
 const local_e399251c = imported_13(() =>
   imported_14(
     () => import("../shared/index-q-tv-tful4-portal20261026.js"),
-    local_8317ffdf([14, 1, 2, 15, 16]),
+    local_d443d146([13, 1, 2, 14, 15]),
   ).then((arg) => ({
     default: arg.VerificationModal,
   })),
@@ -538,7 +537,7 @@ const local_e399251c = imported_13(() =>
 const local_f8603183 = imported_13(() =>
   imported_14(
     () => import("./report-modal.js"),
-    local_8317ffdf([17, 1, 2, 15, 18]),
+    local_d443d146([16, 1, 2, 14, 17]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -1390,10 +1389,10 @@ function fn_c7fa7317({ username: arg }) {
     handleBlockUser: local_41,
   };
 }
-const local_e205d1ef_2 = imported_13(() =>
+const local_5dd68930_2 = imported_13(() =>
   imported_14(
     () => import("./subscription-modal.js"),
-    local_8317ffdf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]),
+    local_d443d146([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
   ).then((arg) => ({
     default: arg.SettingsModal,
   })),
@@ -1401,7 +1400,7 @@ const local_e205d1ef_2 = imported_13(() =>
 const local_0fe1a4d5 = imported_13(() =>
   imported_14(
     () => import("../shared/index-hqd-ia-v-b-portal20261026.js"),
-    local_8317ffdf([19, 1, 2, 20, 14, 15, 16, 21]),
+    local_d443d146([18, 1, 2, 19, 13, 14, 15, 20]),
   ).then((arg) => ({
     default: arg.UserListModal,
   })),
@@ -1477,7 +1476,7 @@ export const local_63d098fa = ({ username: arg }) => {
   ]);
   const local_39 = () => {
     local_3(
-      imported(local_e205d1ef_2, {
+      imported(local_5dd68930_2, {
         onClose: local_4,
       }),
     );

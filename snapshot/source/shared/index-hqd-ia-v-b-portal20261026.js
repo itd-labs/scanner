@@ -1,25 +1,25 @@
 import {
   symbol_002 as imported,
-  symbol_064 as imported_2,
-  symbol_077 as imported_3,
-  symbol_085 as socialApi,
-  symbol_068 as imported_4,
-  a4 as imported_5,
-  symbol_074 as imported_6,
-  symbol_083 as imported_7,
-  symbol_065 as imported_8,
-  symbol_081 as imported_9,
+  symbol_069 as imported_2,
+  symbol_082 as imported_3,
+  symbol_090 as socialApi,
+  symbol_073 as imported_4,
+  symbol_034 as imported_5,
+  symbol_079 as imported_6,
+  symbol_088 as imported_7,
+  symbol_070 as imported_8,
+  symbol_086 as imported_9,
   a5 as imported_10,
-  symbol_066 as imported_11,
+  symbol_071 as imported_11,
   symbol_022 as imported_12,
   symbol_003 as imported_13,
-  aJ as imported_14,
+  symbol_042 as imported_14,
   symbol_014 as imported_15,
   symbol_007 as UnfollowConfirmModal,
-  symbol_075 as profileApi,
-  symbol_037 as useFollowStatus,
-  symbol_038 as useFollowStatusStore,
-  symbol_039 as useFollowUser,
+  symbol_080 as profileApi,
+  a$ as useFollowStatus,
+  symbol_066 as useFollowStatusStore,
+  symbol_067 as useFollowUser,
 } from "../entry.js";
 import { I as imported_16 } from "../components/icon-check.js";
 import { VerificationModal } from "./index-q-tv-tful4-portal20261026.js";
@@ -51,17 +51,17 @@ export function fn_66c2d60a(arg, arg_2) {
   const local = imported(null);
   const local_2 = `${arg || "me"}-${arg_2}`;
   const [local_3, local_4] = imported_2([]);
-  const [local_5, UnfollowConfirmModal] = imported_2(true);
-  const [local_6, local_7] = imported_2(false);
-  const [local_8, local_9] = imported_2(null);
-  const [local_10, local_11] = imported_2(new Map());
+  const [local_5, local_6] = imported_2(true);
+  const [local_7, local_8] = imported_2(false);
+  const [local_9, local_10] = imported_2(null);
+  const [UnfollowConfirmModal, local_11] = imported_2(new Map());
   const [local_12, local_13] = imported_2(new Set());
   const local_14 = imported(null);
   if (local.current !== local_2) {
     local.current = local_2;
     local_4([]);
-    UnfollowConfirmModal(true);
-    local_9(null);
+    local_6(true);
+    local_10(null);
     local_11(new Map());
     local_13(new Set());
   }
@@ -69,9 +69,9 @@ export function fn_66c2d60a(arg, arg_2) {
     async (arg) => {
       const local = !arg;
       if (local) {
-        UnfollowConfirmModal(true);
+        local_6(true);
       } else {
-        local_7(true);
+        local_8(true);
       }
       try {
         let local;
@@ -141,12 +141,12 @@ export function fn_66c2d60a(arg, arg_2) {
             return local;
           });
         }
-        local_9(local.nextCursor);
+        local_10(local.nextCursor);
       } catch (error) {
         console.error("Failed to fetch users:", error);
       } finally {
-        UnfollowConfirmModal(false);
-        local_7(false);
+        local_6(false);
+        local_8(false);
       }
     },
     [arg, arg_2],
@@ -155,14 +155,14 @@ export function fn_66c2d60a(arg, arg_2) {
     local_15();
   }, [local_15]);
   const local_16 = imported_3(() => {
-    if (local_8) {
-      local_15(local_8);
+    if (local_9) {
+      local_15(local_9);
     }
-  }, [local_8, local_15]);
+  }, [local_9, local_15]);
   imported_5({
     sentinelRef: local_14,
-    hasMore: !!local_8,
-    isLoading: local_6,
+    hasMore: !!local_9,
+    isLoading: local_7,
     onLoadMore: local_16,
   });
   const local_17 = imported_3(
@@ -171,7 +171,7 @@ export function fn_66c2d60a(arg, arg_2) {
       if (!local_12.has(arg)) {
         local_13((arg) => new Set(arg).add(arg));
         try {
-          const local = local_10.get(arg);
+          const local = UnfollowConfirmModal.get(arg);
           if (local === "following" || local === "requested") {
             await socialApi.unfollowUser(arg);
             local_11((arg) => {
@@ -198,15 +198,15 @@ export function fn_66c2d60a(arg, arg_2) {
         }
       }
     },
-    [local_10, local_12],
+    [UnfollowConfirmModal, local_12],
   );
   return {
     users: local_3,
     isLoading: local_5,
-    isLoadingMore: local_6,
-    nextCursor: local_8,
+    isLoadingMore: local_7,
+    nextCursor: local_9,
     loadMoreRef: local_14,
-    userFollowStatus: local_10,
+    userFollowStatus: UnfollowConfirmModal,
     loadingFollowIds: local_12,
     handleToggleFollow: local_17,
   };

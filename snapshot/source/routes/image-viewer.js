@@ -1,10 +1,10 @@
 import {
-  symbol_077 as imported,
-  symbol_064 as imported_2,
-  symbol_068 as imported_3,
+  symbol_082 as imported,
+  symbol_069 as imported_2,
+  symbol_073 as imported_3,
   symbol_002 as imported_4,
   symbol_021 as imported_5,
-  symbol_081 as imported_6,
+  symbol_086 as imported_6,
   symbol_020 as imported_7,
   symbol_004 as imported_8,
   symbol_028 as imported_9,
@@ -1284,7 +1284,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_f3a4d7b8({
+function fn_5d7bad9d({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1375,7 +1375,7 @@ function fn_f3a4d7b8({
   });
 }
 const local_f06debfc_5 = 2;
-function fn_7531d522({
+function fn_9cf23fc2({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1471,7 +1471,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_fc8efa9c({
+export function fn_56b8bbdd({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -2075,7 +2075,7 @@ export function fn_fc8efa9c({
           "aria-hidden": true,
         }),
         !local_11 &&
-          imported_6(fn_f3a4d7b8, {
+          imported_6(fn_5d7bad9d, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2090,7 +2090,7 @@ export function fn_fc8efa9c({
             zoom: local_28,
           }),
         local_11 &&
-          imported_6(fn_7531d522, {
+          imported_6(fn_9cf23fc2, {
             images: arg,
             imageSizes: local_12,
             currentIndex: local_13.currentIndex,
@@ -2133,4 +2133,4 @@ export function fn_fc8efa9c({
     document.body,
   );
 }
-export { fn_fc8efa9c as default };
+export { fn_56b8bbdd as default };
