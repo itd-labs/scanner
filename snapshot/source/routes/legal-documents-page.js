@@ -1,34 +1,12 @@
 import {
-  symbol_069 as imported,
-  symbol_073 as imported_2,
-  symbol_086 as imported_3,
-  symbol_020 as imported_4,
-  symbol_070 as imported_5,
+  symbol_223 as imported,
+  symbol_002 as imported_2,
+  symbol_276 as imported_3,
+  symbol_289 as imported_4,
+  symbol_020 as imported_5,
+  symbol_001 as imported_6,
 } from "../entry.js";
-import { I as imported_6 } from "../components/icon-chevron-left.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_7 } from "../components/icon-chevron-left.js";
 async function fn_2883989d(arg) {
   const local = await fetch(arg, {
     credentials: "include",
@@ -43,7 +21,7 @@ async function fn_2883989d(arg) {
   }
   return local.json();
 }
-const local_8934f982 = {
+const local_aca81d91 = {
   async list() {
     return (await fn_2883989d("/api/legal-documents?scope=social")).documents;
   },
@@ -69,7 +47,7 @@ const local_8934f982 = {
     ).document;
   },
 };
-function fn_0a37aa60(arg) {
+function fn_719084bb(arg) {
   const local = new Date(`${arg}T00:00:00Z`);
   if (Number.isNaN(local.getTime())) {
     return arg;
@@ -120,16 +98,16 @@ const local_474661d1 = {
   retry: local_c876bc81,
 };
 function fn_64d9bb62({ fallback: arg = "/legal" }) {
-  return imported_3("button", {
+  return imported_4("button", {
     className: local_474661d1.back,
     onClick: () => {
       if (window.history.length > 1) {
         return window.history.back();
       }
-      return imported_5(arg);
+      return imported_6(arg);
     },
     children: [
-      imported_3(imported_6, {
+      imported_4(imported_7, {
         size: 20,
       }),
       "Назад",
@@ -137,13 +115,13 @@ function fn_64d9bb62({ fallback: arg = "/legal" }) {
   });
 }
 function fn_d9b37b1a({ error: arg, retry: arg_2 }) {
-  return imported_3("div", {
+  return imported_4("div", {
     className: local_474661d1.state,
     children: [
       arg ?? "Загрузка...",
       arg_2 &&
-        imported_3("div", {
-          children: imported_3("button", {
+        imported_4("div", {
+          children: imported_4("button", {
             className: local_474661d1.retry,
             onClick: arg_2,
             children: "Попробовать снова",
@@ -172,7 +150,7 @@ function fn_8200ac39(arg) {
     }
     const local_2 = fn_e36fc23d(local[2]);
     local.push(
-      imported_3("a", {
+      imported_4("a", {
         href: local_2,
         target: local_2.startsWith("http") ? "_blank" : undefined,
         rel: local_2.startsWith("http") ? "noopener noreferrer" : undefined,
@@ -189,18 +167,18 @@ function fn_8200ac39(arg) {
 function fn_c052847e({ block: arg }) {
   if (arg.type === "heading") {
     if (arg.level === 3) {
-      return imported_3("h3", {
+      return imported_4("h3", {
         children: arg.text,
       });
     }
-    return imported_3("h2", {
+    return imported_4("h2", {
       children: arg.text,
     });
   }
   if (arg.type === "list") {
-    return imported_3("ul", {
+    return imported_4("ul", {
       children: arg.items.map((arg, arg_2) =>
-        imported_3(
+        imported_4(
           "li",
           {
             children: fn_8200ac39(arg),
@@ -211,10 +189,10 @@ function fn_c052847e({ block: arg }) {
     });
   }
   if (arg.type === "lines") {
-    return imported_3("div", {
+    return imported_4("div", {
       className: local_474661d1.lines,
       children: arg.items.map((arg, arg_2) =>
-        imported_3(
+        imported_4(
           "span",
           {
             children: fn_8200ac39(arg),
@@ -224,85 +202,86 @@ function fn_c052847e({ block: arg }) {
       ),
     });
   }
-  return imported_3("p", {
+  return imported_4("p", {
     children: fn_8200ac39(arg.text),
   });
 }
-export function fn_7ff7e238({ path: arg }) {
+export function fn_d8311fee({ path: arg }) {
   const [local, local_2] = imported(null);
   const [local_3, local_4] = imported("");
-  const [local_5, local_6] = imported(0);
-  imported_2(() => {
-    let local = true;
-    local_8934f982
+  const local_5 = imported_2(0);
+  const local_6 = () => {
+    const local = ++local_5.current;
+    local_4("");
+    local_aca81d91
       .list()
       .then((arg) => {
-        if (local) {
-          local_4("");
+        if (local === local_5.current) {
           local_2(arg);
         }
       })
       .catch((arg) => {
-        if (local) {
+        if (local === local_5.current) {
           local_4(arg.message);
         }
       });
+  };
+  imported_3(() => {
+    local_6();
     return () => {
-      local = false;
-      local_4("");
-      local_2(null);
+      local_5.current++;
     };
-  }, [local_5]);
-  return imported_3("main", {
+  }, []);
+  return imported_4("main", {
     className: local_474661d1.page,
     "data-route": arg,
     children: [
-      imported_3(fn_64d9bb62, {
+      imported_4(fn_64d9bb62, {
         fallback: "../site/index.html",
       }),
-      imported_3("h1", {
+      imported_4("h1", {
         className: local_474661d1.title,
         children: "Правовые документы",
       }),
-      imported_3("p", {
+      imported_4("p", {
         className: local_474661d1.lead,
         children:
           "Здесь собраны действующие документы сервиса и предыдущие редакции.",
       }),
       local_3
-        ? imported_3(fn_d9b37b1a, {
+        ? imported_4(fn_d9b37b1a, {
             error: local_3,
-            retry: () => local_6((arg) => arg + 1),
+            retry: local_6,
           })
         : local
-          ? imported_3("ul", {
+          ? imported_4("ul", {
               className: local_474661d1.list,
               children: local.map((arg) =>
-                imported_3(
+                imported_4(
                   "li",
                   {
-                    children: imported_3("a", {
+                    children: imported_4("a", {
                       className: local_474661d1.row,
                       href: `/legal/${arg.slug}`,
                       children: [
-                        imported_3("span", {
+                        imported_4("span", {
                           className: local_474661d1.rowMain,
                           children: [
-                            imported_3("span", {
+                            imported_4("span", {
                               className: local_474661d1.rowTitle,
                               children: arg.title,
                             }),
-                            imported_3("span", {
+                            imported_4("span", {
                               className: local_474661d1.summary,
                               children: arg.summary,
                             }),
                           ],
                         }),
-                        imported_3("span", {
+                        imported_4("span", {
                           className: local_474661d1.rowDate,
                           children: [
                             "Редакция от ",
-                            fn_0a37aa60(arg.documentDate ?? arg.effectiveAt),
+                            fn_719084bb(arg.documentDate ?? arg.effectiveAt),
                           ],
                         }),
                       ],
@@ -312,72 +291,74 @@ export function fn_7ff7e238({ path: arg }) {
                 ),
               ),
             })
-          : imported_3(fn_d9b37b1a, {}),
+          : imported_4(fn_d9b37b1a, {}),
     ],
   });
 }
-export function fn_0ebca6b4({ slug: arg = "", version: arg_2 }) {
+export function fn_eacab2e3({ slug: arg = "", version: arg_2 }) {
   const [local, local_2] = imported(null);
   const [local_3, local_4] = imported(null);
   const [local_5, local_6] = imported("");
-  const [local_7, local_8] = imported(0);
-  imported_2(() => {
-    let local = true;
+  const local_7 = imported_2(0);
+  const local_8 = () => {
+    const local = ++local_7.current;
+    local_6("");
+    local_2(null);
+    local_4(null);
     const local_2 = arg_2
-      ? local_8934f982.version(arg, arg_2)
-      : local_8934f982.current(arg);
-    Promise.all([local_2, local_8934f982.versions(arg)])
+      ? local_aca81d91.version(arg, arg_2)
+      : local_aca81d91.current(arg);
+    Promise.all([local_2, local_aca81d91.versions(arg)])
       .then(([arg, arg_2]) => {
-        if (local) {
-          local_6("");
+        if (local === local_7.current) {
           local_2(arg);
           local_4(arg_2.find((arg) => arg.current) ?? null);
         }
       })
       .catch((arg) => {
-        if (local) {
+        if (local === local_7.current) {
           local_6(arg.message);
         }
       });
+  };
+  imported_3(() => {
+    local_8();
     return () => {
-      local = false;
-      local_6("");
-      local_2(null);
-      local_4(null);
+      local_7.current++;
     };
-  }, [arg, arg_2, local_7]);
+  }, [arg, arg_2]);
   const local_9 = !!(local && local_3 && local.version !== local_3.version);
-  return imported_3("main", {
+  return imported_4("main", {
     className: local_474661d1.page,
     children: [
-      imported_3(fn_64d9bb62, {}),
+      imported_4(fn_64d9bb62, {}),
       local_5
-        ? imported_3(fn_d9b37b1a, {
+        ? imported_4(fn_d9b37b1a, {
             error: local_5,
-            retry: () => local_8((arg) => arg + 1),
+            retry: local_8,
           })
         : local
-          ? imported_3(imported_4, {
+          ? imported_4(imported_5, {
               children: [
-                imported_3("h1", {
+                imported_4("h1", {
                   className: local_474661d1.title,
                   children: local.title,
                 }),
-                imported_3("p", {
+                imported_4("p", {
                   className: local_474661d1.date,
                   children: [
                     "Редакция от ",
-                    fn_0a37aa60(local.documentDate ?? local.effectiveAt),
+                    fn_719084bb(local.documentDate ?? local.effectiveAt),
                     " · версия ",
                     local.version,
                   ],
                 }),
                 local_9 &&
-                  imported_3("div", {
+                  imported_4("div", {
                     className: local_474661d1.notice,
                     children: [
                       "Вы открыли предыдущую редакцию документа. ",
-                      imported_3("a", {
+                      imported_4("a", {
                         href: `/legal/${arg}`,
                         children: "Перейти к действующей редакции",
                       }),
@@ -385,25 +366,25 @@ export function fn_0ebca6b4({ slug: arg = "", version: arg_2 }) {
                     ],
                   }),
                 local.publishedAt &&
-                  imported_3("p", {
+                  imported_4("p", {
                     className: local_474661d1.date,
                     children: [
                       "Опубликовано ",
-                      fn_0a37aa60(local.publishedAt.slice(0, 10)),
+                      fn_719084bb(local.publishedAt.slice(0, 10)),
                     ],
                   }),
-                imported_3("div", {
+                imported_4("div", {
                   className: local_474661d1.actions,
-                  children: imported_3("a", {
+                  children: imported_4("a", {
                     className: local_474661d1.action,
                     href: `/legal/${arg}/history`,
                     children: "История документа",
                   }),
                 }),
-                imported_3("article", {
+                imported_4("article", {
                   className: local_474661d1.body,
                   children: local.blocks.map((arg, arg_2) =>
-                    imported_3(
+                    imported_4(
                       fn_c052847e,
                       {
                         block: arg,
@@ -414,77 +395,79 @@ export function fn_0ebca6b4({ slug: arg = "", version: arg_2 }) {
                 }),
               ],
             })
-          : imported_3(fn_d9b37b1a, {}),
+          : imported_4(fn_d9b37b1a, {}),
     ],
   });
 }
-export function fn_3dc2cf77({ slug: arg = "" }) {
+export function fn_934fd06e({ slug: arg = "" }) {
   const [local, local_2] = imported(null);
   const [local_3, local_4] = imported("");
-  const [local_5, local_6] = imported(0);
-  imported_2(() => {
-    let local = true;
-    local_8934f982
+  const local_5 = imported_2(0);
+  const local_6 = () => {
+    const local = ++local_5.current;
+    local_4("");
+    local_2(null);
+    local_aca81d91
       .versions(arg)
       .then((arg) => {
-        if (local) {
-          local_4("");
+        if (local === local_5.current) {
           local_2(arg);
         }
       })
       .catch((arg) => {
-        if (local) {
+        if (local === local_5.current) {
           local_4(arg.message);
         }
       });
+  };
+  imported_3(() => {
+    local_6();
     return () => {
-      local = false;
-      local_4("");
-      local_2(null);
+      local_5.current++;
     };
-  }, [arg, local_5]);
+  }, [arg]);
   const local_7 = local?.[0]?.title ?? "История документа";
-  return imported_3("main", {
+  return imported_4("main", {
     className: local_474661d1.page,
     children: [
-      imported_3(fn_64d9bb62, {
+      imported_4(fn_64d9bb62, {
         fallback: `/legal/${arg}`,
       }),
-      imported_3("h1", {
+      imported_4("h1", {
         className: local_474661d1.title,
         children: local_7,
       }),
-      imported_3("p", {
+      imported_4("p", {
         className: local_474661d1.lead,
         children: "История редакций документа",
       }),
       local_3
-        ? imported_3(fn_d9b37b1a, {
+        ? imported_4(fn_d9b37b1a, {
             error: local_3,
-            retry: () => local_6((arg) => arg + 1),
+            retry: local_6,
           })
         : local
-          ? imported_3("ul", {
+          ? imported_4("ul", {
               className: local_474661d1.list,
               children: local.map((arg) =>
-                imported_3(
+                imported_4(
                   "li",
                   {
-                    children: imported_3("a", {
+                    children: imported_4("a", {
                       className: local_474661d1.row,
                       href: arg.current
                         ? `/legal/${arg}`
                         : `/legal/${arg}/versions/${arg.version}`,
                       children: [
-                        imported_3("span", {
+                        imported_4("span", {
                           className: local_474661d1.rowTitle,
                           children: arg.current
                             ? "Действующая редакция"
                             : `Редакция ${arg.version}`,
                         }),
-                        imported_3("span", {
+                        imported_4("span", {
                           className: local_474661d1.rowDate,
-                          children: fn_0a37aa60(
+                          children: fn_719084bb(
                             arg.documentDate ?? arg.effectiveAt,
                           ),
                         }),
@@ -495,7 +478,7 @@ export function fn_3dc2cf77({ slug: arg = "" }) {
                 ),
               ),
             })
-          : imported_3(fn_d9b37b1a, {}),
+          : imported_4(fn_d9b37b1a, {}),
     ],
   });
 }

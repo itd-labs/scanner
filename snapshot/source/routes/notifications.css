@@ -175,6 +175,16 @@
     font-size: 12px;
   }
 }
+.c_reminderTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.c_reminderText {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
 .c_titleRow {
   display: flex;
   align-items: center;

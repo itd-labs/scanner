@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="326" viewBox="0 0 390 326" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="water" cx="0" cy="0" r="1" gradientTransform="translate(192 168) rotate(87) scale(132 160)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2F5FC" stop-opacity=".52"/>
+      <stop offset=".48" stop-color="#B7E3F2" stop-opacity=".44"/>
+      <stop offset=".82" stop-color="#77C6E4" stop-opacity=".40"/>
+      <stop offset="1" stop-color="#338EBB" stop-opacity=".50"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="87" y1="40" x2="311" y2="276" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2FCFF" stop-opacity=".84"/>
+      <stop offset=".37" stop-color="#9BDAEF" stop-opacity=".69"/>
+      <stop offset=".72" stop-color="#3D97C4" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#DDF8FF" stop-opacity=".76"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="0" cy="0" r="1" gradientTransform="translate(.33 .2) rotate(55) scale(.9 .86)">
+      <stop stop-color="#F5FCFF" stop-opacity=".72"/>
+      <stop offset=".44" stop-color="#B7E4F3" stop-opacity=".49"/>
+      <stop offset="1" stop-color="#398EBA" stop-opacity=".68"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Силуэт повторяет исходный разлёт: струйки связаны с широкой серединой, капли отделены. -->
+  <path d="M86 11 C76 11 72 17 77 29 C83 42 103 47 119 66 C128 77 125 96 139 108 C148 116 151 123 138 126 C126 129 111 122 105 129 C96 137 105 151 116 158 C127 169 108 173 92 170 C72 168 57 157 42 156 C28 155 17 162 18 171 C18 182 30 186 44 181 C61 174 74 170 84 181 C93 187 105 177 105 181 C102 191 99 196 110 201 C122 207 133 194 140 196 C149 198 150 208 145 218 C140 228 118 230 117 246 C115 256 120 263 129 257 C144 247 155 234 170 240 C181 245 185 234 194 248 C202 261 185 268 185 276 C185 283 193 284 199 276 C206 268 204 256 218 253 C231 248 244 258 241 271 C238 283 247 285 251 277 C256 266 250 254 265 251 C278 248 292 261 292 269 C291 277 283 280 284 276 C294 270 293 259 279 247 C272 239 277 233 286 236 C299 238 313 255 335 264 C348 270 350 286 365 286 C379 286 383 276 374 265 C365 254 346 254 332 250 C317 246 304 231 301 216 C299 207 304 202 311 205 C319 209 319 202 309 198 C305 195 318 189 321 182 C326 169 314 172 303 175 C294 177 295 165 301 149 C308 132 323 120 342 111 C361 102 373 101 371 89 C370 78 357 73 347 78 C330 84 321 115 305 131 C290 148 273 146 266 133 C256 118 253 107 259 94 C264 82 250 82 252 69 C254 57 246 52 241 56 C231 63 238 72 244 84 C249 94 244 100 240 106 C233 118 224 129 211 121 C201 115 196 111 185 112 C174 112 175 91 161 82 C146 70 132 69 124 59 C109 38 99 13 86 11Z" fill="url(#water)" stroke="url(#edge)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Тонкий слой воды: фон виден насквозь, без прежних белых желейных бликов. -->
+  <path d="M143 142 C154 125 179 120 198 132 C218 137 228 131 245 141 C262 151 268 177 259 197 C245 219 214 231 186 221 C164 221 142 211 133 189 C128 170 132 154 143 142Z" fill="#F0FCFF" fill-opacity=".14"/>
+  <path d="M146 193 C156 211 181 219 199 215 C221 222 243 209 253 193 C244 221 216 232 192 226 C172 232 149 219 142 204Z" fill="#1C6E9D" fill-opacity=".09"/>
+  <path d="M138 141 C151 130 164 127 180 131 M203 126 C217 133 233 134 244 129 M265 149 C271 162 279 167 292 164 M127 196 C139 207 154 209 164 205 M178 235 C190 238 202 236 211 232 M263 240 C277 232 284 229 294 239" stroke="#F9FEFF" stroke-opacity=".42" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M151 153 C158 149 167 151 171 158 M218 167 C227 164 235 168 239 174 M190 202 C196 200 202 203 205 208" stroke="#2D8BB9" stroke-opacity=".28" stroke-width="2.4" stroke-linecap="round"/>
+
+  <g fill="url(#drop)" stroke="url(#edge)" stroke-width="1.1">
+    <path d="M176 36 C183 31 192 38 194 48 C198 59 188 65 181 61 C172 57 169 42 176 36Z"/>
+    <path d="M52 112 C59 104 76 106 82 115 C88 123 79 129 67 127 C54 125 47 119 52 112Z"/>
+    <path d="M103 86 C109 80 117 84 116 91 C116 99 108 100 103 95 C99 91 100 88 103 86Z"/>
+    <path d="M287 107 C294 100 303 102 301 110 C299 120 290 124 286 121 C282 118 283 112 287 107Z"/>
+    <path d="M331 185 C335 180 345 181 349 186 C355 193 347 198 341 197 C333 198 327 191 331 185Z"/>
+    <path d="M104 271 C107 266 117 262 120 266 C124 273 118 283 110 283 C101 282 100 276 104 271Z"/>
+    <path d="M301 283 C309 280 320 291 326 301 C333 312 328 317 320 315 C310 312 301 300 299 290 C298 287 299 284 301 283Z"/>
+    <path d="M164 288 C170 284 176 286 176 291 C176 299 170 303 164 301 C158 298 159 292 164 288Z"/>
+    <path d="M264 300 C267 297 274 300 275 306 C276 312 271 316 266 312 C261 309 260 303 264 300Z"/>
+  </g>
+  <g fill="url(#drop)" stroke="url(#edge)" stroke-width=".8">
+    <circle cx="190" cy="72" r="4"/><circle cx="88" cy="132" r="4"/><circle cx="82" cy="195" r="5"/>
+    <circle cx="101" cy="235" r="4"/><circle cx="321" cy="235" r="5"/><circle cx="349" cy="241" r="4"/>
+    <circle cx="284" cy="137" r="3"/><circle cx="180" cy="286" r="3"/>
+  </g>
+</svg>

@@ -1,34 +1,11 @@
 import {
   symbol_002 as imported,
-  symbol_069 as imported_2,
-  symbol_073 as imported_3,
-  symbol_044 as imported_4,
-  symbol_086 as imported_5,
-  symbol_045 as imported_6,
+  symbol_223 as imported_2,
+  symbol_276 as imported_3,
+  symbol_076 as imported_4,
+  symbol_077 as imported_5,
+  symbol_289 as imported_6,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_e2a47d41 = "c_frame";
 const local_30e69e8f = "c_raised";
 const local_4ae1eafe = {
@@ -36,16 +13,16 @@ const local_4ae1eafe = {
   raised: local_30e69e8f,
 };
 const local_bcced4d6 = "/public/shop";
-function fn_d9068f76() {
+function fn_96ef6b05() {
   const local = window.location.pathname.replace(/^\/shop\/?/, "");
   if (local) {
     return `${local_bcced4d6}/${local}${window.location.search}`;
   }
   return `${local_bcced4d6}/`;
 }
-export function fn_29449b32(arg) {
+export function fn_bc6f63b1(arg) {
   const local = imported(null);
-  const local_2 = imported(fn_d9068f76()).current;
+  const local_2 = imported(fn_96ef6b05()).current;
   const [local_3, local_4] = imported_2(false);
   const local_5 = imported(window.location.pathname.replace(/^\/shop\/?/, ""));
   imported_3(() => {
@@ -55,7 +32,7 @@ export function fn_29449b32(arg) {
         local.postMessage(
           {
             type: "itd-shop:auth",
-            token: imported_6(),
+            token: imported_5(),
           },
           window.location.origin,
         );
@@ -157,7 +134,7 @@ export function fn_29449b32(arg) {
       );
     }
   });
-  return imported_5("iframe", {
+  return imported_6("iframe", {
     ref: local,
     className: `${local_4ae1eafe.frame} ${local_3 ? local_4ae1eafe.raised : ""}`,
     src: local_2,

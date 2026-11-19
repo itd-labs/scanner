@@ -36,14 +36,56 @@
   transition: opacity 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   animation: none;
 }
+.c_viewer.c_fadeClosing .c_slide,
+.c_viewer.c_fadeClosing .c_mobileSlide {
+  opacity: 0;
+  transition: opacity 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+}
 .c_backdrop {
   position: absolute;
   inset: 0;
-  background: #000000eb;
+  background: #000;
   pointer-events: none;
   animation: keyframe_1 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   opacity: var(--opacity, 1);
   transition: var(--opacity-transition, none);
+}
+.c_toolbar {
+  position: absolute;
+  z-index: 5;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+.c_toolbar button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #555;
+  border-radius: 50%;
+  color: #fff;
+  background: #242424;
+  cursor: pointer;
+}
+.c_toolbar button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+.c_toolbar button:hover {
+  background: #383838;
+}
+.c_toolbar button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.c_counter {
+  margin-right: 8px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
 }
 @keyframes keyframe_1 {
   0% {

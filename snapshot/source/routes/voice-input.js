@@ -1,36 +1,14 @@
 import {
-  symbol_069 as imported,
+  symbol_223 as imported,
   symbol_002 as imported_2,
-  symbol_073 as imported_3,
-  symbol_082 as imported_4,
-  symbol_086 as imported_5,
-  a5 as imported_6,
-  aD as imported_7,
+  symbol_276 as imported_3,
+  symbol_285 as imported_4,
+  symbol_289 as imported_5,
+  symbol_075 as imported_6,
+  symbol_142 as imported_7,
 } from "../entry.js";
 import { I as imported_8, a as imported_9 } from "../components/icon-play.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_10 } from "../components/icon-stop.js";
 function fn_3506a85a() {
   const [local, local_2] = imported(false);
   const [local_3, local_4] = imported(false);
@@ -424,22 +402,6 @@ function fn_3506a85a() {
     getAudioBlob: local_43,
   };
 }
-const local_1a7005fc = ({ size: arg = 16 }) =>
-  imported_5("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 16 16",
-    children: imported_5("rect", {
-      width: "10",
-      height: "10",
-      x: "3",
-      y: "3",
-      fill: "currentColor",
-      rx: "3",
-    }),
-  });
 const local_f06debfc = 2;
 const local_f06debfc_2 = 2;
 const local_84cb9055 = local_f06debfc + local_f06debfc_2;
@@ -447,7 +409,7 @@ const local_f06debfc_3 = 24;
 const local_f06debfc_4 = 80;
 const local_15086922 = "rgba(142, 142, 147, 0.6)";
 const local_3a5b5f52 = "#FFFFFF";
-function fn_0eea54e7({
+function fn_f381911d({
   levels: arg,
   slideOffset: arg_2,
   audioRef: arg_3,
@@ -755,7 +717,7 @@ const local_c9c49b86 = {
   recordingTime: local_21b2c703,
   exiting: local_8a90869a,
 };
-export function fn_2e6e364c({
+export function fn_03a40ed7({
   onCancel: arg,
   onSend: arg_2,
   isExiting: arg_3,
@@ -864,7 +826,7 @@ export function fn_2e6e364c({
         children: [
           imported_5("div", {
             className: local_c9c49b86.waveformContainer,
-            children: imported_5(fn_0eea54e7, {
+            children: imported_5(fn_f381911d, {
               levels: local_6,
               slideOffset: local_7,
               audioRef: local_11,
@@ -884,7 +846,7 @@ export function fn_2e6e364c({
       imported_5("button", {
         className: `${local_c9c49b86.circleButton} ${local_c9c49b86.stopButton}`,
         onClick: local_21,
-        children: imported_5(local_1a7005fc, {
+        children: imported_5(imported_10, {
           size: 20,
         }),
       }),

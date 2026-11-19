@@ -1,44 +1,14 @@
 import {
   symbol_037 as imported,
-  symbol_021 as imported_2,
-  symbol_069 as imported_3,
+  symbol_048 as imported_2,
+  symbol_223 as imported_3,
   symbol_002 as imported_4,
-  symbol_073 as imported_5,
-  symbol_082 as imported_6,
-  symbol_086 as imported_7,
-  symbol_041 as imported_8,
+  symbol_276 as imported_5,
+  symbol_285 as imported_6,
+  symbol_289 as imported_7,
+  symbol_049 as imported_8,
 } from "../entry.js";
 import { I as imported_9, a as imported_10 } from "../components/icon-play.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
-const local_57f57962 = imported((arg) => ({
-  activeAudioId: null,
-  setActiveAudio: (arg) =>
-    arg({
-      activeAudioId: arg,
-    }),
-}));
 const local_0ee2786e = "c_voiceMessage";
 const local_66fefc28 = "c_playButton";
 const local_4d84dbb6 = "c_content";
@@ -81,7 +51,7 @@ function fn_9c291bbd(arg) {
   }
   return local;
 }
-function fn_b5bf2c3a(arg) {
+function fn_a714fa83(arg) {
   if (!isFinite(arg) || isNaN(arg)) {
     return "0:00";
   }
@@ -89,11 +59,11 @@ function fn_b5bf2c3a(arg) {
   const local_2 = Math.floor(arg % 60);
   return `${local}:${local_2.toString().padStart(2, "0")}`;
 }
-export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
-  const local = imported_2(() => arg, [arg]);
-  const local_2 = imported_2(() => fn_9c291bbd(arg), [arg]);
-  const local_3 = local_57f57962((arg) => arg.activeAudioId);
-  const local_4 = local_57f57962((arg) => arg.setActiveAudio);
+export function fn_fb516f66({ src: arg, duration: arg_2 = 0 }) {
+  const local = imported(() => arg, [arg]);
+  const local_2 = imported(() => fn_9c291bbd(arg), [arg]);
+  const local_3 = imported_2((arg) => arg.activeAudioId);
+  const local_4 = imported_2((arg) => arg.setActiveAudio);
   const [local_5, local_6] = imported_3(true);
   const [local_7, local_8] = imported_3(0);
   const [local_9, local_10] = imported_3(arg_2);
@@ -141,7 +111,7 @@ export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
       if (local_15.current) {
         cancelAnimationFrame(local_15.current);
       }
-      if (local_57f57962.getState().activeAudioId === local) {
+      if (imported_2.getState().activeAudioId === local) {
         local_4(null);
       }
     };
@@ -271,14 +241,14 @@ export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
             children: [
               imported_7("span", {
                 className: local_92418e80.time,
-                children: fn_b5bf2c3a(
+                children: fn_a714fa83(
                   local_16 || local_7 > 0 ? local_7 : local_9,
                 ),
               }),
               (local_16 || local_7 > 0) &&
                 imported_7("span", {
                   className: local_92418e80.duration,
-                  children: ["../site/index.html", fn_b5bf2c3a(local_9)],
+                  children: ["../site/index.html", fn_a714fa83(local_9)],
                 }),
             ],
           }),
@@ -287,4 +257,4 @@ export function fn_5eac85a0({ src: arg, duration: arg_2 = 0 }) {
     ],
   });
 }
-export { fn_5eac85a0 as default };
+export { fn_fb516f66 as default };

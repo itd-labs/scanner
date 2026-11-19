@@ -1,98 +1,261 @@
 import {
-  symbol_037 as imported,
-  aF as imported_2,
-  symbol_086 as imported_3,
-  symbol_035 as imported_4,
-  a7 as imported_5,
-  symbol_069 as imported_6,
-  symbol_003 as imported_7,
-  symbol_050 as imported_8,
-  symbol_014 as imported_9,
-  az as imported_10,
-  symbol_088 as imported_11,
-  symbol_089 as imported_12,
-  symbol_048 as imported_13,
-  aG as imported_14,
-  aB as imported_15,
-  aH as imported_16,
-  symbol_079 as imported_17,
-  symbol_004 as imported_18,
-  symbol_038 as imported_19,
-  symbol_002 as imported_20,
-  symbol_073 as imported_21,
-  symbol_080 as imported_22,
-  symbol_082 as imported_23,
-  aJ as imported_24,
-  a5 as imported_25,
-  symbol_020 as imported_26,
-  aK as imported_27,
-  symbol_070 as imported_28,
-  symbol_001 as imported_29,
-  symbol_074 as imported_30,
-  symbol_071 as imported_31,
-  symbol_027 as imported_32,
-  aL as imported_33,
-  symbol_085 as imported_34,
-  symbol_078 as imported_35,
-  aM as imported_36,
-  symbol_062 as imported_37,
-  symbol_039 as imported_38,
-  aO as imported_39,
-  symbol_051 as imported_40,
-  aP as imported_41,
-  symbol_054 as imported_42,
-  symbol_057 as imported_43,
-  aj as imported_44,
-  ak as imported_45,
-  symbol_053 as imported_46,
-  symbol_052 as imported_47,
-  symbol_055 as imported_48,
-  aA as imported_49,
-  aQ as imported_50,
-  symbol_056 as imported_51,
-  aq as imported_52,
-  symbol_060 as imported_53,
-  symbol_061 as imported_54,
-  symbol_063 as imported_55,
-  symbol_040 as imported_56,
-  symbol_041 as imported_57,
-  symbol_042 as imported_58,
-  symbol_032 as imported_59,
-  aU as imported_60,
-  symbol_090 as imported_61,
-  aV as imported_62,
-  symbol_084 as imported_63,
-  symbol_019 as useSettingsStore,
+  symbol_289 as imported,
+  symbol_097 as imported_2,
+  symbol_166 as imported_3,
+  symbol_167 as imported_4,
+  symbol_103 as imported_5,
+  symbol_022 as imported_6,
+  symbol_023 as imported_7,
+  symbol_223 as imported_8,
+  symbol_003 as imported_9,
+  symbol_275 as imported_10,
+  symbol_084 as imported_11,
+  symbol_080 as imported_12,
+  symbol_012 as imported_13,
+  symbol_081 as imported_14,
+  symbol_082 as imported_15,
+  symbol_168 as imported_16,
+  symbol_137 as imported_17,
+  symbol_169 as imported_18,
+  symbol_053 as imported_19,
+  symbol_148 as imported_20,
+  symbol_197 as imported_21,
+  symbol_002 as imported_22,
+  symbol_276 as imported_23,
+  symbol_090 as imported_24,
+  symbol_285 as imported_25,
+  symbol_198 as imported_26,
+  symbol_075 as imported_27,
+  symbol_020 as imported_28,
+  symbol_199 as imported_29,
+  symbol_001 as imported_30,
+  symbol_140 as subscriptionApi,
+  symbol_061 as imported_31,
+  symbol_046 as imported_32,
+  symbol_200 as imported_33,
+  symbol_006 as imported_34,
+  symbol_007 as imported_35,
+  symbol_201 as imported_36,
+  symbol_098 as imported_37,
+  symbol_291 as imported_38,
+  symbol_202 as imported_39,
+  symbol_287 as imported_40,
+  symbol_279 as imported_41,
+  symbol_029 as imported_42,
+  symbol_094 as imported_43,
+  symbol_158 as imported_44,
+  symbol_290 as imported_45,
+  symbol_017 as imported_46,
+  symbol_083 as imported_47,
+  symbol_203 as imported_48,
+  symbol_278 as imported_49,
+  symbol_280 as imported_50,
+  symbol_293 as imported_51,
+  symbol_294 as imported_52,
+  symbol_008 as imported_53,
+  symbol_204 as imported_54,
+  symbol_128 as imported_55,
+  symbol_049 as imported_56,
+  symbol_104 as imported_57,
+  symbol_066 as imported_58,
+  symbol_205 as imported_59,
+  symbol_096 as imported_60,
+  symbol_073 as imported_61,
+  symbol_085 as imported_62,
+  symbol_118 as imported_63,
+  symbol_099 as imported_64,
+  symbol_032 as imported_65,
+  symbol_129 as imported_66,
+  symbol_206 as imported_67,
+  symbol_130 as imported_68,
+  symbol_068 as useSettingsStore,
 } from "../entry.js";
-import { C as imported_64 } from "../shared/index-bkpoiy5w-portal20261026.js";
-import { I as imported_65 } from "../components/icon-info.js";
-import { s as imported_66 } from "../shared/phone-access.js";
-import { I as imported_67 } from "../components/icon-notification-mention.js";
-import { I as imported_68 } from "../components/icon-chevron-right.js";
-import { I as imported_69 } from "../components/icon-chevron-left.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { G as GiftSubscriptionModal } from "../shared/chunk-7229b2be5161.js";
+import { M as imported_69 } from "../shared/mobile-subscription-warning.js";
+import { ConfirmModal as imported_70 } from "../shared/chunk-842b5763c39c.js";
+import {
+  symbol_002 as SubscriptionModal,
+  symbol_001 as imported_71,
+} from "../shared/chunk-1666d5f9c5d4.js";
+import { I as imported_72 } from "../components/icon-chevron-down.js";
+import { I as imported_73 } from "../components/icon-chevron-right.js";
+import { I as imported_74 } from "../components/icon-chevron-left.js";
+import "../shared/use-purchase-dialog.js";
+import "../components/icon-info.js";
+const local_a008ba72 = ({ size: arg = 18 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 18 18",
+    children: [
+      imported("path", {
+        fill: "currentColor",
+        d: "M7.17 14.288c.03.12.064.238.102.354.213.661.543 1.251.926 1.772a3.964 3.964 0 0 1-2.036-1.164.573.573 0 0 1-.094-.67.654.654 0 0 1 .626-.328c.16.014.32.025.477.036ZM9.002 1.5c3.602 0 5.222 3.092 5.222 5.286 0 .277-.008.517-.015.74-.006.202-.011.384-.01.56-.253.05-.49.126-.706.213a3.832 3.832 0 0 0-.803-.23v.001a5.083 5.083 0 0 0-2.274.149l-.009.003-.01.003c-2.594.808-3.54 3.168-3.364 5.22-1.696-.11-3.138-.427-3.744-1.285-.346-.489-.38-1.091-.101-1.787.651-1.392.635-1.909.605-2.848a21.233 21.233 0 0 1-.015-.739c0-2.194 1.621-5.286 5.224-5.286Z",
+      }),
+      imported("path", {
+        fill: "currentColor",
+        fillRule: "evenodd",
+        d: "M17.758 11.709a2.743 2.743 0 0 0-1.751-1.575 3.024 3.024 0 0 0-1.38-.095c-.423.069-.806.313-1.128.54-.311-.218-.704-.466-1.129-.535a3.083 3.083 0 0 0-1.378.09c-1.768.55-2.312 2.412-1.818 3.893.77 2.377 4.084 3.888 4.225 3.952a.247.247 0 0 0 .2 0c.139-.063 3.404-1.548 4.22-3.95.261-.783.239-1.607-.061-2.32Z",
+        clipRule: "evenodd",
+      }),
+    ],
+  });
+const local_8b78497b = ({ size: arg = 18 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 18 18",
+    children: [
+      imported("path", {
+        fill: "currentColor",
+        d: "M6.694 14.252c.453.038.891.066 1.317.084.034.63.168 1.26.406 1.864-.021.07-.043.153-.065.243a3.946 3.946 0 0 1-2.19-1.193.573.573 0 0 1-.094-.67.654.654 0 0 1 .626-.328ZM9.001 1.5c3.602 0 5.222 3.092 5.222 5.286 0 .277-.008.517-.015.74-.005.17-.01.327-.01.477a5.988 5.988 0 0 0-4.44 1.75l-.001.002a6.01 6.01 0 0 0-1.734 3.733c-2.108-.05-4.014-.307-4.735-1.328-.346-.489-.38-1.091-.101-1.787.651-1.392.635-1.909.605-2.848a21.233 21.233 0 0 1-.015-.739c0-2.194 1.621-5.286 5.224-5.286Zm1.963 9.894a3.977 3.977 0 0 0-.004.004l.004-.004Z",
+      }),
+      imported("path", {
+        fill: "currentColor",
+        fillRule: "evenodd",
+        d: "M16.83 11.17a4.008 4.008 0 0 0-5.659 0 4.017 4.017 0 0 0-.805 4.506c.077.192.132.337.132.456 0 .141-.06.316-.117.486-.111.327-.238.698.034.969.27.271.642.143.97.031.167-.057.34-.117.48-.117.122 0 .277.062.455.134a4.019 4.019 0 0 0 4.51-.807 4.007 4.007 0 0 0 0-5.659Z",
+        clipRule: "evenodd",
+      }),
+    ],
+  });
+const local_eb61682a = ({ size: arg = 18 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 18 18",
+    children: [
+      imported("path", {
+        fill: "currentColor",
+        d: "M6.694 14.252c.479.04.941.069 1.389.087a4.72 4.72 0 0 0 .067 2.063 3.968 3.968 0 0 1-1.988-1.152.573.573 0 0 1-.094-.67.654.654 0 0 1 .626-.328ZM9.001 1.5c3.269 0 4.905 2.546 5.18 4.657-1.042.362-1.842 1.336-1.842 2.559v1.764c-1.79.208-3.352 1.368-4.009 3.012-2.228-.033-4.286-.261-5.042-1.332-.346-.489-.38-1.091-.101-1.787.651-1.392.635-1.909.605-2.848a21.233 21.233 0 0 1-.015-.739c0-2.194 1.621-5.286 5.224-5.286Zm3.919 10.944a2.894 2.894 0 0 1 .191.007l-.191-.007Z",
+      }),
+      imported("path", {
+        fill: "currentColor",
+        fillRule: "evenodd",
+        d: "M15.835 15.172c0-.01.006-.018.006-.028v-4.477a3.56 3.56 0 0 0 1.259.5c.404.077.801-.17.885-.556.083-.387-.18-.764-.586-.842-1.136-.22-1.591-1.27-1.608-1.31a.756.756 0 0 0-.838-.446.725.725 0 0 0-.614.703v4.094a2.99 2.99 0 0 0-1.42-.365c-1.61 0-2.919 1.246-2.919 2.778C10 16.754 11.31 18 12.92 18c1.61 0 2.92-1.245 2.92-2.777 0-.018-.005-.033-.005-.051Z",
+        clipRule: "evenodd",
+      }),
+    ],
+  });
+const local_c1f17bb2 = ({ size: arg = 18 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 18 18",
+    children: [
+      imported("path", {
+        fill: "currentColor",
+        d: "M6.694 14.252C7.151 14.291 7.593 14.318 8.021 14.336 8.121 15.23 8.613 16.004 9.322 16.484 9.215 16.494 9.106 16.5 8.997 16.5H8.995C7.933 16.5 6.927 16.055 6.162 15.25 6.077 15.163 6.023 15.051 6.006 14.931 5.989 14.81 6.011 14.687 6.068 14.58 6.186 14.36 6.439 14.233 6.694 14.252ZM9.001 1.5C12.603 1.5 14.223 4.592 14.223 6.786 14.223 7.063 14.216 7.303 14.208 7.525 14.203 7.697 14.199 7.855 14.198 8.007 14.133 8.003 14.067 8 14 8 12.343 8 11 9.343 11 11 9.517 11 8.287 12.076 8.045 13.489 5.928 13.44 4.012 13.185 3.288 12.16 2.942 11.671 2.908 11.069 3.187 10.373 3.838 8.981 3.822 8.464 3.792 7.525 3.784 7.303 3.777 7.062 3.777 6.786 3.777 4.592 5.398 1.5 9.001 1.5ZM13 11C13 10.448 13.448 10 14 10 14.552 10 15 10.448 15 11V17C15 17.552 14.552 18 14 18 13.448 18 13 17.552 13 17V11Z",
+      }),
+      imported("path", {
+        fill: "currentColor",
+        d: "M11 15C10.4477 15 10 14.5523 10 14C10 13.4477 10.4477 13 11 13H17C17.5523 13 18 13.4477 18 14C18 14.5523 17.5523 15 17 15H11Z",
+      }),
+    ],
+  });
+const local_0ead779e = ({ size: arg = 24 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 24 24",
+    children: [
+      imported("rect", {
+        width: "20",
+        height: "14",
+        x: "2",
+        y: "5",
+        rx: "2",
+        stroke: "currentColor",
+        strokeWidth: "2",
+      }),
+      imported("path", {
+        stroke: "currentColor",
+        strokeLinecap: "round",
+        strokeWidth: "2",
+        d: "M2 10h20",
+      }),
+    ],
+  });
+const local_fb3663a3 = ({ size: arg = 24 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 24 24",
+    children: imported("path", {
+      fill: "currentColor",
+      fillRule: "evenodd",
+      d: "M18.723 10.043a.918.918 0 0 0-.658-.261c-1.069 0-1.939.832-1.939 1.853 0 .015 0 .049-.004.06l-.008 1.876c0 .22-.18.392-.41.392a.397.397 0 0 1-.41-.392V5.948c0-.366-.153-.722-.42-.98-.548-.52-1.48-.523-2.045.003-.27.27-.42.618-.42.977v5.034a.401.401 0 0 1-.409.391c-.219 0-.41-.182-.41-.391v-6.61a1.342 1.342 0 0 0-.422-.968 1.408 1.408 0 0 0-.471-.3 1.513 1.513 0 0 0-1.098-.001 1.426 1.426 0 0 0-.783.747c-.072.156-.11.342-.11.522v6.61a.401.401 0 0 1-.41.391c-.219 0-.41-.182-.41-.391V7.126c0-.736-.671-1.382-1.438-1.382C5.677 5.744 5 6.385 5 7.116v7.276c.023 1.768.759 3.426 2.074 4.67A7.162 7.162 0 0 0 12 21a7.16 7.16 0 0 0 4.926-1.937c1.315-1.245 2.052-2.907 2.074-4.684v-3.704c0-.241-.097-.461-.277-.632Z",
+      clipRule: "evenodd",
+    }),
+  });
+const local_840b6115 = ({ size: arg = 24 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    children: imported("path", {
+      fill: "currentColor",
+      d: "M16.5 3q5.4.1 5.5 5.4h-4.2c-2 0-3.6 1.6-3.6 3.5s1.6 3.4 3.6 3.4H22v.4q-.1 5.1-5.5 5.3h-9Q2 20.8 2 15.7V8.3Q2.1 3.2 7.5 3zm4.8 6.9q.6 0 .7.7v2.5q0 .7-.7.8h-3.5q-1.6-.1-2-1.6a2 2 0 0 1 .4-1.7 2 2 0 0 1 1.6-.7zm-3 1.1h-.4q-.3 0-.5.3-.2.1-.2.5 0 .6.7.7h.3q.8 0 .8-.7t-.8-.8m-6-4.1H6.8q-.6 0-.7.7t.7.8h5.7q.6-.1.7-.8t-.7-.7",
+    }),
+  });
+const local_8b255c95 = ({ size: arg = 24 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 24 24",
+    children: imported("path", {
+      fill: "currentColor",
+      fillRule: "evenodd",
+      d: "M18.532 5.497C17.905 4.83 12.91 3 12 3c-.91 0-5.906 1.83-6.532 2.498-.497.533-.491.944-.452 3.218.016.923.037 2.18.037 3.919 0 6.07 6.75 8.322 6.818 8.345a.424.424 0 0 0 .258 0c.068-.023 6.818-2.276 6.818-8.345 0-1.735.021-2.99.037-3.912.038-2.28.046-2.691-.453-3.226Z",
+      clipRule: "evenodd",
+    }),
+  });
+const local_2db7ffcd = ({ size: arg = 24 }) =>
+  imported("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: arg,
+    height: arg,
+    fill: "none",
+    viewBox: "0 0 24 24",
+    children: [
+      imported("path", {
+        stroke: "currentColor",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: "2",
+        d: "M21 12V7H5a2 2 0 0 1 0-4h14v4",
+      }),
+      imported("path", {
+        stroke: "currentColor",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: "2",
+        d: "M3 5v14a2 2 0 0 0 2 2h16v-5",
+      }),
+      imported("path", {
+        stroke: "currentColor",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: "2",
+        d: "M18 12a2 2 0 0 0 0 4h4v-4h-4Z",
+      }),
+    ],
+  });
 const local_4942f276 = () => {
   if (
     typeof window !== "undefined" &&
@@ -102,12 +265,16 @@ const local_4942f276 = () => {
   }
   return "light";
 };
-const local_fe95a305 = () => {
+const local_cbde8c94 = () => {
   if (typeof window !== "undefined") {
-    const local = localStorage.getItem("theme-storage");
+    const local = imported_5.getItem("theme-storage");
     if (local) {
       try {
-        return JSON.parse(local).state?.theme || "system";
+        const local = JSON.parse(local).state?.theme;
+        if (local === "light" || local === "dark") {
+          return local;
+        }
+        return "system";
       } catch {
         return "system";
       }
@@ -119,10 +286,10 @@ const local_655b2db1 = (arg) => {
   const local = arg === "system" ? local_4942f276() : arg;
   document.documentElement.setAttribute("data-theme", local);
 };
-const local_5e175cca = imported()(
-  imported_2(
+const local_703810da = imported_2()(
+  imported_3(
     (arg) => ({
-      theme: local_fe95a305(),
+      theme: local_cbde8c94(),
       setTheme: (arg) => {
         local_655b2db1(arg);
         arg({
@@ -140,6 +307,7 @@ const local_5e175cca = imported()(
     }),
     {
       name: "theme-storage",
+      storage: imported_4(() => imported_5),
       onRehydrateStorage: () => (arg) => {
         if (arg?.theme) {
           local_655b2db1(arg.theme);
@@ -152,240 +320,25 @@ if (typeof window !== "undefined") {
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", () => {
-      if (local_5e175cca.getState().theme === "system") {
+      if (local_703810da.getState().theme === "system") {
         local_655b2db1("system");
       }
     });
 }
-const local_a008ba72 = ({ size: arg = 18 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 18 18",
-    children: [
-      imported_3("path", {
-        fill: "currentColor",
-        d: "M7.17 14.288c.03.12.064.238.102.354.213.661.543 1.251.926 1.772a3.964 3.964 0 0 1-2.036-1.164.573.573 0 0 1-.094-.67.654.654 0 0 1 .626-.328c.16.014.32.025.477.036ZM9.002 1.5c3.602 0 5.222 3.092 5.222 5.286 0 .277-.008.517-.015.74-.006.202-.011.384-.01.56-.253.05-.49.126-.706.213a3.832 3.832 0 0 0-.803-.23v.001a5.083 5.083 0 0 0-2.274.149l-.009.003-.01.003c-2.594.808-3.54 3.168-3.364 5.22-1.696-.11-3.138-.427-3.744-1.285-.346-.489-.38-1.091-.101-1.787.651-1.392.635-1.909.605-2.848a21.233 21.233 0 0 1-.015-.739c0-2.194 1.621-5.286 5.224-5.286Z",
-      }),
-      imported_3("path", {
-        fill: "currentColor",
-        fillRule: "evenodd",
-        d: "M17.758 11.709a2.743 2.743 0 0 0-1.751-1.575 3.024 3.024 0 0 0-1.38-.095c-.423.069-.806.313-1.128.54-.311-.218-.704-.466-1.129-.535a3.083 3.083 0 0 0-1.378.09c-1.768.55-2.312 2.412-1.818 3.893.77 2.377 4.084 3.888 4.225 3.952a.247.247 0 0 0 .2 0c.139-.063 3.404-1.548 4.22-3.95.261-.783.239-1.607-.061-2.32Z",
-        clipRule: "evenodd",
-      }),
-    ],
-  });
-const local_8b78497b = ({ size: arg = 18 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 18 18",
-    children: [
-      imported_3("path", {
-        fill: "currentColor",
-        d: "M6.694 14.252c.453.038.891.066 1.317.084.034.63.168 1.26.406 1.864-.021.07-.043.153-.065.243a3.946 3.946 0 0 1-2.19-1.193.573.573 0 0 1-.094-.67.654.654 0 0 1 .626-.328ZM9.001 1.5c3.602 0 5.222 3.092 5.222 5.286 0 .277-.008.517-.015.74-.005.17-.01.327-.01.477a5.988 5.988 0 0 0-4.44 1.75l-.001.002a6.01 6.01 0 0 0-1.734 3.733c-2.108-.05-4.014-.307-4.735-1.328-.346-.489-.38-1.091-.101-1.787.651-1.392.635-1.909.605-2.848a21.233 21.233 0 0 1-.015-.739c0-2.194 1.621-5.286 5.224-5.286Zm1.963 9.894a3.977 3.977 0 0 0-.004.004l.004-.004Z",
-      }),
-      imported_3("path", {
-        fill: "currentColor",
-        fillRule: "evenodd",
-        d: "M16.83 11.17a4.008 4.008 0 0 0-5.659 0 4.017 4.017 0 0 0-.805 4.506c.077.192.132.337.132.456 0 .141-.06.316-.117.486-.111.327-.238.698.034.969.27.271.642.143.97.031.167-.057.34-.117.48-.117.122 0 .277.062.455.134a4.019 4.019 0 0 0 4.51-.807 4.007 4.007 0 0 0 0-5.659Z",
-        clipRule: "evenodd",
-      }),
-    ],
-  });
-const local_eb61682a = ({ size: arg = 18 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 18 18",
-    children: [
-      imported_3("path", {
-        fill: "currentColor",
-        d: "M6.694 14.252c.479.04.941.069 1.389.087a4.72 4.72 0 0 0 .067 2.063 3.968 3.968 0 0 1-1.988-1.152.573.573 0 0 1-.094-.67.654.654 0 0 1 .626-.328ZM9.001 1.5c3.269 0 4.905 2.546 5.18 4.657-1.042.362-1.842 1.336-1.842 2.559v1.764c-1.79.208-3.352 1.368-4.009 3.012-2.228-.033-4.286-.261-5.042-1.332-.346-.489-.38-1.091-.101-1.787.651-1.392.635-1.909.605-2.848a21.233 21.233 0 0 1-.015-.739c0-2.194 1.621-5.286 5.224-5.286Zm3.919 10.944a2.894 2.894 0 0 1 .191.007l-.191-.007Z",
-      }),
-      imported_3("path", {
-        fill: "currentColor",
-        fillRule: "evenodd",
-        d: "M15.835 15.172c0-.01.006-.018.006-.028v-4.477a3.56 3.56 0 0 0 1.259.5c.404.077.801-.17.885-.556.083-.387-.18-.764-.586-.842-1.136-.22-1.591-1.27-1.608-1.31a.756.756 0 0 0-.838-.446.725.725 0 0 0-.614.703v4.094a2.99 2.99 0 0 0-1.42-.365c-1.61 0-2.919 1.246-2.919 2.778C10 16.754 11.31 18 12.92 18c1.61 0 2.92-1.245 2.92-2.777 0-.018-.005-.033-.005-.051Z",
-        clipRule: "evenodd",
-      }),
-    ],
-  });
-const local_c1f17bb2 = ({ size: arg = 18 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 18 18",
-    children: [
-      imported_3("path", {
-        fill: "currentColor",
-        d: "M6.694 14.252C7.151 14.291 7.593 14.318 8.021 14.336 8.121 15.23 8.613 16.004 9.322 16.484 9.215 16.494 9.106 16.5 8.997 16.5H8.995C7.933 16.5 6.927 16.055 6.162 15.25 6.077 15.163 6.023 15.051 6.006 14.931 5.989 14.81 6.011 14.687 6.068 14.58 6.186 14.36 6.439 14.233 6.694 14.252ZM9.001 1.5C12.603 1.5 14.223 4.592 14.223 6.786 14.223 7.063 14.216 7.303 14.208 7.525 14.203 7.697 14.199 7.855 14.198 8.007 14.133 8.003 14.067 8 14 8 12.343 8 11 9.343 11 11 9.517 11 8.287 12.076 8.045 13.489 5.928 13.44 4.012 13.185 3.288 12.16 2.942 11.671 2.908 11.069 3.187 10.373 3.838 8.981 3.822 8.464 3.792 7.525 3.784 7.303 3.777 7.062 3.777 6.786 3.777 4.592 5.398 1.5 9.001 1.5ZM13 11C13 10.448 13.448 10 14 10 14.552 10 15 10.448 15 11V17C15 17.552 14.552 18 14 18 13.448 18 13 17.552 13 17V11Z",
-      }),
-      imported_3("path", {
-        fill: "currentColor",
-        d: "M11 15C10.4477 15 10 14.5523 10 14C10 13.4477 10.4477 13 11 13H17C17.5523 13 18 13.4477 18 14C18 14.5523 17.5523 15 17 15H11Z",
-      }),
-    ],
-  });
-const local_645d4878 = ({ size: arg = 24 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    children: imported_3("path", {
-      fill: "currentColor",
-      "fill-rule": "evenodd",
-      d: "M8.078 10.367c0-.01.006-.019.006-.029V5.636a3.46 3.46 0 0 0 1.257.526.749.749 0 1 0 .299-1.469c-1.135-.23-1.589-1.333-1.606-1.375a.75.75 0 0 0-1.45.269v4.3a2.873 2.873 0 0 0-1.418-.384 2.92 2.92 0 0 0-2.916 2.918 2.92 2.92 0 0 0 2.916 2.916 2.92 2.92 0 0 0 2.917-2.916c0-.019-.005-.035-.005-.054ZM21.75 6.503a.749.749 0 0 0-1.067-.68c-2.557 1.189-5.245 1.683-7.982 1.469a.752.752 0 0 0-.568.196.752.752 0 0 0-.24.55v7.697a2.866 2.866 0 0 0-1.402-.377 2.907 2.907 0 0 0-2.903 2.904 2.906 2.906 0 0 0 2.903 2.903 2.906 2.906 0 0 0 2.903-2.903v-6.925c.183.007.368.023.552.023 2.151 0 4.26-.427 6.303-1.228V14.2a2.87 2.87 0 0 0-1.403-.377 2.906 2.906 0 0 0-2.903 2.903 2.906 2.906 0 0 0 2.903 2.903 2.906 2.906 0 0 0 2.903-2.903V6.502Z",
-      "clip-rule": "evenodd",
-    }),
-  });
-const local_4c6f99c7 = ({ size: arg = 20 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    viewBox: "0 0 20 20",
-    fill: "none",
-    children: imported_3("path", {
-      fill: "currentColor",
-      d: "M9.905 2.501c2.422 0 4.113 1.669 4.113 4.06v6.88c0 2.39-1.69 4.06-4.113 4.06H4.113c-2.422 0-4.113-1.67-4.113-4.06V6.56c0-2.391 1.691-4.06 4.113-4.06zm8.053 2.379c.439-.223.954-.2 1.373.064.419.263.669.72.669 1.22v7.675a1.43 1.43 0 0 1-1.412 1.436c-.215 0-.43-.05-.631-.153l-1.481-.748a1.62 1.62 0 0 1-.888-1.457V7.085c0-.621.34-1.18.888-1.456z",
-    }),
-  });
-const local_0ead779e = ({ size: arg = 24 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 24 24",
-    children: [
-      imported_3("rect", {
-        width: "20",
-        height: "14",
-        x: "2",
-        y: "5",
-        rx: "2",
-        stroke: "currentColor",
-        strokeWidth: "2",
-      }),
-      imported_3("path", {
-        stroke: "currentColor",
-        strokeLinecap: "round",
-        strokeWidth: "2",
-        d: "M2 10h20",
-      }),
-    ],
-  });
-const local_6b96bea9 = ({ size: arg = 18 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 18 18",
-    children: imported_3("path", {
-      stroke: "currentColor",
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round",
-      "stroke-width": "2",
-      d: "m5 7 4 4 4-4",
-    }),
-  });
-const local_fb3663a3 = ({ size: arg = 24 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 24 24",
-    children: imported_3("path", {
-      fill: "currentColor",
-      fillRule: "evenodd",
-      d: "M18.723 10.043a.918.918 0 0 0-.658-.261c-1.069 0-1.939.832-1.939 1.853 0 .015 0 .049-.004.06l-.008 1.876c0 .22-.18.392-.41.392a.397.397 0 0 1-.41-.392V5.948c0-.366-.153-.722-.42-.98-.548-.52-1.48-.523-2.045.003-.27.27-.42.618-.42.977v5.034a.401.401 0 0 1-.409.391c-.219 0-.41-.182-.41-.391v-6.61a1.342 1.342 0 0 0-.422-.968 1.408 1.408 0 0 0-.471-.3 1.513 1.513 0 0 0-1.098-.001 1.426 1.426 0 0 0-.783.747c-.072.156-.11.342-.11.522v6.61a.401.401 0 0 1-.41.391c-.219 0-.41-.182-.41-.391V7.126c0-.736-.671-1.382-1.438-1.382C5.677 5.744 5 6.385 5 7.116v7.276c.023 1.768.759 3.426 2.074 4.67A7.162 7.162 0 0 0 12 21a7.16 7.16 0 0 0 4.926-1.937c1.315-1.245 2.052-2.907 2.074-4.684v-3.704c0-.241-.097-.461-.277-.632Z",
-      clipRule: "evenodd",
-    }),
-  });
-const local_840b6115 = ({ size: arg = 24 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    children: imported_3("path", {
-      fill: "currentColor",
-      d: "M16.5 3q5.4.1 5.5 5.4h-4.2c-2 0-3.6 1.6-3.6 3.5s1.6 3.4 3.6 3.4H22v.4q-.1 5.1-5.5 5.3h-9Q2 20.8 2 15.7V8.3Q2.1 3.2 7.5 3zm4.8 6.9q.6 0 .7.7v2.5q0 .7-.7.8h-3.5q-1.6-.1-2-1.6a2 2 0 0 1 .4-1.7 2 2 0 0 1 1.6-.7zm-3 1.1h-.4q-.3 0-.5.3-.2.1-.2.5 0 .6.7.7h.3q.8 0 .8-.7t-.8-.8m-6-4.1H6.8q-.6 0-.7.7t.7.8h5.7q.6-.1.7-.8t-.7-.7",
-    }),
-  });
-const local_8b255c95 = ({ size: arg = 24 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 24 24",
-    children: imported_3("path", {
-      fill: "currentColor",
-      fillRule: "evenodd",
-      d: "M18.532 5.497C17.905 4.83 12.91 3 12 3c-.91 0-5.906 1.83-6.532 2.498-.497.533-.491.944-.452 3.218.016.923.037 2.18.037 3.919 0 6.07 6.75 8.322 6.818 8.345a.424.424 0 0 0 .258 0c.068-.023 6.818-2.276 6.818-8.345 0-1.735.021-2.99.037-3.912.038-2.28.046-2.691-.453-3.226Z",
-      clipRule: "evenodd",
-    }),
-  });
-const local_2db7ffcd = ({ size: arg = 24 }) =>
-  imported_3("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: arg,
-    height: arg,
-    fill: "none",
-    viewBox: "0 0 24 24",
-    children: [
-      imported_3("path", {
-        stroke: "currentColor",
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
-        strokeWidth: "2",
-        d: "M21 12V7H5a2 2 0 0 1 0-4h14v4",
-      }),
-      imported_3("path", {
-        stroke: "currentColor",
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
-        strokeWidth: "2",
-        d: "M3 5v14a2 2 0 0 0 2 2h16v-5",
-      }),
-      imported_3("path", {
-        stroke: "currentColor",
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
-        strokeWidth: "2",
-        d: "M18 12a2 2 0 0 0 0 4h4v-4h-4Z",
-      }),
-    ],
-  });
 const local_4e84fc10 = "c_toggle";
 const local_6ab69625 = "c_active";
 const local_339f5c81 = {
   toggle: local_4e84fc10,
   active: local_6ab69625,
 };
-function fn_1d27b593({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
+function fn_0acfc694({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
   const local = (arg) => {
     arg.stopPropagation();
     if (!arg_3) {
       arg_2(!arg);
     }
   };
-  return imported_3("button", {
+  return imported("button", {
     type: "button",
     className: `${local_339f5c81.toggle} ${arg ? local_339f5c81.active : ""}`,
     onClick: local,
@@ -394,53 +347,19 @@ function fn_1d27b593({ checked: arg, onChange: arg_2, disabled: arg_3 }) {
     "aria-checked": arg,
   });
 }
-export const local_73f326c5 = {
-  async getStatus() {
-    return imported_4.get(imported_5.subscription.status);
-  },
-  async pay(arg) {
-    return imported_4.post(
-      imported_5.subscription.pay,
-      arg
-        ? {
-            methodId: arg,
-          }
-        : undefined,
-    );
-  },
-  async setAutoRenewal(arg) {
-    return imported_4.post(imported_5.subscription.autoRenewal, {
-      enabled: arg,
-    });
-  },
-  async bindCard(arg = "bank_card") {
-    return imported_4.post(imported_5.subscription.bindCard, {
-      type: arg,
-    });
-  },
-  async getMethods() {
-    return (await imported_4.get(imported_5.subscription.methods)).data;
-  },
-  async setDefaultMethod(arg) {
-    return imported_4.put(imported_5.subscription.methodDefault(arg));
-  },
-  async deleteMethod(arg) {
-    return imported_4.delete(imported_5.subscription.methodDelete(arg));
-  },
-};
 const local_96437191 = {
   async list() {
-    return (await imported_4.get(imported_5.sessions.list))?.sessions ?? [];
+    return (await imported_6.get(imported_7.sessions.list))?.sessions ?? [];
   },
   async revoke(arg, arg_2) {
-    await imported_4.delete(imported_5.sessions.revoke(arg));
+    await imported_6.delete(imported_7.sessions.revoke(arg));
     return {
       loggedOut: arg_2,
     };
   },
   async revokeOthers() {
     return (
-      (await imported_4.delete(imported_5.sessions.revokeOthers))
+      (await imported_6.delete(imported_7.sessions.revokeOthers))
         ?.revokedCount ?? 0
     );
   },
@@ -468,7 +387,7 @@ const local_3cccfc6a = {
   outline: local_29e5fdcf,
   errorText: local_bcebeb33,
 };
-function fn_ab02ca51({
+function fn_c0682123({
   value: arg,
   onChange: arg_2,
   label: arg_3,
@@ -482,29 +401,29 @@ function fn_ab02ca51({
   const local = (arg) => {
     arg_2?.(arg.currentTarget.value);
   };
-  return imported_3("div", {
+  return imported("div", {
     className: local_3cccfc6a.inputWrapper,
     children: [
       arg_3 &&
-        imported_3("label", {
+        imported("label", {
           className: local_3cccfc6a.label,
           children: [
             arg_3,
             arg_4 &&
-              imported_3("span", {
+              imported("span", {
                 className: local_3cccfc6a.hint,
                 children: arg_4,
               }),
           ],
         }),
-      imported_3("input", {
+      imported("input", {
         className: `${local_3cccfc6a.input} ${local_3cccfc6a[arg_6]} ${local_3cccfc6a[arg_7]} ${arg_5 ? local_3cccfc6a.error : ""} ${arg_8 || ""}`,
         value: arg,
         onInput: local,
         ...arg_9,
       }),
       arg_5 &&
-        imported_3("span", {
+        imported("span", {
           className: local_3cccfc6a.errorText,
           children: arg_5,
         }),
@@ -538,12 +457,12 @@ const local_b00398c6 = {
   actions: local_8c4f8b4b,
 };
 export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
-  const [local, local_2] = imported_6("");
-  const [local_3, local_4] = imported_6("");
-  const [local_5, local_6] = imported_6("");
-  const [local_7, local_8] = imported_6(false);
-  const [local_9, local_10] = imported_6(null);
-  const [local_11, local_12] = imported_6({});
+  const [local, local_2] = imported_8("");
+  const [local_3, local_4] = imported_8("");
+  const [local_5, local_6] = imported_8("");
+  const [local_7, local_8] = imported_8(false);
+  const [local_9, local_10] = imported_8(null);
+  const [local_11, local_12] = imported_8({});
   const local_13 = async (arg) => {
     arg.preventDefault();
     local_10(null);
@@ -568,15 +487,15 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
     }
     local_8(true);
     try {
-      await imported_10.changePassword({
+      await imported_12.changePassword({
         oldPassword: local,
         newPassword: local_3,
       });
-      await imported_11.getState().logout();
+      await imported_13.getState().logout();
       arg();
     } catch (error) {
-      if (imported_12(error)) {
-        if (error.code === imported_13.ACCOUNT_CURRENT_PASSWORD_INCORRECT) {
+      if (imported_14(error)) {
+        if (error.code === imported_15.ACCOUNT_CURRENT_PASSWORD_INCORRECT) {
           local_12({
             currentPassword: "Неверный текущий пароль",
           });
@@ -585,7 +504,7 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
             newPassword: "Новый пароль должен отличаться от текущего",
           });
         } else if (
-          error.code === imported_13.VALIDATION_ERROR &&
+          error.code === imported_15.VALIDATION_ERROR &&
           !error.errors
         ) {
           local_12({
@@ -598,12 +517,12 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
         } else if (error.errors) {
           const local = {};
           for (const [local, local_2] of Object.entries(error.errors)) {
-            local[local] = imported_14(local_2[0] || "Ошибка валидации");
+            local[local] = imported_16(local_2[0] || "Ошибка валидации");
           }
           local_12(local);
         } else {
           local_10(
-            imported_15(
+            imported_17(
               error.code,
               error.message || "Не удалось сменить пароль",
             ),
@@ -617,21 +536,21 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
     }
   };
   const local_14 = local.length > 0 && local_3.length > 0 && local_5.length > 0;
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     onClose: arg_2,
     title: "Смена пароля",
-    children: imported_3("form", {
+    children: imported("form", {
       onSubmit: local_13,
       className: local_b00398c6.form,
       children: [
-        imported_3("div", {
+        imported("div", {
           className: local_b00398c6.field,
           children: [
-            imported_3("label", {
+            imported("label", {
               className: local_b00398c6.label,
               children: "Текущий пароль",
             }),
-            imported_3(fn_ab02ca51, {
+            imported(fn_c0682123, {
               type: "password",
               value: local,
               onChange: local_2,
@@ -639,45 +558,45 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
               autoComplete: "current-password",
             }),
             local_11.currentPassword &&
-              imported_3("span", {
+              imported("span", {
                 className: local_b00398c6.fieldError,
                 children: local_11.currentPassword,
               }),
           ],
         }),
-        imported_3("div", {
+        imported("div", {
           className: local_b00398c6.field,
           children: [
-            imported_3("label", {
+            imported("label", {
               className: local_b00398c6.label,
               children: "Новый пароль",
             }),
-            imported_3(fn_ab02ca51, {
+            imported(fn_c0682123, {
               type: "password",
               value: local_3,
               onChange: local_4,
               placeholder: "Введите новый пароль",
               autoComplete: "new-password",
             }),
-            imported_3("span", {
+            imported("span", {
               className: local_b00398c6.hint,
               children: local_12bca483,
             }),
             local_11.newPassword &&
-              imported_3("span", {
+              imported("span", {
                 className: local_b00398c6.fieldError,
                 children: local_11.newPassword,
               }),
           ],
         }),
-        imported_3("div", {
+        imported("div", {
           className: local_b00398c6.field,
           children: [
-            imported_3("label", {
+            imported("label", {
               className: local_b00398c6.label,
               children: "Подтверждение пароля",
             }),
-            imported_3(fn_ab02ca51, {
+            imported(fn_c0682123, {
               type: "password",
               value: local_5,
               onChange: local_6,
@@ -685,35 +604,35 @@ export function fn_2572ab35({ onClose: arg, onBack: arg_2 }) {
               autoComplete: "new-password",
             }),
             local_11.confirmPassword &&
-              imported_3("span", {
+              imported("span", {
                 className: local_b00398c6.fieldError,
                 children: local_11.confirmPassword,
               }),
           ],
         }),
         local_9 &&
-          imported_3("div", {
+          imported("div", {
             className: local_b00398c6.error,
             children: local_9,
           }),
-        imported_3("div", {
+        imported("div", {
           className: local_b00398c6.actions,
           children: [
-            imported_3(imported_7, {
+            imported(imported_9, {
               type: "button",
               variant: "secondary",
               onClick: arg_2,
               disabled: local_7,
               children: "Отмена",
             }),
-            imported_3(imported_7, {
+            imported(imported_9, {
               type: "submit",
               disabled: !local_14 || local_7,
               children: local_7 ? "Сохранение..." : "Сменить пароль",
             }),
           ],
         }),
-        imported_3(imported_8, {}),
+        imported(imported_10, {}),
       ],
     }),
   });
@@ -728,30 +647,34 @@ const local_e5cc91d8 = {
   subtitle: local_8c84ac4c,
   actions: local_8c4f8b4b_2,
 };
-export function fn_aa48405c({ onClose: arg }) {
+export function fn_081d8787({ onClose: arg }) {
   const local = async () => {
-    await imported_11.getState().deleteAccount();
+    await imported_13.getState().deleteAccount();
     arg();
   };
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     onClose: arg,
     showHeader: false,
-    children: imported_3("div", {
+    children: imported("div", {
       className: local_e5cc91d8.content,
       children: [
-        imported_3("h2", {
+        imported("h2", {
           className: local_e5cc91d8.title,
           children: "Удалить аккаунт?",
         }),
-        imported_3("p", {
+        imported("p", {
           className: local_e5cc91d8.subtitle,
           children:
             "Вы действительно хотите удалить аккаунт? У вас будет 30 дней на восстановление аккаунта, если вы передумаете.",
         }),
-        imported_3("div", {
+        imported("p", {
+          className: local_e5cc91d8.subtitle,
+          children: imported(imported_69, {}),
+        }),
+        imported("div", {
           className: local_e5cc91d8.actions,
           children: [
-            imported_3(imported_7, {
+            imported(imported_9, {
               variant: "secondary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -759,7 +682,7 @@ export function fn_aa48405c({ onClose: arg }) {
               },
               children: "Отмена",
             }),
-            imported_3(imported_7, {
+            imported(imported_9, {
               variant: "danger",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -847,7 +770,7 @@ const local_427bce18 = "c_mobileMenuChevron";
 const local_c53d1077 = "c_mobileHeader";
 const local_33f43040 = "c_mobileBack";
 const local_57bda57c = "c_mobileHeaderTitle";
-const local_41ea1484 = {
+const local_98798dac = {
   modalContainer: local_42987ab2,
   settingsModal: local_e537bcb7,
   sidebar: local_80a09076,
@@ -923,85 +846,86 @@ const local_41ea1484 = {
   mobileBack: local_33f43040,
   mobileHeaderTitle: local_57bda57c,
 };
-const local_9a5a6683 = imported_16(function (
+const local_0a5f369b = imported_18(function (
   { onDirtyChange: arg, onSavingChange: arg_2, onClose: arg_3 },
   arg_4,
 ) {
-  const local = imported_11((arg) => arg.profile);
-  const local_2 = imported_11((arg) => arg.logout);
-  const { openModal: local_3, closeModal: local_4 } = imported_17();
-  const local_5 = imported_18();
-  const [local_6] = imported_19();
-  const local_7 = local_6?.url || window.location.pathname;
-  const [local_8, local_9] = imported_6(true);
-  const [local_10, local_11] = imported_6(false);
-  const [local_12, local_13] = imported_6(false);
-  const [local_14, local_15] = imported_6({});
-  const [local_16, local_17] = imported_6(null);
-  const [local_18, local_19] = imported_6(null);
-  const [local_20, local_21] = imported_6({
+  const local = imported_13((arg) => arg.profile);
+  const local_2 = imported_13((arg) => arg.logout);
+  const local_3 = imported_13((arg) => arg.isLoggingOut);
+  const { openModal: local_4, closeModal: local_5 } = imported_19();
+  const local_6 = imported_20();
+  const [local_7] = imported_21();
+  const local_8 = local_7?.url || window.location.pathname;
+  const [local_9, local_10] = imported_8(true);
+  const [local_11, local_12] = imported_8(false);
+  const [local_13, local_14] = imported_8(false);
+  const [local_15, local_16] = imported_8({});
+  const [local_17, local_18] = imported_8(null);
+  const [local_19, local_20] = imported_8(null);
+  const [local_21, local_22] = imported_8({
     name: "",
     username: "",
     bio: "",
     avatar: "😀",
   });
-  const [local_22, local_23] = imported_6([]);
-  const [local_24, local_25] = imported_6(null);
-  const local_26 = imported_20(null);
-  const [local_27, local_28] = imported_6(true);
-  imported_21(() => {
+  const [local_23, local_24] = imported_8([]);
+  const [local_25, local_26] = imported_8(null);
+  const local_27 = imported_22(null);
+  const [local_28, local_29] = imported_8(true);
+  imported_23(() => {
     if (local) {
       const local = {
         name: local.displayName,
         username: local.username || "",
         bio: local.bio || "",
-        avatar: local.avatar,
+        avatar: local.clanAvatar ?? local.avatar,
       };
-      local_21(local);
-      local_19(local);
-      local_9(false);
+      local_22(local);
+      local_20(local);
+      local_10(false);
       const local_2 = local.pin ?? null;
-      local_25(local_2);
-      local_26.current = local_2;
+      local_26(local_2);
+      local_27.current = local_2;
     }
   }, [local]);
-  imported_21(() => {
-    imported_22
+  imported_23(() => {
+    imported_24
       .getMyPins()
       .then((arg) => {
-        local_23(arg.pins);
-        if (arg.activePin && !local_26.current) {
+        local_24(arg.pins);
+        if (arg.activePin && !local_27.current) {
           const local = arg.pins.find((arg) => arg.slug === arg.activePin);
           if (local) {
-            local_25(local);
-            local_26.current = local;
+            local_26(local);
+            local_27.current = local;
           }
         }
       })
-      .catch(() => local_23([]))
-      .finally(() => local_28(false));
+      .catch(() => local_24([]))
+      .finally(() => local_29(false));
   }, []);
-  imported_21(() => {
-    arg(local_12);
-  }, [local_12]);
-  imported_21(() => {
-    arg_2(local_10);
-  }, [local_10]);
-  const local_29 = imported_23(
+  imported_23(() => {
+    arg(local_13);
+  }, [local_13]);
+  imported_23(() => {
+    arg_2(local_11);
+  }, [local_11]);
+  const local_30 = imported_25(
     (arg, arg_2) => {
-      if (!local_18) {
+      if (!local_19) {
         return false;
       }
-      const local = Object.keys(arg).some((arg) => arg[arg] !== local_18[arg]);
+      const local = Object.keys(arg).some((arg) => arg[arg] !== local_19[arg]);
       const local_2 =
-        (arg_2?.slug ?? null) !== (local_26.current?.slug ?? null);
+        (arg_2?.slug ?? null) !== (local_27.current?.slug ?? null);
       return local || local_2;
     },
-    [local_18],
+    [local_19],
   );
-  const local_30 = (arg, arg_2) => {
-    if (local_14[arg]) {
-      local_15((arg) => {
+  const local_31 = (arg, arg_2) => {
+    if (local_15[arg]) {
+      local_16((arg) => {
         const local = {
           ...arg,
         };
@@ -1009,296 +933,296 @@ const local_9a5a6683 = imported_16(function (
         return local;
       });
     }
-    local_17(null);
-    local_21((arg) => {
+    local_18(null);
+    local_22((arg) => {
       const local = {
         ...arg,
         [arg]: arg_2,
       };
-      local_13(local_29(local, local_24));
+      local_14(local_30(local, local_25));
       return local;
     });
   };
-  const local_31 = imported_23(
+  const local_32 = imported_25(
     (arg) => {
-      const local = local_24?.slug === arg.slug ? null : arg;
-      local_25(local);
-      local_13(local_29(local_20, local));
+      const local = local_25?.slug === arg.slug ? null : arg;
+      local_26(local);
+      local_14(local_30(local_21, local));
     },
-    [local_24, local_20, local_29],
+    [local_25, local_21, local_30],
   );
-  const local_32 = async () => {
-    if (!local_12 || local_10) {
+  const local_33 = async () => {
+    if (!local_13 || local_11) {
       return;
     }
-    local_11(true);
-    local_15({});
-    local_17(null);
-    const local = local_18?.username;
-    const local_2 = local_20.username;
+    local_12(true);
+    local_16({});
+    local_18(null);
+    const local = local_19?.username;
+    const local_2 = local_21.username;
     try {
       if (
-        local_18 &&
-        Object.keys(local_20).some((arg) => local_20[arg] !== local_18[arg])
+        local_19 &&
+        Object.keys(local_21).some((arg) => local_21[arg] !== local_19[arg])
       ) {
-        await imported_22.updateProfile({
-          displayName: local_20.name,
-          username: local_20.username || undefined,
-          bio: local_20.bio || null,
+        await imported_24.updateProfile({
+          displayName: local_21.name,
+          username: local_21.username || undefined,
+          bio: local_21.bio || null,
         });
       }
-      (local_24?.slug ?? null) !== (local_26.current?.slug ?? null) &&
-        (local_24
-          ? await imported_22.setActivePin(local_24.slug)
-          : await imported_22.removeActivePin());
-      local_19({
-        ...local_20,
+      (local_25?.slug ?? null) !== (local_27.current?.slug ?? null) &&
+        (local_25
+          ? await imported_24.setActivePin(local_25.slug)
+          : await imported_24.removeActivePin());
+      local_20({
+        ...local_21,
       });
-      local_26.current = local_24;
-      local_13(false);
-      const local = imported_11.getState().profile;
+      local_27.current = local_25;
+      local_14(false);
+      const local = imported_13.getState().profile;
       if (local) {
-        imported_11.getState().setProfile({
+        imported_13.getState().setProfile({
           ...local,
-          displayName: local_20.name,
-          username: local_20.username,
-          bio: local_20.bio || null,
-          pin: local_24,
+          displayName: local_21.name,
+          username: local_21.username,
+          bio: local_21.bio || null,
+          pin: local_25,
         });
       }
       if (
         local_2 &&
         local_2 !== local &&
-        (local_7 === `/@${local}` || local_7 === `/@${local?.id}`)
+        (local_8 === `/@${local}` || local_8 === `/@${local?.id}`)
       ) {
-        imported_28(`/@${local_2}`);
+        imported_30(`/@${local_2}`);
       }
     } catch (error) {
       console.error("Failed to save profile:", error);
-      if (imported_12(error)) {
+      if (imported_14(error)) {
         if (error.errors) {
           const local = {};
           for (const [local, local_2] of Object.entries(error.errors)) {
-            local[local] = imported_14(local_2[0] || "Ошибка валидации");
+            local[local] = imported_16(local_2[0] || "Ошибка валидации");
           }
-          local_15(local);
+          local_16(local);
         } else {
-          local_17(
-            imported_15(
+          local_18(
+            imported_17(
               error.code,
               error.message || "Не удалось сохранить изменения",
             ),
           );
         }
       } else {
-        local_17("Не удалось сохранить изменения");
+        local_18("Не удалось сохранить изменения");
       }
     } finally {
-      local_11(false);
+      local_12(false);
     }
   };
-  const local_33 = () => {
-    if (local_18) {
-      local_21({
-        ...local_18,
+  const local_34 = () => {
+    if (local_19) {
+      local_22({
+        ...local_19,
       });
-      local_25(local_26.current);
-      local_13(false);
+      local_26(local_27.current);
+      local_14(false);
     }
   };
-  imported_24(arg_4, () => ({
-    save: local_32,
-    discard: local_33,
+  imported_26(arg_4, () => ({
+    save: local_33,
+    discard: local_34,
   }));
-  if (local_8) {
-    return imported_3(imported_26, {
+  if (local_9) {
+    return imported(imported_28, {
       children: [
-        imported_3("h2", {
-          className: local_41ea1484.contentTitle,
+        imported("h2", {
+          className: local_98798dac.contentTitle,
           children: "Аккаунт",
         }),
-        imported_3(imported_25, {}),
+        imported(imported_27, {}),
       ],
     });
   }
-  return imported_3(imported_26, {
+  return imported(imported_28, {
     children: [
-      imported_3("h2", {
-        className: local_41ea1484.contentTitle,
+      imported("h2", {
+        className: local_98798dac.contentTitle,
         children: "Аккаунт",
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
-          imported_3("div", {
-            className: local_41ea1484.settingItem,
+          imported("div", {
+            className: local_98798dac.settingItem,
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
-                children: imported_3("div", {
-                  className: local_41ea1484.settingText,
+              imported("div", {
+                className: local_98798dac.settingInfo,
+                children: imported("div", {
+                  className: local_98798dac.settingText,
                   children: [
-                    imported_3("span", {
-                      className: local_41ea1484.settingTitle,
+                    imported("span", {
+                      className: local_98798dac.settingTitle,
                       children: "Эмоджи-клан",
                     }),
-                    imported_3("span", {
-                      className: local_41ea1484.settingDescription,
+                    imported("span", {
+                      className: local_98798dac.settingDescription,
                       children: "Выбран при регистрации. Изменить нельзя",
                     }),
                   ],
                 }),
               }),
-              imported_3("div", {
-                className: local_41ea1484.avatarDisplay,
-                children: local_20.avatar,
+              imported("div", {
+                className: local_98798dac.avatarDisplay,
+                children: local_21.avatar,
               }),
             ],
           }),
-          imported_3("div", {
-            className: local_41ea1484.settingItem,
+          imported("div", {
+            className: local_98798dac.settingItem,
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
-                children: imported_3("div", {
-                  className: local_41ea1484.settingText,
+              imported("div", {
+                className: local_98798dac.settingInfo,
+                children: imported("div", {
+                  className: local_98798dac.settingText,
                   children: [
-                    imported_3("span", {
-                      className: local_41ea1484.settingTitle,
+                    imported("span", {
+                      className: local_98798dac.settingTitle,
                       children: "Имя",
                     }),
-                    imported_3("span", {
-                      className: local_41ea1484.settingDescription,
+                    imported("span", {
+                      className: local_98798dac.settingDescription,
                       children: "Ваше отображаемое имя",
                     }),
                   ],
                 }),
               }),
-              imported_3("div", {
-                className: local_41ea1484.settingControl,
+              imported("div", {
+                className: local_98798dac.settingControl,
                 children: [
-                  imported_3(fn_ab02ca51, {
-                    value: local_20.name,
-                    onChange: (arg) => local_30("name", arg),
+                  imported(fn_c0682123, {
+                    value: local_21.name,
+                    onChange: (arg) => local_31("name", arg),
                   }),
-                  local_14.displayName &&
-                    imported_3("span", {
-                      className: local_41ea1484.fieldError,
-                      children: local_14.displayName,
+                  local_15.displayName &&
+                    imported("span", {
+                      className: local_98798dac.fieldError,
+                      children: local_15.displayName,
                     }),
                 ],
               }),
             ],
           }),
-          imported_3("div", {
-            className: local_41ea1484.settingItem,
+          imported("div", {
+            className: local_98798dac.settingItem,
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
-                children: imported_3("div", {
-                  className: local_41ea1484.settingText,
+              imported("div", {
+                className: local_98798dac.settingInfo,
+                children: imported("div", {
+                  className: local_98798dac.settingText,
                   children: [
-                    imported_3("span", {
-                      className: local_41ea1484.settingTitle,
+                    imported("span", {
+                      className: local_98798dac.settingTitle,
                       children: "Username",
                     }),
-                    imported_3("span", {
-                      className: local_41ea1484.settingDescription,
+                    imported("span", {
+                      className: local_98798dac.settingDescription,
                       children:
                         "Ваш уникальный идентификатор (только латиница, цифры и _)",
                     }),
                   ],
                 }),
               }),
-              imported_3("div", {
-                className: local_41ea1484.settingControl,
+              imported("div", {
+                className: local_98798dac.settingControl,
                 children: [
-                  imported_3(fn_ab02ca51, {
-                    value: local_20.username,
-                    onChange: (arg) => local_30("username", arg),
+                  imported(fn_c0682123, {
+                    value: local_21.username,
+                    onChange: (arg) => local_31("username", arg),
                   }),
-                  local_14.username &&
-                    imported_3("span", {
-                      className: local_41ea1484.fieldError,
-                      children: local_14.username,
+                  local_15.username &&
+                    imported("span", {
+                      className: local_98798dac.fieldError,
+                      children: local_15.username,
                     }),
                 ],
               }),
             ],
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.column}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.column}`,
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
-                children: imported_3("div", {
-                  className: local_41ea1484.settingText,
+              imported("div", {
+                className: local_98798dac.settingInfo,
+                children: imported("div", {
+                  className: local_98798dac.settingText,
                   children: [
-                    imported_3("span", {
-                      className: local_41ea1484.settingTitle,
+                    imported("span", {
+                      className: local_98798dac.settingTitle,
                       children: "О себе",
                     }),
-                    imported_3("span", {
-                      className: local_41ea1484.settingDescription,
+                    imported("span", {
+                      className: local_98798dac.settingDescription,
                       children: "Расскажите немного о себе",
                     }),
                   ],
                 }),
               }),
-              imported_3("textarea", {
-                className: local_41ea1484.bioTextarea,
-                value: local_20.bio,
-                onChange: (arg) => local_30("bio", arg.target.value),
+              imported("textarea", {
+                className: local_98798dac.bioTextarea,
+                value: local_21.bio,
+                onChange: (arg) => local_31("bio", arg.target.value),
                 placeholder: "Напиши что-нибудь о себе...",
                 rows: 3,
               }),
-              local_14.bio &&
-                imported_3("span", {
-                  className: local_41ea1484.fieldError,
-                  children: local_14.bio,
+              local_15.bio &&
+                imported("span", {
+                  className: local_98798dac.fieldError,
+                  children: local_15.bio,
                 }),
             ],
           }),
-          !local_27 &&
-            local_22.length > 0 &&
-            imported_3("div", {
-              className: `${local_41ea1484.settingItem} ${local_41ea1484.column}`,
+          !local_28 &&
+            local_23.length > 0 &&
+            imported("div", {
+              className: `${local_98798dac.settingItem} ${local_98798dac.column}`,
               children: [
-                imported_3("div", {
-                  className: local_41ea1484.settingInfo,
-                  children: imported_3("div", {
-                    className: local_41ea1484.settingText,
+                imported("div", {
+                  className: local_98798dac.settingInfo,
+                  children: imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Пин",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Отображается рядом с именем",
                       }),
                     ],
                   }),
                 }),
-                imported_3("div", {
-                  className: local_41ea1484.pinGrid,
-                  children: local_22.map((arg) =>
-                    imported_3(
+                imported("div", {
+                  className: local_98798dac.pinGrid,
+                  children: local_23.map((arg) =>
+                    imported(
                       "button",
                       {
-                        className: `${local_41ea1484.pinItem} ${local_24?.slug === arg.slug ? local_41ea1484.pinActive : ""}`,
-                        onClick: () => local_31(arg),
-                        disabled: local_10,
+                        className: `${local_98798dac.pinItem} ${local_25?.slug === arg.slug ? local_98798dac.pinActive : ""}`,
+                        onClick: () => local_32(arg),
+                        disabled: local_11,
                         title: arg.description || arg.name,
                         type: "button",
                         children: [
-                          imported_3("img", {
+                          imported("img", {
                             src: arg.url,
                             alt: arg.name,
-                            className: local_41ea1484.pinImage,
+                            className: local_98798dac.pinImage,
                           }),
-                          imported_3("span", {
-                            className: local_41ea1484.pinName,
+                          imported("span", {
+                            className: local_98798dac.pinName,
                             children: arg.name,
                           }),
                         ],
@@ -1309,46 +1233,61 @@ const local_9a5a6683 = imported_16(function (
                 }),
               ],
             }),
-          local_16 &&
-            imported_3("div", {
-              className: local_41ea1484.saveError,
-              children: local_16,
+          local_17 &&
+            imported("div", {
+              className: local_98798dac.saveError,
+              children: local_17,
             }),
         ],
       }),
-      local_5 &&
-        imported_3("div", {
-          className: local_41ea1484.section,
-          children: imported_3("button", {
+      local_6 &&
+        imported("div", {
+          className: local_98798dac.section,
+          children: imported("button", {
             type: "button",
-            className: local_41ea1484.logoutButton,
-            onClick: () => {
-              local_2();
-              arg_3();
+            className: local_98798dac.logoutButton,
+            disabled: local_3,
+            "aria-busy": local_3,
+            onClick: async () => {
+              if (await local_2()) {
+                arg_3();
+              }
             },
             children: [
-              imported_3(imported_27, {
+              imported(imported_29, {
                 size: 20,
               }),
-              imported_3("span", {
-                children: "Выйти из аккаунта",
+              imported("span", {
+                children: local_3 ? "Выходим..." : "Выйти из аккаунта",
               }),
             ],
           }),
         }),
-      imported_3("div", {
-        className: local_41ea1484.section,
-        children: imported_3("button", {
-          type: "button",
-          className: local_41ea1484.deleteAccountButton,
-          onClick: () =>
-            local_3(
-              imported_3(fn_aa48405c, {
-                onClose: local_4,
+      imported("div", {
+        className: local_98798dac.section,
+        children: [
+          imported("button", {
+            type: "button",
+            className: local_98798dac.deleteAccountButton,
+            onClick: () =>
+              local_4(
+                imported(fn_081d8787, {
+                  onClose: local_5,
+                }),
+              ),
+            children: "Удалить аккаунт",
+          }),
+          imported(imported_10, {}),
+          local_6 &&
+            imported("p", {
+              children: imported("a", {
+                href: "/terms",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: "Пользовательское соглашение",
               }),
-            ),
-          children: "Удалить аккаунт",
-        }),
+            }),
+        ],
       }),
     ],
   });
@@ -1368,7 +1307,7 @@ export function fn_bc6396a2({
   onConfirm: arg_2,
   onClose: arg_3,
 }) {
-  const [local, local_2] = imported_6(false);
+  const [local, local_2] = imported_8(false);
   const local_3 = new Date(arg).toLocaleDateString("ru-RU", {
     day: "numeric",
     month: "long",
@@ -1385,17 +1324,17 @@ export function fn_bc6396a2({
       }
     }
   };
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     onClose: arg_3,
     showHeader: false,
-    children: imported_3("div", {
+    children: imported("div", {
       className: local_e5cc91d8_2.content,
       children: [
-        imported_3("h2", {
+        imported("h2", {
           className: local_e5cc91d8_2.title,
           children: "Отключить автопродление?",
         }),
-        imported_3("p", {
+        imported("p", {
           className: local_e5cc91d8_2.subtitle,
           children: [
             "Подписка будет действовать до ",
@@ -1403,10 +1342,10 @@ export function fn_bc6396a2({
             ". После этой даты она просто не продлится автоматически. Вы сможете включить автопродление обратно в любой момент.",
           ],
         }),
-        imported_3("div", {
+        imported("div", {
           className: local_e5cc91d8_2.actions,
           children: [
-            imported_3(imported_7, {
+            imported(imported_9, {
               variant: "secondary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -1414,7 +1353,7 @@ export function fn_bc6396a2({
               },
               children: "Оставить",
             }),
-            imported_3(imported_7, {
+            imported(imported_9, {
               variant: "danger",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -1434,7 +1373,7 @@ const local_9d9cf508_3 = "c_title";
 const local_8c84ac4c_3 = "c_subtitle";
 const local_077f6834 = "c_disclaimer";
 const local_8c4f8b4b_4 = "c_actions";
-const local_026ebd99 = {
+const local_b305877c = {
   content: local_4d84dbb6_4,
   title: local_9d9cf508_3,
   subtitle: local_8c84ac4c_3,
@@ -1442,7 +1381,7 @@ const local_026ebd99 = {
   actions: local_8c4f8b4b_4,
 };
 export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
-  const [local, local_2] = imported_6(false);
+  const [local, local_2] = imported_8(false);
   const local_3 = async () => {
     if (!local) {
       local_2(true);
@@ -1454,27 +1393,27 @@ export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
       }
     }
   };
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     onClose: arg_2,
     showHeader: false,
-    children: imported_3("div", {
-      className: local_026ebd99.content,
+    children: imported("div", {
+      className: local_b305877c.content,
       children: [
-        imported_3("h2", {
-          className: local_026ebd99.title,
+        imported("h2", {
+          className: local_b305877c.title,
           children: "Включить автопродление?",
         }),
-        imported_3("p", {
-          className: local_026ebd99.subtitle,
+        imported("p", {
+          className: local_b305877c.subtitle,
           children:
             "Подписка будет автоматически продлеваться каждый месяц. Средства будут списываться с привязанной карты.",
         }),
-        imported_3("p", {
-          className: local_026ebd99.disclaimer,
+        imported("p", {
+          className: local_b305877c.disclaimer,
           children: [
             "Нажимая «Включить», вы соглашаетесь с",
             "./subscription-modal.js",
-            imported_3("a", {
+            imported("a", {
               href: "/subscription-terms",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -1482,7 +1421,7 @@ export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
             }),
             ",",
             "./subscription-modal.js",
-            imported_3("a", {
+            imported("a", {
               href: "/privacy",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -1490,7 +1429,7 @@ export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
             }),
             " и",
             "./subscription-modal.js",
-            imported_3("a", {
+            imported("a", {
               href: "/terms",
               target: "_blank",
               rel: "noopener noreferrer",
@@ -1499,10 +1438,10 @@ export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
             ".",
           ],
         }),
-        imported_3("div", {
-          className: local_026ebd99.actions,
+        imported("div", {
+          className: local_b305877c.actions,
           children: [
-            imported_3(imported_7, {
+            imported(imported_9, {
               variant: "secondary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -1510,7 +1449,7 @@ export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
               },
               children: "Отмена",
             }),
-            imported_3(imported_7, {
+            imported(imported_9, {
               variant: "primary",
               onClick: (arg) => {
                 arg.stopPropagation();
@@ -1524,863 +1463,6 @@ export function fn_abc06512({ onConfirm: arg, onClose: arg_2 }) {
       ],
     }),
   });
-}
-const local_9d01cb12 = [
-  [0, 0, 96, 28],
-  [96, 0, 107, 52],
-  [203, 0, 107, 107],
-  [310, 0, 109, 105],
-  [419, 0, 170, 114],
-  [589, 0, 168, 102],
-  [757, 0, 177, 93],
-  [934, 0, 165, 105],
-  [1099, 0, 170, 111],
-  [1269, 0, 176, 123],
-  [1445, 0, 141, 148],
-  [1586, 0, 115, 157],
-  [1701, 0, 144, 112],
-  [1845, 0, 135, 114],
-  [1980, 0, 136, 129],
-  [2116, 0, 131, 114],
-];
-const local_f06debfc = 2247;
-const local_f06debfc_2 = 157;
-const local_a7ee6c81 = [
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  [0, 673, 329],
-  [1, 666, 304],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 306],
-  [1, 666, 303],
-  [2, 648, 252],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 651, 253],
-  [2, 649, 253],
-  [3, 636, 259],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 639, 258],
-  [3, 637, 255],
-  [3, 635, 259],
-  [4, 627, 287],
-  [5, 615, 316],
-  [6, 612, 320],
-  [6, 612, 320],
-  [7, 615, 320],
-  [7, 615, 320],
-  [6, 612, 320],
-  [6, 612, 320],
-  [7, 615, 322],
-  [7, 615, 327],
-  [8, 617, 330],
-  [9, 605, 334],
-  [10, 628, 357],
-  [11, 632, 393],
-  [12, 617, 530],
-  [13, 626, 575],
-  [14, 623, 638],
-  [15, 628, 717],
-  [14, 623, 811],
-  [15, 629, 922],
-  [14, 623, 1052],
-  [15, 629, 1202],
-  [14, 623, 1373],
-  [15, 629, 1567],
-  [14, 624, 1785],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-];
-const local_2cae01a0 = local_a7ee6c81.length;
-const local_9308d9b8 = 370 / 1080;
-const local_f06debfc_3 = 605;
-const local_f06debfc_4 = 40;
-const local_16468f59 = {
-  s: 14,
-  x: 623,
-};
-const local_16468f59_2 = {
-  s: 15,
-  x: 629,
-};
-function fn_b267a7cf(arg, arg_2) {
-  const local = (arg + arg_2 + 200) / local_9308d9b8;
-  const local_2 = local_a7ee6c81.slice();
-  let local_3 = 1785;
-  let local_4 = 218;
-  let local_5 = true;
-  for (
-    let local = 98;
-    local < local_2cae01a0 &&
-    ((local_4 += 18), (local_3 += local_4), !(local_3 > local));
-    local++
-  ) {
-    const local = local_5 ? local_16468f59_2 : local_16468f59;
-    local_2[local] = [local.s, local.x, local_3];
-    local_5 = !local_5;
-  }
-  return local_2;
-}
-function fn_e7a63a33() {
-  const local = imported_20(null);
-  const local_2 = imported_20(null);
-  const local_3 = imported_20({
-    f: 0,
-    ts: 0,
-    tl: local_a7ee6c81.slice(),
-    xOff: 0,
-    yOff: 0,
-  });
-  imported_21(() => {
-    const local = local_2.current;
-    const local_2 = local.current;
-    if (!local || !local_2) {
-      return;
-    }
-    function fn() {
-      const local = window.innerHeight;
-      const local_2 = window.innerWidth;
-      const local_3 = local_2.parentElement;
-      let local_4;
-      let local_5;
-      if (local_3) {
-        const local = local_3.getBoundingClientRect();
-        local_4 = local.top;
-        local_5 = local.left + (local.width - 370) / 2;
-      } else {
-        local_4 = (local - 900) / 2;
-        local_5 = (local_2 - 370) / 2;
-      }
-      const local_6 = local_2 <= 1173;
-      local_3.current.yOff =
-        357 * local_9308d9b8 - local_4 + (local_6 ? 60 : 0);
-      const local_7 = 260;
-      local_3.current.xOff =
-        local_f06debfc_3 * local_9308d9b8 - local_5 - local_7;
-      local_3.current.tl = fn_b267a7cf(local, local_3.current.yOff);
-    }
-    const local_3 = setTimeout(fn, 260);
-    let local_4;
-    const local_5 = () => {
-      clearTimeout(local_4);
-      local_4 = setTimeout(fn, 150);
-    };
-    window.addEventListener("resize", local_5);
-    let local_6;
-    function fn_2(arg) {
-      const local = local_3.current;
-      if (arg - local.ts >= local_f06debfc_4) {
-        const local = local.tl[local.f];
-        if (!local) {
-          local.style.visibility = "hidden";
-        } else {
-          const [local, local_2, local_3] = local;
-          const [local_4, , local_5, local_6] = local_9d01cb12[local];
-          const local_7 = (local_5 * local_9308d9b8 + 0.5) | 0;
-          const local_8 = (local_6 * local_9308d9b8 + 0.5) | 0;
-          local.style.cssText = `visibility:visible;width:${local_7}px;height:${local_8}px;background-image:url(/assets/nuksta/nuksta-chechik-sprite.png);background-repeat:no-repeat;image-rendering:pixelated;will-change:transform;background-position:${-((local_4 * local_9308d9b8 + 0.5) | 0)}px 0px;background-size:${(local_f06debfc * local_9308d9b8 + 0.5) | 0}px ${(local_f06debfc_2 * local_9308d9b8 + 0.5) | 0}px;transform:translate(${(local_2 * local_9308d9b8 - local.xOff + 0.5) | 0}px,${(local_3 * local_9308d9b8 - local.yOff + 0.5) | 0}px)`;
-        }
-        local.f = (local.f + 1) % local_2cae01a0;
-        local.ts = arg;
-      }
-      local_6 = requestAnimationFrame(fn_2);
-    }
-    local_6 = requestAnimationFrame(fn_2);
-    return () => {
-      cancelAnimationFrame(local_6);
-      clearTimeout(local_3);
-      clearTimeout(local_4);
-      window.removeEventListener("resize", local_5);
-    };
-  }, []);
-  return imported_3(imported_26, {
-    children: [
-      imported_3("div", {
-        ref: local,
-        style: {
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: 0,
-          height: 0,
-          pointerEvents: "none",
-        },
-      }),
-      imported_29(
-        imported_3("div", {
-          style: {
-            position: "fixed",
-            inset: 0,
-            pointerEvents: "none",
-            zIndex: 99999,
-            overflow: "hidden",
-          },
-          children: imported_3("div", {
-            ref: local_2,
-            style: {
-              position: "absolute",
-              backgroundImage: "url(/assets/nuksta/nuksta-chechik-sprite.png)",
-              backgroundRepeat: "no-repeat",
-              imageRendering: "pixelated",
-              willChange: "transform",
-            },
-          }),
-        }),
-        document.body,
-      ),
-    ],
-  });
-}
-const local_49250f21 = "c_modal";
-const local_24243f59 = "c_sub";
-const local_11f064fe = "c_top";
-const local_807be581 = "c_bottom";
-const local_9d9cf508_4 = "c_title";
-const local_af0b94fd_2 = "c_section";
-const local_fc53e62e = "c_profileSection";
-const local_fe9ec23f_3 = "c_label";
-const local_7d352a9c = "c_labelRow";
-const local_3ed0446e = "c_dim";
-const local_ab7982d5 = "c_row";
-const local_3abd7bdb = "c_icon";
-const local_ff65460c = "c_iconGradient";
-const local_8d0c49b2 = "c_name";
-const local_95abeb0d = "c_nameGradient";
-const local_8a9e924c = "c_namePinBadge";
-const local_075d32b6 = "c_promoVideo";
-const local_3793ee2e = "c_features";
-const local_63f2eee2 = "c_featureContent";
-const local_677736f6 = "c_featureTitle";
-const local_0e1d4667 = "c_gradientText";
-const local_4a6a8c8f = "c_soon";
-const local_9ec691ea = "c_infoBtn";
-const local_a0cefcb4 = "c_footer";
-const local_077f6834_2 = "c_disclaimer";
-const local_f6c5ef46 = "c_methodSelectRow";
-const local_735ec38e = "c_methodSelectLabel";
-const local_a29deef3 = "c_methodSelect";
-const local_34217f5c = "c_chargeInfo";
-const local_390f5f49 = "c_consentLink";
-const local_0a79b3ee = "c_subscribeBtn";
-const local_d56475d7 = "c_btnLoading";
-const local_3acc1aab = "c_btnSpinner";
-const local_ecccec13 = "c_activeLabel";
-const local_23034546 = {
-  modal: local_49250f21,
-  sub: local_24243f59,
-  top: local_11f064fe,
-  bottom: local_807be581,
-  title: local_9d9cf508_4,
-  section: local_af0b94fd_2,
-  profileSection: local_fc53e62e,
-  label: local_fe9ec23f_3,
-  labelRow: local_7d352a9c,
-  dim: local_3ed0446e,
-  row: local_ab7982d5,
-  icon: local_3abd7bdb,
-  iconGradient: local_ff65460c,
-  name: local_8d0c49b2,
-  nameGradient: local_95abeb0d,
-  namePinBadge: local_8a9e924c,
-  promoVideo: local_075d32b6,
-  features: local_3793ee2e,
-  featureContent: local_63f2eee2,
-  featureTitle: local_677736f6,
-  gradientText: local_0e1d4667,
-  soon: local_4a6a8c8f,
-  infoBtn: local_9ec691ea,
-  footer: local_a0cefcb4,
-  disclaimer: local_077f6834_2,
-  methodSelectRow: local_f6c5ef46,
-  methodSelectLabel: local_735ec38e,
-  methodSelect: local_a29deef3,
-  chargeInfo: local_34217f5c,
-  consentLink: local_390f5f49,
-  subscribeBtn: local_0a79b3ee,
-  btnLoading: local_d56475d7,
-  btnSpinner: local_3acc1aab,
-  activeLabel: local_ecccec13,
-};
-function fn_2c1b28aa({ text: arg }) {
-  return imported_3(imported_33, {
-    text: arg,
-    multiline: true,
-    children: imported_3("span", {
-      className: local_23034546.infoBtn,
-      children: imported_3(imported_65, {
-        size: 14,
-      }),
-    }),
-  });
-}
-const local_ae1f867d = "new";
-function fn_046f7b47(arg) {
-  if (arg.type === "bank_card") {
-    return `${arg.cardBrand || "Карта"} •••• ${arg.cardLast4 || ""}`.trim();
-  }
-  if (arg.type === "sbp") {
-    return "СБП";
-  }
-  return arg.type;
-}
-export function fn_570e5186({ isOpen: arg, onClose: arg_2 }) {
-  const local = imported_30();
-  const [local_2, local_3] = imported_6(false);
-  const [local_4, local_5] = imported_6(false);
-  const [local_6, local_7] = imported_6([]);
-  const [local_8, local_9] = imported_6(local_ae1f867d);
-  const [local_10, local_11] = imported_6(199);
-  imported_21(() => {
-    if (arg) {
-      local_73f326c5
-        .getStatus()
-        .then((arg) => {
-          local_5(!!arg.recurringEnabled);
-          if (typeof arg.price === "number") {
-            local_11(arg.price);
-          }
-          if (arg.recurringEnabled) {
-            local_73f326c5
-              .getMethods()
-              .then((arg) => {
-                local_7(arg);
-                const local = arg.find((arg) => arg.isDefault) || arg[0];
-                local_9(local ? local.id : local_ae1f867d);
-              })
-              .catch(() => local_7([]));
-          }
-        })
-        .catch(() => local_5(false));
-    }
-  }, [arg]);
-  if (!arg) {
-    return null;
-  }
-  const local_12 = local?.subscription?.isActive ?? false;
-  const local_13 = new Date();
-  local_13.setMonth(local_13.getMonth() + 1);
-  const local_14 = local_13.toLocaleDateString("ru-RU", {
-    day: "numeric",
-    month: "long",
-  });
-  const local_15 = local_4 && local_8 !== local_ae1f867d;
-  const local_16 = async () => {
-    if (local_2) {
-      return;
-    }
-    local_3(true);
-    if (local_15) {
-      try {
-        const local = await local_73f326c5.pay(local_8);
-        if (local.error) {
-          imported_34.error(local.error);
-          return;
-        }
-        imported_34.success("Подписка оформлена!");
-        arg_2();
-        imported_11
-          .getState()
-          .fetchProfile()
-          .catch(() => {});
-      } catch (error) {
-        imported_34.error(
-          error instanceof Error && error.message
-            ? error.message
-            : "Ошибка при оплате",
-        );
-      } finally {
-        local_3(false);
-      }
-      return;
-    }
-    const local = window.open("about:blank", "_blank");
-    try {
-      const local = await local_73f326c5.pay();
-      if (local.error) {
-        local?.close();
-        imported_34.error(local.error);
-        return;
-      }
-      if (local.confirmationUrl && local) {
-        local.location.href = local.confirmationUrl;
-      } else if (local.confirmationUrl) {
-        window.location.href = local.confirmationUrl;
-      }
-    } catch (error) {
-      local?.close();
-      imported_34.error(
-        error instanceof Error && error.message
-          ? error.message
-          : "Ошибка при создании платежа",
-      );
-    } finally {
-      local_3(false);
-    }
-  };
-  return imported_29(
-    imported_3(imported_9, {
-      onClose: arg_2,
-      showHeader: false,
-      frameless: true,
-      className: local_23034546.modal,
-      children: [
-        imported_3(fn_e7a63a33, {}),
-        imported_3("div", {
-          className: local_23034546.sub,
-          children: [
-            imported_3("div", {
-              className: local_23034546.top,
-              children: [
-                imported_3("div", {
-                  className: local_23034546.title,
-                  children: "ИТД НУКСТА",
-                }),
-                imported_3("div", {
-                  className: `${local_23034546.section} ${local_23034546.profileSection}`,
-                  children: [
-                    imported_3("div", {
-                      className: local_23034546.label,
-                      children: "Ваш профиль с ИТД НУКСТА",
-                    }),
-                    imported_3("div", {
-                      className: local_23034546.row,
-                      children: [
-                        imported_3(imported_31, {
-                          src: local?.avatar || null,
-                          size: "sm",
-                        }),
-                        imported_3("div", {
-                          children: [
-                            imported_3("div", {
-                              className: local_23034546.name,
-                              children: [
-                                imported_3("span", {
-                                  className: local_23034546.nameGradient,
-                                  children: local?.displayName,
-                                }),
-                                imported_3("img", {
-                                  src: "https://cdn.xn--d1ah4a.com/public/pins/nuksta.gif",
-                                  alt: "НУКСТА",
-                                  width: 24,
-                                  height: 24,
-                                  className: local_23034546.namePinBadge,
-                                }),
-                              ],
-                            }),
-                            imported_3("div", {
-                              className: local_23034546.dim,
-                              children: "только что",
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  ],
-                }),
-              ],
-            }),
-            imported_3("video", {
-              src: `/assets/nuksta/nuksta-${document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark"}.mp4`,
-              autoPlay: true,
-              loop: true,
-              muted: true,
-              playsInline: true,
-              width: 370,
-              height: 268,
-              className: local_23034546.promoVideo,
-            }),
-            imported_3("div", {
-              className: local_23034546.bottom,
-              children: [
-                imported_3("div", {
-                  className: local_23034546.section,
-                  children: [
-                    imported_3("div", {
-                      className: local_23034546.labelRow,
-                      children: [
-                        imported_3("span", {
-                          className: local_23034546.label,
-                          children: "Прикольные украшалки",
-                        }),
-                        imported_3(fn_2c1b28aa, {
-                          text: "итд — полностью независимый проект, который мы делаем сами, без инвесторов и крупных компаний. подписка НУКСТА — это способ поддержать нас, если вам хочется. это совсем не обязательно, мы рады каждому и так! ❤️",
-                        }),
-                      ],
-                    }),
-                    imported_3("div", {
-                      className: local_23034546.features,
-                      children: [
-                        imported_3("div", {
-                          className: local_23034546.row,
-                          children: [
-                            imported_3("span", {
-                              className: local_23034546.icon,
-                              children: imported_3("div", {
-                                className: local_23034546.iconGradient,
-                              }),
-                            }),
-                            imported_3("div", {
-                              children: imported_3("div", {
-                                className: `${local_23034546.featureTitle} ${local_23034546.gradientText}`,
-                                children: "Уникальный цвет ника",
-                              }),
-                            }),
-                          ],
-                        }),
-                        imported_3("div", {
-                          className: local_23034546.row,
-                          children: [
-                            imported_3("span", {
-                              className: local_23034546.icon,
-                              children: imported_3("img", {
-                                src: "https://cdn.xn--d1ah4a.com/public/pins/nuksta.gif",
-                                alt: "Пин",
-                                width: 20,
-                                height: 20,
-                              }),
-                            }),
-                            imported_3("div", {
-                              children: imported_3("div", {
-                                className: local_23034546.featureTitle,
-                                children: "Пин поддерживателя",
-                              }),
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  ],
-                }),
-                imported_3("div", {
-                  className: local_23034546.section,
-                  children: [
-                    imported_3("div", {
-                      className: local_23034546.labelRow,
-                      children: [
-                        imported_3("span", {
-                          className: local_23034546.label,
-                          children: "Сможете с нами тестить новые штуки",
-                        }),
-                        imported_3(fn_2c1b28aa, {
-                          text: "мы постоянно добавляем в итд новые штуки и обычно тестим их внутри команды перед релизом. с подпиской НУКСТА вы сможете попробовать их первыми вместе с нами! а когда всё протестим — фишки станут доступны всем пользователям итд",
-                        }),
-                      ],
-                    }),
-                    imported_3("div", {
-                      className: local_23034546.features,
-                      children: [
-                        imported_3("div", {
-                          className: local_23034546.row,
-                          children: [
-                            imported_3("span", {
-                              className: local_23034546.icon,
-                              children: imported_3(local_4c6f99c7, {
-                                size: 20,
-                              }),
-                            }),
-                            imported_3("div", {
-                              className: local_23034546.featureContent,
-                              children: imported_3("div", {
-                                className: local_23034546.featureTitle,
-                                children: "Загрузка видео",
-                              }),
-                            }),
-                          ],
-                        }),
-                        imported_3("div", {
-                          className: local_23034546.row,
-                          children: [
-                            imported_3("span", {
-                              className: local_23034546.icon,
-                              children: imported_3(imported_32, {
-                                size: 20,
-                              }),
-                            }),
-                            imported_3("div", {
-                              className: local_23034546.featureContent,
-                              children: imported_3("div", {
-                                className: local_23034546.featureTitle,
-                                children: [
-                                  "Сообщения ",
-                                  imported_3("span", {
-                                    className: local_23034546.soon,
-                                    children: "soon",
-                                  }),
-                                ],
-                              }),
-                            }),
-                          ],
-                        }),
-                        imported_3("div", {
-                          className: local_23034546.row,
-                          children: [
-                            imported_3("span", {
-                              className: local_23034546.icon,
-                              children: imported_3(local_645d4878, {
-                                size: 20,
-                              }),
-                            }),
-                            imported_3("div", {
-                              className: local_23034546.featureContent,
-                              children: imported_3("div", {
-                                className: local_23034546.featureTitle,
-                                children: [
-                                  "Музыка ",
-                                  imported_3("span", {
-                                    className: local_23034546.soon,
-                                    children: "soon",
-                                  }),
-                                ],
-                              }),
-                            }),
-                          ],
-                        }),
-                      ],
-                    }),
-                  ],
-                }),
-                imported_3("div", {
-                  className: local_23034546.footer,
-                  children: [
-                    !local_12 &&
-                      local_6.length > 0 &&
-                      imported_3("label", {
-                        className: local_23034546.methodSelectRow,
-                        children: [
-                          imported_3("span", {
-                            className: local_23034546.methodSelectLabel,
-                            children: "Сохранённый способ оплаты",
-                          }),
-                          imported_3("select", {
-                            className: local_23034546.methodSelect,
-                            value: local_8,
-                            onChange: (arg) => local_9(arg.target.value),
-                            children: [
-                              local_6.map((arg) =>
-                                imported_3(
-                                  "option",
-                                  {
-                                    value: arg.id,
-                                    children: fn_046f7b47(arg),
-                                  },
-                                  arg.id,
-                                ),
-                              ),
-                              imported_3("option", {
-                                value: local_ae1f867d,
-                                children: "Новый способ оплаты",
-                              }),
-                            ],
-                          }),
-                        ],
-                      }),
-                    !local_12 &&
-                      imported_3("div", {
-                        className: local_23034546.chargeInfo,
-                        children: [
-                          "Сегодня спишется ",
-                          local_10,
-                          " ₽, далее ежемесячно — следующее списание ",
-                          local_14,
-                          ".",
-                        ],
-                      }),
-                    local_12
-                      ? imported_3("div", {
-                          className: local_23034546.activeLabel,
-                          children: "Подписка активна",
-                        })
-                      : imported_3("button", {
-                          type: "button",
-                          className: local_23034546.subscribeBtn,
-                          onClick: local_16,
-                          disabled: local_2,
-                          children: local_2
-                            ? imported_3("span", {
-                                className: local_23034546.btnLoading,
-                                children: [
-                                  imported_3(imported_25, {
-                                    size: "xs",
-                                    className: local_23034546.btnSpinner,
-                                  }),
-                                  "Оплачиваем…",
-                                ],
-                              })
-                            : `Оплатить ${local_10}₽ на месяц`,
-                        }),
-                    !local_12 &&
-                      imported_3("div", {
-                        className: local_23034546.disclaimer,
-                        children: [
-                          "Нажимая кнопку, вы принимаете ",
-                          imported_3("a", {
-                            href: "/recurring-terms",
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            className: local_23034546.consentLink,
-                            children: "условия автопродления",
-                          }),
-                          ". Отключить его можно в настройках.",
-                        ],
-                      }),
-                  ],
-                }),
-              ],
-            }),
-          ],
-        }),
-      ],
-    }),
-    document.body,
-  );
 }
 const local_2fcdda14 = {
   yoo_money: "ЮMoney",
@@ -2403,7 +1485,7 @@ const local_24f9d3be = {
   sber_bnpl: "Рассрочка",
   cash: "Наличные",
 };
-function fn_24fd5f51(arg) {
+function fn_102c5470(arg) {
   if (arg.type === "bank_card") {
     return `${arg.cardBrand || "Карта"} •••• ${arg.cardLast4 || ""}`.trim();
   }
@@ -2412,42 +1494,65 @@ function fn_24fd5f51(arg) {
 function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
-const local_f06debfc_5 = 5;
-function fn_c3ce2b4a() {
-  const local = imported_11((arg) => arg.profile);
-  const [local_2, local_3] = imported_6(false);
-  const [local_4, local_5] = imported_6(false);
-  const [local_6, local_7] = imported_6(false);
-  const [local_8, local_9] = imported_6([]);
-  const [local_10, local_11] = imported_6(true);
-  const [local_12, local_13] = imported_6(false);
-  const [local_14, local_15] = imported_6(false);
-  const [local_16, local_17] = imported_6(null);
-  const [local_18, local_19] = imported_6(false);
-  imported_21(() => {
-    local_73f326c5
+const local_f06debfc = 5;
+function fn_6dcb824e() {
+  const local = imported_13((arg) => arg.profile);
+  const [local_2, local_3] = imported_8(false);
+  const [local_4, local_5] = imported_8(false);
+  const [local_6, local_7] = imported_8(false);
+  const [local_8, local_9] = imported_8([]);
+  const [local_10, local_11] = imported_8(true);
+  const [local_12, local_13] = imported_8(false);
+  const [local_14, local_15] = imported_8(false);
+  const [local_16, local_17] = imported_8(null);
+  const [local_18, local_19] = imported_8(false);
+  imported_23(() => {
+    subscriptionApi
       .getStatus()
       .then((arg) => local_19(!!arg.recurringEnabled))
       .catch(() => local_19(false));
   }, []);
-  imported_21(() => {
-    if (local_18) {
-      local_73f326c5
+  imported_23(() => {
+    let local = false;
+    const local_2 = local?.id;
+    const local_3 = () => {
+      local_11(true);
+      subscriptionApi
         .getMethods()
-        .then(local_9)
-        .catch(() => local_9([]))
-        .finally(() => local_11(false));
+        .then((arg) => {
+          if (!local && imported_13.getState().profile?.id === local_2) {
+            local_9(arg);
+          }
+        })
+        .catch(() => {
+          if (!local) {
+            local_9([]);
+          }
+        })
+        .finally(() => {
+          if (!local) {
+            local_11(false);
+          }
+        });
+    };
+    if (local_18) {
+      local_3();
+      window.addEventListener("focus", local_3);
     }
-  }, [local_18]);
+    return () => {
+      local = true;
+      window.removeEventListener("focus", local_3);
+    };
+  }, [local_18, local?.id]);
   const local_20 = () => {
-    local_73f326c5
+    subscriptionApi
       .getMethods()
       .then(local_9)
       .catch(() => {});
   };
   const local_21 = async (arg) => {
     try {
-      await local_73f326c5.setDefaultMethod(arg);
+      await subscriptionApi.setDefaultMethod(arg);
       local_9((arg) =>
         arg.map((arg) => ({
           ...arg,
@@ -2455,15 +1560,15 @@ function fn_c3ce2b4a() {
         })),
       );
     } catch {
-      imported_34.error("Не удалось изменить основной способ оплаты");
+      imported_32.error("Не удалось изменить основной способ оплаты");
     }
   };
   const local_22 = async (arg) => {
     try {
-      const local = await local_73f326c5.deleteMethod(arg.id);
+      const local = await subscriptionApi.deleteMethod(arg.id);
       local_9((arg) => arg.filter((arg) => arg.id !== arg.id));
       if (local.autoRenewalDisabled && local?.subscription) {
-        imported_11.getState().setProfile({
+        imported_13.getState().setProfile({
           ...local,
           subscription: {
             ...local.subscription,
@@ -2473,7 +1578,7 @@ function fn_c3ce2b4a() {
       }
       local_20();
     } catch {
-      imported_34.error("Не удалось отвязать карту");
+      imported_32.error("Не удалось отвязать карту");
     }
   };
   const local_23 = async (arg) => {
@@ -2484,11 +1589,11 @@ function fn_c3ce2b4a() {
     local_15(false);
     const local = window.open("about:blank", "_blank");
     try {
-      const local = await local_73f326c5.bindCard(arg);
+      const local = await subscriptionApi.bindCard(arg);
       const local_2 = local.error;
       if (local_2 || !local.confirmationUrl) {
         local?.close();
-        imported_34.error(local_2 || "Привязка карт временно недоступна");
+        imported_32.error(local_2 || "Привязка карт временно недоступна");
         return;
       }
       if (local) {
@@ -2498,7 +1603,7 @@ function fn_c3ce2b4a() {
       }
     } catch (error) {
       local?.close();
-      imported_34.error(
+      imported_32.error(
         error instanceof Error && error.message
           ? error.message
           : "Привязка карт временно недоступна",
@@ -2516,30 +1621,32 @@ function fn_c3ce2b4a() {
     }
     return (arg_2.createdAt || "").localeCompare(arg.createdAt || "");
   });
-  return imported_3(imported_26, {
+  const local_25 =
+    local_18 && !local_10 && local_8.some((arg) => arg.canAutoRenew === true);
+  return imported(imported_28, {
     children: [
-      imported_3("h2", {
-        className: local_41ea1484.contentTitle,
+      imported("h2", {
+        className: local_98798dac.contentTitle,
         children: "Оплата",
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
           local?.subscription?.isActive
-            ? imported_3("div", {
-                className: local_41ea1484.settingItem,
+            ? imported("div", {
+                className: local_98798dac.settingItem,
                 children: [
-                  imported_3("div", {
-                    className: local_41ea1484.settingInfo,
-                    children: imported_3("div", {
-                      className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingInfo,
+                    children: imported("div", {
+                      className: local_98798dac.settingText,
                       children: [
-                        imported_3("span", {
-                          className: local_41ea1484.settingTitle,
+                        imported("span", {
+                          className: local_98798dac.settingTitle,
                           children: "Подписка ИТД НУКСТА",
                         }),
-                        imported_3("span", {
-                          className: local_41ea1484.settingDescription,
+                        imported("span", {
+                          className: local_98798dac.settingDescription,
                           children: local.subscription.expiresAt
                             ? (() => {
                                 const local = new Date(
@@ -2561,134 +1668,150 @@ function fn_c3ce2b4a() {
                               })()
                             : "Активна",
                         }),
+                        !local.subscription.autoRenewal &&
+                          !local_10 &&
+                          !local_25 &&
+                          imported("span", {
+                            className: local_98798dac.settingDescription,
+                            children:
+                              "Для автопродления сначала добавьте способ оплаты",
+                          }),
                       ],
                     }),
                   }),
                   local.subscription.autoRenewal
-                    ? imported_3("button", {
+                    ? imported("button", {
                         type: "button",
-                        className: local_41ea1484.subscriptionCancel,
+                        className: local_98798dac.subscriptionCancel,
                         onClick: () => local_3(true),
                         children: "Отключить автопродление",
                       })
-                    : imported_3("button", {
+                    : imported("button", {
                         type: "button",
-                        className: local_41ea1484.subscriptionRenew,
-                        onClick: () => local_5(true),
+                        className: local_98798dac.subscriptionRenew,
+                        disabled: !local_25,
+                        title: local_25
+                          ? undefined
+                          : "Сначала добавьте и подтвердите способ оплаты",
+                        onClick: () => {
+                          if (local_25) {
+                            local_5(true);
+                          }
+                        },
                         children: "Включить автопродление",
                       }),
                 ],
               })
-            : imported_3("div", {
-                className: local_41ea1484.settingItem,
+            : imported("div", {
+                className: local_98798dac.settingItem,
                 children: [
-                  imported_3("div", {
-                    className: local_41ea1484.settingInfo,
-                    children: imported_3("div", {
-                      className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingInfo,
+                    children: imported("div", {
+                      className: local_98798dac.settingText,
                       children: [
-                        imported_3("span", {
-                          className: local_41ea1484.settingTitle,
+                        imported("span", {
+                          className: local_98798dac.settingTitle,
                           children: "Подписка ИТД НУКСТА",
                         }),
-                        imported_3("span", {
-                          className: local_41ea1484.settingDescription,
+                        imported("span", {
+                          className: local_98798dac.settingDescription,
                           children: "Не оформлена",
                         }),
                       ],
                     }),
                   }),
-                  imported_3("button", {
+                  imported("button", {
                     type: "button",
-                    className: local_41ea1484.subscriptionRenew,
+                    className: local_98798dac.subscriptionRenew,
                     onClick: () => local_7(true),
                     children: "Оформить",
                   }),
                 ],
               }),
           local_18 &&
-            imported_3("div", {
-              className: `${local_41ea1484.settingItem} ${local_41ea1484.column}`,
+            imported("div", {
+              className: `${local_98798dac.settingItem} ${local_98798dac.column}`,
               children: [
-                imported_3("div", {
-                  className: local_41ea1484.settingInfo,
-                  children: imported_3("div", {
-                    className: local_41ea1484.settingText,
+                imported("div", {
+                  className: local_98798dac.settingInfo,
+                  children: imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Способы оплаты",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children:
                           "Сохранённые способы для автопродления подписки. Отвязать можно в любой момент",
                       }),
                     ],
                   }),
                 }),
-                imported_3("div", {
-                  className: local_41ea1484.paymentMethodsList,
+                imported("div", {
+                  className: local_98798dac.paymentMethodsList,
                   children: local_10
-                    ? imported_3(imported_25, {})
-                    : imported_3(imported_26, {
+                    ? imported(imported_27, {})
+                    : imported(imported_28, {
                         children: [
                           local_24.map((arg) => {
                             const local =
                               arg.type === "bank_card"
                                 ? local_0ead779e
                                 : local_2db7ffcd;
-                            return imported_3(
+                            return imported(
                               "div",
                               {
-                                className: local_41ea1484.paymentMethodRow,
+                                className: local_98798dac.paymentMethodRow,
                                 children: [
-                                  imported_3("div", {
-                                    className: local_41ea1484.paymentMethodIcon,
-                                    children: imported_3(local, {
+                                  imported("div", {
+                                    className: local_98798dac.paymentMethodIcon,
+                                    children: imported(local, {
                                       size: 18,
                                     }),
                                   }),
-                                  imported_3("div", {
-                                    className: local_41ea1484.paymentMethodInfo,
+                                  imported("div", {
+                                    className: local_98798dac.paymentMethodInfo,
                                     children: [
-                                      imported_3("span", {
+                                      imported("span", {
                                         className:
-                                          local_41ea1484.paymentMethodTitle,
+                                          local_98798dac.paymentMethodTitle,
                                         children: [
-                                          fn_24fd5f51(arg),
+                                          fn_102c5470(arg),
                                           arg.isDefault &&
                                             local_8.length > 1 &&
-                                            imported_3("span", {
+                                            imported("span", {
                                               className:
-                                                local_41ea1484.paymentMethodBadge,
+                                                local_98798dac.paymentMethodBadge,
                                               children: "основной",
                                             }),
                                         ],
                                       }),
-                                      imported_3("span", {
+                                      imported("span", {
                                         className:
-                                          local_41ea1484.paymentMethodSubtitle,
+                                          local_98798dac.paymentMethodSubtitle,
                                         children: fn_486ae540(arg),
                                       }),
                                     ],
                                   }),
-                                  imported_3("div", {
+                                  imported("div", {
                                     className:
-                                      local_41ea1484.paymentMethodActions,
+                                      local_98798dac.paymentMethodActions,
                                     children: [
                                       !arg.isDefault &&
-                                        imported_3("button", {
+                                        imported("button", {
                                           type: "button",
                                           className:
-                                            local_41ea1484.paymentMethodBtn,
+                                            local_98798dac.paymentMethodBtn,
                                           onClick: () => local_21(arg.id),
                                           children: "Сделать основным",
                                         }),
-                                      imported_3("button", {
+                                      imported("button", {
                                         type: "button",
                                         className:
-                                          local_41ea1484.paymentMethodBtnDanger,
+                                          local_98798dac.paymentMethodBtnDanger,
                                         onClick: () => local_17(arg),
                                         children: "Отвязать",
                                       }),
@@ -2700,49 +1823,49 @@ function fn_c3ce2b4a() {
                             );
                           }),
                           local_8.length === 0 &&
-                            imported_3("div", {
-                              className: local_41ea1484.paymentMethodsEmpty,
+                            imported("div", {
+                              className: local_98798dac.paymentMethodsEmpty,
                               children: [
-                                imported_3(local_0ead779e, {
+                                imported(local_0ead779e, {
                                   size: 18,
                                 }),
-                                imported_3("span", {
+                                imported("span", {
                                   children: "Нет привязанных методов оплаты",
                                 }),
                               ],
                             }),
-                          local_8.length < local_f06debfc_5
+                          local_8.length < local_f06debfc
                             ? local_14
-                              ? imported_3(imported_26, {
+                              ? imported(imported_28, {
                                   children: [
-                                    imported_3("button", {
+                                    imported("button", {
                                       type: "button",
                                       className:
-                                        local_41ea1484.paymentMethodAdd,
+                                        local_98798dac.paymentMethodAdd,
                                       onClick: () => local_23("bank_card"),
                                       disabled: local_12,
                                       children: [
-                                        imported_3("span", {
+                                        imported("span", {
                                           className:
-                                            local_41ea1484.paymentMethodIcon,
-                                          children: imported_3(local_0ead779e, {
+                                            local_98798dac.paymentMethodIcon,
+                                          children: imported(local_0ead779e, {
                                             size: 16,
                                           }),
                                         }),
                                         "Банковская карта",
                                       ],
                                     }),
-                                    imported_3("button", {
+                                    imported("button", {
                                       type: "button",
                                       className:
-                                        local_41ea1484.paymentMethodAdd,
+                                        local_98798dac.paymentMethodAdd,
                                       onClick: () => local_23("sbp"),
                                       disabled: local_12,
                                       children: [
-                                        imported_3("span", {
+                                        imported("span", {
                                           className:
-                                            local_41ea1484.paymentMethodIcon,
-                                          children: imported_3(local_2db7ffcd, {
+                                            local_98798dac.paymentMethodIcon,
+                                          children: imported(local_2db7ffcd, {
                                             size: 16,
                                           }),
                                         }),
@@ -2751,28 +1874,28 @@ function fn_c3ce2b4a() {
                                     }),
                                   ],
                                 })
-                              : imported_3("button", {
+                              : imported("button", {
                                   type: "button",
-                                  className: local_41ea1484.paymentMethodAdd,
+                                  className: local_98798dac.paymentMethodAdd,
                                   onClick: () => local_15(true),
                                   disabled: local_12,
                                   children: [
-                                    imported_3("span", {
+                                    imported("span", {
                                       className:
-                                        local_41ea1484.paymentMethodIcon,
-                                      children: imported_3(imported_35, {
+                                        local_98798dac.paymentMethodIcon,
+                                      children: imported(imported_31, {
                                         size: 16,
                                       }),
                                     }),
                                     "Добавить способ оплаты",
                                   ],
                                 })
-                            : imported_3("div", {
-                                className: local_41ea1484.paymentMethodsEmpty,
-                                children: imported_3("span", {
+                            : imported("div", {
+                                className: local_98798dac.paymentMethodsEmpty,
+                                children: imported("span", {
                                   children: [
                                     "Достигнут лимит способов оплаты (",
-                                    local_f06debfc_5,
+                                    local_f06debfc,
                                     ")",
                                   ],
                                 }),
@@ -2786,11 +1909,11 @@ function fn_c3ce2b4a() {
       }),
       local_2 &&
         local?.subscription?.expiresAt &&
-        imported_3(fn_bc6396a2, {
+        imported(fn_bc6396a2, {
           expiresAt: local.subscription.expiresAt,
           onConfirm: async () => {
-            const local = await local_73f326c5.setAutoRenewal(false);
-            imported_11.getState().setProfile({
+            const local = await subscriptionApi.setAutoRenewal(false);
+            imported_13.getState().setProfile({
               ...local,
               subscription: {
                 ...local.subscription,
@@ -2801,17 +1924,24 @@ function fn_c3ce2b4a() {
           onClose: () => local_3(false),
         }),
       local_4 &&
-        imported_3(fn_abc06512, {
+        imported(fn_abc06512, {
           onConfirm: async () => {
-            const local = await local_73f326c5.setAutoRenewal(true);
-            imported_11.getState().setProfile({
+            const local = await subscriptionApi.getMethods();
+            local_9(local);
+            if (!local.some((arg) => arg.canAutoRenew === true)) {
+              local_5(false);
+              imported_32.error("Сначала добавьте и подтвердите способ оплаты");
+              return;
+            }
+            const local_2 = await subscriptionApi.setAutoRenewal(true);
+            imported_13.getState().setProfile({
               ...local,
               subscription: {
                 ...local.subscription,
-                autoRenewal: local.autoRenewal,
-                ...(local.expiresAt
+                autoRenewal: local_2.autoRenewal,
+                ...(local_2.expiresAt
                   ? {
-                      expiresAt: local.expiresAt,
+                      expiresAt: local_2.expiresAt,
                     }
                   : {}),
               },
@@ -2820,19 +1950,19 @@ function fn_c3ce2b4a() {
           onClose: () => local_5(false),
         }),
       local_16 &&
-        imported_3(imported_64, {
+        imported(imported_70, {
           title: "Отвязать способ оплаты?",
-          message: `${fn_24fd5f51(local_16)} будет отвязан. Это действие нельзя отменить.`,
+          message: `${fn_102c5470(local_16)} будет отвязан. Это действие нельзя отменить.`,
           confirmText: "Отвязать",
           danger: true,
           onConfirm: () => local_22(local_16),
           onClose: () => local_17(null),
         }),
-      imported_3(fn_570e5186, {
+      imported(SubscriptionModal, {
         isOpen: local_6,
         onClose: () => {
           local_7(false);
-          local_73f326c5
+          subscriptionApi
             .getMethods()
             .then(local_9)
             .catch(() => {});
@@ -2857,16 +1987,16 @@ const local_28704e24 = {
   option: local_f2ac596c,
   selected: local_4811d0dc,
 };
-function fn_1012b2ef({
+function fn_1845876d({
   value: arg,
   options: arg_2,
   onChange: arg_3,
   disabled: arg_4,
 }) {
-  const [local, local_2] = imported_6(false);
-  const local_3 = imported_20(null);
+  const [local, local_2] = imported_8(false);
+  const local_3 = imported_22(null);
   const local_4 = arg_2.find((arg) => arg.value === arg);
-  imported_21(() => {
+  imported_23(() => {
     const local = (arg) => {
       if (local_3.current && !local_3.current.contains(arg.target)) {
         local_2(false);
@@ -2883,11 +2013,11 @@ function fn_1012b2ef({
     arg_3(arg);
     local_2(false);
   };
-  return imported_3("div", {
+  return imported("div", {
     ref: local_3,
     className: local_28704e24.selectWrapper,
     children: [
-      imported_3("button", {
+      imported("button", {
         type: "button",
         className: `${local_28704e24.select} ${local ? local_28704e24.open : ""}`,
         onClick: (arg) => {
@@ -2898,20 +2028,20 @@ function fn_1012b2ef({
         },
         disabled: arg_4,
         children: [
-          imported_3("span", {
+          imported("span", {
             className: local_28704e24.selectedValue,
             children: local_4?.label,
           }),
-          imported_3(local_6b96bea9, {
+          imported(imported_72, {
             size: 16,
           }),
         ],
       }),
       local &&
-        imported_3("div", {
+        imported("div", {
           className: local_28704e24.dropdown,
           children: arg_2.map((arg) =>
-            imported_3(
+            imported(
               "button",
               {
                 type: "button",
@@ -2944,6 +2074,14 @@ const local_341987ca = [
     label: "Никто",
   },
 ];
+const local_6c3e9196 = [
+  ...local_341987ca.slice(0, 2),
+  {
+    value: "following",
+    label: "Те, на кого я подписан",
+  },
+  ...local_341987ca.slice(2),
+];
 const local_bfddd7ce = [
   {
     value: "light",
@@ -2959,35 +2097,35 @@ const local_bfddd7ce = [
   },
 ];
 function fn_92ca2ba3() {
-  const { theme: local, setTheme: local_2 } = local_5e175cca();
-  return imported_3(imported_26, {
+  const { theme: local, setTheme: local_2 } = local_703810da();
+  return imported(imported_28, {
     children: [
-      imported_3("h2", {
-        className: local_41ea1484.contentTitle,
+      imported("h2", {
+        className: local_98798dac.contentTitle,
         children: "Оформление",
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
-        children: imported_3("div", {
-          className: local_41ea1484.settingItem,
+      imported("div", {
+        className: local_98798dac.section,
+        children: imported("div", {
+          className: local_98798dac.settingItem,
           children: [
-            imported_3("div", {
-              className: local_41ea1484.settingInfo,
-              children: imported_3("div", {
-                className: local_41ea1484.settingText,
+            imported("div", {
+              className: local_98798dac.settingInfo,
+              children: imported("div", {
+                className: local_98798dac.settingText,
                 children: [
-                  imported_3("span", {
-                    className: local_41ea1484.settingTitle,
+                  imported("span", {
+                    className: local_98798dac.settingTitle,
                     children: "Тема",
                   }),
-                  imported_3("span", {
-                    className: local_41ea1484.settingDescription,
+                  imported("span", {
+                    className: local_98798dac.settingDescription,
                     children: "Выберите цветовую схему приложения",
                   }),
                 ],
               }),
             }),
-            imported_3(fn_1012b2ef, {
+            imported(fn_1845876d, {
               value: local,
               options: local_bfddd7ce,
               onChange: (arg) => local_2(arg),
@@ -2998,95 +2136,7 @@ function fn_92ca2ba3() {
     ],
   });
 }
-const local_672a1b2c = "c_overlay";
-const local_6c1d1630 = "c_dialog";
-const local_9d9cf508_5 = "c_title";
-const local_806ef98a = "c_message";
-const local_8c4f8b4b_5 = "c_actions";
-const local_1d618df6_2 = "c_column";
-const local_86201875 = {
-  overlay: local_672a1b2c,
-  dialog: local_6c1d1630,
-  title: local_9d9cf508_5,
-  message: local_806ef98a,
-  actions: local_8c4f8b4b_5,
-  column: local_1d618df6_2,
-};
-const local_a207d941 = {
-  default: "primary",
-  cancel: "secondary",
-  destructive: "danger",
-};
-function fn_453021cc({
-  title: arg,
-  message: arg_2,
-  actions: arg_3,
-  onDismiss: arg_4,
-}) {
-  const local = arg_3.some((arg) => arg.loading);
-  imported_21(() => {
-    const local = (arg) => {
-      if (arg.key === "Escape") {
-        arg.stopPropagation();
-        arg_4?.();
-      }
-    };
-    document.addEventListener("keydown", local);
-    const local_2 = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", local);
-      document.body.style.overflow = local_2;
-    };
-  }, []);
-  return imported_29(
-    imported_3("div", {
-      className: local_86201875.overlay,
-      onClick: (arg) => {
-        arg.target === arg.currentTarget && !local && arg_4?.();
-      },
-      children: imported_3("div", {
-        role: "alertdialog",
-        "aria-modal": "true",
-        className: local_86201875.dialog,
-        children: [
-          imported_3("h2", {
-            className: local_86201875.title,
-            children: arg,
-          }),
-          arg_2 !== undefined &&
-            imported_3("p", {
-              className: local_86201875.message,
-              children: arg_2,
-            }),
-          imported_3("div", {
-            className: `${local_86201875.actions} ${arg_3.length > 2 ? local_86201875.column : ""}`,
-            children: arg_3.map((arg) =>
-              imported_3(
-                imported_7,
-                {
-                  variant: local_a207d941[arg.role ?? "default"],
-                  size: "lg",
-                  loading: arg.loading,
-                  disabled: local && !arg.loading,
-                  autofocus: arg.role === "cancel",
-                  onClick: (arg) => {
-                    arg.stopPropagation();
-                    arg.onClick();
-                  },
-                  children: arg.label,
-                },
-                arg.label,
-              ),
-            ),
-          }),
-        ],
-      }),
-    }),
-    document.body,
-  );
-}
-async function fn_0110282e(arg, arg_2, arg_3, arg_4 = false, arg_5 = "direct") {
+async function fn_007c8a7a(arg, arg_2, arg_3, arg_4 = false, arg_5 = "direct") {
   const local = await fetch(`/api/v1/auth${arg_2}`, {
     method: arg,
     credentials: "include",
@@ -3100,7 +2150,7 @@ async function fn_0110282e(arg, arg_2, arg_3, arg_4 = false, arg_5 = "direct") {
             "X-ITD-Phone-Method": "reverse",
           }
         : {}),
-      ...imported_38(),
+      ...imported_36(),
     },
     ...(arg_3
       ? {
@@ -3118,19 +2168,19 @@ async function fn_0110282e(arg, arg_2, arg_3, arg_4 = false, arg_5 = "direct") {
     local.status === 401 &&
     !arg_4 &&
     (!local_3?.code || local_3.code === "UNAUTHORIZED") &&
-    (await imported_39())
+    (await imported_37())
   ) {
-    return fn_0110282e(arg, arg_2, arg_3, true, arg_5);
+    return fn_007c8a7a(arg, arg_2, arg_3, true, arg_5);
   }
   const local_4 = Math.max(
     Number(local_3?.retryIn) || 0,
     Number(local_3?.retryAfter) || 0,
     Number(local.headers.get("Retry-After")) || 0,
   );
-  throw new imported_40(
+  throw new imported_38(
     local_3?.code || (local.status === 401 ? "UNAUTHORIZED" : "REQUEST_FAILED"),
     local.status === 429 ? Math.max(local_4, 30) : local_4,
-    imported_41(local),
+    imported_39(local),
   );
 }
 function fn_d032fbfc(arg) {
@@ -3139,31 +2189,31 @@ function fn_d032fbfc(arg) {
   }
   return arg.flowToken;
 }
-const local_7b076920 = {
-  methods: () => fn_0110282e("GET", "/methods"),
+const local_b41bdddd = {
+  methods: () => fn_007c8a7a("GET", "/methods"),
   setPassword: (arg) =>
-    fn_0110282e("POST", "/set-password", {
+    fn_007c8a7a("POST", "/set-password", {
       password: arg,
     }),
   attachEmail: async (arg) =>
     fn_d032fbfc(
-      await fn_0110282e("POST", "/email/attach", {
+      await fn_007c8a7a("POST", "/email/attach", {
         email: arg,
       }),
     ),
   verifyEmail: (arg, arg_2, arg_3) =>
-    fn_0110282e("POST", "/verify-otp", {
+    fn_007c8a7a("POST", "/verify-otp", {
       email: arg,
       otp: arg_2,
       flowToken: arg_3,
     }),
   resendEmail: (arg, arg_2) =>
-    fn_0110282e("POST", "/resend-otp", {
+    fn_007c8a7a("POST", "/resend-otp", {
       email: arg,
       flowToken: arg_2,
     }),
   changePhone: async (arg, arg_2, arg_3 = "direct") => {
-    const local = await fn_0110282e(
+    const local = await fn_007c8a7a(
       "POST",
       "/phone/change",
       {
@@ -3174,25 +2224,25 @@ const local_7b076920 = {
       arg_3,
     );
     return {
-      ...imported_36(local),
+      ...imported_33(local),
       flowToken: fn_d032fbfc(local),
     };
   },
   resendPhone: async (arg, arg_2) =>
-    imported_36(
-      await fn_0110282e("POST", "/resend-otp", {
+    imported_33(
+      await fn_007c8a7a("POST", "/resend-otp", {
         phone: arg,
         flowToken: arg_2,
       }),
     ),
   changeEmail: async (arg) =>
     fn_d032fbfc(
-      await fn_0110282e("POST", "/email/change", {
+      await fn_007c8a7a("POST", "/email/change", {
         email: arg,
       }),
     ),
   verifyChange: async (arg, arg_2, arg_3) => {
-    const local = await fn_0110282e("POST", "/verify-otp", {
+    const local = await fn_007c8a7a("POST", "/verify-otp", {
       ...arg,
       otp: arg_2,
       flowToken: arg_3,
@@ -3211,14 +2261,14 @@ const local_7b076920 = {
     };
   },
   requestProof: async (arg, arg_2) => {
-    const local = await fn_0110282e("POST", "/change/proof", {
+    const local = await fn_007c8a7a("POST", "/change/proof", {
       changeToken: arg,
       method: arg_2,
     });
     return {
       sentTo: local.sentTo,
       delivery: local.delivery
-        ? imported_36({
+        ? imported_33({
             delivery: local.delivery,
             retryIn: 0,
           })
@@ -3226,20 +2276,20 @@ const local_7b076920 = {
     };
   },
   confirm: (arg, arg_2) =>
-    fn_0110282e("POST", "/change/confirm", {
+    fn_007c8a7a("POST", "/change/confirm", {
       changeToken: arg,
       ...arg_2,
     }),
   wait: (arg) =>
-    fn_0110282e("POST", "/change/wait", {
+    fn_007c8a7a("POST", "/change/wait", {
       changeToken: arg,
     }),
-  pending: async () => (await fn_0110282e("GET", "/change/pending")).requests,
+  pending: async () => (await fn_007c8a7a("GET", "/change/pending")).requests,
   cancelPending: (arg) =>
-    fn_0110282e("DELETE", `/change/pending/${encodeURIComponent(arg)}`),
+    fn_007c8a7a("DELETE", `/change/pending/${encodeURIComponent(arg)}`),
 };
 const local_45600a9b = (arg) => {
-  if (arg instanceof imported_40) {
+  if (arg instanceof imported_38) {
     return arg.code;
   }
   return "";
@@ -3288,14 +2338,14 @@ function fn_f369556a(arg, arg_2, arg_3 = false) {
           }
         : {}),
     }[local_45600a9b(arg)] ||
-    imported_66(arg) ||
-    imported_37(arg)
+    imported_34(arg) ||
+    imported_35(arg)
   );
 }
 function fn_20f2ed02() {
-  const [local, local_2] = imported_6(0);
-  const [local_3, local_4] = imported_6(() => Date.now());
-  imported_21(() => {
+  const [local, local_2] = imported_8(0);
+  const [local_3, local_4] = imported_8(() => Date.now());
+  imported_23(() => {
     if (local <= Date.now()) {
       return;
     }
@@ -3318,9 +2368,9 @@ function fn_20f2ed02() {
   ];
 }
 function fn_47c8dfb0(arg, arg_2) {
-  const [local, local_2] = imported_6(false);
-  const [local_3, local_4] = imported_6("");
-  const local_5 = imported_20(false);
+  const [local, local_2] = imported_8(false);
+  const [local_3, local_4] = imported_8("");
+  const local_5 = imported_22(false);
   return {
     busy: local,
     error: local_3,
@@ -3334,7 +2384,7 @@ function fn_47c8dfb0(arg, arg_2) {
           await arg();
         } catch (error) {
           local_4(arg(error));
-          error instanceof imported_40 &&
+          error instanceof imported_38 &&
             error.retryIn &&
             arg_2?.(error.retryIn);
           arg_2?.(error);
@@ -3356,7 +2406,7 @@ const local_b6c83f75 = (arg) => {
   }
   return "Сейчас позвоним";
 };
-const local_5d6c4335 = (arg) => {
+const local_f62db418 = (arg) => {
   if (arg.channel === "sms") {
     return "Введите код из сообщения.";
   }
@@ -3368,7 +2418,7 @@ const local_5d6c4335 = (arg) => {
   }
   return `Отвечать не нужно. Введите последние ${arg.codeLength} цифры номера, с которого поступит звонок.`;
 };
-function fn_f7dce47e(arg) {
+function fn_ab408515(arg) {
   const local = arg % 10;
   const local_2 = arg % 100;
   const local_3 =
@@ -3379,7 +2429,7 @@ function fn_f7dce47e(arg) {
         : "дней";
   return `${arg} ${local_3}`;
 }
-function fn_f2eb7eca(arg) {
+function fn_9e6a953e(arg) {
   const local = new Date(arg);
   if (Number.isNaN(local.getTime())) {
     return arg;
@@ -3392,12 +2442,12 @@ function fn_f2eb7eca(arg) {
     minute: "2-digit",
   })}`;
 }
-const local_f06debfc_6 = 60;
-function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
-  const [local, local_2] = imported_6("email");
-  const [local_3, local_4] = imported_6("");
-  const [local_5, local_6] = imported_6("");
-  const [local_7, local_8] = imported_6([]);
+const local_f06debfc_2 = 60;
+function fn_b4e36455({ onClose: arg, onAttached: arg_2 }) {
+  const [local, local_2] = imported_8("email");
+  const [local_3, local_4] = imported_8("");
+  const [local_5, local_6] = imported_8("");
+  const [local_7, local_8] = imported_8([]);
   const [local_9, local_10] = fn_20f2ed02();
   const {
     busy: local_11,
@@ -3419,10 +2469,10 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
       return;
     }
     local_14(async () => {
-      local_6(await local_7b076920.attachEmail(local));
+      local_6(await local_b41bdddd.attachEmail(local));
       local_4(local);
       local_8(Array(6).fill(""));
-      local_10(local_f06debfc_6);
+      local_10(local_f06debfc_2);
       local_2("code");
     });
   };
@@ -3433,7 +2483,7 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
         async () => {
           if (
             !(
-              await local_7b076920.verifyEmail(
+              await local_b41bdddd.verifyEmail(
                 local_3,
                 local_7.join(""),
                 local_5,
@@ -3451,9 +2501,9 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
   const local_17 = () => {
     if (!(local_11 || local_9)) {
       local_14(async () => {
-        await local_7b076920.resendEmail(local_3, local_5);
+        await local_b41bdddd.resendEmail(local_3, local_5);
         local_8(Array(6).fill(""));
-        local_10(local_f06debfc_6);
+        local_10(local_f06debfc_2);
       });
     }
   };
@@ -3466,37 +2516,37 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
       local_10(0);
     }
   };
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     title: "Почта",
     onClose: arg,
-    className: imported_42.dialog,
+    className: imported_40.dialog,
     onBeforeClose: () => !local_11,
-    children: imported_3("div", {
-      className: imported_42.dialogContent,
-      children: imported_3("div", {
-        className: imported_42.card,
+    children: imported("div", {
+      className: imported_40.dialogContent,
+      children: imported("div", {
+        className: imported_40.card,
         children: [
-          imported_3("h1", {
+          imported("h1", {
             children:
               local === "email" ? "Привязать почту" : "Подтвердите почту",
           }),
-          imported_3("p", {
-            className: imported_42.description,
+          imported("p", {
+            className: imported_40.description,
             children:
               local === "email"
                 ? "Пришлём код подтверждения на эту почту."
                 : `Мы отправили код на ${local_3}.`,
           }),
           local === "email" &&
-            imported_3("form", {
-              className: imported_42.form,
+            imported("form", {
+              className: imported_40.form,
               onSubmit: local_15,
               children: [
-                imported_3("label", {
-                  className: imported_42.field,
+                imported("label", {
+                  className: imported_40.field,
                   children: [
                     "Почта",
-                    imported_3("input", {
+                    imported("input", {
                       type: "email",
                       autoComplete: "email",
                       placeholder: "you@example.com",
@@ -3512,12 +2562,12 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
                   ],
                 }),
                 local_12 &&
-                  imported_3("p", {
-                    className: imported_42.error,
+                  imported("p", {
+                    className: imported_40.error,
                     role: "alert",
                     children: local_12,
                   }),
-                imported_3(imported_7, {
+                imported(imported_9, {
                   type: "submit",
                   size: "lg",
                   fullWidth: true,
@@ -3527,15 +2577,15 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
                     ? `Подождите ${local_9} с`
                     : "Отправить код",
                 }),
-                imported_3(imported_8, {}),
+                imported(imported_10, {}),
               ],
             }),
           local === "code" &&
-            imported_3("form", {
-              className: imported_42.form,
+            imported("form", {
+              className: imported_40.form,
               onSubmit: local_16,
               children: [
-                imported_3(imported_43, {
+                imported(imported_41, {
                   value: local_7,
                   length: 6,
                   onChange: (arg) => {
@@ -3546,12 +2596,12 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
                   status: local_12 ? "error" : "idle",
                 }),
                 local_12 &&
-                  imported_3("p", {
-                    className: imported_42.error,
+                  imported("p", {
+                    className: imported_40.error,
                     role: "alert",
                     children: local_12,
                   }),
-                imported_3(imported_7, {
+                imported(imported_9, {
                   type: "submit",
                   size: "lg",
                   fullWidth: true,
@@ -3559,18 +2609,18 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
                   disabled: !local_7.every(Boolean),
                   children: "Подтвердить почту",
                 }),
-                imported_3("button", {
+                imported("button", {
                   type: "button",
-                  className: imported_42.link,
+                  className: imported_40.link,
                   disabled: local_11 || !!local_9,
                   onClick: local_17,
                   children: local_9
                     ? `Отправить код повторно через ${local_9} с`
                     : "Отправить код повторно",
                 }),
-                imported_3("button", {
+                imported("button", {
                   type: "button",
-                  className: imported_42.back,
+                  className: imported_40.back,
                   disabled: local_11,
                   onClick: local_18,
                   children: "Ошиблись в адресе? Изменить",
@@ -3582,13 +2632,13 @@ function fn_78a28bb8({ onClose: arg, onAttached: arg_2 }) {
     }),
   });
 }
-const local_f06debfc_7 = 60;
+const local_f06debfc_3 = 60;
 const local_367ab72d = [
   "INVALID_CHANGE_TOKEN",
   "METHOD_CHANGED",
   "IDENTIFIER_TAKEN",
 ];
-function fn_3d21332a(arg, arg_2, arg_3) {
+function fn_93035bce(arg, arg_2, arg_3) {
   if (arg === "email_code") {
     if (arg_3.email) {
       return `Код на почту ${arg_3.email}`;
@@ -3612,30 +2662,30 @@ function fn_3d21332a(arg, arg_2, arg_3) {
   }
   return "Код на старую почту";
 }
-function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
+function fn_22a725eb({ kind: arg, methods: arg_2, onClose: arg_3 }) {
   const local = arg === "phone";
-  const [local_2, local_3] = imported_6("value");
-  const [local_4, local_5] = imported_6("ru");
-  const [local_6, local_7] = imported_6("");
-  const [local_8, local_9] = imported_6("");
-  const [local_10, local_11] = imported_6(null);
-  const [local_12, local_13] = imported_6(0);
-  const [local_14, local_15] = imported_6("");
-  const [local_16, local_17] = imported_6("");
-  const [local_18, local_19] = imported_6("");
-  const [local_20, local_21] = imported_6(null);
-  const [local_22, local_23] = imported_6([]);
-  const [local_24, local_25] = imported_6(false);
-  const [local_26, local_27] = imported_6(false);
-  const [local_28, local_29] = imported_6(null);
-  const [local_30, local_31] = imported_6("");
-  const [local_32, local_33] = imported_6(null);
-  const [local_34, local_35] = imported_6(null);
-  const [local_36, local_37] = imported_6(null);
-  const [local_38, local_39] = imported_6(null);
+  const [local_2, local_3] = imported_8("value");
+  const [local_4, local_5] = imported_8("ru");
+  const [local_6, local_7] = imported_8("");
+  const [local_8, local_9] = imported_8("");
+  const [local_10, local_11] = imported_8(null);
+  const [local_12, local_13] = imported_8(0);
+  const [local_14, local_15] = imported_8("");
+  const [local_16, local_17] = imported_8("");
+  const [local_18, local_19] = imported_8("");
+  const [local_20, local_21] = imported_8(null);
+  const [local_22, local_23] = imported_8([]);
+  const [local_24, local_25] = imported_8(false);
+  const [local_26, local_27] = imported_8(false);
+  const [local_28, local_29] = imported_8(null);
+  const [local_30, local_31] = imported_8("");
+  const [local_32, local_33] = imported_8(null);
+  const [local_34, local_35] = imported_8(null);
+  const [local_36, local_37] = imported_8(null);
+  const [local_38, local_39] = imported_8(null);
   const [local_40, local_41] = fn_20f2ed02();
   const [local_42, local_43] = fn_20f2ed02();
-  const [local_44, local_45] = imported_6(false);
+  const [local_44, local_45] = imported_8(false);
   const local_46 =
     local_2 === "code"
       ? !local
@@ -3646,12 +2696,12 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     setError: local_49,
     run: local_50,
   } = fn_47c8dfb0((arg) => fn_f369556a(arg, arg, local_46), local_41);
-  const local_51 = imported_23((arg) => local_11(arg), []);
-  const local_52 = imported_23(() => local_11(null), []);
-  const local_53 = imported_44();
-  const local_54 = imported_45(local_53, local_4);
-  const local_55 = imported_46(local_53, local_4);
-  const local_56 = local && !local_8 ? imported_47(local_4, local_6) : null;
+  const local_51 = imported_25((arg) => local_11(arg), []);
+  const local_52 = imported_25(() => local_11(null), []);
+  const local_53 = imported_42();
+  const local_54 = imported_43(local_53, local_4);
+  const local_55 = imported_44(local_53, local_4);
+  const local_56 = local && !local_8 ? imported_45(local_4, local_6) : null;
   const local_57 =
     local_2 === "code"
       ? (local_20?.codeLength ?? 6)
@@ -3668,7 +2718,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     local_11(null);
     local_13((arg) => arg + 1);
     local_43(arg);
-    local_49(imported_55);
+    local_49(imported_53);
   };
   const local_60 = !!local_28?.proofs.includes("password");
   const local_61 = (arg, arg_2) => {
@@ -3709,7 +2759,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       local_11(null);
       local_50(async () => {
         try {
-          const local = await local_7b076920.changePhone(
+          const local = await local_b41bdddd.changePhone(
             local_56,
             local,
             arg_2,
@@ -3736,12 +2786,12 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       return;
     }
     local_50(async () => {
-      local_19(await local_7b076920.changeEmail(local));
+      local_19(await local_b41bdddd.changeEmail(local));
       local_15(local);
       local_17(local);
       local_21(null);
       local_23(Array(6).fill(""));
-      local_41(local_f06debfc_7);
+      local_41(local_f06debfc_3);
       local_3("code");
     });
   };
@@ -3758,7 +2808,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     if (local_2 === "code") {
       local_50(
         async () => {
-          const local = await local_7b076920.verifyChange(
+          const local = await local_b41bdddd.verifyChange(
             local
               ? {
                   phone: local_16,
@@ -3775,7 +2825,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
           local_3("proof");
         },
         (arg) => {
-          if (local && imported_53(arg)) {
+          if (local && imported_51(arg)) {
             local_59(arg.flowExpiresIn ?? 0);
           } else {
             local_23(Array(local_57).fill(""));
@@ -3787,7 +2837,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     if (local_28) {
       local_50(
         async () => {
-          await local_7b076920.confirm(local_28.changeToken, {
+          await local_b41bdddd.confirm(local_28.changeToken, {
             code: local,
           });
           local_63();
@@ -3804,33 +2854,33 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       local_50(
         async () => {
           if (local_2 === "proofCode" && local_28 && local_36) {
-            const local = await local_7b076920.requestProof(
+            const local = await local_b41bdddd.requestProof(
               local_28.changeToken,
               local_36,
             );
             local_35(local);
             local_23(Array(local.delivery?.codeLength ?? 6).fill(""));
-            local_41(local_f06debfc_7);
+            local_41(local_f06debfc_3);
           } else if (local) {
-            const local = await local_7b076920.resendPhone(local_16, local_18);
+            const local = await local_b41bdddd.resendPhone(local_16, local_18);
             local_21(local);
             local_23(Array(local.codeLength).fill(""));
             local_41(local.retryIn);
           } else {
-            await local_7b076920.resendEmail(local_16, local_18);
+            await local_b41bdddd.resendEmail(local_16, local_18);
             local_23(Array(6).fill(""));
-            local_41(local_f06debfc_7);
+            local_41(local_f06debfc_3);
           }
         },
         local_2 === "proofCode"
           ? local_62
           : (arg) => {
               local &&
-                imported_53(arg) &&
+                imported_51(arg) &&
                 (arg.flowExpiresIn > 0
                   ? (local_45(true),
                     local_43(arg.flowExpiresIn),
-                    local_49(imported_54))
+                    local_49(imported_52))
                   : local_59());
             },
       );
@@ -3841,7 +2891,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     if (!(!local_28 || !local_30 || local_47)) {
       local_33("password");
       local_50(async () => {
-        await local_7b076920.confirm(local_28.changeToken, {
+        await local_b41bdddd.confirm(local_28.changeToken, {
           password: local_30,
         });
         local_63();
@@ -3853,21 +2903,21 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       local_33(arg);
       local_50(async () => {
         if (arg === "wait") {
-          const local = await local_7b076920.wait(local_28.changeToken);
+          const local = await local_b41bdddd.wait(local_28.changeToken);
           local_61(
             "Заявка принята",
-            `${local ? "Номер" : "Почта"} сменится ${fn_f2eb7eca(local.appliesAt)}. До этого заявку можно отменить в разделе «Безопасность»; на всех ваших устройствах придёт уведомление.`,
+            `${local ? "Номер" : "Почта"} сменится ${fn_9e6a953e(local.appliesAt)}. До этого заявку можно отменить в разделе «Безопасность»; на всех ваших устройствах придёт уведомление.`,
           );
           return;
         }
-        const local = await local_7b076920.requestProof(
+        const local = await local_b41bdddd.requestProof(
           local_28.changeToken,
           arg,
         );
         local_37(arg);
         local_35(local);
         local_23(Array(local.delivery?.codeLength ?? 6).fill(""));
-        local_41(local_f06debfc_7);
+        local_41(local_f06debfc_3);
         local_3("proofCode");
       }, local_62).finally(() => local_33(null));
     }
@@ -3916,7 +2966,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
         ? local_20?.reverseOnly
           ? "Вы можете позвонить сами или повторить запрос позже."
           : local_20
-            ? local_5d6c4335(local_20)
+            ? local_f62db418(local_20)
             : `Отправили на ${local_16}.`
         : local_2 === "proof"
           ? local_60
@@ -3924,7 +2974,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
             : "Выберите, как подтвердить, что смену запросили вы."
           : local_2 === "proofCode"
             ? local_70
-              ? local_5d6c4335(local_70)
+              ? local_f62db418(local_70)
               : `Отправили на ${local_34?.sentTo ?? ""}.`
             : local_38?.lede;
   const local_73 =
@@ -3937,45 +2987,45 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     ? [
         ...local_28.proofs
           .filter((arg) => arg !== "password")
-          .map((arg) => [arg, fn_3d21332a(arg, arg, arg_2)]),
-        ["wait", `Подождать ${fn_f7dce47e(local_28.waitDays)}`],
+          .map((arg) => [arg, fn_93035bce(arg, arg, arg_2)]),
+        ["wait", `Подождать ${fn_ab408515(local_28.waitDays)}`],
       ]
     : [];
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     title: local ? "Смена номера" : "Смена почты",
     onClose: arg_3,
-    className: imported_42.dialog,
+    className: imported_40.dialog,
     onBeforeClose: () => !local_47,
-    children: imported_3("div", {
-      className: imported_42.dialogContent,
-      children: imported_3("div", {
-        className: imported_42.card,
+    children: imported("div", {
+      className: imported_40.dialogContent,
+      children: imported("div", {
+        className: imported_40.card,
         children: [
-          imported_3("h1", {
+          imported("h1", {
             children:
               local_24 && local_2 === "code" ? "Позвоните сами" : local_71,
           }),
           local_73 &&
-            imported_3("p", {
-              className: imported_42.number,
+            imported("p", {
+              className: imported_40.number,
               children: local_73,
             }),
-          imported_3("p", {
-            className: imported_42.description,
+          imported("p", {
+            className: imported_40.description,
             children:
               local_24 && local_2 === "code"
                 ? "Позвоните на выданный номер с этого телефона. Код вводить не нужно."
                 : local_72,
           }),
           local_2 === "value" &&
-            imported_3("form", {
-              className: imported_42.form,
+            imported("form", {
+              className: imported_40.form,
               onSubmit: local_64,
               children: [
                 local
-                  ? imported_3(imported_26, {
+                  ? imported(imported_28, {
                       children: [
-                        imported_3(imported_48, {
+                        imported(imported_46, {
                           country: local_4,
                           digits: local_6,
                           error: local_8,
@@ -3991,10 +3041,10 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                             local_49("");
                           },
                         }),
-                        imported_3("div", {
-                          className: imported_42.captcha,
-                          children: imported_3(
-                            imported_49,
+                        imported("div", {
+                          className: imported_40.captcha,
+                          children: imported(
+                            imported_47,
                             {
                               theme:
                                 document.documentElement.getAttribute(
@@ -4011,11 +3061,11 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                         }),
                       ],
                     })
-                  : imported_3("label", {
-                      className: imported_42.field,
+                  : imported("label", {
+                      className: imported_40.field,
                       children: [
                         "Новая почта",
-                        imported_3("input", {
+                        imported("input", {
                           type: "email",
                           autoComplete: "email",
                           placeholder: "you@example.com",
@@ -4031,13 +3081,13 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                       ],
                     }),
                 (local_48 || local_8) &&
-                  imported_3("p", {
-                    className: imported_42.error,
+                  imported("p", {
+                    className: imported_40.error,
                     role: "alert",
                     children: local_48 || local_8,
                   }),
                 (!local || local_54) &&
-                  imported_3(imported_7, {
+                  imported(imported_9, {
                     type: "submit",
                     size: "lg",
                     fullWidth: true,
@@ -4052,24 +3102,24 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                         ? `Новая проверка через ${local_42} с`
                         : "Получить код",
                   }),
-                imported_3(imported_50, {
+                imported(imported_48, {
                   available: local && !!local_56 && local_55,
                   disabled: local_47 || !!local_42 || !local_10,
                   onClick: (arg) => local_64(arg, "reverse"),
                 }),
-                imported_3(imported_8, {}),
+                imported(imported_10, {}),
               ],
             }),
           (local_2 === "code" || local_2 === "proofCode") &&
-            imported_3("form", {
-              className: imported_42.form,
+            imported("form", {
+              className: imported_40.form,
               onSubmit: local_65,
               children: [
-                imported_3(imported_51, {
+                imported(imported_49, {
                   visible:
                     local_2 !== "code" || (!local_24 && !local_20?.reverseOnly),
                   children: [
-                    imported_3(imported_43, {
+                    imported(imported_41, {
                       value: local_22,
                       length: local_57,
                       onChange: (arg) => {
@@ -4080,12 +3130,12 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                       status: local_48 ? "error" : "idle",
                     }),
                     local_48 &&
-                      imported_3("p", {
-                        className: imported_42.error,
+                      imported("p", {
+                        className: imported_40.error,
                         role: "alert",
                         children: local_48,
                       }),
-                    imported_3(imported_7, {
+                    imported(imported_9, {
                       type: "submit",
                       size: "lg",
                       fullWidth: true,
@@ -4094,9 +3144,9 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                       children:
                         local_2 === "code" ? "Продолжить" : "Подтвердить",
                     }),
-                    imported_3("button", {
+                    imported("button", {
                       type: "button",
-                      className: imported_42.link,
+                      className: imported_40.link,
                       disabled: local_47 || !!local_40 || local_44,
                       onClick: local_66,
                       children: local_40
@@ -4104,7 +3154,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                         : "Отправить код повторно",
                     }),
                     local_44 &&
-                      imported_3(imported_7, {
+                      imported(imported_9, {
                         type: "button",
                         fullWidth: true,
                         size: "lg",
@@ -4118,8 +3168,8 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                 }),
                 local_2 === "code" &&
                   local &&
-                  imported_3(
-                    imported_52,
+                  imported(
+                    imported_50,
                     {
                       embedded: true,
                       directEntry: local_26,
@@ -4152,17 +3202,17 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                 local_2 === "code" &&
                   local_20?.reverseOnly &&
                   !local_24 &&
-                  imported_3(imported_26, {
+                  imported(imported_28, {
                     children: [
                       local_48 &&
-                        imported_3("p", {
-                          className: imported_42.error,
+                        imported("p", {
+                          className: imported_40.error,
                           role: "alert",
                           children: local_48,
                         }),
-                      imported_3("button", {
+                      imported("button", {
                         type: "button",
-                        className: imported_42.link,
+                        className: imported_40.link,
                         disabled: local_47 || !!local_40,
                         onClick: local_66,
                         children: local_40
@@ -4171,9 +3221,9 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                       }),
                     ],
                   }),
-                imported_3("button", {
+                imported("button", {
                   type: "button",
-                  className: imported_42.back,
+                  className: imported_40.back,
                   disabled: local_47,
                   onClick: local_69,
                   children:
@@ -4187,18 +3237,18 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
             }),
           local_2 === "proof" &&
             local_28 &&
-            imported_3("form", {
-              className: imported_42.form,
+            imported("form", {
+              className: imported_40.form,
               onSubmit: local_67,
               children: [
                 local_60 &&
-                  imported_3(imported_26, {
+                  imported(imported_28, {
                     children: [
-                      imported_3("label", {
-                        className: imported_42.field,
+                      imported("label", {
+                        className: imported_40.field,
                         children: [
                           "Пароль",
-                          imported_3("input", {
+                          imported("input", {
                             type: "password",
                             autoComplete: "current-password",
                             placeholder: "Пароль от аккаунта",
@@ -4212,7 +3262,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                           }),
                         ],
                       }),
-                      imported_3(imported_7, {
+                      imported(imported_9, {
                         type: "submit",
                         size: "lg",
                         fullWidth: true,
@@ -4224,14 +3274,14 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
                     ],
                   }),
                 local_48 &&
-                  imported_3("p", {
-                    className: imported_42.error,
+                  imported("p", {
+                    className: imported_40.error,
                     role: "alert",
                     children: local_48,
                   }),
                 local_74.map(([arg, arg_2]) =>
-                  imported_3(
-                    imported_7,
+                  imported(
+                    imported_9,
                     {
                       type: "button",
                       variant: "secondary",
@@ -4248,7 +3298,7 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
               ],
             }),
           local_2 === "result" &&
-            imported_3(imported_7, {
+            imported(imported_9, {
               size: "lg",
               fullWidth: true,
               onClick: arg_3,
@@ -4260,9 +3310,9 @@ function fn_b5ace9a1({ kind: arg, methods: arg_2, onClose: arg_3 }) {
   });
 }
 function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
-  const [local, local_2] = imported_6("");
-  const [local_3, local_4] = imported_6("");
-  const [local_5, local_6] = imported_6(false);
+  const [local, local_2] = imported_8("");
+  const [local_3, local_4] = imported_8("");
+  const [local_5, local_6] = imported_8(false);
   const {
     busy: local_7,
     error: local_8,
@@ -4281,7 +3331,7 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
         return;
       }
       local_10(async () => {
-        await local_7b076920.setPassword(local);
+        await local_b41bdddd.setPassword(local);
         local_2("");
         local_4("");
         local_6(true);
@@ -4289,41 +3339,41 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
       });
     }
   };
-  return imported_3(imported_9, {
+  return imported(imported_11, {
     title: "Пароль",
     onClose: arg,
-    className: imported_42.dialog,
+    className: imported_40.dialog,
     onBeforeClose: () => !local_7,
-    children: imported_3("div", {
-      className: imported_42.dialogContent,
-      children: imported_3("div", {
-        className: imported_42.card,
+    children: imported("div", {
+      className: imported_40.dialogContent,
+      children: imported("div", {
+        className: imported_40.card,
         children: [
-          imported_3("h1", {
+          imported("h1", {
             children: local_5 ? "Пароль создан" : "Создать пароль",
           }),
-          imported_3("p", {
-            className: imported_42.description,
+          imported("p", {
+            className: imported_40.description,
             children: local_5
               ? "Теперь можно входить с паролем по почте и по номеру."
               : "С паролем можно входить по почте и по номеру без кода.",
           }),
           local_5
-            ? imported_3(imported_7, {
+            ? imported(imported_9, {
                 size: "lg",
                 fullWidth: true,
                 onClick: arg,
                 children: "Готово",
               })
-            : imported_3("form", {
-                className: imported_42.form,
+            : imported("form", {
+                className: imported_40.form,
                 onSubmit: local_11,
                 children: [
-                  imported_3("label", {
-                    className: imported_42.field,
+                  imported("label", {
+                    className: imported_40.field,
                     children: [
                       "Новый пароль",
-                      imported_3("input", {
+                      imported("input", {
                         type: "password",
                         autoComplete: "new-password",
                         maxLength: 100,
@@ -4337,11 +3387,11 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
                       }),
                     ],
                   }),
-                  imported_3("label", {
-                    className: imported_42.field,
+                  imported("label", {
+                    className: imported_40.field,
                     children: [
                       "Повторите пароль",
-                      imported_3("input", {
+                      imported("input", {
                         type: "password",
                         autoComplete: "new-password",
                         maxLength: 100,
@@ -4355,17 +3405,17 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
                       }),
                     ],
                   }),
-                  imported_3("p", {
-                    className: imported_42.terms,
+                  imported("p", {
+                    className: imported_40.terms,
                     children: local_12bca483,
                   }),
                   local_8 &&
-                    imported_3("p", {
-                      className: imported_42.error,
+                    imported("p", {
+                      className: imported_40.error,
                       role: "alert",
                       children: local_8,
                     }),
-                  imported_3(imported_7, {
+                  imported(imported_9, {
                     type: "submit",
                     size: "lg",
                     fullWidth: true,
@@ -4373,7 +3423,7 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
                     disabled: !local || !local_3,
                     children: "Создать пароль",
                   }),
-                  imported_3(imported_8, {}),
+                  imported(imported_10, {}),
                 ],
               }),
         ],
@@ -4381,19 +3431,19 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
     }),
   });
 }
-function fn_c599885a({ onChangePassword: arg }) {
-  const [local, local_2] = imported_6(null);
-  const [local_3, local_4] = imported_6([]);
-  const [local_5, local_6] = imported_6("");
-  const [local_7, local_8] = imported_6(null);
-  const [local_9, local_10] = imported_6(null);
-  const [local_11, local_12] = imported_6(false);
-  const [local_13, local_14] = imported_6("");
+function fn_5be740c2({ onChangePassword: arg }) {
+  const [local, local_2] = imported_8(null);
+  const [local_3, local_4] = imported_8([]);
+  const [local_5, local_6] = imported_8("");
+  const [local_7, local_8] = imported_8(null);
+  const [local_9, local_10] = imported_8(null);
+  const [local_11, local_12] = imported_8(false);
+  const [local_13, local_14] = imported_8("");
   const local_15 = async () => {
     try {
       const [local, local_2] = await Promise.all([
-        local_7b076920.methods(),
-        local_7b076920.pending(),
+        local_b41bdddd.methods(),
+        local_b41bdddd.pending(),
       ]);
       local_2(local);
       local_4(local_2);
@@ -4402,7 +3452,7 @@ function fn_c599885a({ onChangePassword: arg }) {
       local_6("Не удалось загрузить способы входа. Попробуйте ещё раз.");
     }
   };
-  imported_21(() => {
+  imported_23(() => {
     local_15();
   }, []);
   const local_16 = () => {
@@ -4412,7 +3462,7 @@ function fn_c599885a({ onChangePassword: arg }) {
   const local_17 = async (arg) => {
     local_12(true);
     try {
-      await local_7b076920.cancelPending(arg.id);
+      await local_b41bdddd.cancelPending(arg.id);
       local_4((arg) => arg.filter((arg) => arg.id !== arg.id));
     } catch (error) {
       local_14(fn_f369556a(error, arg.kind));
@@ -4428,19 +3478,19 @@ function fn_c599885a({ onChangePassword: arg }) {
         : "Привяжите почту, чтобы входить по ней и восстанавливать пароль."
       : "Создайте пароль, чтобы входить по почте и по номеру без кода."
     : null;
-  return imported_3(imported_26, {
+  return imported(imported_28, {
     children: [
-      imported_3("div", {
-        className: imported_42.rows,
+      imported("div", {
+        className: imported_40.rows,
         children: [
           local_5 &&
-            imported_3("div", {
-              className: imported_42.error,
+            imported("div", {
+              className: imported_40.error,
               role: "alert",
               children: [
                 local_5,
-                imported_3("button", {
-                  className: imported_42.link,
+                imported("button", {
+                  className: imported_40.link,
                   onClick: () => {
                     local_15();
                   },
@@ -4448,22 +3498,22 @@ function fn_c599885a({ onChangePassword: arg }) {
                 }),
               ],
             }),
-          imported_3("div", {
-            className: imported_42.row,
+          imported("div", {
+            className: imported_40.row,
             children: [
-              imported_3("div", {
+              imported("div", {
                 children: [
-                  imported_3("strong", {
+                  imported("strong", {
                     children: "Телефон",
                   }),
-                  imported_3("p", {
+                  imported("p", {
                     children: local
                       ? local.phone || "Номер не привязан"
                       : "Загрузка…",
                   }),
                 ],
               }),
-              imported_3(imported_7, {
+              imported(imported_9, {
                 size: "sm",
                 disabled: !local,
                 onClick: () =>
@@ -4478,22 +3528,22 @@ function fn_c599885a({ onChangePassword: arg }) {
               }),
             ],
           }),
-          imported_3("div", {
-            className: imported_42.row,
+          imported("div", {
+            className: imported_40.row,
             children: [
-              imported_3("div", {
+              imported("div", {
                 children: [
-                  imported_3("strong", {
+                  imported("strong", {
                     children: "Почта",
                   }),
-                  imported_3("p", {
+                  imported("p", {
                     children: local
                       ? local.email || "Почта не привязана"
                       : "Загрузка…",
                   }),
                 ],
               }),
-              imported_3(imported_7, {
+              imported(imported_9, {
                 size: "sm",
                 disabled: !local,
                 onClick: () =>
@@ -4508,15 +3558,15 @@ function fn_c599885a({ onChangePassword: arg }) {
               }),
             ],
           }),
-          imported_3("div", {
-            className: imported_42.row,
+          imported("div", {
+            className: imported_40.row,
             children: [
-              imported_3("div", {
+              imported("div", {
                 children: [
-                  imported_3("strong", {
+                  imported("strong", {
                     children: "Пароль",
                   }),
-                  imported_3("p", {
+                  imported("p", {
                     children: local
                       ? local.hasPassword
                         ? "Пароль установлен"
@@ -4525,7 +3575,7 @@ function fn_c599885a({ onChangePassword: arg }) {
                   }),
                 ],
               }),
-              imported_3(imported_7, {
+              imported(imported_9, {
                 size: "sm",
                 disabled: !local,
                 onClick: () => {
@@ -4539,39 +3589,39 @@ function fn_c599885a({ onChangePassword: arg }) {
             ],
           }),
           local_18 &&
-            imported_3("p", {
-              className: imported_42.hint,
+            imported("p", {
+              className: imported_40.hint,
               children: local_18,
             }),
         ],
       }),
       local_3.length > 0 &&
-        imported_3("div", {
-          className: imported_42.rows,
+        imported("div", {
+          className: imported_40.rows,
           children: [
             local_3.map((arg) =>
-              imported_3(
+              imported(
                 "div",
                 {
-                  className: imported_42.row,
+                  className: imported_40.row,
                   children: [
-                    imported_3("div", {
+                    imported("div", {
                       children: [
-                        imported_3("strong", {
+                        imported("strong", {
                           children:
                             arg.kind === "phone"
                               ? "Смена номера"
                               : "Смена почты",
                         }),
-                        imported_3("p", {
+                        imported("p", {
                           children: ["На ", arg.newIdentifier],
                         }),
-                        imported_3("p", {
-                          children: ["Сработает ", fn_f2eb7eca(arg.appliesAt)],
+                        imported("p", {
+                          children: ["Сработает ", fn_9e6a953e(arg.appliesAt)],
                         }),
                       ],
                     }),
-                    imported_3(imported_7, {
+                    imported(imported_9, {
                       size: "sm",
                       variant: "danger",
                       onClick: () => local_10(arg),
@@ -4582,25 +3632,25 @@ function fn_c599885a({ onChangePassword: arg }) {
                 arg.id,
               ),
             ),
-            imported_3("p", {
-              className: imported_42.hint,
+            imported("p", {
+              className: imported_40.hint,
               children:
                 "Смена применится сама в указанный срок. Если её запросили не вы — отмените заявку и смените пароль.",
             }),
           ],
         }),
       local_7 === "attachPhone" &&
-        imported_3(imported_56, {
+        imported(imported_54, {
           onClose: local_16,
         }),
       local_7 === "attachEmail" &&
-        imported_3(fn_78a28bb8, {
+        imported(fn_b4e36455, {
           onClose: local_16,
           onAttached: local_16,
         }),
       local_7 === "setPassword" &&
         local &&
-        imported_3(fn_2a06d949, {
+        imported(fn_2a06d949, {
           onClose: local_16,
           onSaved: () =>
             local_2({
@@ -4611,13 +3661,13 @@ function fn_c599885a({ onChangePassword: arg }) {
       typeof local_7 === "object" &&
         local_7 &&
         local &&
-        imported_3(fn_b5ace9a1, {
+        imported(fn_22a725eb, {
           kind: local_7.change,
           methods: local,
           onClose: local_16,
         }),
       local_9 &&
-        imported_3(fn_453021cc, {
+        imported(imported_55, {
           title: "Отменить смену?",
           message: `${local_9.kind === "phone" ? "Номер останется прежним" : "Почта останется прежней"}. Новую смену можно будет начать через сутки.`,
           onDismiss: () => {
@@ -4642,7 +3692,7 @@ function fn_c599885a({ onChangePassword: arg }) {
           ],
         }),
       local_13 &&
-        imported_3(fn_453021cc, {
+        imported(imported_55, {
           title: "Не удалось отменить",
           message: local_13,
           onDismiss: () => local_14(""),
@@ -4671,7 +3721,7 @@ function fn_db72d620(arg, arg_2, arg_3, arg_4) {
   }
   return arg_4;
 }
-function fn_75d84fa4(arg) {
+function fn_f162dc64(arg) {
   const local = new Date(arg).getTime();
   if (Number.isNaN(local)) {
     return "—";
@@ -4698,7 +3748,7 @@ function fn_75d84fa4(arg) {
     year: "numeric",
   });
 }
-function fn_9b7854f4(arg) {
+function fn_43c5b541(arg) {
   if (arg.clientName === "ITD iOS") {
     return "Приложение ИТД · iOS";
   }
@@ -4721,7 +3771,7 @@ function fn_983517b5(arg) {
 function fn_2d43bd11({ type: arg }) {
   switch (arg) {
     case "mobile":
-      return imported_3("svg", {
+      return imported("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 24 24",
@@ -4731,20 +3781,20 @@ function fn_2d43bd11({ type: arg }) {
         strokeLinecap: "round",
         strokeLinejoin: "round",
         children: [
-          imported_3("rect", {
+          imported("rect", {
             x: "6",
             y: "2",
             width: "12",
             height: "20",
             rx: "2.5",
           }),
-          imported_3("path", {
+          imported("path", {
             d: "M11 18.5h2",
           }),
         ],
       });
     case "tablet":
-      return imported_3("svg", {
+      return imported("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 24 24",
@@ -4754,20 +3804,20 @@ function fn_2d43bd11({ type: arg }) {
         strokeLinecap: "round",
         strokeLinejoin: "round",
         children: [
-          imported_3("rect", {
+          imported("rect", {
             x: "4",
             y: "2.5",
             width: "16",
             height: "19",
             rx: "2.5",
           }),
-          imported_3("path", {
+          imported("path", {
             d: "M11 18h2",
           }),
         ],
       });
     default:
-      return imported_3("svg", {
+      return imported("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 24 24",
@@ -4777,27 +3827,27 @@ function fn_2d43bd11({ type: arg }) {
         strokeLinecap: "round",
         strokeLinejoin: "round",
         children: [
-          imported_3("rect", {
+          imported("rect", {
             x: "2.5",
             y: "4",
             width: "19",
             height: "13",
             rx: "2",
           }),
-          imported_3("path", {
+          imported("path", {
             d: "M8.5 21h7M12 17v4",
           }),
         ],
       });
   }
 }
-function fn_532cd341({ onChangePassword: arg }) {
-  const [local, local_2] = imported_6([]);
-  const [local_3, local_4] = imported_6(true);
-  const [local_5, local_6] = imported_6(null);
-  const [local_7, local_8] = imported_6(null);
-  const [local_9, local_10] = imported_6(false);
-  const local_11 = imported_23(async () => {
+function fn_131f0f80({ onChangePassword: arg }) {
+  const [local, local_2] = imported_8([]);
+  const [local_3, local_4] = imported_8(true);
+  const [local_5, local_6] = imported_8(null);
+  const [local_7, local_8] = imported_8(null);
+  const [local_9, local_10] = imported_8(false);
+  const local_11 = imported_25(async () => {
     local_4(true);
     local_6(null);
     try {
@@ -4808,11 +3858,11 @@ function fn_532cd341({ onChangePassword: arg }) {
       local_4(false);
     }
   }, []);
-  imported_21(() => {
+  imported_23(() => {
     local_11();
   }, [local_11]);
-  const [local_12, local_13] = imported_6(null);
-  const local_14 = imported_23(
+  const [local_12, local_13] = imported_8(null);
+  const local_14 = imported_25(
     async (arg) => {
       local_8(arg.id);
       try {
@@ -4821,11 +3871,13 @@ function fn_532cd341({ onChangePassword: arg }) {
           arg.isCurrent,
         );
         if (local) {
-          await imported_11.getState().logout();
+          await imported_13.getState().logout({
+            sessionAlreadyRevoked: true,
+          });
           return;
         }
         local_2((arg) => arg.filter((arg) => arg.id !== arg.id));
-        imported_34.success("Сессия завершена");
+        imported_32.success("Сессия завершена");
       } catch {
         local_11();
       } finally {
@@ -4834,11 +3886,11 @@ function fn_532cd341({ onChangePassword: arg }) {
     },
     [local_11],
   );
-  const local_15 = imported_23(async () => {
+  const local_15 = imported_25(async () => {
     try {
       const local = await local_96437191.revokeOthers();
       local_10(false);
-      imported_34.success(
+      imported_32.success(
         local > 0 ? `Завершено сессий: ${local}` : "Других активных сессий нет",
       );
       await local_11();
@@ -4850,99 +3902,99 @@ function fn_532cd341({ onChangePassword: arg }) {
     }
     return arg + 1;
   }, 0);
-  return imported_3(imported_26, {
+  return imported(imported_28, {
     children: [
-      imported_3("h2", {
-        className: local_41ea1484.contentTitle,
+      imported("h2", {
+        className: local_98798dac.contentTitle,
         children: "Безопасность",
       }),
-      imported_3(fn_c599885a, {
+      imported(fn_5be740c2, {
         onChangePassword: arg,
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
-          imported_3("div", {
-            className: local_41ea1484.settingText,
+          imported("div", {
+            className: local_98798dac.settingText,
             style: {
               marginBottom: 12,
             },
             children: [
-              imported_3("span", {
-                className: local_41ea1484.settingTitle,
+              imported("span", {
+                className: local_98798dac.settingTitle,
                 children: "Активные сессии",
               }),
-              imported_3("span", {
-                className: local_41ea1484.settingDescription,
+              imported("span", {
+                className: local_98798dac.settingDescription,
                 children:
                   "Устройства, на которых сейчас выполнен вход в ваш аккаунт",
               }),
             ],
           }),
           local_3
-            ? imported_3(imported_25, {})
+            ? imported(imported_27, {})
             : local_5
-              ? imported_3("div", {
-                  className: local_41ea1484.saveError,
+              ? imported("div", {
+                  className: local_98798dac.saveError,
                   children: local_5,
                 })
               : local.length === 0
-                ? imported_3("div", {
-                    className: local_41ea1484.emptyBlocklist,
+                ? imported("div", {
+                    className: local_98798dac.emptyBlocklist,
                     children: "Активных сессий не найдено",
                   })
-                : imported_3(imported_26, {
+                : imported(imported_28, {
                     children: [
-                      imported_3("div", {
-                        className: local_41ea1484.sessionsList,
+                      imported("div", {
+                        className: local_98798dac.sessionsList,
                         children: local.map((arg) =>
-                          imported_3(
+                          imported(
                             "div",
                             {
-                              className: local_41ea1484.sessionItem,
+                              className: local_98798dac.sessionItem,
                               children: [
-                                imported_3("div", {
-                                  className: local_41ea1484.sessionIcon,
-                                  children: imported_3(fn_2d43bd11, {
+                                imported("div", {
+                                  className: local_98798dac.sessionIcon,
+                                  children: imported(fn_2d43bd11, {
                                     type: arg.deviceType,
                                   }),
                                 }),
-                                imported_3("div", {
-                                  className: local_41ea1484.sessionInfo,
+                                imported("div", {
+                                  className: local_98798dac.sessionInfo,
                                   children: [
-                                    imported_3("div", {
-                                      className: local_41ea1484.sessionDevice,
-                                      children: fn_9b7854f4(arg),
+                                    imported("div", {
+                                      className: local_98798dac.sessionDevice,
+                                      children: fn_43c5b541(arg),
                                     }),
-                                    imported_3("div", {
-                                      className: local_41ea1484.sessionTime,
+                                    imported("div", {
+                                      className: local_98798dac.sessionTime,
                                       children: [
                                         fn_983517b5(arg),
                                         " · ",
-                                        fn_75d84fa4(arg.lastUsedAt),
+                                        fn_f162dc64(arg.lastUsedAt),
                                       ],
                                     }),
                                   ],
                                 }),
                                 arg.isCurrent
-                                  ? imported_3("span", {
+                                  ? imported("span", {
                                       className:
-                                        local_41ea1484.sessionCurrentBadge,
+                                        local_98798dac.sessionCurrentBadge,
                                       children: "Это устройство",
                                     })
-                                  : imported_3("button", {
+                                  : imported("button", {
                                       type: "button",
-                                      className: local_41ea1484.sessionRemove,
+                                      className: local_98798dac.sessionRemove,
                                       title: "Завершить сессию",
                                       "aria-label": "Завершить сессию",
                                       disabled: local_7 === arg.id,
                                       onClick: () => local_13(arg),
                                       children:
                                         local_7 === arg.id
-                                          ? imported_3(imported_57, {
+                                          ? imported(imported_56, {
                                               size: 16,
                                             })
-                                          : imported_3(imported_58, {
+                                          : imported(imported_57, {
                                               size: 16,
                                             }),
                                     }),
@@ -4953,9 +4005,9 @@ function fn_532cd341({ onChangePassword: arg }) {
                         ),
                       }),
                       local_16 > 0 &&
-                        imported_3("button", {
+                        imported("button", {
                           type: "button",
-                          className: local_41ea1484.logoutButton,
+                          className: local_98798dac.logoutButton,
                           onClick: () => local_10(true),
                           children: "Завершить все другие сессии",
                         }),
@@ -4964,16 +4016,16 @@ function fn_532cd341({ onChangePassword: arg }) {
         ],
       }),
       local_12 &&
-        imported_3(imported_64, {
+        imported(imported_70, {
           title: "Завершить сессию?",
-          message: `Вы действительно хотите завершить сессию «${fn_9b7854f4(local_12)}»? Устройство будет разлогинено.`,
+          message: `Вы действительно хотите завершить сессию «${fn_43c5b541(local_12)}»? Устройство будет разлогинено.`,
           confirmText: "Завершить",
           danger: true,
           onConfirm: () => local_14(local_12),
           onClose: () => local_13(null),
         }),
       local_9 &&
-        imported_3(imported_64, {
+        imported(imported_70, {
           title: "Завершить все другие сессии?",
           message: `Вы действительно хотите завершить ${local_16} ${fn_db72d620(local_16, "другую сессию", "другие сессии", "других сессий")}? Устройства будут разлогинены.`,
           confirmText: `Завершить все (${local_16})`,
@@ -4984,7 +4036,7 @@ function fn_532cd341({ onChangePassword: arg }) {
     ],
   });
 }
-const local_ce627315 = imported_16(function (
+const local_5f5441cd = imported_18(function (
   { onDirtyChange: arg, onSavingChange: arg_2 },
   arg_3,
 ) {
@@ -4992,30 +4044,32 @@ const local_ce627315 = imported_16(function (
     settings: local,
     fetchSettings: local_2,
     updateSettings: local_3,
-  } = imported_59();
-  const [local_4, local_5] = imported_6({
+  } = imported_58();
+  const [local_4, local_5] = imported_8({
     webEnabled: true,
     soundEnabled: true,
+    messages: true,
     follows: true,
     reactions: true,
     replies: true,
     mentions: true,
     wallPosts: true,
   });
-  const [local_6, local_7] = imported_6(null);
-  const [local_8, local_9] = imported_6(false);
-  const [local_10, local_11] = imported_6(false);
-  const [local_12, local_13] = imported_6(false);
-  imported_21(() => {
+  const [local_6, local_7] = imported_8(null);
+  const [local_8, local_9] = imported_8(false);
+  const [local_10, local_11] = imported_8(false);
+  const [local_12, local_13] = imported_8(false);
+  imported_23(() => {
     if (!local_12 && !local) {
       local_2();
     }
   }, [local_12]);
-  imported_21(() => {
+  imported_23(() => {
     if (local && !local_12) {
       const local = {
         webEnabled: local.webEnabled,
         soundEnabled: local.soundEnabled,
+        messages: local.preferences.messages,
         follows: local.preferences.follows,
         reactions: local.preferences.reactions,
         replies: local.preferences.replies,
@@ -5028,10 +4082,10 @@ const local_ce627315 = imported_16(function (
       local_13(true);
     }
   }, [local, local_12]);
-  imported_21(() => {
+  imported_23(() => {
     arg(local_8);
   }, [local_8]);
-  imported_21(() => {
+  imported_23(() => {
     arg_2(local_10);
   }, [local_10]);
   const local_14 = (arg, arg_2) => {
@@ -5055,6 +4109,7 @@ const local_ce627315 = imported_16(function (
           webEnabled: local_4.webEnabled,
           soundEnabled: local_4.soundEnabled,
           preferences: {
+            messages: local_4.messages,
             follows: local_4.follows,
             reactions: local_4.reactions,
             replies: local_4.replies,
@@ -5066,10 +4121,10 @@ const local_ce627315 = imported_16(function (
           ...local_4,
         });
         local_9(false);
-        imported_34.success("Настройки уведомлений сохранены");
+        imported_32.success("Настройки уведомлений сохранены");
       } catch (error) {
         console.error("Failed to save notification settings:", error);
-        imported_34.error("Не удалось сохранить настройки");
+        imported_32.error("Не удалось сохранить настройки");
       } finally {
         local_11(false);
       }
@@ -5083,86 +4138,86 @@ const local_ce627315 = imported_16(function (
       local_9(false);
     }
   };
-  imported_24(arg_3, () => ({
+  imported_26(arg_3, () => ({
     save: local_15,
     discard: local_16,
   }));
-  return imported_3(imported_26, {
+  return imported(imported_28, {
     children: [
-      imported_3("h2", {
-        className: local_41ea1484.contentTitle,
+      imported("h2", {
+        className: local_98798dac.contentTitle,
         children: "Уведомления",
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
-          imported_3("div", {
-            className: local_41ea1484.sectionTitle,
+          imported("div", {
+            className: local_98798dac.sectionTitle,
             children: "Основные",
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
             onClick: () => local_14("webEnabled", !local_4.webEnabled),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.blue}`,
-                    children: imported_3(imported_60, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.blue}`,
+                    children: imported(imported_59, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Уведомления",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Включение или отключение всех уведомлений",
                       }),
                     ],
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.webEnabled,
                 onChange: (arg) => local_14("webEnabled", arg),
               }),
             ],
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
             onClick: () => local_14("soundEnabled", !local_4.soundEnabled),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.blue}`,
-                    children: imported_3(local_eb61682a, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.blue}`,
+                    children: imported(local_eb61682a, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Уведомления со звуком",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Воспроизводить звуки уведомлений",
                       }),
                     ],
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.soundEnabled,
                 onChange: (arg) => local_14("soundEnabled", arg),
               }),
@@ -5170,76 +4225,120 @@ const local_ce627315 = imported_16(function (
           }),
         ],
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
-          imported_3("div", {
-            className: local_41ea1484.sectionTitle,
-            children: "Пользователи",
+          imported("div", {
+            className: local_98798dac.sectionTitle,
+            children: "Сообщения",
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
-            onClick: () => local_14("follows", !local_4.follows),
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
+            onClick: () => local_14("messages", !local_4.messages),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.blue}`,
-                    children: imported_3(local_c1f17bb2, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.blue}`,
+                    children: imported(local_8b78497b, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
+                        children: "Новые сообщения",
+                      }),
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
+                        children:
+                          "Всплывающие уведомления о новых сообщениях на сайте",
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              imported(fn_0acfc694, {
+                checked: local_4.messages,
+                onChange: (arg) => local_14("messages", arg),
+              }),
+            ],
+          }),
+        ],
+      }),
+      imported("div", {
+        className: local_98798dac.section,
+        children: [
+          imported("div", {
+            className: local_98798dac.sectionTitle,
+            children: "Пользователи",
+          }),
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
+            onClick: () => local_14("follows", !local_4.follows),
+            children: [
+              imported("div", {
+                className: local_98798dac.settingInfo,
+                children: [
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.blue}`,
+                    children: imported(local_c1f17bb2, {
+                      size: 20,
+                    }),
+                  }),
+                  imported("div", {
+                    className: local_98798dac.settingText,
+                    children: [
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Подписки",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Уведомления о подписках и запросах в друзья",
                       }),
                     ],
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.follows,
                 onChange: (arg) => local_14("follows", arg),
               }),
             ],
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
             onClick: () => local_14("wallPosts", !local_4.wallPosts),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.blue}`,
-                    children: imported_3(local_8b78497b, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.blue}`,
+                    children: imported(local_8b78497b, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Посты на стене",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Уведомления о новых постах на вашей стене",
                       }),
                     ],
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.wallPosts,
                 onChange: (arg) => local_14("wallPosts", arg),
               }),
@@ -5247,35 +4346,35 @@ const local_ce627315 = imported_16(function (
           }),
         ],
       }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
-          imported_3("div", {
-            className: local_41ea1484.sectionTitle,
+          imported("div", {
+            className: local_98798dac.sectionTitle,
             children: "Посты",
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
             onClick: () => local_14("reactions", !local_4.reactions),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.red}`,
-                    children: imported_3(local_a008ba72, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.red}`,
+                    children: imported(local_a008ba72, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Лайки и реакции",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children:
                           "Уведомления о реакциях на ваши посты и комментарии",
                       }),
@@ -5283,75 +4382,75 @@ const local_ce627315 = imported_16(function (
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.reactions,
                 onChange: (arg) => local_14("reactions", arg),
               }),
             ],
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
             onClick: () => local_14("replies", !local_4.replies),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.blue}`,
-                    children: imported_3(local_8b78497b, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.blue}`,
+                    children: imported(local_8b78497b, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Комментарии и ответы",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Уведомления о новых комментариях и ответах",
                       }),
                     ],
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.replies,
                 onChange: (arg) => local_14("replies", arg),
               }),
             ],
           }),
-          imported_3("div", {
-            className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
+          imported("div", {
+            className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
             onClick: () => local_14("mentions", !local_4.mentions),
             children: [
-              imported_3("div", {
-                className: local_41ea1484.settingInfo,
+              imported("div", {
+                className: local_98798dac.settingInfo,
                 children: [
-                  imported_3("div", {
-                    className: `${local_41ea1484.settingIcon} ${local_41ea1484.purple}`,
-                    children: imported_3(imported_67, {
+                  imported("div", {
+                    className: `${local_98798dac.settingIcon} ${local_98798dac.purple}`,
+                    children: imported(imported_71, {
                       size: 20,
                     }),
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.settingText,
+                  imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Упоминания",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Уведомления когда вас упоминают в постах",
                       }),
                     ],
                   }),
                 ],
               }),
-              imported_3(fn_1d27b593, {
+              imported(fn_0acfc694, {
                 checked: local_4.mentions,
                 onChange: (arg) => local_14("mentions", arg),
               }),
@@ -5362,36 +4461,37 @@ const local_ce627315 = imported_16(function (
     ],
   });
 });
-const local_789d4fa8 = imported_16(function (
+const local_cf76073a = imported_18(function (
   { onDirtyChange: arg, onSavingChange: arg_2 },
   arg_3,
 ) {
-  const [local, local_2] = imported_6({
+  const [local, local_2] = imported_8({
     isPrivate: false,
     whoCanPostOnWall: "everyone",
     whoCanSeeMyPostReactions: "everyone",
+    whoCanMessageMe: "everyone",
     showLastSeen: true,
   });
-  const [local_3, local_4] = imported_6(null);
-  const [local_5, local_6] = imported_6(false);
-  const [local_7, local_8] = imported_6(false);
-  const [local_9, local_10] = imported_6(false);
-  const [local_11, local_12] = imported_6(false);
-  const [local_13, local_14] = imported_6([]);
-  const [local_15, local_16] = imported_6(null);
-  const [local_17, local_18] = imported_6(true);
-  const [local_19, local_20] = imported_6(false);
-  const [local_21, local_22] = imported_6(false);
-  imported_21(() => {
+  const [local_3, local_4] = imported_8(null);
+  const [local_5, local_6] = imported_8(false);
+  const [local_7, local_8] = imported_8(false);
+  const [local_9, local_10] = imported_8(false);
+  const [local_11, local_12] = imported_8(false);
+  const [local_13, local_14] = imported_8([]);
+  const [local_15, local_16] = imported_8(null);
+  const [local_17, local_18] = imported_8(true);
+  const [local_19, local_20] = imported_8(false);
+  const [local_21, local_22] = imported_8(false);
+  imported_23(() => {
     local_23();
     if (!local_21) {
       local_24();
     }
   }, []);
-  imported_21(() => {
+  imported_23(() => {
     arg(local_5);
   }, [local_5]);
-  imported_21(() => {
+  imported_23(() => {
     arg_2(local_7);
   }, [local_7]);
   const local_23 = async () => {
@@ -5399,11 +4499,12 @@ const local_789d4fa8 = imported_16(function (
       local_10(true);
     }
     try {
-      const local = await imported_22.getPrivacySettings();
+      const local = await imported_24.getPrivacySettings();
       const local_2 = {
         isPrivate: local.isPrivate ?? false,
         whoCanPostOnWall: local.whoCanPostOnWall ?? "everyone",
         whoCanSeeMyPostReactions: local.whoCanSeeMyPostReactions ?? "everyone",
+        whoCanMessageMe: local.whoCanMessageMe ?? "everyone",
         showLastSeen: local.showLastSeen ?? true,
       };
       local_2(local_2);
@@ -5420,7 +4521,7 @@ const local_789d4fa8 = imported_16(function (
     if (!local_19) {
       local_20(true);
       try {
-        const local = await imported_61.getBlockedUsers({
+        const local = await imported_60.getBlockedUsers({
           cursor: arg,
           limit: 20,
         });
@@ -5437,12 +4538,12 @@ const local_789d4fa8 = imported_16(function (
   };
   const local_25 = async (arg) => {
     try {
-      await imported_61.unblockUser(arg);
+      await imported_60.unblockUser(arg);
       local_14((arg) => arg.filter((arg) => arg.id !== arg));
-      imported_34.success("Пользователь разблокирован");
+      imported_32.success("Пользователь разблокирован");
     } catch (error) {
       console.error("Failed to unblock user:", error);
-      imported_34.error("Не удалось разблокировать пользователя");
+      imported_32.error("Не удалось разблокировать пользователя");
     }
   };
   const local_26 = () => {
@@ -5467,19 +4568,20 @@ const local_789d4fa8 = imported_16(function (
     if (!(!local_5 || local_7)) {
       local_8(true);
       try {
-        await imported_22.updatePrivacySettings({
+        await imported_24.updatePrivacySettings({
           whoCanPostOnWall: local.whoCanPostOnWall,
           whoCanSeeMyPostReactions: local.whoCanSeeMyPostReactions,
+          whoCanMessageMe: local.whoCanMessageMe,
           showLastSeen: local.showLastSeen,
         });
         local_4({
           ...local,
         });
         local_6(false);
-        imported_34.success("Настройки приватности сохранены");
+        imported_32.success("Настройки приватности сохранены");
       } catch (error) {
         console.error("Failed to save privacy settings:", error);
-        imported_34.error("Не удалось сохранить настройки");
+        imported_32.error("Не удалось сохранить настройки");
       } finally {
         local_8(false);
       }
@@ -5493,93 +4595,120 @@ const local_789d4fa8 = imported_16(function (
       local_6(false);
     }
   };
-  imported_24(arg_3, () => ({
+  imported_26(arg_3, () => ({
     save: local_28,
     discard: local_29,
   }));
-  return imported_3(imported_26, {
+  return imported(imported_28, {
     children: [
-      imported_3("h2", {
-        className: local_41ea1484.contentTitle,
+      imported("h2", {
+        className: local_98798dac.contentTitle,
         children: "Приватность",
       }),
       local_11 &&
-        imported_3("div", {
-          className: local_41ea1484.section,
+        imported("div", {
+          className: local_98798dac.section,
           children: [
-            imported_3("div", {
-              className: local_41ea1484.settingItem,
+            imported("div", {
+              className: local_98798dac.settingItem,
               children: [
-                imported_3("div", {
-                  className: local_41ea1484.settingInfo,
-                  children: imported_3("div", {
-                    className: local_41ea1484.settingText,
+                imported("div", {
+                  className: local_98798dac.settingInfo,
+                  children: imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Стена",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Кто может писать на вашей стене",
                       }),
                     ],
                   }),
                 }),
-                imported_3(fn_1012b2ef, {
+                imported(fn_1845876d, {
                   value: local.whoCanPostOnWall,
                   options: local_341987ca,
                   onChange: (arg) => local_27("whoCanPostOnWall", arg),
                 }),
               ],
             }),
-            imported_3("div", {
-              className: local_41ea1484.settingItem,
+            imported("div", {
+              className: local_98798dac.settingItem,
               children: [
-                imported_3("div", {
-                  className: local_41ea1484.settingInfo,
-                  children: imported_3("div", {
-                    className: local_41ea1484.settingText,
+                imported("div", {
+                  className: local_98798dac.settingInfo,
+                  children: imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
                         children: "Лайки",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
                         children: "Кто может видеть ваши лайкнутые посты",
                       }),
                     ],
                   }),
                 }),
-                imported_3(fn_1012b2ef, {
+                imported(fn_1845876d, {
                   value: local.whoCanSeeMyPostReactions,
                   options: local_341987ca,
                   onChange: (arg) => local_27("whoCanSeeMyPostReactions", arg),
                 }),
               ],
             }),
-            imported_3("div", {
-              className: `${local_41ea1484.settingItem} ${local_41ea1484.clickable}`,
-              onClick: () => local_27("showLastSeen", !local.showLastSeen),
+            imported("div", {
+              className: local_98798dac.settingItem,
               children: [
-                imported_3("div", {
-                  className: local_41ea1484.settingInfo,
-                  children: imported_3("div", {
-                    className: local_41ea1484.settingText,
+                imported("div", {
+                  className: local_98798dac.settingInfo,
+                  children: imported("div", {
+                    className: local_98798dac.settingText,
                     children: [
-                      imported_3("span", {
-                        className: local_41ea1484.settingTitle,
-                        children: "Онлайн-статус",
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
+                        children: "Сообщения",
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.settingDescription,
-                        children: "Показывать время последнего визита",
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
+                        children: "Кто может писать вам сообщения",
                       }),
                     ],
                   }),
                 }),
-                imported_3(fn_1d27b593, {
+                imported(fn_1845876d, {
+                  value: local.whoCanMessageMe,
+                  options: local_6c3e9196,
+                  onChange: (arg) => local_27("whoCanMessageMe", arg),
+                }),
+              ],
+            }),
+            imported("div", {
+              className: `${local_98798dac.settingItem} ${local_98798dac.clickable}`,
+              onClick: () => local_27("showLastSeen", !local.showLastSeen),
+              children: [
+                imported("div", {
+                  className: local_98798dac.settingInfo,
+                  children: imported("div", {
+                    className: local_98798dac.settingText,
+                    children: [
+                      imported("span", {
+                        className: local_98798dac.settingTitle,
+                        children: "Онлайн-статус",
+                      }),
+                      imported("span", {
+                        className: local_98798dac.settingDescription,
+                        children:
+                          "Показывать онлайн и время визита. При отключении точный статус других тоже скрыт.",
+                      }),
+                    ],
+                  }),
+                }),
+                imported(fn_0acfc694, {
                   checked: local.showLastSeen,
                   onChange: (arg) => local_27("showLastSeen", arg),
                 }),
@@ -5587,54 +4716,54 @@ const local_789d4fa8 = imported_16(function (
             }),
           ],
         }),
-      imported_3("div", {
-        className: local_41ea1484.section,
+      imported("div", {
+        className: local_98798dac.section,
         children: [
-          imported_3("div", {
-            className: local_41ea1484.sectionTitle,
+          imported("div", {
+            className: local_98798dac.sectionTitle,
             children: "Чёрный список",
           }),
           local_19 && !local_21
-            ? imported_3(imported_25, {})
+            ? imported(imported_27, {})
             : local_21
-              ? imported_3(imported_26, {
+              ? imported(imported_28, {
                   children:
                     local_13.length === 0
-                      ? imported_3("div", {
-                          className: local_41ea1484.emptyBlocklist,
+                      ? imported("div", {
+                          className: local_98798dac.emptyBlocklist,
                           children: "Чёрный список пуст",
                         })
-                      : imported_3("div", {
-                          className: local_41ea1484.blockedUsersList,
+                      : imported("div", {
+                          className: local_98798dac.blockedUsersList,
                           children: [
                             local_13.map((arg) =>
-                              imported_3(
+                              imported(
                                 "div",
                                 {
-                                  className: local_41ea1484.blockedUserItem,
+                                  className: local_98798dac.blockedUserItem,
                                   children: [
-                                    imported_3(imported_31, {
+                                    imported(imported_61, {
                                       src: arg.avatar,
                                       alt: arg.displayName,
                                       size: "sm",
                                     }),
-                                    imported_3("div", {
-                                      className: local_41ea1484.blockedUserInfo,
+                                    imported("div", {
+                                      className: local_98798dac.blockedUserInfo,
                                       children: [
-                                        imported_3("span", {
+                                        imported("span", {
                                           className:
-                                            local_41ea1484.blockedUserName,
+                                            local_98798dac.blockedUserName,
                                           children: arg.displayName,
                                         }),
                                         arg.username &&
-                                          imported_3("span", {
+                                          imported("span", {
                                             className:
-                                              local_41ea1484.blockedUserUsername,
+                                              local_98798dac.blockedUserUsername,
                                             children: ["@", arg.username],
                                           }),
                                       ],
                                     }),
-                                    imported_3(imported_7, {
+                                    imported(imported_9, {
                                       size: "sm",
                                       variant: "secondary",
                                       onClick: () => local_25(arg.id),
@@ -5646,7 +4775,7 @@ const local_789d4fa8 = imported_16(function (
                               ),
                             ),
                             local_17 &&
-                              imported_3(imported_7, {
+                              imported(imported_9, {
                                 variant: "secondary",
                                 onClick: local_26,
                                 disabled: local_19,
@@ -5662,10 +4791,331 @@ const local_789d4fa8 = imported_16(function (
     ],
   });
 });
-const local_e777614a = [
+const local_02ce1672 = "c_note";
+const local_bc406f03 = "c_nicknameRow";
+const local_cd23a337_3 = "c_error";
+const local_1167d74d = "c_avatarRow";
+const local_60207a9f = "c_avatarPreview";
+const local_2ad5f236 = "c_avatarActions";
+const local_cd953748 = "c_danger";
+const local_b13cd586 = {
+  note: local_02ce1672,
+  nicknameRow: local_bc406f03,
+  error: local_cd23a337_3,
+  avatarRow: local_1167d74d,
+  avatarPreview: local_60207a9f,
+  avatarActions: local_2ad5f236,
+  danger: local_cd953748,
+};
+async function fn_a0727a08(arg) {
+  const [local, local_2, local_3] = await Promise.allSettled(arg);
+  const local_4 = [local, local_2, local_3].filter(
+    (arg) => arg.status === "rejected",
+  ).length;
+  return {
+    profile: local.status === "fulfilled" ? local.value : null,
+    nicknames: local_2.status === "fulfilled" ? local_2.value : null,
+    avatar: local_3.status === "fulfilled" ? local_3.value : null,
+    failed: local_4,
+  };
+}
+function fn_fd72cadd() {
+  const local = imported_62()?.id;
+  const [local_2, local_3] = imported_8(null);
+  const [local_4, local_5] = imported_8(null);
+  const [local_6, local_7] = imported_8(null);
+  const [local_8, local_9] = imported_8(false);
+  const [local_10, local_11] = imported_8(true);
+  const [local_12, local_13] = imported_8(false);
+  const [local_14, local_15] = imported_8("");
+  const local_16 = imported_25(async () => {
+    if (local) {
+      local_11(true);
+      local_15("");
+      try {
+        const local = await fn_a0727a08([
+          imported_63.profile(local),
+          imported_63.nicknames(),
+          imported_63.profileAvatar(),
+        ]);
+        local_3(local.profile);
+        local_5(local.nicknames);
+        local_7(local.avatar);
+        if (local.failed === 3) {
+          local_15("Не удалось загрузить настройки ивента.");
+        } else if (local.failed > 0) {
+          local_15("Часть настроек не загрузилась.");
+        }
+      } finally {
+        local_11(false);
+      }
+    }
+  }, [local]);
+  imported_23(() => {
+    local_16();
+  }, [local_16]);
+  const local_17 = async (arg) => {
+    if (!(!local || !local_2?.curtains.hasCurtains || local_12)) {
+      local_13(true);
+      try {
+        await imported_63.setCurtains(local, arg);
+        local_3(
+          (arg) =>
+            arg && {
+              ...arg,
+              curtains: {
+                ...arg.curtains,
+                closed: arg,
+              },
+            },
+        );
+        imported_64(local);
+        imported_32.success(arg ? "Шторы задёрнуты" : "Шторы открыты");
+      } catch {
+        imported_32.error("Не удалось изменить положение штор");
+      } finally {
+        local_13(false);
+      }
+    }
+  };
+  const local_18 = async (arg) => {
+    if (!local || !local_4 || local_12) {
+      return;
+    }
+    const local = arg || null;
+    if (local !== local_4.active) {
+      local_13(true);
+      try {
+        const local = await imported_63.setActiveNickname(local);
+        local_5(
+          (arg) =>
+            arg && {
+              ...arg,
+              active: local.nickname,
+            },
+        );
+        window.dispatchEvent(
+          new CustomEvent("event-nickname-changed", {
+            detail: {
+              userId: local,
+              label: local.nickname,
+            },
+          }),
+        );
+        imported_64(local);
+        imported_32.success(
+          local.nickname ? "Кликуха выбрана" : "Кликуха снята",
+        );
+      } catch {
+        imported_32.error("Не удалось сменить кликуху");
+      } finally {
+        local_13(false);
+      }
+    }
+  };
+  const local_19 = async () => {
+    if (!(!local_6?.active || local_12)) {
+      local_13(true);
+      try {
+        await imported_63.removeProfileAvatar();
+        local_7(
+          (arg) =>
+            arg && {
+              ...arg,
+              active: null,
+            },
+        );
+        await imported_13.getState().fetchProfile();
+        if (local) {
+          const local = imported_13.getState().profile;
+          if (local?.id === local) {
+            imported_65
+              .getState()
+              .replaceAuthorAvatar(local, local.avatar ?? null);
+          }
+          imported_64(local);
+        }
+        imported_32.success("Аватарка удалена");
+      } catch (error) {
+        imported_32.error("Не удалось удалить аватарку");
+        throw error;
+      } finally {
+        local_13(false);
+      }
+    }
+  };
+  const local_20 = local_2?.curtains;
+  const local_21 = [
+    {
+      value: "",
+      label: "Без кликухи",
+    },
+    ...(local_4?.owned ?? []).map((arg) => ({
+      value: arg,
+      label: arg.toLocaleLowerCase("ru-RU"),
+    })),
+  ];
+  return imported(imported_28, {
+    children: [
+      imported("h2", {
+        className: local_98798dac.contentTitle,
+        children: "Ивент",
+      }),
+      local_10 &&
+        imported("p", {
+          className: local_b13cd586.note,
+          children: "Загрузка настроек…",
+        }),
+      local_14 &&
+        imported("div", {
+          className: local_b13cd586.error,
+          role: "alert",
+          children: [
+            imported("span", {
+              children: local_14,
+            }),
+            imported("button", {
+              type: "button",
+              onClick: () => {
+                local_16();
+              },
+              children: "Повторить",
+            }),
+          ],
+        }),
+      !local_10 &&
+        (local_2 || local_4 || local_6) &&
+        imported("div", {
+          className: local_98798dac.section,
+          children: [
+            local_2 &&
+              imported(imported_28, {
+                children: [
+                  imported("div", {
+                    className: local_98798dac.settingItem,
+                    children: [
+                      imported("div", {
+                        className: local_98798dac.settingInfo,
+                        children: imported("div", {
+                          className: local_98798dac.settingText,
+                          children: [
+                            imported("span", {
+                              className: local_98798dac.settingTitle,
+                              children: "Задёрнуть шторы",
+                            }),
+                            imported("span", {
+                              className: local_98798dac.settingDescription,
+                              children: "Гости увидят полотно вместо профиля",
+                            }),
+                          ],
+                        }),
+                      }),
+                      imported(fn_0acfc694, {
+                        checked: local_20?.closed ?? false,
+                        disabled: !local_20?.hasCurtains || local_12,
+                        onChange: (arg) => {
+                          local_17(arg);
+                        },
+                      }),
+                    ],
+                  }),
+                  !local_20?.hasCurtains &&
+                    imported("p", {
+                      className: local_b13cd586.note,
+                      children:
+                        "Шторы можно закрывать, когда сбор достигнет 100 мелков.",
+                    }),
+                ],
+              }),
+            local_4 &&
+              local_4.owned.length > 0 &&
+              imported("div", {
+                className: `${local_98798dac.settingItem} ${local_b13cd586.nicknameRow}`,
+                children: [
+                  imported("div", {
+                    className: local_98798dac.settingInfo,
+                    children: imported("div", {
+                      className: local_98798dac.settingText,
+                      children: [
+                        imported("span", {
+                          className: local_98798dac.settingTitle,
+                          children: "Кликуха",
+                        }),
+                        imported("span", {
+                          className: local_98798dac.settingDescription,
+                          children: "Золотом после имени в профиле",
+                        }),
+                      ],
+                    }),
+                  }),
+                  imported(fn_1845876d, {
+                    value: local_4.active ?? "",
+                    options: local_21,
+                    disabled: local_12,
+                    onChange: (arg) => {
+                      local_18(arg);
+                    },
+                  }),
+                ],
+              }),
+            local_6?.active &&
+              imported("div", {
+                className: `${local_98798dac.settingItem} ${local_b13cd586.avatarRow}`,
+                children: [
+                  imported("div", {
+                    className: local_98798dac.settingInfo,
+                    children: [
+                      imported("img", {
+                        className: local_b13cd586.avatarPreview,
+                        src: local_6.active.url,
+                        alt: "Текущая аватарка",
+                      }),
+                      imported("div", {
+                        className: local_98798dac.settingText,
+                        children: [
+                          imported("span", {
+                            className: local_98798dac.settingTitle,
+                            children: "Аватарка",
+                          }),
+                          imported("span", {
+                            className: local_98798dac.settingDescription,
+                            children: "Своя картинка установлена",
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  imported("div", {
+                    className: local_b13cd586.avatarActions,
+                    children: imported("button", {
+                      type: "button",
+                      className: local_b13cd586.danger,
+                      disabled: local_12,
+                      onClick: () => local_9(true),
+                      children: "Удалить",
+                    }),
+                  }),
+                ],
+              }),
+          ],
+        }),
+      local_8 &&
+        imported(imported_70, {
+          title: "Удалить аватарку?",
+          message:
+            "В профиле снова появится ваш эмодзи. Потраченное право установки не вернётся.",
+          confirmText: "Удалить",
+          danger: true,
+          onConfirm: local_19,
+          onClose: () => local_9(false),
+        }),
+    ],
+  });
+}
+const local_f81543a8 = [
   {
     id: "account",
-    icon: imported_62,
+    icon: imported_67,
     label: "Аккаунт",
     color: "#3b82f6",
   },
@@ -5677,7 +5127,7 @@ const local_e777614a = [
   },
   {
     id: "appearance",
-    icon: imported_63,
+    icon: imported_68,
     label: "Оформление",
     color: "#8b5cf6",
   },
@@ -5695,33 +5145,39 @@ const local_e777614a = [
   },
   {
     id: "notifications",
-    icon: imported_60,
+    icon: imported_59,
     label: "Уведомления",
     color: "#ec4899",
   },
+  {
+    id: "event",
+    icon: imported_68,
+    label: "Ивент",
+    color: "#a855f7",
+  },
 ];
-export function fn_9f1899fc({ onClose: arg }) {
-  const local = imported_18();
-  const [local_2, local_3] = imported_6("account");
-  const [local_4, local_5] = imported_6(false);
-  const [local_6, local_7] = imported_6(false);
-  const [local_8, local_9] = imported_6({});
-  const [local_10, local_11] = imported_6({});
-  const local_12 = imported_20(null);
-  const local_13 = imported_20(null);
-  const local_14 = imported_20(null);
-  const local_15 = Object.values(local_8).some(Boolean);
-  const local_16 = Object.values(local_10).some(Boolean);
-  const local_17 = imported_23(
-    (arg) => (arg) => {
-      local_9((arg) => ({
-        ...arg,
-        [arg]: arg,
-      }));
-    },
-    [],
+export function fn_76ac1a68({ onClose: arg }) {
+  const local = imported_66();
+  const local_2 = local_f81543a8.filter(
+    (arg) => arg.id !== "event" || local.status === "allowed",
   );
-  const local_18 = imported_23(
+  const local_3 = imported_20();
+  const [local_4, local_5] = imported_8("account");
+  imported_23(() => {
+    if (local.status !== "allowed" && local_4 === "event") {
+      local_5("account");
+    }
+  }, [local.status, local_4]);
+  const [local_6, local_7] = imported_8(false);
+  const [local_8, local_9] = imported_8(false);
+  const [local_10, local_11] = imported_8({});
+  const [local_12, local_13] = imported_8({});
+  const local_14 = imported_22(null);
+  const local_15 = imported_22(null);
+  const local_16 = imported_22(null);
+  const local_17 = Object.values(local_10).some(Boolean);
+  const local_18 = Object.values(local_12).some(Boolean);
+  const local_19 = imported_25(
     (arg) => (arg) => {
       local_11((arg) => ({
         ...arg,
@@ -5730,205 +5186,227 @@ export function fn_9f1899fc({ onClose: arg }) {
     },
     [],
   );
-  const local_19 = async () => {
+  const local_20 = imported_25(
+    (arg) => (arg) => {
+      local_13((arg) => ({
+        ...arg,
+        [arg]: arg,
+      }));
+    },
+    [],
+  );
+  const local_21 = async () => {
     const local = [];
-    if (local_8.account) {
-      local.push(local_12.current?.save() ?? Promise.resolve());
-    }
-    if (local_8.notifications) {
-      local.push(local_13.current?.save() ?? Promise.resolve());
-    }
-    if (local_8.privacy) {
+    if (local_10.account) {
       local.push(local_14.current?.save() ?? Promise.resolve());
+    }
+    if (local_10.notifications) {
+      local.push(local_15.current?.save() ?? Promise.resolve());
+    }
+    if (local_10.privacy) {
+      local.push(local_16.current?.save() ?? Promise.resolve());
     }
     await Promise.all(local);
   };
-  const local_20 = (arg) => {
-    if (arg !== local_2) {
-      local_9({});
-      local_3(arg);
+  const local_22 = (arg) => {
+    if (arg !== local_4) {
+      local_11({});
+      local_5(arg);
     }
   };
-  const local_21 = (arg) => {
-    local_9({});
-    local_3(arg);
-    local_5(true);
-  };
-  const local_22 = () => {
-    local_9({});
-    local_5(false);
-  };
-  const local_23 = () => {
-    arg();
+  const local_23 = (arg) => {
+    local_11({});
+    local_5(arg);
+    local_7(true);
   };
   const local_24 = () => {
-    switch (local_2) {
+    local_11({});
+    local_7(false);
+  };
+  const local_25 = () => {
+    arg();
+  };
+  const local_26 = () => {
+    switch (local_4) {
       case "account":
-        return imported_3(local_9a5a6683, {
-          ref: local_12,
-          onDirtyChange: local_17("account"),
-          onSavingChange: local_18("account"),
+        return imported(local_0a5f369b, {
+          ref: local_14,
+          onDirtyChange: local_19("account"),
+          onSavingChange: local_20("account"),
           onClose: arg,
         });
       case "payment":
-        return imported_3(fn_c3ce2b4a, {});
+        return imported(fn_6dcb824e, {});
       case "appearance":
-        return imported_3(fn_92ca2ba3, {});
+        return imported(fn_92ca2ba3, {});
       case "security":
-        return imported_3(fn_532cd341, {
-          onChangePassword: () => local_7(true),
+        return imported(fn_131f0f80, {
+          onChangePassword: () => local_9(true),
         });
       case "notifications":
-        return imported_3(local_ce627315, {
-          ref: local_13,
-          onDirtyChange: local_17("notifications"),
-          onSavingChange: local_18("notifications"),
+        return imported(local_5f5441cd, {
+          ref: local_15,
+          onDirtyChange: local_19("notifications"),
+          onSavingChange: local_20("notifications"),
         });
       case "privacy":
-        return imported_3(local_789d4fa8, {
-          ref: local_14,
-          onDirtyChange: local_17("privacy"),
-          onSavingChange: local_18("privacy"),
+        return imported(local_cf76073a, {
+          ref: local_16,
+          onDirtyChange: local_19("privacy"),
+          onSavingChange: local_20("privacy"),
         });
+      case "event":
+        if (local.status === "allowed") {
+          return imported(fn_fd72cadd, {});
+        }
+        return null;
     }
   };
-  if (local_6) {
-    return imported_3(fn_2572ab35, {
+  if (local_8) {
+    return imported(fn_2572ab35, {
       onClose: arg,
-      onBack: () => local_7(false),
+      onBack: () => local_9(false),
     });
   }
-  const local_25 = local_15
-    ? imported_3("div", {
-        className: local_41ea1484.actionBar,
+  const local_27 = local_17
+    ? imported("div", {
+        className: local_98798dac.actionBar,
         children: [
-          imported_3(imported_7, {
+          imported(imported_9, {
             variant: "secondary",
-            onClick: local_23,
+            onClick: local_25,
             children: "Отмена",
           }),
-          imported_3(imported_7, {
+          imported(imported_9, {
             variant: "primary",
-            onClick: local_19,
-            disabled: local_16,
-            loading: local_16,
+            onClick: local_21,
+            disabled: local_18,
+            loading: local_18,
             children: "Сохранить",
           }),
         ],
       })
     : null;
-  return imported_3(imported_9, {
-    onClose: local_23,
+  return imported(imported_11, {
+    onClose: local_25,
     frameless: true,
     size: "wide",
-    className: local_41ea1484.modalContainer,
-    children: imported_3("div", {
-      className: local_41ea1484.settingsModal,
-      children: local
-        ? imported_3("div", {
-            className: `${local_41ea1484.mobilePager} ${local_4 ? local_41ea1484.detailOpen : ""}`,
+    className: local_98798dac.modalContainer,
+    children: imported("div", {
+      className: local_98798dac.settingsModal,
+      children: local_3
+        ? imported("div", {
+            className: `${local_98798dac.mobilePager} ${local_6 ? local_98798dac.detailOpen : ""}`,
             children: [
-              imported_3("div", {
-                className: local_41ea1484.mobileScreen,
+              imported("div", {
+                className: local_98798dac.mobileScreen,
                 children: [
-                  imported_3("div", {
-                    className: local_41ea1484.mobileMenuTitle,
+                  imported("div", {
+                    className: local_98798dac.mobileMenuTitle,
                     children: "Настройки",
                   }),
-                  imported_3("nav", {
-                    className: local_41ea1484.mobileMenu,
-                    children: local_e777614a.map((arg) =>
-                      imported_3(
-                        "button",
-                        {
-                          type: "button",
-                          className: local_41ea1484.mobileMenuItem,
-                          onClick: () => local_21(arg.id),
-                          children: [
-                            imported_3("span", {
-                              className: local_41ea1484.mobileMenuIcon,
-                              style: {
-                                background: arg.color,
-                              },
-                              children: imported_3(arg.icon, {
-                                size: 16,
+                  imported("nav", {
+                    className: local_98798dac.mobileMenu,
+                    children: [
+                      local_2.map((arg) =>
+                        imported(
+                          "button",
+                          {
+                            type: "button",
+                            className: local_98798dac.mobileMenuItem,
+                            onClick: () => local_23(arg.id),
+                            children: [
+                              imported("span", {
+                                className: local_98798dac.mobileMenuIcon,
+                                style: {
+                                  background: arg.color,
+                                },
+                                children: imported(arg.icon, {
+                                  size: 16,
+                                }),
                               }),
-                            }),
-                            imported_3("span", {
-                              children: arg.label,
-                            }),
-                            imported_3("span", {
-                              className: local_41ea1484.mobileMenuChevron,
-                              children: imported_3(imported_68, {
-                                size: 18,
+                              imported("span", {
+                                children: arg.label,
                               }),
-                            }),
-                          ],
-                        },
-                        arg.id,
+                              imported("span", {
+                                className: local_98798dac.mobileMenuChevron,
+                                children: imported(imported_73, {
+                                  size: 18,
+                                }),
+                              }),
+                            ],
+                          },
+                          arg.id,
+                        ),
                       ),
-                    ),
+                      imported("a", {
+                        className: local_98798dac.mobileMenuItem,
+                        href: "/legal",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: "Правовые документы",
+                      }),
+                    ],
                   }),
                 ],
               }),
-              imported_3("div", {
-                className: local_41ea1484.mobileScreen,
+              imported("div", {
+                className: local_98798dac.mobileScreen,
                 children: [
-                  imported_3("div", {
-                    className: local_41ea1484.mobileHeader,
+                  imported("div", {
+                    className: local_98798dac.mobileHeader,
                     children: [
-                      imported_3("button", {
+                      imported("button", {
                         type: "button",
-                        className: local_41ea1484.mobileBack,
-                        onClick: local_22,
+                        className: local_98798dac.mobileBack,
+                        onClick: local_24,
                         children: [
-                          imported_3(imported_69, {
+                          imported(imported_74, {
                             size: 22,
                           }),
-                          imported_3("span", {
+                          imported("span", {
                             children: "Настройки",
                           }),
                         ],
                       }),
-                      imported_3("span", {
-                        className: local_41ea1484.mobileHeaderTitle,
-                        children: local_e777614a.find(
-                          (arg) => arg.id === local_2,
-                        )?.label,
+                      imported("span", {
+                        className: local_98798dac.mobileHeaderTitle,
+                        children: local_2.find((arg) => arg.id === local_4)
+                          ?.label,
                       }),
                     ],
                   }),
-                  imported_3("div", {
-                    className: local_41ea1484.content,
-                    children: local_24(),
+                  imported("div", {
+                    className: local_98798dac.content,
+                    children: local_26(),
                   }),
-                  local_25,
+                  local_27,
                 ],
               }),
             ],
           })
-        : imported_3(imported_26, {
+        : imported(imported_28, {
             children: [
-              imported_3("div", {
-                className: local_41ea1484.sidebar,
+              imported("div", {
+                className: local_98798dac.sidebar,
                 children: [
-                  imported_3("div", {
-                    className: local_41ea1484.sidebarTitle,
+                  imported("div", {
+                    className: local_98798dac.sidebarTitle,
                     children: "Настройки",
                   }),
-                  imported_3("nav", {
-                    children: local_e777614a.map((arg) =>
-                      imported_3(
+                  imported("nav", {
+                    children: local_2.map((arg) =>
+                      imported(
                         "button",
                         {
                           type: "button",
-                          className: `${local_41ea1484.navItem} ${local_2 === arg.id ? local_41ea1484.active : ""}`,
-                          onClick: () => local_20(arg.id),
+                          className: `${local_98798dac.navItem} ${local_4 === arg.id ? local_98798dac.active : ""}`,
+                          onClick: () => local_22(arg.id),
                           children: [
-                            imported_3(arg.icon, {
+                            imported(arg.icon, {
                               size: 24,
                             }),
-                            imported_3("span", {
+                            imported("span", {
                               children: arg.label,
                             }),
                           ],
@@ -5939,14 +5417,14 @@ export function fn_9f1899fc({ onClose: arg }) {
                   }),
                 ],
               }),
-              imported_3("div", {
-                className: local_41ea1484.contentWrapper,
+              imported("div", {
+                className: local_98798dac.contentWrapper,
                 children: [
-                  imported_3("div", {
-                    className: local_41ea1484.content,
-                    children: local_24(),
+                  imported("div", {
+                    className: local_98798dac.content,
+                    children: local_26(),
                   }),
-                  local_25,
+                  local_27,
                 ],
               }),
             ],
@@ -5954,4 +5432,9 @@ export function fn_9f1899fc({ onClose: arg }) {
     }),
   });
 }
-export { useSettingsStore };
+export {
+  GiftSubscriptionModal,
+  SubscriptionModal,
+  subscriptionApi,
+  useSettingsStore,
+};

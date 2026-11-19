@@ -1,37 +1,15 @@
 import {
   symbol_002 as imported,
-  symbol_082 as imported_2,
-  symbol_086 as imported_3,
-  symbol_073 as imported_4,
-  aY as imported_5,
-  symbol_069 as imported_6,
-  symbol_004 as imported_7,
-  aZ as imported_8,
+  symbol_285 as imported_2,
+  symbol_289 as imported_3,
+  symbol_276 as imported_4,
+  symbol_147 as imported_5,
+  symbol_223 as imported_6,
+  symbol_148 as imported_7,
+  symbol_149 as imported_8,
+  symbol_133 as imported_9,
+  symbol_103 as imported_10,
 } from "../entry.js";
-import { V as imported_9 } from "../components/volume-glyph.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";
@@ -231,7 +209,7 @@ const local_66259d24 = {
   progressFill: local_9954e574,
   scrubbing: local_f21f5012,
 };
-const local_bcf4e7ce = parseFloat(localStorage.getItem("video-volume") ?? "1");
+const local_bcf4e7ce = parseFloat(imported_10.getItem("video-volume") ?? "1");
 let local_a1f22b9b = true;
 let local_09086d0f = isNaN(local_bcf4e7ce) ? 1 : local_bcf4e7ce;
 const local_a1e12a9e = new Set();
@@ -278,14 +256,14 @@ function fn_ba5ad8c7() {
 }
 function fn_a01d1e0a(arg) {
   local_a1f22b9b = arg;
-  localStorage.setItem("video-muted", String(arg));
+  imported_10.setItem("video-muted", String(arg));
   local_a1e12a9e.forEach((arg) => arg(arg));
 }
 function fn_34f0bf46(arg) {
   local_09086d0f = arg;
-  localStorage.setItem("video-volume", String(arg));
+  imported_10.setItem("video-volume", String(arg));
 }
-function fn_c502a482(arg) {
+function fn_0c2d49e5(arg) {
   const local = Math.floor(arg / 60);
   const local_2 = arg % 60;
   return `${local}:${local_2.toString().padStart(2, "0")}`;
@@ -340,7 +318,7 @@ function fn_49d970dd() {
     }),
   });
 }
-export function fn_3ea9b2e6({
+export function fn_0c38b9ab({
   src: arg,
   spoiler: arg_2 = false,
   width: arg_3,
@@ -628,7 +606,7 @@ export function fn_3ea9b2e6({
         local_39 &&
         imported_3("div", {
           className: local_66259d24.duration,
-          children: fn_c502a482(arg_5),
+          children: fn_0c2d49e5(arg_5),
         }),
       (local_6 || !arg_2) &&
         imported_3("div", {

@@ -1,36 +1,14 @@
 import {
-  symbol_035 as imported,
-  a7 as imported_2,
-  symbol_069 as imported_3,
-  symbol_086 as imported_4,
+  symbol_022 as imported,
+  symbol_023 as imported_2,
+  symbol_223 as imported_3,
+  symbol_289 as imported_4,
   symbol_003 as imported_5,
-  symbol_014 as imported_6,
-  symbol_089 as imported_7,
+  symbol_084 as imported_6,
+  symbol_275 as imported_7,
+  symbol_081 as imported_8,
 } from "../entry.js";
-import { I as imported_8 } from "../components/icon-check-circle.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_9 } from "../components/icon-check-circle.js";
 const local_d1ae2605 = {
   TARGET_NOT_FOUND: "REPORT_TARGET_NOT_FOUND",
   CANNOT_REPORT_OWN_CONTENT: "REPORT_CANNOT_REPORT_OWN_CONTENT",
@@ -107,7 +85,7 @@ const local_ecb71779 = [
     label: "Другое",
   },
 ];
-export function fn_b2801762({
+export function fn_5e6618c0({
   targetType: arg,
   targetId: arg_2,
   onClose: arg_3,
@@ -136,7 +114,7 @@ export function fn_b2801762({
         local_10(true);
       } catch (error) {
         console.error("Failed to submit report:", error);
-        if (imported_7(error)) {
+        if (imported_8(error)) {
           switch (error.code) {
             case local_d1ae2605.CANNOT_REPORT_OWN_CONTENT:
               local_8("Вы не можете пожаловаться на свой контент");
@@ -172,7 +150,7 @@ export function fn_b2801762({
         children: [
           imported_4("div", {
             className: local_d71cd58f.successIcon,
-            children: imported_4(imported_8, {
+            children: imported_4(imported_9, {
               size: 48,
             }),
           }),
@@ -252,6 +230,7 @@ export function fn_b2801762({
             maxLength: 1000,
           }),
         }),
+        imported_4(imported_7, {}),
         local_7 &&
           imported_4("div", {
             className: local_d71cd58f.error,
@@ -284,4 +263,4 @@ export function fn_b2801762({
     }),
   });
 }
-export { fn_b2801762 as default };
+export { fn_5e6618c0 as default };

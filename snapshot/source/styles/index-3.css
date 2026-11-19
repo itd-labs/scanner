@@ -1,0 +1,31 @@
+.c_auto_e1a7b38504 .content {
+  padding: 0;
+}
+.c_modal {
+  width: unset;
+  padding: 16px;
+}
+.c_auto_0d2784ff49 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+.c_auto_077cf298a4 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.c_auto_afbf8e0777 {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.c_auto_801a5be9ce {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

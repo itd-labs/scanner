@@ -1,3 +1,7 @@
+.c_modal {
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
 .c_changelog {
   display: flex;
   flex-direction: column;
@@ -68,6 +72,11 @@
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-secondary);
+}
+.c_releaseCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .c_note {
   margin: 0;

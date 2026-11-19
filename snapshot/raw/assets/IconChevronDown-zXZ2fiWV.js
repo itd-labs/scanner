@@ -1,0 +1,1 @@
+import{u as r}from"./index-B4ySybtH.js";const t=({size:o=18})=>r("svg",{xmlns:"http://www.w3.org/2000/svg",width:o,height:o,fill:"none",viewBox:"0 0 18 18",children:r("path",{stroke:"currentColor","stroke-linecap":"round","stroke-linejoin":"round","stroke-width":"2",d:"m5 7 4 4 4-4"})});export{t as I};

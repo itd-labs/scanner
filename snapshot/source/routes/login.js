@@ -1,48 +1,24 @@
 import {
-  symbol_088 as imported,
-  symbol_069 as imported_2,
-  symbol_082 as imported_3,
-  symbol_070 as imported_4,
-  symbol_089 as imported_5,
-  symbol_048 as imported_6,
-  symbol_086 as imported_7,
-  symbol_014 as imported_8,
+  symbol_012 as imported,
+  symbol_223 as imported_2,
+  symbol_285 as imported_3,
+  symbol_001 as imported_4,
+  symbol_081 as imported_5,
+  symbol_082 as imported_6,
+  symbol_289 as imported_7,
+  symbol_084 as imported_8,
   symbol_003 as imported_9,
-  symbol_049 as imported_10,
-  symbol_050 as imported_11,
+  symbol_010 as imported_10,
+  symbol_275 as imported_11,
   symbol_020 as imported_12,
 } from "../entry.js";
 import { symbol_001 as imported_13 } from "../shared/chunk-bedc56a34092.js";
-import { C as imported_14 } from "../shared/chunk-ab6fb2cd21e7.js";
+import { C as imported_14 } from "../shared/chunk-d0f3b8fb991b.js";
 import { symbol_001 as imported_15 } from "../shared/index-ggtxn-mrt-portal20261026.js";
 import {
   I as imported_16,
   a as imported_17,
 } from "../components/icon-eye-off.js";
-import "../shared/phone-access.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_adb43aea = "c_container";
 const local_f1c23efb = "c_header";
 const local_9d9cf508 = "c_title";
@@ -67,7 +43,7 @@ const local_3f60fd0d = {
   expiredText: local_2dca8ec3,
   expiredActions: local_6fcad58f,
 };
-function fn_ed04faf8({ email: arg, onBack: arg_2 }) {
+function fn_fbf50e6d({ email: arg, onBack: arg_2, onLegalError: arg_3 }) {
   const { verifyOtp: local, resendOtp: local_2 } = imported();
   const [local_3, local_4] = imported_2(null);
   const [local_5, local_6] = imported_2(false);
@@ -97,7 +73,9 @@ function fn_ed04faf8({ email: arg, onBack: arg_2 }) {
             : imported_4("../site/index.html")
           : local === "password_reset" && imported_4("/reset-password");
       } catch (error) {
-        if (local_13(error)) {
+        if (imported_5(error) && error.code.startsWith("LEGAL_") && arg_3) {
+          arg_3(error.code);
+        } else if (local_13(error)) {
           local_10(true);
         } else if (imported_5(error)) {
           switch (error.code) {
@@ -117,7 +95,7 @@ function fn_ed04faf8({ email: arg, onBack: arg_2 }) {
         local_6(false);
       }
     },
-    [local],
+    [local, arg_3],
   );
   const local_15 = imported_3(async () => {
     local_4(null);
@@ -491,7 +469,7 @@ export const local_71eec970 = (arg) => {
                   imported_7(imported_11, {}),
                 ],
               })
-            : imported_7(fn_ed04faf8, {
+            : imported_7(fn_fbf50e6d, {
                 email: local_3,
                 onBack: local_23,
               }),

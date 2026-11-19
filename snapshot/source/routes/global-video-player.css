@@ -93,6 +93,60 @@
   object-fit: contain;
   outline: none;
 }
+.c_bottomOverlay[hidden] {
+  display: none;
+}
+.c_topActions {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  right: max(16px, env(safe-area-inset-right));
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+.c_topActions button {
+  position: static;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  background: #141414bf;
+}
+.c_mediaError {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  cursor: default;
+}
+.c_mediaError strong {
+  font-size: 18px;
+}
+.c_mediaError p {
+  max-width: 360px;
+  color: #bdbdbd;
+  margin: 0;
+  line-height: 1.5;
+}
+.c_errorDownload {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 18px;
+  border: 0;
+  border-radius: 22px;
+  background: #fff;
+  color: #111;
+  font: inherit;
+  cursor: pointer;
+}
 .c_poster {
   position: absolute;
   inset: 0;

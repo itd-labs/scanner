@@ -1,19 +1,88 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `8a13889fcbcbed8f6c2f839b9385f29b080acf6cb0a619d5e79f6dc410d62b33`
-- Resources: 99
-- Downloaded bytes: 1542185
-- Sentry releases: `1.1.2`
+- Build fingerprint: `b4a742b900f06b052f473588bce33600d331d3bc6cbd4c0a9a425a884c71f125`
+- Resources: 198
+- Downloaded bytes: 20633767
+- Sentry releases: none
 
 ## Routes
 
 Route tables are independent. Within each table, routes are evaluated in priority order and the first match wins.
 
-No changes.
+- Changed `/legal`: priority 8 → 1
+- Changed `/legal/:slug/history`: priority 9 → 2
+- Changed `/legal/:slug/versions/:version`: priority 10 → 3
+- Changed `/legal/:slug`: priority 11 → 4
+- Changed `/`: priority 1 → 5
+- Added: table `entry.js#1` #6 `/chats/new/:draftUserId`
+- Added: table `entry.js#1` #7 `/chats/:chatId?`
+- Changed `/notifications`: priority 2 → 8
+- Changed `/login`: priority 3 → 9
+- Changed `/register`: priority 4 → 10
+- Changed `/forgot-password`: priority 5 → 11
+- Changed `/reset-password`: priority 6 → 12
+- Changed `/verify-email`: priority 7 → 13
+- Changed `/terms`: priority 12 → 14
+- Changed `/privacy`: priority 13 → 15
+- Changed `/cookies`: priority 14 → 16
+- Changed `/onboarding`: priority 15 → 17
+- Changed `/search`: priority 16 → 18
+- Changed `/shop/:rest*`: priority 17 → 19
+- Added: table `entry.js#1` #20 `/event/alice-ai/:rest*` (rest is a zero-or-more segment splat)
+- Added: table `entry.js#1` #21 `/event/halloween/:rest*` (rest is a zero-or-more segment splat)
+- Changed `/hashtag/:name`: priority 18 → 22
+- Changed `/external`: priority 19 → 23
+- Changed `/support`: priority 20 → 24
+- Changed `/delete-account`: priority 21 → 25
+- Changed `/child-safety`: priority 22 → 26
+- Changed `/event`: priority 23 → 27
+- Changed `/verification`: priority 24 → 28
+- Changed `/subscription-terms`: priority 25 → 29
+- Changed `/recurring-terms`: priority 26 → 30
+- Changed `/:username/post/:postId`: priority 27 → 31
+- Changed `/:slug`: priority 28 → 32
+- Changed `*`: priority 29 → 33
 
 ## HTTP endpoints
 
-- Added: `/api/v1/auth/phone/resume`
+- Added: `/api/v1/event-assets/`
+- Added: `/api/v1/messenger`
+- Added: `/api/v1/messenger/browser-file-session`
+- Added: `/chats/dm`
+- Added: `/chats/unread?manual_unread=1`
+- Added: `/correctors/cancel`
+- Added: `/correctors/inventory`
+- Added: `/correctors/report`
+- Added: `/files/avatar`
+- Added: `/media/upload/init`
+- Added: `/messenger/entry`
+- Added: `/post-notebooks/inventory`
+- Added: `/presence`
+- Added: `/profile-avatar/`
+- Added: `/reactions/available`
+- Added: `/red-pens/cancel`
+- Added: `/red-pens/inventory`
+- Added: `/red-pens/report`
+- Added: `/sign-up`
+- Added: `/v1/aliceai/balance`
+- Added: `/v1/aliceai/inventory`
+- Added: `/v1/aliceai/nicknames`
+- Added: `/v1/aliceai/nicknames/active`
+- Added: `/v1/aliceai/profiles/`
+- Added: `/v1/aliceai/shop`
+- Added: `/v1/aliceai/waste-paper/posts/`
+- Added: `/v1/event-assets/`
+- Added: `/v1/event/status`
+- Added: `/v1/halloween`
+- Added: `/v1/subscription/checkout-release`
+- Added: `/v1/subscription/checkout-state`
+- Added: `/v1/subscription/gift-giver/`
+- Added: `/v1/subscription/gifts`
+- Added: `/v1/subscription/gifts/`
+- Added: `/v1/subscription/gifts/:param`
+- Added: `/v1/subscription/international-checkouts`
+- Added: `/v1/subscription/payments/`
+- Added: `/v1/subscription/payments/:param`
 
 ## WebSocket endpoints
 
@@ -21,78 +90,132 @@ No changes.
 
 ## Storage keys
 
-No changes.
+- Added: `itd-auth-boundary`
+- Added: `itd:offline-chat-cache`
+- Removed: `theme-storage`
+- Removed: `video-muted`
+- Removed: `video-volume`
 
 ## User-visible strings
 
-- Added: `10 цифр после +7.`
-- Added: `Австрия`
-- Added: `Албания`
-- Added: `Андорра`
-- Added: `Бельгия`
-- Added: `Болгария`
-- Added: `Босния и Герцеговина`
-- Added: `Великобритания`
-- Added: `Венгрия`
-- Added: `Войдите или создайте аккаунт. Подтвердите номер звонком.`
-- Added: `Время проверки истекло. Отправьте номер ещё раз.`
-- Added: `Германия`
-- Added: `Греция`
-- Added: `Дания`
-- Added: `Звонок бесплатный.`
-- Added: `Индия`
-- Added: `Иран`
-- Added: `Ирландия`
-- Added: `Исландия`
-- Added: `Испания`
-- Added: `Италия`
-- Added: `Канада`
-- Added: `Кипр`
-- Added: `Киргизия`
-- Added: `Китай`
-- Added: `Латвия`
-- Added: `Литва`
-- Added: `Люксембург`
-- Added: `Мальта`
-- Added: `Монако`
-- Added: `Начать новую проверку`
-- Added: `Не удалось восстановить начатую проверку.`
-- Added: `Не удалось начать проверку номера. Отправьте его ещё раз.`
-- Added: `Нидерланды`
-- Added: `Новая проверка через`
-- Added: `Номер не появится в профиле.`
-- Added: `Норвегия`
-- Added: `Пакистан`
-- Added: `Подтвердите новый номер звонком.`
-- Added: `Подтвердите номер звонком, чтобы публиковать посты, оставлять комментарии и писать в чатах.`
-- Added: `Позвонить самому через`
-- Added: `Поиск страны`
-- Added: `Польша`
-- Added: `Португалия`
-- Added: `Проверка скоро завершится. Полученный код ещё можно ввести. Новая проверка станет доступна после таймера.`
-- Added: `Проверка этого номера уже начата. Подождите перед новым запросом.`
-- Added: `Продолжить проверку`
-- Added: `Румыния`
-- Added: `Северная Македония`
-- Added: `Сербия`
-- Added: `Словакия`
-- Added: `Словения`
-- Added: `Соединенные Штаты`
-- Added: `Создайте аккаунт по номеру телефона. Подтвердите номер звонком.`
-- Added: `Срок проверки закончился. Начните новую проверку номера.`
-- Added: `Страна не найдена`
-- Added: `Турция`
-- Added: `Финляндия`
-- Added: `Франция`
-- Added: `Хорватия`
-- Added: `Черногория`
-- Added: `Чехия`
-- Added: `Швейцария`
-- Added: `Швеция`
-- Added: `Шри-Ланка`
-- Added: `Эстония`
-- Added: `Invalid phone expiry`
-- Removed: `10 цифр после +7. Мобильный номер начинается с 9.`
-- Removed: `Звонок бесплатный. Номер не появится в профиле.`
-- Removed: `Код уже отправлен на этот номер. Попробуйте позже.`
-- Removed: `Кыргызстан`
+- Added: `— даритель НУКСТА`
+- Added: `— остальное докачаю сетью`
+- Added: `— сеть не нужна`
+- Added: `, за спасённый пост`
+- Added: `, зови`
+- Added: `, максимум`
+- Added: `, призрак ослаб на`
+- Added: `, следующее списание`
+- Added: `, спасибо:`
+- Added: `: новое сообщение`
+- Added: `: отдача`
+- Added: `: чанк`
+- Added: `: чанка`
+- Added: `. В уже открытых чатах писать можно.`
+- Added: `. Изгоняй призраков в ленте и собирай конфеты`
+- Added: `. Нажми, чтобы рассмотреть`
+- Added: `. Напомним за 3 дня.`
+- Added: `. Не закрывайте вкладку:`
+- Added: `. Уберите одну, чтобы выбрать другую.`
+- Added: `. Build with -sASSERTIONS for more info.`
+- Added: `· найдено:`
+- Added: `» пока нет подписки «ИТД НУКСТА». Он сможет прочитать сообщение, но ответить у него не получится`
+- Added: `(нет — транспорт)`
+- Added: `(нет — транспорт/сеть)`
+- Added: `) ИТД`
+- Added: `[её]`
+- Added: `[Скрытый текст]`
+- Added: `[alice-frame] Не удалось обновить вход в ивент`
+- Added: `[alice-frame] Не удалось обновить профиль после изменения в ивенте`
+- Added: `[alice-frame] Не удалось передать обновлённый вход`
+- Added: `[audio] play failed`
+- Added: `[data-message-menu], [role="dialog"], aside[aria-label="Информация о чате"][aria-hidden="false"]`
+- Added: `/g-arm-l.webp" alt=""><img class="hw-arm hw-r" src="`
+- Added: `/g-arm-r.webp" alt=""><img class="hw-face" src="`
+- Added: `/g-body.webp" alt=""><img class="hw-arm hw-l" src="`
+- Added: `→ диск; локально`
+- Added: `+ · поиск не завершён`
+- Added: `<span class="hw-shadow"></span><div class="hw-rig"><img class="hw-body" src="`
+- Added: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28" viewBox="0 0 120 28" preserveAspectRatio="none"><path d="`
+- Added: `🌕 Полнолуние. Призраков вдвое больше. Итоги в полночь`
+- Added: `🌙 Сейчас: ночь (будет ещё до 9:00). Лайкай посты-оборотни с ушками и получай ночные конфеты!`
+- Added: `🎃 До полуночи`
+- Added: `🎤 Голосовое сообщение`
+- Added: `📎 Вложение`
+- Added: `📎 Вложения (`
+- Added: `🔗 Пост`
+- Added: `₽ каждый месяц.`
+- Added: `1 группа крови`
+- Added: `17 число`
+- Added: `18 лет`
+- Added: `2 группа крови`
+- Added: `24 часа`
+- Added: `3 группа крови`
+- Added: `3px solid var(--bg-primary)`
+- Added: `4 группа крови`
+- Added: `600 14px EventCaveat`
+- Added: `600 22px EventCaveat`
+- Added: `А ночью я оборотень, р-р-р`
+- Added: `ААА!! ВНИМАНИЕ!! В ИТД проникли тёмные силы!!`
+- Added: `абориген`
+- Added: `Аватарка`
+- Added: `Аватарка удалена`
+- Added: `августа`
+- Added: `авиация`
+- Added: `авокадо`
+- Added: `австралия`
+- Added: `Австралия`
+- Added: `автобус`
+- Added: `автобус спереди`
+- Added: `автобусная остановка`
+- Added: `автозаправка`
+- Added: `автозаправочная станция`
+- Added: `автомагистраль`
+- Added: `автомат`
+- Added: `автомобиль`
+- Added: `автомобиль спереди`
+- Added: `автомобильное колесо`
+- Added: `Автопродление подключено`
+- Added: `Автопродление подключено:`
+- Added: `автопродление.`
+- Added: `автор`
+- Added: `Автор поста`
+- Added: `авторикша`
+- Added: `авторские права`
+- Added: `авторское`
+- Added: `автостоянка`
+- Added: `автострада`
+- Added: `Автотюн`
+- Added: `азарт`
+- Added: `Азия`
+- Added: `Азия и Австралия на земном шаре`
+- Added: `АЗС`
+- Added: `ай, за что`
+- Added: `аккордеон`
+- Added: `аккумулятор`
+- Added: `акробат`
+- Added: `акробат: очень светлый тон кожи`
+- Added: `акробат: очень темный тон кожи`
+- Added: `акробат: светлый тон кожи`
+- Added: `акробат: средний тон кожи`
+- Removed: `. Отключить его можно в настройках.`
+- Removed: `₽ на месяц`
+- Removed: `₽, далее ежемесячно — следующее списание`
+- Removed: `Ивент активен!`
+- Removed: `Нажимая кнопку, вы принимаете`
+- Removed: `Нет активного ивента`
+- Removed: `Оплачиваем…`
+- Removed: `Открыть вручную`
+- Removed: `Ошибка при оплате`
+- Removed: `Ошибка при создании платежа`
+- Removed: `Показывать время последнего визита`
+- Removed: `Сегодня спишется`
+- Removed: `Сейчас нет активных ивентов. Следите за обновлениями!`
+- Removed: `Сохранённый способ оплаты`
+- Removed: `Ссылка должна была открыться в новой вкладке.`
+- Removed: `условия автопродления`
+- Removed: `No emojis found`
+- Removed: `Search emojis...`
+- Removed: `Something went wrong`
+- Removed: `SSE message parse error:`
+- Additional changes omitted from this summary.

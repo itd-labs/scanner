@@ -1,41 +1,21 @@
 import {
-  symbol_082 as imported,
-  symbol_069 as imported_2,
-  symbol_073 as imported_3,
+  symbol_285 as imported,
+  symbol_223 as imported_2,
+  symbol_276 as imported_3,
   symbol_002 as imported_4,
-  symbol_021 as imported_5,
-  symbol_086 as imported_6,
+  symbol_037 as imported_5,
+  symbol_289 as imported_6,
   symbol_020 as imported_7,
-  symbol_004 as imported_8,
-  symbol_028 as imported_9,
-  symbol_001 as imported_10,
+  symbol_157 as imported_8,
+  symbol_102 as imported_9,
+  symbol_148 as imported_10,
+  symbol_101 as imported_11,
+  symbol_042 as imported_12,
+  symbol_104 as imported_13,
 } from "../entry.js";
-import { u as imported_11 } from "../shared/use-body-scroll-lock.js";
-import { I as imported_12 } from "../components/icon-chevron-left.js";
-import { I as imported_13 } from "../components/icon-chevron-right.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_14 } from "../components/icon-download.js";
+import { I as imported_15 } from "../components/icon-chevron-left.js";
+import { I as imported_16 } from "../components/icon-chevron-right.js";
 const local_f06debfc = 100;
 function fn_bb641065(arg, arg_2) {
   const local = imported(() => {
@@ -748,6 +728,9 @@ const local_c3660bff = "c_slide";
 const local_44550d3b = "c_navArea";
 const local_97326966 = "c_dots";
 const local_3d40993b = "c_backdrop";
+const local_bf41db52 = "c_fadeClosing";
+const local_e31f1c74 = "c_toolbar";
+const local_54499ee8 = "c_counter";
 const local_5198a2f0 = "c_windowZoomed";
 const local_2d2dc45b = "c_track";
 const local_2251b4e5 = "c_mobileTrack";
@@ -760,7 +743,7 @@ const local_2cc25269 = "c_filmstripLeaving";
 const local_b92bde6e = "c_filmshot";
 const local_5756bcd2 = "c_filmshotActive";
 const local_87a54fb0 = "c_filmshotImage";
-const local_c642bb00 = {
+const local_f2bf345a = {
   viewer: local_68136740,
   transitioning: local_9b1e06e3,
   windowContainer: local_472a5c39,
@@ -771,6 +754,9 @@ const local_c642bb00 = {
   navArea: local_44550d3b,
   dots: local_97326966,
   backdrop: local_3d40993b,
+  fadeClosing: local_bf41db52,
+  toolbar: local_e31f1c74,
+  counter: local_54499ee8,
   windowZoomed: local_5198a2f0,
   track: local_2d2dc45b,
   mobileTrack: local_2251b4e5,
@@ -784,7 +770,7 @@ const local_c642bb00 = {
   filmshotActive: local_5756bcd2,
   filmshotImage: local_87a54fb0,
 };
-function fn_6a21b789({
+function fn_81ac8267({
   currentIndex: arg,
   total: arg_2,
   onPrev: arg_3,
@@ -796,30 +782,34 @@ function fn_6a21b789({
   return imported_6(imported_7, {
     children: [
       imported_6("button", {
-        className: `${local_c642bb00.navArea} ${local_c642bb00.navLeft}`,
+        type: "button",
+        "aria-label": "Предыдущее изображение",
+        className: `${local_f2bf345a.navArea} ${local_f2bf345a.navLeft}`,
         onClick: arg_3,
         disabled: arg === 0,
-        children: imported_6(imported_12, {
+        children: imported_6(imported_15, {
           size: 24,
         }),
       }),
       imported_6("button", {
-        className: `${local_c642bb00.navArea} ${local_c642bb00.navRight}`,
+        type: "button",
+        "aria-label": "Следующее изображение",
+        className: `${local_f2bf345a.navArea} ${local_f2bf345a.navRight}`,
         onClick: arg_4,
         disabled: arg === arg_2 - 1,
-        children: imported_6(imported_13, {
+        children: imported_6(imported_16, {
           size: 24,
         }),
       }),
     ],
   });
 }
-function fn_856a9d72({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
+function fn_47d5f4ce({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
   if (arg <= 1) {
     return null;
   }
   return imported_6("div", {
-    className: local_c642bb00.dots,
+    className: local_f2bf345a.dots,
     children: Array.from(
       {
         length: arg,
@@ -828,7 +818,7 @@ function fn_856a9d72({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
         imported_6(
           "button",
           {
-            className: `${local_c642bb00.dot} ${arg_2 === arg_2 ? local_c642bb00.active : ""}`,
+            className: `${local_f2bf345a.dot} ${arg_2 === arg_2 ? local_f2bf345a.active : ""}`,
             onClick: () => arg_3(arg_2),
           },
           arg_2,
@@ -836,7 +826,7 @@ function fn_856a9d72({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
     ),
   });
 }
-function fn_0b68fa19({
+function fn_234497a4({
   images: arg,
   currentIndex: arg_2,
   isClosing: arg_3,
@@ -846,13 +836,13 @@ function fn_0b68fa19({
     return null;
   }
   return imported_6("div", {
-    className: `${local_c642bb00.filmstrip} ${arg_3 ? local_c642bb00.filmstripLeaving : ""}`,
+    className: `${local_f2bf345a.filmstrip} ${arg_3 ? local_f2bf345a.filmstripLeaving : ""}`,
     children: arg.map((arg, arg_2) =>
       imported_6(
         "button",
         {
           type: "button",
-          className: `${local_c642bb00.filmshot} ${arg_2 === arg_2 ? local_c642bb00.filmshotActive : ""}`,
+          className: `${local_f2bf345a.filmshot} ${arg_2 === arg_2 ? local_f2bf345a.filmshotActive : ""}`,
           onClick: (arg) => {
             arg.stopPropagation();
             arg_4(arg_2);
@@ -862,7 +852,7 @@ function fn_0b68fa19({
           children: imported_6("img", {
             src: arg.thumbUrl || arg.url,
             alt: "",
-            className: local_c642bb00.filmshotImage,
+            className: local_f2bf345a.filmshotImage,
           }),
         },
         arg.id,
@@ -870,268 +860,7 @@ function fn_0b68fa19({
     ),
   });
 }
-function fn_723d72f2(arg) {
-  const {
-    PI: local,
-    min: local_2,
-    max: local_3,
-    cos: local_4,
-    round: local_5,
-  } = Math;
-  const local_6 = arg[0] | (arg[1] << 8) | (arg[2] << 16);
-  const local_7 = arg[3] | (arg[4] << 8);
-  const local_8 = (local_6 & 63) / 63;
-  const local_9 = ((local_6 >> 6) & 63) / 31.5 - 1;
-  const local_10 = ((local_6 >> 12) & 63) / 31.5 - 1;
-  const local_11 = ((local_6 >> 18) & 31) / 31;
-  const local_12 = local_6 >> 23;
-  const local_13 = ((local_7 >> 3) & 63) / 63;
-  const local_14 = ((local_7 >> 9) & 63) / 63;
-  const local_15 = local_7 >> 15;
-  const local_16 = local_3(3, local_15 ? (local_12 ? 5 : 7) : local_7 & 7);
-  const local_17 = local_3(3, local_15 ? local_7 & 7 : local_12 ? 5 : 7);
-  const local_18 = local_12 ? (arg[5] & 15) / 15 : 1;
-  const local_19 = (arg[5] >> 4) / 15;
-  const local_20 = local_12 ? 6 : 5;
-  let local_21 = 0;
-  const local_22 = (arg, arg_2, arg_3) => {
-    const local = [];
-    for (let local = 0; local < arg_2; local++) {
-      for (
-        let local = local ? 0 : 1;
-        local * arg_2 < arg * (arg_2 - local);
-        local++
-      ) {
-        local.push(
-          (((arg[local_20 + (local_21 >> 1)] >> ((local_21++ & 1) << 2)) & 15) /
-            7.5 -
-            1) *
-            arg_3,
-        );
-      }
-    }
-    return local;
-  };
-  const local_23 = local_22(local_16, local_17, local_11);
-  const local_24 = local_22(3, 3, local_13 * 1.25);
-  const local_25 = local_22(3, 3, local_14 * 1.25);
-  const local_26 = local_12 ? local_22(5, 5, local_19) : null;
-  const local_27 = fn_2a81af50(arg);
-  const local_28 = local_5(local_27 > 1 ? 32 : 32 * local_27);
-  const local_29 = local_5(local_27 > 1 ? 32 / local_27 : 32);
-  const local_30 = new Uint8Array(local_28 * local_29 * 4);
-  const local_31 = [];
-  const local_32 = [];
-  for (let local = 0, local_2 = 0; local < local_29; local++) {
-    for (let local = 0; local < local_28; local++, local_2 += 4) {
-      let local = local_8;
-      let local_2 = local_9;
-      let local_3 = local_10;
-      let local_4 = local_18;
-      for (
-        let local = 0, local_2 = local_3(local_16, local_12 ? 5 : 3);
-        local < local_2;
-        local++
-      ) {
-        local_31[local] = local_4((local / local_28) * (local + 0.5) * local);
-      }
-      for (
-        let local = 0, local_2 = local_3(local_17, local_12 ? 5 : 3);
-        local < local_2;
-        local++
-      ) {
-        local_32[local] = local_4((local / local_29) * (local + 0.5) * local);
-      }
-      for (let local = 0, local_2 = 0; local < local_17; local++) {
-        for (
-          let local = local ? 0 : 1, local_2 = local_32[local] * 2;
-          local * local_17 < local_16 * (local_17 - local);
-          local++, local_2++
-        ) {
-          local += local_23[local_2] * local_31[local] * local_2;
-        }
-      }
-      for (let local = 0, local_2 = 0; local < 3; local++) {
-        for (
-          let local = local ? 0 : 1, local_2 = local_32[local] * 2;
-          local < 3 - local;
-          local++, local_2++
-        ) {
-          const local = local_31[local] * local_2;
-          local_2 += local_24[local_2] * local;
-          local_3 += local_25[local_2] * local;
-        }
-      }
-      if (local_12 && local_26) {
-        for (let local = 0, local_2 = 0; local < 5; local++) {
-          for (
-            let local = local ? 0 : 1, local_2 = local_32[local] * 2;
-            local < 5 - local;
-            local++, local_2++
-          ) {
-            local_4 += local_26[local_2] * local_31[local] * local_2;
-          }
-        }
-      }
-      const local_5 = local - (2 / 3) * local_2;
-      const local_6 = (3 * local - local_5 + local_3) / 2;
-      const local_7 = local_6 - local_3;
-      local_30[local_2] = local_3(0, 255 * local_2(1, local_6));
-      local_30[local_2 + 1] = local_3(0, 255 * local_2(1, local_7));
-      local_30[local_2 + 2] = local_3(0, 255 * local_2(1, local_5));
-      local_30[local_2 + 3] = local_3(0, 255 * local_2(1, local_4));
-    }
-  }
-  return {
-    w: local_28,
-    h: local_29,
-    rgba: local_30,
-  };
-}
-function fn_2a81af50(arg) {
-  const local = arg[3];
-  const local_2 = arg[2] & 128;
-  const local_3 = arg[4] & 128;
-  const local_4 = local_3 ? (local_2 ? 5 : 7) : local & 7;
-  const local_5 = local_3 ? local & 7 : local_2 ? 5 : 7;
-  return local_4 / local_5;
-}
-function fn_b440327e(arg, arg_2, arg_3) {
-  const local = arg * 4 + 1;
-  const local_2 = 6 + arg_2 * (5 + local);
-  const local_3 = [
-    137,
-    80,
-    78,
-    71,
-    13,
-    10,
-    26,
-    10,
-    0,
-    0,
-    0,
-    13,
-    73,
-    72,
-    68,
-    82,
-    0,
-    0,
-    arg >> 8,
-    arg & 255,
-    0,
-    0,
-    arg_2 >> 8,
-    arg_2 & 255,
-    8,
-    6,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    local_2 >>> 24,
-    (local_2 >> 16) & 255,
-    (local_2 >> 8) & 255,
-    local_2 & 255,
-    73,
-    68,
-    65,
-    84,
-    120,
-    1,
-  ];
-  const local_4 = [
-    0, 498536548, 997073096, 651767980, 1994146192, 1802195444, 1303535960,
-    1342533948, -306674912, -267414716, -690576408, -882789492, -1687895376,
-    -2032938284, -1609899400, -1111625188,
-  ];
-  let local_5 = 1;
-  let local_6 = 0;
-  for (
-    let local = 0, local_2 = 0, local_3 = local - 1;
-    local < arg_2;
-    local++, local_3 += local - 1
-  ) {
-    local_3.push(
-      local + 1 < arg_2 ? 0 : 1,
-      local & 255,
-      local >> 8,
-      ~local & 255,
-      (local >> 8) ^ 255,
-      0,
-    );
-    for (local_6 = (local_6 + local_5) % 65521; local_2 < local_3; local_2++) {
-      const local = arg_3[local_2] & 255;
-      local_3.push(local);
-      local_5 = (local_5 + local) % 65521;
-      local_6 = (local_6 + local_5) % 65521;
-    }
-  }
-  local_3.push(
-    local_6 >> 8,
-    local_6 & 255,
-    local_5 >> 8,
-    local_5 & 255,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    73,
-    69,
-    78,
-    68,
-    174,
-    66,
-    96,
-    130,
-  );
-  for (const [local, local_2] of [
-    [12, 29],
-    [37, 41 + local_2],
-  ]) {
-    let local = -1;
-    for (let local = local; local < local_2; local++) {
-      local ^= local_3[local];
-      local = (local >>> 4) ^ local_4[local & 15];
-      local = (local >>> 4) ^ local_4[local & 15];
-    }
-    local = ~local;
-    let local_2 = local_2;
-    local_3[local_2++] = local >>> 24;
-    local_3[local_2++] = (local >> 16) & 255;
-    local_3[local_2++] = (local >> 8) & 255;
-    local_3[local_2++] = local & 255;
-  }
-  return `data:image/png;base64,${btoa(String.fromCharCode(...local_3))}`;
-}
-function fn_0a49a74c(arg) {
-  const { w: local, h: local_2, rgba: local_3 } = fn_723d72f2(arg);
-  return fn_b440327e(local, local_2, local_3);
-}
-function fn_00da9caf(arg) {
-  if (!arg) {
-    return null;
-  }
-  try {
-    const local = atob(arg);
-    const local_2 = new Uint8Array(local.length);
-    for (let local = 0; local < local.length; local++) {
-      local_2[local] = local.charCodeAt(local);
-    }
-    return fn_0a49a74c(local_2);
-  } catch {
-    return null;
-  }
-}
-function fn_1bd8ba58({
+function fn_e8206ee9({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1252,10 +981,7 @@ function fn_1bd8ba58({
   imported_3(() => {
     arg_2 && local_9 && arg_5?.();
   }, [arg_2, local_9]);
-  const local_14 = imported_5(
-    () => fn_00da9caf(arg.thumbhash),
-    [arg.thumbhash],
-  );
+  const local_14 = imported_5(() => imported_8(arg.thumbhash), [arg.thumbhash]);
   return imported_6("img", {
     src:
       local_3 && !local_11
@@ -1284,7 +1010,7 @@ function fn_1bd8ba58({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_5d7bad9d({
+function fn_520fd428({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1306,7 +1032,7 @@ function fn_5d7bad9d({
     return local;
   }, [arg_3, arg_2]);
   return imported_6("div", {
-    className: `${local_c642bb00.windowContainer} ${arg_12 ? local_c642bb00.windowZoomed : ""}`,
+    className: `${local_f2bf345a.windowContainer} ${arg_12 ? local_f2bf345a.windowZoomed : ""}`,
     style: {
       width: `${arg_7.width}px`,
       height: `${arg_7.height}px`,
@@ -1321,7 +1047,7 @@ function fn_5d7bad9d({
     onMouseLeave: arg_9.onMouseLeave,
     children: imported_6("div", {
       ref: arg_8,
-      className: local_c642bb00.track,
+      className: local_f2bf345a.track,
       style: {
         transform: `translateX(${-local + arg_4}px)`,
         transition: arg_6
@@ -1335,7 +1061,7 @@ function fn_5d7bad9d({
         return imported_6(
           "div",
           {
-            className: local_c642bb00.slide,
+            className: local_f2bf345a.slide,
             onClick: arg_10,
             style: {
               ...(local_2
@@ -1358,7 +1084,7 @@ function fn_5d7bad9d({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_e8206ee9, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1375,7 +1101,7 @@ function fn_5d7bad9d({
   });
 }
 const local_f06debfc_5 = 2;
-function fn_9cf23fc2({
+function fn_2bb87887({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1389,7 +1115,7 @@ function fn_9cf23fc2({
   zoom: arg_11,
 }) {
   return imported_6("div", {
-    className: local_c642bb00.mobileContainer,
+    className: local_f2bf345a.mobileContainer,
     style: {
       transform: `translateY(${arg_5}px)`,
       transition: arg_6
@@ -1401,7 +1127,7 @@ function fn_9cf23fc2({
     onTouchEnd: arg_8.onTouchEnd,
     onTouchCancel: arg_8.onTouchCancel,
     children: imported_6("div", {
-      className: local_c642bb00.mobileTrack,
+      className: local_f2bf345a.mobileTrack,
       style: {
         transform: `translateX(calc(-${arg_3 * 100}% + ${arg_4}px))`,
         transition: arg_6
@@ -1427,13 +1153,16 @@ function fn_9cf23fc2({
         return imported_6(
           "div",
           {
-            className: local_c642bb00.mobileSlide,
-            onClick: arg_9,
+            className: local_f2bf345a.mobileSlide,
+            onClick: (arg) => {
+              arg.stopPropagation();
+              arg_9();
+            },
             "data-active-slide": local_2 ? "" : undefined,
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_1bd8ba58, {
+              imported_6(fn_e8206ee9, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1455,7 +1184,7 @@ const local_50cfe1ce = {
   clipPath: "inset(0px round 0px)",
   borderRadius: "0px",
 };
-function fn_1c822420(arg, arg_2) {
+function fn_fd297351(arg, arg_2) {
   if (!arg || arg === "0px" || arg_2 <= 0 || !Number.isFinite(arg_2)) {
     return "0px";
   }
@@ -1471,7 +1200,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_56b8bbdd({
+export function fn_7f042ba9({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -1481,50 +1210,66 @@ export function fn_56b8bbdd({
   onClose: arg_7,
 }) {
   const local = imported_4(null);
-  const local_2 = imported_4(null);
-  const local_3 = imported_4(null);
-  const local_4 = imported_4(null);
+  const local_2 = imported_4(false);
+  const [local_3, local_4] = imported_2(false);
+  imported_9(() => {
+    const local = document.activeElement;
+    local.current?.querySelector("[data-viewer-close]")?.focus({
+      preventScroll: true,
+    });
+    return () => {
+      if (local instanceof HTMLElement && local.isConnected) {
+        local.focus({
+          preventScroll: true,
+        });
+      }
+    };
+  }, []);
   const local_5 = imported_4(null);
-  const local_6 = imported_4(local_347c45cc()).current;
-  const [local_7, local_8] = imported_2(false);
-  const [local_9, local_10] = imported_2(arg_3 !== null && !local_6);
-  const local_11 = imported_8();
-  const local_12 = fn_bb641065(arg, local_11);
-  const local_13 = fn_a180c8aa({
+  const local_6 = imported_4(null);
+  const local_7 = imported_4(null);
+  const local_8 = imported_4(null);
+  const local_9 = imported_4(local_347c45cc()).current;
+  const [local_10, local_11] = imported_2(false);
+  const [local_12, local_13] = imported_2(false);
+  const [local_14, local_15] = imported_2(arg_3 !== null && !local_9);
+  const local_16 = imported_10();
+  const local_17 = fn_bb641065(arg, local_16);
+  const local_18 = fn_a180c8aa({
     initialIndex: arg_2,
     total: arg.length,
   });
   imported_11();
-  const local_14 = imported(() => {
+  const local_19 = imported(() => {
     const local = local.current;
     if (local) {
       return local.querySelector("[data-active-slide] img");
     }
     return null;
   }, []);
-  const local_15 = imported((arg) => {
+  const local_20 = imported((arg) => {
     const local = local.current;
     if (local) {
       return local.querySelector(`[data-slide-index="${arg}"] img`);
     }
     return null;
   }, []);
-  const local_16 = imported(() => {
-    const local = local_3.current;
-    if (local_4.current === "open" && local && local.playState === "running") {
+  const local_21 = imported(() => {
+    const local = local_6.current;
+    if (local_7.current === "open" && local && local.playState === "running") {
       local.finish();
     }
-    local_10(false);
+    local_15(false);
   }, []);
-  const local_17 = imported(() => {
-    local_16();
-    local_13.goToPrev();
-  }, [local_16, local_13.goToPrev]);
-  const local_18 = imported(() => {
-    local_16();
-    local_13.goToNext();
-  }, [local_16, local_13.goToNext]);
-  const local_19 = imported((arg, arg_2) => {
+  const local_22 = imported(() => {
+    local_21();
+    local_18.goToPrev();
+  }, [local_21, local_18.goToPrev]);
+  const local_23 = imported(() => {
+    local_21();
+    local_18.goToNext();
+  }, [local_21, local_18.goToNext]);
+  const local_24 = imported((arg, arg_2) => {
     if (!arg_2) {
       return null;
     }
@@ -1564,7 +1309,7 @@ export function fn_56b8bbdd({
     const local_31 = local_29 - local_27;
     const local_32 = local_30 - local_28;
     const local_33 = `translate(${local_31}px, ${local_32}px) scale(${local_14})`;
-    const local_34 = fn_1c822420(arg.borderRadius, local_14);
+    const local_34 = fn_fd297351(arg.borderRadius, local_14);
     const local_35 = `inset(${local_20}px ${local_21}px ${local_22}px ${local_19}px round ${local_34})`;
     return {
       transform: local_33,
@@ -1572,7 +1317,7 @@ export function fn_56b8bbdd({
       borderRadius: local_34,
     };
   }, []);
-  const local_20 = imported((arg) => {
+  const local_25 = imported((arg) => {
     const local = getComputedStyle(arg);
     return {
       transform: local.transform === "none" ? "none" : local.transform,
@@ -1581,18 +1326,18 @@ export function fn_56b8bbdd({
       borderRadius: `${local.borderTopLeftRadius} ${local.borderTopRightRadius} ${local.borderBottomRightRadius} ${local.borderBottomLeftRadius}`,
     };
   }, []);
-  const local_21 = (arg, arg_2) => {
+  const local_26 = (arg, arg_2) => {
     arg.style.transform = arg_2.transform;
     arg.style.clipPath = arg_2.clipPath;
     arg.style.borderRadius = arg_2.borderRadius;
   };
-  const local_22 = (arg) => {
+  const local_27 = (arg) => {
     arg.style.removeProperty("transform");
     arg.style.removeProperty("clip-path");
     arg.style.removeProperty("border-radius");
   };
-  const local_23 = imported((arg, arg_2) => {
-    local_21(arg, arg_2);
+  const local_28 = imported((arg, arg_2) => {
+    local_26(arg, arg_2);
     const local = arg.animate(
       [
         arg_2,
@@ -1606,25 +1351,25 @@ export function fn_56b8bbdd({
         fill: "forwards",
       },
     );
-    local_3.current = local;
-    local_4.current = "open";
-    local_5.current = arg;
+    local_6.current = local;
+    local_7.current = "open";
+    local_8.current = arg;
     local.addEventListener("finish", () => {
-      local_22(arg);
+      local_27(arg);
       local.cancel();
-      if (local_3.current === local) {
-        local_3.current = null;
-        local_4.current = null;
+      if (local_6.current === local) {
+        local_6.current = null;
+        local_7.current = null;
       }
-      local_10(false);
+      local_15(false);
     });
-    local.addEventListener("cancel", () => local_10(false), {
+    local.addEventListener("cancel", () => local_15(false), {
       once: true,
     });
   }, []);
-  const local_24 = imported(
+  const local_29 = imported(
     (arg, arg_2, arg_3) => {
-      local_21(arg, arg_2);
+      local_26(arg, arg_2);
       const local = arg.animate(
         [
           arg_2,
@@ -1640,14 +1385,14 @@ export function fn_56b8bbdd({
           fill: "forwards",
         },
       );
-      local_3.current = local;
-      local_4.current = "close";
-      local_5.current = arg;
+      local_6.current = local;
+      local_7.current = "close";
+      local_8.current = arg;
       local.addEventListener("finish", () => arg_7());
     },
     [arg_7],
   );
-  const local_25 = imported(
+  const local_30 = imported(
     (arg) => {
       if (arg_4) {
         return arg_4(arg);
@@ -1659,55 +1404,57 @@ export function fn_56b8bbdd({
     },
     [arg_4, arg_2, arg_3],
   );
-  const local_26 = imported(
+  const local_31 = imported(
     (arg = false) => {
-      if (local_6) {
+      if (local_9) {
         arg_7();
         return;
       }
-      const local = local_3.current;
-      const local_2 = local_5.current;
+      const local = local_6.current;
+      const local_2 = local_8.current;
       if (local && local.playState === "running" && local_2) {
-        const local = local_4.current === "open";
-        const local_2 = local_20(local_2);
+        const local = local_7.current === "open";
+        const local_2 = local_25(local_2);
         local.cancel();
-        local_22(local_2);
-        local_3.current = null;
-        local_4.current = null;
+        local_27(local_2);
+        local_6.current = null;
+        local_7.current = null;
         if (local) {
-          const local = local_27.freezeInFlight();
-          const local_2 = local_25(local);
-          const local_3 = local_2 ? local_19(local_2, local_2) : null;
-          local_8(true);
+          const local = local_32.freezeInFlight();
+          const local_2 = local_30(local);
+          const local_3 = local_2 ? local_24(local_2, local_2) : null;
+          local_11(true);
           if (local_3) {
-            local_24(local_2, local_2, local_3);
+            local_29(local_2, local_2, local_3);
           } else {
+            local_26(local_2, local_2);
+            local_13(true);
             setTimeout(arg_7, local_f06debfc_6);
           }
         } else {
-          local_27.unfreeze();
-          local_8(false);
-          local_10(true);
-          local_23(local_2, local_2);
+          local_32.unfreeze();
+          local_11(false);
+          local_15(true);
+          local_28(local_2, local_2);
         }
         return;
       }
-      if (local_7) {
+      if (local_10) {
         return;
       }
-      const local_3 = local_27.freezeInFlight();
-      const local_4 = local_25(local_3);
-      if (arg && local_11 && !local_4) {
-        local_27.animateClose();
+      const local_3 = local_32.freezeInFlight();
+      const local_4 = local_30(local_3);
+      if (arg && local_16 && !local_4) {
+        local_32.animateClose();
         setTimeout(arg_7, 150);
         return;
       }
-      local_8(true);
+      local_11(true);
       if (local_4) {
-        const local = local_15(local_3);
-        const local_2 = local_19(local_4, local);
+        const local = local_20(local_3);
+        const local_2 = local_24(local_4, local);
         if (local_2 && local) {
-          local_24(
+          local_29(
             local,
             {
               ...local_50cfe1ce,
@@ -1717,87 +1464,88 @@ export function fn_56b8bbdd({
           return;
         }
       }
+      local_13(true);
       setTimeout(arg_7, local_f06debfc_6);
     },
     [
-      local_7,
+      local_10,
+      local_30,
+      local_18.currentIndex,
       local_25,
-      local_13.currentIndex,
-      local_20,
-      local_19,
-      local_23,
       local_24,
-      local_15,
-      local_11,
+      local_28,
+      local_29,
+      local_20,
+      local_16,
       arg_7,
-      local_6,
+      local_9,
     ],
   );
-  const local_27 = fn_6d555ac9({
-    currentIndex: local_13.currentIndex,
+  const local_32 = fn_6d555ac9({
+    currentIndex: local_18.currentIndex,
     imagesCount: arg.length,
-    imageSizes: local_12,
-    isMobile: local_11,
-    isAnimating: local_13.isAnimating,
-    setIsAnimating: local_13.setIsAnimating,
-    cancelAnimation: local_13.cancelAnimation,
-    onIndexChange: local_13.goToIndex,
-    onClose: local_26,
-    trackRef: local_2,
-    onDragStart: local_16,
+    imageSizes: local_17,
+    isMobile: local_16,
+    isAnimating: local_18.isAnimating,
+    setIsAnimating: local_18.setIsAnimating,
+    cancelAnimation: local_18.cancelAnimation,
+    onIndexChange: local_18.goToIndex,
+    onClose: local_31,
+    trackRef: local_5,
+    onDragStart: local_21,
   });
-  const [local_28, local_29] = imported_2(null);
-  const local_30 = imported_4({
+  const [local_33, local_34] = imported_2(null);
+  const local_35 = imported_4({
     x: 0,
     y: 0,
     panX: 0,
     panY: 0,
   });
-  const local_31 = imported_4(false);
-  const local_32 = imported_4(false);
-  const local_33 = imported_4(null);
-  const local_34 = imported_4(null);
-  const local_35 = imported(
+  const local_36 = imported_4(false);
+  const local_37 = imported_4(false);
+  const local_38 = imported_4(null);
+  const local_39 = imported_4(null);
+  const local_40 = imported(
     (arg = false) => {
-      if (local_34.current === null) {
-        if (local_28 && !local_11 && !local_6) {
-          local_31.current = false;
-          local_29(null);
-          local_34.current = window.setTimeout(() => {
-            local_34.current = null;
-            local_26(arg);
+      if (local_39.current === null) {
+        if (local_33 && !local_16 && !local_9) {
+          local_36.current = false;
+          local_34(null);
+          local_39.current = window.setTimeout(() => {
+            local_39.current = null;
+            local_31(arg);
           }, local_f06debfc_7);
           return;
         }
-        local_26(arg);
+        local_31(arg);
       }
     },
-    [local_26, local_11, local_6, local_28],
+    [local_31, local_16, local_9, local_33],
   );
   imported_3(
     () => () => {
-      if (local_34.current !== null) {
-        window.clearTimeout(local_34.current);
+      if (local_39.current !== null) {
+        window.clearTimeout(local_39.current);
       }
     },
     [],
   );
-  const local_36 = imported(() => {
-    if (!local_7) {
-      local_35();
+  const local_41 = imported(() => {
+    if (!local_10) {
+      local_40(true);
     }
-  }, [local_7, local_35]);
+  }, [local_10, local_40]);
   fn_75a20b26({
-    onClose: local_36,
-    onPrev: local_17,
-    onNext: local_18,
+    onClose: local_41,
+    onPrev: local_22,
+    onNext: local_23,
   });
   imported_3(() => {
     const local = [
-      arg[local_13.currentIndex - 1],
-      arg[local_13.currentIndex + 1],
-      arg[local_13.currentIndex - 2],
-      arg[local_13.currentIndex + 2],
+      arg[local_18.currentIndex - 1],
+      arg[local_18.currentIndex + 1],
+      arg[local_18.currentIndex - 2],
+      arg[local_18.currentIndex + 2],
     ];
     for (const local of local) {
       if (!local || (local.loadSrc && !local.thumbUrl)) {
@@ -1807,28 +1555,28 @@ export function fn_56b8bbdd({
       local.decoding = "async";
       local.src = local.thumbUrl || local.url;
     }
-  }, [arg, local_13.currentIndex]);
-  const [local_37, local_38] = imported_2(-1);
-  const local_39 = imported(() => {
-    local_38(local_13.currentIndex);
-  }, [local_13.currentIndex]);
-  const local_40 = imported_4(null);
+  }, [arg, local_18.currentIndex]);
+  const [local_42, local_43] = imported_2(-1);
+  const local_44 = imported(() => {
+    local_43(local_18.currentIndex);
+  }, [local_18.currentIndex]);
+  const local_45 = imported_4(null);
   imported_3(() => {
     const local = new AbortController();
-    local_40.current = local;
+    local_45.current = local;
     return () => local.abort();
   }, []);
   imported_3(() => {
-    if (local_37 === local_13.currentIndex) {
+    if (local_42 === local_18.currentIndex) {
       for (const local of [
-        arg[local_13.currentIndex - 1],
-        arg[local_13.currentIndex + 1],
+        arg[local_18.currentIndex - 1],
+        arg[local_18.currentIndex + 1],
       ]) {
         if (!local) {
           continue;
         }
         if (local.loadSrc) {
-          local.loadSrc(local_40.current?.signal).then((arg) => {
+          local.loadSrc(local_45.current?.signal).then((arg) => {
             if (!arg) {
               return;
             }
@@ -1846,44 +1594,44 @@ export function fn_56b8bbdd({
         local.src = local.url;
       }
     }
-  }, [local_37, local_13.currentIndex, arg]);
+  }, [local_42, local_18.currentIndex, arg]);
   imported_9(() => {
-    if (!arg_3 || local_6) {
-      local_10(false);
+    if (!arg_3 || local_9) {
+      local_15(false);
       return;
     }
-    const local = local_14();
+    const local = local_19();
     if (!local) {
-      local_10(false);
+      local_15(false);
       return;
     }
-    const local_2 = local_19(arg_3, local);
+    const local_2 = local_24(arg_3, local);
     if (!local_2) {
-      local_10(false);
+      local_15(false);
       return;
     }
-    local_23(local, {
+    local_28(local, {
       transform: local_2.transform,
       clipPath: local_2.clipPath,
       borderRadius: local_2.borderRadius,
     });
     return () => {
-      local_3.current?.cancel();
+      local_6.current?.cancel();
     };
   }, []);
   imported_3(() => {
-    local_29(null);
-  }, [local_13.currentIndex]);
-  const local_41 = imported((arg, arg_2, arg_3) => {
+    local_34(null);
+  }, [local_18.currentIndex]);
+  const local_46 = imported((arg, arg_2, arg_3) => {
     const local = arg_2 === "x" ? arg_3.width : arg_3.height;
     const local_2 = (arg_2 === "x" ? arg_3.originX : arg_3.originY) / 100;
     const local_3 = local * local_2 * (arg_3.scale - 1);
     const local_4 = local * (1 - local_2) * (arg_3.scale - 1);
     return Math.max(-local_4, Math.min(local_3, arg));
   }, []);
-  const local_42 = imported(
+  const local_47 = imported(
     (arg, arg_2, arg_3) => {
-      const local = local_41(arg, arg_2, arg_3);
+      const local = local_46(arg, arg_2, arg_3);
       const local_2 = arg - local;
       if (local_2 === 0) {
         return arg;
@@ -1892,82 +1640,82 @@ export function fn_56b8bbdd({
         local + Math.sign(local_2) * Math.min(72, Math.abs(local_2) * 0.18)
       );
     },
-    [local_41],
+    [local_46],
   );
-  const local_43 = imported(
+  const local_48 = imported(
     (arg) => {
-      if (!local_31.current || local_11) {
+      if (!local_36.current || local_16) {
         return;
       }
-      const local = arg.clientX - local_30.current.x;
-      const local_2 = arg.clientY - local_30.current.y;
+      const local = arg.clientX - local_35.current.x;
+      const local_2 = arg.clientY - local_35.current.y;
       if (Math.abs(local) > 4 || Math.abs(local_2) > 4) {
-        local_32.current = true;
+        local_37.current = true;
       }
-      local_29(
+      local_34(
         (arg) =>
           arg && {
             ...arg,
-            panX: local_42(local_30.current.panX + local, "x", arg),
-            panY: local_42(local_30.current.panY + local_2, "y", arg),
+            panX: local_47(local_35.current.panX + local, "x", arg),
+            panY: local_47(local_35.current.panY + local_2, "y", arg),
           },
       );
       arg.preventDefault();
     },
-    [local_42, local_11],
+    [local_47, local_16],
   );
-  const local_44 = imported(() => {
-    if (local_31.current) {
-      local_31.current = false;
-      local_29(
+  const local_49 = imported(() => {
+    if (local_36.current) {
+      local_36.current = false;
+      local_34(
         (arg) =>
           arg && {
             ...arg,
-            panX: local_41(arg.panX, "x", arg),
-            panY: local_41(arg.panY, "y", arg),
+            panX: local_46(arg.panX, "x", arg),
+            panY: local_46(arg.panY, "y", arg),
             isPanning: false,
           },
       );
-      if (local_32.current) {
-        if (local_33.current !== null) {
-          window.clearTimeout(local_33.current);
+      if (local_37.current) {
+        if (local_38.current !== null) {
+          window.clearTimeout(local_38.current);
         }
-        local_33.current = window.setTimeout(() => {
-          local_32.current = false;
-          local_33.current = null;
+        local_38.current = window.setTimeout(() => {
+          local_37.current = false;
+          local_38.current = null;
         }, 0);
       }
     }
-  }, [local_41]);
+  }, [local_46]);
   imported_3(() => {
-    window.addEventListener("mousemove", local_43);
-    window.addEventListener("mouseup", local_44);
-    window.addEventListener("blur", local_44);
+    window.addEventListener("mousemove", local_48);
+    window.addEventListener("mouseup", local_49);
+    window.addEventListener("blur", local_49);
     return () => {
-      window.removeEventListener("mousemove", local_43);
-      window.removeEventListener("mouseup", local_44);
-      window.removeEventListener("blur", local_44);
-      if (local_33.current !== null) {
-        window.clearTimeout(local_33.current);
+      window.removeEventListener("mousemove", local_48);
+      window.removeEventListener("mouseup", local_49);
+      window.removeEventListener("blur", local_49);
+      if (local_38.current !== null) {
+        window.clearTimeout(local_38.current);
       }
     };
-  }, [local_44, local_43]);
-  const local_45 = {
+  }, [local_49, local_48]);
+  const local_50 = {
     onMouseDown: (arg) => {
-      if (!local_28 || local_11) {
-        local_27.desktopHandlers.onMouseDown(arg);
+      if (!local_33 || local_16) {
+        local_32.desktopHandlers.onMouseDown(arg);
         return;
       }
       if (arg.button === 0) {
-        local_31.current = true;
-        local_32.current = false;
-        local_30.current = {
+        local_36.current = true;
+        local_37.current = false;
+        local_35.current = {
           x: arg.clientX,
           y: arg.clientY,
-          panX: local_28.panX,
-          panY: local_28.panY,
+          panX: local_33.panX,
+          panY: local_33.panY,
         };
-        local_29(
+        local_34(
           (arg) =>
             arg && {
               ...arg,
@@ -1978,71 +1726,74 @@ export function fn_56b8bbdd({
       }
     },
     onMouseMove: (arg) => {
-      if (!local_28 || local_11) {
-        local_27.desktopHandlers.onMouseMove(arg);
+      if (!local_33 || local_16) {
+        local_32.desktopHandlers.onMouseMove(arg);
         return;
       }
     },
     onMouseUp: () => {
-      if (!local_28 || local_11) {
-        local_27.desktopHandlers.onMouseUp();
+      if (!local_33 || local_16) {
+        local_32.desktopHandlers.onMouseUp();
         return;
       }
-      local_44();
+      local_49();
     },
     onMouseLeave: () => {
-      if (!local_28 || local_11) {
-        local_27.desktopHandlers.onMouseLeave();
+      if (!local_33 || local_16) {
+        local_32.desktopHandlers.onMouseLeave();
         return;
       }
     },
   };
-  const local_46 = imported(
+  const local_51 = imported(
     (arg) => {
-      if (local_32.current) {
-        local_32.current = false;
+      if (local_37.current) {
+        local_37.current = false;
         return;
       }
-      if (local_27.wasDragging.current) {
-        local_27.wasDragging.current = false;
+      if (local_32.wasDragging.current) {
+        local_32.wasDragging.current = false;
         return;
       }
-      if (arg.target === local.current) {
-        local_35();
+      if (
+        arg.target instanceof Element &&
+        !arg.target.closest('img,button,a,[role="button"]')
+      ) {
+        local_40(true);
       }
     },
-    [local_35],
+    [local_40],
   );
-  const local_47 = imported(
+  const local_52 = imported(
     (arg) => {
-      if (local_32.current) {
-        local_32.current = false;
+      if (local_37.current) {
+        local_37.current = false;
         return;
       }
-      if (local_27.wasDragging.current) {
-        local_27.wasDragging.current = false;
+      if (local_32.wasDragging.current) {
+        local_32.wasDragging.current = false;
         return;
       }
-      if (arg_5 && !local_11) {
-        if (local_28) {
-          local_29(null);
+      if (arg_5 && !local_16) {
+        if (local_33) {
+          local_34(null);
           return;
         }
         const local = arg?.currentTarget?.getBoundingClientRect();
         if (!local || !arg) {
-          local_29({
+          local_34({
             scale: local_f06debfc_8,
             originX: 50,
             originY: 50,
             panX: 0,
             panY: 0,
-            width: local?.width || local_27.displaySize.width,
-            height: local?.height || local_27.displaySize.height,
+            width: local?.width || local_32.displaySize.width,
+            height: local?.height || local_32.displaySize.height,
             isPanning: false,
           });
           return;
         }
-        local_29({
+        local_34({
           scale: local_f06debfc_8,
           originX: ((arg.clientX - local.left) / local.width) * 100,
           originY: ((arg.clientY - local.top) / local.height) * 100,
@@ -2054,78 +1805,147 @@ export function fn_56b8bbdd({
         });
         return;
       }
-      local_26(local_11);
+      local_31(local_16);
     },
-    [local_26, local_11, arg_5, local_28, local_27.displaySize],
+    [local_31, local_16, arg_5, local_33, local_32.displaySize],
   );
-  return imported_10(
+  return imported_12(
     imported_6("div", {
       ref: local,
-      className: `${local_c642bb00.viewer} ${local_7 ? local_c642bb00.closing : ""} ${local_9 ? local_c642bb00.transitioning : ""} ym-hide-content`,
+      role: "dialog",
+      "aria-modal": "true",
+      "aria-label": "Просмотр изображений",
+      onKeyDown: (arg) => {
+        if (arg.key !== "Tab") {
+          return;
+        }
+        const local = Array.from(
+          local.current?.querySelectorAll(
+            'button:not(:disabled),a[href],[tabindex="0"]',
+          ) ?? [],
+        ).filter((arg) => arg.getClientRects().length > 0);
+        const local_2 = arg.shiftKey ? local.at(-1) : local[0];
+        if (
+          (!arg.shiftKey && document.activeElement === local.at(-1)) ||
+          (arg.shiftKey && document.activeElement === local[0])
+        ) {
+          arg.preventDefault();
+          local_2?.focus();
+        }
+      },
+      className: `${local_f2bf345a.viewer} ${local_10 ? local_f2bf345a.closing : ""} ${local_12 ? local_f2bf345a.fadeClosing : ""} ${local_14 ? local_f2bf345a.transitioning : ""} ym-hide-content`,
       style: {
-        "--opacity": local_27.opacity,
-        "--opacity-transition": local_13.isAnimating
+        "--opacity": local_32.opacity,
+        "--opacity-transition": local_18.isAnimating
           ? "opacity 0.3s cubic-bezier(0.32, 0.72, 0, 1)"
           : "none",
       },
-      onClick: local_46,
+      onClick: local_51,
       children: [
         imported_6("div", {
-          className: local_c642bb00.backdrop,
+          className: local_f2bf345a.backdrop,
           "aria-hidden": true,
         }),
-        !local_11 &&
-          imported_6(fn_5d7bad9d, {
+        imported_6("div", {
+          className: local_f2bf345a.toolbar,
+          children: [
+            imported_6("span", {
+              className: local_f2bf345a.counter,
+              "aria-live": "polite",
+              children: [local_18.currentIndex + 1, " из ", arg.length],
+            }),
+            arg[local_18.currentIndex]?.onDownload &&
+              imported_6("button", {
+                type: "button",
+                "aria-label": "Скачать изображение",
+                disabled: local_3,
+                onClick: async (arg) => {
+                  arg.stopPropagation();
+                  if (local_2.current) {
+                    return;
+                  }
+                  const local = arg[local_18.currentIndex]?.onDownload;
+                  if (local) {
+                    local_2.current = true;
+                    local_4(true);
+                    try {
+                      await local();
+                    } finally {
+                      local_2.current = false;
+                      local_4(false);
+                    }
+                  }
+                },
+                children: imported_6(imported_14, {
+                  size: 22,
+                }),
+              }),
+            imported_6("button", {
+              type: "button",
+              "data-viewer-close": true,
+              "aria-label": "Закрыть изображение",
+              onClick: (arg) => {
+                arg.stopPropagation();
+                local_41();
+              },
+              children: imported_6(imported_13, {
+                size: 24,
+              }),
+            }),
+          ],
+        }),
+        !local_16 &&
+          imported_6(fn_520fd428, {
             images: arg,
-            imageSizes: local_12,
-            currentIndex: local_13.currentIndex,
-            offsetX: local_27.offsetX,
-            offsetY: local_27.offsetY,
-            isAnimating: local_13.isAnimating,
-            displaySize: local_27.displaySize,
-            trackRef: local_2,
-            handlers: local_45,
-            onImageClick: local_47,
-            onActiveFullReady: local_39,
-            zoom: local_28,
+            imageSizes: local_17,
+            currentIndex: local_18.currentIndex,
+            offsetX: local_32.offsetX,
+            offsetY: local_32.offsetY,
+            isAnimating: local_18.isAnimating,
+            displaySize: local_32.displaySize,
+            trackRef: local_5,
+            handlers: local_50,
+            onImageClick: local_52,
+            onActiveFullReady: local_44,
+            zoom: local_33,
           }),
-        local_11 &&
-          imported_6(fn_9cf23fc2, {
+        local_16 &&
+          imported_6(fn_2bb87887, {
             images: arg,
-            imageSizes: local_12,
-            currentIndex: local_13.currentIndex,
-            offsetX: local_27.offsetX,
-            offsetY: local_27.offsetY,
-            isAnimating: local_13.isAnimating,
+            imageSizes: local_17,
+            currentIndex: local_18.currentIndex,
+            offsetX: local_32.offsetX,
+            offsetY: local_32.offsetY,
+            isAnimating: local_18.isAnimating,
             isClosing: false,
-            handlers: local_27.mobileHandlers,
-            onImageClick: local_47,
-            onActiveFullReady: local_39,
-            zoom: local_27.zoom,
+            handlers: local_32.mobileHandlers,
+            onImageClick: local_52,
+            onActiveFullReady: local_44,
+            zoom: local_32.zoom,
           }),
-        !local_11 &&
-          imported_6(fn_6a21b789, {
-            currentIndex: local_13.currentIndex,
+        !local_16 &&
+          imported_6(fn_81ac8267, {
+            currentIndex: local_18.currentIndex,
             total: arg.length,
-            onPrev: local_17,
-            onNext: local_18,
+            onPrev: local_22,
+            onNext: local_23,
           }),
         arg_6
-          ? imported_6(fn_0b68fa19, {
+          ? imported_6(fn_234497a4, {
               images: arg,
-              currentIndex: local_13.currentIndex,
-              isClosing: local_7,
+              currentIndex: local_18.currentIndex,
+              isClosing: local_10,
               onPick: (arg) => {
-                local_16();
-                local_13.goToIndex(arg);
+                local_21();
+                local_18.goToIndex(arg);
               },
             })
-          : imported_6(fn_856a9d72, {
+          : imported_6(fn_47d5f4ce, {
               total: arg.length,
-              currentIndex: local_13.currentIndex,
+              currentIndex: local_18.currentIndex,
               onDotClick: (arg) => {
-                local_16();
-                local_13.goToIndex(arg);
+                local_21();
+                local_18.goToIndex(arg);
               },
             }),
       ],
@@ -2133,4 +1953,4 @@ export function fn_56b8bbdd({
     document.body,
   );
 }
-export { fn_56b8bbdd as default };
+export { fn_7f042ba9 as default };

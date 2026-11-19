@@ -1,34 +1,11 @@
 import {
-  symbol_069 as imported,
+  symbol_223 as imported,
   symbol_002 as imported_2,
-  symbol_073 as imported_3,
-  symbol_082 as imported_4,
-  symbol_086 as imported_5,
+  symbol_276 as imported_3,
+  symbol_285 as imported_4,
+  symbol_289 as imported_5,
   symbol_020 as imported_6,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_cb182eba = "c_poll";
 const local_f58ba0b9 = "c_disabled";
 const local_f1c23efb = "c_header";

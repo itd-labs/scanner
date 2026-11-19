@@ -1,38 +1,21 @@
 import {
   symbol_002 as imported,
-  symbol_082 as imported_2,
-  symbol_086 as imported_3,
-  symbol_029 as imported_4,
-  symbol_001 as imported_5,
-  symbol_069 as imported_6,
-  symbol_073 as imported_7,
-  symbol_028 as imported_8,
+  symbol_285 as imported_2,
+  symbol_289 as imported_3,
+  symbol_100 as imported_4,
+  symbol_042 as imported_5,
+  symbol_223 as imported_6,
+  symbol_101 as imported_7,
+  symbol_276 as imported_8,
+  symbol_102 as imported_9,
+  symbol_103 as imported_10,
+  symbol_104 as imported_11,
+  symbol_105 as imported_12,
+  symbol_133 as imported_13,
+  symbol_134 as imported_14,
+  symbol_135 as imported_15,
 } from "../entry.js";
-import { u as imported_9 } from "../shared/use-body-scroll-lock.js";
-import { V as imported_10 } from "../components/volume-glyph.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { I as imported_16 } from "../components/icon-download.js";
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";
@@ -43,7 +26,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_eca554ee({
+function fn_0de446cb({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -118,8 +101,11 @@ const local_3d40993b = "c_backdrop";
 const local_0888f962 = "c_overlayFade";
 const local_96021100 = "c_stage";
 const local_44ac62a9 = "c_video";
-const local_a0a69816 = "c_poster";
 const local_e06ef7ad = "c_bottomOverlay";
+const local_752c9941 = "c_topActions";
+const local_9c3f7233 = "c_mediaError";
+const local_a4f94981 = "c_errorDownload";
+const local_a0a69816 = "c_poster";
 const local_93707e4d = "c_controlButton";
 const local_66fefc28 = "c_playButton";
 const local_15aa885a = "c_time";
@@ -134,7 +120,7 @@ const local_a0489884 = "c_progressTrack";
 const local_dfdc7264 = "c_progressBuffered";
 const local_9954e574 = "c_progressFill";
 const local_f21f5012 = "c_scrubbing";
-const local_2ba33e70 = {
+const local_67002f3e = {
   overlay: local_672a1b2c,
   chrome: local_bd5f9277,
   closing: local_cc8fa504,
@@ -142,8 +128,11 @@ const local_2ba33e70 = {
   overlayFade: local_0888f962,
   stage: local_96021100,
   video: local_44ac62a9,
-  poster: local_a0a69816,
   bottomOverlay: local_e06ef7ad,
+  topActions: local_752c9941,
+  mediaError: local_9c3f7233,
+  errorDownload: local_a4f94981,
+  poster: local_a0a69816,
   controlButton: local_93707e4d,
   playButton: local_66fefc28,
   time: local_15aa885a,
@@ -162,13 +151,8 @@ const local_2ba33e70 = {
 const local_f06debfc = 280;
 const local_b45f1b6a = "cubic-bezier(0.32, 0.72, 0, 1)";
 const local_a3e1b3a5 = [0.5, 1, 1.5, 2];
-function fn_53f06a90(arg) {
-  if (!isFinite(arg) || arg < 0) {
-    return "0:00";
-  }
-  const local = Math.floor(arg / 60);
-  const local_2 = Math.floor(arg % 60);
-  return `${local}:${String(local_2).padStart(2, "0")}`;
+function fn_33cfc528(arg) {
+  return imported_14(arg);
 }
 function fn_e4c56f65(arg, arg_2) {
   const local = Math.min(window.innerWidth / arg, window.innerHeight / arg_2);
@@ -184,7 +168,7 @@ function fn_c9f9dd54(arg) {
   }
   return 0;
 }
-const local_bcf4e7ce = parseFloat(localStorage.getItem("video-volume") ?? "1");
+const local_bcf4e7ce = parseFloat(imported_10.getItem("video-volume") ?? "1");
 const local_a2e58ed8 = Number.isNaN(local_bcf4e7ce) ? 1 : local_bcf4e7ce;
 export function fn_055e6b10() {
   const local = imported_4((arg) => arg.isOpen);
@@ -196,7 +180,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_114f7fc9,
+      fn_aadbc1af,
       {
         options: local_2,
         onUnmount: local_4,
@@ -206,21 +190,23 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
+function fn_aadbc1af({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
-  const local_4 = imported(null);
-  const [local_5, local_6] = imported_6(false);
-  const [local_7, local_8] = imported_6(arg.startTime ?? 0);
-  const [local_9, local_10] = imported_6(0);
-  const [local_11, local_12] = imported_6(local_a2e58ed8);
-  const [local_13, local_14] = imported_6(false);
-  const [local_15, local_16] = imported_6(1);
-  const [local_17, local_18] = imported_6(false);
-  const [local_19, local_20] = imported_6(false);
-  const [local_21, local_22] = imported_6(!!arg.poster);
-  const [local_23, local_24] = imported_6(() => {
+  const local_4 = imported(new imported_15()).current;
+  const local_5 = imported(null);
+  const [local_6, local_7] = imported_6(false);
+  const [local_8, local_9] = imported_6(false);
+  const [local_10, local_11] = imported_6(arg.startTime ?? 0);
+  const [local_12, local_13] = imported_6(0);
+  const [local_14, local_15] = imported_6(local_a2e58ed8);
+  const [local_16, local_17] = imported_6(false);
+  const [local_18, local_19] = imported_6(1);
+  const [local_20, local_21] = imported_6(false);
+  const [local_22, local_23] = imported_6(false);
+  const [local_24, local_25] = imported_6(!!arg.poster);
+  const [local_26, local_27] = imported_6(() => {
     if (arg.width && arg.height) {
       return {
         w: arg.width,
@@ -239,25 +225,25 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       h: 9,
     };
   });
-  const [local_25, local_26] = imported_6({
+  const [local_28, local_29] = imported_6({
     w: window.innerWidth,
     h: window.innerHeight,
   });
-  const local_27 = imported(false);
-  const local_28 = imported(false);
-  const local_29 = imported(false);
-  imported_9();
-  const local_30 = fn_e4c56f65(local_23.w, local_23.h);
-  imported_7(() => {
+  const local_30 = imported(false);
+  const local_31 = imported(false);
+  const local_32 = imported(false);
+  imported_7();
+  const local_33 = fn_e4c56f65(local_26.w, local_26.h);
+  imported_8(() => {
     const local = () =>
-      local_26({
+      local_29({
         w: window.innerWidth,
         h: window.innerHeight,
       });
     window.addEventListener("resize", local);
     return () => window.removeEventListener("resize", local);
   }, []);
-  imported_8(() => {
+  imported_9(() => {
     const local = local_2.current;
     const local_2 = arg.sourceRect;
     if (!local || !local_2) {
@@ -292,16 +278,17 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       },
     );
   }, []);
-  const local_31 = imported_2(() => {
-    if (local_27.current) {
+  const local_34 = imported_2(() => {
+    if (local_30.current) {
       return;
     }
-    local_27.current = true;
+    local_30.current = true;
+    local_4.cancel();
     const local = local_3.current;
     arg.onCloseStart?.(local?.currentTime ?? 0);
     const local_2 = local.current;
     const local_3 = local_2.current;
-    local_2?.classList.add(local_2ba33e70.closing);
+    local_2?.classList.add(local_67002f3e.closing);
     const local_4 = arg.resolveCloseRect?.() ?? arg.sourceRect ?? null;
     if (!local_3 || !local_4) {
       local_3?.animate(
@@ -350,7 +337,7 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       )
       .addEventListener("finish", arg_2);
   }, [arg, arg_2]);
-  imported_7(() => {
+  imported_8(() => {
     const local = local_3.current;
     if (local) {
       local.volume = local_a2e58ed8;
@@ -360,20 +347,21 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       }
       local
         .play()
-        .then(() => local_6(true))
+        .then(() => local_7(true))
         .catch(() => {
           local.muted = true;
-          local_14(true);
+          local_17(true);
           local
             .play()
-            .then(() => local_6(true))
+            .then(() => local_7(true))
             .catch(() => {});
         });
     }
   }, []);
-  imported_7(() => {
+  imported_8(() => {
     const local = local_3.current;
     return () => {
+      local_4.cancel();
       if (local) {
         try {
           local.pause();
@@ -383,7 +371,7 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       }
     };
   }, []);
-  imported_7(() => {
+  imported_8(() => {
     const local = local_3.current;
     if (!local || !arg.poster) {
       return;
@@ -391,7 +379,7 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
     let local_2 = false;
     const local_3 = () => {
       if (!local_2) {
-        local_22(false);
+        local_25(false);
       }
     };
     const local_4 = local.requestVideoFrameCallback;
@@ -410,23 +398,23 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       local.removeEventListener("playing", local_5);
     };
   }, []);
-  imported_7(() => {
-    if (!local_5) {
+  imported_8(() => {
+    if (!local_6) {
       return;
     }
     let local = 0;
     const local_2 = () => {
       const local = local_3.current;
-      if (local && !local_28.current) {
-        local_8(local.currentTime);
+      if (local && !local_31.current) {
+        local_11(local.currentTime);
       }
       local = requestAnimationFrame(local_2);
     };
     local = requestAnimationFrame(local_2);
     return () => cancelAnimationFrame(local);
-  }, [local_5]);
-  const [local_32, local_33] = imported_6([]);
-  imported_7(() => {
+  }, [local_6]);
+  const [local_35, local_36] = imported_6([]);
+  imported_8(() => {
     const local = local_3.current;
     if (!local) {
       return;
@@ -445,7 +433,7 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
           width: ((local_2 - local) / local) * 100,
         });
       }
-      local_33(local_2);
+      local_36(local_2);
     };
     local.addEventListener("progress", local_2);
     local.addEventListener("loadedmetadata", local_2);
@@ -459,45 +447,83 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       local.removeEventListener("seeked", local_2);
     };
   }, []);
-  const local_34 = imported_2(() => {
+  const local_37 = imported_2(() => {
     const local = local_3.current;
     local &&
       (local.paused
-        ? local
-            .play()
-            .then(() => local_6(true))
+        ? local_4
+            .prepare(
+              local,
+              arg.resolveUrl,
+              local.currentTime,
+              () => local.isConnected && !local_30.current,
+            )
+            .then(async (arg) => {
+              if (arg) {
+                await local.play();
+              }
+            })
             .catch(() => {})
-        : (local.pause(), local_6(false)));
+        : (local_4.cancel(), local.pause(), local_7(false)));
   }, []);
-  const local_35 = imported_2((arg) => {
+  const local_38 = imported_2((arg) => {
     const local = local_3.current;
-    if (!(!local || !Number.isFinite(local.duration))) {
-      local.currentTime = Math.max(
-        0,
-        Math.min(local.duration, local.currentTime + arg),
-      );
-      local_8(local.currentTime);
+    if (!local || !Number.isFinite(arg)) {
+      return;
     }
+    const local_2 = !local.paused;
+    const local_3 = Math.max(0, Math.min(local.duration || arg, arg));
+    if (!arg.resolveUrl) {
+      local.currentTime = local_3;
+      local_11(local_3);
+      return;
+    }
+    local_4
+      .prepare(
+        local,
+        arg.resolveUrl,
+        local_3,
+        () => local.isConnected && !local_30.current,
+      )
+      .then(async (arg) => {
+        if (arg) {
+          local.currentTime = local_3;
+          local_11(local_3);
+          if (local_2) {
+            await local.play();
+          }
+        }
+      })
+      .catch(() => {});
   }, []);
-  const local_36 = imported_2(() => {
+  const local_39 = imported_2(
+    (arg) => {
+      const local = local_3.current;
+      if (!(!local || !Number.isFinite(local.duration))) {
+        local_38(local.currentTime + arg);
+      }
+    },
+    [local_38],
+  );
+  const local_40 = imported_2(() => {
     const local = local_3.current;
     if (local) {
       local.muted = !local.muted;
-      local_14(local.muted);
+      local_17(local.muted);
     }
   }, []);
-  const local_37 = imported_2((arg) => {
-    local_12(arg);
-    localStorage.setItem("video-volume", String(arg));
+  const local_41 = imported_2((arg) => {
+    local_15(arg);
+    imported_10.setItem("video-volume", String(arg));
     const local = local_3.current;
     if (local) {
       local.volume = arg;
       local.muted = arg === 0;
-      local_14(arg === 0);
+      local_17(arg === 0);
     }
   }, []);
-  const local_38 = imported_2(() => {
-    local_16((arg) => {
+  const local_42 = imported_2(() => {
+    local_19((arg) => {
       const local = (arg + 1) % local_a3e1b3a5.length;
       if (local_3.current) {
         local_3.current.playbackRate = local_a3e1b3a5[local];
@@ -505,7 +531,7 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       return local;
     });
   }, []);
-  const local_39 = imported_2(() => {
+  const local_43 = imported_2(() => {
     const local = local.current;
     const local_2 = local_3.current;
     if (document.fullscreenElement) {
@@ -518,74 +544,76 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       local_2?.webkitEnterFullscreen?.();
     }
   }, []);
-  imported_7(() => {
+  imported_8(() => {
     const local = (arg) => {
       switch (arg.key) {
         case "Escape":
-          local_31();
+          local_34();
           break;
         case "./global-video-player.js":
           arg.preventDefault();
-          local_34();
+          local_37();
           break;
         case "ArrowLeft":
           arg.preventDefault();
-          local_35(-5);
+          local_39(-5);
           break;
         case "ArrowRight":
           arg.preventDefault();
-          local_35(5);
+          local_39(5);
           break;
         case "m":
         case "M":
         case "ь":
         case "Ь":
-          local_36();
+          local_40();
           break;
         case "f":
         case "F":
         case "а":
         case "А":
-          local_39();
+          local_43();
           break;
       }
     };
     window.addEventListener("keydown", local);
     return () => window.removeEventListener("keydown", local);
-  }, [local_31, local_34, local_35, local_36, local_39]);
-  const local_40 = imported_2((arg) => {
-    const local = local_4.current;
-    const local_2 = local_3.current;
-    if (
-      !local ||
-      !local_2 ||
-      !Number.isFinite(local_2.duration) ||
-      local_2.duration <= 0
-    ) {
-      return;
-    }
-    const local_3 = local.getBoundingClientRect();
-    if (local_3.width <= 0) {
-      return;
-    }
-    const local_4 = Math.min(
-      1,
-      Math.max(0, (arg - local_3.left) / local_3.width),
-    );
-    local_2.currentTime = local_2.duration * local_4;
-    local_8(local_2.currentTime);
-  }, []);
-  const local_41 = imported_2(
+  }, [local_34, local_37, local_39, local_40, local_43]);
+  const local_44 = imported_2(
+    (arg) => {
+      const local = local_5.current;
+      const local_2 = local_3.current;
+      if (
+        !local ||
+        !local_2 ||
+        !Number.isFinite(local_2.duration) ||
+        local_2.duration <= 0
+      ) {
+        return;
+      }
+      const local_3 = local.getBoundingClientRect();
+      if (local_3.width <= 0) {
+        return;
+      }
+      const local_4 = Math.min(
+        1,
+        Math.max(0, (arg - local_3.left) / local_3.width),
+      );
+      local_38(local_2.duration * local_4);
+    },
+    [local_38],
+  );
+  const local_45 = imported_2(
     (arg) => {
       arg.stopPropagation();
-      local_28.current = true;
-      local_18(true);
+      local_31.current = true;
+      local_21(true);
       const local = arg.currentTarget;
       try {
         local.setPointerCapture(arg.pointerId);
       } catch {}
-      local_40(arg.clientX);
-      const local_2 = (arg) => local_40(arg.clientX);
+      local_44(arg.clientX);
+      const local_2 = (arg) => local_44(arg.clientX);
       const local_3 = () => {
         try {
           local.releasePointerCapture(arg.pointerId);
@@ -594,9 +622,9 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
         document.removeEventListener("pointerup", local_3);
         document.removeEventListener("pointercancel", local_3);
         window.removeEventListener("blur", local_3);
-        local_18(false);
+        local_21(false);
         setTimeout(() => {
-          local_28.current = false;
+          local_31.current = false;
         }, 0);
       };
       document.addEventListener("pointermove", local_2);
@@ -604,161 +632,230 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
       document.addEventListener("pointercancel", local_3);
       window.addEventListener("blur", local_3);
     },
-    [local_40],
+    [local_44],
   );
-  const local_42 = local_9 > 0 ? (local_7 / local_9) * 100 : 0;
-  const local_43 = !arg.sourceRect;
+  const local_46 = local_12 > 0 ? (local_10 / local_12) * 100 : 0;
+  const local_47 = !arg.sourceRect;
   return imported_3("div", {
     ref: local,
     "data-vp": "overlay",
-    className: `${local_2ba33e70.overlay} ${local_43 ? local_2ba33e70.overlayFade : ""} ym-hide-content`,
-    onClick: local_31,
+    className: `${local_67002f3e.overlay} ${local_47 ? local_67002f3e.overlayFade : ""} ym-hide-content`,
+    onClick: local_34,
     children: [
       imported_3("div", {
-        className: local_2ba33e70.backdrop,
+        className: local_67002f3e.backdrop,
+      }),
+      imported_3("div", {
+        className: `${local_67002f3e.chrome} ${local_67002f3e.topActions}`,
+        children: [
+          arg.onDownload &&
+            imported_3("button", {
+              type: "button",
+              className: local_67002f3e.controlButton,
+              "aria-label": "Скачать видео",
+              onClick: (arg) => {
+                arg.stopPropagation();
+                arg.onDownload?.();
+              },
+              children: imported_3(imported_16, {
+                size: 22,
+              }),
+            }),
+          imported_3("button", {
+            type: "button",
+            className: local_67002f3e.controlButton,
+            "aria-label": "Закрыть видео",
+            onClick: (arg) => {
+              arg.stopPropagation();
+              local_34();
+            },
+            children: imported_3(imported_11, {
+              size: 24,
+            }),
+          }),
+        ],
       }),
       imported_3("div", {
         ref: local_2,
         "data-vp": "stage",
-        className: local_2ba33e70.stage,
+        className: local_67002f3e.stage,
         style: {
-          width: `${local_30.width}px`,
-          height: `${local_30.height}px`,
+          width: `${local_33.width}px`,
+          height: `${local_33.height}px`,
         },
         onClick: (arg) => {
           arg.stopPropagation();
-          if (!local_28.current && !local_29.current) {
-            local_34();
+          if (!local_31.current && !local_32.current) {
+            local_37();
           }
         },
         onDblClick: (arg) => {
           arg.stopPropagation();
-          local_39();
+          local_43();
         },
         children: [
           imported_3("video", {
             ref: local_3,
             "data-vp": "video",
             src: arg.url,
-            className: local_2ba33e70.video,
+            className: local_67002f3e.video,
             playsInline: true,
-            onPlay: () => local_6(true),
-            onPause: () => local_6(false),
-            onEnded: () => local_6(false),
+            onPlay: () => {
+              imported_12();
+              local_7(true);
+              local_9(false);
+            },
+            onError: () => {
+              local_9(true);
+              local_7(false);
+              local_25(false);
+            },
+            onPause: () => local_7(false),
+            onEnded: () => local_7(false),
             onLoadedMetadata: (arg) => {
               const local = arg.currentTarget;
-              local_10(local.duration);
+              local_13(local.duration);
               if (!arg.width && local.videoWidth > 0 && local.videoHeight > 0) {
-                local_24({
+                local_27({
                   w: local.videoWidth,
                   h: local.videoHeight,
                 });
               }
             },
-            onSeeked: (arg) => local_8(arg.currentTarget.currentTime),
+            onSeeked: (arg) => local_11(arg.currentTarget.currentTime),
           }),
           arg.poster &&
-            local_21 &&
+            local_24 &&
             imported_3("img", {
-              className: local_2ba33e70.poster,
+              className: local_67002f3e.poster,
               src: arg.poster,
               alt: "",
               "aria-hidden": "true",
             }),
+          local_8 &&
+            imported_3("div", {
+              className: local_67002f3e.mediaError,
+              role: "alert",
+              onClick: (arg) => arg.stopPropagation(),
+              children: [
+                imported_3("strong", {
+                  children: "Не удалось воспроизвести видео",
+                }),
+                imported_3("p", {
+                  children:
+                    "Формат может не поддерживаться браузером. Попробуйте открыть файл на устройстве.",
+                }),
+                arg.onDownload &&
+                  imported_3("button", {
+                    type: "button",
+                    className: local_67002f3e.errorDownload,
+                    onClick: () => {
+                      arg.onDownload?.();
+                    },
+                    children: [
+                      imported_3(imported_16, {
+                        size: 18,
+                      }),
+                      " Скачать видео",
+                    ],
+                  }),
+              ],
+            }),
           imported_3("div", {
-            className: `${local_2ba33e70.chrome} ${local_2ba33e70.bottomOverlay}`,
+            className: `${local_67002f3e.chrome} ${local_67002f3e.bottomOverlay}`,
+            hidden: local_8,
             onDblClick: (arg) => arg.stopPropagation(),
             children: [
               imported_3("button", {
                 type: "button",
-                className: `${local_2ba33e70.controlButton} ${local_2ba33e70.playButton}`,
+                className: `${local_67002f3e.controlButton} ${local_67002f3e.playButton}`,
                 onClick: (arg) => {
                   arg.stopPropagation();
-                  local_34();
+                  local_37();
                 },
-                "aria-label": local_5 ? "Пауза" : "Воспроизвести",
-                children: local_5
+                "aria-label": local_6 ? "Пауза" : "Воспроизвести",
+                children: local_6
                   ? imported_3(fn_65c560b6, {})
                   : imported_3(fn_4cc17855, {}),
               }),
               imported_3("span", {
-                className: local_2ba33e70.time,
+                className: local_67002f3e.time,
                 children: [
-                  fn_53f06a90(local_7),
+                  fn_33cfc528(local_10),
                   "../site/index.html",
-                  fn_53f06a90(local_9),
+                  fn_33cfc528(local_12),
                 ],
               }),
               imported_3("button", {
                 type: "button",
-                className: `${local_2ba33e70.controlButton} ${local_2ba33e70.speedButton}`,
+                className: `${local_67002f3e.controlButton} ${local_67002f3e.speedButton}`,
                 onClick: (arg) => {
                   arg.stopPropagation();
-                  local_38();
+                  local_42();
                 },
                 "aria-label": "Скорость воспроизведения",
-                children: [local_a3e1b3a5[local_15], "×"],
+                children: [local_a3e1b3a5[local_18], "×"],
               }),
               imported_3("div", {
-                className: `${local_2ba33e70.volumeControl} ${local_19 ? local_2ba33e70.volumeActive : ""}`,
+                className: `${local_67002f3e.volumeControl} ${local_22 ? local_67002f3e.volumeActive : ""}`,
                 onClick: (arg) => arg.stopPropagation(),
                 children: [
                   imported_3("div", {
-                    className: local_2ba33e70.volumeSlider,
-                    children: imported_3(fn_eca554ee, {
-                      value: local_13 ? 0 : local_11,
-                      onChange: local_37,
+                    className: local_67002f3e.volumeSlider,
+                    children: imported_3(fn_0de446cb, {
+                      value: local_16 ? 0 : local_14,
+                      onChange: local_41,
                       onDragStart: () => {
-                        local_29.current = true;
-                        local_20(true);
+                        local_32.current = true;
+                        local_23(true);
                       },
                       onDragEnd: () => {
-                        local_20(false);
+                        local_23(false);
                         setTimeout(() => {
-                          local_29.current = false;
+                          local_32.current = false;
                         }, 0);
                       },
                     }),
                   }),
                   imported_3("button", {
                     type: "button",
-                    className: local_2ba33e70.muteButton,
+                    className: local_67002f3e.muteButton,
                     onClick: (arg) => {
                       arg.stopPropagation();
-                      local_36();
+                      local_40();
                     },
-                    "aria-label": local_13 ? "Включить звук" : "Выключить звук",
-                    children: imported_3(imported_10, {
-                      muted: local_13 || local_11 === 0,
-                      volume: local_11,
+                    "aria-label": local_16 ? "Включить звук" : "Выключить звук",
+                    children: imported_3(imported_13, {
+                      muted: local_16 || local_14 === 0,
+                      volume: local_14,
                     }),
                   }),
                 ],
               }),
               imported_3("button", {
                 type: "button",
-                className: `${local_2ba33e70.controlButton} ${local_2ba33e70.fullscreenButton}`,
+                className: `${local_67002f3e.controlButton} ${local_67002f3e.fullscreenButton}`,
                 onClick: (arg) => {
                   arg.stopPropagation();
-                  local_39();
+                  local_43();
                 },
                 "aria-label": "На весь экран",
                 children: imported_3(fn_49d970dd, {}),
               }),
               imported_3("div", {
                 "data-vp": "progress",
-                className: local_2ba33e70.progressContainer,
-                onPointerDown: local_41,
+                className: local_67002f3e.progressContainer,
+                onPointerDown: local_45,
                 onClick: (arg) => arg.stopPropagation(),
                 children: imported_3("div", {
-                  ref: local_4,
-                  className: local_2ba33e70.progressTrack,
+                  ref: local_5,
+                  className: local_67002f3e.progressTrack,
                   children: [
-                    local_32.map((arg, arg_2) =>
+                    local_35.map((arg, arg_2) =>
                       imported_3(
                         "div",
                         {
-                          className: local_2ba33e70.progressBuffered,
+                          className: local_67002f3e.progressBuffered,
                           style: {
                             left: `${arg.left}%`,
                             width: `${arg.width}%`,
@@ -768,9 +865,9 @@ function fn_114f7fc9({ options: arg, onUnmount: arg_2 }) {
                       ),
                     ),
                     imported_3("div", {
-                      className: `${local_2ba33e70.progressFill} ${local_17 ? local_2ba33e70.scrubbing : ""}`,
+                      className: `${local_67002f3e.progressFill} ${local_20 ? local_67002f3e.scrubbing : ""}`,
                       style: {
-                        width: `${local_42}%`,
+                        width: `${local_46}%`,
                       },
                     }),
                   ],

@@ -1,45 +1,22 @@
 import {
-  symbol_069 as imported,
-  symbol_082 as imported_2,
-  az as imported_3,
-  symbol_089 as imported_4,
-  symbol_048 as imported_5,
-  symbol_070 as imported_6,
-  symbol_086 as imported_7,
-  symbol_049 as imported_8,
+  symbol_223 as imported,
+  symbol_285 as imported_2,
+  symbol_080 as imported_3,
+  symbol_081 as imported_4,
+  symbol_082 as imported_5,
+  symbol_001 as imported_6,
+  symbol_289 as imported_7,
+  symbol_010 as imported_8,
   symbol_003 as imported_9,
-  symbol_050 as imported_10,
+  symbol_275 as imported_10,
   symbol_020 as imported_11,
 } from "../entry.js";
-import { C as imported_12 } from "../shared/chunk-ab6fb2cd21e7.js";
+import { C as imported_12 } from "../shared/chunk-d0f3b8fb991b.js";
 import { symbol_001 as imported_13 } from "../shared/index-ggtxn-mrt-portal20261026.js";
 import {
   I as imported_14,
   a as imported_15,
 } from "../components/icon-eye-off.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_adb43aea = "c_container";
 const local_3f8170c1 = "c_logo";
 const local_7ab56d01 = "c_form";
@@ -80,7 +57,7 @@ const local_66259d24 = {
   submitButton: local_7149ec44,
   backLink: local_0e84bcea,
 };
-export const local_83b23ef0 = (arg) => {
+export const local_91ed7d99 = (arg) => {
   const [local, local_2] = imported("");
   const [local_3, local_4] = imported("");
   const [local_5, local_6] = imported("");
@@ -328,7 +305,6 @@ export const local_83b23ef0 = (arg) => {
                     children: "Вернуться ко входу",
                   }),
                 }),
-                imported_7(imported_10, {}),
               ],
             }),
           local_17 === "otp" &&
@@ -502,6 +478,7 @@ export const local_83b23ef0 = (arg) => {
                 }),
               ],
             }),
+          imported_7(imported_10, {}),
         ],
       }),
       imported_7(imported_12, {
@@ -512,4 +489,4 @@ export const local_83b23ef0 = (arg) => {
     ],
   });
 };
-export { local_83b23ef0 as default };
+export { local_91ed7d99 as default };

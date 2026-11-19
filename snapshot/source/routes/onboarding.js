@@ -10,46 +10,23 @@ const local_605932fe = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_086 as imported,
-  symbol_069 as imported_2,
+  symbol_289 as imported,
+  symbol_223 as imported_2,
   symbol_002 as imported_3,
-  symbol_088 as imported_4,
-  symbol_082 as imported_5,
+  symbol_012 as imported_4,
+  symbol_285 as imported_5,
   symbol_003 as imported_6,
-  symbol_001 as imported_7,
-  symbol_075 as imported_8,
+  symbol_042 as imported_7,
+  symbol_136 as imported_8,
   symbol_020 as imported_9,
-  symbol_080 as imported_10,
-  symbol_070 as imported_11,
-  symbol_089 as imported_12,
-  aB as imported_13,
-  symbol_048 as imported_14,
-  symbol_091 as imported_15,
-  symbol_077 as imported_16,
+  symbol_090 as imported_10,
+  symbol_001 as imported_11,
+  symbol_081 as imported_12,
+  symbol_137 as imported_13,
+  symbol_082 as imported_14,
+  symbol_138 as imported_15,
+  symbol_139 as imported_16,
 } from "../entry.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
 const local_fb418fb7 = "c_stepper";
 const local_2d2dc45b = "c_track";
 const local_c6284533 = "c_progress";
@@ -62,7 +39,7 @@ const local_fcd1eed3 = {
   step: local_cd89e6b9,
   active: local_6ab69625,
 };
-function fn_f33e0dd4({
+function fn_3f20f804({
   steps: arg,
   currentStep: arg_2,
   onStepClick: arg_3,
@@ -155,7 +132,7 @@ const local_968eaf70 = imported_15(() =>
     default: arg.EmojiPicker,
   })),
 );
-export const local_f9c37bf5 = (arg) => {
+export const local_c25f7065 = (arg) => {
   const [local, local_2] = imported_2(1);
   const [local_3, local_4] = imported_2("");
   const [local_5, local_6] = imported_2("");
@@ -340,7 +317,7 @@ export const local_f9c37bf5 = (arg) => {
                 }),
               ],
             }),
-            imported(fn_f33e0dd4, {
+            imported(fn_3f20f804, {
               steps: 2,
               currentStep: local,
               onStepClick: local_29,
@@ -517,4 +494,4 @@ export const local_f9c37bf5 = (arg) => {
     ],
   });
 };
-export { local_f9c37bf5 as default };
+export { local_c25f7065 as default };

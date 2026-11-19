@@ -1,0 +1,1 @@
+import{u as o}from"./index-B4ySybtH.js";const h=({size:t=16})=>o("svg",{xmlns:"http://www.w3.org/2000/svg",width:t,height:t,fill:"none",viewBox:"0 0 16 16",children:o("rect",{width:"10",height:"10",x:"3",y:"3",fill:"currentColor",rx:"3"})});export{h as I};

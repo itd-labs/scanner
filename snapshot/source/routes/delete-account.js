@@ -1,34 +1,12 @@
 import {
-  symbol_088 as imported,
-  symbol_069 as imported_2,
-  symbol_086 as imported_3,
+  symbol_012 as imported,
+  symbol_223 as imported_2,
+  symbol_289 as imported_3,
   symbol_003 as imported_4,
-  symbol_070 as imported_5,
+  symbol_001 as imported_5,
 } from "../entry.js";
-import { I as imported_6 } from "../components/icon-chevron-left.js";
-(function () {
-  try {
-    const local =
-      typeof window !== "undefined"
-        ? window
-        : typeof global !== "undefined"
-          ? global
-          : typeof globalThis !== "undefined"
-            ? globalThis
-            : typeof self !== "undefined"
-              ? self
-              : {};
-    local.SENTRY_RELEASE = {
-      id: "1.1.2",
-    };
-    const local_2 = new local.Error().stack;
-    if (local_2) {
-      local._sentryDebugIds = local._sentryDebugIds || {};
-      local._sentryDebugIds[local_2] = "<sentry-debug-id>";
-      local._sentryDebugIdIdentifier = "sentry-dbid-<sentry-debug-id>";
-    }
-  } catch {}
-})();
+import { M as imported_6 } from "../shared/mobile-subscription-warning.js";
+import { I as imported_7 } from "../components/icon-chevron-left.js";
 const local_87ee5215 = "c_legal";
 const local_85b1b822 = "c_backButton";
 const local_9d9cf508 = "c_title";
@@ -59,7 +37,7 @@ const local_d71cd58f = {
   confirmActions: local_0c0a7c96,
   error: local_cd23a337,
 };
-export function fn_d877082e(arg) {
+export function fn_834be8d4(arg) {
   const local = imported((arg) => arg.deleteAccount);
   const [local_2, local_3] = imported_2("info");
   const [local_4, local_5] = imported_2(null);
@@ -87,7 +65,7 @@ export function fn_d877082e(arg) {
         className: local_d71cd58f.backButton,
         onClick: local_6,
         children: [
-          imported_3(imported_6, {
+          imported_3(imported_7, {
             size: 20,
           }),
           imported_3("span", {
@@ -165,6 +143,19 @@ export function fn_d877082e(arg) {
         children: [
           imported_3("h2", {
             className: local_d71cd58f.sectionTitle,
+            children: "Подписка из магазина приложений",
+          }),
+          imported_3("p", {
+            className: local_d71cd58f.text,
+            children: imported_3(imported_6, {}),
+          }),
+        ],
+      }),
+      imported_3("section", {
+        className: local_d71cd58f.section,
+        children: [
+          imported_3("h2", {
+            className: local_d71cd58f.sectionTitle,
             children: "Связаться с нами",
           }),
           imported_3("p", {
@@ -234,4 +225,4 @@ export function fn_d877082e(arg) {
     ],
   });
 }
-export { fn_d877082e as default };
+export { fn_834be8d4 as default };
