@@ -8,7 +8,7 @@
   },
   "target": "https://xn--d1ah4a.com/",
   "documentUrl": "https://xn--d1ah4a.com/",
-  "buildFingerprint": "b4a742b900f06b052f473588bce33600d331d3bc6cbd4c0a9a425a884c71f125",
+  "buildFingerprint": "e37eee540b65bb0df873e45a935bfe8004592ad3dfaf775b486bc6c08ea6ab50",
   "entrypoints": [
     "entry.js",
     "entry.css"
@@ -4850,9 +4850,9 @@
       "logicalPath": "entry.js",
       "kind": "javascript",
       "mediaType": "application/javascript",
-      "bytes": 839706,
-      "sha256": "03187ed0dd0f88e25dd884835775ac057fdec689c43e2ffdf461de20e87cc1b0",
-      "shapeHash": "ac67359ef38b6e0caea1ccb1f86fdeaf89d2311107b0e495f1867f5deb00fa13",
+      "bytes": 839717,
+      "sha256": "61ebbd8030b3c2ab7f9f6f059907232eb806e9f560c508177b284940e5e15e95",
+      "shapeHash": "d77b690a92d9f3baf7ac917b4562b2296246ce5458595f6ace6f522b41b2a30f",
       "minhash": [
         "00018ea3",
         "00010fdb",
@@ -4887,8 +4887,8 @@
         "00025e33",
         "0001dd44"
       ],
-      "etag": "W/\"6aff61b1-cd01a\"",
-      "lastModified": "Thu, 19 Nov 2026 20:53:05 GMT"
+      "etag": "W/\"6b002844-cd025\"",
+      "lastModified": "Fri, 20 Nov 2026 11:00:20 GMT"
     },
     {
       "sourceUrl": "https://xn--d1ah4a.com/assets/index-DDugUPqQ.css",

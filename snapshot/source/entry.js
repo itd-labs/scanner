@@ -18395,8 +18395,11 @@ function fn_567d7894() {
 }
 const local_8a226c21 = "/static/antifraud/widget.html?action=auth&silent=1";
 const local_f06debfc_43 = 30000;
-function fn_f2c3697a(arg, arg_2, arg_3) {
-  if (arg !== "cloudflare" || arg_3.protocol !== "./entry.js") {
+function fn_506247ac(arg, arg_2, arg_3) {
+  if (
+    (arg !== "cloudflare" && arg !== "itd") ||
+    arg_3.protocol !== "./entry.js"
+  ) {
     return false;
   }
   return arg_2 === "on";
@@ -18408,7 +18411,7 @@ function fn_0a64cfa8(arg, arg_2) {
     arg_2 !== "on" ||
     typeof local_a3c1aa31 === "undefined" ||
     local_a3c1aa31.top !== local_a3c1aa31.self ||
-    !fn_f2c3697a(arg, arg_2, new URL(local_a3c1aa31.location.href))
+    !fn_506247ac(arg, arg_2, new URL(local_a3c1aa31.location.href))
   ) {
     return;
   }

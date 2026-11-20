@@ -1,88 +1,19 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `b4a742b900f06b052f473588bce33600d331d3bc6cbd4c0a9a425a884c71f125`
+- Build fingerprint: `e37eee540b65bb0df873e45a935bfe8004592ad3dfaf775b486bc6c08ea6ab50`
 - Resources: 198
-- Downloaded bytes: 20633767
+- Downloaded bytes: 20633778
 - Sentry releases: none
 
 ## Routes
 
 Route tables are independent. Within each table, routes are evaluated in priority order and the first match wins.
 
-- Changed `/legal`: priority 8 → 1
-- Changed `/legal/:slug/history`: priority 9 → 2
-- Changed `/legal/:slug/versions/:version`: priority 10 → 3
-- Changed `/legal/:slug`: priority 11 → 4
-- Changed `/`: priority 1 → 5
-- Added: table `entry.js#1` #6 `/chats/new/:draftUserId`
-- Added: table `entry.js#1` #7 `/chats/:chatId?`
-- Changed `/notifications`: priority 2 → 8
-- Changed `/login`: priority 3 → 9
-- Changed `/register`: priority 4 → 10
-- Changed `/forgot-password`: priority 5 → 11
-- Changed `/reset-password`: priority 6 → 12
-- Changed `/verify-email`: priority 7 → 13
-- Changed `/terms`: priority 12 → 14
-- Changed `/privacy`: priority 13 → 15
-- Changed `/cookies`: priority 14 → 16
-- Changed `/onboarding`: priority 15 → 17
-- Changed `/search`: priority 16 → 18
-- Changed `/shop/:rest*`: priority 17 → 19
-- Added: table `entry.js#1` #20 `/event/alice-ai/:rest*` (rest is a zero-or-more segment splat)
-- Added: table `entry.js#1` #21 `/event/halloween/:rest*` (rest is a zero-or-more segment splat)
-- Changed `/hashtag/:name`: priority 18 → 22
-- Changed `/external`: priority 19 → 23
-- Changed `/support`: priority 20 → 24
-- Changed `/delete-account`: priority 21 → 25
-- Changed `/child-safety`: priority 22 → 26
-- Changed `/event`: priority 23 → 27
-- Changed `/verification`: priority 24 → 28
-- Changed `/subscription-terms`: priority 25 → 29
-- Changed `/recurring-terms`: priority 26 → 30
-- Changed `/:username/post/:postId`: priority 27 → 31
-- Changed `/:slug`: priority 28 → 32
-- Changed `*`: priority 29 → 33
+No changes.
 
 ## HTTP endpoints
 
-- Added: `/api/v1/event-assets/`
-- Added: `/api/v1/messenger`
-- Added: `/api/v1/messenger/browser-file-session`
-- Added: `/chats/dm`
-- Added: `/chats/unread?manual_unread=1`
-- Added: `/correctors/cancel`
-- Added: `/correctors/inventory`
-- Added: `/correctors/report`
-- Added: `/files/avatar`
-- Added: `/media/upload/init`
-- Added: `/messenger/entry`
-- Added: `/post-notebooks/inventory`
-- Added: `/presence`
-- Added: `/profile-avatar/`
-- Added: `/reactions/available`
-- Added: `/red-pens/cancel`
-- Added: `/red-pens/inventory`
-- Added: `/red-pens/report`
-- Added: `/sign-up`
-- Added: `/v1/aliceai/balance`
-- Added: `/v1/aliceai/inventory`
-- Added: `/v1/aliceai/nicknames`
-- Added: `/v1/aliceai/nicknames/active`
-- Added: `/v1/aliceai/profiles/`
-- Added: `/v1/aliceai/shop`
-- Added: `/v1/aliceai/waste-paper/posts/`
-- Added: `/v1/event-assets/`
-- Added: `/v1/event/status`
-- Added: `/v1/halloween`
-- Added: `/v1/subscription/checkout-release`
-- Added: `/v1/subscription/checkout-state`
-- Added: `/v1/subscription/gift-giver/`
-- Added: `/v1/subscription/gifts`
-- Added: `/v1/subscription/gifts/`
-- Added: `/v1/subscription/gifts/:param`
-- Added: `/v1/subscription/international-checkouts`
-- Added: `/v1/subscription/payments/`
-- Added: `/v1/subscription/payments/:param`
+No changes.
 
 ## WebSocket endpoints
 
@@ -90,132 +21,8 @@ No changes.
 
 ## Storage keys
 
-- Added: `itd-auth-boundary`
-- Added: `itd:offline-chat-cache`
-- Removed: `theme-storage`
-- Removed: `video-muted`
-- Removed: `video-volume`
+No changes.
 
 ## User-visible strings
 
-- Added: `— даритель НУКСТА`
-- Added: `— остальное докачаю сетью`
-- Added: `— сеть не нужна`
-- Added: `, за спасённый пост`
-- Added: `, зови`
-- Added: `, максимум`
-- Added: `, призрак ослаб на`
-- Added: `, следующее списание`
-- Added: `, спасибо:`
-- Added: `: новое сообщение`
-- Added: `: отдача`
-- Added: `: чанк`
-- Added: `: чанка`
-- Added: `. В уже открытых чатах писать можно.`
-- Added: `. Изгоняй призраков в ленте и собирай конфеты`
-- Added: `. Нажми, чтобы рассмотреть`
-- Added: `. Напомним за 3 дня.`
-- Added: `. Не закрывайте вкладку:`
-- Added: `. Уберите одну, чтобы выбрать другую.`
-- Added: `. Build with -sASSERTIONS for more info.`
-- Added: `· найдено:`
-- Added: `» пока нет подписки «ИТД НУКСТА». Он сможет прочитать сообщение, но ответить у него не получится`
-- Added: `(нет — транспорт)`
-- Added: `(нет — транспорт/сеть)`
-- Added: `) ИТД`
-- Added: `[её]`
-- Added: `[Скрытый текст]`
-- Added: `[alice-frame] Не удалось обновить вход в ивент`
-- Added: `[alice-frame] Не удалось обновить профиль после изменения в ивенте`
-- Added: `[alice-frame] Не удалось передать обновлённый вход`
-- Added: `[audio] play failed`
-- Added: `[data-message-menu], [role="dialog"], aside[aria-label="Информация о чате"][aria-hidden="false"]`
-- Added: `/g-arm-l.webp" alt=""><img class="hw-arm hw-r" src="`
-- Added: `/g-arm-r.webp" alt=""><img class="hw-face" src="`
-- Added: `/g-body.webp" alt=""><img class="hw-arm hw-l" src="`
-- Added: `→ диск; локально`
-- Added: `+ · поиск не завершён`
-- Added: `<span class="hw-shadow"></span><div class="hw-rig"><img class="hw-body" src="`
-- Added: `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28" viewBox="0 0 120 28" preserveAspectRatio="none"><path d="`
-- Added: `🌕 Полнолуние. Призраков вдвое больше. Итоги в полночь`
-- Added: `🌙 Сейчас: ночь (будет ещё до 9:00). Лайкай посты-оборотни с ушками и получай ночные конфеты!`
-- Added: `🎃 До полуночи`
-- Added: `🎤 Голосовое сообщение`
-- Added: `📎 Вложение`
-- Added: `📎 Вложения (`
-- Added: `🔗 Пост`
-- Added: `₽ каждый месяц.`
-- Added: `1 группа крови`
-- Added: `17 число`
-- Added: `18 лет`
-- Added: `2 группа крови`
-- Added: `24 часа`
-- Added: `3 группа крови`
-- Added: `3px solid var(--bg-primary)`
-- Added: `4 группа крови`
-- Added: `600 14px EventCaveat`
-- Added: `600 22px EventCaveat`
-- Added: `А ночью я оборотень, р-р-р`
-- Added: `ААА!! ВНИМАНИЕ!! В ИТД проникли тёмные силы!!`
-- Added: `абориген`
-- Added: `Аватарка`
-- Added: `Аватарка удалена`
-- Added: `августа`
-- Added: `авиация`
-- Added: `авокадо`
-- Added: `австралия`
-- Added: `Австралия`
-- Added: `автобус`
-- Added: `автобус спереди`
-- Added: `автобусная остановка`
-- Added: `автозаправка`
-- Added: `автозаправочная станция`
-- Added: `автомагистраль`
-- Added: `автомат`
-- Added: `автомобиль`
-- Added: `автомобиль спереди`
-- Added: `автомобильное колесо`
-- Added: `Автопродление подключено`
-- Added: `Автопродление подключено:`
-- Added: `автопродление.`
-- Added: `автор`
-- Added: `Автор поста`
-- Added: `авторикша`
-- Added: `авторские права`
-- Added: `авторское`
-- Added: `автостоянка`
-- Added: `автострада`
-- Added: `Автотюн`
-- Added: `азарт`
-- Added: `Азия`
-- Added: `Азия и Австралия на земном шаре`
-- Added: `АЗС`
-- Added: `ай, за что`
-- Added: `аккордеон`
-- Added: `аккумулятор`
-- Added: `акробат`
-- Added: `акробат: очень светлый тон кожи`
-- Added: `акробат: очень темный тон кожи`
-- Added: `акробат: светлый тон кожи`
-- Added: `акробат: средний тон кожи`
-- Removed: `. Отключить его можно в настройках.`
-- Removed: `₽ на месяц`
-- Removed: `₽, далее ежемесячно — следующее списание`
-- Removed: `Ивент активен!`
-- Removed: `Нажимая кнопку, вы принимаете`
-- Removed: `Нет активного ивента`
-- Removed: `Оплачиваем…`
-- Removed: `Открыть вручную`
-- Removed: `Ошибка при оплате`
-- Removed: `Ошибка при создании платежа`
-- Removed: `Показывать время последнего визита`
-- Removed: `Сегодня спишется`
-- Removed: `Сейчас нет активных ивентов. Следите за обновлениями!`
-- Removed: `Сохранённый способ оплаты`
-- Removed: `Ссылка должна была открыться в новой вкладке.`
-- Removed: `условия автопродления`
-- Removed: `No emojis found`
-- Removed: `Search emojis...`
-- Removed: `Something went wrong`
-- Removed: `SSE message parse error:`
-- Additional changes omitted from this summary.
+No changes.
