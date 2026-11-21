@@ -344,7 +344,7 @@ export async function fn_e3a6bef0(arg, arg_2) {
     elapsedMs: Date.now() - local_4,
   });
   imported_2(
-    () => import("../entry.js").then((arg) => arg.dO),
+    () => import("../entry.js").then((arg) => arg.dV),
     local_0373ff9a([0, 1]),
   )
     .then(async ({ seedFileBox: arg }) => {

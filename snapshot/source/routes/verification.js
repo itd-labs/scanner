@@ -1,6 +1,6 @@
 import {
   symbol_012 as imported,
-  symbol_275 as imported_2,
+  symbol_282 as imported_2,
   symbol_018 as imported_3,
 } from "../entry.js";
 export function fn_59f80974(arg) {

@@ -30,7 +30,7 @@ const local_468f87cb = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_288 as imported,
+  symbol_295 as imported,
   symbol_072 as imported_2,
   symbol_003 as imported_3,
   symbol_083 as imported_4,
@@ -38,68 +38,68 @@ import {
   symbol_012 as imported_6,
   symbol_222 as imported_7,
   symbol_051 as imported_8,
-  symbol_275 as imported_9,
-  symbol_109 as imported_10,
-  symbol_110 as imported_11,
+  symbol_282 as imported_9,
+  symbol_116 as imported_10,
+  symbol_117 as imported_11,
   symbol_135 as imported_12,
-  symbol_111 as imported_13,
-  symbol_089 as imported_14,
-  symbol_112 as imported_15,
-  symbol_020 as imported_16,
-  symbol_043 as imported_17,
-  symbol_113 as imported_18,
+  symbol_118 as imported_13,
+  symbol_090 as imported_14,
+  symbol_119 as imported_15,
+  symbol_120 as imported_16,
+  symbol_020 as imported_17,
+  symbol_043 as imported_18,
   symbol_060 as imported_19,
-  bt as imported_20,
-  symbol_087 as imported_21,
-  symbol_045 as imported_22,
-  symbol_001 as imported_23,
-  symbol_151 as imported_24,
-  symbol_092 as imported_25,
+  symbol_105 as imported_20,
+  symbol_088 as imported_21,
+  symbol_085 as imported_22,
+  symbol_045 as imported_23,
+  symbol_001 as imported_24,
+  symbol_106 as imported_25,
   symbol_002 as imported_26,
-  symbol_114 as imported_27,
-  symbol_115 as imported_28,
+  symbol_121 as imported_27,
+  symbol_122 as imported_28,
   symbol_101 as imported_29,
-  symbol_284 as imported_30,
-  symbol_116 as imported_31,
-  symbol_117 as imported_32,
-  symbol_118 as imported_33,
-  symbol_119 as imported_34,
-  symbol_120 as imported_35,
-  symbol_121 as imported_36,
-  symbol_122 as imported_37,
-  symbol_123 as imported_38,
+  symbol_291 as imported_30,
+  symbol_123 as imported_31,
+  symbol_124 as imported_32,
+  symbol_125 as imported_33,
+  symbol_126 as imported_34,
+  symbol_127 as imported_35,
+  symbol_128 as imported_36,
+  symbol_129 as imported_37,
+  symbol_130 as imported_38,
   symbol_041 as imported_39,
   symbol_052 as imported_40,
   symbol_098 as imported_41,
-  symbol_124 as imported_42,
+  symbol_131 as imported_42,
   symbol_103 as imported_43,
-  symbol_125 as imported_44,
-  symbol_126 as imported_45,
+  symbol_094 as imported_44,
+  symbol_159 as imported_45,
   symbol_080 as imported_46,
-  symbol_127 as imported_47,
-  symbol_088 as imported_48,
-  symbol_128 as imported_49,
-  symbol_068 as imported_50,
-  symbol_129 as imported_51,
-  symbol_108 as imported_52,
-  symbol_130 as imported_53,
-  symbol_131 as imported_54,
-  symbol_073 as imported_55,
-  symbol_137 as imported_56,
+  symbol_160 as imported_47,
+  symbol_089 as imported_48,
+  symbol_161 as imported_49,
+  symbol_136 as imported_50,
+  symbol_068 as imported_51,
+  symbol_162 as imported_52,
+  symbol_115 as imported_53,
+  symbol_163 as imported_54,
+  symbol_164 as imported_55,
+  symbol_073 as imported_56,
   symbol_138 as imported_57,
   symbol_032 as imported_58,
-  symbol_094 as imported_59,
+  symbol_165 as imported_59,
   symbol_031 as imported_60,
-  symbol_159 as imported_61,
+  symbol_166 as imported_61,
   symbol_095 as imported_62,
   symbol_147 as imported_63,
-  symbol_160 as imported_64,
-  symbol_152 as imported_65,
-  symbol_161 as imported_66,
+  symbol_167 as imported_64,
+  symbol_110 as imported_65,
+  symbol_168 as imported_66,
   symbol_036 as imported_67,
-  symbol_162 as imported_68,
-  symbol_163 as imported_69,
-  symbol_164 as imported_70,
+  symbol_196 as imported_68,
+  symbol_197 as imported_69,
+  symbol_198 as imported_70,
   symbol_034 as imported_71,
   symbol_035 as imported_72,
   symbol_033 as imported_73,
@@ -314,7 +314,7 @@ function fn_ddbbf12c(arg) {
   }
   return arg.toString();
 }
-function fn_420eaee0({
+function fn_f4a5224d({
   followers: arg,
   following: arg_2,
   isPhone: arg_3 = false,
@@ -356,7 +356,7 @@ function fn_420eaee0({
     ],
   });
 }
-function fn_d5a08132({
+function fn_a25625d9({
   isOwnProfile: arg,
   isFollowing: arg_2,
   isRequested: arg_3 = false,
@@ -395,7 +395,7 @@ function fn_d5a08132({
     if (!local()) {
       return;
     }
-    const local_2 = imported_25();
+    const local_2 = imported_22();
     const local_3 = window.location.pathname;
     local_4(true);
     try {
@@ -416,28 +416,28 @@ function fn_d5a08132({
           (arg) => arg.chat_type === 0 && arg.other_user_id === arg_6,
         );
         if (!local_2 && !local) {
-          imported_22.error("Не удалось проверить диалог. Попробуйте ещё раз.");
+          imported_23.error("Не удалось проверить диалог. Попробуйте ещё раз.");
           return;
         }
       }
       if (local_2) {
-        imported_23(`/chats/${local_2.chat_id}`);
+        imported_24(`/chats/${local_2.chat_id}`);
         return;
       }
       local().startDraft({
         id: arg_6,
         name: arg_8 ?? arg_6,
         username: arg_9 ?? arg_6,
-        ...imported_24(arg_10),
+        ...imported_25(arg_10),
         verified: arg_11,
       });
-      imported_23(`/chats/new/${arg_6}`);
+      imported_24(`/chats/new/${arg_6}`);
     } finally {
       local_4(false);
     }
   };
   if (arg) {
-    return imported(imported_16, {
+    return imported(imported_17, {
       children: [
         imported("div", {
           className: local_819ff8dc.ownActions,
@@ -459,7 +459,7 @@ function fn_d5a08132({
         local &&
           imported(imported_12, {
             fallback: null,
-            children: imported(imported_15, {
+            children: imported(imported_16, {
               isOpen: local,
               onClose: () => local_2(false),
             }),
@@ -467,7 +467,7 @@ function fn_d5a08132({
       ],
     });
   }
-  return imported(imported_16, {
+  return imported(imported_17, {
     children: [
       imported(imported_3, {
         variant: arg_2 || arg_3 ? "secondary" : "primary",
@@ -475,7 +475,7 @@ function fn_d5a08132({
         disabled: arg_4,
         fullWidth: arg_14,
         children: arg_2
-          ? imported(imported_16, {
+          ? imported(imported_17, {
               children: [
                 imported(imported_76, {
                   size: 18,
@@ -485,7 +485,7 @@ function fn_d5a08132({
             })
           : arg_3
             ? "Заявка отправлена"
-            : imported(imported_16, {
+            : imported(imported_17, {
                 children: [
                   imported(imported_19, {
                     size: 18,
@@ -501,7 +501,7 @@ function fn_d5a08132({
           disabled: local_3,
           fullWidth: arg_14,
           children: [
-            imported(imported_17, {
+            imported(imported_18, {
               size: 18,
             }),
             "Сообщение",
@@ -510,7 +510,7 @@ function fn_d5a08132({
       local &&
         imported(imported_12, {
           fallback: null,
-          children: imported(imported_15, {
+          children: imported(imported_16, {
             isOpen: true,
             onClose: () => local_2(false),
           }),
@@ -595,7 +595,7 @@ function fn_51986da3({
       local.push({
         id: "report",
         label: "Пожаловаться",
-        icon: imported(imported_18, {
+        icon: imported(imported_15, {
           size: 18,
         }),
         danger: true,
@@ -620,7 +620,7 @@ function fn_51986da3({
           items: local_9,
           position: "bottom-right",
         }),
-      imported(fn_d5a08132, {
+      imported(fn_a25625d9, {
         isOwnProfile: arg,
         isVerified: arg_2,
         isBlocked: arg_3,
@@ -1065,7 +1065,7 @@ function fn_1dd73c40(arg) {
   }
   return local ?? null;
 }
-function fn_0f46e9b8({
+function fn_223369a9({
   profileId: arg,
   profileName: arg_2,
   profileUsername: arg_3,
@@ -1411,7 +1411,7 @@ function fn_0f46e9b8({
     if (window.history.length > 1) {
       window.history.back();
     } else {
-      imported_23("../site/index.html");
+      imported_24("../site/index.html");
     }
   };
   const local_31 = async () => {
@@ -1434,13 +1434,13 @@ function fn_0f46e9b8({
           }),
         );
       } catch {
-        imported_22.error("Не удалось открыть шторы. Попробуйте ещё раз.");
+        imported_23.error("Не удалось открыть шторы. Попробуйте ещё раз.");
       } finally {
         local_10(false);
       }
     }
   };
-  return imported(imported_16, {
+  return imported(imported_17, {
     children: [
       local_5 &&
         local_29 &&
@@ -1788,7 +1788,7 @@ function fn_75d71f4e(arg) {
   }
   return "Не удалось подтвердить размещение. Повторите тем же предметом.";
 }
-function fn_3c447a69({
+function fn_3e7de4e2({
   profileId: arg,
   profileUsername: arg_2,
   ownProfile: arg_3 = false,
@@ -1988,7 +1988,7 @@ function fn_3c447a69({
       local_7.kind === "splash" || local_7.kind === "whoopee_cushion";
     if (local && !local_18 && !local_11) {
       local_12(null);
-      imported_22.error("Выберите место для предмета.");
+      imported_23.error("Выберите место для предмета.");
       return;
     }
     const local_2 = local_7;
@@ -2066,7 +2066,7 @@ function fn_3c447a69({
       local_12(null);
       local_8(null);
       local_28();
-      imported_22.success(
+      imported_23.success(
         local_2.kind === "splash"
           ? "Шарик попал! След останется на 48 часов"
           : local_2.kind === "whoopee_cushion"
@@ -2075,13 +2075,13 @@ function fn_3c447a69({
       );
     } catch (error) {
       if (imported_46(error) && error.code === "CUSHION_ACTIVE") {
-        imported_22.error(
+        imported_23.error(
           "На этом профиле уже есть подушка. Попробуйте после окончания суток.",
         );
       } else if (imported_46(error) && error.code === "ITEM_UNAVAILABLE") {
-        imported_22.error("Этот предмет уже потрачен. Откройте рюкзак заново.");
+        imported_23.error("Этот предмет уже потрачен. Откройте рюкзак заново.");
       } else {
-        imported_22.error(fn_75d71f4e(error));
+        imported_23.error(fn_75d71f4e(error));
       }
     } finally {
       local_4(false);
@@ -2095,11 +2095,11 @@ function fn_3c447a69({
       local_20.current.delete(arg);
       local_23(null);
       local_28();
-      imported_22.success(
+      imported_23.success(
         local.removed ? "Наклейка стёрта" : "Наклейка потёрта",
       );
     } catch {
-      imported_22.error(
+      imported_23.error(
         "Не удалось подтвердить стирание. Можно повторить без второго списания.",
       );
       throw new Error("Erase result is unknown");
@@ -2118,7 +2118,7 @@ function fn_3c447a69({
       }),
     );
   };
-  return imported(imported_16, {
+  return imported(imported_17, {
     children: [
       local_16 &&
         imported_39(
@@ -2275,7 +2275,7 @@ function fn_3c447a69({
         ),
       (local_7?.kind === "splash" || local_7?.kind === "whoopee_cushion") &&
         imported_39(
-          imported(imported_16, {
+          imported(imported_17, {
             children: [
               imported("div", {
                 className: local_c9902c8d.pagePlacementControls,
@@ -2510,7 +2510,7 @@ function fn_3c447a69({
                       returnTo: `/@${arg_2.replace(/^@/, "")}`,
                     });
                     local_2(false);
-                    imported_23(`/event/alice-ai?${local.toString()}`);
+                    imported_24(`/event/alice-ai?${local.toString()}`);
                   },
                   children: "Открыть магазин",
                 }),
@@ -2669,7 +2669,7 @@ function fn_e59aff08({
                 "aria-label": "Открыть анализатор ауры в магазине",
                 title: "Оценку выдаёт анализатор ауры из ивент-магазина.",
                 onClick: () =>
-                  imported_23(`/event/alice-ai?${local_2.toString()}`),
+                  imported_24(`/event/alice-ai?${local_2.toString()}`),
                 children: "?",
               }),
             ],
@@ -2751,7 +2751,7 @@ const local_7f66de41 = {
   EVENT_APPLICATIONS_DISABLED: "Взносы сейчас на паузе. Мелки не списаны",
   PROFILE_TARGET_NOT_FOUND: "Этот профиль сейчас недоступен",
 };
-function fn_34bbd379({
+function fn_9acc0eb5({
   profileId: arg,
   isOwnProfile: arg_2,
   curtains: arg_3,
@@ -2811,7 +2811,7 @@ function fn_34bbd379({
       arg_5(local.curtains);
       imported_41(arg);
       const local_2 = local.curtains.hasCurtains;
-      imported_22.success(
+      imported_23.success(
         local_2
           ? "Сбор завершён — шторы теперь доступны"
           : `Скинули ${local.donated} мелков`,
@@ -2969,7 +2969,7 @@ function fn_34bbd379({
                     ? "Отправляем…"
                     : local_11
                       ? "Повторить"
-                      : imported(imported_16, {
+                      : imported(imported_17, {
                           children: [
                             "Скинуть ",
                             local_19,
@@ -3036,7 +3036,7 @@ function fn_34bbd379({
     ],
   });
 }
-const local_06128897 = imported_56(() =>
+const local_06128897 = imported_50(() =>
   imported_57(
     () => import("./drawing-canvas.js"),
     local_468f87cb([0, 1, 2, 3]),
@@ -3044,7 +3044,7 @@ const local_06128897 = imported_56(() =>
     default: arg.DrawingCanvas,
   })),
 );
-const local_f8603183 = imported_56(() =>
+const local_f8603183 = imported_50(() =>
   imported_57(
     () => import("./report-modal.js"),
     local_468f87cb([4, 1, 2, 5, 6]),
@@ -3058,7 +3058,7 @@ function fn_46e426cc(arg) {
     year: "numeric",
   });
 }
-function fn_070a56ce({
+function fn_73d50548({
   profile: arg,
   isOwnProfile: arg_2,
   isFollowing: arg_3,
@@ -3142,7 +3142,7 @@ function fn_070a56ce({
             arg_14?.(null);
           } catch (error) {
             console.error("Failed to delete banner:", error);
-            imported_22.error("Не удалось удалить баннер");
+            imported_23.error("Не удалось удалить баннер");
             throw error;
           }
         },
@@ -3156,7 +3156,7 @@ function fn_070a56ce({
         if (!arg_2) {
           throw new Error("Banner drawing is missing");
         }
-        const local = await imported_50.uploadBannerDrawing(arg_2);
+        const local = await imported_51.uploadBannerDrawing(arg_2);
         await imported_14.updateProfile({
           bannerId: local.id,
         });
@@ -3169,7 +3169,7 @@ function fn_070a56ce({
         });
       } catch (error) {
         console.error("Failed to upload banner:", error);
-        imported_22.error("Не удалось загрузить баннер");
+        imported_23.error("Не удалось загрузить баннер");
         throw error;
       }
     },
@@ -3193,7 +3193,7 @@ function fn_070a56ce({
                 className: local_819ff8dc.bannerPlaceholder,
               }),
           local_12 &&
-            imported(fn_0f46e9b8, {
+            imported(fn_223369a9, {
               profileId: arg.id,
               profileName: arg.displayName,
               profileUsername: arg.username,
@@ -3215,7 +3215,7 @@ function fn_070a56ce({
             }),
           local_12 &&
             imported(
-              fn_3c447a69,
+              fn_3e7de4e2,
               {
                 profileId: arg.id,
                 profileUsername: arg.username,
@@ -3233,7 +3233,7 @@ function fn_070a56ce({
                   className: local_819ff8dc.bannerActionButton,
                   onClick: local_15,
                   title: "Нарисовать баннер",
-                  children: imported(imported_51, {
+                  children: imported(imported_52, {
                     size: 20,
                   }),
                 }),
@@ -3242,7 +3242,7 @@ function fn_070a56ce({
                     className: `${local_819ff8dc.bannerActionButton} ${local_819ff8dc.deleteBannerButton}`,
                     onClick: local_19,
                     title: "Удалить баннер",
-                    children: imported(imported_52, {
+                    children: imported(imported_53, {
                       size: 20,
                     }),
                   }),
@@ -3251,8 +3251,8 @@ function fn_070a56ce({
         ],
       }),
       local_12 &&
-        imported(imported_53, {
-          placements: imported_54(local_9?.balloons, "profile_header", null),
+        imported(imported_54, {
+          placements: imported_55(local_9?.balloons, "profile_header", null),
           anchorKind: "profile_header",
           anchorId: null,
         }),
@@ -3313,7 +3313,7 @@ function fn_070a56ce({
               imported("div", {
                 className: local_819ff8dc.userInfo,
                 children: [
-                  imported(imported_55, {
+                  imported(imported_56, {
                     userId: arg.id,
                     halloween: arg.halloween,
                     name: arg.displayName,
@@ -3343,7 +3343,7 @@ function fn_070a56ce({
                   imported("div", {
                     className: local_819ff8dc.detailsMain,
                     children: [
-                      imported(fn_420eaee0, {
+                      imported(fn_f4a5224d, {
                         isPhone: arg_8,
                         followers: arg.stats?.followers ?? 0,
                         following: arg.stats?.following ?? 0,
@@ -3419,7 +3419,7 @@ function fn_070a56ce({
                     local_9?.curtains &&
                     imported("div", {
                       className: local_819ff8dc.curtainFund,
-                      children: imported(fn_34bbd379, {
+                      children: imported(fn_9acc0eb5, {
                         profileId: arg.id,
                         isOwnProfile: arg_2,
                         curtains: local_9.curtains,
@@ -4035,11 +4035,11 @@ function fn_29dd6153({ username: arg }) {
         if (local_17) {
           await imported_62.unblockUser(local_4.id);
           local_18(false);
-          imported_22.success("Пользователь разблокирован");
+          imported_23.success("Пользователь разблокирован");
         } else {
           await imported_62.blockUser(local_4.id);
           local_18(true);
-          imported_22.success("Пользователь заблокирован");
+          imported_23.success("Пользователь заблокирован");
           if (local_22) {
             local_14("none");
           }
@@ -4049,7 +4049,7 @@ function fn_29dd6153({ username: arg }) {
         }
       } catch (error) {
         console.error("Failed to toggle block:", error);
-        imported_22.error("Не удалось выполнить действие");
+        imported_23.error("Не удалось выполнить действие");
       } finally {
         local_20(false);
       }
@@ -4104,7 +4104,7 @@ function fn_29dd6153({ username: arg }) {
     handleBlockUser: local_43,
   };
 }
-const local_1b6acf59 = imported_56(() =>
+const local_1b6acf59 = imported_50(() =>
   imported_57(
     () => import("./subscription-modal.js"),
     local_468f87cb([7, 1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
@@ -4112,7 +4112,7 @@ const local_1b6acf59 = imported_56(() =>
     default: arg.SettingsModal,
   })),
 );
-const local_fd22045b = imported_56(() =>
+const local_fd22045b = imported_50(() =>
   imported_57(
     () => import("../shared/chunk-b4d78c0cc9a4.js"),
     local_468f87cb([21, 1, 2, 22, 5, 23]),
@@ -4348,7 +4348,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
         ? "Не удалось получить профиль — сервер не ответил. Попробуйте обновить страницу позже."
         : "Пользователя с таким адресом нет. Возможно, профиль удалён или в ссылке опечатка.",
       action: imported(imported_3, {
-        onClick: () => imported_23("../site/index.html"),
+        onClick: () => imported_24("../site/index.html"),
         children: "Вернуться на главную",
       }),
     });
@@ -4357,7 +4357,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
     className: local_819ff8dc.page,
     "data-alice-profile-root": true,
     children: [
-      imported(fn_070a56ce, {
+      imported(fn_73d50548, {
         profile: local_14,
         isOwnProfile: local_20,
         isFollowing: local_21,
@@ -4386,7 +4386,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
         className: local_819ff8dc.belowTabs,
         children: [
           local_48 &&
-            imported(imported_16, {
+            imported(imported_17, {
               children: [
                 imported("div", {
                   className: local_819ff8dc.createPostWrapper,
@@ -4431,7 +4431,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
                       renderPost: (arg, arg_2, arg_3) =>
                         imported(imported_72, {
                           post: arg,
-                          aliceWaterStains: imported_54(
+                          aliceWaterStains: imported_55(
                             local?.profileId === local_14.id
                               ? local.balloons
                               : [],

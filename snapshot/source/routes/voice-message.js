@@ -3,9 +3,9 @@ import {
   symbol_047 as imported_2,
   symbol_222 as imported_3,
   symbol_002 as imported_4,
-  symbol_275 as imported_5,
-  symbol_284 as imported_6,
-  symbol_288 as imported_7,
+  symbol_282 as imported_5,
+  symbol_291 as imported_6,
+  symbol_295 as imported_7,
   symbol_048 as imported_8,
 } from "../entry.js";
 import { I as imported_9, a as imported_10 } from "../components/icon-play.js";
@@ -51,7 +51,7 @@ function fn_9c291bbd(arg) {
   }
   return local;
 }
-function fn_a714fa83(arg) {
+function fn_7352d1cb(arg) {
   if (!isFinite(arg) || isNaN(arg)) {
     return "0:00";
   }
@@ -241,14 +241,14 @@ export function fn_fb516f66({ src: arg, duration: arg_2 = 0 }) {
             children: [
               imported_7("span", {
                 className: local_92418e80.time,
-                children: fn_a714fa83(
+                children: fn_7352d1cb(
                   local_16 || local_7 > 0 ? local_7 : local_9,
                 ),
               }),
               (local_16 || local_7 > 0) &&
                 imported_7("span", {
                   className: local_92418e80.duration,
-                  children: ["../site/index.html", fn_a714fa83(local_9)],
+                  children: ["../site/index.html", fn_7352d1cb(local_9)],
                 }),
             ],
           }),

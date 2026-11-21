@@ -1,315 +1,6 @@
 {
-  "routes": [
-    "/legal",
-    "/legal/:slug/history",
-    "/legal/:slug/versions/:version",
-    "/legal/:slug",
-    "/",
-    "/chats/new/:draftUserId",
-    "/chats/:chatId?",
-    "/notifications",
-    "/login",
-    "/register",
-    "/forgot-password",
-    "/reset-password",
-    "/verify-email",
-    "/terms",
-    "/privacy",
-    "/cookies",
-    "/onboarding",
-    "/search",
-    "/shop/:rest*",
-    "/event/alice-ai/:rest*",
-    "/event/halloween/:rest*",
-    "/hashtag/:name",
-    "/external",
-    "/support",
-    "/delete-account",
-    "/child-safety",
-    "/event",
-    "/verification",
-    "/subscription-terms",
-    "/recurring-terms",
-    "/:username/post/:postId",
-    "/@:slug",
-    "*"
-  ],
-  "routeDefinitions": [
-    {
-      "table": "entry.js#1",
-      "priority": 1,
-      "declaredPath": "/legal",
-      "effectivePath": "/legal",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 2,
-      "declaredPath": "/legal/:slug/history",
-      "effectivePath": "/legal/:slug/history",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 3,
-      "declaredPath": "/legal/:slug/versions/:version",
-      "effectivePath": "/legal/:slug/versions/:version",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 4,
-      "declaredPath": "/legal/:slug",
-      "effectivePath": "/legal/:slug",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 5,
-      "declaredPath": "/",
-      "effectivePath": "/",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 6,
-      "declaredPath": "/chats/new/:draftUserId",
-      "effectivePath": "/chats/new/:draftUserId",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 7,
-      "declaredPath": "/chats/:chatId?",
-      "effectivePath": "/chats/:chatId?",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 8,
-      "declaredPath": "/notifications",
-      "effectivePath": "/notifications",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 9,
-      "declaredPath": "/login",
-      "effectivePath": "/login",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 10,
-      "declaredPath": "/register",
-      "effectivePath": "/register",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 11,
-      "declaredPath": "/forgot-password",
-      "effectivePath": "/forgot-password",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 12,
-      "declaredPath": "/reset-password",
-      "effectivePath": "/reset-password",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 13,
-      "declaredPath": "/verify-email",
-      "effectivePath": "/verify-email",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 14,
-      "declaredPath": "/terms",
-      "effectivePath": "/terms",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 15,
-      "declaredPath": "/privacy",
-      "effectivePath": "/privacy",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 16,
-      "declaredPath": "/cookies",
-      "effectivePath": "/cookies",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 17,
-      "declaredPath": "/onboarding",
-      "effectivePath": "/onboarding",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 18,
-      "declaredPath": "/search",
-      "effectivePath": "/search",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 19,
-      "declaredPath": "/shop/:rest*",
-      "effectivePath": "/shop/:rest*",
-      "kind": "route",
-      "constraints": [
-        "rest is a zero-or-more segment splat"
-      ]
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 20,
-      "declaredPath": "/event/alice-ai/:rest*",
-      "effectivePath": "/event/alice-ai/:rest*",
-      "kind": "route",
-      "constraints": [
-        "rest is a zero-or-more segment splat"
-      ]
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 21,
-      "declaredPath": "/event/halloween/:rest*",
-      "effectivePath": "/event/halloween/:rest*",
-      "kind": "route",
-      "constraints": [
-        "rest is a zero-or-more segment splat"
-      ]
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 22,
-      "declaredPath": "/hashtag/:name",
-      "effectivePath": "/hashtag/:name",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 23,
-      "declaredPath": "/external",
-      "effectivePath": "/external",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 24,
-      "declaredPath": "/support",
-      "effectivePath": "/support",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 25,
-      "declaredPath": "/delete-account",
-      "effectivePath": "/delete-account",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 26,
-      "declaredPath": "/child-safety",
-      "effectivePath": "/child-safety",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 27,
-      "declaredPath": "/event",
-      "effectivePath": "/event",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 28,
-      "declaredPath": "/verification",
-      "effectivePath": "/verification",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 29,
-      "declaredPath": "/subscription-terms",
-      "effectivePath": "/subscription-terms",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 30,
-      "declaredPath": "/recurring-terms",
-      "effectivePath": "/recurring-terms",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 31,
-      "declaredPath": "/:username/post/:postId",
-      "effectivePath": "/:username/post/:postId",
-      "kind": "route",
-      "constraints": []
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 32,
-      "declaredPath": "/:slug",
-      "effectivePath": "/@:slug",
-      "kind": "route",
-      "constraints": [
-        "slug starts with \"@\""
-      ]
-    },
-    {
-      "table": "entry.js#1",
-      "priority": 33,
-      "declaredPath": "*",
-      "effectivePath": "*",
-      "kind": "fallback",
-      "constraints": [
-        "matches when no earlier route matched"
-      ]
-    }
-  ],
+  "routes": [],
+  "routeDefinitions": [],
   "endpoints": [
     "/api",
     "/api/",
@@ -423,10 +114,12 @@
     "/v1/subscription/payments/",
     "/v1/subscription/payments/:param",
     "/v1/x",
+    "/v2/checkout",
     "/verification/status",
     "/verification/submit",
     "/verify-otp",
-    "https://693c388031bcee4cd87e917055abf6a2@sentry.xn--d1ah4a.com/2"
+    "https://693c388031bcee4cd87e917055abf6a2@sentry.xn--d1ah4a.com/2",
+    "https://api.nbrb.by/exrates/rates/USD"
   ],
   "webSockets": [],
   "storageKeys": [
@@ -515,7 +208,6 @@
     "📎 Вложение",
     "📎 Вложения (",
     "🔗 Пост",
-    "₽ каждый месяц.",
     "1 голос",
     "1 группа крови",
     "10 цифр после +7.",
@@ -2378,6 +2070,7 @@
     "друга",
     "Другая почта",
     "другие сессии",
+    "Другие способы оплаты",
     "Других активных сессий нет",
     "других сессий",
     "Другое",
@@ -2956,6 +2649,8 @@
     "Загружаем реакции…",
     "Загружаем список чатов...",
     "Загружаем условия…",
+    "Загружаем цену…",
+    "Загружаем цены…",
     "Загружаем число подарков",
     "Загружаем эмодзи",
     "Загруженные файлы и медиа",
@@ -3419,6 +3114,7 @@
     "К аккаунту уже привязана почта.",
     "К последним сообщениям",
     "К списку чатов",
+    "К текущей оплате",
     "К этому аккаунту уже привязан номер телефона.",
     "Кааба",
     "кабан",
@@ -3430,6 +3126,7 @@
     "кадр",
     "каждый месяц",
     "каждый месяц после окончания оплаченного срока. Напомним за 3 дня до окончания.",
+    "каждый месяц.",
     "Каждый подарок прибавляется к счётчику на пине дарителя.",
     "Казахстан",
     "казино",
@@ -5191,6 +4888,7 @@
     "Не удалось загрузить пользователей. Попробуйте ещё раз.",
     "Не удалось загрузить пост",
     "Не удалось загрузить посты",
+    "Не удалось загрузить проверку.",
     "Не удалось загрузить реакции",
     "Не удалось загрузить рюкзак.",
     "Не удалось загрузить способы входа. Попробуйте ещё раз.",
@@ -5219,7 +4917,7 @@
     "Не удалось открыть диалог. Попробуйте ещё раз.",
     "Не удалось открыть диалог. Попробуйте найти пользователя ещё раз",
     "Не удалось открыть окно",
-    "Не удалось открыть оплату для других стран. Повторите проверку.",
+    "Не удалось открыть оплату",
     "Не удалось открыть переписку",
     "Не удалось открыть переписку. Попробуйте снова",
     "Не удалось открыть получателя подарка. Попробуйте ещё раз.",
@@ -5231,6 +4929,7 @@
     "Не удалось открыть часть диалогов. Сообщения ещё не отправлены",
     "Не удалось открыть чаты",
     "Не удалось открыть шторы. Попробуйте ещё раз.",
+    "Не удалось открыть bePaid. Попробуйте ещё раз или выберите другой способ.",
     "Не удалось отменить",
     "Не удалось отметить чат непрочитанным",
     "Не удалось отметить чат прочитанным",
@@ -5268,8 +4967,10 @@
     "Не удалось проверить подписку. Попробуйте ещё раз.",
     "Не удалось проверить предыдущий подарок",
     "Не удалось проверить предыдущую оплату",
+    "Не удалось проверить предыдущую попытку.",
     "Не удалось проверить статус соглашения. Попробуйте ещё раз.",
     "Не удалось проверить условия оплаты. Повторите проверку.",
+    "Не удалось продолжить оплату. Проверьте её статус.",
     "Не удалось продолжить поиск",
     "Не удалось прочитать обновления мессенджера. Попробуйте ещё раз",
     "Не удалось прочитать ответ мессенджера. Попробуйте ещё раз",
@@ -5694,9 +5395,11 @@
     "Описание слишком длинное (макс. 1000 символов)",
     "Опишите подробнее (необязательно)...",
     "Оплата",
-    "Оплата для других стран пока недоступна.",
+    "Оплата не начиналась. Можно вернуться к выбору.",
     "Оплата с телефона",
     "Оплата через",
+    "Оплата через bePaid без автопродления.",
+    "Оплата через bePaid сейчас недоступна.",
     "оплатить",
     "Оплатить",
     "Оплатить в рублях",
@@ -6072,6 +5775,7 @@
     "Перейдите в настройки профиля и измените имя пользователя в соответствующем поле.",
     "Перейти в профиль",
     "Перейти к действующей редакции",
+    "Перейти к оплате",
     "Перейти на",
     "перекидной",
     "перекидной блокнот",
@@ -6369,6 +6073,7 @@
     "подключение",
     "Подключение...",
     "Подключить",
+    "Подключить автопродление за",
     "подкова",
     "подметать",
     "подмигивает",
@@ -7007,7 +6712,6 @@
     "Проверяем подписку…",
     "Проверяем предыдущую оплату…",
     "Проверяем редакцию соглашения",
-    "Проверяем текущий статус автопродления.",
     "Проверяйте адрес сайта перед вводом паролей",
     "провода",
     "проговорился",
@@ -7088,6 +6792,7 @@
     "пуанты",
     "Публикации и комментарии",
     "Публикация на этой стене недоступна",
+    "Публичная оферта",
     "публичный",
     "пудель",
     "пудинг",
@@ -7941,6 +7646,7 @@
     "сменится",
     "Сменить",
     "Сменить пароль",
+    "Сменить способ оплаты",
     "смерть",
     "смерч",
     "смех",
@@ -8333,6 +8039,7 @@
     "сумасшедший",
     "сумка",
     "сумма",
+    "Сумма в долларах ориентировочная.",
     "сумочка",
     "сумчатое",
     "сумчатые",
@@ -8442,6 +8149,7 @@
     "Текст скопирован",
     "Текущая аватарка",
     "Текущий пароль",
+    "Текущий счёт ещё открыт. После его закрытия можно будет выбрать способ оплаты.",
     "телебашня",
     "телевидение",
     "телевизор",
@@ -8868,7 +8576,7 @@
     "Условия использования",
     "Условия оплаты изменились. Проверьте их перед новой попыткой.",
     "Условия оплаты изменились. Проверьте предыдущую попытку перед повторной оплатой.",
-    "Условия платного доступа НУКСТА",
+    "Условия платного доступа ИТД НУКСТА",
     "Условия предыдущей оплаты изменились. Повторно платить не нужно.",
     "условиями использования",
     "условиями подписки",
@@ -10026,6 +9734,7 @@
     "because it matches `ignoreSpans`.",
     "before send for type `",
     "Bio too long",
+    "BYN в месяц.",
     "Can only pin your own posts or posts on your wall",
     "Cannot block yourself",
     "Cannot extract url for event",

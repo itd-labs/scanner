@@ -4,9 +4,9 @@ import {
   symbol_054 as imported_3,
   symbol_036 as imported_4,
   symbol_055 as imported_5,
-  symbol_284 as imported_6,
+  symbol_291 as imported_6,
   symbol_001 as imported_7,
-  symbol_288 as imported_8,
+  symbol_295 as imported_8,
   symbol_072 as imported_9,
   symbol_073 as imported_10,
   symbol_056 as imported_11,
@@ -32,7 +32,7 @@ const local_50ed0b16 = {
   text: local_95ed4c70,
   media: local_65cb46b6,
 };
-export function fn_27ac72d1({ post: arg }) {
+export function fn_598de4ff({ post: arg }) {
   const { openModal: local, closeModal: local_2 } = imported();
   const {
     liked: local_3,

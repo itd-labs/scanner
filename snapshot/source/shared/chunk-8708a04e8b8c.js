@@ -2,15 +2,15 @@ import {
   symbol_012 as imported,
   symbol_222 as imported_2,
   symbol_002 as imported_3,
-  symbol_275 as imported_4,
+  symbol_282 as imported_4,
   symbol_050 as imported_5,
   symbol_051 as imported_6,
-  symbol_288 as imported_7,
+  symbol_295 as imported_7,
   symbol_041 as imported_8,
   symbol_072 as imported_9,
   symbol_083 as imported_10,
   symbol_046 as imported_11,
-  symbol_089 as imported_12,
+  symbol_090 as imported_12,
 } from "../entry.js";
 import { s as imported_13 } from "./search-api.js";
 import { G as imported_14 } from "./chunk-7229b2be5161.js";
@@ -57,7 +57,7 @@ const local_dcea9abb = (arg) => {
 };
 const local_7053fd03 =
   "У пользователя уже есть подписка. Подарить ещё одну нельзя.";
-function fn_2d841615({
+function fn_d2abe72e({
   userId: arg,
   name: arg_2,
   image: arg_3,
@@ -457,4 +457,4 @@ function fn_2d841615({
     document.body,
   );
 }
-export { fn_2d841615 as default };
+export { fn_d2abe72e as default };

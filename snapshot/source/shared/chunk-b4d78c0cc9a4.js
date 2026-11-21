@@ -1,22 +1,22 @@
 import {
-  symbol_288 as imported,
+  symbol_295 as imported,
   symbol_002 as imported_2,
   symbol_222 as imported_3,
-  symbol_284 as imported_4,
+  symbol_291 as imported_4,
   symbol_095 as socialApi,
-  symbol_275 as imported_5,
+  symbol_282 as imported_5,
   symbol_029 as imported_6,
   symbol_084 as imported_7,
   symbol_043 as imported_8,
   symbol_003 as imported_9,
-  bt as imported_10,
-  symbol_001 as imported_11,
-  symbol_089 as profileApi,
-  symbol_045 as imported_12,
-  symbol_151 as imported_13,
-  symbol_087 as imported_14,
+  symbol_105 as imported_10,
+  symbol_088 as imported_11,
+  symbol_001 as imported_12,
+  symbol_090 as profileApi,
+  symbol_045 as imported_13,
+  symbol_106 as imported_14,
   symbol_012 as imported_15,
-  symbol_092 as imported_16,
+  symbol_085 as imported_16,
   symbol_052 as imported_17,
   symbol_074 as imported_18,
   symbol_072 as imported_19,
@@ -24,10 +24,10 @@ import {
   symbol_103 as imported_21,
   symbol_083 as imported_22,
   symbol_068 as imported_23,
-  symbol_152 as UnfollowConfirmModal,
-  symbol_153 as useFollowStatus,
-  symbol_154 as useFollowStatusStore,
-  symbol_155 as useFollowUser,
+  symbol_110 as UnfollowConfirmModal,
+  symbol_107 as useFollowStatus,
+  symbol_108 as useFollowStatusStore,
+  symbol_109 as useFollowUser,
 } from "../entry.js";
 import { I as imported_24 } from "../components/icon-check.js";
 import { I as imported_25 } from "../components/icon-check-circle.js";
@@ -238,7 +238,7 @@ export function fn_cc3b31b4(arg, arg_2) {
     handleToggleFollow: local_18,
   };
 }
-function fn_6270b2f4({ userId: arg, name: arg_2, onOpen: arg_3 }) {
+function fn_057b7ca4({ userId: arg, name: arg_2, onOpen: arg_3 }) {
   const local = imported_7()?.id;
   const [local_2, local_3] = imported_3(false);
   const local_4 = imported_2(true);
@@ -260,7 +260,7 @@ function fn_6270b2f4({ userId: arg, name: arg_2, onOpen: arg_3 }) {
     const local_2 = location.pathname;
     const local_3 = () =>
       local_4.current &&
-      imported_14(local) &&
+      imported_11(local) &&
       imported_15.getState().profile?.id === local &&
       location.pathname === local_2;
     try {
@@ -282,7 +282,7 @@ function fn_6270b2f4({ userId: arg, name: arg_2, onOpen: arg_3 }) {
       }
       if (local_2) {
         arg_3();
-        imported_11(`/chats/${local_2.chat_id}`);
+        imported_12(`/chats/${local_2.chat_id}`);
         return;
       }
       const local_3 = await profileApi.getProfileByUsername(arg, {
@@ -293,21 +293,21 @@ function fn_6270b2f4({ userId: arg, name: arg_2, onOpen: arg_3 }) {
         return;
       }
       if (local_3.isDeleted) {
-        imported_12.error("Этот аккаунт удалён");
+        imported_13.error("Этот аккаунт удалён");
         return;
       }
       local().startDraft({
         id: arg,
         name: local_3.displayName || arg_2,
         username: local_3.username || arg,
-        ...imported_13(local_3.avatar),
+        ...imported_14(local_3.avatar),
         verified: local_3.isVerified || local_3.verified,
       });
       arg_3();
-      imported_11(`/chats/new/${arg}`);
+      imported_12(`/chats/new/${arg}`);
     } catch {
       if (local_3()) {
-        imported_12.error("Не удалось открыть переписку. Попробуйте снова");
+        imported_13.error("Не удалось открыть переписку. Попробуйте снова");
       }
     } finally {
       if (local_3()) {
@@ -384,7 +384,7 @@ export function fn_9cb3a429({ userId: arg, type: arg_2, title: arg_3 }) {
     (arg) => {
       if (arg) {
         local();
-        imported_11(`/@${arg}`);
+        imported_12(`/@${arg}`);
       }
     },
     [local],
@@ -630,7 +630,7 @@ export function fn_9cb3a429({ userId: arg, type: arg_2, title: arg_3 }) {
                           ],
                         }),
                         !local_5 &&
-                          imported(fn_6270b2f4, {
+                          imported(fn_057b7ca4, {
                             userId: arg.userId,
                             name: arg.displayName,
                             onOpen: () => local(),
@@ -677,7 +677,7 @@ const local_74c5ff68 = {
   checkmark: local_555fad26,
   label: local_fe9ec23f,
 };
-function fn_dd45b256({
+function fn_51027f24({
   checked: arg,
   onChange: arg_2,
   label: arg_3,
@@ -752,7 +752,7 @@ const local_846aace2 = {
 };
 const local_4cc8ec46 = 50 * 1024 * 1024;
 const local_865f321e = ["video/mp4", "video/webm", "video/quicktime"];
-export function fn_7c61fb47({ onClose: arg }) {
+export function fn_fd5363f6({ onClose: arg }) {
   const [local, local_2] = imported_3("loading");
   const [local_3, local_4] = imported_3(null);
   const [local_5, local_6] = imported_3(null);
@@ -985,7 +985,7 @@ export function fn_7c61fb47({ onClose: arg }) {
               },
             }),
           }),
-        imported(fn_dd45b256, {
+        imported(fn_51027f24, {
           checked: local_7,
           onChange: local_8,
           disabled: local_9,

@@ -1,13 +1,20 @@
 import {
-  symbol_288 as imported,
-  symbol_020 as imported_2,
-  symbol_074 as imported_3,
-  symbol_222 as imported_4,
-  symbol_002 as imported_5,
-  symbol_275 as imported_6,
-  symbol_139 as imported_7,
-  symbol_149 as imported_8,
-  symbol_150 as imported_9,
+  symbol_295 as imported,
+  symbol_149 as imported_2,
+  symbol_020 as imported_3,
+  symbol_074 as imported_4,
+  symbol_222 as imported_5,
+  symbol_002 as imported_6,
+  symbol_282 as imported_7,
+  symbol_150 as imported_8,
+  symbol_139 as imported_9,
+  bt as imported_10,
+  symbol_151 as imported_11,
+  symbol_152 as imported_12,
+  symbol_153 as imported_13,
+  symbol_154 as imported_14,
+  symbol_155 as imported_15,
+  symbol_156 as imported_16,
 } from "../entry.js";
 const local_49250f21 = "c_modal";
 const local_24243f59 = "c_sub";
@@ -83,11 +90,12 @@ const local_109522b2 = "c_summary";
 const local_840f111f = "c_recipient";
 const local_d236b101 = "c_notice";
 const local_806ef98a = "c_message";
+const local_87ee5215 = "c_legal";
 const local_d37d23af = "c_textButton";
 const local_7aaa5b57 = "c_loading";
 const local_ebdc2467 = "c_expiry";
 const local_a84efeaf = "c_srOnly";
-const local_12b6508a = {
+const local_b083d537 = {
   panel: local_f7bfcf88,
   stage: local_96021100,
   heading: local_82984f3d,
@@ -104,6 +112,7 @@ const local_12b6508a = {
   recipient: local_840f111f,
   notice: local_d236b101,
   message: local_806ef98a,
+  legal: local_87ee5215,
   textButton: local_d37d23af,
   loading: local_7aaa5b57,
   expiry: local_ebdc2467,
@@ -118,12 +127,16 @@ const local_7f58ca46 = (arg) =>
 const local_c9179fb5 = (arg) =>
   `${arg} ${arg === 1 ? "месяц" : arg === 3 ? "месяца" : "месяцев"}`;
 const local_8ba4b2fe = (arg) => Number.isSafeInteger(arg) && arg > 0;
-const local_9b12006c = false;
 function symbol_001(arg) {
   const { step: local, kind: local_2, quote: local_3 } = arg;
-  const local_4 = local === "creating" || local === "resolving";
-  const local_5 = arg.canEditTerms && arg.canStartNewAttempt && !local_4;
-  const local_6 =
+  const local_4 = !!arg.onReturnToPending;
+  const local_5 =
+    arg.stageBePaidAvailable === true ||
+    (local_4 && arg.providerLabel === "bePaid");
+  const local_6 = local === "creating" || local === "resolving";
+  const local_7 =
+    arg.canEditTerms && arg.canStartNewAttempt && !local_6 && !local_4;
+  const local_8 =
     local_3 &&
     arg.offers.some(
       (arg) =>
@@ -131,32 +144,42 @@ function symbol_001(arg) {
         arg.initialAmountMinor === local_3.initialAmountMinor &&
         arg.quoteVersion === local_3.quoteVersion,
     );
-  const local_7 =
+  const local_9 =
     local === "terms" &&
-    local_5 &&
+    local_7 &&
     local_3 &&
     local_3.months === arg.months &&
     local_3.currency === "RUB" &&
     local_8ba4b2fe(local_3.initialAmountMinor) &&
-    local_6;
-  const local_8 =
+    local_8;
+  const local_10 =
     local_2 === "self" && arg.canOfferAutoRenewal && !arg.agreement.enabled;
-  const local_9 =
+  const local_11 =
     local === "routes"
       ? "Способ оплаты"
-      : local === "terms"
+      : local === "terms" || local === "internationalTerms"
         ? "Срок подписки"
         : null;
-  const local_10 = `${symbol_003.subscribeBtn} ${local_12b6508a.primary}`;
-  const local_11 =
+  const local_12 = arg.stageBePaidOffers?.find(
+    (arg) => arg.months === arg.selectedStageMonths,
+  );
+  const local_13 = arg.usdRate;
+  const local_14 = (arg, arg_2) => {
+    if (arg.usdRatePending) {
+      return "Загружаем цену…";
+    }
+    return imported_2(arg, local_13, arg_2);
+  };
+  const local_15 = `${symbol_003.subscribeBtn} ${local_b083d537.primary}`;
+  const local_16 =
     local_3 && local_8ba4b2fe(local_3.initialAmountMinor)
       ? imported("div", {
-          className: local_12b6508a.summary,
+          className: local_b083d537.summary,
           children: [
             local_2 === "gift" &&
               arg.recipientName &&
               imported("div", {
-                className: local_12b6508a.recipient,
+                className: local_b083d537.recipient,
                 children: ["Подарок для ", arg.recipientName],
               }),
             imported("div", {
@@ -165,7 +188,10 @@ function symbol_001(arg) {
                 local_c9179fb5(local_3.months),
                 " · ",
                 imported("strong", {
-                  children: local_7f58ca46(local_3.initialAmountMinor),
+                  children:
+                    local_3.currency === "BYN"
+                      ? local_14(local_3.initialAmountMinor)
+                      : local_7f58ca46(local_3.initialAmountMinor),
                 }),
               ],
             }),
@@ -173,9 +199,9 @@ function symbol_001(arg) {
         })
       : null;
   return imported("section", {
-    className: local_12b6508a.panel,
+    className: local_b083d537.panel,
     "data-purchase-step": local,
-    "aria-busy": local_4 || arg.internationalBusy,
+    "aria-busy": local_6 || arg.internationalBusy,
     tabIndex: -1,
     ref: (arg) => {
       if (!arg) {
@@ -202,7 +228,12 @@ function symbol_001(arg) {
           return;
         }
         const local = arg.closest("[data-purchase-scroll]");
-        if (local && (local === "routes" || local === "terms")) {
+        if (
+          local &&
+          (local === "routes" ||
+            local === "terms" ||
+            local === "internationalTerms")
+        ) {
           local.scrollTo({
             top: local.scrollHeight,
             behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
@@ -220,52 +251,95 @@ function symbol_001(arg) {
     children: imported(
       "div",
       {
-        className: local_12b6508a.stage,
+        className: local_b083d537.stage,
         children: [
-          local_9 &&
+          local_11 &&
             imported("h3", {
-              className: local_12b6508a.heading,
+              className: local_b083d537.heading,
               tabIndex: -1,
               "data-purchase-heading": true,
-              children: local_9,
+              children: local_11,
             }),
           local === "overview" &&
             imported("button", {
               type: "button",
-              className: local_10,
-              disabled: !local_5,
+              className: local_15,
+              disabled: !local_7,
               onClick: () => {
-                if (local_5) {
+                if (local_7) {
                   arg.onBegin();
                 }
               },
               children: local_2 === "gift" ? "Подарить" : "Купить",
             }),
           local === "routes" &&
-            imported(imported_2, {
+            imported(imported_3, {
               children: [
                 imported("button", {
                   type: "button",
-                  className: local_10,
-                  disabled: !local_5 || arg.internationalBusy,
+                  className: local_15,
+                  disabled: !local_7 || arg.internationalBusy,
                   onClick: () => {
-                    if (local_5 && !arg.internationalBusy) {
+                    if (local_7 && !arg.internationalBusy) {
                       arg.onRubles();
                     }
                   },
                   children: "Оплатить в рублях",
                 }),
-                local_9b12006c,
+                local_5 &&
+                  imported("button", {
+                    type: "button",
+                    className: local_b083d537.secondary,
+                    disabled: !local_5 || !local_7 || arg.internationalBusy,
+                    onClick: () => {
+                      if (local_5 && local_7 && !arg.internationalBusy) {
+                        arg.onInternational();
+                      }
+                    },
+                    children: arg.internationalBusy
+                      ? imported("span", {
+                          className: local_b083d537.loading,
+                          children: [
+                            imported(imported_4, {
+                              size: "xs",
+                            }),
+                            " Открываем оплату…",
+                          ],
+                        })
+                      : "Другие способы оплаты",
+                  }),
+                local_4 &&
+                  imported(imported_3, {
+                    children: [
+                      imported("p", {
+                        className: local_b083d537.notice,
+                        children:
+                          "Текущий счёт ещё открыт. После его закрытия можно будет выбрать способ оплаты.",
+                      }),
+                      imported("button", {
+                        type: "button",
+                        className: local_b083d537.secondary,
+                        onClick: arg.onCheckStatus,
+                        children: "Проверить статус",
+                      }),
+                      imported("button", {
+                        type: "button",
+                        className: local_b083d537.secondary,
+                        onClick: arg.onReturnToPending,
+                        children: "К текущей оплате",
+                      }),
+                    ],
+                  }),
                 arg.internationalUnavailable &&
                   imported("div", {
-                    className: local_12b6508a.message,
+                    className: local_b083d537.message,
                     role: "alert",
                     children: [
                       arg.internationalUnavailable,
                       arg.onInternationalPreview &&
                         imported("button", {
                           type: "button",
-                          className: local_12b6508a.textButton,
+                          className: local_b083d537.textButton,
                           onClick: arg.onInternationalPreview,
                           children: "Информация об оплате",
                         }),
@@ -273,22 +347,151 @@ function symbol_001(arg) {
                   }),
               ],
             }),
+          local === "internationalTerms" &&
+            imported(imported_3, {
+              children: [
+                arg.usdRatePending
+                  ? imported("p", {
+                      className: local_b083d537.loading,
+                      role: "status",
+                      children: [
+                        imported(imported_4, {
+                          size: "xs",
+                        }),
+                        "Загружаем цены…",
+                      ],
+                    })
+                  : imported("fieldset", {
+                      className: local_b083d537.terms,
+                      disabled: !local_7 || arg.internationalBusy,
+                      children: [
+                        imported("legend", {
+                          className: local_b083d537.srOnly,
+                          children: "Выберите срок подписки",
+                        }),
+                        arg.stageBePaidOffers?.map((arg) =>
+                          imported(
+                            "label",
+                            {
+                              className: `${local_b083d537.term} ${arg.selectedStageMonths === arg.months ? local_b083d537.selected : ""}`,
+                              children: [
+                                imported("input", {
+                                  type: "radio",
+                                  name: `nuksta-${local_2}-bepaid-months`,
+                                  checked:
+                                    arg.selectedStageMonths === arg.months,
+                                  onChange: () =>
+                                    arg.onStageMonthsChange?.(arg.months),
+                                }),
+                                imported("span", {
+                                  children: local_c9179fb5(arg.months),
+                                }),
+                                imported("span", {
+                                  className: local_b083d537.amount,
+                                  children: local_14(
+                                    arg.amountMinor,
+                                    arg.usdAmountMinor,
+                                  ),
+                                }),
+                              ],
+                            },
+                            arg.months,
+                          ),
+                        ),
+                      ],
+                    }),
+                local_2 === "self" &&
+                arg.internationalRenewal &&
+                !arg.usdRatePending
+                  ? imported("label", {
+                      className: local_b083d537.consent,
+                      children: [
+                        imported("input", {
+                          type: "checkbox",
+                          checked: arg.internationalAuto === true,
+                          disabled: !local_7 || arg.internationalBusy,
+                          onChange: (arg) =>
+                            arg.onInternationalAutoChange?.(
+                              arg.currentTarget.checked,
+                            ),
+                        }),
+                        imported("span", {
+                          children: [
+                            "Подключить автопродление за ",
+                            new Intl.NumberFormat("ru-RU", {
+                              minimumFractionDigits: 2,
+                            }).format(
+                              arg.internationalRenewal.amountMinor / 100,
+                            ),
+                            " BYN в месяц.",
+                            "./use-purchase-dialog.js",
+                            imported("a", {
+                              href: "https://xn--d1ah4a.xn--90ais/legal/recurring/",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                              children: "Условия автопродления",
+                            }),
+                          ],
+                        }),
+                      ],
+                    })
+                  : imported("p", {
+                      className: local_b083d537.notice,
+                      children: "Оплата через bePaid без автопродления.",
+                    }),
+                local_13 &&
+                  imported("p", {
+                    className: local_b083d537.notice,
+                    children: "Сумма в долларах ориентировочная.",
+                  }),
+                imported("p", {
+                  className: local_b083d537.legal,
+                  children: imported("a", {
+                    href: "https://xn--d1ah4a.xn--90ais/legal/offer/",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: "Публичная оферта",
+                  }),
+                }),
+                imported("button", {
+                  type: "button",
+                  className: local_15,
+                  disabled:
+                    !local_12 ||
+                    !local_7 ||
+                    arg.internationalBusy ||
+                    arg.usdRatePending,
+                  onClick: arg.onStagePay,
+                  children: arg.internationalBusy
+                    ? imported("span", {
+                        className: local_b083d537.loading,
+                        children: [
+                          imported(imported_4, {
+                            size: "xs",
+                          }),
+                          " Открываем оплату…",
+                        ],
+                      })
+                    : "Перейти к оплате",
+                }),
+              ],
+            }),
           local === "terms" &&
-            imported(imported_2, {
+            imported(imported_3, {
               children: [
                 imported("fieldset", {
-                  className: local_12b6508a.terms,
-                  disabled: !local_5,
+                  className: local_b083d537.terms,
+                  disabled: !local_7,
                   children: [
                     imported("legend", {
-                      className: local_12b6508a.srOnly,
+                      className: local_b083d537.srOnly,
                       children: "Выберите срок подписки",
                     }),
                     arg.offers.map((arg) =>
                       imported(
                         "label",
                         {
-                          className: `${local_12b6508a.term} ${arg.months === arg.months ? local_12b6508a.selected : ""}`,
+                          className: `${local_b083d537.term} ${arg.months === arg.months ? local_b083d537.selected : ""}`,
                           children: [
                             imported("input", {
                               type: "radio",
@@ -296,7 +499,7 @@ function symbol_001(arg) {
                               value: arg.months,
                               checked: arg.months === arg.months,
                               onChange: () => {
-                                if (local_5) {
+                                if (local_7) {
                                   arg.onMonthsChange(arg.months);
                                 }
                               },
@@ -305,7 +508,7 @@ function symbol_001(arg) {
                               children: local_c9179fb5(arg.months),
                             }),
                             imported("span", {
-                              className: local_12b6508a.amount,
+                              className: local_b083d537.amount,
                               children: local_7f58ca46(arg.initialAmountMinor),
                             }),
                           ],
@@ -315,30 +518,30 @@ function symbol_001(arg) {
                     ),
                   ],
                 }),
-                local_11,
+                local_16,
                 arg.methodSelector,
                 local_2 === "gift"
                   ? imported("p", {
-                      className: local_12b6508a.notice,
+                      className: local_b083d537.notice,
                       children:
                         "Это разовый подарок. Автопродление не подключается",
                     })
                   : arg.agreement.enabled
                     ? imported("p", {
-                        className: local_12b6508a.notice,
+                        className: local_b083d537.notice,
                         children:
                           arg.agreement.summary || "Автопродление подключено",
                       })
-                    : local_8
+                    : local_10
                       ? imported("label", {
-                          className: local_12b6508a.consent,
+                          className: local_b083d537.consent,
                           children: [
                             imported("input", {
                               type: "checkbox",
                               checked: arg.newAutoConsent,
-                              disabled: !local_5,
+                              disabled: !local_7,
                               onChange: (arg) => {
-                                if (local_5) {
+                                if (local_7) {
                                   arg.onNewAutoConsentChange(
                                     arg.currentTarget.checked,
                                   );
@@ -362,15 +565,15 @@ function symbol_001(arg) {
                           ],
                         })
                       : imported("p", {
-                          className: local_12b6508a.notice,
+                          className: local_b083d537.notice,
                           children: "Новое автопродление не подключается",
                         }),
                 local_2 === "self" &&
-                  local_8 &&
+                  local_10 &&
                   arg.newAutoConsent &&
                   local_3 &&
                   imported("p", {
-                    className: local_12b6508a.notice,
+                    className: local_b083d537.notice,
                     children: [
                       "Далее — ",
                       local_7f58ca46(local_3.renewalAmountMinor),
@@ -378,20 +581,20 @@ function symbol_001(arg) {
                     ],
                   }),
                 imported("p", {
-                  className: local_12b6508a.notice,
+                  className: local_b083d537.legal,
                   children: imported("a", {
                     href: "/subscription-terms",
                     target: "_blank",
                     rel: "noopener noreferrer",
-                    children: "Условия платного доступа НУКСТА",
+                    children: "Условия платного доступа ИТД НУКСТА",
                   }),
                 }),
                 imported("button", {
                   type: "button",
-                  className: local_10,
-                  disabled: !local_7,
+                  className: local_15,
+                  disabled: !local_9,
                   onClick: () => {
-                    if (local_7) {
+                    if (local_9) {
                       arg.onPay();
                     }
                   },
@@ -403,24 +606,24 @@ function symbol_001(arg) {
             }),
           local === "resolving" &&
             imported("p", {
-              className: local_12b6508a.loading,
+              className: local_b083d537.loading,
               role: "status",
               children: [
-                imported(imported_3, {
+                imported(imported_4, {
                   size: "xs",
                 }),
                 "Проверяем предыдущую оплату…",
               ],
             }),
           local === "creating" &&
-            imported(imported_2, {
+            imported(imported_3, {
               children: [
-                local_11,
+                local_16,
                 imported("p", {
-                  className: local_12b6508a.loading,
+                  className: local_b083d537.loading,
                   role: "status",
                   children: [
-                    imported(imported_3, {
+                    imported(imported_4, {
                       size: "xs",
                     }),
                     local_2 === "gift"
@@ -431,98 +634,126 @@ function symbol_001(arg) {
               ],
             }),
           local === "pending" &&
-            imported(imported_2, {
+            imported(imported_3, {
               children: [
-                local_11,
+                local_16,
                 arg.providerLabel &&
                   imported("p", {
-                    className: local_12b6508a.notice,
+                    className: local_b083d537.notice,
                     children: ["Оплата через ", arg.providerLabel],
                   }),
                 arg.pendingSummary &&
                   imported("p", {
-                    className: local_12b6508a.notice,
+                    className: local_b083d537.notice,
                     children: arg.pendingSummary,
                   }),
                 imported("p", {
-                  className: local_12b6508a.notice,
+                  className: local_b083d537.notice,
                   role: "status",
                   children: "Ожидаем подтверждение оплаты",
                 }),
                 arg.canResume === true &&
                   imported("button", {
                     type: "button",
-                    className: local_10,
+                    className: local_15,
+                    disabled: arg.internationalBusy,
                     onClick: arg.onResume,
                     children: "Продолжить оплату",
                   }),
                 imported("button", {
                   type: "button",
-                  className: local_12b6508a.secondary,
+                  className: local_b083d537.secondary,
                   onClick: arg.onCheckStatus,
                   children: "Проверить статус",
                 }),
                 arg.canReselect &&
                   imported("button", {
                     type: "button",
-                    className: local_12b6508a.reselect,
+                    className: local_b083d537.reselect,
                     onClick: arg.onReselect,
                     children: "Вернуться к выбору",
                   }),
+                arg.canSwitchStagePayment &&
+                  imported("button", {
+                    type: "button",
+                    className: local_b083d537.reselect,
+                    onClick: arg.onSwitchStagePayment,
+                    children: "Сменить способ оплаты",
+                  }),
                 imported("p", {
-                  className: local_12b6508a.notice,
+                  className: local_b083d537.notice,
                   children:
                     "Закрытие окна не отменяет платёж. Повторно оплачивать не нужно.",
                 }),
               ],
             }),
           local === "reviewRequired" &&
-            imported(imported_2, {
+            imported(imported_3, {
               children: [
-                local_11,
-                imported("p", {
-                  className: local_12b6508a.message,
-                  role: "alert",
-                  children:
-                    "Статус оплаты нужно проверить в поддержке. Повторно оплачивать не нужно.",
-                }),
+                local_16,
+                arg.canRestartStageBePaid
+                  ? imported(imported_3, {
+                      children: [
+                        imported("p", {
+                          className: local_b083d537.notice,
+                          role: "status",
+                          children:
+                            "Оплата не начиналась. Можно вернуться к выбору.",
+                        }),
+                        imported("button", {
+                          type: "button",
+                          className: local_15,
+                          onClick: arg.onRestartStageBePaid,
+                          children: "Начать заново",
+                        }),
+                      ],
+                    })
+                  : imported("p", {
+                      className: local_b083d537.message,
+                      role: "alert",
+                      children:
+                        "Статус оплаты нужно проверить в поддержке. Повторно оплачивать не нужно.",
+                    }),
               ],
             }),
           local === "active" &&
             imported("p", {
-              className: local_12b6508a.notice,
+              className: local_b083d537.notice,
               role: "status",
               children: [
                 "Подписка активна",
                 arg.actualExpiryLabel &&
                   imported("span", {
-                    className: local_12b6508a.expiry,
+                    className: local_b083d537.expiry,
                     children: ["Действует до ", arg.actualExpiryLabel],
                   }),
               ],
             }),
           arg.error &&
             imported("div", {
-              className: local_12b6508a.message,
+              className: local_b083d537.message,
               role: "alert",
               children: [
                 arg.error,
                 (local === "resolving" || local === "terms") &&
                   imported("button", {
                     type: "button",
-                    className: local_12b6508a.textButton,
+                    className: local_b083d537.textButton,
                     onClick: arg.onRetryRead,
                     children: "Повторить проверку",
                   }),
               ],
             }),
-          (local === "routes" || local === "terms") &&
+          !local_4 &&
+            (local === "routes" ||
+              local === "terms" ||
+              local === "internationalTerms") &&
             imported("button", {
               type: "button",
-              className: local_12b6508a.back,
-              disabled: arg.internationalBusy || !local_5,
+              className: local_b083d537.back,
+              disabled: arg.internationalBusy || !local_7,
               onClick: () => {
-                if (local_5 && !arg.internationalBusy) {
+                if (local_7 && !arg.internationalBusy) {
                   arg.onBack();
                 }
               },
@@ -535,9 +766,9 @@ function symbol_001(arg) {
   });
 }
 const local_a1e12a9e = new Map();
-const local_b3e5145e = (arg, arg_2) => `itd:gift-attempt:${arg}:${arg_2}`;
+const local_1054c37d = (arg, arg_2) => `itd:gift-attempt:${arg}:${arg_2}`;
 function fn_a4652e59(arg, arg_2) {
-  const local = local_b3e5145e(arg, arg_2);
+  const local = local_1054c37d(arg, arg_2);
   let local_2 = local_a1e12a9e.get(local);
   try {
     local_2 = sessionStorage.getItem(local) ?? local_2;
@@ -552,7 +783,7 @@ function fn_a4652e59(arg, arg_2) {
   return local_2;
 }
 function fn_f59e472a(arg, arg_2) {
-  const local = local_b3e5145e(arg, arg_2);
+  const local = local_1054c37d(arg, arg_2);
   local_a1e12a9e.delete(local);
   try {
     sessionStorage.removeItem(local);
@@ -580,19 +811,28 @@ function fn_451f0732(arg) {
     sessionStorage.removeItem(`itd:self-attempt:${arg}`);
   } catch {}
 }
-const local_71fa640d = (arg) => ({
-  scope: arg,
-  step: "resolving",
-  months: 1,
-  auto: false,
-  state: null,
-  attempt: null,
-  error: null,
-  internationalBusy: false,
-  unavailable: null,
-  preview: null,
-  agreementFresh: false,
-});
+const local_a4011b04 = (arg) => {
+  const local = imported_12();
+  return {
+    scope: arg,
+    step: "resolving",
+    months: 1,
+    auto: false,
+    state: null,
+    attempt: null,
+    error: null,
+    internationalBusy: false,
+    unavailable: null,
+    preview: null,
+    usdRate: local,
+    usdRatePending: !local,
+    stageBePaidAvailable: false,
+    stageBePaidOffers: [],
+    internationalAuto: false,
+    selectedStageMonths: null,
+    stageSwitchRequested: false,
+  };
+};
 const local_92fb4f6d = [
   "months",
   "initialAmountMinor",
@@ -646,34 +886,37 @@ const local_b60cae7c = (arg) => {
 };
 function symbol_004(arg) {
   const local = `${arg.open}:${arg.eligible}:${arg.ownerId}:${arg.kind}:${arg.recipientId}:${arg.scopeKey}`;
-  const [local_2, local_3] = imported_4(local_71fa640d(local));
-  const local_4 = local_2.scope === local ? local_2 : local_71fa640d(local);
-  const local_5 = imported_5(arg);
+  const [local_2, local_3] = imported_5(() => local_a4011b04(local));
+  const local_4 = local_2.scope === local ? local_2 : local_a4011b04(local);
+  const local_5 = imported_6(arg);
   local_5.current = arg;
-  const local_6 = imported_5(true);
-  const local_7 = imported_5(false);
-  const local_8 = imported_5(0);
-  const local_9 = imported_5(0);
-  const local_10 = imported_5(false);
-  const local_11 = imported_5(local_4);
+  const local_6 = imported_6(true);
+  const local_7 = imported_6(false);
+  const local_8 = imported_6(0);
+  const local_9 = imported_6(0);
+  const local_10 = imported_6(false);
+  const local_11 = imported_6(local_4);
   local_11.current = local_4;
-  const local_12 = imported_5(null);
-  const local_13 = imported_5(0);
-  const local_14 = (arg) => {
+  const local_12 = imported_6(null);
+  const local_13 = imported_6(0);
+  const local_14 = imported_6(null);
+  const local_15 = (arg) => {
     local_11.current = {
       ...local_11.current,
       ...arg,
     };
     local_3(local_11.current);
   };
-  const local_15 = () => {
+  const local_16 = () => {
     local_13.current++;
     if (local_12.current !== null) {
       clearInterval(local_12.current);
     }
     local_12.current = null;
+    local_14.current?.cleanup();
+    local_14.current = null;
   };
-  const local_16 = () => {
+  const local_17 = () => {
     const local = local_5.current;
     const local_2 = local_8.current;
     const local_3 = local.captureCurrent();
@@ -689,9 +932,9 @@ function symbol_004(arg) {
       local_5.current.kind === local.kind &&
       local_3();
   };
-  const local_17 = () =>
-    imported_9(local_5.current.kind, local_5.current.recipientId);
-  const local_18 = () => {
+  const local_18 = () =>
+    imported_13(local_5.current.kind, local_5.current.recipientId);
+  const local_19 = () => {
     const local = local_5.current;
     if (!local.ownerId) {
       throw new Error("Требуется авторизация");
@@ -701,20 +944,71 @@ function symbol_004(arg) {
     }
     return fn_da45f5b9(local.ownerId);
   };
-  const local_19 = () => {
+  const local_20 = () => {
     const local = local_5.current;
     local.ownerId &&
       (local.kind === "gift"
         ? fn_f59e472a(local.ownerId, local.recipientId)
         : fn_451f0732(local.ownerId));
   };
-  const local_20 = () => {
-    local_15();
-    local_19();
+  const local_21 = () => {
+    local_16();
+    local_20();
     local_7.current = true;
     local_5.current.onSucceeded();
   };
-  const local_21 = () => {
+  const local_22 = (arg) =>
+    arg?.provider === "bepaid" &&
+    typeof window !== "undefined" &&
+    imported_8(window.location.origin);
+  const local_23 = (arg) => {
+    const {
+      ownerId: local,
+      kind: local_2,
+      recipientId: local_3,
+      recipientName: local_4,
+      recipientUsername: local_5,
+    } = local_5.current;
+    imported_16(
+      arg,
+      local
+        ? local_2 === "self"
+          ? {
+              ownerId: local,
+              kind: local_2,
+            }
+          : local_3 && local_4 !== null
+            ? {
+                ownerId: local,
+                kind: local_2,
+                recipient: {
+                  id: local_3,
+                  name: local_4,
+                  username: local_5,
+                },
+              }
+            : null
+        : null,
+    );
+  };
+  const local_24 = (arg) =>
+    !!arg &&
+    typeof window !== "undefined" &&
+    imported_8(window.location.origin);
+  const local_25 = async () => {
+    const local = local_17();
+    local_20();
+    local_15({
+      stageSwitchRequested: false,
+    });
+    await fn();
+    if (local() && local_11.current.step === "overview") {
+      local_15({
+        step: "routes",
+      });
+    }
+  };
+  const local_26 = () => {
     const local = local_11.current.state;
     return (
       !local_10.current &&
@@ -732,145 +1026,175 @@ function symbol_004(arg) {
       ].includes(local_11.current.step)
     );
   };
-  const local_22 = (arg) => {
-    local_14({
+  const local_27 = (arg) => {
+    local_15({
       attempt: arg,
       error: null,
     });
     if (arg.paid && arg.status === "succeeded") {
-      local_20();
+      local_21();
       return;
     }
     if (arg.status === "failed" || arg.status === "review_required") {
-      local_15();
-      local_14({
+      local_16();
+      local_15({
         step: "reviewRequired",
       });
       return;
     }
     if (arg.status === "canceled") {
-      local_15();
-      fn(true);
+      local_16();
+      if (local_24(arg.quote)) {
+        local_25();
+      } else {
+        fn(true);
+      }
       return;
     }
-    local_14({
+    local_15({
       step: "pending",
     });
   };
-  const local_23 = (arg) => {
-    local_15();
+  const local_28 = (arg) => {
+    local_16();
     const local = local_13.current;
-    const local_2 = local_16();
-    const local_3 = local_17();
+    const local_2 = local_17();
+    const local_3 = local_18();
     const local_4 = Date.now() + 8 * 60000;
-    const local_5 = local_18();
+    const local_5 = local_19();
     const local_6 =
       local_11.current.attempt?.quote ?? local_11.current.state?.quote;
-    let local_7 = false;
-    const local_8 = async () => {
-      if (!(!local_2() || local !== local_13.current)) {
-        if (Date.now() >= local_4) {
-          local_15();
-          local_14({
+    const local_7 = local_6?.provider === "yookassa" && local_24(local_6);
+    let local_8 = false;
+    let local_9 = -Infinity;
+    const local_10 = async (arg = false) => {
+      if (!local_2() || local !== local_13.current) {
+        return;
+      }
+      const local = Date.now();
+      if (local >= local_4) {
+        if (!local_7) {
+          local_16();
+          local_15({
             error:
               "Подтверждение задерживается. Проверьте статус позже; повторно платить не нужно.",
           });
           return;
         }
-        if (!local_7) {
-          local_7 = true;
-          try {
-            const local =
-              local_3.kind === "gift"
-                ? await imported_7.getGiftCheckout(arg, local_3.recipientUserId)
-                : await imported_7.getCheckoutPayment(
-                    arg,
-                    local_11.current.state?.agreement,
-                  );
-            if (!local_2() || local !== local_13.current) {
-              return;
-            }
-            if (!local_882224b7(local_6, local.quote)) {
-              local_15();
-              local_14({
-                step: "reviewRequired",
-                error:
-                  "Условия предыдущей оплаты изменились. Повторно платить не нужно.",
-              });
-              return;
-            }
-            local_22(local);
-            if (
-              !local_2() ||
-              local !== local_13.current ||
-              local_11.current.step !== "pending"
-            ) {
-              return;
-            }
-            local_14({
-              agreementFresh: false,
-            });
-            const local_2 = await imported_7.getCheckoutState(local_3, local_5);
-            if (!local_2() || local !== local_13.current) {
-              return;
-            }
-            if (local_2.state === "succeeded") {
-              local_20();
-              return;
-            }
-            if (
-              ["pending", "processing"].includes(local_2.state) &&
-              local_2.attemptId === arg &&
-              local_882224b7(local_6, local_2.quote)
-            ) {
-              local_14({
-                state: local_2,
-                agreementFresh: true,
-                attempt: {
-                  ...local,
-                  confirmationUrl: local_2.confirmationUrl,
-                },
-                error: null,
-              });
-            } else if (
-              local_2.state === "canceled" &&
-              local_2.canEditTerms &&
-              local_2.canStartNewAttempt
-            ) {
-              local_15();
-              local_19();
-              local_14({
-                state: local_2,
-                agreementFresh: true,
-                attempt: null,
-                step: "terms",
-              });
-            } else {
-              local_15();
-              local_14({
-                state: local_2,
-                agreementFresh: true,
-                step: "reviewRequired",
-              });
-            }
-          } catch {
-            if (local_2() && local === local_13.current) {
-              local_14({
-                error: local_f485d0a6,
-              });
-            }
-          } finally {
-            local_7 = false;
+        if (!arg && local - local_9 < 30000) {
+          return;
+        }
+      }
+      if (
+        !(local_7 && typeof document !== "undefined" && document.hidden) &&
+        !local_8
+      ) {
+        local_8 = true;
+        local_9 = local;
+        try {
+          const local =
+            local_3.kind === "gift"
+              ? await imported_9.getGiftCheckout(arg, local_3.recipientUserId)
+              : await imported_9.getCheckoutPayment(
+                  arg,
+                  local_11.current.state?.agreement,
+                );
+          if (!local_2() || local !== local_13.current) {
+            return;
           }
+          if (!local_882224b7(local_6, local.quote)) {
+            local_16();
+            local_15({
+              step: "reviewRequired",
+              error:
+                "Условия предыдущей оплаты изменились. Повторно платить не нужно.",
+            });
+            return;
+          }
+          local_27(local);
+          if (
+            !local_2() ||
+            local !== local_13.current ||
+            local_11.current.step !== "pending"
+          ) {
+            return;
+          }
+          const local_2 = await imported_9.getCheckoutState(local_3, local_5);
+          if (!local_2() || local !== local_13.current) {
+            return;
+          }
+          if (local_2.state === "succeeded") {
+            local_21();
+            return;
+          }
+          if (
+            ["pending", "processing"].includes(local_2.state) &&
+            local_2.attemptId === arg &&
+            local_882224b7(local_6, local_2.quote)
+          ) {
+            local_15({
+              state: local_2,
+              attempt: {
+                ...local,
+                confirmationUrl: local_2.confirmationUrl,
+              },
+              error: null,
+            });
+          } else if (
+            local_2.state === "canceled" &&
+            local_2.canEditTerms &&
+            local_2.canStartNewAttempt
+          ) {
+            local_16();
+            local_20();
+            local_15({
+              state: local_2,
+              attempt: null,
+              stageSwitchRequested: false,
+              step: local_24(local_6) ? "routes" : "terms",
+            });
+          } else {
+            local_16();
+            local_15({
+              state: local_2,
+              step: "reviewRequired",
+            });
+          }
+        } catch {
+          if (local_2() && local === local_13.current) {
+            local_15({
+              error: local_f485d0a6,
+            });
+          }
+        } finally {
+          local_8 = false;
         }
       }
     };
+    if (local_7) {
+      const local = () => {
+        local_10(true);
+      };
+      window.addEventListener?.("focus", local);
+      if (typeof document !== "undefined") {
+        document.addEventListener("visibilitychange", local);
+      }
+      local_14.current = {
+        refresh: local,
+        cleanup: () => {
+          window.removeEventListener?.("focus", local);
+          if (typeof document !== "undefined") {
+            document.removeEventListener("visibilitychange", local);
+          }
+        },
+      };
+    }
     local_12.current = setInterval(() => {
-      local_8();
+      local_10();
     }, 2000);
-    local_8();
+    local_10();
   };
-  async function fn(arg = false, arg_2 = null) {
+  async function fn(arg = false, arg_2 = null, arg_3 = false) {
     if (
       !local_5.current.open ||
       !local_5.current.eligible ||
@@ -880,15 +1204,15 @@ function symbol_004(arg) {
     ) {
       return;
     }
-    const local = local_16();
+    const local = local_17();
     const local_2 = ++local_9.current;
-    const local_3 = local_17();
-    local_14({
+    const local_3 = local_18();
+    local_15({
       step: "resolving",
       error: null,
     });
     try {
-      const local = await imported_7.getCheckoutState(local_3, local_18());
+      const local = await imported_9.getCheckoutState(local_3, local_19());
       if (!local() || local_2 !== local_9.current) {
         return;
       }
@@ -896,22 +1220,26 @@ function symbol_004(arg) {
       const local_3 = local.offers.some((arg) => arg.months === local_2)
         ? local_2
         : (local.offers[0]?.months ?? local_2);
-      local_14({
+      local_15({
         state: local,
         months: local_3,
         attempt: null,
         error: arg_2,
-        agreementFresh: true,
       });
       if (local.state === "succeeded") {
-        local_20();
+        local_21();
         return;
       }
       if (local.state === "pending" || local.state === "processing") {
-        local_14({
+        local_15({
           step: "pending",
+          stageSwitchRequested:
+            arg_3 &&
+            (local_22(local.quote) ||
+              (typeof window !== "undefined" &&
+                window.location.origin === "https://stage.xn--d1ah4a.com")),
         });
-        local_23(local.attemptId);
+        local_28(local.attemptId);
         return;
       }
       if (
@@ -919,42 +1247,44 @@ function symbol_004(arg) {
         !local.canEditTerms ||
         !local.canStartNewAttempt
       ) {
-        local_14({
+        local_15({
           step: "reviewRequired",
         });
         return;
       }
       if (arg || local.state === "canceled" || local.state === "failed") {
-        local_19();
+        local_20();
       }
-      local_14({
-        step: arg ? "terms" : "overview",
+      const local_4 =
+        arg_3 && local.state === "canceled" && local_24(local.quote);
+      local_15({
+        step: local_4 ? "routes" : arg ? "terms" : "overview",
       });
     } catch {
       if (local() && local_2 === local_9.current) {
-        local_14({
+        local_15({
           step: "resolving",
           error: local_f485d0a6,
         });
       }
     }
   }
-  imported_6(() => {
+  imported_7(() => {
     local_6.current = true;
     local_7.current = false;
     local_8.current++;
     local_9.current++;
     local_10.current = false;
-    local_15();
-    local_14(local_71fa640d(local));
+    local_16();
+    local_15(local_a4011b04(local));
     if (arg.open && arg.eligible && arg.ownerId) {
-      fn();
+      fn(false, null, !arg.preferCurrentPayment);
     }
     return () => {
       local_8.current++;
       local_9.current++;
       local_7.current = true;
-      local_15();
+      local_16();
     };
   }, [
     arg.open,
@@ -963,16 +1293,105 @@ function symbol_004(arg) {
     arg.recipientId,
     arg.kind,
     arg.scopeKey,
+    arg.preferCurrentPayment,
   ]);
-  imported_6(
+  imported_7(
     () => () => {
       local_6.current = false;
       local_7.current = true;
-      local_15();
+      local_16();
     },
     [],
   );
-  const local_24 = () => {
+  imported_7(() => {
+    if (
+      !arg.open ||
+      !arg.eligible ||
+      !arg.ownerId ||
+      typeof window === "undefined" ||
+      !imported_8(window.location.origin)
+    ) {
+      return;
+    }
+    let local = false;
+    let local_2;
+    const local_3 = arg.captureCurrent();
+    const local_4 = async () => {
+      try {
+        const {
+          offers: local,
+          usdRate: local_2,
+          renewal: local_3,
+        } = await imported_9.getStageBePaidOffers(arg.kind);
+        if (local || local_7.current || !local_3()) {
+          return;
+        }
+        const local_4 = local_11.current.selectedStageMonths;
+        const local_5 = local_11.current.internationalRenewal;
+        const local_6 =
+          !!local_3 &&
+          local_3.amountMinor === local_5?.amountMinor &&
+          local_3.consentVersion === local_5?.consentVersion;
+        local_15({
+          stageBePaidAvailable: local.length > 0,
+          stageBePaidOffers: local,
+          usdRate: local_2,
+          usdRatePending: false,
+          internationalRenewal: local_3,
+          internationalAuto: local_6 && local_11.current.internationalAuto,
+          selectedStageMonths: local.some((arg) => arg.months === local_4)
+            ? local_4
+            : (local[0]?.months ?? null),
+        });
+        const local_7 = local_2
+          ? Math.max(100, Date.parse(local_2.validUntil) - Date.now() + 50)
+          : imported_10;
+        local_2 = setTimeout(() => {
+          local_4();
+        }, local_7);
+      } catch {
+        if (!local && !local_7.current && local_3()) {
+          local_15({
+            usdRatePending: false,
+          });
+          local_2 = setTimeout(() => {
+            local_4();
+          }, imported_10);
+        }
+      }
+    };
+    local_4();
+    return () => {
+      local = true;
+      clearTimeout(local_2);
+    };
+  }, [local]);
+  imported_7(() => {
+    if (
+      !arg.open ||
+      typeof window === "undefined" ||
+      typeof window.addEventListener !== "function" ||
+      !imported_8(window.location.origin)
+    ) {
+      return;
+    }
+    const local = (arg) => {
+      if (!(!arg.persisted || !local_5.current.open || local_7.current)) {
+        imported_11();
+        local_8.current++;
+        local_9.current++;
+        local_16();
+        local_10.current = false;
+        local_15({
+          internationalBusy: false,
+        });
+        fn(false, null, true);
+      }
+    };
+    window.addEventListener("pageshow", local);
+    return () => window.removeEventListener("pageshow", local);
+  }, [local]);
+  const local_29 = () => {
     try {
       const local = window.open("", "_blank");
       if (local) {
@@ -983,7 +1402,7 @@ function symbol_004(arg) {
       return null;
     }
   };
-  const local_25 = (arg, arg_2 = null) => {
+  const local_30 = (arg, arg_2 = null) => {
     if (arg_2 && !arg_2.closed) {
       try {
         arg_2.location.href = arg;
@@ -994,48 +1413,48 @@ function symbol_004(arg) {
     }
     window.location.href = arg;
   };
-  const local_26 = async () => {
-    if (!local_21() || local_11.current.step !== "terms") {
+  const local_31 = async () => {
+    if (!local_26() || local_11.current.step !== "terms") {
       return;
     }
-    const local = local_16();
-    const local_2 = local_17();
+    const local = local_17();
+    const local_2 = local_18();
     const local_3 = local_11.current.state;
     let local_4;
     try {
-      local_4 = imported_8(
+      local_4 = imported_14(
         local_3,
         local_2,
-        local_18(),
+        local_19(),
         local_11.current.months,
         local_11.current.auto,
         local_5.current.methodId,
       );
     } catch {
-      local_14({
+      local_15({
         error: "Условия изменились. Повторите проверку оплаты.",
       });
       return;
     }
     local_10.current = true;
     local_9.current++;
-    local_15();
-    const local_5 = local_4.methodId ? null : local_24();
-    local_14({
+    local_16();
+    const local_5 = local_4.methodId ? null : local_29();
+    local_15({
       step: "creating",
       error: null,
     });
     try {
       const local =
         local_2.kind === "gift"
-          ? await imported_7.createGiftCheckout(local_4)
-          : await imported_7.payCheckout(local_4, local_3.agreement);
+          ? await imported_9.createGiftCheckout(local_4)
+          : await imported_9.payCheckout(local_4, local_3.agreement);
       if (!local()) {
         local_5?.close();
         return;
       }
       local_10.current = false;
-      local_22(local);
+      local_27(local);
       if (
         local.paid ||
         ["canceled", "failed", "review_required"].includes(local.status)
@@ -1043,11 +1462,11 @@ function symbol_004(arg) {
         local_5?.close();
       } else {
         if (local.confirmationUrl) {
-          local_25(local.confirmationUrl, local_5);
+          local_30(local.confirmationUrl, local_5);
         } else {
           local_5?.close();
         }
-        local_23(local.id);
+        local_28(local.id);
       }
     } catch (error) {
       local_5?.close();
@@ -1061,34 +1480,35 @@ function symbol_004(arg) {
       }
     }
   };
-  const local_27 = async () => {
+  const local_32 = async () => {
     const local = local_11.current.state;
     const local_2 = local_11.current.attempt?.id ?? local?.attemptId;
     if (
       local_10.current ||
       local_11.current.step !== "pending" ||
       !local?.canReleaseAttempt ||
-      !local_2
+      !local_2 ||
+      local_24(local_11.current.attempt?.quote ?? local.quote)
     ) {
       return;
     }
-    const local_3 = local_16();
-    const local_4 = local_17();
+    const local_3 = local_17();
+    const local_4 = local_18();
     local_10.current = true;
     local_9.current++;
-    local_15();
-    local_14({
+    local_16();
+    local_15({
       step: "resolving",
       error: null,
     });
     try {
-      const local = await imported_7.releaseCheckout(local_4, local_2);
+      const local = await imported_9.releaseCheckout(local_4, local_2);
       if (!local_3()) {
         return;
       }
       if (local.released) {
-        local_19();
-        local_14({
+        local_20();
+        local_15({
           attempt: null,
         });
       }
@@ -1096,13 +1516,13 @@ function symbol_004(arg) {
       await fn();
       const local_2 = local_11.current;
       if (local_3() && local_2.step === "overview") {
-        local_14({
+        local_15({
           step: "routes",
         });
       }
     } catch {
       if (local_3()) {
-        local_19();
+        local_20();
         local_10.current = false;
         await fn(false, "Не удалось обновить выбор. Проверьте статус оплаты.");
       }
@@ -1112,184 +1532,413 @@ function symbol_004(arg) {
       }
     }
   };
-  const local_28 = async () => {
-    if (!local_21() || local_11.current.step !== "routes") {
+  const local_33 = () => {
+    if (!(
+      !local_26() ||
+      local_11.current.step !== "routes" ||
+      !local_11.current.stageBePaidAvailable ||
+      typeof window === "undefined" ||
+      !imported_8(window.location.origin)
+    )) {
+      local_15({
+        step: "internationalTerms",
+        unavailable: null,
+        error: null,
+      });
+    }
+  };
+  const local_34 = async () => {
+    if (
+      !local_26() ||
+      local_11.current.step !== "internationalTerms" ||
+      !local_11.current.stageBePaidAvailable ||
+      local_11.current.usdRatePending ||
+      typeof window === "undefined" ||
+      !imported_8(window.location.origin)
+    ) {
       return;
     }
-    const local = local_16();
-    const local_2 = local_17();
-    const local_3 = local_24();
-    let local_4 = false;
+    const local = local_11.current.stageBePaidOffers.find(
+      (arg) => arg.months === local_11.current.selectedStageMonths,
+    );
+    if (!local) {
+      return;
+    }
+    const local_2 = local_11.current.internationalAuto
+      ? local_11.current.internationalRenewal
+      : undefined;
+    const local_3 = local_17();
+    const local_4 = local_18();
+    let local_5 = false;
+    let local_6 = false;
     local_10.current = true;
     local_9.current++;
-    local_14({
+    local_15({
       internationalBusy: true,
       error: null,
       unavailable: null,
     });
     try {
-      const local = await imported_7.internationalCheckout(local_2, local_18());
-      if (!local()) {
-        local_3?.close();
+      const local = await imported_9.internationalCheckout(
+        local_4,
+        crypto.randomUUID(),
+      );
+      if (!local_3()) {
         return;
       }
       if (local.mode === "informational") {
-        local_3?.close();
-        local_14({
-          unavailable: "Оплата для других стран пока недоступна.",
-          preview: local.handoffUrl,
+        local_15({
+          step: "routes",
+          stageBePaidAvailable: false,
+          unavailable: "Оплата через bePaid сейчас недоступна.",
         });
       } else {
-        const local = document.createElement("form");
-        const local_2 = document.createElement("input");
-        if (local_3) {
-          local_3.name = `itd-checkout-${crypto.randomUUID()}`;
+        const local = await fetch(new URL("./pay", local.handoff.url), {
+          method: "POST",
+          credentials: "same-origin",
+          redirect: "error",
+          cache: "no-store",
+          headers: {
+            Accept: "application/json",
+          },
+          signal: AbortSignal.timeout(25000),
+          body: new URLSearchParams({
+            handoffTicket: local.handoff.fields.handoffTicket,
+            months: String(local.months),
+            amountMinor: String(local.amountMinor),
+            ...(local_2
+              ? {
+                  consentVersion: local_2.consentVersion,
+                  renewalAmountMinor: String(local_2.amountMinor),
+                }
+              : {}),
+            theme: window.matchMedia?.("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light",
+          }),
+        });
+        if (!local_3()) {
+          return;
         }
-        local.method = "POST";
-        local.action = local.handoff.url;
-        local.target = local_3?.name || "_self";
-        local_2.type = "hidden";
-        local_2.name = "handoffTicket";
-        local_2.value = local.handoff.fields.handoffTicket;
-        local.appendChild(local_2);
-        document.body.appendChild(local);
-        try {
-          local.submit();
-        } finally {
-          local_2.value = "";
-          local.remove();
+        if (!local.ok) {
+          throw new Error("Не удалось открыть оплату");
         }
-        local_4 = true;
-        local_14({
+        const local_2 = await local.json();
+        if (!local_3()) {
+          return;
+        }
+        const local_3 = imported_15(local_2?.checkoutUrl);
+        if (!local_3) {
+          throw new Error("Не удалось открыть оплату");
+        }
+        local_23(local_3);
+        local_5 = true;
+        local_15({
           step: "resolving",
         });
       }
     } catch {
-      local_3?.close();
-      if (local()) {
-        local_4 = true;
-        local_14({
+      if (local_3()) {
+        local_5 = true;
+        local_6 = true;
+        local_15({
           step: "resolving",
-          unavailable:
-            "Не удалось открыть оплату для других стран. Повторите проверку.",
         });
       }
     } finally {
-      if (local()) {
+      if (local_3()) {
         local_10.current = false;
-        local_14({
+        local_15({
           internationalBusy: false,
         });
-        if (local_4) {
-          fn();
+        if (local_5) {
+          fn().then(() => {
+            if (local_6 && local_3() && local_11.current.step === "overview") {
+              local_15({
+                step: "routes",
+                unavailable:
+                  "Не удалось открыть bePaid. Попробуйте ещё раз или выберите другой способ.",
+              });
+            }
+          });
         }
       }
     }
   };
-  const local_29 = local_4.attempt?.quote ?? local_4.state?.quote ?? null;
-  const local_30 = ["pending", "reviewRequired"].includes(local_4.step)
-    ? local_29
+  const local_35 = local_4.attempt?.quote ?? local_4.state?.quote ?? null;
+  const local_36 =
+    local_4.step === "reviewRequired" &&
+    local_4.state?.reasonCode === "stage_bepaid_handoff_unpaid" &&
+    !!local_4.state.attemptId &&
+    typeof window !== "undefined" &&
+    imported_8(window.location.origin);
+  const local_37 = async () => {
+    const local = local_11.current.state;
+    if (
+      local_10.current ||
+      !local_36 ||
+      local?.reasonCode !== "stage_bepaid_handoff_unpaid" ||
+      !local.attemptId
+    ) {
+      return;
+    }
+    const local_2 = local_17();
+    const local_3 = local_18();
+    local_10.current = true;
+    local_9.current++;
+    local_15({
+      step: "resolving",
+      error: null,
+    });
+    try {
+      const local = await imported_9.releaseStageBePaidHandoff(
+        local_3,
+        local.attemptId,
+      );
+      if (!local_2()) {
+        return;
+      }
+      if (local) {
+        local_20();
+      }
+      local_10.current = false;
+      await fn();
+      if (local && local_2() && local_11.current.step === "overview") {
+        local_15({
+          step: "routes",
+        });
+      }
+    } catch {
+      if (local_2()) {
+        local_10.current = false;
+        await fn(false, "Не удалось проверить предыдущую попытку.");
+      }
+    } finally {
+      if (local_2()) {
+        local_10.current = false;
+      }
+    }
+  };
+  const local_38 = ["pending", "reviewRequired"].includes(local_4.step)
+    ? local_35
     : (local_4.state?.offers.find((arg) => arg.months === local_4.months) ??
       null);
-  const local_31 = local_4.state?.agreement;
-  const local_32 = local_d7512db8(local_31?.nextChargeAt);
-  const local_33 = local_31?.enabled
-    ? `Автопродление подключено: ${new Intl.NumberFormat("ru-RU").format(local_31.renewalAmountMinor / 100)} ${local_31.renewalCurrency === "RUB" ? "₽" : "BYN"} каждый месяц${local_32 ? `, следующее списание ${local_32}` : " после окончания оплаченного срока"}. Напомним за 3 дня.`
+  const local_39 = local_4.state?.agreement;
+  const local_40 = local_d7512db8(local_39?.nextChargeAt);
+  const local_41 = local_4.usdRate;
+  const local_42 = (arg, arg_2) => {
+    if (arg_2 === "BYN") {
+      return imported_2(arg, local_41);
+    }
+    return `${new Intl.NumberFormat("ru-RU").format(arg / 100)} ₽`;
+  };
+  const local_43 = local_39?.enabled
+    ? `Автопродление подключено: ${local_42(local_39.renewalAmountMinor, local_39.renewalCurrency)} каждый месяц${local_40 ? `, следующее списание ${local_40}` : " после окончания оплаченного срока"}. Напомним за 3 дня.`
     : null;
+  const local_44 = local_4.step === "pending" && local_4.stageSwitchRequested;
   return {
     panel: {
       kind: arg.kind,
-      step: local_4.step,
+      step: local_44 ? "routes" : local_4.step,
       months: local_4.months,
       newAutoConsent: local_4.auto,
       canEditTerms: !!local_4.state?.canEditTerms,
       canStartNewAttempt: !!local_4.state?.canStartNewAttempt,
-      canOfferAutoRenewal: !!local_31?.canOffer,
+      canOfferAutoRenewal: !!local_39?.canOffer,
       agreement: {
-        enabled: !!local_31?.enabled,
-        requiresNewConsent: !!local_31?.requiresNewConsent,
-        summary: local_33,
+        enabled: !!local_39?.enabled,
+        requiresNewConsent: !!local_39?.requiresNewConsent,
+        summary: local_43,
       },
       offers: local_4.state?.offers ?? [],
-      quote: local_30,
+      quote: local_38,
       recipientName: arg.recipientName,
       error: local_4.error,
       internationalBusy: local_4.internationalBusy,
       internationalUnavailable: local_4.unavailable,
+      stageBePaidAvailable: local_4.stageBePaidAvailable,
+      usdRate: local_41,
+      usdRatePending: local_4.usdRatePending,
+      internationalRenewal: local_4.internationalRenewal,
+      internationalAuto: local_4.internationalAuto,
+      onInternationalAutoChange: (arg) => {
+        if (
+          local_26() &&
+          local_11.current.step === "internationalTerms" &&
+          local_11.current.internationalRenewal
+        ) {
+          local_15({
+            internationalAuto: arg,
+          });
+        }
+      },
+      stageBePaidOffers: local_4.stageBePaidOffers,
+      selectedStageMonths: local_4.selectedStageMonths,
+      onStageMonthsChange: (arg) => {
+        if (
+          local_26() &&
+          local_11.current.step === "internationalTerms" &&
+          local_11.current.stageBePaidOffers.some((arg) => arg.months === arg)
+        ) {
+          local_15({
+            selectedStageMonths: arg,
+          });
+        }
+      },
+      onStagePay: local_34,
+      canRestartStageBePaid: local_36,
+      onRestartStageBePaid: local_37,
       canResume: !!(
         local_4.attempt?.confirmationUrl ?? local_4.state?.confirmationUrl
       ),
       actualExpiryLabel: local_d7512db8(local_4.state?.actualExpiresAt),
       canReselect:
-        local_4.step === "pending" && local_4.state?.canReleaseAttempt === true,
-      onReselect: local_27,
-      providerLabel: local_29
-        ? local_29.provider === "yookassa"
+        local_4.step === "pending" &&
+        local_4.state?.canReleaseAttempt === true &&
+        !local_24(local_35),
+      onReselect: local_32,
+      canSwitchStagePayment: local_4.step === "pending" && local_24(local_35),
+      onSwitchStagePayment: () => {
+        const local = local_11.current;
+        if (!(
+          local_10.current ||
+          local.step !== "pending" ||
+          local.stageSwitchRequested ||
+          !local_24(local.attempt?.quote ?? local.state?.quote)
+        )) {
+          local_15({
+            stageSwitchRequested: true,
+            error: null,
+          });
+          local_14.current?.refresh();
+        }
+      },
+      onReturnToPending: local_44
+        ? () =>
+            local_15({
+              stageSwitchRequested: false,
+            })
+        : undefined,
+      providerLabel: local_35
+        ? local_35.provider === "yookassa"
           ? "ЮKassa"
           : "bePaid"
         : null,
-      pendingSummary: local_29
+      pendingSummary: local_35
         ? arg.kind === "gift"
           ? "Разовый подарок, без автопродления."
-          : `${local_29.autoRenewal ? `В этой оплате выбрано автопродление: ${new Intl.NumberFormat("ru-RU").format(local_29.renewalAmountMinor / 100)} ₽ каждый месяц.` : "В этой оплате автопродление не выбрано."} ${local_4.agreementFresh ? `Сейчас автопродление ${local_31?.enabled ? "включено" : "выключено"}.` : "Проверяем текущий статус автопродления."}`
+          : `${local_35.autoRenewal ? `В этой оплате выбрано автопродление: ${local_42(local_35.renewalAmountMinor, local_35.renewalCurrency)} каждый месяц.` : "В этой оплате автопродление не выбрано."}${local_39 ? ` Сейчас автопродление ${local_39.enabled ? "включено" : "выключено"}.` : ""}`
         : null,
       onBegin: () => {
-        if (local_21()) {
-          local_14({
+        if (local_26()) {
+          local_15({
             step: "routes",
           });
         }
       },
       onRubles: () => {
-        if (local_21()) {
-          local_14({
+        if (local_26()) {
+          local_15({
             step: "terms",
             unavailable: null,
           });
         }
       },
       onBack: () => {
-        if (local_21()) {
-          local_14({
-            step: local_4.step === "terms" ? "routes" : "overview",
+        if (local_26()) {
+          local_15({
+            step:
+              local_4.step === "terms" || local_4.step === "internationalTerms"
+                ? "routes"
+                : "overview",
             error: null,
           });
         }
       },
       onMonthsChange: (arg) => {
         if (
-          local_21() &&
+          local_26() &&
           local_11.current.step === "terms" &&
           local_11.current.state?.offers.some((arg) => arg.months === arg)
         ) {
-          local_14({
+          local_15({
             months: arg,
           });
         }
       },
       onNewAutoConsentChange: (arg) => {
-        if (local_21() && !local_31?.enabled && local_31?.canOffer) {
-          local_14({
+        if (local_26() && !local_39?.enabled && local_39?.canOffer) {
+          local_15({
             auto: arg,
           });
         }
       },
-      onPay: local_26,
-      onInternational: local_28,
-      onResume: () => {
-        if (local_11.current.step !== "pending") {
+      onPay: local_31,
+      onInternational: local_33,
+      onResume: async () => {
+        const local = local_11.current;
+        const local_2 =
+          local.attempt?.confirmationUrl ?? local.state?.confirmationUrl;
+        if (local.step !== "pending" || !local_2 || local_10.current) {
           return;
         }
-        const local =
-          local_11.current.attempt?.confirmationUrl ??
-          local_11.current.state?.confirmationUrl;
-        if (local) {
-          local_25(local, local_24());
+        if (!local_22(local.attempt?.quote ?? local.state?.quote)) {
+          local_30(local_2, local_29());
+          return;
+        }
+        const local_3 = local.attempt?.id ?? local.state?.attemptId;
+        if (!local_3) {
+          return;
+        }
+        const local_4 = local_17();
+        local_10.current = true;
+        local_15({
+          internationalBusy: true,
+          error: null,
+        });
+        try {
+          const local = await imported_9.resumeStageBePaid(local_3);
+          if (!local_4()) {
+            return;
+          }
+          if (local) {
+            local_23(local);
+          } else {
+            local_28(local_3);
+          }
+        } catch {
+          if (local_4()) {
+            local_15({
+              error: "Не удалось продолжить оплату. Проверьте её статус.",
+            });
+          }
+        } finally {
+          if (local_4()) {
+            local_10.current = false;
+            local_15({
+              internationalBusy: false,
+            });
+          }
         }
       },
       onCheckStatus: () => {
-        if (!local_10.current) {
-          local_15();
+        if (local_10.current) {
+          return;
+        }
+        if (local_14.current) {
+          local_14.current.refresh();
+          return;
+        }
+        const local = local_11.current;
+        const local_2 = local.attempt?.id ?? local.state?.attemptId;
+        if (
+          local.step === "pending" &&
+          local_2 &&
+          local_24(local.attempt?.quote ?? local.state?.quote)
+        ) {
+          local_28(local_2);
+        } else {
+          local_16();
           fn();
         }
       },
@@ -1298,7 +1947,7 @@ function symbol_004(arg) {
       },
       ...(local_4.preview
         ? {
-            onInternationalPreview: () => local_25(local_4.preview, local_24()),
+            onInternationalPreview: () => local_30(local_4.preview, local_29()),
           }
         : {}),
     },
@@ -1306,14 +1955,14 @@ function symbol_004(arg) {
       local_7.current = true;
       local_8.current++;
       local_9.current++;
-      local_15();
+      local_16();
       local_5.current.onClose();
     },
   };
 }
 function symbol_002(arg, arg_2) {
-  const local = imported_5(null);
-  imported_6(() => {
+  const local = imported_6(null);
+  imported_7(() => {
     const local = local.current?.parentElement?.parentElement;
     const local_2 = local?.parentElement;
     if (!arg || !local || !local_2) {

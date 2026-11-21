@@ -428,6 +428,9 @@
   padding: 0 24px;
   overflow-wrap: anywhere;
 }
+.c_heading:focus {
+  outline: none;
+}
 .c_panel[data-purchase-step="routes"] .c_heading {
   text-align: center;
 }
@@ -572,8 +575,49 @@
   line-height: 1.5;
   overflow-wrap: anywhere;
 }
+.c_legal {
+  margin: 0;
+  padding: 0 24px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.c_legal a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .c_message {
   color: var(--danger, #e53935);
+}
+.c_panel:is(
+    [data-purchase-step="terms"],
+    [data-purchase-step="pending"],
+    [data-purchase-step="reviewRequired"],
+    [data-purchase-step="active"]
+  )
+  .c_summary,
+.c_panel:is(
+    [data-purchase-step="terms"],
+    [data-purchase-step="pending"],
+    [data-purchase-step="reviewRequired"],
+    [data-purchase-step="active"]
+  )
+  .c_notice,
+.c_panel:is(
+    [data-purchase-step="terms"],
+    [data-purchase-step="pending"],
+    [data-purchase-step="reviewRequired"],
+    [data-purchase-step="active"]
+  )
+  .c_message {
+  text-align: center;
+}
+.c_panel[data-purchase-step="internationalTerms"] .c_notice,
+.c_panel[data-purchase-step="routes"] .c_notice,
+.c_panel[data-purchase-step="routes"] .c_message {
+  text-align: center;
 }
 .c_consent {
   display: flex;

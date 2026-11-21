@@ -1,8 +1,8 @@
 import {
   symbol_222 as imported,
   symbol_002 as imported_2,
-  symbol_275 as imported_3,
-  symbol_288 as imported_4,
+  symbol_282 as imported_3,
+  symbol_295 as imported_4,
   symbol_020 as imported_5,
   symbol_001 as imported_6,
 } from "../entry.js";
@@ -206,7 +206,7 @@ function fn_c052847e({ block: arg }) {
     children: fn_8200ac39(arg.text),
   });
 }
-export function fn_d8311fee({ path: arg }) {
+export function fn_88dd55f3({ path: arg }) {
   const [local, local_2] = imported(null);
   const [local_3, local_4] = imported("");
   const local_5 = imported_2(0);

@@ -1,9 +1,9 @@
 import {
   symbol_012 as imported,
   symbol_002 as imported_2,
-  symbol_275 as imported_3,
+  symbol_282 as imported_3,
   symbol_041 as imported_4,
-  symbol_288 as imported_5,
+  symbol_295 as imported_5,
   symbol_042 as imported_6,
   symbol_072 as imported_7,
   symbol_043 as imported_8,
@@ -22,11 +22,12 @@ const local_2870cde3 = "c_cancelBtn";
 const local_e3cffaad = {
   cancelBtn: local_2870cde3,
 };
-export function fn_555b5e43({
+export function fn_7f59304a({
   isOpen: arg,
   onClose: arg_2,
   recipient: arg_3,
   onSucceeded: arg_4,
+  preferCurrentPayment: arg_5,
 }) {
   const local = imported((arg) => arg.status);
   const local_2 = imported((arg) => arg.profile?.id);
@@ -64,12 +65,14 @@ export function fn_555b5e43({
     };
   }, []);
   const local_10 = imported_13({
+    preferCurrentPayment: arg_5,
     open: arg,
     eligible: local === "authenticated",
     ownerId: local_2 ?? null,
     kind: "gift",
     recipientId: arg_3.id,
     recipientName: arg_3.name,
+    recipientUsername: arg_3.username,
     scopeKey: local_6,
     captureCurrent: local_8,
     onClose: local_9,

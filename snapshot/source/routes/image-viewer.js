@@ -1,12 +1,12 @@
 import {
-  symbol_284 as imported,
+  symbol_291 as imported,
   symbol_222 as imported_2,
-  symbol_275 as imported_3,
+  symbol_282 as imported_3,
   symbol_002 as imported_4,
   symbol_036 as imported_5,
-  symbol_288 as imported_6,
+  symbol_295 as imported_6,
   symbol_020 as imported_7,
-  symbol_156 as imported_8,
+  symbol_111 as imported_8,
   symbol_101 as imported_9,
   symbol_147 as imported_10,
   symbol_100 as imported_11,
@@ -770,7 +770,7 @@ const local_f2bf345a = {
   filmshotActive: local_5756bcd2,
   filmshotImage: local_87a54fb0,
 };
-function fn_81ac8267({
+function fn_a5f53a56({
   currentIndex: arg,
   total: arg_2,
   onPrev: arg_3,
@@ -804,7 +804,7 @@ function fn_81ac8267({
     ],
   });
 }
-function fn_47d5f4ce({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
+function fn_11c8fa81({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
   if (arg <= 1) {
     return null;
   }
@@ -826,7 +826,7 @@ function fn_47d5f4ce({ total: arg, currentIndex: arg_2, onDotClick: arg_3 }) {
     ),
   });
 }
-function fn_234497a4({
+function fn_d38ee55b({
   images: arg,
   currentIndex: arg_2,
   isClosing: arg_3,
@@ -860,7 +860,7 @@ function fn_234497a4({
     ),
   });
 }
-function fn_c145f85d({
+function fn_e8206ee9({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1010,7 +1010,7 @@ function fn_c145f85d({
   });
 }
 const local_f06debfc_4 = 2;
-function fn_520fd428({
+function fn_a8ff7ab3({
   images: arg,
   imageSizes: arg_2,
   currentIndex: arg_3,
@@ -1084,7 +1084,7 @@ function fn_520fd428({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_c145f85d, {
+              imported_6(fn_e8206ee9, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1162,7 +1162,7 @@ function fn_2bb87887({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_c145f85d, {
+              imported_6(fn_e8206ee9, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1200,7 +1200,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_d40fc266({
+export function fn_9c4d3446({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -1895,7 +1895,7 @@ export function fn_d40fc266({
           ],
         }),
         !local_16 &&
-          imported_6(fn_520fd428, {
+          imported_6(fn_a8ff7ab3, {
             images: arg,
             imageSizes: local_17,
             currentIndex: local_18.currentIndex,
@@ -1924,14 +1924,14 @@ export function fn_d40fc266({
             zoom: local_32.zoom,
           }),
         !local_16 &&
-          imported_6(fn_81ac8267, {
+          imported_6(fn_a5f53a56, {
             currentIndex: local_18.currentIndex,
             total: arg.length,
             onPrev: local_22,
             onNext: local_23,
           }),
         arg_6
-          ? imported_6(fn_234497a4, {
+          ? imported_6(fn_d38ee55b, {
               images: arg,
               currentIndex: local_18.currentIndex,
               isClosing: local_10,
@@ -1940,7 +1940,7 @@ export function fn_d40fc266({
                 local_18.goToIndex(arg);
               },
             })
-          : imported_6(fn_47d5f4ce, {
+          : imported_6(fn_11c8fa81, {
               total: arg.length,
               currentIndex: local_18.currentIndex,
               onDotClick: (arg) => {
@@ -1953,4 +1953,4 @@ export function fn_d40fc266({
     document.body,
   );
 }
-export { fn_d40fc266 as default };
+export { fn_9c4d3446 as default };

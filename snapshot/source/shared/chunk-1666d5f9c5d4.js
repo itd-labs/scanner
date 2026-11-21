@@ -1,10 +1,10 @@
 import {
-  symbol_288 as imported,
+  symbol_295 as imported,
   symbol_084 as imported_2,
   symbol_012 as imported_3,
   symbol_222 as imported_4,
   symbol_002 as imported_5,
-  symbol_275 as imported_6,
+  symbol_282 as imported_6,
   symbol_139 as imported_7,
   symbol_041 as imported_8,
   symbol_042 as imported_9,
@@ -88,7 +88,11 @@ function fn_eacf6596(arg) {
   }
   return arg.type;
 }
-function symbol_002({ isOpen: arg, onClose: arg_2 }) {
+function symbol_002({
+  isOpen: arg,
+  onClose: arg_2,
+  preferCurrentPayment: arg_3,
+}) {
   const local = imported_2();
   const local_2 = imported_3((arg) => arg.status);
   const [local_3, local_4] = imported_4(false);
@@ -182,6 +186,7 @@ function symbol_002({ isOpen: arg, onClose: arg_2 }) {
     local?.subscription?.isActive ??
     false;
   const local_22 = imported_16({
+    preferCurrentPayment: arg_3,
     open: arg,
     eligible: local_3 && !local_21 && local_2 === "authenticated",
     ownerId: local?.id ?? null,

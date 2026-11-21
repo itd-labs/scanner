@@ -1,5 +1,5 @@
 import {
-  symbol_288 as imported,
+  symbol_295 as imported,
   symbol_082 as imported_2,
   symbol_083 as imported_3,
 } from "../entry.js";

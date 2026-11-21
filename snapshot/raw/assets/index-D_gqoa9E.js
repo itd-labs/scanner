@@ -1,1 +1,0 @@
-import{u as t,ap as s,aq as d}from"./index-aHcwbXJV.js";const m="crEv",c={modal:m};function i({isOpen:a,onClose:e,onVerify:r}){if(!a)return null;const o=l=>{r(l),e()},n=document.documentElement.getAttribute("data-theme")==="dark"?"dark":"light";return t(d,{onClose:e,showHeader:!1,className:c.modal,frameless:!0,children:t(s,{onVerify:o,onError:()=>{},theme:n})})}export{i as C};

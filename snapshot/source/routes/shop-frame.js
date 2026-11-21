@@ -1,10 +1,10 @@
 import {
   symbol_002 as imported,
   symbol_222 as imported_2,
-  symbol_275 as imported_3,
+  symbol_282 as imported_3,
   symbol_075 as imported_4,
   symbol_076 as imported_5,
-  symbol_288 as imported_6,
+  symbol_295 as imported_6,
 } from "../entry.js";
 const local_e2a47d41 = "c_frame";
 const local_30e69e8f = "c_raised";

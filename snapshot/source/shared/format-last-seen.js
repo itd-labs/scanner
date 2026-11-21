@@ -1,7 +1,7 @@
 import {
   symbol_084 as imported,
   symbol_222 as imported_2,
-  symbol_275 as imported_3,
+  symbol_282 as imported_3,
   symbol_085 as imported_4,
   symbol_086 as imported_5,
   symbol_087 as imported_6,
@@ -18,7 +18,7 @@ imported_12(() => {
 });
 export function fn_8f8975c2(arg, arg_2 = true, arg_3 = true) {
   const local = imported()?.id;
-  const local_2 = imported_11();
+  const local_2 = imported_4();
   const local_3 = local && arg ? `${local_2}:${local}:${arg}` : "";
   const [, local_4] = imported_2(0);
   imported_3(() => {
@@ -48,7 +48,7 @@ export function fn_8f8975c2(arg, arg_2 = true, arg_3 = true) {
     local_2.listeners.add(local_3);
     const local_4 = (arg = false) => {
       if (
-        !imported_6(local_2) ||
+        !imported_7(local_2) ||
         local_a1e12a9e.get(local_3) !== local_2 ||
         local_2.pending ||
         (!arg && Date.now() - local_2.updatedAt <= 60000)
@@ -56,24 +56,24 @@ export function fn_8f8975c2(arg, arg_2 = true, arg_3 = true) {
         return;
       }
       if (arg && local_2.profile) {
-        local_2.profile = imported_7(local_2.profile, false);
+        local_2.profile = imported_8(local_2.profile, false);
         local_2.listeners.forEach((arg) => arg());
       }
       const local = local_2.revision;
-      const local_2 = imported_8
+      const local_2 = imported_9
         .getProfileByUsername(arg, {
           force: true,
           silent: true,
         })
         .then((arg) => {
           if (!(
-            !imported_6(local_2) ||
+            !imported_7(local_2) ||
             local_a1e12a9e.get(local_3) !== local_2 ||
             local_2.revision !== local
           )) {
-            local_2.profile = imported_7(arg);
+            local_2.profile = imported_8(arg);
             if (local && arg !== local && arg.displayName) {
-              imported_9({
+              imported_10({
                 ownerId: local,
                 peerId: arg,
                 displayName: arg.displayName,
@@ -97,14 +97,14 @@ export function fn_8f8975c2(arg, arg_2 = true, arg_3 = true) {
       local_2.updatedAt = 0;
       local_2.pending = undefined;
       if (local_2.profile) {
-        local_2.profile = imported_7(local_2.profile, false);
+        local_2.profile = imported_8(local_2.profile, false);
       }
       local_2.listeners.forEach((arg) => arg());
       local_4(true);
     };
-    const local_6 = arg_3 ? imported_4(local_5) : () => {};
+    const local_6 = arg_3 ? imported_5(local_5) : () => {};
     const local_7 = arg_3
-      ? imported_5((arg) => {
+      ? imported_6((arg) => {
           if (!arg || arg === arg) {
             local_5();
           }
@@ -142,9 +142,9 @@ export function fn_8f8975c2(arg, arg_2 = true, arg_3 = true) {
   }, [local_3, arg, arg_2, local_2, arg_3]);
   const local_5 = local_3 && arg_2 ? local_a1e12a9e.get(local_3) : undefined;
   if (local_5?.profile) {
-    return imported_7(
+    return imported_8(
       local_5.profile,
-      imported_10() && local_5.listeners.size > 0,
+      imported_11() && local_5.listeners.size > 0,
     );
   }
   return null;

@@ -15,148 +15,148 @@ const local_0fae464a = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_288 as imported,
+  symbol_295 as imported,
   symbol_222 as imported_2,
   symbol_002 as imported_3,
   symbol_036 as imported_4,
-  symbol_156 as imported_5,
-  symbol_275 as imported_6,
+  symbol_111 as imported_5,
+  symbol_282 as imported_6,
   symbol_103 as imported_7,
-  bt as imported_8,
+  symbol_105 as imported_8,
   symbol_101 as imported_9,
   symbol_041 as imported_10,
-  symbol_206 as imported_11,
-  symbol_108 as imported_12,
-  symbol_284 as imported_13,
-  symbol_207 as imported_14,
-  symbol_208 as imported_15,
-  symbol_087 as imported_16,
-  symbol_092 as imported_17,
-  symbol_209 as imported_18,
+  symbol_213 as imported_11,
+  symbol_115 as imported_12,
+  symbol_291 as imported_13,
+  symbol_214 as imported_14,
+  symbol_215 as imported_15,
+  symbol_088 as imported_16,
+  symbol_085 as imported_17,
+  symbol_216 as imported_18,
   symbol_073 as imported_19,
-  symbol_210 as imported_20,
+  symbol_217 as imported_20,
   symbol_020 as imported_21,
-  symbol_211 as imported_22,
+  symbol_218 as imported_22,
   symbol_001 as imported_23,
-  symbol_212 as imported_24,
+  symbol_219 as imported_24,
   symbol_045 as imported_25,
-  symbol_213 as imported_26,
-  symbol_214 as imported_27,
-  symbol_215 as imported_28,
-  symbol_216 as imported_29,
-  symbol_204 as imported_30,
-  symbol_217 as imported_31,
-  symbol_218 as imported_32,
-  symbol_219 as imported_33,
-  symbol_220 as imported_34,
-  symbol_221 as imported_35,
-  symbol_169 as imported_36,
+  symbol_220 as imported_26,
+  symbol_221 as imported_27,
+  symbol_169 as imported_28,
+  symbol_170 as imported_29,
+  symbol_211 as imported_30,
+  symbol_171 as imported_31,
+  symbol_172 as imported_32,
+  symbol_173 as imported_33,
+  symbol_174 as imported_34,
+  symbol_175 as imported_35,
+  symbol_176 as imported_36,
   symbol_084 as imported_37,
-  symbol_170 as imported_38,
+  symbol_177 as imported_38,
   symbol_061 as imported_39,
-  symbol_151 as imported_40,
-  symbol_089 as imported_41,
+  symbol_106 as imported_40,
+  symbol_090 as imported_41,
   symbol_003 as imported_42,
   symbol_095 as imported_43,
-  symbol_171 as imported_44,
-  symbol_172 as imported_45,
-  symbol_173 as imported_46,
-  symbol_174 as imported_47,
+  symbol_178 as imported_44,
+  symbol_179 as imported_45,
+  symbol_180 as imported_46,
+  symbol_181 as imported_47,
   symbol_071 as imported_48,
-  symbol_175 as imported_49,
-  symbol_176 as imported_50,
-  symbol_091 as imported_51,
-  symbol_177 as imported_52,
-  symbol_178 as imported_53,
+  symbol_182 as imported_49,
+  symbol_183 as imported_50,
+  symbol_092 as imported_51,
+  symbol_184 as imported_52,
+  symbol_185 as imported_53,
   symbol_012 as imported_54,
-  symbol_179 as imported_55,
-  symbol_180 as imported_56,
-  symbol_181 as imported_57,
-  symbol_182 as imported_58,
-  symbol_183 as imported_59,
-  symbol_184 as imported_60,
-  symbol_185 as imported_61,
-  symbol_186 as imported_62,
+  symbol_186 as imported_55,
+  symbol_187 as imported_56,
+  symbol_188 as imported_57,
+  symbol_189 as imported_58,
+  symbol_190 as imported_59,
+  symbol_191 as imported_60,
+  symbol_192 as imported_61,
+  symbol_193 as imported_62,
   symbol_099 as imported_63,
-  symbol_187 as imported_64,
-  symbol_188 as imported_65,
+  symbol_194 as imported_64,
+  symbol_195 as imported_65,
   symbol_133 as imported_66,
-  symbol_189 as imported_67,
+  symbol_158 as imported_67,
   symbol_047 as imported_68,
-  symbol_190 as imported_69,
-  symbol_191 as imported_70,
-  symbol_192 as imported_71,
-  symbol_193 as imported_72,
-  symbol_194 as imported_73,
+  symbol_223 as imported_69,
+  symbol_224 as imported_70,
+  symbol_225 as imported_71,
+  symbol_226 as imported_72,
+  symbol_227 as imported_73,
   symbol_096 as imported_74,
   symbol_040 as imported_75,
-  symbol_195 as imported_76,
-  symbol_158 as imported_77,
-  symbol_223 as imported_78,
-  symbol_127 as imported_79,
-  symbol_224 as imported_80,
-  symbol_225 as imported_81,
-  symbol_226 as imported_82,
-  symbol_135 as imported_83,
-  symbol_137 as imported_84,
+  symbol_228 as imported_76,
+  symbol_229 as imported_77,
+  symbol_230 as imported_78,
+  symbol_160 as imported_79,
+  symbol_231 as imported_80,
+  symbol_232 as imported_81,
+  symbol_255 as imported_82,
+  symbol_136 as imported_83,
+  symbol_135 as imported_84,
   symbol_138 as imported_85,
-  symbol_227 as imported_86,
-  symbol_228 as imported_87,
-  symbol_229 as imported_88,
-  symbol_230 as imported_89,
-  symbol_231 as imported_90,
-  symbol_232 as imported_91,
-  symbol_248 as imported_92,
-  symbol_249 as imported_93,
-  symbol_250 as imported_94,
-  symbol_251 as imported_95,
-  symbol_252 as imported_96,
-  symbol_253 as imported_97,
-  symbol_107 as imported_98,
-  symbol_254 as imported_99,
+  symbol_256 as imported_86,
+  symbol_257 as imported_87,
+  symbol_258 as imported_88,
+  symbol_259 as imported_89,
+  symbol_260 as imported_90,
+  symbol_261 as imported_91,
+  symbol_262 as imported_92,
+  symbol_263 as imported_93,
+  symbol_264 as imported_94,
+  symbol_265 as imported_95,
+  symbol_266 as imported_96,
+  symbol_267 as imported_97,
+  symbol_114 as imported_98,
+  symbol_268 as imported_99,
   symbol_051 as imported_100,
-  symbol_255 as imported_101,
-  symbol_256 as imported_102,
-  symbol_257 as imported_103,
-  symbol_258 as imported_104,
-  symbol_259 as imported_105,
-  symbol_260 as imported_106,
-  symbol_261 as imported_107,
-  symbol_262 as imported_108,
-  symbol_263 as imported_109,
+  symbol_269 as imported_101,
+  symbol_270 as imported_102,
+  symbol_271 as imported_103,
+  symbol_272 as imported_104,
+  dt as imported_105,
+  symbol_273 as imported_106,
+  symbol_274 as imported_107,
+  symbol_275 as imported_108,
+  symbol_276 as imported_109,
   symbol_104 as imported_110,
-  symbol_264 as imported_111,
-  symbol_265 as imported_112,
-  dt as imported_113,
-  symbol_266 as imported_114,
-  symbol_267 as imported_115,
-  symbol_268 as imported_116,
+  symbol_277 as imported_111,
+  symbol_278 as imported_112,
+  symbol_233 as imported_113,
+  symbol_234 as imported_114,
+  symbol_235 as imported_115,
+  symbol_236 as imported_116,
   symbol_064 as imported_117,
   symbol_083 as imported_118,
-  symbol_269 as imported_119,
+  symbol_237 as imported_119,
   symbol_102 as imported_120,
-  symbol_270 as imported_121,
-  symbol_271 as imported_122,
-  symbol_233 as imported_123,
-  symbol_112 as imported_124,
-  symbol_234 as imported_125,
-  symbol_111 as imported_126,
-  symbol_235 as imported_127,
-  symbol_236 as imported_128,
-  symbol_237 as imported_129,
-  symbol_238 as imported_130,
-  symbol_239 as imported_131,
-  symbol_240 as imported_132,
-  symbol_090 as imported_133,
+  symbol_238 as imported_121,
+  symbol_239 as imported_122,
+  symbol_240 as imported_123,
+  symbol_120 as imported_124,
+  symbol_241 as imported_125,
+  symbol_118 as imported_126,
+  symbol_242 as imported_127,
+  symbol_243 as imported_128,
+  symbol_244 as imported_129,
+  symbol_245 as imported_130,
+  symbol_246 as imported_131,
+  symbol_247 as imported_132,
+  symbol_091 as imported_133,
   symbol_022 as imported_134,
   symbol_147 as imported_135,
-  symbol_241 as imported_136,
-  symbol_242 as imported_137,
-  symbol_243 as imported_138,
-  symbol_244 as imported_139,
-  symbol_245 as imported_140,
-  symbol_246 as imported_141,
-  symbol_162 as imported_142,
+  symbol_248 as imported_136,
+  symbol_249 as imported_137,
+  symbol_250 as imported_138,
+  symbol_251 as imported_139,
+  symbol_252 as imported_140,
+  symbol_253 as imported_141,
+  symbol_196 as imported_142,
 } from "../entry.js";
 import { u as imported_143, a as imported_144 } from "./format-last-seen.js";
 import { I as imported_145 } from "../components/icon-check.js";
@@ -260,7 +260,7 @@ const local_fd02a3a6 = {
   ringSpin: local_5463dd23,
   cross: local_e391c35a,
 };
-function fn_f3dd1cb7({
+function fn_f24b0700({
   src: arg,
   thumbhash: arg_2,
   alt: arg_3 = "",
@@ -359,12 +359,12 @@ function fn_f3dd1cb7({
           onError: local_20,
         }),
       local_15 &&
-        imported(fn_8dcec4ad, {
+        imported(fn_db5f53e6, {
           progress: arg_5,
           onCancel: local_18,
         }),
       local_16 &&
-        imported(fn_8dcec4ad, {
+        imported(fn_db5f53e6, {
           progress: undefined,
           onCancel: local_18,
         }),
@@ -414,7 +414,7 @@ function fn_d4edad75() {
     }),
   });
 }
-function fn_8dcec4ad({ progress: arg, onCancel: arg_2 }) {
+function fn_db5f53e6({ progress: arg, onCancel: arg_2 }) {
   const local = typeof arg === "number";
   const local_2 = local ? Math.max(0, Math.min(1, arg)) : 0;
   const local_3 = local_7ea58f15 * (1 - local_2);
@@ -757,7 +757,7 @@ const local_53900a37 = {
   purchaseAction: local_20966851,
   giftNoticePin: local_a3ed720d,
 };
-const local_b4d2b3d6 = ({ read: arg, decorative: arg_2 = false }) =>
+const local_8086138a = ({ read: arg, decorative: arg_2 = false }) =>
   imported("span", {
     role: arg_2 ? undefined : "img",
     "aria-hidden": arg_2 || undefined,
@@ -791,7 +791,7 @@ const local_b4d2b3d6 = ({ read: arg, decorative: arg_2 = false }) =>
           }),
         }),
   });
-function fn_c9b5591b(arg, arg_2, arg_3, arg_4, arg_5) {
+function fn_11f9c045(arg, arg_2, arg_3, arg_4, arg_5) {
   const local = Math.max(0, arg_3.bottom - 8 - arg.bottom - 10);
   const local_2 = Math.max(0, arg.top - 10 - arg_3.top - 8);
   const local_3 = Math.max(0, arg_3.bottom - arg_3.top - 16);
@@ -1028,7 +1028,7 @@ function fn_97208bb6(arg, arg_2, arg_3, arg_4) {
       local_4.bottom - local_f06debfc_4 * 2 - 1,
     );
   }
-  return fn_c9b5591b(
+  return fn_11f9c045(
     arg.getBoundingClientRect(),
     {
       width: arg_2.offsetWidth,
@@ -1072,7 +1072,7 @@ const local_685c5f57 = ({ size: arg = 18 }) =>
       }),
     ],
   });
-const local_cbf5dab3 = ({
+const local_65ea0e17 = ({
   x: arg,
   y: arg_2,
   closing: arg_3,
@@ -1476,7 +1476,7 @@ function fn_13c0682d() {
   };
 }
 const local_f06debfc_6 = 500;
-const local_37d66595 = ({ chat: arg, active: arg_2, onClick: arg_3 }) => {
+const local_d5c5364c = ({ chat: arg, active: arg_2, onClick: arg_3 }) => {
   const {
     user: local,
     lastMessage: local_2,
@@ -1863,7 +1863,7 @@ const local_37d66595 = ({ chat: arg, active: arg_2, onClick: arg_3 }) => {
                       className: local_ed4eb119.lastMessageStatus,
                       role: "img",
                       "aria-label": local_2.isRead ? "Прочитано" : "Отправлено",
-                      children: imported(local_b4d2b3d6, {
+                      children: imported(local_8086138a, {
                         read: !!local_2.isRead,
                         decorative: true,
                       }),
@@ -1875,7 +1875,7 @@ const local_37d66595 = ({ chat: arg, active: arg_2, onClick: arg_3 }) => {
         ],
       }),
       local_23 &&
-        imported(local_cbf5dab3, {
+        imported(local_65ea0e17, {
           x: local_23.x,
           y: local_23.y,
           closing: local_25,
@@ -2087,7 +2087,7 @@ async function fn_b3c95848(arg, arg_2, arg_3, arg_4, arg_5, arg_6 = 5) {
     complete: arg_2.every((arg) => local_2.has(arg)),
   };
 }
-function fn_f049abc6({ query: arg, chats: arg_2 }) {
+function fn_ebce77d1({ query: arg, chats: arg_2 }) {
   const [local, local_2] = imported_2([]);
   const [local_3, local_4] = imported_2(false);
   const [local_5, local_6] = imported_2(false);
@@ -2283,7 +2283,7 @@ function fn_f049abc6({ query: arg, chats: arg_2 }) {
     ],
   });
 }
-const local_45ac8fa3 = ({
+const local_5d9cc14a = ({
   chats: arg,
   activeChatId: arg_2,
   onSelect: arg_3,
@@ -2613,7 +2613,7 @@ const local_45ac8fa3 = ({
         children:
           local_14.length >= 2 && local_8 === "messages"
             ? local_23.current === local_2
-              ? imported(fn_f049abc6, {
+              ? imported(fn_ebce77d1, {
                   query: local_6,
                   chats: arg,
                 })
@@ -2726,7 +2726,7 @@ const local_45ac8fa3 = ({
                             })
                           : local_32.map((arg) =>
                               imported(
-                                local_37d66595,
+                                local_d5c5364c,
                                 {
                                   chat: arg,
                                   active: arg.id === arg_2,
@@ -3060,7 +3060,7 @@ const local_71b7eab8 = {
   up: local_2dd95584,
   down: local_847c4bd6,
 };
-function fn_a9eb2ca2({ chatId: arg, onClose: arg_2, onQueryChange: arg_3 }) {
+function fn_20607d79({ chatId: arg, onClose: arg_2, onQueryChange: arg_3 }) {
   const local = imported_37();
   const local_2 = imported_8((arg) =>
     arg.chats.find((arg) => arg.chat_id === arg),
@@ -3548,7 +3548,7 @@ function fn_a9eb2ca2({ chatId: arg, onClose: arg_2, onQueryChange: arg_3 }) {
     ],
   });
 }
-const local_a2ea003c = ({
+const local_a856113d = ({
   user: arg,
   chatId: arg_2,
   isGroup: arg_3,
@@ -3645,7 +3645,7 @@ const local_a2ea003c = ({
     children: [
       local_14
         ? imported(
-            fn_a9eb2ca2,
+            fn_20607d79,
             {
               chatId: arg_2,
               onClose: local_16,
@@ -4169,7 +4169,7 @@ const local_5d5ef5f1 = ({ img: arg, index: arg_2, onOpen: arg_3 }) => {
     className: local_a03a8470.cell,
     onClick: (arg) => arg_3(arg_2, arg.currentTarget),
     "aria-label": "Открыть изображение",
-    children: imported(fn_f3dd1cb7, {
+    children: imported(fn_f24b0700, {
       src: local_4,
       pending: local_3 && !local_4 && !!(arg.thumbUrl || arg.url),
       thumbhash: arg.thumbhash,
@@ -4179,7 +4179,7 @@ const local_5d5ef5f1 = ({ img: arg, index: arg_2, onOpen: arg_3 }) => {
     }),
   });
 };
-function fn_d1fe5e27({ images: arg, flush: arg_2 }) {
+function fn_d889ae76({ images: arg, flush: arg_2 }) {
   const local = imported_3(imported_61()).current;
   const local_2 = imported_56((arg) => arg.open);
   const local_3 = imported_3(null);
@@ -4383,7 +4383,7 @@ function fn_a77ecf80({
     }),
   });
 }
-function fn_d8d59c1a({
+function fn_61570b7c({
   id: arg,
   url: arg_2,
   name: arg_3 = "Видео",
@@ -4488,7 +4488,7 @@ function fn_d8d59c1a({
           onClick: local_15,
           children: [
             arg_4 &&
-              imported(fn_f3dd1cb7, {
+              imported(fn_f24b0700, {
                 src: local_9,
                 refreshSrc: local_10,
                 thumbhash: arg_5,
@@ -4559,7 +4559,7 @@ const local_e2c0c459 = {
   progressRow: local_edca84d6,
   time: local_15aa885a_3,
 };
-function fn_6730df1d({
+function fn_bd429082({
   id: arg,
   url: arg_2,
   name: arg_3,
@@ -4792,7 +4792,7 @@ function fn_f2f0bc7d(arg, arg_2, arg_3) {
     return;
   }
   const local_2 = [...(local.messagesByChat[arg] ?? [])].sort((arg, arg_2) =>
-    imported_72(arg.message_id).localeCompare(imported_72(arg_2.message_id)),
+    imported_73(arg.message_id).localeCompare(imported_73(arg_2.message_id)),
   );
   const local_3 = local_2.findIndex((arg) => arg.message_id === arg_2);
   if (local_3 < 0) {
@@ -4830,7 +4830,7 @@ function fn_e6aaae97(arg, arg_2, arg_3, arg_4, arg_5) {
         ) {
           return;
         }
-        await imported_73(
+        await imported_72(
           fn_e6aaae97(
             arg,
             local.message_id,
@@ -4964,7 +4964,7 @@ const local_f06debfc_10 = 3;
 const local_f06debfc_11 = 2;
 const local_f06debfc_12 = 28;
 const local_79c1f903 = "Голосовое сообщение";
-const local_0973d2dd = ({
+const local_f48e8bf7 = ({
   id: arg,
   url: arg_2,
   duration: arg_3,
@@ -5300,7 +5300,7 @@ function fn_aa080345(arg) {
   const local = arg.lastIndexOf(".");
   return local !== -1 && local_0578902d.has(arg.slice(local + 1).toLowerCase());
 }
-const local_4ef22aba = ({
+const local_7f56a702 = ({
   id: arg,
   url: arg_2,
   name: arg_3,
@@ -5574,7 +5574,7 @@ const local_59ab267f = ({
         index: arg_3,
       });
     case "video":
-      return imported(fn_d8d59c1a, {
+      return imported(fn_61570b7c, {
         messageId: arg_4,
         id: arg.id,
         uploadProgress: arg.uploadProgress,
@@ -5588,7 +5588,7 @@ const local_59ab267f = ({
         height: arg.height,
       });
     case "audio":
-      return imported(fn_6730df1d, {
+      return imported(fn_bd429082, {
         id: arg.id,
         url: arg.url,
         name: arg.name,
@@ -5598,7 +5598,7 @@ const local_59ab267f = ({
         messageId: arg_4,
       });
     case "voice":
-      return imported(local_0973d2dd, {
+      return imported(local_f48e8bf7, {
         messageId: arg_4,
         id: arg.id,
         url: arg.url,
@@ -5607,7 +5607,7 @@ const local_59ab267f = ({
         levels: arg.levels,
       });
     case "file":
-      return imported(local_4ef22aba, {
+      return imported(local_7f56a702, {
         id: arg.id,
         url: arg.url,
         name: arg.name,
@@ -5618,7 +5618,7 @@ const local_59ab267f = ({
       });
   }
 };
-const local_67ca1c65 = ({
+const local_ac890063 = ({
   message: arg,
   frameless: arg_2,
   flushMedia: arg_3,
@@ -5632,7 +5632,7 @@ const local_67ca1c65 = ({
   }
   if ((arg_2 || arg_3) && local_2.length === 1 && local_2[0].type === "video") {
     const local = local_2[0];
-    return imported(fn_d8d59c1a, {
+    return imported(fn_61570b7c, {
       messageId: arg.id,
       id: local.id,
       uploadProgress: local.uploadProgress,
@@ -5652,7 +5652,7 @@ const local_67ca1c65 = ({
   return imported(imported_21, {
     children: [
       local_3.length > 0 &&
-        imported(fn_d1fe5e27, {
+        imported(fn_d889ae76, {
           flush: arg_3,
           images: local_3.map((arg, arg_2) => ({
             sourceMessageId: arg.id,
@@ -5687,7 +5687,7 @@ const local_08951a22_3 = "c_status";
 const local_c2837da0_2 = {
   status: local_08951a22_3,
 };
-const local_8832b7ce = imported_84(() =>
+const local_8832b7ce = imported_83(() =>
   imported_85(
     () => import("./chunk-210e08a7e22f.js"),
     local_0fae464a([0, 1, 2, 3]),
@@ -5715,7 +5715,7 @@ function fn_2f7450d9({ postId: arg }) {
     };
   }, [arg, local_5]);
   if (local) {
-    return imported(imported_83, {
+    return imported(imported_84, {
       fallback: imported("div", {
         className: local_c2837da0_2.status,
         children: "Загрузка поста…",
@@ -5739,7 +5739,7 @@ function fn_2f7450d9({ postId: arg }) {
     ],
   });
 }
-const local_481657b2 = () =>
+const local_aac5dc79 = () =>
   imported("span", {
     role: "img",
     className: `${local_53900a37.readStatus} ${local_53900a37.sendingStatus}`,
@@ -5766,7 +5766,7 @@ const local_481657b2 = () =>
       ],
     }),
   });
-const local_4f46b3dd = () =>
+const local_0b0a5e0e = () =>
   imported("span", {
     role: "img",
     className: `${local_53900a37.readStatus} ${local_53900a37.failedStatus}`,
@@ -5798,7 +5798,7 @@ const local_4f46b3dd = () =>
       ],
     }),
   });
-const local_98f16fa4 = ({
+const local_302c3917 = ({
   createdAt: arg,
   isEdited: arg_2,
   isOutgoing: arg_3,
@@ -5830,15 +5830,15 @@ const local_98f16fa4 = ({
       }),
       arg_3 &&
         (arg_6 === "sending"
-          ? imported(local_481657b2, {})
+          ? imported(local_aac5dc79, {})
           : arg_6 === "failed"
-            ? imported(local_4f46b3dd, {})
-            : imported(local_b4d2b3d6, {
+            ? imported(local_0b0a5e0e, {})
+            : imported(local_8086138a, {
                 read: !!arg_4,
               })),
     ],
   });
-function fn_6cdcca07(arg, arg_2, arg_3) {
+function fn_08f3ddb8(arg, arg_2, arg_3) {
   return `${arg}/${arg_2}/${imported_55(arg_3)}`;
 }
 async function fn_8e08d519(arg, arg_2, arg_3, arg_4) {
@@ -5857,7 +5857,7 @@ async function fn_8e08d519(arg, arg_2, arg_3, arg_4) {
   const local_3 = local_2();
   const local_4 = imported_87(arg, arg_2, arg_3);
   const local_5 = local_2();
-  const local_6 = fn_6cdcca07(arg, arg_2, arg_3);
+  const local_6 = fn_08f3ddb8(arg, arg_2, arg_3);
   if (!local_3 && local_5 && arg_3.type === "emoji") {
     imported_88(local_6, arg_3.emoji, arg_4);
   } else if (local_3 && !local_5) {
@@ -5948,7 +5948,7 @@ function fn_761199bd(arg, arg_2) {
     duration: 0,
   };
 }
-function fn_e0f5c286(
+function fn_ad854f25(
   arg,
   arg_2,
   arg_3,
@@ -6383,7 +6383,7 @@ function fn_3723d5ce({ effect: arg, targetRef: arg_2 }) {
       !local_2 ||
       local_a3c1aa31.matchMedia("(prefers-reduced-motion: reduce)").matches
     )) {
-      return fn_e0f5c286(local, local_2, arg.source);
+      return fn_ad854f25(local, local_2, arg.source);
     }
   }, [arg, arg_2]);
   return imported_10(
@@ -6429,13 +6429,13 @@ function fn_3723d5ce({ effect: arg, targetRef: arg_2 }) {
     document.body,
   );
 }
-function fn_598cb937({
+function fn_40a2de67({
   message: arg,
   entry: { view: arg_2, leaving: arg_3, animate: arg_4 },
   disabled: arg_5,
 }) {
   const local = imported_3(null);
-  const local_2 = fn_6cdcca07(arg.chatId, arg.id, arg_2.reaction);
+  const local_2 = fn_08f3ddb8(arg.chatId, arg.id, arg_2.reaction);
   const local_3 = imported_90((arg) => {
     if (arg.current?.key === local_2) {
       return arg.current;
@@ -6520,7 +6520,7 @@ function fn_48740ee8({
           "aria-label": "Реакции на сообщение",
           children: arg_2.map((arg) =>
             imported(
-              fn_598cb937,
+              fn_40a2de67,
               {
                 message: arg,
                 entry: arg,
@@ -6727,7 +6727,7 @@ const local_5e36bbf2 = ({ size: arg = 18 }) =>
       }),
     ],
   });
-const local_57ac9912 = ({
+const local_ebe822f6 = ({
   isOutgoing: arg,
   hasText: arg_2 = false,
   copyLabel: arg_3,
@@ -6985,7 +6985,7 @@ const local_57ac9912 = ({
     ],
   });
 };
-const local_ee1263f6 = ({
+const local_031b8f0b = ({
   menuRef: arg,
   pos: arg_2,
   closing: arg_3,
@@ -7094,7 +7094,7 @@ const local_ee1263f6 = ({
             message: arg_4,
             onChosen: arg_5,
           }),
-        imported(local_57ac9912, {
+        imported(local_ebe822f6, {
           unavailable: arg_4.unavailable,
           isOutgoing: arg_4.isOutgoing,
           hasText: !!arg_4.text,
@@ -7224,7 +7224,7 @@ function fn_6a50dc2d(arg) {
     return null;
   }
 }
-function fn_e1e804aa(arg, arg_2 = false) {
+function fn_8a3c0b45(arg, arg_2 = false) {
   const local = [];
   let local_2 = 0;
   for (const local of arg.matchAll(arg_2 ? local_14ab973f : local_fdbdc465)) {
@@ -7409,15 +7409,15 @@ function fn_27ad1099(arg) {
         width: 18,
         height: 18,
       }),
-      fn_e1e804aa(imported_94(arg.slice(local_2), 8), true),
+      fn_8a3c0b45(imported_94(arg.slice(local_2), 8), true),
     ],
   });
 }
-function fn_51901dfa(arg, arg_2 = [], arg_3 = false) {
+function fn_dcafc890(arg, arg_2 = [], arg_3 = false) {
   const local = imported_93(arg, arg_2);
   if (!local.length) {
     return (
-      (arg_3 && fn_27ad1099(arg)) || fn_e1e804aa(imported_94(arg, 8), arg_3)
+      (arg_3 && fn_27ad1099(arg)) || fn_8a3c0b45(imported_94(arg, 8), arg_3)
     );
   }
   const local_2 = [];
@@ -7722,7 +7722,7 @@ function fn_e7ec653c({ chatId: arg, attachment: arg_2 }) {
       ref: local,
       className: local_e3cffaad_2.thumbnail,
       "aria-hidden": "true",
-      children: imported(fn_f3dd1cb7, {
+      children: imported(fn_f24b0700, {
         src: local_4,
         refreshSrc: local_5,
         thumbhash: local_3.thumbhash,
@@ -7732,7 +7732,7 @@ function fn_e7ec653c({ chatId: arg, attachment: arg_2 }) {
   }
   return null;
 }
-const local_c2aff326 = ({
+const local_f7bd5e46 = ({
   onToggleSelection: arg,
   authorName: arg_2,
   message: arg_3,
@@ -8029,13 +8029,13 @@ const local_c2aff326 = ({
                 imported(fn_2f7450d9, {
                   postId: arg_3.sharedPostId,
                 }),
-              imported(local_67ca1c65, {
+              imported(local_ac890063, {
                 message: arg_3,
                 frameless: local_28,
                 flushMedia: local_34,
               }),
               (() => {
-                const local = imported(local_98f16fa4, {
+                const local = imported(local_302c3917, {
                   createdAt: local_5,
                   isEdited: local_4,
                   isOutgoing: local_2,
@@ -8055,7 +8055,7 @@ const local_c2aff326 = ({
                           children: arg_3.unavailable
                             ? "Не удалось прочитать сообщение"
                             : fn_8da7b981(
-                                fn_51901dfa(
+                                fn_dcafc890(
                                   local,
                                   arg_3.entities,
                                   arg_3.authorId === imported_100,
@@ -8126,7 +8126,7 @@ const local_c2aff326 = ({
       }),
       arg_5 &&
         local_26 &&
-        imported(local_ee1263f6, {
+        imported(local_031b8f0b, {
           readOnly: local_9,
           menuRef: local_13,
           pos: local_26,
@@ -8146,9 +8146,9 @@ const local_c2aff326 = ({
     ],
   });
 };
-const local_d95e5548 = imported_98(local_c2aff326);
+const local_d95e5548 = imported_98(local_f7bd5e46);
 const local_aad0de78 = 3600 * 1000;
-function fn_28d11666(arg) {
+function fn_69b6d4a5(arg) {
   const local = [];
   arg.forEach((arg, arg_2) => {
     const local = arg[arg_2 - 1];
@@ -8848,7 +8848,7 @@ function fn_06b3dd29({
 }
 const local_f06debfc_15 = 200;
 const local_f06debfc_16 = 40;
-function fn_3281cf56({
+function fn_1a253825({
   scrollEl: arg,
   onMessageVisible: arg_2,
   observedElsRef: arg_3,
@@ -9143,7 +9143,7 @@ const local_a837a51f = ({
       selectedIds: arg_10,
       setSelectedIds: arg_11,
     });
-  const local_31 = imported_4(() => fn_28d11666(arg_2), [arg_2]);
+  const local_31 = imported_4(() => fn_69b6d4a5(arg_2), [arg_2]);
   const local_32 = imported_3(local_31);
   local_32.current = local_31;
   const local_33 = imported_13((arg) => local_31[arg]?.key ?? arg, [local_31]);
@@ -9693,7 +9693,7 @@ const local_a837a51f = ({
       local_16.current = false;
     }
   }, [arg_15]);
-  const { observerRef: local_59 } = fn_3281cf56({
+  const { observerRef: local_59 } = fn_1a253825({
     scrollEl: local_20,
     onMessageVisible: arg_12,
     observedElsRef: local_38,
@@ -10208,7 +10208,7 @@ function fn_f647dbde({ icon: arg }) {
     ),
   });
 }
-function fn_1e483a2c({ selected: arg, processing: arg_2, onSelect: arg_3 }) {
+function fn_cad957f7({ selected: arg, processing: arg_2, onSelect: arg_3 }) {
   const [local, local_2] = imported_2("closed");
   const local_3 = imported_3("closed");
   const local_4 = imported_3(null);
@@ -10913,7 +10913,7 @@ const local_a67967d6 = ({ size: arg = 20 }) =>
       fill: "currentColor",
     }),
   });
-const local_598e96fa = ({
+const local_0be33e42 = ({
   stopRequested: arg = false,
   onSendVoice: arg_2,
   onTyping: arg_3,
@@ -11265,7 +11265,7 @@ const local_598e96fa = ({
       className: local_a88796a3.voiceWorkspace,
       "data-voice-preview": true,
       children: [
-        imported(fn_1e483a2c, {
+        imported(fn_cad957f7, {
           selected: local_8?.selected ?? "none",
           processing: local_8?.processing ?? false,
           onSelect: local_40,
@@ -11435,7 +11435,7 @@ function fn_c9ed26e7(arg) {
     local.remove();
   }
 }
-function fn_9086e857(arg, arg_2, arg_3) {
+function fn_18e40586(arg, arg_2, arg_3) {
   return imported("div", {
     className: `${local_a88796a3.replyHeader} ${arg_2 ? local_a88796a3.replyClosing : ""}`,
     inert: arg_2 || undefined,
@@ -11478,7 +11478,7 @@ function fn_9086e857(arg, arg_2, arg_3) {
   });
 }
 const local_f06debfc_28 = 10;
-const local_e20e612a = ({
+const local_4859b1e5 = ({
   emojiOwnerId: arg,
   promotedDraftKey: arg_2,
   draftKey: arg_3,
@@ -12063,10 +12063,10 @@ ${local_2}`
         !local_19 &&
         imported("div", {
           className: local_a88796a3.voiceReply,
-          children: fn_9086e857(local_6, local_4, arg_8),
+          children: fn_18e40586(local_6, local_4, arg_8),
         }),
       local_23 !== "idle" &&
-        imported(local_598e96fa, {
+        imported(local_0be33e42, {
           stopRequested: local_25,
           onSendVoice: arg_5,
           onTyping: arg_6,
@@ -12238,7 +12238,7 @@ ${local_2}`
                       ],
                     })
                   : local_6
-                    ? fn_9086e857(local_6, local_4, arg_8)
+                    ? fn_18e40586(local_6, local_4, arg_8)
                     : null,
                 imported("div", {
                   className: local_a88796a3.textareaShell,
@@ -12252,6 +12252,7 @@ ${local_2}`
                       }),
                     imported("textarea", {
                       dir: "auto",
+                      spellcheck: false,
                       "aria-label": local_19
                         ? "Редактировать сообщение"
                         : "Сообщение",
@@ -12409,7 +12410,7 @@ const local_0ce417f1 = {
   confirm: local_c37c5d54,
   hint: local_ca66b2a4_2,
 };
-const local_4c310116 = ({
+const local_3c06b9b3 = ({
   chats: arg,
   excludeChatId: arg_2,
   count: arg_3,
@@ -12977,7 +12978,7 @@ function fn_ba95c6d6(arg, arg_2) {
   };
 }
 const local_f06debfc_30 = 12;
-function fn_8ed11ff8(arg, arg_2) {
+function fn_bdeebb04(arg, arg_2) {
   const local = imported_3(null);
   imported_9(() => {
     const local = local.current;
@@ -13480,7 +13481,7 @@ function fn_e5016567(arg, arg_2 = 80) {
   }
   return arg;
 }
-const local_b57795fe = ({
+const local_310be342 = ({
   chat: arg,
   messages: arg_2,
   composerKey: arg_3,
@@ -13764,7 +13765,7 @@ const local_b57795fe = ({
     handleDistFromBottom: local_49,
     handleFabClick: local_50,
   } = fn_290743e3(arg_28, arg?.id, arg_31, arg_32);
-  const local_51 = fn_8ed11ff8(local_20, arg?.id);
+  const local_51 = fn_bdeebb04(local_20, arg?.id);
   const local_52 = fn_d2763705(local_51, arg?.id);
   if (!arg) {
     return imported("div", {
@@ -13854,7 +13855,7 @@ const local_b57795fe = ({
             onDelete: local_29,
             onCancel: local_21,
           })
-        : imported(local_a2ea003c, {
+        : imported(local_a856113d, {
             user: arg.user,
             chatId: arg.id,
             isGroup: arg.isGroup,
@@ -13889,7 +13890,7 @@ const local_b57795fe = ({
           emptyMessage: local_37 ? "Пока здесь нет сообщений" : undefined,
           bottomSpacer: local_52 + 8,
         },
-        arg.id,
+        arg_3 ?? arg.id,
       ),
       arg_31 &&
         imported(local_fd022e27, {
@@ -13990,7 +13991,7 @@ const local_b57795fe = ({
                       ],
                     })
                   : imported(
-                      local_e20e612a,
+                      local_4859b1e5,
                       {
                         emojiOwnerId: local_2?.id,
                         draftKey: arg.id || arg_3 || "",
@@ -14047,7 +14048,7 @@ const local_b57795fe = ({
         }),
       !local &&
         local_6 === "self-purchase" &&
-        imported(imported_83, {
+        imported(imported_84, {
           fallback: null,
           children: imported(imported_124, {
             isOpen: true,
@@ -14069,7 +14070,7 @@ const local_b57795fe = ({
         }),
       !local &&
         local_6 === "gift-purchase" &&
-        imported(imported_83, {
+        imported(imported_84, {
           fallback: null,
           children: imported(imported_126, {
             isOpen: true,
@@ -14100,7 +14101,7 @@ const local_b57795fe = ({
         }),
       local_22 &&
         arg_23 &&
-        imported(local_4c310116, {
+        imported(local_3c06b9b3, {
           chats: arg_23,
           excludeChatId: arg.id,
           count: local_24?.length ?? local_18.size,
@@ -14443,7 +14444,7 @@ function fn_7de513f6({ items: arg, onShowInChat: arg_2, scrollRoot: arg_3 }) {
     ),
   });
 }
-const local_df9971ac = imported_84(() =>
+const local_df9971ac = imported_83(() =>
   imported_85(
     () => import("./chunk-842b5763c39c.js"),
     local_0fae464a([4, 1, 2, 5]),
@@ -14451,7 +14452,7 @@ const local_df9971ac = imported_84(() =>
     default: arg.ConfirmModal,
   })),
 );
-const local_54a150da = imported_84(() =>
+const local_54a150da = imported_83(() =>
   imported_85(
     () => import("../routes/report-modal.js"),
     local_0fae464a([6, 1, 2, 7, 8]),
@@ -14459,7 +14460,7 @@ const local_54a150da = imported_84(() =>
     default: arg.ReportModal,
   })),
 );
-function fn_09ecc92b({ chat: arg, profile: arg_2 }) {
+function fn_00bdb2d2({ chat: arg, profile: arg_2 }) {
   const local = imported_37()?.id;
   const [local_2, local_3] = imported_2(null);
   const [local_4, local_5] = imported_2(false);
@@ -14734,7 +14735,7 @@ function fn_09ecc92b({ chat: arg, profile: arg_2 }) {
           document.body,
         ),
       local_2 &&
-        imported(imported_83, {
+        imported(imported_84, {
           fallback: null,
           children:
             local_2 === "report" && local_20
@@ -14759,7 +14760,7 @@ function fn_09ecc92b({ chat: arg, profile: arg_2 }) {
     ],
   });
 }
-function fn_8b5636dd({ chatDto: arg, profile: arg_2 }) {
+function fn_30cb43ff({ chatDto: arg, profile: arg_2 }) {
   const local = imported_128(arg);
   const local_2 = arg?.other_user_deleted === true || arg_2?.isDeleted === true;
   const local_3 =
@@ -14855,7 +14856,7 @@ function fn_8b5636dd({ chatDto: arg, profile: arg_2 }) {
             }),
           }),
           imported(
-            fn_09ecc92b,
+            fn_00bdb2d2,
             {
               chat: arg,
               profile: arg_2,
@@ -14909,7 +14910,7 @@ const local_3a8c9153 = {
   music: "Нет музыки",
   voice: "Нет голосовых",
 };
-function fn_194d5509() {
+function fn_d8fe4206() {
   const local = imported_3(null);
   const local_2 = imported_3(true);
   imported_6(
@@ -15303,7 +15304,7 @@ function fn_194d5509() {
               }),
             ],
           }),
-          imported(fn_8b5636dd, {
+          imported(fn_30cb43ff, {
             chatDto: local_12,
             profile: local_14,
           }),
@@ -15370,7 +15371,7 @@ function fn_194d5509() {
                                       className: local_6cb57cd4.listRowBody,
                                       children: [
                                         arg.att.type === "file" &&
-                                          imported(local_4ef22aba, {
+                                          imported(local_7f56a702, {
                                             id: arg.att.id,
                                             url: arg.att.url,
                                             name: arg.att.name,
@@ -15378,7 +15379,7 @@ function fn_194d5509() {
                                             size: arg.att.size,
                                           }),
                                         arg.att.type === "audio" &&
-                                          imported(fn_6730df1d, {
+                                          imported(fn_bd429082, {
                                             messageId: arg.messageId,
                                             id: arg.att.id,
                                             url: arg.att.url,
@@ -15387,7 +15388,7 @@ function fn_194d5509() {
                                             durationMs: arg.att.durationMs,
                                           }),
                                         arg.att.type === "voice" &&
-                                          imported(local_0973d2dd, {
+                                          imported(local_f48e8bf7, {
                                             messageId: arg.messageId,
                                             id: arg.att.id,
                                             url: arg.att.url,
@@ -15515,7 +15516,7 @@ function fn_3aa03123({ gift: arg, subscription: arg_2 }) {
     );
   };
   if (local_3) {
-    return imported(imported_83, {
+    return imported(imported_84, {
       fallback: null,
       children:
         local_3 === "self"
@@ -15709,7 +15710,7 @@ function fn_f44a5d39(arg, arg_2, arg_3) {
     unblocking: local_5,
   };
 }
-const local_cb047a86 = ({
+const local_f1f0d541 = ({
   chatId: arg,
   draftUserId: arg_2,
   gift: arg_3,
@@ -15965,6 +15966,15 @@ const local_cb047a86 = ({
         }
         local_45(null);
       }
+      const local = imported_8.getState();
+      if (
+        local_2 &&
+        local.draftUser &&
+        (local.confirmedDraft?.chatId !== local_2 ||
+          local.messagesStatus[local_2] === "ready")
+      ) {
+        local_15();
+      }
       if (
         local_2 &&
         local_6 &&
@@ -15982,9 +15992,6 @@ const local_cb047a86 = ({
         imported_25.error("Не удалось открыть сообщение. Повторите переход");
       }
     });
-    if (local_2 && imported_8.getState().draftUser) {
-      local_15();
-    }
     return () => {
       local_3 = true;
       local_4.abort();
@@ -16117,25 +16124,28 @@ const local_cb047a86 = ({
     const local_3 = local.filter((arg) => !arg.isPinned);
     return [...local_2, ...local_3];
   }, [local_7, local_11, local_2]);
-  const local_58 = imported_4(
-    () => local_57.find((arg) => arg.id === (arg ?? local_8)) ?? null,
-    [local_57, local_8, arg],
-  );
-  const local_59 = !!local_58 || (!!arg_2 && local_12?.id === arg_2);
+  const local_58 =
+    arg_2 && local_13?.peerId === arg_2 ? local_13.chatId : undefined;
+  const local_59 = arg ?? local_58 ?? local_8;
   const local_60 = imported_4(
-    () => local_7.find((arg) => arg.chat_id === (arg ?? local_8)) ?? null,
-    [local_7, local_8, arg],
+    () => local_57.find((arg) => arg.id === local_59) ?? null,
+    [local_57, local_59],
   );
-  const local_61 = imported_4(
-    () => imported_44(local_60, local_2, local_3),
-    [local_60, local_2, local_3],
+  const local_61 = !!local_60 || (!!arg_2 && local_12?.id === arg_2);
+  const local_62 = imported_4(
+    () => local_7.find((arg) => arg.chat_id === local_59) ?? null,
+    [local_7, local_59],
   );
-  const local_62 = imported_4(() => {
-    if (!local_8) {
+  const local_63 = imported_4(
+    () => imported_44(local_62, local_2, local_3),
+    [local_62, local_2, local_3],
+  );
+  const local_64 = imported_4(() => {
+    if (!local_59) {
       return [];
     }
-    const local = local_9[local_8] ?? [];
-    const local_2 = local_10[local_8] ?? {};
+    const local = local_9[local_59] ?? [];
+    const local_2 = local_10[local_59] ?? {};
     let local_3 = null;
     for (const [local, local_2] of Object.entries(local_2)) {
       if (local !== local_2 && (!local_3 || imported_103(local_2, local_3))) {
@@ -16149,9 +16159,9 @@ const local_cb047a86 = ({
     const local_5 = (arg) => local_4.get(arg);
     return local
       .map((arg) => {
-        const local = imported_137(arg, local_8, local_2, {
+        const local = imported_137(arg, local_59, local_2, {
           resolveOriginal: local_5,
-          participants: local_61,
+          participants: local_63,
         });
         if (local.isOutgoing && local_3) {
           local.isRead = imported_139(arg.message_id, local_3);
@@ -16159,10 +16169,10 @@ const local_cb047a86 = ({
         return local;
       })
       .reverse();
-  }, [local_8, local_9, local_10, local_2, local_61]);
-  const local_63 = !!arg_2;
-  const local_64 = imported_4(() => {
-    if (local_63 && local_12) {
+  }, [local_59, local_9, local_10, local_2, local_63]);
+  const local_65 = !!arg_2;
+  const local_66 = imported_4(() => {
+    if (local_65 && local_12) {
       return {
         id: "",
         user: local_12,
@@ -16170,44 +16180,46 @@ const local_cb047a86 = ({
       };
     }
     return null;
-  }, [local_63, local_12]);
-  const local_65 = imported_4(() => {
-    if (!local_63 || !arg_2) {
+  }, [local_65, local_12]);
+  const local_67 = imported_4(() => {
+    if (!local_65 || !arg_2) {
       return [];
     }
     return (local_9[`draft:${arg_2}`] ?? [])
       .map((arg) =>
         imported_137(arg, "", local_2, {
-          participants: local_61,
+          participants: local_63,
         }),
       )
       .reverse();
-  }, [local_63, arg_2, local_9, local_2, local_61]);
-  const local_66 = local_63 ? local_64 : local_58;
-  const local_67 = local_63 ? local_65 : local_62;
-  const local_68 = imported_8((arg) => arg.messagesStatus);
-  const local_69 = imported_8((arg) => arg.openingChat);
-  const local_70 = imported_8((arg) => {
+  }, [local_65, arg_2, local_9, local_2, local_63]);
+  const local_68 = local_65 && !local_58 ? local_66 : (local_60 ?? local_66);
+  const local_69 = local_65 && !local_58 ? local_67 : local_64;
+  const local_70 = imported_8((arg) => arg.messagesStatus);
+  const local_71 = imported_8((arg) => arg.openingChat);
+  const local_72 = imported_8((arg) => {
     if (local_8) {
       return arg.firstUnreadByChat[local_8];
     }
   });
-  const local_71 =
-    local_63 || (!!local_8 && !local_69 && local_68[local_8] === "ready");
-  const local_72 =
-    local_66 && !local_66.isGroup && local_66.user.id !== local_2
-      ? local_66.user.id
+  const local_73 =
+    local_65 ||
+    (local_13?.chatId === local_59 && local_69.length > 0) ||
+    (!!local_59 && !local_71 && local_70[local_59] === "ready");
+  const local_74 =
+    local_68 && !local_68.isGroup && local_68.user.id !== local_2
+      ? local_68.user.id
       : null;
   const {
-    notice: local_73,
-    unblock: local_74,
-    unblocking: local_75,
+    notice: local_75,
+    unblock: local_76,
+    unblocking: local_77,
   } = fn_f44a5d39(
     local_2,
-    local_72,
-    local_63 && arg_2 ? `draft:${arg_2}` : (local_8 ?? ""),
+    local_74,
+    local_65 && arg_2 ? `draft:${arg_2}` : (local_8 ?? ""),
   );
-  const local_76 = local_44?.chatId === (arg ?? local_8) ? local_44 : null;
+  const local_78 = local_44?.chatId === (arg ?? local_8) ? local_44 : null;
   return imported("div", {
     className: `${imported_140.messenger} ym-hide-content`,
     children: [
@@ -16223,7 +16235,7 @@ const local_cb047a86 = ({
         className: `${imported_140.container} ${local_42 ? imported_140.containerWithPanel : ""}`,
         children: [
           imported(
-            local_45ac8fa3,
+            local_5d9cc14a,
             {
               chats: local_57,
               activeChatId: local_8,
@@ -16234,52 +16246,52 @@ const local_cb047a86 = ({
             },
             `chat-list:${local_2}`,
           ),
-          imported(local_b57795fe, {
-            chat: local_66,
-            messages: local_67,
+          imported(local_310be342, {
+            chat: local_68,
+            messages: local_69,
             composerKey:
-              local_63 && arg_2
+              local_65 && arg_2
                 ? `draft:${arg_2}`
-                : local_66 && !local_66.isGroup
-                  ? `draft:${local_66.user.id}`
+                : local_68 && !local_68.isGroup
+                  ? `draft:${local_68.user.id}`
                   : undefined,
             recipientWarningHandoffChatId: arg,
-            messagesReady: local_71,
-            firstUnreadId: local_70,
-            loadError: !!local_8 && local_68[local_8] === "error",
+            messagesReady: local_73,
+            firstUnreadId: local_72,
+            loadError: !!local_8 && local_70[local_8] === "error",
             chatRequested: !!arg || !!arg_2,
-            chatLoading: local_63
+            chatLoading: local_65
               ? local_12?.id !== arg_2
               : !!arg &&
-                (local_69 ||
-                  !local_68[arg] ||
-                  local_68[arg] === "loading" ||
-                  local_68[arg] === "idle"),
+                (local_71 ||
+                  !local_70[arg] ||
+                  local_70[arg] === "loading" ||
+                  local_70[arg] === "idle"),
             onRetryLoad: () => {
               if (local_8) {
                 local_14(local_8);
               }
             },
-            blockNotice: local_73,
-            onUnblock: local_74,
-            unblocking: local_75,
+            blockNotice: local_75,
+            onUnblock: local_76,
+            unblocking: local_77,
             onSend: (arg, arg_2, arg_3) => {
-              if (local_63 && arg_2) {
+              if (local_65 && arg_2) {
                 local_6(() => local_19(arg_2, arg, arg_2, arg_3), arg_2);
                 return;
               }
               if (local_8) {
-                local_16(local_8, arg, local_76?.id ?? null, arg_2, arg_3);
+                local_16(local_8, arg, local_78?.id ?? null, arg_2, arg_3);
                 local_50();
               }
             },
             onSendVoice: (arg, arg_2, arg_3) => {
-              if (local_63 && arg_2) {
+              if (local_65 && arg_2) {
                 local_6(() => local_20(arg_2, arg, arg_2, arg_3), arg_2);
                 return;
               }
               if (local_8) {
-                local_17(local_8, arg, arg_2, arg_3, local_76?.id ?? null);
+                local_17(local_8, arg, arg_2, arg_3, local_78?.id ?? null);
                 local_50();
               }
             },
@@ -16292,45 +16304,45 @@ const local_cb047a86 = ({
               }
             },
             onRetryMessage: (arg) => {
-              if (local_63 && arg_2) {
+              if (local_65 && arg_2) {
                 local_6(() => local_18(arg), arg_2);
               } else {
                 local_18(arg);
               }
             },
             onTyping: (arg) => {
-              if (!local_63 && local_8) {
+              if (!local_65 && local_8) {
                 local_21(local_8, arg);
               }
             },
             onBack: () => {
               local_45(null);
-              if (local_63) {
+              if (local_65) {
                 local_15();
               }
               imported_23("/chats", true);
             },
-            replyingTo: local_76,
+            replyingTo: local_78,
             onReply: local_49,
             onCancelReply: local_50,
-            participants: local_61,
+            participants: local_63,
             textareaRef: local_48,
             hasMore: local_8 ? (local_29[local_8] ?? false) : false,
             isLoadingMore: local_8 ? (local_30[local_8] ?? false) : false,
             olderLoadError: !!local_8 && !!local_31?.[local_8],
             onLoadMore: local_51,
             hasNewer:
-              !local_63 && local_8 ? (local_37[local_8] ?? false) : false,
+              !local_65 && local_8 ? (local_37[local_8] ?? false) : false,
             isLoadingNewer:
-              !local_63 && local_8 ? (local_38[local_8] ?? false) : false,
-            onLoadNewer: local_63 ? undefined : local_52,
+              !local_65 && local_8 ? (local_38[local_8] ?? false) : false,
+            onLoadNewer: local_65 ? undefined : local_52,
             scrollIntent:
-              !local_63 && local_36 && local_36.chatId === local_8
+              !local_65 && local_36 && local_36.chatId === local_8
                 ? local_36
                 : null,
-            onReplyClick: local_63 ? undefined : local_53,
-            onScrollToBottomClick: local_63 ? undefined : local_54,
-            onLiveBottomChange: !local_63 && local_8 ? local_55 : undefined,
+            onReplyClick: local_65 ? undefined : local_53,
+            onScrollToBottomClick: local_65 ? undefined : local_54,
+            onLiveBottomChange: !local_65 && local_8 ? local_55 : undefined,
             availableChats: local_57,
             onDeleteMessage: (arg, arg_2) => {
               if (local_8) {
@@ -16361,7 +16373,7 @@ const local_cb047a86 = ({
               }
             },
           }),
-          local_59 && imported(fn_194d5509, {}, `chat-info:${local_2}`),
+          local_61 && imported(fn_d8fe4206, {}, `chat-info:${local_2}`),
         ],
       }),
     ],
@@ -16428,7 +16440,7 @@ function fn_966e2b61(arg) {
   return imported(
     fn_3708e60e,
     {
-      children: imported(local_cb047a86, {
+      children: imported(local_f1f0d541, {
         ...arg,
       }),
     },
