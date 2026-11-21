@@ -1,4 +1,4 @@
-import { symbol_289 as imported, symbol_001 as imported_2 } from "../entry.js";
+import { symbol_288 as imported, symbol_001 as imported_2 } from "../entry.js";
 import { I as imported_3 } from "../components/icon-chevron-left.js";
 const local_87ee5215 = "c_legal";
 const local_85b1b822 = "c_backButton";

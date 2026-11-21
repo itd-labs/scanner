@@ -1,7 +1,7 @@
 import {
   symbol_012 as imported,
-  symbol_223 as imported_2,
-  symbol_289 as imported_3,
+  symbol_222 as imported_2,
+  symbol_288 as imported_3,
   symbol_003 as imported_4,
   symbol_001 as imported_5,
 } from "../entry.js";

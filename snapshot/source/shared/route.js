@@ -15,148 +15,148 @@ const local_0fae464a = (
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
-  symbol_289 as imported,
-  symbol_223 as imported_2,
+  symbol_288 as imported,
+  symbol_222 as imported_2,
   symbol_002 as imported_3,
-  symbol_037 as imported_4,
-  symbol_157 as imported_5,
-  symbol_276 as imported_6,
-  symbol_104 as imported_7,
+  symbol_036 as imported_4,
+  symbol_156 as imported_5,
+  symbol_275 as imported_6,
+  symbol_103 as imported_7,
   bt as imported_8,
-  symbol_102 as imported_9,
-  symbol_042 as imported_10,
-  symbol_207 as imported_11,
-  symbol_109 as imported_12,
-  symbol_285 as imported_13,
-  symbol_208 as imported_14,
-  symbol_209 as imported_15,
-  symbol_088 as imported_16,
-  symbol_093 as imported_17,
-  symbol_210 as imported_18,
-  symbol_074 as imported_19,
-  symbol_211 as imported_20,
+  symbol_101 as imported_9,
+  symbol_041 as imported_10,
+  symbol_206 as imported_11,
+  symbol_108 as imported_12,
+  symbol_284 as imported_13,
+  symbol_207 as imported_14,
+  symbol_208 as imported_15,
+  symbol_087 as imported_16,
+  symbol_092 as imported_17,
+  symbol_209 as imported_18,
+  symbol_073 as imported_19,
+  symbol_210 as imported_20,
   symbol_020 as imported_21,
-  symbol_212 as imported_22,
+  symbol_211 as imported_22,
   symbol_001 as imported_23,
-  symbol_213 as imported_24,
-  symbol_046 as imported_25,
-  symbol_214 as imported_26,
-  symbol_215 as imported_27,
-  symbol_216 as imported_28,
-  symbol_217 as imported_29,
-  symbol_205 as imported_30,
-  symbol_218 as imported_31,
-  symbol_219 as imported_32,
-  symbol_220 as imported_33,
-  symbol_221 as imported_34,
-  symbol_222 as imported_35,
-  symbol_170 as imported_36,
-  symbol_085 as imported_37,
-  symbol_171 as imported_38,
-  symbol_062 as imported_39,
-  symbol_152 as imported_40,
-  symbol_090 as imported_41,
+  symbol_212 as imported_24,
+  symbol_045 as imported_25,
+  symbol_213 as imported_26,
+  symbol_214 as imported_27,
+  symbol_215 as imported_28,
+  symbol_216 as imported_29,
+  symbol_204 as imported_30,
+  symbol_217 as imported_31,
+  symbol_218 as imported_32,
+  symbol_219 as imported_33,
+  symbol_220 as imported_34,
+  symbol_221 as imported_35,
+  symbol_169 as imported_36,
+  symbol_084 as imported_37,
+  symbol_170 as imported_38,
+  symbol_061 as imported_39,
+  symbol_151 as imported_40,
+  symbol_089 as imported_41,
   symbol_003 as imported_42,
-  symbol_096 as imported_43,
-  symbol_172 as imported_44,
-  symbol_173 as imported_45,
-  symbol_174 as imported_46,
-  symbol_175 as imported_47,
-  symbol_072 as imported_48,
-  symbol_176 as imported_49,
-  symbol_177 as imported_50,
-  symbol_092 as imported_51,
-  symbol_178 as imported_52,
-  symbol_179 as imported_53,
+  symbol_095 as imported_43,
+  symbol_171 as imported_44,
+  symbol_172 as imported_45,
+  symbol_173 as imported_46,
+  symbol_174 as imported_47,
+  symbol_071 as imported_48,
+  symbol_175 as imported_49,
+  symbol_176 as imported_50,
+  symbol_091 as imported_51,
+  symbol_177 as imported_52,
+  symbol_178 as imported_53,
   symbol_012 as imported_54,
-  symbol_180 as imported_55,
-  symbol_181 as imported_56,
-  symbol_182 as imported_57,
-  symbol_183 as imported_58,
-  symbol_184 as imported_59,
-  symbol_185 as imported_60,
-  symbol_186 as imported_61,
-  symbol_187 as imported_62,
-  symbol_100 as imported_63,
-  symbol_188 as imported_64,
-  symbol_189 as imported_65,
-  symbol_134 as imported_66,
-  symbol_190 as imported_67,
-  symbol_048 as imported_68,
-  symbol_191 as imported_69,
-  symbol_192 as imported_70,
-  symbol_193 as imported_71,
-  symbol_194 as imported_72,
-  symbol_195 as imported_73,
-  symbol_097 as imported_74,
-  symbol_041 as imported_75,
-  symbol_196 as imported_76,
-  symbol_159 as imported_77,
-  symbol_224 as imported_78,
-  symbol_128 as imported_79,
-  symbol_225 as imported_80,
-  symbol_226 as imported_81,
-  symbol_227 as imported_82,
-  symbol_136 as imported_83,
-  symbol_138 as imported_84,
-  symbol_139 as imported_85,
-  symbol_228 as imported_86,
-  symbol_229 as imported_87,
-  symbol_230 as imported_88,
-  symbol_231 as imported_89,
-  symbol_232 as imported_90,
-  symbol_233 as imported_91,
-  symbol_249 as imported_92,
-  symbol_250 as imported_93,
-  symbol_251 as imported_94,
-  symbol_252 as imported_95,
-  symbol_253 as imported_96,
-  symbol_254 as imported_97,
-  symbol_108 as imported_98,
-  symbol_255 as imported_99,
-  symbol_052 as imported_100,
-  symbol_256 as imported_101,
-  symbol_257 as imported_102,
-  symbol_258 as imported_103,
-  symbol_259 as imported_104,
-  symbol_260 as imported_105,
-  symbol_261 as imported_106,
-  symbol_262 as imported_107,
-  symbol_263 as imported_108,
-  symbol_264 as imported_109,
-  symbol_105 as imported_110,
-  symbol_265 as imported_111,
-  symbol_266 as imported_112,
+  symbol_179 as imported_55,
+  symbol_180 as imported_56,
+  symbol_181 as imported_57,
+  symbol_182 as imported_58,
+  symbol_183 as imported_59,
+  symbol_184 as imported_60,
+  symbol_185 as imported_61,
+  symbol_186 as imported_62,
+  symbol_099 as imported_63,
+  symbol_187 as imported_64,
+  symbol_188 as imported_65,
+  symbol_133 as imported_66,
+  symbol_189 as imported_67,
+  symbol_047 as imported_68,
+  symbol_190 as imported_69,
+  symbol_191 as imported_70,
+  symbol_192 as imported_71,
+  symbol_193 as imported_72,
+  symbol_194 as imported_73,
+  symbol_096 as imported_74,
+  symbol_040 as imported_75,
+  symbol_195 as imported_76,
+  symbol_158 as imported_77,
+  symbol_223 as imported_78,
+  symbol_127 as imported_79,
+  symbol_224 as imported_80,
+  symbol_225 as imported_81,
+  symbol_226 as imported_82,
+  symbol_135 as imported_83,
+  symbol_137 as imported_84,
+  symbol_138 as imported_85,
+  symbol_227 as imported_86,
+  symbol_228 as imported_87,
+  symbol_229 as imported_88,
+  symbol_230 as imported_89,
+  symbol_231 as imported_90,
+  symbol_232 as imported_91,
+  symbol_248 as imported_92,
+  symbol_249 as imported_93,
+  symbol_250 as imported_94,
+  symbol_251 as imported_95,
+  symbol_252 as imported_96,
+  symbol_253 as imported_97,
+  symbol_107 as imported_98,
+  symbol_254 as imported_99,
+  symbol_051 as imported_100,
+  symbol_255 as imported_101,
+  symbol_256 as imported_102,
+  symbol_257 as imported_103,
+  symbol_258 as imported_104,
+  symbol_259 as imported_105,
+  symbol_260 as imported_106,
+  symbol_261 as imported_107,
+  symbol_262 as imported_108,
+  symbol_263 as imported_109,
+  symbol_104 as imported_110,
+  symbol_264 as imported_111,
+  symbol_265 as imported_112,
   dt as imported_113,
-  symbol_267 as imported_114,
-  symbol_268 as imported_115,
-  symbol_269 as imported_116,
-  symbol_065 as imported_117,
-  symbol_084 as imported_118,
-  symbol_270 as imported_119,
-  symbol_103 as imported_120,
-  symbol_271 as imported_121,
-  symbol_272 as imported_122,
-  symbol_234 as imported_123,
-  symbol_113 as imported_124,
-  symbol_235 as imported_125,
-  symbol_112 as imported_126,
-  symbol_236 as imported_127,
-  symbol_237 as imported_128,
-  symbol_238 as imported_129,
-  symbol_239 as imported_130,
-  symbol_240 as imported_131,
-  symbol_241 as imported_132,
-  symbol_091 as imported_133,
+  symbol_266 as imported_114,
+  symbol_267 as imported_115,
+  symbol_268 as imported_116,
+  symbol_064 as imported_117,
+  symbol_083 as imported_118,
+  symbol_269 as imported_119,
+  symbol_102 as imported_120,
+  symbol_270 as imported_121,
+  symbol_271 as imported_122,
+  symbol_233 as imported_123,
+  symbol_112 as imported_124,
+  symbol_234 as imported_125,
+  symbol_111 as imported_126,
+  symbol_235 as imported_127,
+  symbol_236 as imported_128,
+  symbol_237 as imported_129,
+  symbol_238 as imported_130,
+  symbol_239 as imported_131,
+  symbol_240 as imported_132,
+  symbol_090 as imported_133,
   symbol_022 as imported_134,
-  symbol_148 as imported_135,
-  symbol_242 as imported_136,
-  symbol_243 as imported_137,
-  symbol_244 as imported_138,
-  symbol_245 as imported_139,
-  symbol_246 as imported_140,
-  symbol_247 as imported_141,
-  symbol_163 as imported_142,
+  symbol_147 as imported_135,
+  symbol_241 as imported_136,
+  symbol_242 as imported_137,
+  symbol_243 as imported_138,
+  symbol_244 as imported_139,
+  symbol_245 as imported_140,
+  symbol_246 as imported_141,
+  symbol_162 as imported_142,
 } from "../entry.js";
 import { u as imported_143, a as imported_144 } from "./format-last-seen.js";
 import { I as imported_145 } from "../components/icon-check.js";
@@ -791,7 +791,7 @@ const local_b4d2b3d6 = ({ read: arg, decorative: arg_2 = false }) =>
           }),
         }),
   });
-function fn_d93c08b5(arg, arg_2, arg_3, arg_4, arg_5) {
+function fn_c9b5591b(arg, arg_2, arg_3, arg_4, arg_5) {
   const local = Math.max(0, arg_3.bottom - 8 - arg.bottom - 10);
   const local_2 = Math.max(0, arg.top - 10 - arg_3.top - 8);
   const local_3 = Math.max(0, arg_3.bottom - arg_3.top - 16);
@@ -1028,7 +1028,7 @@ function fn_97208bb6(arg, arg_2, arg_3, arg_4) {
       local_4.bottom - local_f06debfc_4 * 2 - 1,
     );
   }
-  return fn_d93c08b5(
+  return fn_c9b5591b(
     arg.getBoundingClientRect(),
     {
       width: arg_2.offsetWidth,
@@ -1476,7 +1476,7 @@ function fn_13c0682d() {
   };
 }
 const local_f06debfc_6 = 500;
-const local_aa0fd44b = ({ chat: arg, active: arg_2, onClick: arg_3 }) => {
+const local_37d66595 = ({ chat: arg, active: arg_2, onClick: arg_3 }) => {
   const {
     user: local,
     lastMessage: local_2,
@@ -2087,7 +2087,7 @@ async function fn_b3c95848(arg, arg_2, arg_3, arg_4, arg_5, arg_6 = 5) {
     complete: arg_2.every((arg) => local_2.has(arg)),
   };
 }
-function fn_f2ee9e88({ query: arg, chats: arg_2 }) {
+function fn_f049abc6({ query: arg, chats: arg_2 }) {
   const [local, local_2] = imported_2([]);
   const [local_3, local_4] = imported_2(false);
   const [local_5, local_6] = imported_2(false);
@@ -2613,7 +2613,7 @@ const local_45ac8fa3 = ({
         children:
           local_14.length >= 2 && local_8 === "messages"
             ? local_23.current === local_2
-              ? imported(fn_f2ee9e88, {
+              ? imported(fn_f049abc6, {
                   query: local_6,
                   chats: arg,
                 })
@@ -2726,7 +2726,7 @@ const local_45ac8fa3 = ({
                             })
                           : local_32.map((arg) =>
                               imported(
-                                local_aa0fd44b,
+                                local_37d66595,
                                 {
                                   chat: arg,
                                   active: arg.id === arg_2,
@@ -3060,7 +3060,7 @@ const local_71b7eab8 = {
   up: local_2dd95584,
   down: local_847c4bd6,
 };
-function fn_ebc4a46c({ chatId: arg, onClose: arg_2, onQueryChange: arg_3 }) {
+function fn_a9eb2ca2({ chatId: arg, onClose: arg_2, onQueryChange: arg_3 }) {
   const local = imported_37();
   const local_2 = imported_8((arg) =>
     arg.chats.find((arg) => arg.chat_id === arg),
@@ -3645,7 +3645,7 @@ const local_a2ea003c = ({
     children: [
       local_14
         ? imported(
-            fn_ebc4a46c,
+            fn_a9eb2ca2,
             {
               chatId: arg_2,
               onClose: local_16,
@@ -4179,7 +4179,7 @@ const local_5d5ef5f1 = ({ img: arg, index: arg_2, onOpen: arg_3 }) => {
     }),
   });
 };
-function fn_1744b2b7({ images: arg, flush: arg_2 }) {
+function fn_d1fe5e27({ images: arg, flush: arg_2 }) {
   const local = imported_3(imported_61()).current;
   const local_2 = imported_56((arg) => arg.open);
   const local_3 = imported_3(null);
@@ -4345,7 +4345,7 @@ const local_9e87ce8c = "c_button";
 const local_e3cffaad = {
   button: local_9e87ce8c,
 };
-function fn_d6e47567({
+function fn_a77ecf80({
   id: arg,
   url: arg_2,
   name: arg_3,
@@ -4505,7 +4505,7 @@ function fn_d8d59c1a({
           ],
         }),
         !local_14 &&
-          imported(fn_d6e47567, {
+          imported(fn_a77ecf80, {
             id: arg,
             url: arg_2,
             name: arg_3,
@@ -4559,7 +4559,7 @@ const local_e2c0c459 = {
   progressRow: local_edca84d6,
   time: local_15aa885a_3,
 };
-function fn_43de008e({
+function fn_6730df1d({
   id: arg,
   url: arg_2,
   name: arg_3,
@@ -4736,7 +4736,7 @@ function fn_43de008e({
         ],
       }),
       !local_6 &&
-        imported(fn_d6e47567, {
+        imported(fn_a77ecf80, {
           id: arg,
           url: arg_2,
           name: arg_3,
@@ -5588,7 +5588,7 @@ const local_59ab267f = ({
         height: arg.height,
       });
     case "audio":
-      return imported(fn_43de008e, {
+      return imported(fn_6730df1d, {
         id: arg.id,
         url: arg.url,
         name: arg.name,
@@ -5618,7 +5618,7 @@ const local_59ab267f = ({
       });
   }
 };
-const local_ac890063 = ({
+const local_67ca1c65 = ({
   message: arg,
   frameless: arg_2,
   flushMedia: arg_3,
@@ -5652,7 +5652,7 @@ const local_ac890063 = ({
   return imported(imported_21, {
     children: [
       local_3.length > 0 &&
-        imported(fn_1744b2b7, {
+        imported(fn_d1fe5e27, {
           flush: arg_3,
           images: local_3.map((arg, arg_2) => ({
             sourceMessageId: arg.id,
@@ -6429,7 +6429,7 @@ function fn_3723d5ce({ effect: arg, targetRef: arg_2 }) {
     document.body,
   );
 }
-function fn_40a2de67({
+function fn_598cb937({
   message: arg,
   entry: { view: arg_2, leaving: arg_3, animate: arg_4 },
   disabled: arg_5,
@@ -6520,7 +6520,7 @@ function fn_48740ee8({
           "aria-label": "Реакции на сообщение",
           children: arg_2.map((arg) =>
             imported(
-              fn_40a2de67,
+              fn_598cb937,
               {
                 message: arg,
                 entry: arg,
@@ -7732,7 +7732,7 @@ function fn_e7ec653c({ chatId: arg, attachment: arg_2 }) {
   }
   return null;
 }
-const local_e3ceba52 = ({
+const local_c2aff326 = ({
   onToggleSelection: arg,
   authorName: arg_2,
   message: arg_3,
@@ -8029,7 +8029,7 @@ const local_e3ceba52 = ({
                 imported(fn_2f7450d9, {
                   postId: arg_3.sharedPostId,
                 }),
-              imported(local_ac890063, {
+              imported(local_67ca1c65, {
                 message: arg_3,
                 frameless: local_28,
                 flushMedia: local_34,
@@ -8146,7 +8146,7 @@ const local_e3ceba52 = ({
     ],
   });
 };
-const local_d95e5548 = imported_98(local_e3ceba52);
+const local_d95e5548 = imported_98(local_c2aff326);
 const local_aad0de78 = 3600 * 1000;
 function fn_28d11666(arg) {
   const local = [];
@@ -8992,7 +8992,7 @@ function fn_0bab6a1d(arg, arg_2) {
   }
   return "first";
 }
-const local_81a8aff6 = ({
+const local_a837a51f = ({
   authorName: arg,
   messages: arg_2,
   onReply: arg_3,
@@ -11478,7 +11478,7 @@ function fn_9086e857(arg, arg_2, arg_3) {
   });
 }
 const local_f06debfc_28 = 10;
-const local_b7d22db5 = ({
+const local_e20e612a = ({
   emojiOwnerId: arg,
   promotedDraftKey: arg_2,
   draftKey: arg_3,
@@ -12977,7 +12977,7 @@ function fn_ba95c6d6(arg, arg_2) {
   };
 }
 const local_f06debfc_30 = 12;
-function fn_bdeebb04(arg, arg_2) {
+function fn_8ed11ff8(arg, arg_2) {
   const local = imported_3(null);
   imported_9(() => {
     const local = local.current;
@@ -13402,7 +13402,7 @@ function fn_1eb46546(arg) {
     local.chatId === arg.chatId
   );
 }
-function fn_5cf68894(arg, arg_2) {
+function fn_f12343f1(arg, arg_2) {
   if (
     local_0a9fda83 &&
     ((arg && local_0a9fda83.ownerId !== arg) ||
@@ -13764,7 +13764,7 @@ const local_b57795fe = ({
     handleDistFromBottom: local_49,
     handleFabClick: local_50,
   } = fn_290743e3(arg_28, arg?.id, arg_31, arg_32);
-  const local_51 = fn_bdeebb04(local_20, arg?.id);
+  const local_51 = fn_8ed11ff8(local_20, arg?.id);
   const local_52 = fn_d2763705(local_51, arg?.id);
   if (!arg) {
     return imported("div", {
@@ -13862,7 +13862,7 @@ const local_b57795fe = ({
             onSearchQuery: local_5,
           }),
       imported(
-        local_81a8aff6,
+        local_a837a51f,
         {
           authorName: arg?.isGroup ? undefined : arg?.user.name,
           searchQuery: local_3.chatId === arg.id ? local_3.query : "",
@@ -13990,7 +13990,7 @@ const local_b57795fe = ({
                       ],
                     })
                   : imported(
-                      local_b7d22db5,
+                      local_e20e612a,
                       {
                         emojiOwnerId: local_2?.id,
                         draftKey: arg.id || arg_3 || "",
@@ -15378,7 +15378,7 @@ function fn_194d5509() {
                                             size: arg.att.size,
                                           }),
                                         arg.att.type === "audio" &&
-                                          imported(fn_43de008e, {
+                                          imported(fn_6730df1d, {
                                             messageId: arg.messageId,
                                             id: arg.att.id,
                                             url: arg.att.url,
@@ -15746,7 +15746,7 @@ const local_cb047a86 = ({
   const local_4 = imported_3(true);
   const local_5 = imported_3(null);
   imported_9(() => {
-    fn_5cf68894(local_2, local_a3c1aa31.location.pathname);
+    fn_f12343f1(local_2, local_a3c1aa31.location.pathname);
     local_5.current = null;
   }, [local_2, arg_2, arg]);
   const local_6 = (arg, arg_2) => {
@@ -15783,7 +15783,7 @@ const local_cb047a86 = ({
             );
           }
           imported_23(`/chats/${arg}`, true);
-          fn_5cf68894(
+          fn_f12343f1(
             imported_54.getState().profile?.id,
             local_a3c1aa31.location.pathname,
           );
@@ -15922,7 +15922,7 @@ const local_cb047a86 = ({
     local_39().catch(() => {});
     return () => {
       local_4.current = false;
-      fn_5cf68894(
+      fn_f12343f1(
         imported_54.getState().profile?.id,
         local_a3c1aa31.location.pathname,
       );

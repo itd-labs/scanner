@@ -1,17 +1,17 @@
 import {
-  symbol_285 as imported,
-  symbol_223 as imported_2,
-  symbol_276 as imported_3,
+  symbol_284 as imported,
+  symbol_222 as imported_2,
+  symbol_275 as imported_3,
   symbol_002 as imported_4,
-  symbol_037 as imported_5,
-  symbol_289 as imported_6,
+  symbol_036 as imported_5,
+  symbol_288 as imported_6,
   symbol_020 as imported_7,
-  symbol_157 as imported_8,
-  symbol_102 as imported_9,
-  symbol_148 as imported_10,
-  symbol_101 as imported_11,
-  symbol_042 as imported_12,
-  symbol_104 as imported_13,
+  symbol_156 as imported_8,
+  symbol_101 as imported_9,
+  symbol_147 as imported_10,
+  symbol_100 as imported_11,
+  symbol_041 as imported_12,
+  symbol_103 as imported_13,
 } from "../entry.js";
 import { I as imported_14 } from "../components/icon-download.js";
 import { I as imported_15 } from "../components/icon-chevron-left.js";
@@ -860,7 +860,7 @@ function fn_234497a4({
     ),
   });
 }
-function fn_e8206ee9({
+function fn_c145f85d({
   img: arg,
   isActive: arg_2,
   style: arg_3,
@@ -1084,7 +1084,7 @@ function fn_520fd428({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_e8206ee9, {
+              imported_6(fn_c145f85d, {
                 img: arg,
                 isActive: local_3,
                 onFullReady: local_3 ? arg_11 : undefined,
@@ -1162,7 +1162,7 @@ function fn_2bb87887({
             "data-slide-index": arg_2,
             children:
               local &&
-              imported_6(fn_e8206ee9, {
+              imported_6(fn_c145f85d, {
                 img: arg,
                 isActive: local_2,
                 onFullReady: local_2 ? arg_10 : undefined,
@@ -1200,7 +1200,7 @@ const local_f06debfc_8 = 2.5;
 const local_347c45cc = () =>
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-export function fn_7f042ba9({
+export function fn_d40fc266({
   images: arg,
   initialIndex: arg_2,
   sourceRect: arg_3 = null,
@@ -1953,4 +1953,4 @@ export function fn_7f042ba9({
     document.body,
   );
 }
-export { fn_7f042ba9 as default };
+export { fn_d40fc266 as default };

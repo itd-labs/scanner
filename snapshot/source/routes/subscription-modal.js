@@ -1,74 +1,74 @@
 import {
-  symbol_289 as imported,
-  symbol_097 as imported_2,
-  symbol_166 as imported_3,
-  symbol_167 as imported_4,
-  symbol_103 as imported_5,
+  symbol_288 as imported,
+  symbol_096 as imported_2,
+  symbol_165 as imported_3,
+  symbol_166 as imported_4,
+  symbol_102 as imported_5,
   symbol_022 as imported_6,
-  symbol_023 as imported_7,
-  symbol_223 as imported_8,
+  V as imported_7,
+  symbol_222 as imported_8,
   symbol_003 as imported_9,
-  symbol_275 as imported_10,
-  symbol_084 as imported_11,
-  symbol_080 as imported_12,
+  symbol_274 as imported_10,
+  symbol_083 as imported_11,
+  symbol_079 as imported_12,
   symbol_012 as imported_13,
-  symbol_081 as imported_14,
-  symbol_082 as imported_15,
-  symbol_168 as imported_16,
-  symbol_137 as imported_17,
-  symbol_169 as imported_18,
-  symbol_053 as imported_19,
-  symbol_148 as imported_20,
-  symbol_197 as imported_21,
+  symbol_080 as imported_14,
+  symbol_081 as imported_15,
+  symbol_167 as imported_16,
+  symbol_136 as imported_17,
+  symbol_168 as imported_18,
+  symbol_052 as imported_19,
+  symbol_147 as imported_20,
+  symbol_196 as imported_21,
   symbol_002 as imported_22,
-  symbol_276 as imported_23,
-  symbol_090 as imported_24,
-  symbol_285 as imported_25,
-  symbol_198 as imported_26,
-  symbol_075 as imported_27,
+  symbol_275 as imported_23,
+  symbol_089 as imported_24,
+  symbol_284 as imported_25,
+  symbol_197 as imported_26,
+  symbol_074 as imported_27,
   symbol_020 as imported_28,
-  symbol_199 as imported_29,
+  symbol_198 as imported_29,
   symbol_001 as imported_30,
-  symbol_140 as subscriptionApi,
-  symbol_061 as imported_31,
-  symbol_046 as imported_32,
-  symbol_200 as imported_33,
+  symbol_139 as subscriptionApi,
+  symbol_060 as imported_31,
+  symbol_045 as imported_32,
+  symbol_199 as imported_33,
   symbol_006 as imported_34,
   symbol_007 as imported_35,
-  symbol_201 as imported_36,
-  symbol_098 as imported_37,
-  symbol_291 as imported_38,
-  symbol_202 as imported_39,
-  symbol_287 as imported_40,
-  symbol_279 as imported_41,
-  symbol_029 as imported_42,
-  symbol_094 as imported_43,
-  symbol_158 as imported_44,
-  symbol_290 as imported_45,
+  symbol_200 as imported_36,
+  symbol_097 as imported_37,
+  symbol_290 as imported_38,
+  symbol_201 as imported_39,
+  symbol_286 as imported_40,
+  symbol_278 as imported_41,
+  symbol_028 as imported_42,
+  symbol_093 as imported_43,
+  symbol_157 as imported_44,
+  symbol_289 as imported_45,
   symbol_017 as imported_46,
-  symbol_083 as imported_47,
-  symbol_203 as imported_48,
-  symbol_278 as imported_49,
-  symbol_280 as imported_50,
-  symbol_293 as imported_51,
-  symbol_294 as imported_52,
+  symbol_082 as imported_47,
+  symbol_202 as imported_48,
+  symbol_277 as imported_49,
+  symbol_279 as imported_50,
+  symbol_292 as imported_51,
+  symbol_293 as imported_52,
   symbol_008 as imported_53,
-  symbol_204 as imported_54,
-  symbol_128 as imported_55,
-  symbol_049 as imported_56,
-  symbol_104 as imported_57,
-  symbol_066 as imported_58,
-  symbol_205 as imported_59,
-  symbol_096 as imported_60,
-  symbol_073 as imported_61,
-  symbol_085 as imported_62,
-  symbol_118 as imported_63,
-  symbol_099 as imported_64,
-  symbol_032 as imported_65,
-  symbol_129 as imported_66,
-  symbol_206 as imported_67,
-  symbol_130 as imported_68,
-  symbol_068 as useSettingsStore,
+  symbol_203 as imported_54,
+  symbol_127 as imported_55,
+  symbol_048 as imported_56,
+  symbol_103 as imported_57,
+  symbol_065 as imported_58,
+  symbol_204 as imported_59,
+  symbol_095 as imported_60,
+  symbol_072 as imported_61,
+  symbol_084 as imported_62,
+  symbol_117 as imported_63,
+  symbol_098 as imported_64,
+  symbol_031 as imported_65,
+  symbol_128 as imported_66,
+  symbol_205 as imported_67,
+  symbol_129 as imported_68,
+  symbol_067 as useSettingsStore,
 } from "../entry.js";
 import { G as GiftSubscriptionModal } from "../shared/chunk-7229b2be5161.js";
 import { M as imported_69 } from "../shared/mobile-subscription-warning.js";
@@ -1495,7 +1495,7 @@ function fn_486ae540(arg) {
   return local_24f9d3be[arg.type] || "";
 }
 const local_f06debfc = 5;
-function fn_6dcb824e() {
+function fn_3a7f37b3() {
   const local = imported_13((arg) => arg.profile);
   const [local_2, local_3] = imported_8(false);
   const [local_4, local_5] = imported_8(false);
@@ -2662,7 +2662,7 @@ function fn_93035bce(arg, arg_2, arg_3) {
   }
   return "Код на старую почту";
 }
-function fn_22a725eb({ kind: arg, methods: arg_2, onClose: arg_3 }) {
+function fn_8316e205({ kind: arg, methods: arg_2, onClose: arg_3 }) {
   const local = arg === "phone";
   const [local_2, local_3] = imported_8("value");
   const [local_4, local_5] = imported_8("ru");
@@ -3661,7 +3661,7 @@ function fn_5be740c2({ onChangePassword: arg }) {
       typeof local_7 === "object" &&
         local_7 &&
         local &&
-        imported(fn_22a725eb, {
+        imported(fn_8316e205, {
           kind: local_7.change,
           methods: local,
           onClose: local_16,
@@ -3841,7 +3841,7 @@ function fn_2d43bd11({ type: arg }) {
       });
   }
 }
-function fn_131f0f80({ onChangePassword: arg }) {
+function fn_0d046451({ onChangePassword: arg }) {
   const [local, local_2] = imported_8([]);
   const [local_3, local_4] = imported_8(true);
   const [local_5, local_6] = imported_8(null);
@@ -5236,11 +5236,11 @@ export function fn_76ac1a68({ onClose: arg }) {
           onClose: arg,
         });
       case "payment":
-        return imported(fn_6dcb824e, {});
+        return imported(fn_3a7f37b3, {});
       case "appearance":
         return imported(fn_92ca2ba3, {});
       case "security":
-        return imported(fn_131f0f80, {
+        return imported(fn_0d046451, {
           onChangePassword: () => local_9(true),
         });
       case "notifications":

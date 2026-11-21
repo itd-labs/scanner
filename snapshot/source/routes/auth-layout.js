@@ -1,8 +1,8 @@
 import {
   symbol_002 as imported,
-  symbol_276 as imported_2,
-  symbol_289 as imported_3,
-  symbol_036 as imported_4,
+  symbol_275 as imported_2,
+  symbol_288 as imported_3,
+  symbol_035 as imported_4,
 } from "../entry.js";
 const local_3eb06192 = (arg) => ({
   id: arg.id,
@@ -622,7 +622,7 @@ function fn_6439ae83({ posts: arg, trackRef: arg_2 }) {
     }),
   });
 }
-export const local_21a4f168 = ({ children: arg }) => {
+export const local_06c4c344 = ({ children: arg }) => {
   const local = local_6d272ac7.filter((arg, arg_2) => arg_2 % 2 === 0);
   const local_2 = local_6d272ac7.filter((arg, arg_2) => arg_2 % 2 === 1);
   const local_3 = imported(null);
@@ -719,4 +719,4 @@ export const local_21a4f168 = ({ children: arg }) => {
     ],
   });
 };
-export { local_21a4f168 as default };
+export { local_06c4c344 as default };

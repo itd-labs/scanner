@@ -1,19 +1,19 @@
 import {
   symbol_002 as imported,
-  symbol_285 as imported_2,
-  symbol_289 as imported_3,
-  symbol_100 as imported_4,
-  symbol_042 as imported_5,
-  symbol_223 as imported_6,
-  symbol_101 as imported_7,
-  symbol_276 as imported_8,
-  symbol_102 as imported_9,
-  symbol_103 as imported_10,
-  symbol_104 as imported_11,
-  symbol_105 as imported_12,
-  symbol_133 as imported_13,
-  symbol_134 as imported_14,
-  symbol_135 as imported_15,
+  symbol_284 as imported_2,
+  symbol_288 as imported_3,
+  symbol_099 as imported_4,
+  symbol_041 as imported_5,
+  symbol_222 as imported_6,
+  symbol_100 as imported_7,
+  symbol_275 as imported_8,
+  symbol_101 as imported_9,
+  symbol_102 as imported_10,
+  symbol_103 as imported_11,
+  symbol_104 as imported_12,
+  symbol_132 as imported_13,
+  symbol_133 as imported_14,
+  symbol_134 as imported_15,
 } from "../entry.js";
 import { I as imported_16 } from "../components/icon-download.js";
 const local_82353520 = "c_wrapper";
@@ -26,7 +26,7 @@ const local_960709d8 = {
   fill: local_966f2da5,
   thumb: local_c7ff5b22,
 };
-function fn_0de446cb({
+function fn_35b87a9e({
   value: arg,
   onChange: arg_2,
   onDragStart: arg_3,
@@ -180,7 +180,7 @@ export function fn_055e6b10() {
   }
   return imported_5(
     imported_3(
-      fn_aadbc1af,
+      fn_c3f4c95a,
       {
         options: local_2,
         onUnmount: local_4,
@@ -190,7 +190,7 @@ export function fn_055e6b10() {
     document.body,
   );
 }
-function fn_aadbc1af({ options: arg, onUnmount: arg_2 }) {
+function fn_c3f4c95a({ options: arg, onUnmount: arg_2 }) {
   const local = imported(null);
   const local_2 = imported(null);
   const local_3 = imported(null);
@@ -802,7 +802,7 @@ function fn_aadbc1af({ options: arg, onUnmount: arg_2 }) {
                 children: [
                   imported_3("div", {
                     className: local_67002f3e.volumeSlider,
-                    children: imported_3(fn_0de446cb, {
+                    children: imported_3(fn_35b87a9e, {
                       value: local_16 ? 0 : local_14,
                       onChange: local_41,
                       onDragStart: () => {

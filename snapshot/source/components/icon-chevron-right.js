@@ -1,4 +1,4 @@
-import { symbol_289 as imported } from "../entry.js";
+import { symbol_288 as imported } from "../entry.js";
 export const local_b5db4d8a = ({ size: arg = 24 }) =>
   imported("svg", {
     width: arg,

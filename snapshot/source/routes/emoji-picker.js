@@ -1,14 +1,14 @@
 import {
-  symbol_223 as imported,
-  symbol_276 as imported_2,
-  symbol_139 as imported_3,
-  symbol_037 as imported_4,
+  symbol_222 as imported,
+  symbol_275 as imported_2,
+  symbol_138 as imported_3,
+  symbol_036 as imported_4,
   symbol_002 as imported_5,
-  symbol_285 as imported_6,
-  symbol_106 as imported_7,
-  symbol_107 as imported_8,
-  symbol_289 as imported_9,
-  symbol_075 as imported_10,
+  symbol_284 as imported_6,
+  symbol_105 as imported_7,
+  symbol_106 as imported_8,
+  symbol_288 as imported_9,
+  symbol_074 as imported_10,
   symbol_020 as imported_11,
 } from "../entry.js";
 const local_2b79335c = "c_picker";
@@ -62,7 +62,7 @@ const local_e724dfd3 = (arg) => {
 };
 const local_414660d2 = (arg) =>
   `https://cdn.jsdelivr.net/npm/emoji-datasource-apple@latest/img/apple/64/${arg.toLowerCase()}.png`;
-const local_3098664b = (arg) => {
+const local_589811fb = (arg) => {
   if (arg) {
     return `${local_4e0d90fd}:${encodeURIComponent(arg)}`;
   }
@@ -70,7 +70,7 @@ const local_3098664b = (arg) => {
 };
 const local_076c27f5 = (arg) => {
   try {
-    const local = localStorage.getItem(local_3098664b(arg));
+    const local = localStorage.getItem(local_589811fb(arg));
     const local_2 = local ? JSON.parse(local) : [];
     if (Array.isArray(local_2)) {
       return local_2
@@ -89,7 +89,7 @@ const local_076c27f5 = (arg) => {
 const local_966eb2af = (arg, arg_2) => {
   try {
     localStorage.setItem(
-      local_3098664b(arg_2),
+      local_589811fb(arg_2),
       JSON.stringify(arg.slice(0, local_f06debfc)),
     );
   } catch {}
@@ -367,7 +367,7 @@ const local_1a71c12e = {
   Symbols: "Символы",
   Flags: "Флаги",
 };
-export const local_c938f6b5 = ({
+export const local_fcb7e125 = ({
   onEmojiSelect: arg,
   onClose: arg_2,
   width: arg_3 = 280,
@@ -546,4 +546,4 @@ export const local_c938f6b5 = ({
     }),
   });
 };
-export { local_c938f6b5 as default };
+export { local_fcb7e125 as default };

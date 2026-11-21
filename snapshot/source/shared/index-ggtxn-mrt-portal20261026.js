@@ -1,8 +1,8 @@
 import {
-  symbol_223 as imported,
+  symbol_222 as imported,
   symbol_002 as imported_2,
-  symbol_276 as imported_3,
-  symbol_289 as imported_4,
+  symbol_275 as imported_3,
+  symbol_288 as imported_4,
   symbol_003 as imported_5,
   symbol_020 as imported_6,
 } from "../entry.js";
@@ -16,7 +16,7 @@ const local_bcebeb33 = "c_errorText";
 const local_7149ec44 = "c_submitButton";
 const local_e76ac6e9 = "c_resendLink";
 const local_22fad9fb = "c_resendButton";
-const local_c4f5c462 = {
+const local_92418e80 = {
   form: local_7ab56d01,
   inputGroup: local_4dc32079,
   label: local_fe9ec23f,
@@ -28,7 +28,7 @@ const local_c4f5c462 = {
   resendLink: local_e76ac6e9,
   resendButton: local_22fad9fb,
 };
-const symbol_001 = ({
+export const local_ac552181 = ({
   label: arg = "Код с почты",
   error: arg_2,
   buttonText: arg_3 = "Продолжить",
@@ -99,18 +99,18 @@ const symbol_001 = ({
   };
   const local_13 = local.every((arg) => arg !== "");
   return imported_4("form", {
-    className: local_c4f5c462.form,
+    className: local_92418e80.form,
     onSubmit: local_11,
     children: [
       imported_4("div", {
-        className: local_c4f5c462.inputGroup,
+        className: local_92418e80.inputGroup,
         children: [
           imported_4("label", {
-            className: local_c4f5c462.label,
+            className: local_92418e80.label,
             children: arg,
           }),
           imported_4("div", {
-            className: local_c4f5c462.codeInputs,
+            className: local_92418e80.codeInputs,
             children: local.map((arg, arg_2) =>
               imported_4(
                 "input",
@@ -121,7 +121,7 @@ const symbol_001 = ({
                   type: "text",
                   inputMode: "numeric",
                   pattern: "[0-9]*",
-                  className: `${local_c4f5c462.codeInput} ${arg_2 ? local_c4f5c462.error : ""}`,
+                  className: `${local_92418e80.codeInput} ${arg_2 ? local_92418e80.error : ""}`,
                   value: arg,
                   onInput: (arg) => local_8(arg_2, arg.target.value),
                   onKeyDown: (arg) => local_9(arg_2, arg),
@@ -135,7 +135,7 @@ const symbol_001 = ({
           }),
           arg_2 &&
             imported_4("p", {
-              className: local_c4f5c462.errorText,
+              className: local_92418e80.errorText,
               children: arg_2,
             }),
         ],
@@ -145,16 +145,16 @@ const symbol_001 = ({
         variant: "primary",
         size: "lg",
         fullWidth: true,
-        className: local_c4f5c462.submitButton,
+        className: local_92418e80.submitButton,
         disabled: !local_13 || arg_9,
         children: arg_3,
       }),
       imported_4("p", {
-        className: local_c4f5c462.resendLink,
+        className: local_92418e80.resendLink,
         children: local_5
           ? imported_4("button", {
               type: "button",
-              className: local_c4f5c462.resendButton,
+              className: local_92418e80.resendButton,
               onClick: local_12,
               disabled: arg_9,
               children: arg_4,
@@ -166,4 +166,3 @@ const symbol_001 = ({
     ],
   });
 };
-export { symbol_001 };
