@@ -9,7 +9,7 @@ import {
   symbol_072 as imported_8,
   symbol_073 as imported_9,
   symbol_074 as imported_10,
-} from "../entry.js";
+} from "../entry-2.js";
 import { s as imported_11 } from "../shared/search-api.js";
 const local_ef251bc6 = "c_page";
 const local_b79c6e36 = "c_pageTitle";

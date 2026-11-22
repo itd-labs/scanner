@@ -1,10 +1,10 @@
-const local_468f87cb = (
+const local_37a47ed3 = (
   arg,
-  arg_2 = local_468f87cb,
+  arg_2 = local_37a47ed3,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./drawing-canvas.js",
-      "../entry.js",
+      "../entry-2.js",
       "../entry.css",
       "./drawing-canvas.css",
       "./report-modal.js",
@@ -103,7 +103,7 @@ import {
   symbol_034 as imported_71,
   symbol_035 as imported_72,
   symbol_033 as imported_73,
-} from "../entry.js";
+} from "../entry-2.js";
 import {
   u as imported_74,
   f as imported_75,
@@ -3039,7 +3039,7 @@ function fn_9acc0eb5({
 const local_06128897 = imported_50(() =>
   imported_57(
     () => import("./drawing-canvas.js"),
-    local_468f87cb([0, 1, 2, 3]),
+    local_37a47ed3([0, 1, 2, 3]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -3047,7 +3047,7 @@ const local_06128897 = imported_50(() =>
 const local_f8603183 = imported_50(() =>
   imported_57(
     () => import("./report-modal.js"),
-    local_468f87cb([4, 1, 2, 5, 6]),
+    local_37a47ed3([4, 1, 2, 5, 6]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -4107,7 +4107,7 @@ function fn_29dd6153({ username: arg }) {
 const local_1b6acf59 = imported_50(() =>
   imported_57(
     () => import("./subscription-modal.js"),
-    local_468f87cb([7, 1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
+    local_37a47ed3([7, 1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
   ).then((arg) => ({
     default: arg.SettingsModal,
   })),
@@ -4115,7 +4115,7 @@ const local_1b6acf59 = imported_50(() =>
 const local_fd22045b = imported_50(() =>
   imported_57(
     () => import("../shared/chunk-b4d78c0cc9a4.js"),
-    local_468f87cb([21, 1, 2, 22, 5, 23]),
+    local_37a47ed3([21, 1, 2, 22, 5, 23]),
   ).then((arg) => ({
     default: arg.UserListModal,
   })),

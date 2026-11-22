@@ -11,7 +11,7 @@ import {
   symbol_091 as imported_10,
   symbol_092 as imported_11,
   symbol_040 as imported_12,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_a1e12a9e = new Map();
 imported_12(() => {
   local_a1e12a9e.clear();

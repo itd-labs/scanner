@@ -5,7 +5,7 @@ import {
   symbol_041 as imported_4,
   symbol_295 as imported_5,
   symbol_083 as imported_6,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_49250f21 = "c_modal";
 const local_dc758942 = "c_changelog";
 const local_c8e0e11a = "c_entry";

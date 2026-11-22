@@ -46,7 +46,7 @@ import {
   symbol_014 as imported_45,
   symbol_015 as imported_46,
   symbol_016 as imported_47,
-} from "../entry.js";
+} from "../entry-2.js";
 import { C as imported_48 } from "./chunk-d0f3b8fb991b.js";
 function symbol_001(arg) {
   const { intent: local } = arg;

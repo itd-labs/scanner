@@ -11,7 +11,7 @@ import {
   symbol_083 as imported_10,
   symbol_046 as imported_11,
   symbol_090 as imported_12,
-} from "../entry.js";
+} from "../entry-2.js";
 import { s as imported_13 } from "./search-api.js";
 import { G as imported_14 } from "./chunk-7229b2be5161.js";
 import "./use-purchase-dialog.js";

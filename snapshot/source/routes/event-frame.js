@@ -12,7 +12,7 @@ import {
   symbol_002 as imported_11,
   symbol_075 as imported_12,
   symbol_145 as imported_13,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_6ca67a93 = (arg) =>
   arg.slice(imported.route.length).replace(/^\//, "");
 function fn_528c41b7(arg, arg_2) {

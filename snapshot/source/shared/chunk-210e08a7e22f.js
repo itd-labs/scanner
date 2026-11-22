@@ -11,7 +11,7 @@ import {
   symbol_073 as imported_10,
   symbol_056 as imported_11,
   symbol_057 as imported_12,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_8f7de938 = "c_post";
 const local_f1c23efb = "c_header";
 const local_ad66ff17 = "c_avatarLink";

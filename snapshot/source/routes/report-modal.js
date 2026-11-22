@@ -7,7 +7,7 @@ import {
   symbol_083 as imported_6,
   symbol_281 as imported_7,
   symbol_080 as imported_8,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_9 } from "../components/icon-check-circle.js";
 const local_d1ae2605 = {
   TARGET_NOT_FOUND: "REPORT_TARGET_NOT_FOUND",

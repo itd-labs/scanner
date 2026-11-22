@@ -28,7 +28,7 @@ import {
   symbol_107 as useFollowStatus,
   symbol_108 as useFollowStatusStore,
   symbol_109 as useFollowUser,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_24 } from "../components/icon-check.js";
 import { I as imported_25 } from "../components/icon-check-circle.js";
 const local_3aecdb4a = ({ size: arg = 48 }) =>

@@ -14,7 +14,7 @@ import {
   symbol_046 as imported_13,
   symbol_045 as imported_14,
   symbol_140 as imported_15,
-} from "../entry.js";
+} from "../entry-2.js";
 import {
   symbol_004 as imported_16,
   symbol_002 as imported_17,

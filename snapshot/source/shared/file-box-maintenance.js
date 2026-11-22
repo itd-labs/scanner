@@ -2,7 +2,7 @@ import {
   symbol_026 as imported,
   symbol_027 as imported_2,
   symbol_030 as imported_3,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_5f143b30 = "itd-filebox-v2";
 const local_4cc8ec46 = 500 * 1024 * 1024;
 const local_4cc8ec46_2 = 720 * 3600 * 1000;

@@ -1,7 +1,7 @@
-const local_0373ff9a = (
+const local_c3b301aa = (
   arg,
-  arg_2 = local_0373ff9a,
-  arg_3 = arg_2.f || (arg_2.f = ["../entry.js", "../entry.css"]),
+  arg_2 = local_c3b301aa,
+  arg_3 = arg_2.f || (arg_2.f = ["../entry-2.js", "../entry.css"]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
   symbol_142 as imported,
@@ -9,7 +9,7 @@ import {
   symbol_026 as imported_3,
   symbol_143 as imported_4,
   symbol_144 as imported_5,
-} from "../entry.js";
+} from "../entry-2.js";
 class clazz_42182037 {
   active = 0;
   pending = [];
@@ -203,7 +203,7 @@ async function fn_5e5096dc(arg, arg_2, arg_3, arg_4) {
     throw local_3;
   }
 }
-export async function fn_e3a6bef0(arg, arg_2) {
+export async function fn_51aadeb3(arg, arg_2) {
   const local = imported_3();
   const local_2 = arg_2.mime || "application/octet-stream";
   if (arg.size > local_f105ae8a) {
@@ -344,8 +344,8 @@ export async function fn_e3a6bef0(arg, arg_2) {
     elapsedMs: Date.now() - local_4,
   });
   imported_2(
-    () => import("../entry.js").then((arg) => arg.dV),
-    local_0373ff9a([0, 1]),
+    () => import("../entry-2.js").then((arg) => arg.dV),
+    local_c3b301aa([0, 1]),
   )
     .then(async ({ seedFileBox: arg }) => {
       if (await fn_e445020f(arg, local_2, local_12.sizeCipher)) {

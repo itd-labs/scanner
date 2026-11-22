@@ -15,7 +15,7 @@ import {
   symbol_035 as imported_14,
   symbol_069 as imported_15,
   symbol_070 as imported_16,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_17 } from "../components/icon-chevron-left.js";
 const local_301dfc98 = "c_postPage";
 const local_969d651e = "c_pageHeader";

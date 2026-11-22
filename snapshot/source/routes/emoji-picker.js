@@ -10,7 +10,7 @@ import {
   symbol_295 as imported_9,
   symbol_074 as imported_10,
   symbol_020 as imported_11,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_2b79335c = "c_picker";
 const local_65939b73 = "c_nativeEmoji";
 const local_9c08f813 = "c_searchFloating";

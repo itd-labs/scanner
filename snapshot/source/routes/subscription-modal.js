@@ -69,7 +69,7 @@ import {
   symbol_212 as imported_67,
   symbol_162 as imported_68,
   symbol_067 as useSettingsStore,
-} from "../entry.js";
+} from "../entry-2.js";
 import { G as GiftSubscriptionModal } from "../shared/chunk-7229b2be5161.js";
 import { M as imported_69 } from "../shared/mobile-subscription-warning.js";
 import { ConfirmModal as imported_70 } from "../shared/chunk-842b5763c39c.js";

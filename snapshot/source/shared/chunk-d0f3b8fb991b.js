@@ -2,7 +2,7 @@ import {
   symbol_295 as imported,
   symbol_082 as imported_2,
   symbol_083 as imported_3,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_49250f21 = "c_modal";
 const local_e3cffaad = {
   modal: local_49250f21,

@@ -4,7 +4,7 @@ import {
   symbol_295 as imported_3,
   symbol_003 as imported_4,
   symbol_001 as imported_5,
-} from "../entry.js";
+} from "../entry-2.js";
 import { M as imported_6 } from "../shared/mobile-subscription-warning.js";
 import { I as imported_7 } from "../components/icon-chevron-left.js";
 const local_87ee5215 = "c_legal";

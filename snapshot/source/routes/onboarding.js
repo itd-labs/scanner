@@ -1,10 +1,10 @@
-const local_605932fe = (
+const local_3cb22179 = (
   arg,
-  arg_2 = local_605932fe,
+  arg_2 = local_3cb22179,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./emoji-picker.js",
-      "../entry.js",
+      "../entry-2.js",
       "../entry.css",
       "./emoji-picker.css",
     ]),
@@ -25,7 +25,7 @@ import {
   symbol_137 as imported_13,
   symbol_081 as imported_14,
   symbol_138 as imported_15,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_fb418fb7 = "c_stepper";
 const local_2d2dc45b = "c_track";
 const local_c6284533 = "c_progress";
@@ -126,7 +126,7 @@ const local_1edc2ace = {
 const local_968eaf70 = imported_9(() =>
   imported_15(
     () => import("./emoji-picker.js"),
-    local_605932fe([0, 1, 2, 3]),
+    local_3cb22179([0, 1, 2, 3]),
   ).then((arg) => ({
     default: arg.EmojiPicker,
   })),

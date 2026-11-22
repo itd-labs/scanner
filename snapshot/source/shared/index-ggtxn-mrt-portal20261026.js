@@ -5,7 +5,7 @@ import {
   symbol_295 as imported_4,
   symbol_003 as imported_5,
   symbol_020 as imported_6,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_7ab56d01 = "c_form";
 const local_4dc32079 = "c_inputGroup";
 const local_fe9ec23f = "c_label";

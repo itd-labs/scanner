@@ -5,7 +5,7 @@ import {
   symbol_295 as imported_4,
   symbol_020 as imported_5,
   symbol_001 as imported_6,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_7 } from "../components/icon-chevron-left.js";
 async function fn_2883989d(arg) {
   const local = await fetch(arg, {

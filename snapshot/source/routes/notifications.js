@@ -22,7 +22,7 @@ import {
   symbol_291 as imported_21,
   symbol_095 as imported_22,
   symbol_074 as imported_23,
-} from "../entry.js";
+} from "../entry-2.js";
 import {
   symbol_001 as imported_24,
   symbol_002 as imported_25,

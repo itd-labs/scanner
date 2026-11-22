@@ -8,7 +8,7 @@ import {
   symbol_001 as imported_7,
   symbol_080 as imported_8,
   symbol_081 as imported_9,
-} from "../entry.js";
+} from "../entry-2.js";
 import {
   I as imported_10,
   a as imported_11,

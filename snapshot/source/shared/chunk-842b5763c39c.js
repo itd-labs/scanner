@@ -4,7 +4,7 @@ import {
   symbol_295 as imported_3,
   symbol_003 as imported_4,
   symbol_083 as imported_5,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_4d84dbb6 = "c_content";
 const local_9d9cf508 = "c_title";
 const local_8c84ac4c = "c_subtitle";

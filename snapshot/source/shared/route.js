@@ -1,10 +1,10 @@
-const local_0fae464a = (
+const local_de9b7be1 = (
   arg,
-  arg_2 = local_0fae464a,
+  arg_2 = local_de9b7be1,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./chunk-210e08a7e22f.js",
-      "../entry.js",
+      "../entry-2.js",
       "../entry.css",
       "./chunk-210e08a7e22f.css",
       "./chunk-842b5763c39c.js",
@@ -157,7 +157,7 @@ import {
   symbol_252 as imported_140,
   symbol_253 as imported_141,
   symbol_196 as imported_142,
-} from "../entry.js";
+} from "../entry-2.js";
 import { u as imported_143, a as imported_144 } from "./format-last-seen.js";
 import { I as imported_145 } from "../components/icon-check.js";
 import { s as imported_146 } from "./search-api.js";
@@ -5690,7 +5690,7 @@ const local_c2837da0_2 = {
 const local_8832b7ce = imported_83(() =>
   imported_85(
     () => import("./chunk-210e08a7e22f.js"),
-    local_0fae464a([0, 1, 2, 3]),
+    local_de9b7be1([0, 1, 2, 3]),
   ).then((arg) => ({
     default: arg.MessengerPost,
   })),
@@ -14447,7 +14447,7 @@ function fn_7de513f6({ items: arg, onShowInChat: arg_2, scrollRoot: arg_3 }) {
 const local_df9971ac = imported_83(() =>
   imported_85(
     () => import("./chunk-842b5763c39c.js"),
-    local_0fae464a([4, 1, 2, 5]),
+    local_de9b7be1([4, 1, 2, 5]),
   ).then((arg) => ({
     default: arg.ConfirmModal,
   })),
@@ -14455,7 +14455,7 @@ const local_df9971ac = imported_83(() =>
 const local_54a150da = imported_83(() =>
   imported_85(
     () => import("../routes/report-modal.js"),
-    local_0fae464a([6, 1, 2, 7, 8]),
+    local_de9b7be1([6, 1, 2, 7, 8]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),

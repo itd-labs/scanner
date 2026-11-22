@@ -1,4 +1,7 @@
-import { symbol_295 as imported, symbol_020 as imported_2 } from "../entry.js";
+import {
+  symbol_295 as imported,
+  symbol_020 as imported_2,
+} from "../entry-2.js";
 export function fn_e6f2bd50() {
   return imported(imported_2, {
     children:

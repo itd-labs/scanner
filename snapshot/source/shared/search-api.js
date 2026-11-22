@@ -3,7 +3,7 @@ import {
   V as imported_2,
   symbol_024 as imported_3,
   symbol_025 as imported_4,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_f50950e4 = new imported_4(1, 300 * 1000);
 const local_f50950e4_2 = new imported_4(1, 300 * 1000);
 const local_c07ef0a9 = "data";

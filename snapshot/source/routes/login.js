@@ -11,7 +11,7 @@ import {
   symbol_010 as imported_10,
   symbol_281 as imported_11,
   symbol_020 as imported_12,
-} from "../entry.js";
+} from "../entry-2.js";
 import { symbol_001 as imported_13 } from "../shared/chunk-bedc56a34092.js";
 import { C as imported_14 } from "../shared/chunk-d0f3b8fb991b.js";
 import { O as imported_15 } from "../shared/index-ggtxn-mrt-portal20261026.js";

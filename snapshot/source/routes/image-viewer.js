@@ -12,7 +12,7 @@ import {
   symbol_100 as imported_11,
   symbol_041 as imported_12,
   symbol_103 as imported_13,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_14 } from "../components/icon-download.js";
 import { I as imported_15 } from "../components/icon-chevron-left.js";
 import { I as imported_16 } from "../components/icon-chevron-right.js";

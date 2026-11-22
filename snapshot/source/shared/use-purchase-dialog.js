@@ -15,7 +15,7 @@ import {
   symbol_154 as imported_14,
   symbol_155 as imported_15,
   symbol_156 as imported_16,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_49250f21 = "c_modal";
 const local_24243f59 = "c_sub";
 const local_11f064fe = "c_top";

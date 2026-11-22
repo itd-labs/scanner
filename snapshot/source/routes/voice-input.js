@@ -6,7 +6,7 @@ import {
   symbol_295 as imported_5,
   symbol_074 as imported_6,
   symbol_141 as imported_7,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_8, a as imported_9 } from "../components/icon-play.js";
 import { I as imported_10 } from "../components/icon-stop.js";
 function fn_3506a85a() {

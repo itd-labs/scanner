@@ -9,7 +9,7 @@ import {
   symbol_148 as imported_8,
   symbol_132 as imported_9,
   symbol_102 as imported_10,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";

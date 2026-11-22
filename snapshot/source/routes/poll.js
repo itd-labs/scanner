@@ -5,7 +5,7 @@ import {
   symbol_291 as imported_4,
   symbol_295 as imported_5,
   symbol_020 as imported_6,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_cb182eba = "c_poll";
 const local_f58ba0b9 = "c_disabled";
 const local_f1c23efb = "c_header";

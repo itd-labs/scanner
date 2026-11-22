@@ -11,7 +11,7 @@ import {
   symbol_083 as imported_10,
   symbol_020 as imported_11,
   symbol_048 as imported_12,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_5ba4d0cb = ({ size: arg = 20 }) =>
   imported("svg", {
     width: arg,

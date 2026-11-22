@@ -12,7 +12,7 @@ import {
   symbol_012 as imported_11,
   symbol_031 as imported_12,
   symbol_098 as imported_13,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_e9c2b385 = imported((arg) => ({
   portal: {
     active: false,

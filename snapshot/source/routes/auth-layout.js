@@ -3,7 +3,7 @@ import {
   symbol_282 as imported_2,
   symbol_295 as imported_3,
   symbol_035 as imported_4,
-} from "../entry.js";
+} from "../entry-2.js";
 const local_3eb06192 = (arg) => ({
   id: arg.id,
   username: arg.username,

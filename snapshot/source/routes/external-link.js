@@ -2,7 +2,7 @@ import {
   symbol_295 as imported,
   symbol_036 as imported_2,
   symbol_001 as imported_3,
-} from "../entry.js";
+} from "../entry-2.js";
 import { I as imported_4 } from "../components/icon-chevron-left.js";
 import { I as imported_5 } from "../components/icon-info.js";
 const local_c32857d0 = ({ size: arg = 48 }) =>
