@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `95c6747e846d6dd6f2157bfe9159deceb9be1d58bb405021118555625007650c`
+- Build fingerprint: `f5f2f4a334059a0e6043e8e1c74b39c6c90e6291a1bcb4e8ee57cf5d781b9efa`
 - Resources: 199
-- Downloaded bytes: 20651783
+- Downloaded bytes: 20653555
 - Sentry releases: none
 
 ## Routes
@@ -25,4 +25,4 @@ No changes.
 
 ## User-visible strings
 
-- Added: `Фоновая проверка безопасности`
+- Added: `Повторить попытку`

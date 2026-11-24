@@ -15,7 +15,7 @@ import {
   symbol_133 as imported_14,
   symbol_134 as imported_15,
 } from "../entry-2.js";
-import { I as imported_16 } from "../components/icon-download.js";
+import { I as imported_16 } from "../components/icon-download-12e63033ffd4.js";
 const local_82353520 = "c_wrapper";
 const local_2d2dc45b = "c_track";
 const local_966f2da5 = "c_fill";

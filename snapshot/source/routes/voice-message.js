@@ -8,7 +8,10 @@ import {
   symbol_295 as imported_7,
   symbol_048 as imported_8,
 } from "../entry-2.js";
-import { I as imported_9, a as imported_10 } from "../components/icon-play.js";
+import {
+  I as imported_9,
+  a as imported_10,
+} from "../components/icon-play-083ed8b30ec6.js";
 const local_0ee2786e = "c_voiceMessage";
 const local_66fefc28 = "c_playButton";
 const local_4d84dbb6 = "c_content";
