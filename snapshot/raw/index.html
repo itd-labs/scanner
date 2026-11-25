@@ -33,5 +33,49 @@
 </head>
   <body>
     <div id="root"></div>
-  </body>
+  <script id="awards-portal-nav">
+(() => {
+  const destination = '/awards'
+  const name = '\u0418\u0432\u0435\u043d\u0442'
+  const activeImage = '/assets/portal/portal-active.gif'
+
+  function update() {
+    for (const link of document.querySelectorAll('nav a')) {
+      const image = [...link.querySelectorAll('img')].find(img => img.alt === name)
+      const href = link.getAttribute('href')
+      if (!image || (href && ![destination, '/event', '/event/awards'].includes(href))) continue
+      if (link.getAttribute('href') !== destination) link.setAttribute('href', destination)
+      if (link.hasAttribute('aria-disabled')) link.removeAttribute('aria-disabled')
+      if (!link.hasAttribute('data-awards-portal-link')) link.dataset.awardsPortalLink = ''
+      if (image.getAttribute('src') !== activeImage) image.setAttribute('src', activeImage)
+      const [element, glow] = link.classList.contains('vV5R') ? [link, 'Eu30'] : [image, 'yink']
+      if (!element.classList.contains(glow)) element.classList.add(glow)
+    }
+  }
+
+  function activate() {
+    const observer = new MutationObserver(changes => {
+      if (changes.some(({ target, addedNodes }) =>
+        target instanceof Element &&
+        (target.closest('nav') || [...addedNodes].some(node =>
+          node instanceof Element && (node.matches('nav') || node.querySelector('nav'))))
+      )) update()
+    })
+    observer.observe(document.body, { childList: true, subtree: true, attributes: true,
+      attributeFilter: ['aria-disabled', 'href', 'src', 'class'] })
+    update()
+    window.addEventListener('click', event => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+      const link = event.target instanceof Element && event.target.closest('nav a[data-awards-portal-link]')
+      if (!link) return
+      event.preventDefault()
+      event.stopImmediatePropagation()
+      location.assign(destination)
+    }, true)
+  }
+
+  activate()
+})()
+</script>
+</body>
 </html>
