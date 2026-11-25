@@ -70,18 +70,18 @@ import {
   symbol_162 as imported_68,
   symbol_067 as useSettingsStore,
 } from "../entry-2.js";
-import { G as GiftSubscriptionModal } from "../shared/index-209f3332dc71.js";
-import { M as imported_69 } from "../shared/mobile-subscription-warning-f8d9c5c15f7c.js";
-import { ConfirmModal as imported_70 } from "../shared/index-45935309f051.js";
+import { G as GiftSubscriptionModal } from "../shared/index-19ab57e644d2.js";
+import { M as imported_69 } from "../shared/mobile-subscription-warning-519fdb0f5728.js";
+import { ConfirmModal as imported_70 } from "../shared/index-52048a51c5d2.js";
 import {
   symbol_002 as SubscriptionModal,
   symbol_001 as imported_71,
-} from "../shared/index-d4070b367117.js";
-import { I as imported_72 } from "../components/icon-chevron-down-cbd79d32fa47.js";
-import { I as imported_73 } from "../components/icon-chevron-right-2b9362c14c7b.js";
-import { I as imported_74 } from "../components/icon-chevron-left-326594486222.js";
-import "../shared/use-purchase-dialog-18830d745bdf.js";
-import "../components/icon-info-6d6e17ab37ee.js";
+} from "../shared/index-ea37f59fd288.js";
+import { I as imported_72 } from "../components/icon-chevron-down-35f79aefc28e.js";
+import { I as imported_73 } from "../components/icon-chevron-right-5c311b786bfd.js";
+import { I as imported_74 } from "../components/icon-chevron-left-e0277eea8342.js";
+import "../shared/use-purchase-dialog-55b835101282.js";
+import "../components/icon-info-89cb4307da38.js";
 const local_a008ba72 = ({ size: arg = 18 }) =>
   imported("svg", {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2189,7 +2189,7 @@ function fn_d032fbfc(arg) {
   }
   return arg.flowToken;
 }
-const local_b41bdddd = {
+const local_04cca31f = {
   methods: () => fn_007c8a7a("GET", "/methods"),
   setPassword: (arg) =>
     fn_007c8a7a("POST", "/set-password", {
@@ -2208,7 +2208,7 @@ const local_b41bdddd = {
       flowToken: arg_3,
     }),
   resendEmail: (arg, arg_2) =>
-    fn_007c8a7a("POST", "/resend-otp", {
+    fn_007c8a7a("POST", "/email/resend-otp", {
       email: arg,
       flowToken: arg_2,
     }),
@@ -2469,7 +2469,7 @@ function fn_b4e36455({ onClose: arg, onAttached: arg_2 }) {
       return;
     }
     local_14(async () => {
-      local_6(await local_b41bdddd.attachEmail(local));
+      local_6(await local_04cca31f.attachEmail(local));
       local_4(local);
       local_8(Array(6).fill(""));
       local_10(local_f06debfc_2);
@@ -2483,7 +2483,7 @@ function fn_b4e36455({ onClose: arg, onAttached: arg_2 }) {
         async () => {
           if (
             !(
-              await local_b41bdddd.verifyEmail(
+              await local_04cca31f.verifyEmail(
                 local_3,
                 local_7.join(""),
                 local_5,
@@ -2501,7 +2501,7 @@ function fn_b4e36455({ onClose: arg, onAttached: arg_2 }) {
   const local_17 = () => {
     if (!(local_11 || local_9)) {
       local_14(async () => {
-        await local_b41bdddd.resendEmail(local_3, local_5);
+        await local_04cca31f.resendEmail(local_3, local_5);
         local_8(Array(6).fill(""));
         local_10(local_f06debfc_2);
       });
@@ -2759,7 +2759,7 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       local_11(null);
       local_50(async () => {
         try {
-          const local = await local_b41bdddd.changePhone(
+          const local = await local_04cca31f.changePhone(
             local_56,
             local,
             arg_2,
@@ -2786,7 +2786,7 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       return;
     }
     local_50(async () => {
-      local_19(await local_b41bdddd.changeEmail(local));
+      local_19(await local_04cca31f.changeEmail(local));
       local_15(local);
       local_17(local);
       local_21(null);
@@ -2808,7 +2808,7 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     if (local_2 === "code") {
       local_50(
         async () => {
-          const local = await local_b41bdddd.verifyChange(
+          const local = await local_04cca31f.verifyChange(
             local
               ? {
                   phone: local_16,
@@ -2837,7 +2837,7 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     if (local_28) {
       local_50(
         async () => {
-          await local_b41bdddd.confirm(local_28.changeToken, {
+          await local_04cca31f.confirm(local_28.changeToken, {
             code: local,
           });
           local_63();
@@ -2854,7 +2854,7 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       local_50(
         async () => {
           if (local_2 === "proofCode" && local_28 && local_36) {
-            const local = await local_b41bdddd.requestProof(
+            const local = await local_04cca31f.requestProof(
               local_28.changeToken,
               local_36,
             );
@@ -2862,12 +2862,12 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
             local_23(Array(local.delivery?.codeLength ?? 6).fill(""));
             local_41(local_f06debfc_3);
           } else if (local) {
-            const local = await local_b41bdddd.resendPhone(local_16, local_18);
+            const local = await local_04cca31f.resendPhone(local_16, local_18);
             local_21(local);
             local_23(Array(local.codeLength).fill(""));
             local_41(local.retryIn);
           } else {
-            await local_b41bdddd.resendEmail(local_16, local_18);
+            await local_04cca31f.resendEmail(local_16, local_18);
             local_23(Array(6).fill(""));
             local_41(local_f06debfc_3);
           }
@@ -2891,7 +2891,7 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
     if (!(!local_28 || !local_30 || local_47)) {
       local_33("password");
       local_50(async () => {
-        await local_b41bdddd.confirm(local_28.changeToken, {
+        await local_04cca31f.confirm(local_28.changeToken, {
           password: local_30,
         });
         local_63();
@@ -2903,14 +2903,14 @@ function fn_5ecb8629({ kind: arg, methods: arg_2, onClose: arg_3 }) {
       local_33(arg);
       local_50(async () => {
         if (arg === "wait") {
-          const local = await local_b41bdddd.wait(local_28.changeToken);
+          const local = await local_04cca31f.wait(local_28.changeToken);
           local_61(
             "Заявка принята",
             `${local ? "Номер" : "Почта"} сменится ${fn_9e6a953e(local.appliesAt)}. До этого заявку можно отменить в разделе «Безопасность»; на всех ваших устройствах придёт уведомление.`,
           );
           return;
         }
-        const local = await local_b41bdddd.requestProof(
+        const local = await local_04cca31f.requestProof(
           local_28.changeToken,
           arg,
         );
@@ -3331,7 +3331,7 @@ function fn_2a06d949({ onClose: arg, onSaved: arg_2 }) {
         return;
       }
       local_10(async () => {
-        await local_b41bdddd.setPassword(local);
+        await local_04cca31f.setPassword(local);
         local_2("");
         local_4("");
         local_6(true);
@@ -3442,8 +3442,8 @@ function fn_5be740c2({ onChangePassword: arg }) {
   const local_15 = async () => {
     try {
       const [local, local_2] = await Promise.all([
-        local_b41bdddd.methods(),
-        local_b41bdddd.pending(),
+        local_04cca31f.methods(),
+        local_04cca31f.pending(),
       ]);
       local_2(local);
       local_4(local_2);
@@ -3462,7 +3462,7 @@ function fn_5be740c2({ onChangePassword: arg }) {
   const local_17 = async (arg) => {
     local_12(true);
     try {
-      await local_b41bdddd.cancelPending(arg.id);
+      await local_04cca31f.cancelPending(arg.id);
       local_4((arg) => arg.filter((arg) => arg.id !== arg.id));
     } catch (error) {
       local_14(fn_f369556a(error, arg.kind));

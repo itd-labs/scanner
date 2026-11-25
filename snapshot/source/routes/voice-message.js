@@ -11,7 +11,7 @@ import {
 import {
   I as imported_9,
   a as imported_10,
-} from "../components/icon-play-083ed8b30ec6.js";
+} from "../components/icon-play-edce23d551db.js";
 const local_0ee2786e = "c_voiceMessage";
 const local_66fefc28 = "c_playButton";
 const local_4d84dbb6 = "c_content";

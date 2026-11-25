@@ -1,6 +1,6 @@
-const local_95f822e2 = (
+const local_525c9c41 = (
   arg,
-  arg_2 = local_95f822e2,
+  arg_2 = local_525c9c41,
   arg_3 = arg_2.f ||
     (arg_2.f = [
       "./drawing-canvas.js",
@@ -8,25 +8,25 @@ const local_95f822e2 = (
       "../entry.css",
       "./drawing-canvas.css",
       "./report-modal.js",
-      "../components/icon-check-circle-9387da96e38a.js",
+      "../components/icon-check-circle-d3d53d83fefe.js",
       "./report-modal.css",
       "./subscription-modal.js",
-      "../shared/index-209f3332dc71.js",
-      "../shared/use-purchase-dialog-18830d745bdf.js",
-      "../shared/use-purchase-dialog-18830d745bdf.css",
+      "../shared/index-19ab57e644d2.js",
+      "../shared/use-purchase-dialog-55b835101282.js",
+      "../shared/use-purchase-dialog-55b835101282.css",
       "../styles/index.css",
-      "../shared/mobile-subscription-warning-f8d9c5c15f7c.js",
-      "../shared/index-45935309f051.js",
-      "../shared/index-45935309f051.css",
-      "../shared/index-d4070b367117.js",
-      "../components/icon-info-6d6e17ab37ee.js",
-      "../components/icon-chevron-down-cbd79d32fa47.js",
-      "../components/icon-chevron-right-2b9362c14c7b.js",
-      "../components/icon-chevron-left-326594486222.js",
+      "../shared/mobile-subscription-warning-519fdb0f5728.js",
+      "../shared/index-52048a51c5d2.js",
+      "../shared/index-52048a51c5d2.css",
+      "../shared/index-ea37f59fd288.js",
+      "../components/icon-info-89cb4307da38.js",
+      "../components/icon-chevron-down-35f79aefc28e.js",
+      "../components/icon-chevron-right-5c311b786bfd.js",
+      "../components/icon-chevron-left-e0277eea8342.js",
       "./subscription-modal.css",
-      "../shared/index-49b6e0039bbd.js",
-      "../components/icon-check-a734172846f4.js",
-      "../shared/index-49b6e0039bbd.css",
+      "../shared/index-d6744f3c13c3.js",
+      "../components/icon-check-18104bfe423e.js",
+      "../shared/index-d6744f3c13c3.css",
     ]),
 ) => arg.map((arg) => arg_3[arg]);
 import {
@@ -107,10 +107,10 @@ import {
 import {
   u as imported_74,
   f as imported_75,
-} from "../shared/format-last-seen-b68bc40e9c6b.js";
-import { I as imported_76 } from "../components/icon-check-a734172846f4.js";
-import { I as imported_77 } from "../components/icon-chevron-left-326594486222.js";
-import { ConfirmModal as imported_78 } from "../shared/index-45935309f051.js";
+} from "../shared/format-last-seen-683d877200f7.js";
+import { I as imported_76 } from "../components/icon-check-18104bfe423e.js";
+import { I as imported_77 } from "../components/icon-chevron-left-e0277eea8342.js";
+import { ConfirmModal as imported_78 } from "../shared/index-52048a51c5d2.js";
 const local_e67a7b1e = ({ size: arg = 24 }) =>
   imported("svg", {
     width: arg,
@@ -3039,7 +3039,7 @@ function fn_9acc0eb5({
 const local_06128897 = imported_50(() =>
   imported_57(
     () => import("./drawing-canvas.js"),
-    local_95f822e2([0, 1, 2, 3]),
+    local_525c9c41([0, 1, 2, 3]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -3047,7 +3047,7 @@ const local_06128897 = imported_50(() =>
 const local_f8603183 = imported_50(() =>
   imported_57(
     () => import("./report-modal.js"),
-    local_95f822e2([4, 1, 2, 5, 6]),
+    local_525c9c41([4, 1, 2, 5, 6]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -4107,15 +4107,15 @@ function fn_29dd6153({ username: arg }) {
 const local_1b6acf59 = imported_50(() =>
   imported_57(
     () => import("./subscription-modal.js"),
-    local_95f822e2([7, 1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
+    local_525c9c41([7, 1, 2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]),
   ).then((arg) => ({
     default: arg.SettingsModal,
   })),
 );
-const local_09939886 = imported_50(() =>
+const local_5424cef8 = imported_50(() =>
   imported_57(
-    () => import("../shared/index-49b6e0039bbd.js"),
-    local_95f822e2([21, 1, 2, 22, 5, 23]),
+    () => import("../shared/index-d6744f3c13c3.js"),
+    local_525c9c41([21, 1, 2, 22, 5, 23]),
   ).then((arg) => ({
     default: arg.UserListModal,
   })),
@@ -4212,7 +4212,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
   const local_43 = imported_30(() => {
     if (local_14) {
       local_6(
-        imported(local_09939886, {
+        imported(local_5424cef8, {
           userId: local_14.id,
           type: "followers",
           title: "Подписчики",
@@ -4223,7 +4223,7 @@ export const local_cd906cd3 = ({ username: arg }) => {
   const local_44 = imported_30(() => {
     if (local_14) {
       local_6(
-        imported(local_09939886, {
+        imported(local_5424cef8, {
           userId: local_14.id,
           type: "following",
           title: "Подписки",

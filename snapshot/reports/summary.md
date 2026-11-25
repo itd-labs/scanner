@@ -1,8 +1,8 @@
 # ITD frontend snapshot
 
-- Build fingerprint: `f5f2f4a334059a0e6043e8e1c74b39c6c90e6291a1bcb4e8ee57cf5d781b9efa`
+- Build fingerprint: `47d22a7a6f92c7f1ea3e792198cad1edcf928c9351dc3945c98b5e5930fdbbd0`
 - Resources: 199
-- Downloaded bytes: 20653555
+- Downloaded bytes: 20653952
 - Sentry releases: none
 
 ## Routes
@@ -13,7 +13,8 @@ No changes.
 
 ## HTTP endpoints
 
-No changes.
+- Added: `/email/resend-otp`
+- Removed: `/resend-otp`
 
 ## WebSocket endpoints
 
@@ -25,4 +26,7 @@ No changes.
 
 ## User-visible strings
 
-- Added: `Повторить попытку`
+- Added: `и ознакомлены с`
+- Added: `Нажимая кнопку вы соглашаетесь с`
+- Added: `Политикой конфиденциальности`
+- Added: `Пользовательским соглашением`
