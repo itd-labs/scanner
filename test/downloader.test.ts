@@ -66,6 +66,49 @@ describe("downloadSite", () => {
     expect(graph.urlAliases.get("https://example.test/app.js")).toBe(finalUrl);
   });
 
+  it("resolves Vite preload paths separately from relative imports", async () => {
+    const entry = "https://example.test/closed-awards-assets/entry.js";
+    const lazy = "https://example.test/closed-awards-assets/lazy.js";
+    const style = "https://example.test/closed-awards-assets/lazy.css";
+    const relativeStyle =
+      "https://example.test/closed-awards-assets/relative.css";
+    const fetch = vi.fn(async (input: string | URL | Request) => {
+      const url = String(input);
+      if (url === CONFIG.target) {
+        return response(
+          url,
+          `<script type="module" src="${entry}"></script>`,
+          "text/html",
+        );
+      }
+      if (url === entry) {
+        return response(
+          url,
+          `const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = [
+            "closed-awards-assets/lazy.css", "./relative.css"
+          ]))) => i.map(j => d[j]);
+          const component = () => import("./lazy.js");`,
+          "text/javascript",
+        );
+      }
+      if (url === lazy)
+        return response(url, "export const component = 1;", "text/javascript");
+      if (url === style || url === relativeStyle)
+        return response(url, "a {}", "text/css");
+      return response(url, "missing", "text/plain", 404);
+    });
+    vi.stubGlobal("fetch", fetch);
+
+    const graph = await downloadSite(CONFIG);
+
+    expect(graph.resources.has(lazy)).toBe(true);
+    expect(graph.resources.has(style)).toBe(true);
+    expect(graph.resources.has(relativeStyle)).toBe(true);
+    expect(fetch.mock.calls.map(([url]) => String(url))).not.toContain(
+      "https://example.test/closed-awards-assets/closed-awards-assets/lazy.css",
+    );
+  });
+
   it("does not let an earlier optional 404 hide a required import", async () => {
     vi.stubGlobal(
       "fetch",

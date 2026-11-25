@@ -9,6 +9,7 @@ import type {
   ResourceSignature,
   SnapshotManifest,
 } from "./types.js";
+import { extractViteDependencyFiles } from "./vite.js";
 
 interface RouteHint {
   assetName: string;
@@ -168,16 +169,6 @@ function discoverRouteHints(graph: ResourceGraph): RouteHint[] {
     }
   }
   return hints;
-}
-
-function extractViteDependencyFiles(source: string): string[] {
-  const map = source.match(
-    /__vite__mapDeps[\s\S]{0,500}?\.f\s*\|\|\s*\([^=]*=\s*\[([\s\S]*?)\]\s*\)/u,
-  )?.[1];
-  if (!map) return [];
-  return [...map.matchAll(/["'](?:assets\/)?([^"']+\.(?:m?js|css))["']/gu)]
-    .map((match) => match[1])
-    .filter((value): value is string => value !== undefined);
 }
 
 function matchPreviousResources(

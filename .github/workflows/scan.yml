@@ -60,16 +60,44 @@ jobs:
           --config itd-scanner.config.json
           --output ../snapshot-state/snapshot
 
-      - name: Commit snapshot when changed
+      - name: Push snapshot when changed
+        id: snapshot
         shell: bash
+        working-directory: snapshot-state
         run: |
-          git -C snapshot-state add --all
-          if git -C snapshot-state diff --cached --quiet; then
+          git add --all
+          if git diff --cached --quiet; then
             echo "The deployed build is unchanged."
+            # A rerun can finish publishing the snapshot pushed by its earlier attempt.
+            if [[ "$(git log -1 --format='%(trailers:key=Snapshot-Run,valueonly)')" != "$GITHUB_RUN_ID" ]]; then
+              exit 0
+            fi
+          else
+            fingerprint="$(node -p "require('./snapshot/manifest.json').buildFingerprint.slice(0, 12)")"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "snapshot: ${fingerprint}" --trailer "Snapshot-Run: $GITHUB_RUN_ID"
+            git push origin HEAD:snapshots
+          fi
+
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Publish snapshot release
+        if: steps.snapshot.outputs.commit != ''
+        shell: bash
+        working-directory: snapshot-state
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SNAPSHOT_COMMIT: ${{ steps.snapshot.outputs.commit }}
+        run: |
+          timestamp="$(git show -s --format=%ct "$SNAPSHOT_COMMIT")"
+          stamp="$(date -u -d "@$timestamp" '+%Y%m%dT%H%M%SZ')"
+          title="$(date -u -d "@$timestamp" '+%Y-%m-%d %H:%M:%S UTC')"
+          tag="snapshot-${stamp}-${SNAPSHOT_COMMIT:0:12}"
+          if gh release view "$tag" >/dev/null 2>&1; then
             exit 0
           fi
-          fingerprint="$(node -p "require('./snapshot-state/snapshot/manifest.json').buildFingerprint.slice(0, 12)")"
-          git -C snapshot-state config user.name "github-actions[bot]"
-          git -C snapshot-state config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C snapshot-state commit -m "snapshot: ${fingerprint}"
-          git -C snapshot-state push origin HEAD:snapshots
+          git push origin "$SNAPSHOT_COMMIT:refs/tags/$tag"
+          gh release create "$tag" --verify-tag \
+            --title "Snapshot $title" --notes-file snapshot/reports/summary.md

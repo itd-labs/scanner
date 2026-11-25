@@ -9,6 +9,7 @@ import type {
   ResourceKind,
   ScannerConfig,
 } from "./types.js";
+import { extractViteDependencyFiles } from "./vite.js";
 
 interface HtmlNode {
   tagName?: string;
@@ -421,13 +422,20 @@ function discoverJavaScriptAssets(
     }
   }
 
+  const viteDependencies = new Set(extractViteDependencyFiles(source));
+  const origin = new URL("/", baseUrl).href;
   const quotedAsset =
     /["']((?:\.\/|\/)?(?:assets\/)?[^"']+\.(?:m?js|css|json|svg|png|jpe?g|webp|avif|woff2?|ttf|otf)(?:\?[^"']*)?)["']/giu;
   for (const match of source.matchAll(quotedAsset)) {
     const specifier = match[1];
     if (!specifier) continue;
     try {
-      const url = resolveDiscoveredUrl(specifier, baseUrl);
+      // Vite emits root-based preload paths without a leading slash.
+      const resolveFrom =
+        viteDependencies.has(specifier) && !specifier.startsWith(".")
+          ? origin
+          : baseUrl;
+      const url = resolveDiscoveredUrl(specifier, resolveFrom);
       if (!result.has(url)) result.set(url, false);
     } catch {
       // Ignore malformed literals; the parser will report malformed JS later.
