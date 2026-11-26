@@ -1,35 +1,35 @@
-const local_939303bd = (
+const local_326971c1 = (
   arg,
-  arg_2 = local_939303bd,
+  arg_2 = local_326971c1,
   arg_3 = arg_2.f ||
     (arg_2.f = [
-      "./shared/index-cc8fa71db690.js",
-      "./shared/search-api-a5d05e5dc3eb.js",
-      "./shared/index-19ab57e644d2.js",
-      "./shared/use-purchase-dialog-55b835101282.js",
-      "./shared/use-purchase-dialog-55b835101282.css",
+      "./shared/index-dcb36fb718b5.js",
+      "./shared/search-api-daf80c3c0508.js",
+      "./shared/index-302498a906f2.js",
+      "./shared/use-purchase-dialog-b79de1effadc.js",
+      "./shared/use-purchase-dialog-b79de1effadc.css",
       "./styles/index.css",
-      "./shared/index-cc8fa71db690.css",
+      "./shared/index-dcb36fb718b5.css",
       "./routes/subscription-modal.js",
-      "./shared/mobile-subscription-warning-519fdb0f5728.js",
-      "./shared/index-52048a51c5d2.js",
-      "./shared/index-52048a51c5d2.css",
-      "./shared/index-ea37f59fd288.js",
-      "./components/icon-info-89cb4307da38.js",
-      "./components/icon-chevron-down-35f79aefc28e.js",
-      "./components/icon-chevron-right-5c311b786bfd.js",
-      "./components/icon-chevron-left-e0277eea8342.js",
+      "./shared/mobile-subscription-warning-d90ffd5fadce.js",
+      "./shared/index-62b00666e72c.js",
+      "./shared/index-62b00666e72c.css",
+      "./shared/index-2ff1d430a6f7.js",
+      "./components/icon-info-869e5b22a0b1.js",
+      "./components/icon-chevron-down-4b6790204150.js",
+      "./components/icon-chevron-right-82a3c9cba85b.js",
+      "./components/icon-chevron-left-c3c7f6927e41.js",
       "./routes/subscription-modal.css",
       "./routes/changelog-modal.js",
       "./routes/changelog-modal.css",
       "./routes/voice-input.js",
-      "./components/icon-play-edce23d551db.js",
-      "./components/icon-stop-00d35c213015.js",
+      "./components/icon-play-516fac3bb926.js",
+      "./components/icon-stop-526b825785e6.js",
       "./routes/voice-input.css",
       "./routes/post-media-video.js",
       "./routes/post-media-video.css",
       "./routes/report-modal.js",
-      "./components/icon-check-circle-d3d53d83fefe.js",
+      "./components/icon-check-circle-df24f63884aa.js",
       "./routes/report-modal.css",
       "./routes/poll.js",
       "./routes/poll.css",
@@ -40,15 +40,15 @@ const local_939303bd = (
       "./routes/drawing-canvas.js",
       "./routes/drawing-canvas.css",
       "./routes/image-viewer.js",
-      "./components/icon-download-d2a2b88e486d.js",
+      "./components/icon-download-f8297900dc8f.js",
       "./routes/image-viewer.css",
       "./routes/auth-layout.js",
       "./routes/auth-layout.css",
-      "./shared/route-4b7bce6a8655.js",
-      "./shared/format-last-seen-683d877200f7.js",
-      "./components/icon-check-18104bfe423e.js",
-      "./shared/messenger-media-api-25beea751230.js",
-      "./shared/route-4b7bce6a8655.css",
+      "./shared/route-835854172f5d.js",
+      "./shared/format-last-seen-5ba477f50667.js",
+      "./components/icon-check-9c2c134b5fce.js",
+      "./shared/messenger-media-api-2d8212f2347b.js",
+      "./shared/route-835854172f5d.css",
       "./routes/global-video-player.js",
       "./routes/global-video-player.css",
       "./routes/hashtag.js",
@@ -78,12 +78,12 @@ const local_939303bd = (
       "./routes/events-page.js",
       "./routes/events-page.css",
       "./routes/login.js",
-      "./shared/index-cd262b34775f.js",
-      "./shared/index-2563a4cff4a4.js",
+      "./shared/index-8f3cb1c9e3fc.js",
+      "./shared/index-03b2a66b66ff.js",
       "./styles/index-3.css",
-      "./shared/index-cf737822fd41.js",
-      "./shared/index-cf737822fd41.css",
-      "./components/icon-eye-off-46afdc4444d7.js",
+      "./shared/index-57dc487a628e.js",
+      "./shared/index-57dc487a628e.css",
+      "./components/icon-eye-off-6f50d9ab3482.js",
       "./routes/login.css",
       "./routes/register.js",
       "./routes/forgot-password.js",
@@ -18394,7 +18394,7 @@ function symbol_285({
     ],
   });
 }
-const local_00bd7d99 = {
+const local_700ca2d7 = {
   ad: {
     prefix: "+376",
     name: "Андорра",
@@ -18859,9 +18859,1505 @@ const local_00bd7d99 = {
     placeholder: "13123456789",
     nationalPrefix: "",
   },
+  ac: {
+    prefix: "+247",
+    name: "о-в Вознесения",
+    minLength: 5,
+    length: 6,
+    placeholder: "40123",
+    nationalPrefix: "",
+  },
+  ae: {
+    prefix: "+971",
+    name: "ОАЭ",
+    minLength: 5,
+    length: 12,
+    placeholder: "501234567",
+    nationalPrefix: "0",
+  },
+  af: {
+    prefix: "+93",
+    name: "Афганистан",
+    minLength: 9,
+    length: 9,
+    placeholder: "701234567",
+    nationalPrefix: "0",
+  },
+  ag: {
+    prefix: "+1",
+    name: "Антигуа и Барбуда",
+    minLength: 10,
+    length: 10,
+    placeholder: "2684641234",
+    nationalPrefix: "1",
+  },
+  ai: {
+    prefix: "+1",
+    name: "Ангилья",
+    minLength: 10,
+    length: 10,
+    placeholder: "2642351234",
+    nationalPrefix: "1",
+  },
+  ao: {
+    prefix: "+244",
+    name: "Ангола",
+    minLength: 9,
+    length: 9,
+    placeholder: "923123456",
+    nationalPrefix: "",
+  },
+  ar: {
+    prefix: "+54",
+    name: "Аргентина",
+    minLength: 10,
+    length: 11,
+    placeholder: "91123456789",
+    nationalPrefix: "0",
+  },
+  as: {
+    prefix: "+1",
+    name: "Американское Самоа",
+    minLength: 10,
+    length: 10,
+    placeholder: "6847331234",
+    nationalPrefix: "1",
+  },
+  au: {
+    prefix: "+61",
+    name: "Австралия",
+    minLength: 5,
+    length: 12,
+    placeholder: "412345678",
+    nationalPrefix: "0",
+  },
+  aw: {
+    prefix: "+297",
+    name: "Аруба",
+    minLength: 7,
+    length: 7,
+    placeholder: "5601234",
+    nationalPrefix: "",
+  },
+  ax: {
+    prefix: "+358",
+    name: "Аландские о-ва",
+    minLength: 5,
+    length: 12,
+    placeholder: "412345678",
+    nationalPrefix: "0",
+  },
+  bb: {
+    prefix: "+1",
+    name: "Барбадос",
+    minLength: 10,
+    length: 10,
+    placeholder: "2462501234",
+    nationalPrefix: "1",
+  },
+  bd: {
+    prefix: "+880",
+    name: "Бангладеш",
+    minLength: 6,
+    length: 10,
+    placeholder: "1812345678",
+    nationalPrefix: "0",
+  },
+  bf: {
+    prefix: "+226",
+    name: "Буркина-Фасо",
+    minLength: 8,
+    length: 8,
+    placeholder: "70123456",
+    nationalPrefix: "",
+  },
+  bh: {
+    prefix: "+973",
+    name: "Бахрейн",
+    minLength: 8,
+    length: 8,
+    placeholder: "36001234",
+    nationalPrefix: "",
+  },
+  bi: {
+    prefix: "+257",
+    name: "Бурунди",
+    minLength: 8,
+    length: 8,
+    placeholder: "79561234",
+    nationalPrefix: "",
+  },
+  bj: {
+    prefix: "+229",
+    name: "Бенин",
+    minLength: 8,
+    length: 10,
+    placeholder: "0195123456",
+    nationalPrefix: "",
+  },
+  bl: {
+    prefix: "+590",
+    name: "Сен-Бартелеми",
+    minLength: 9,
+    length: 9,
+    placeholder: "690001234",
+    nationalPrefix: "0",
+  },
+  bm: {
+    prefix: "+1",
+    name: "Бермудские о-ва",
+    minLength: 10,
+    length: 10,
+    placeholder: "4413701234",
+    nationalPrefix: "1",
+  },
+  bn: {
+    prefix: "+673",
+    name: "Бруней",
+    minLength: 7,
+    length: 7,
+    placeholder: "7123456",
+    nationalPrefix: "",
+  },
+  bo: {
+    prefix: "+591",
+    name: "Боливия",
+    minLength: 8,
+    length: 9,
+    placeholder: "71234567",
+    nationalPrefix: "0",
+  },
+  bq: {
+    prefix: "+599",
+    name: "Бонэйр, Синт-Эстатиус и Саба",
+    minLength: 7,
+    length: 7,
+    placeholder: "3181234",
+    nationalPrefix: "",
+  },
+  br: {
+    prefix: "+55",
+    name: "Бразилия",
+    minLength: 8,
+    length: 11,
+    placeholder: "11961234567",
+    nationalPrefix: "0",
+  },
+  bs: {
+    prefix: "+1",
+    name: "Багамы",
+    minLength: 10,
+    length: 10,
+    placeholder: "2423591234",
+    nationalPrefix: "1",
+  },
+  bt: {
+    prefix: "+975",
+    name: "Бутан",
+    minLength: 7,
+    length: 8,
+    placeholder: "17123456",
+    nationalPrefix: "",
+  },
+  bw: {
+    prefix: "+267",
+    name: "Ботсвана",
+    minLength: 7,
+    length: 10,
+    placeholder: "71123456",
+    nationalPrefix: "",
+  },
+  bz: {
+    prefix: "+501",
+    name: "Белиз",
+    minLength: 7,
+    length: 11,
+    placeholder: "6221234",
+    nationalPrefix: "",
+  },
+  cc: {
+    prefix: "+61",
+    name: "Кокосовые о-ва",
+    minLength: 6,
+    length: 12,
+    placeholder: "412345678",
+    nationalPrefix: "0",
+  },
+  cd: {
+    prefix: "+243",
+    name: "Конго - Киншаса",
+    minLength: 7,
+    length: 10,
+    placeholder: "991234567",
+    nationalPrefix: "0",
+  },
+  cf: {
+    prefix: "+236",
+    name: "Центрально-Африканская Республика",
+    minLength: 8,
+    length: 8,
+    placeholder: "70012345",
+    nationalPrefix: "",
+  },
+  cg: {
+    prefix: "+242",
+    name: "Конго - Браззавиль",
+    minLength: 9,
+    length: 9,
+    placeholder: "061234567",
+    nationalPrefix: "",
+  },
+  ci: {
+    prefix: "+225",
+    name: "Кот-д’Ивуар",
+    minLength: 10,
+    length: 10,
+    placeholder: "0123456789",
+    nationalPrefix: "",
+  },
+  ck: {
+    prefix: "+682",
+    name: "о-ва Кука",
+    minLength: 5,
+    length: 5,
+    placeholder: "71234",
+    nationalPrefix: "",
+  },
+  cl: {
+    prefix: "+56",
+    name: "Чили",
+    minLength: 9,
+    length: 11,
+    placeholder: "221234567",
+    nationalPrefix: "",
+  },
+  cm: {
+    prefix: "+237",
+    name: "Камерун",
+    minLength: 8,
+    length: 9,
+    placeholder: "671234567",
+    nationalPrefix: "",
+  },
+  co: {
+    prefix: "+57",
+    name: "Колумбия",
+    minLength: 8,
+    length: 11,
+    placeholder: "3211234567",
+    nationalPrefix: "0",
+  },
+  cr: {
+    prefix: "+506",
+    name: "Коста-Рика",
+    minLength: 8,
+    length: 10,
+    placeholder: "83123456",
+    nationalPrefix: "",
+  },
+  cu: {
+    prefix: "+53",
+    name: "Куба",
+    minLength: 6,
+    length: 10,
+    placeholder: "51234567",
+    nationalPrefix: "0",
+  },
+  cv: {
+    prefix: "+238",
+    name: "Кабо-Верде",
+    minLength: 7,
+    length: 7,
+    placeholder: "9911234",
+    nationalPrefix: "",
+  },
+  cw: {
+    prefix: "+599",
+    name: "Кюрасао",
+    minLength: 7,
+    length: 8,
+    placeholder: "95181234",
+    nationalPrefix: "",
+  },
+  cx: {
+    prefix: "+61",
+    name: "о-в Рождества",
+    minLength: 6,
+    length: 12,
+    placeholder: "412345678",
+    nationalPrefix: "0",
+  },
+  dj: {
+    prefix: "+253",
+    name: "Джибути",
+    minLength: 8,
+    length: 8,
+    placeholder: "77831001",
+    nationalPrefix: "",
+  },
+  dm: {
+    prefix: "+1",
+    name: "Доминика",
+    minLength: 10,
+    length: 10,
+    placeholder: "7672251234",
+    nationalPrefix: "1",
+  },
+  do: {
+    prefix: "+1",
+    name: "Доминиканская Республика",
+    minLength: 10,
+    length: 10,
+    placeholder: "8092345678",
+    nationalPrefix: "1",
+  },
+  dz: {
+    prefix: "+213",
+    name: "Алжир",
+    minLength: 8,
+    length: 9,
+    placeholder: "551234567",
+    nationalPrefix: "0",
+  },
+  ec: {
+    prefix: "+593",
+    name: "Эквадор",
+    minLength: 8,
+    length: 11,
+    placeholder: "991234567",
+    nationalPrefix: "0",
+  },
+  eg: {
+    prefix: "+20",
+    name: "Египет",
+    minLength: 8,
+    length: 10,
+    placeholder: "1001234567",
+    nationalPrefix: "0",
+  },
+  eh: {
+    prefix: "+212",
+    name: "Западная Сахара",
+    minLength: 9,
+    length: 9,
+    placeholder: "650123456",
+    nationalPrefix: "0",
+  },
+  er: {
+    prefix: "+291",
+    name: "Эритрея",
+    minLength: 7,
+    length: 7,
+    placeholder: "7123456",
+    nationalPrefix: "0",
+  },
+  et: {
+    prefix: "+251",
+    name: "Эфиопия",
+    minLength: 9,
+    length: 9,
+    placeholder: "911234567",
+    nationalPrefix: "0",
+  },
+  fj: {
+    prefix: "+679",
+    name: "Фиджи",
+    minLength: 7,
+    length: 11,
+    placeholder: "7012345",
+    nationalPrefix: "",
+  },
+  fk: {
+    prefix: "+500",
+    name: "Фолклендские о-ва",
+    minLength: 5,
+    length: 5,
+    placeholder: "51234",
+    nationalPrefix: "",
+  },
+  fm: {
+    prefix: "+691",
+    name: "Федеративные Штаты Микронезии",
+    minLength: 7,
+    length: 7,
+    placeholder: "3501234",
+    nationalPrefix: "",
+  },
+  fo: {
+    prefix: "+298",
+    name: "Фарерские о-ва",
+    minLength: 6,
+    length: 6,
+    placeholder: "211234",
+    nationalPrefix: "",
+  },
+  ga: {
+    prefix: "+241",
+    name: "Габон",
+    minLength: 7,
+    length: 8,
+    placeholder: "06031234",
+    nationalPrefix: "",
+  },
+  gd: {
+    prefix: "+1",
+    name: "Гренада",
+    minLength: 10,
+    length: 10,
+    placeholder: "4734031234",
+    nationalPrefix: "1",
+  },
+  gf: {
+    prefix: "+594",
+    name: "Французская Гвиана",
+    minLength: 9,
+    length: 9,
+    placeholder: "694201234",
+    nationalPrefix: "0",
+  },
+  gg: {
+    prefix: "+44",
+    name: "Гернси",
+    minLength: 7,
+    length: 10,
+    placeholder: "7781123456",
+    nationalPrefix: "0",
+  },
+  gh: {
+    prefix: "+233",
+    name: "Гана",
+    minLength: 8,
+    length: 9,
+    placeholder: "231234567",
+    nationalPrefix: "0",
+  },
+  gi: {
+    prefix: "+350",
+    name: "Гибралтар",
+    minLength: 8,
+    length: 8,
+    placeholder: "57123456",
+    nationalPrefix: "",
+  },
+  gl: {
+    prefix: "+299",
+    name: "Гренландия",
+    minLength: 6,
+    length: 6,
+    placeholder: "221234",
+    nationalPrefix: "",
+  },
+  gm: {
+    prefix: "+220",
+    name: "Гамбия",
+    minLength: 7,
+    length: 9,
+    placeholder: "3012345",
+    nationalPrefix: "",
+  },
+  gn: {
+    prefix: "+224",
+    name: "Гвинея",
+    minLength: 8,
+    length: 9,
+    placeholder: "601123456",
+    nationalPrefix: "",
+  },
+  gp: {
+    prefix: "+590",
+    name: "Гваделупа",
+    minLength: 9,
+    length: 9,
+    placeholder: "690001234",
+    nationalPrefix: "0",
+  },
+  gq: {
+    prefix: "+240",
+    name: "Экваториальная Гвинея",
+    minLength: 9,
+    length: 9,
+    placeholder: "222123456",
+    nationalPrefix: "",
+  },
+  gt: {
+    prefix: "+502",
+    name: "Гватемала",
+    minLength: 8,
+    length: 11,
+    placeholder: "51234567",
+    nationalPrefix: "",
+  },
+  gu: {
+    prefix: "+1",
+    name: "Гуам",
+    minLength: 10,
+    length: 10,
+    placeholder: "6713001234",
+    nationalPrefix: "1",
+  },
+  gw: {
+    prefix: "+245",
+    name: "Гвинея-Бисау",
+    minLength: 7,
+    length: 9,
+    placeholder: "955012345",
+    nationalPrefix: "",
+  },
+  gy: {
+    prefix: "+592",
+    name: "Гайана",
+    minLength: 7,
+    length: 7,
+    placeholder: "6091234",
+    nationalPrefix: "",
+  },
+  hk: {
+    prefix: "+852",
+    name: "Гонконг (САР)",
+    minLength: 5,
+    length: 11,
+    placeholder: "51234567",
+    nationalPrefix: "",
+  },
+  hn: {
+    prefix: "+504",
+    name: "Гондурас",
+    minLength: 8,
+    length: 11,
+    placeholder: "91234567",
+    nationalPrefix: "",
+  },
+  ht: {
+    prefix: "+509",
+    name: "Гаити",
+    minLength: 8,
+    length: 8,
+    placeholder: "34101234",
+    nationalPrefix: "",
+  },
+  id: {
+    prefix: "+62",
+    name: "Индонезия",
+    minLength: 7,
+    length: 13,
+    placeholder: "812345678",
+    nationalPrefix: "0",
+  },
+  il: {
+    prefix: "+972",
+    name: "Израиль",
+    minLength: 7,
+    length: 12,
+    placeholder: "502345678",
+    nationalPrefix: "0",
+  },
+  im: {
+    prefix: "+44",
+    name: "о-в Мэн",
+    minLength: 10,
+    length: 10,
+    placeholder: "7924123456",
+    nationalPrefix: "0",
+  },
+  io: {
+    prefix: "+246",
+    name: "Британская территория в Индийском океане",
+    minLength: 7,
+    length: 7,
+    placeholder: "3801234",
+    nationalPrefix: "",
+  },
+  iq: {
+    prefix: "+964",
+    name: "Ирак",
+    minLength: 8,
+    length: 10,
+    placeholder: "7912345678",
+    nationalPrefix: "0",
+  },
+  je: {
+    prefix: "+44",
+    name: "Джерси",
+    minLength: 10,
+    length: 10,
+    placeholder: "7797712345",
+    nationalPrefix: "0",
+  },
+  jm: {
+    prefix: "+1",
+    name: "Ямайка",
+    minLength: 10,
+    length: 10,
+    placeholder: "8762101234",
+    nationalPrefix: "1",
+  },
+  jo: {
+    prefix: "+962",
+    name: "Иордания",
+    minLength: 8,
+    length: 9,
+    placeholder: "790123456",
+    nationalPrefix: "0",
+  },
+  jp: {
+    prefix: "+81",
+    name: "Япония",
+    minLength: 8,
+    length: 13,
+    placeholder: "9012345678",
+    nationalPrefix: "0",
+  },
+  ke: {
+    prefix: "+254",
+    name: "Кения",
+    minLength: 7,
+    length: 10,
+    placeholder: "712123456",
+    nationalPrefix: "0",
+  },
+  kh: {
+    prefix: "+855",
+    name: "Камбоджа",
+    minLength: 8,
+    length: 10,
+    placeholder: "91234567",
+    nationalPrefix: "0",
+  },
+  ki: {
+    prefix: "+686",
+    name: "Кирибати",
+    minLength: 5,
+    length: 8,
+    placeholder: "72001234",
+    nationalPrefix: "0",
+  },
+  km: {
+    prefix: "+269",
+    name: "Коморы",
+    minLength: 7,
+    length: 7,
+    placeholder: "3212345",
+    nationalPrefix: "",
+  },
+  kn: {
+    prefix: "+1",
+    name: "Сент-Китс и Невис",
+    minLength: 10,
+    length: 10,
+    placeholder: "8697652917",
+    nationalPrefix: "1",
+  },
+  kp: {
+    prefix: "+850",
+    name: "КНДР",
+    minLength: 8,
+    length: 10,
+    placeholder: "1921234567",
+    nationalPrefix: "0",
+  },
+  kr: {
+    prefix: "+82",
+    name: "Республика Корея",
+    minLength: 5,
+    length: 13,
+    placeholder: "1020000000",
+    nationalPrefix: "0",
+  },
+  kw: {
+    prefix: "+965",
+    name: "Кувейт",
+    minLength: 7,
+    length: 8,
+    placeholder: "50012345",
+    nationalPrefix: "",
+  },
+  ky: {
+    prefix: "+1",
+    name: "о-ва Кайман",
+    minLength: 10,
+    length: 10,
+    placeholder: "3453231234",
+    nationalPrefix: "1",
+  },
+  la: {
+    prefix: "+856",
+    name: "Лаос",
+    minLength: 8,
+    length: 10,
+    placeholder: "2023123456",
+    nationalPrefix: "0",
+  },
+  lb: {
+    prefix: "+961",
+    name: "Ливан",
+    minLength: 7,
+    length: 8,
+    placeholder: "71123456",
+    nationalPrefix: "0",
+  },
+  lc: {
+    prefix: "+1",
+    name: "Сент-Люсия",
+    minLength: 10,
+    length: 10,
+    placeholder: "7582845678",
+    nationalPrefix: "1",
+  },
+  li: {
+    prefix: "+423",
+    name: "Лихтенштейн",
+    minLength: 7,
+    length: 9,
+    placeholder: "660234567",
+    nationalPrefix: "0",
+  },
+  lr: {
+    prefix: "+231",
+    name: "Либерия",
+    minLength: 7,
+    length: 9,
+    placeholder: "770123456",
+    nationalPrefix: "0",
+  },
+  ls: {
+    prefix: "+266",
+    name: "Лесото",
+    minLength: 8,
+    length: 8,
+    placeholder: "50123456",
+    nationalPrefix: "",
+  },
+  ly: {
+    prefix: "+218",
+    name: "Ливия",
+    minLength: 9,
+    length: 9,
+    placeholder: "912345678",
+    nationalPrefix: "0",
+  },
+  ma: {
+    prefix: "+212",
+    name: "Марокко",
+    minLength: 9,
+    length: 9,
+    placeholder: "650123456",
+    nationalPrefix: "0",
+  },
+  mf: {
+    prefix: "+590",
+    name: "Сен-Мартен",
+    minLength: 9,
+    length: 9,
+    placeholder: "690001234",
+    nationalPrefix: "0",
+  },
+  mg: {
+    prefix: "+261",
+    name: "Мадагаскар",
+    minLength: 9,
+    length: 9,
+    placeholder: "321234567",
+    nationalPrefix: "0",
+  },
+  mh: {
+    prefix: "+692",
+    name: "Маршалловы о-ва",
+    minLength: 7,
+    length: 7,
+    placeholder: "2351234",
+    nationalPrefix: "1",
+  },
+  ml: {
+    prefix: "+223",
+    name: "Мали",
+    minLength: 8,
+    length: 8,
+    placeholder: "65012345",
+    nationalPrefix: "",
+  },
+  mm: {
+    prefix: "+95",
+    name: "Мьянма (Бирма)",
+    minLength: 6,
+    length: 10,
+    placeholder: "92123456",
+    nationalPrefix: "0",
+  },
+  mn: {
+    prefix: "+976",
+    name: "Монголия",
+    minLength: 8,
+    length: 10,
+    placeholder: "88123456",
+    nationalPrefix: "0",
+  },
+  mo: {
+    prefix: "+853",
+    name: "Макао (САР)",
+    minLength: 7,
+    length: 8,
+    placeholder: "66123456",
+    nationalPrefix: "",
+  },
+  mp: {
+    prefix: "+1",
+    name: "Северные Марианские о-ва",
+    minLength: 10,
+    length: 10,
+    placeholder: "6702345678",
+    nationalPrefix: "1",
+  },
+  mq: {
+    prefix: "+596",
+    name: "Мартиника",
+    minLength: 9,
+    length: 9,
+    placeholder: "696201234",
+    nationalPrefix: "0",
+  },
+  mr: {
+    prefix: "+222",
+    name: "Мавритания",
+    minLength: 8,
+    length: 8,
+    placeholder: "22123456",
+    nationalPrefix: "",
+  },
+  ms: {
+    prefix: "+1",
+    name: "Монтсеррат",
+    minLength: 10,
+    length: 10,
+    placeholder: "6644923456",
+    nationalPrefix: "1",
+  },
+  mu: {
+    prefix: "+230",
+    name: "Маврикий",
+    minLength: 7,
+    length: 10,
+    placeholder: "52512345",
+    nationalPrefix: "",
+  },
+  mv: {
+    prefix: "+960",
+    name: "Мальдивы",
+    minLength: 7,
+    length: 10,
+    placeholder: "7712345",
+    nationalPrefix: "",
+  },
+  mw: {
+    prefix: "+265",
+    name: "Малави",
+    minLength: 7,
+    length: 9,
+    placeholder: "991234567",
+    nationalPrefix: "0",
+  },
+  mx: {
+    prefix: "+52",
+    name: "Мексика",
+    minLength: 10,
+    length: 10,
+    placeholder: "2221234567",
+    nationalPrefix: "",
+  },
+  my: {
+    prefix: "+60",
+    name: "Малайзия",
+    minLength: 8,
+    length: 10,
+    placeholder: "123456789",
+    nationalPrefix: "0",
+  },
+  mz: {
+    prefix: "+258",
+    name: "Мозамбик",
+    minLength: 8,
+    length: 9,
+    placeholder: "821234567",
+    nationalPrefix: "",
+  },
+  na: {
+    prefix: "+264",
+    name: "Намибия",
+    minLength: 8,
+    length: 9,
+    placeholder: "811234567",
+    nationalPrefix: "0",
+  },
+  nc: {
+    prefix: "+687",
+    name: "Новая Каледония",
+    minLength: 6,
+    length: 6,
+    placeholder: "751234",
+    nationalPrefix: "",
+  },
+  ne: {
+    prefix: "+227",
+    name: "Нигер",
+    minLength: 8,
+    length: 8,
+    placeholder: "93123456",
+    nationalPrefix: "",
+  },
+  nf: {
+    prefix: "+672",
+    name: "о-в Норфолк",
+    minLength: 6,
+    length: 6,
+    placeholder: "381234",
+    nationalPrefix: "",
+  },
+  ng: {
+    prefix: "+234",
+    name: "Нигерия",
+    minLength: 10,
+    length: 12,
+    placeholder: "8021234567",
+    nationalPrefix: "0",
+  },
+  ni: {
+    prefix: "+505",
+    name: "Никарагуа",
+    minLength: 8,
+    length: 8,
+    placeholder: "81234567",
+    nationalPrefix: "",
+  },
+  np: {
+    prefix: "+977",
+    name: "Непал",
+    minLength: 8,
+    length: 11,
+    placeholder: "9841234567",
+    nationalPrefix: "0",
+  },
+  nr: {
+    prefix: "+674",
+    name: "Науру",
+    minLength: 7,
+    length: 7,
+    placeholder: "5551234",
+    nationalPrefix: "",
+  },
+  nu: {
+    prefix: "+683",
+    name: "Ниуэ",
+    minLength: 4,
+    length: 7,
+    placeholder: "8884012",
+    nationalPrefix: "",
+  },
+  nz: {
+    prefix: "+64",
+    name: "Новая Зеландия",
+    minLength: 5,
+    length: 10,
+    placeholder: "211234567",
+    nationalPrefix: "0",
+  },
+  om: {
+    prefix: "+968",
+    name: "Оман",
+    minLength: 7,
+    length: 9,
+    placeholder: "92123456",
+    nationalPrefix: "",
+  },
+  pa: {
+    prefix: "+507",
+    name: "Панама",
+    minLength: 7,
+    length: 11,
+    placeholder: "61234567",
+    nationalPrefix: "",
+  },
+  pe: {
+    prefix: "+51",
+    name: "Перу",
+    minLength: 8,
+    length: 9,
+    placeholder: "912345678",
+    nationalPrefix: "0",
+  },
+  pf: {
+    prefix: "+689",
+    name: "Французская Полинезия",
+    minLength: 6,
+    length: 9,
+    placeholder: "87123456",
+    nationalPrefix: "",
+  },
+  pg: {
+    prefix: "+675",
+    name: "Папуа — Новая Гвинея",
+    minLength: 7,
+    length: 8,
+    placeholder: "70123456",
+    nationalPrefix: "",
+  },
+  ph: {
+    prefix: "+63",
+    name: "Филиппины",
+    minLength: 6,
+    length: 13,
+    placeholder: "9051234567",
+    nationalPrefix: "0",
+  },
+  pm: {
+    prefix: "+508",
+    name: "Сен-Пьер и Микелон",
+    minLength: 6,
+    length: 9,
+    placeholder: "551234",
+    nationalPrefix: "0",
+  },
+  pr: {
+    prefix: "+1",
+    name: "Пуэрто-Рико",
+    minLength: 10,
+    length: 10,
+    placeholder: "7872345678",
+    nationalPrefix: "1",
+  },
+  ps: {
+    prefix: "+970",
+    name: "Палестинские территории",
+    minLength: 8,
+    length: 10,
+    placeholder: "599123456",
+    nationalPrefix: "0",
+  },
+  pw: {
+    prefix: "+680",
+    name: "Палау",
+    minLength: 7,
+    length: 7,
+    placeholder: "6201234",
+    nationalPrefix: "",
+  },
+  py: {
+    prefix: "+595",
+    name: "Парагвай",
+    minLength: 6,
+    length: 11,
+    placeholder: "961456789",
+    nationalPrefix: "0",
+  },
+  qa: {
+    prefix: "+974",
+    name: "Катар",
+    minLength: 7,
+    length: 11,
+    placeholder: "33123456",
+    nationalPrefix: "",
+  },
+  re: {
+    prefix: "+262",
+    name: "Реюньон",
+    minLength: 9,
+    length: 9,
+    placeholder: "692123456",
+    nationalPrefix: "0",
+  },
+  rw: {
+    prefix: "+250",
+    name: "Руанда",
+    minLength: 8,
+    length: 9,
+    placeholder: "720123456",
+    nationalPrefix: "0",
+  },
+  sa: {
+    prefix: "+966",
+    name: "Саудовская Аравия",
+    minLength: 9,
+    length: 10,
+    placeholder: "512345678",
+    nationalPrefix: "0",
+  },
+  sb: {
+    prefix: "+677",
+    name: "Соломоновы о-ва",
+    minLength: 5,
+    length: 7,
+    placeholder: "7421234",
+    nationalPrefix: "",
+  },
+  sc: {
+    prefix: "+248",
+    name: "Сейшельские о-ва",
+    minLength: 7,
+    length: 7,
+    placeholder: "2510123",
+    nationalPrefix: "",
+  },
+  sd: {
+    prefix: "+249",
+    name: "Судан",
+    minLength: 9,
+    length: 9,
+    placeholder: "911231234",
+    nationalPrefix: "0",
+  },
+  sg: {
+    prefix: "+65",
+    name: "Сингапур",
+    minLength: 8,
+    length: 11,
+    placeholder: "81234567",
+    nationalPrefix: "",
+  },
+  sh: {
+    prefix: "+290",
+    name: "о-в Св. Елены",
+    minLength: 4,
+    length: 5,
+    placeholder: "51234",
+    nationalPrefix: "",
+  },
+  sj: {
+    prefix: "+47",
+    name: "Шпицберген и Ян-Майен",
+    minLength: 5,
+    length: 8,
+    placeholder: "41234567",
+    nationalPrefix: "",
+  },
+  sl: {
+    prefix: "+232",
+    name: "Сьерра-Леоне",
+    minLength: 8,
+    length: 8,
+    placeholder: "25123456",
+    nationalPrefix: "0",
+  },
+  sm: {
+    prefix: "+378",
+    name: "Сан-Марино",
+    minLength: 8,
+    length: 10,
+    placeholder: "66661212",
+    nationalPrefix: "",
+  },
+  sn: {
+    prefix: "+221",
+    name: "Сенегал",
+    minLength: 9,
+    length: 9,
+    placeholder: "701234567",
+    nationalPrefix: "",
+  },
+  so: {
+    prefix: "+252",
+    name: "Сомали",
+    minLength: 6,
+    length: 9,
+    placeholder: "71123456",
+    nationalPrefix: "0",
+  },
+  sr: {
+    prefix: "+597",
+    name: "Суринам",
+    minLength: 6,
+    length: 7,
+    placeholder: "7412345",
+    nationalPrefix: "",
+  },
+  ss: {
+    prefix: "+211",
+    name: "Южный Судан",
+    minLength: 9,
+    length: 9,
+    placeholder: "977123456",
+    nationalPrefix: "0",
+  },
+  st: {
+    prefix: "+239",
+    name: "Сан-Томе и Принсипи",
+    minLength: 7,
+    length: 7,
+    placeholder: "9812345",
+    nationalPrefix: "",
+  },
+  sv: {
+    prefix: "+503",
+    name: "Сальвадор",
+    minLength: 7,
+    length: 11,
+    placeholder: "70123456",
+    nationalPrefix: "",
+  },
+  sx: {
+    prefix: "+1",
+    name: "Синт-Мартен",
+    minLength: 10,
+    length: 10,
+    placeholder: "7215205678",
+    nationalPrefix: "1",
+  },
+  sy: {
+    prefix: "+963",
+    name: "Сирия",
+    minLength: 8,
+    length: 9,
+    placeholder: "944567890",
+    nationalPrefix: "0",
+  },
+  sz: {
+    prefix: "+268",
+    name: "Эсватини",
+    minLength: 8,
+    length: 9,
+    placeholder: "76123456",
+    nationalPrefix: "",
+  },
+  ta: {
+    prefix: "+290",
+    name: "Тристан-да-Кунья",
+    minLength: 4,
+    length: 4,
+    placeholder: "8999",
+    nationalPrefix: "",
+  },
+  tc: {
+    prefix: "+1",
+    name: "Тёркс и Кайкос",
+    minLength: 10,
+    length: 10,
+    placeholder: "6492311234",
+    nationalPrefix: "1",
+  },
+  td: {
+    prefix: "+235",
+    name: "Чад",
+    minLength: 8,
+    length: 8,
+    placeholder: "63012345",
+    nationalPrefix: "",
+  },
+  tg: {
+    prefix: "+228",
+    name: "Того",
+    minLength: 8,
+    length: 8,
+    placeholder: "90112345",
+    nationalPrefix: "",
+  },
+  th: {
+    prefix: "+66",
+    name: "Таиланд",
+    minLength: 8,
+    length: 13,
+    placeholder: "812345678",
+    nationalPrefix: "0",
+  },
+  tk: {
+    prefix: "+690",
+    name: "Токелау",
+    minLength: 4,
+    length: 7,
+    placeholder: "7290",
+    nationalPrefix: "",
+  },
+  tl: {
+    prefix: "+670",
+    name: "Восточный Тимор",
+    minLength: 7,
+    length: 8,
+    placeholder: "77212345",
+    nationalPrefix: "",
+  },
+  tn: {
+    prefix: "+216",
+    name: "Тунис",
+    minLength: 8,
+    length: 8,
+    placeholder: "20123456",
+    nationalPrefix: "",
+  },
+  to: {
+    prefix: "+676",
+    name: "Тонга",
+    minLength: 5,
+    length: 7,
+    placeholder: "7715123",
+    nationalPrefix: "",
+  },
+  tt: {
+    prefix: "+1",
+    name: "Тринидад и Тобаго",
+    minLength: 10,
+    length: 10,
+    placeholder: "8682911234",
+    nationalPrefix: "1",
+  },
+  tv: {
+    prefix: "+688",
+    name: "Тувалу",
+    minLength: 5,
+    length: 7,
+    placeholder: "901234",
+    nationalPrefix: "",
+  },
+  tw: {
+    prefix: "+886",
+    name: "Тайвань",
+    minLength: 7,
+    length: 11,
+    placeholder: "912345678",
+    nationalPrefix: "0",
+  },
+  tz: {
+    prefix: "+255",
+    name: "Танзания",
+    minLength: 9,
+    length: 9,
+    placeholder: "621234567",
+    nationalPrefix: "0",
+  },
+  ug: {
+    prefix: "+256",
+    name: "Уганда",
+    minLength: 9,
+    length: 9,
+    placeholder: "712345678",
+    nationalPrefix: "0",
+  },
+  uy: {
+    prefix: "+598",
+    name: "Уругвай",
+    minLength: 4,
+    length: 12,
+    placeholder: "94231234",
+    nationalPrefix: "0",
+  },
+  va: {
+    prefix: "+39",
+    name: "Ватикан",
+    minLength: 6,
+    length: 12,
+    placeholder: "3123456789",
+    nationalPrefix: "",
+  },
+  vc: {
+    prefix: "+1",
+    name: "Сент-Винсент и Гренадины",
+    minLength: 10,
+    length: 10,
+    placeholder: "7844301234",
+    nationalPrefix: "1",
+  },
+  ve: {
+    prefix: "+58",
+    name: "Венесуэла",
+    minLength: 10,
+    length: 10,
+    placeholder: "4121234567",
+    nationalPrefix: "0",
+  },
+  vg: {
+    prefix: "+1",
+    name: "Виргинские о-ва (Великобритания)",
+    minLength: 10,
+    length: 10,
+    placeholder: "2843001234",
+    nationalPrefix: "1",
+  },
+  vi: {
+    prefix: "+1",
+    name: "Виргинские о-ва (США)",
+    minLength: 10,
+    length: 10,
+    placeholder: "3406421234",
+    nationalPrefix: "1",
+  },
+  vn: {
+    prefix: "+84",
+    name: "Вьетнам",
+    minLength: 7,
+    length: 10,
+    placeholder: "912345678",
+    nationalPrefix: "0",
+  },
+  vu: {
+    prefix: "+678",
+    name: "Вануату",
+    minLength: 5,
+    length: 7,
+    placeholder: "5912345",
+    nationalPrefix: "",
+  },
+  wf: {
+    prefix: "+681",
+    name: "Уоллис и Футуна",
+    minLength: 6,
+    length: 9,
+    placeholder: "821234",
+    nationalPrefix: "",
+  },
+  ws: {
+    prefix: "+685",
+    name: "Самоа",
+    minLength: 5,
+    length: 10,
+    placeholder: "7212345",
+    nationalPrefix: "",
+  },
+  xk: {
+    prefix: "+383",
+    name: "Косово",
+    minLength: 8,
+    length: 12,
+    placeholder: "43201234",
+    nationalPrefix: "0",
+  },
+  ye: {
+    prefix: "+967",
+    name: "Йемен",
+    minLength: 7,
+    length: 9,
+    placeholder: "712345678",
+    nationalPrefix: "0",
+  },
+  yt: {
+    prefix: "+262",
+    name: "Майотта",
+    minLength: 9,
+    length: 9,
+    placeholder: "639012345",
+    nationalPrefix: "0",
+  },
+  za: {
+    prefix: "+27",
+    name: "Южно-Африканская Республика",
+    minLength: 5,
+    length: 10,
+    placeholder: "711234567",
+    nationalPrefix: "0",
+  },
+  zm: {
+    prefix: "+260",
+    name: "Замбия",
+    minLength: 9,
+    length: 9,
+    placeholder: "955123456",
+    nationalPrefix: "0",
+  },
+  zw: {
+    prefix: "+263",
+    name: "Зимбабве",
+    minLength: 7,
+    length: 10,
+    placeholder: "712345678",
+    nationalPrefix: "0",
+  },
 };
 function symbol_296(arg, arg_2) {
-  const local = local_00bd7d99[arg];
+  const local = local_700ca2d7[arg];
   if (
     !/^\d+$/.test(arg_2) ||
     arg_2.length < local.minLength ||
@@ -18872,7 +20368,7 @@ function symbol_296(arg, arg_2) {
     return null;
   }
   const local_2 = local.prefix + arg_2;
-  if (/^\+[1-9]\d{7,14}$/.test(local_2)) {
+  if (/^\+[1-9]\d{6,14}$/.test(local_2)) {
     return local_2;
   }
   return null;
@@ -18884,14 +20380,14 @@ function fn_82a705c0(arg) {
   if (arg === "ru") {
     return "10 цифр после +7.";
   }
-  const local = local_00bd7d99[arg];
+  const local = local_700ca2d7[arg];
   return `${local.minLength === local.length ? String(local.length) : `${local.minLength}–${local.length}`} цифр после ${local.prefix}.`;
 }
 const local_e06a974a =
   /^(?:(?:2(?:04|[23]6|[48]9|5[07]|63)|3(?:06|43|54|6[578]|82)|4(?:03|1[68]|[26]8|3[178]|50|74)|5(?:06|1[49]|48|79|8[147])|6(?:04|[18]3|39|47|72)|7(?:0[59]|42|53|78|8[02])|8(?:[06]7|19|25|7[39])|9(?:0[25]|42))[2-9]\d{6})$/;
-const local_29aec277 = Object.keys(local_00bd7d99).sort(
+const local_29aec277 = Object.keys(local_700ca2d7).sort(
   (arg, arg_2) =>
-    local_00bd7d99[arg_2].prefix.length - local_00bd7d99[arg].prefix.length,
+    local_700ca2d7[arg_2].prefix.length - local_700ca2d7[arg].prefix.length,
 );
 function symbol_294(arg, arg_2) {
   if (!/^[+\d\s()-]*$/.test(arg)) {
@@ -18909,7 +20405,7 @@ function symbol_294(arg, arg_2) {
   let local_3 = local;
   if (local.startsWith("+")) {
     const local = local_29aec277.find((arg) =>
-      local.startsWith(local_00bd7d99[arg].prefix),
+      local.startsWith(local_700ca2d7[arg].prefix),
     );
     if (!local) {
       return {
@@ -18918,8 +20414,8 @@ function symbol_294(arg, arg_2) {
         error: "Выберите страну из списка.",
       };
     }
-    const local_2 = local_00bd7d99[local].prefix;
-    local_2 = local_00bd7d99[arg_2].prefix === local_2 ? arg_2 : local;
+    const local_2 = local_700ca2d7[local].prefix;
+    local_2 = local_700ca2d7[arg_2].prefix === local_2 ? arg_2 : local;
     local_3 = local.slice(local_2.length);
     if (local_2 === "+7") {
       local_2 = /^[67]/.test(local_3) ? "kz" : local_3 ? "ru" : local_2;
@@ -18940,7 +20436,7 @@ function symbol_294(arg, arg_2) {
       local_3 = local.slice(1);
     }
   }
-  const local_4 = local_00bd7d99[local_2];
+  const local_4 = local_700ca2d7[local_2];
   if (
     local_2 !== "it" &&
     local_4.nationalPrefix === "0" &&
@@ -18979,7 +20475,7 @@ const local_7f24068b = (arg) => {
   };
   for (const local of arg.regions) {
     const local = local.region.toLowerCase();
-    if (!Object.hasOwn(local_00bd7d99, local)) {
+    if (!Object.hasOwn(local_700ca2d7, local)) {
       continue;
     }
     const local_2 = Array.isArray(local.methods)
@@ -19191,16 +20687,28 @@ const local_79b79709 = {
   "./flags/us.svg": local_436b0afc,
   "./flags/uz.svg": local_e24c00d4,
 };
-function fn_f01eef99({ country: arg, lazy: arg_2 = false }) {
-  return symbol_295("img", {
-    src: local_79b79709[`./flags/${arg}.svg`],
-    width: 26,
-    height: 19,
-    alt: "",
-    "aria-hidden": "true",
-    draggable: false,
-    loading: arg_2 ? "lazy" : "eager",
-  });
+function fn_5ced9ec1({ country: arg, lazy: arg_2 = false }) {
+  const local = local_79b79709[`./flags/${arg}.svg`];
+  if (local) {
+    return symbol_295("img", {
+      src: local,
+      width: 26,
+      height: 19,
+      alt: "",
+      "aria-hidden": "true",
+      draggable: false,
+      loading: arg_2 ? "lazy" : "eager",
+    });
+  }
+  return symbol_295(
+    "span",
+    {
+      "aria-hidden": "true",
+    },
+    Array.from(arg.toUpperCase(), (arg) =>
+      String.fromCodePoint(127397 + arg.charCodeAt(0)),
+    ).join(""),
+  );
 }
 const local_49250f21_2 = "c_modal";
 const local_4d84dbb6 = "c_content";
@@ -19270,7 +20778,7 @@ function symbol_017({
   const local_7 = symbol_002(null);
   const local_8 = symbol_002([]);
   const local_9 = symbol_028()?.countries ?? [arg];
-  const local_10 = local_00bd7d99[arg];
+  const local_10 = local_700ca2d7[arg];
   const local_11 = (arg) =>
     arg
       .trim()
@@ -19279,7 +20787,7 @@ function symbol_017({
       .replace(/[-\s]+/g, "./entry-2.js");
   const local_12 = local_11(local_3);
   const local_13 = local_9.filter((arg) =>
-    local_11(local_00bd7d99[arg].name).includes(local_12),
+    local_11(local_700ca2d7[arg].name).includes(local_12),
   );
   symbol_282(() => {
     if (!local) {
@@ -19355,7 +20863,7 @@ function symbol_017({
                 children: [
                   symbol_295("span", {
                     className: local_71ed121f.flag,
-                    children: symbol_295(fn_f01eef99, {
+                    children: symbol_295(fn_5ced9ec1, {
                       country: arg,
                     }),
                   }),
@@ -19505,18 +21013,18 @@ function symbol_017({
                         children: [
                           symbol_295("span", {
                             className: local_71ed121f.flag,
-                            children: symbol_295(fn_f01eef99, {
+                            children: symbol_295(fn_5ced9ec1, {
                               country: arg,
                               lazy: true,
                             }),
                           }),
                           symbol_295("span", {
                             className: local_71ed121f.countryName,
-                            children: local_00bd7d99[arg].name,
+                            children: local_700ca2d7[arg].name,
                           }),
                           symbol_295("span", {
                             className: local_71ed121f.countryPrefix,
-                            children: local_00bd7d99[arg].prefix,
+                            children: local_700ca2d7[arg].prefix,
                           }),
                           symbol_295("span", {
                             className: local_71ed121f.countryCheck,
@@ -27368,7 +28876,7 @@ async function fn_747952d6(arg) {
     if (local) {
       return (
         local.cancelUpload(arg, true),
-        await fn_8e88890a(
+        await fn_ebe8b85e(
           local_4.target,
           local,
           local_4.attachmentIds,
@@ -27388,7 +28896,7 @@ async function fn_747952d6(arg) {
     local_a1e12a9e_39.delete(local_3);
   }
 }
-async function fn_8e88890a(
+async function fn_ebe8b85e(
   arg,
   arg_2,
   arg_3,
@@ -27632,7 +29140,7 @@ async function fn_8e88890a(
       try {
         const { uploadFile: local } = await symbol_138(async () => {
           const { uploadFile: local } =
-            await import("./shared/messenger-media-api-25beea751230.js");
+            await import("./shared/messenger-media-api-2d8212f2347b.js");
           return {
             uploadFile: local,
           };
@@ -27703,7 +29211,7 @@ async function fn_8e88890a(
       try {
         const { uploadFile: local } = await symbol_138(async () => {
           const { uploadFile: local } =
-            await import("./shared/messenger-media-api-25beea751230.js");
+            await import("./shared/messenger-media-api-2d8212f2347b.js");
           return {
             uploadFile: local,
           };
@@ -30684,7 +32192,7 @@ const symbol_105 = symbol_096((arg, arg_2) => ({
   },
   async sendMessage(arg, arg_2, arg_3, arg_4, arg_5, arg_6) {
     return (
-      (await fn_8e88890a(
+      (await fn_ebe8b85e(
         {
           kind: "chat",
           chatId: arg,
@@ -30703,7 +32211,7 @@ const symbol_105 = symbol_096((arg, arg_2) => ({
     );
   },
   async sendVoiceMessage(arg, arg_2, arg_3, arg_4, arg_5) {
-    await fn_8e88890a(
+    await fn_ebe8b85e(
       {
         kind: "chat",
         chatId: arg,
@@ -30747,7 +32255,7 @@ const symbol_105 = symbol_096((arg, arg_2) => ({
     });
   },
   async sendFirstMessage(arg, arg_2, arg_3, arg_4) {
-    return fn_8e88890a(
+    return fn_ebe8b85e(
       {
         kind: "draft",
         userId: arg,
@@ -30761,7 +32269,7 @@ const symbol_105 = symbol_096((arg, arg_2) => ({
     );
   },
   async sendFirstVoice(arg, arg_2, arg_3, arg_4) {
-    return fn_8e88890a(
+    return fn_ebe8b85e(
       {
         kind: "draft",
         userId: arg,
@@ -31346,7 +32854,7 @@ const symbol_105 = symbol_096((arg, arg_2) => ({
     return true;
   },
 }));
-async function fn_dd1c0e21() {
+async function fn_94594411() {
   fn_53be1ce4();
   local_657db3b7_39 = undefined;
   local_572f2e39();
@@ -31407,12 +32915,12 @@ async function fn_dd1c0e21() {
   await Promise.all([
     symbol_215.clearAll(),
     symbol_138(
-      () => import("./shared/file-box-maintenance-9ab185d81d6e.js"),
+      () => import("./shared/file-box-maintenance-9e151cbfb526.js"),
       [],
     ).then((arg) => arg.purgeFileBox()),
   ]);
 }
-symbol_040(fn_dd1c0e21);
+symbol_040(fn_94594411);
 symbol_174(fn_248011d6);
 symbol_040(() => {
   local_0a9fda83_20?.();
@@ -31502,7 +33010,7 @@ const local_c5704e80 = Object.freeze(
       invalidateChatReads: fn_9614467d,
       setWillReplaceWindowHook: symbol_270,
       useMessagesStore: symbol_105,
-      wipeMessengerLocalState: fn_dd1c0e21,
+      wipeMessengerLocalState: fn_94594411,
     },
     Symbol.toStringTag,
     {
@@ -33858,10 +35366,10 @@ const local_339f5c81 = {
   pin: local_9073986e,
   hint: local_ca66b2a4_3,
 };
-const local_3b2a3418 = fn_52650602(() =>
+const local_49571f63 = fn_52650602(() =>
   symbol_138(
-    () => import("./shared/index-cc8fa71db690.js"),
-    local_939303bd([0, 1, 2, 3, 4, 5, 6]),
+    () => import("./shared/index-dcb36fb718b5.js"),
+    local_326971c1([0, 1, 2, 3, 4, 5, 6]),
   ),
 );
 function fn_6977fc30({
@@ -33971,7 +35479,7 @@ function fn_6977fc30({
           document.body,
         ),
       local &&
-        symbol_295(local_3b2a3418, {
+        symbol_295(local_49571f63, {
           isOpen: true,
           userId: arg,
           name: arg_2,
@@ -33984,7 +35492,7 @@ function fn_6977fc30({
 const symbol_120 = fn_52650602(() =>
   symbol_138(
     () => import("./routes/subscription-modal.js"),
-    local_939303bd([7, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
+    local_326971c1([7, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -33992,7 +35500,7 @@ const symbol_120 = fn_52650602(() =>
 const symbol_118 = fn_52650602(() =>
   symbol_138(
     () => import("./routes/subscription-modal.js"),
-    local_939303bd([7, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
+    local_326971c1([7, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
   ).then((arg) => ({
     default: arg.GiftSubscriptionModal,
   })),
@@ -39842,7 +41350,7 @@ function fn_3215cb92() {
 const local_f88ff501 = symbol_136(() =>
   symbol_138(
     () => import("./routes/changelog-modal.js"),
-    local_939303bd([17, 18]),
+    local_326971c1([17, 18]),
   ).then((arg) => ({
     default: arg.ChangelogModal,
   })),
@@ -41900,7 +43408,7 @@ function fn_3d8dbb94({
 const local_f5011ed7 = symbol_136(() =>
   symbol_138(
     () => import("./routes/voice-input.js"),
-    local_939303bd([19, 20, 21, 22]),
+    local_326971c1([19, 20, 21, 22]),
   ).then((arg) => ({
     default: arg.VoiceInput,
   })),
@@ -43333,7 +44841,7 @@ const local_89a6df8b = {
 const local_8e69546a = symbol_136(() =>
   symbol_138(
     () => import("./routes/post-media-video.js"),
-    local_939303bd([23, 24]),
+    local_326971c1([23, 24]),
   ).then((arg) => ({
     default: arg.PostMediaVideo,
   })),
@@ -51707,7 +53215,7 @@ function symbol_057({
 const local_b84ad31b = symbol_136(() =>
   symbol_138(
     () => import("./routes/report-modal.js"),
-    local_939303bd([25, 26, 27]),
+    local_326971c1([25, 26, 27]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -52137,7 +53645,7 @@ function fn_88bd67ce({
   });
 }
 const local_0da67384 = symbol_136(() =>
-  symbol_138(() => import("./routes/poll.js"), local_939303bd([28, 29])).then(
+  symbol_138(() => import("./routes/poll.js"), local_326971c1([28, 29])).then(
     (arg) => ({
       default: arg.Poll,
     }),
@@ -52700,7 +54208,7 @@ const local_dd7b1146 = {
 const local_22c6c85e = symbol_136(() =>
   symbol_138(
     () => import("./routes/voice-message.js"),
-    local_939303bd([30, 20, 31]),
+    local_326971c1([30, 20, 31]),
   ).then((arg) => ({
     default: arg.VoiceMessage,
   })),
@@ -53402,7 +54910,7 @@ const local_116edfe5 = {
 const local_76950eb5 = symbol_136(() =>
   symbol_138(
     () => import("./routes/emoji-picker.js"),
-    local_939303bd([32, 33]),
+    local_326971c1([32, 33]),
   ).then((arg) => ({
     default: arg.EmojiPicker,
   })),
@@ -53885,7 +55393,7 @@ function fn_ffc48304({
 const local_b84ad31b_2 = symbol_136(() =>
   symbol_138(
     () => import("./routes/report-modal.js"),
-    local_939303bd([25, 26, 27]),
+    local_326971c1([25, 26, 27]),
   ).then((arg) => ({
     default: arg.ReportModal,
   })),
@@ -54498,7 +56006,7 @@ function fn_9b2f4a75({ value: arg, onChange: arg_2 }) {
 const local_c65d5c43 = symbol_136(() =>
   symbol_138(
     () => import("./routes/drawing-canvas.js"),
-    local_939303bd([34, 35]),
+    local_326971c1([34, 35]),
   ).then((arg) => ({
     default: arg.DrawingCanvas,
   })),
@@ -57308,7 +58816,7 @@ function symbol_058() {
 const local_a20d6bae = symbol_136(() =>
   symbol_138(
     () => import("./routes/subscription-modal.js"),
-    local_939303bd([7, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
+    local_326971c1([7, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16]),
   ).then((arg) => ({
     default: arg.SubscriptionModal,
   })),
@@ -58293,7 +59801,7 @@ function fn_5367fdbc(arg, arg_2) {
 const local_e5f18eb8 = symbol_136(() =>
   symbol_138(
     () => import("./routes/image-viewer.js"),
-    local_939303bd([36, 37, 15, 14, 38]),
+    local_326971c1([36, 37, 15, 14, 38]),
   ).then((arg) => ({
     default: arg.ImageViewer,
   })),
@@ -59275,7 +60783,7 @@ function fn_e3d8aefb({ ownerId: arg }) {
 const local_8e5652b5 = symbol_136(() =>
   symbol_138(
     () => import("./routes/auth-layout.js"),
-    local_939303bd([39, 40]),
+    local_326971c1([39, 40]),
   ).then((arg) => ({
     default: arg.AuthLayout,
   })),
@@ -61118,7 +62626,7 @@ function fn_2fc4e490({ route: arg }) {
 }
 let local_0a9fda83_33 = null;
 let local_0a9fda83_34 = null;
-function fn_be27013c() {
+function fn_3a2cf05d() {
   if (local_0a9fda83_33) {
     return Promise.resolve(local_0a9fda83_33);
   }
@@ -61126,8 +62634,8 @@ function fn_be27013c() {
     local_0a9fda83_34 ||
       (local_0a9fda83_34 = fn_55804296(() =>
         symbol_138(
-          () => import("./shared/route-4b7bce6a8655.js"),
-          local_939303bd([41, 42, 43, 1, 15, 14, 37, 26, 13, 21, 44, 45]),
+          () => import("./shared/route-835854172f5d.js"),
+          local_326971c1([41, 42, 43, 1, 15, 14, 37, 26, 13, 21, 44, 45]),
         ),
       )
         .then((arg) => {
@@ -61150,7 +62658,7 @@ function fn_8ac5b2f1(arg) {
     }
     let local = true;
     local_4(false);
-    fn_be27013c()
+    fn_3a2cf05d()
       .then((arg) => {
         if (local) {
           local_2(() => arg);
@@ -61187,7 +62695,7 @@ function fn_8ac5b2f1(arg) {
 const local_1757783e = symbol_136(() =>
   symbol_138(
     () => import("./routes/global-video-player.js"),
-    local_939303bd([46, 37, 47]),
+    local_326971c1([46, 37, 47]),
   ).then((arg) => ({
     default: arg.GlobalVideoPlayer,
   })),
@@ -61196,7 +62704,7 @@ fn_dda86da6();
 const local_3f597d55 = symbol_136(() =>
   symbol_138(
     () => import("./routes/hashtag.js"),
-    local_939303bd([48, 15, 49]),
+    local_326971c1([48, 15, 49]),
   ).then((arg) => ({
     default: arg.Hashtag,
   })),
@@ -61204,7 +62712,7 @@ const local_3f597d55 = symbol_136(() =>
 const local_b5dfba78 = symbol_136(() =>
   symbol_138(
     () => import("./routes/profile.js"),
-    local_939303bd([50, 42, 43, 15, 9, 10, 51]),
+    local_326971c1([50, 42, 43, 15, 9, 10, 51]),
   ).then((arg) => ({
     default: arg.Profile,
   })),
@@ -61212,7 +62720,7 @@ const local_b5dfba78 = symbol_136(() =>
 const local_dd51dc2e = symbol_136(() =>
   symbol_138(
     () => import("./routes/post-page.js"),
-    local_939303bd([52, 15, 53]),
+    local_326971c1([52, 15, 53]),
   ).then((arg) => ({
     default: arg.PostPage,
   })),
@@ -61220,7 +62728,7 @@ const local_dd51dc2e = symbol_136(() =>
 const local_f096a0cf = symbol_136(() =>
   symbol_138(
     () => import("./routes/notifications.js"),
-    local_939303bd([54, 11, 3, 4, 12, 43, 55]),
+    local_326971c1([54, 11, 3, 4, 12, 43, 55]),
   ).then((arg) => ({
     default: arg.Notifications,
   })),
@@ -61228,7 +62736,7 @@ const local_f096a0cf = symbol_136(() =>
 const local_ef7f526d = symbol_136(() =>
   symbol_138(
     () => import("./routes/search.js"),
-    local_939303bd([56, 1, 57]),
+    local_326971c1([56, 1, 57]),
   ).then((arg) => ({
     default: arg.Search,
   })),
@@ -61236,7 +62744,7 @@ const local_ef7f526d = symbol_136(() =>
 const local_e757f6d6 = symbol_136(() =>
   symbol_138(
     () => import("./routes/shop-frame.js"),
-    local_939303bd([58, 59]),
+    local_326971c1([58, 59]),
   ).then((arg) => ({
     default: arg.ShopFrame,
   })),
@@ -61244,7 +62752,7 @@ const local_e757f6d6 = symbol_136(() =>
 const local_2f6a7e7d = symbol_136(() =>
   symbol_138(
     () => import("./routes/event-frame.js"),
-    local_939303bd([60, 61]),
+    local_326971c1([60, 61]),
   ).then((arg) => ({
     default: arg.EventFrame,
   })),
@@ -61252,7 +62760,7 @@ const local_2f6a7e7d = symbol_136(() =>
 const local_bce15d50 = symbol_136(() =>
   symbol_138(
     () => import("./routes/event-frame-2.js"),
-    local_939303bd([62, 63]),
+    local_326971c1([62, 63]),
   ).then((arg) => ({
     default: arg.EventFrame,
   })),
@@ -61291,7 +62799,7 @@ function fn_0c76ecb8({ children: arg }) {
 const local_13153565 = symbol_136(() =>
   symbol_138(
     () => import("./routes/delete-account.js"),
-    local_939303bd([64, 8, 15, 65]),
+    local_326971c1([64, 8, 15, 65]),
   ).then((arg) => ({
     default: arg.DeleteAccount,
   })),
@@ -61299,7 +62807,7 @@ const local_13153565 = symbol_136(() =>
 const local_c4da111f = symbol_136(() =>
   symbol_138(
     () => import("./routes/legal-documents-page.js"),
-    local_939303bd([66, 15, 67]),
+    local_326971c1([66, 15, 67]),
   ).then((arg) => ({
     default: arg.LegalDocumentsPage,
   })),
@@ -61307,7 +62815,7 @@ const local_c4da111f = symbol_136(() =>
 const local_c4da111f_2 = symbol_136(() =>
   symbol_138(
     () => import("./routes/legal-documents-page.js"),
-    local_939303bd([66, 15, 67]),
+    local_326971c1([66, 15, 67]),
   ).then((arg) => ({
     default: arg.LegalDocumentPage,
   })),
@@ -61315,7 +62823,7 @@ const local_c4da111f_2 = symbol_136(() =>
 const local_c4da111f_3 = symbol_136(() =>
   symbol_138(
     () => import("./routes/legal-documents-page.js"),
-    local_939303bd([66, 15, 67]),
+    local_326971c1([66, 15, 67]),
   ).then((arg) => ({
     default: arg.LegalHistoryPage,
   })),
@@ -61323,7 +62831,7 @@ const local_c4da111f_3 = symbol_136(() =>
 const local_7e8db683 = symbol_136(() =>
   symbol_138(
     () => import("./routes/external-link.js"),
-    local_939303bd([68, 15, 12, 69]),
+    local_326971c1([68, 15, 12, 69]),
   ).then((arg) => ({
     default: arg.ExternalLink,
   })),
@@ -61331,7 +62839,7 @@ const local_7e8db683 = symbol_136(() =>
 const local_abff2b23 = symbol_136(() =>
   symbol_138(
     () => import("./routes/support.js"),
-    local_939303bd([70, 15, 71]),
+    local_326971c1([70, 15, 71]),
   ).then((arg) => ({
     default: arg.Support,
   })),
@@ -61339,7 +62847,7 @@ const local_abff2b23 = symbol_136(() =>
 const local_98c5ab21 = symbol_136(() =>
   symbol_138(
     () => import("./routes/events-page.js"),
-    local_939303bd([72, 73]),
+    local_326971c1([72, 73]),
   ).then((arg) => ({
     default: arg.EventsPage,
   })),
@@ -61347,7 +62855,7 @@ const local_98c5ab21 = symbol_136(() =>
 const local_3640f490 = symbol_136(() =>
   symbol_138(
     () => import("./routes/login.js"),
-    local_939303bd([74, 75, 76, 77, 78, 79, 80, 81]),
+    local_326971c1([74, 75, 76, 77, 78, 79, 80, 81]),
   ).then((arg) => ({
     default: arg.Login,
   })),
@@ -61355,7 +62863,7 @@ const local_3640f490 = symbol_136(() =>
 const local_8fdc18ed = symbol_136(() =>
   symbol_138(
     () => import("./routes/register.js"),
-    local_939303bd([82, 75, 76, 77]),
+    local_326971c1([82, 75, 76, 77]),
   ).then((arg) => ({
     default: arg.Register,
   })),
@@ -61363,7 +62871,7 @@ const local_8fdc18ed = symbol_136(() =>
 const local_326ccdf5 = symbol_136(() =>
   symbol_138(
     () => import("./routes/forgot-password.js"),
-    local_939303bd([83, 76, 77, 78, 79, 80, 84]),
+    local_326971c1([83, 76, 77, 78, 79, 80, 84]),
   ).then((arg) => ({
     default: arg.ForgotPassword,
   })),
@@ -61371,7 +62879,7 @@ const local_326ccdf5 = symbol_136(() =>
 const local_ed3a5f6b = symbol_136(() =>
   symbol_138(
     () => import("./routes/reset-password.js"),
-    local_939303bd([85, 80, 86]),
+    local_326971c1([85, 80, 86]),
   ).then((arg) => ({
     default: arg.ResetPassword,
   })),
@@ -61384,7 +62892,7 @@ const local_5926c003 = symbol_136(() =>
 const local_df5e24cd = symbol_136(() =>
   symbol_138(
     () => import("./routes/onboarding.js"),
-    local_939303bd([87, 88]),
+    local_326971c1([87, 88]),
   ).then((arg) => ({
     default: arg.Onboarding,
   })),

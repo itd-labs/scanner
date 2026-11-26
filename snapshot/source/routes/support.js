@@ -2,7 +2,7 @@ import {
   symbol_295 as imported,
   symbol_001 as imported_2,
 } from "../entry-2.js";
-import { I as imported_3 } from "../components/icon-chevron-left-e0277eea8342.js";
+import { I as imported_3 } from "../components/icon-chevron-left-c3c7f6927e41.js";
 const local_87ee5215 = "c_legal";
 const local_85b1b822 = "c_backButton";
 const local_9d9cf508 = "c_title";

@@ -10,7 +10,7 @@ import {
   symbol_035 as imported_9,
   symbol_001 as imported_10,
 } from "../entry-2.js";
-import { I as imported_11 } from "../components/icon-chevron-left-e0277eea8342.js";
+import { I as imported_11 } from "../components/icon-chevron-left-c3c7f6927e41.js";
 const local_ef251bc6 = "c_page";
 const local_f1c23efb = "c_header";
 const local_85b1b822 = "c_backButton";
