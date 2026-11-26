@@ -10,8 +10,8 @@ import {
 import {
   I as imported_8,
   a as imported_9,
-} from "../components/icon-play-516fac3bb926.js";
-import { I as imported_10 } from "../components/icon-stop-526b825785e6.js";
+} from "../components/icon-play-63cc71ccebde.js";
+import { I as imported_10 } from "../components/icon-stop-4ffd2275afc5.js";
 function fn_3506a85a() {
   const [local, local_2] = imported(false);
   const [local_3, local_4] = imported(false);

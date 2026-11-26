@@ -1,1 +1,0 @@
-import{u as o,S as r}from"./index-b73a0a728902.js";function n(){return o(r,{children:"Удаление аккаунта не отменяет подписку, оформленную в App Store или Google Play. Отмените её отдельно в магазине, в котором оформили покупку."})}export{n as M};

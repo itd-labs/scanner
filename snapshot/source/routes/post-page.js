@@ -16,7 +16,7 @@ import {
   symbol_069 as imported_15,
   symbol_070 as imported_16,
 } from "../entry-2.js";
-import { I as imported_17 } from "../components/icon-chevron-left-c3c7f6927e41.js";
+import { I as imported_17 } from "../components/icon-chevron-left-1012aa4dcaa3.js";
 const local_301dfc98 = "c_postPage";
 const local_969d651e = "c_pageHeader";
 const local_b79c6e36 = "c_pageTitle";

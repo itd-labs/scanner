@@ -1,0 +1,1 @@
+import{u as r}from"./index-4a2211963806.js";import{P as t}from"./index-1867392ca4a4.js";import"./index-ade4da9b27ee.js";function p(o){return r(t,{intent:"sign-up"})}export{p as Register,p as default};

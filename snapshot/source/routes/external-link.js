@@ -3,8 +3,8 @@ import {
   symbol_036 as imported_2,
   symbol_001 as imported_3,
 } from "../entry-2.js";
-import { I as imported_4 } from "../components/icon-chevron-left-c3c7f6927e41.js";
-import { I as imported_5 } from "../components/icon-info-869e5b22a0b1.js";
+import { I as imported_4 } from "../components/icon-chevron-left-1012aa4dcaa3.js";
+import { I as imported_5 } from "../components/icon-info-5142c4c50cdb.js";
 const local_c32857d0 = ({ size: arg = 48 }) =>
   imported("svg", {
     width: arg,

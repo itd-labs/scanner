@@ -5,8 +5,8 @@ import {
   symbol_003 as imported_4,
   symbol_001 as imported_5,
 } from "../entry-2.js";
-import { M as imported_6 } from "../shared/mobile-subscription-warning-d90ffd5fadce.js";
-import { I as imported_7 } from "../components/icon-chevron-left-c3c7f6927e41.js";
+import { M as imported_6 } from "../shared/mobile-subscription-warning-84f83504006c.js";
+import { I as imported_7 } from "../components/icon-chevron-left-1012aa4dcaa3.js";
 const local_87ee5215 = "c_legal";
 const local_85b1b822 = "c_backButton";
 const local_9d9cf508 = "c_title";
